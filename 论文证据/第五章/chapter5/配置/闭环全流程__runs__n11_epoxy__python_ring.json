@@ -1,0 +1,64 @@
+{
+  "operator": "四层网格加 8 个外伸节点，和 ring_solver.py 同一套",
+  "k_fill": 0.8,
+  "note": "没有覆盖 fields/*.npy 和 report.json。HotSpot、ATSim 没重算。",
+  "stages": {
+    "init": {
+      "field_max_C": 77.00131866167504,
+      "grad_K_per_mm": 4.058400406390522,
+      "hottest_block_mean_name": "HBM3",
+      "hottest_block_mean_C": 76.07365290284145,
+      "per_chip_mean_C": {
+        "Xeon_Ca": 71.76502313477181,
+        "GPU_2060S_Ga": 71.10326049614622,
+        "GPU_TITANX_Gb": 70.94162886697359,
+        "CIM_jia_m64": 64.1315703937517,
+        "Xeon_Cb": 74.5686427334017,
+        "GPU_3070_Gc": 73.03628637781935,
+        "HBM3": 76.07365290284145,
+        "CIM_colonnade_m512": 68.52760091321892,
+        "CIM_colonnade_m256": 63.415222416103404,
+        "CIM_basic_m256": 62.351076973922204,
+        "CIM_colonnade_m64": 62.11123609140378
+      }
+    },
+    "best": {
+      "field_max_C": 76.17801278457353,
+      "grad_K_per_mm": 4.067443981800807,
+      "hottest_block_mean_name": "HBM3",
+      "hottest_block_mean_C": 75.23733782479604,
+      "per_chip_mean_C": {
+        "T2_Ca": 68.51003442131776,
+        "GPU_2060S_Ga": 69.72682464347889,
+        "GPU_TITANX_Gb": 68.77636416643566,
+        "CIM_jia_m64": 61.48933075383155,
+        "Xeon_Cb": 73.62425134001967,
+        "GPU_3070_Gc": 72.31784796273024,
+        "HBM3": 75.23733782479604,
+        "CIM_colonnade_m512": 67.0467392857554,
+        "CIM_colonnade_m256": 61.69384790890814,
+        "CIM_basic_m256": 60.70555194319911,
+        "CIM_colonnade_m64": 60.43717954505945
+      }
+    },
+    "freq": {
+      "field_max_C": 91.8025475968393,
+      "grad_K_per_mm": 4.162106201892231,
+      "hottest_block_mean_name": "Xeon_Cb",
+      "hottest_block_mean_C": 89.82250057171439,
+      "per_chip_mean_C": {
+        "T2_Ca": 84.85375814219822,
+        "GPU_2060S_Ga": 82.4102458427513,
+        "GPU_TITANX_Gb": 79.74753032669457,
+        "CIM_jia_m64": 71.20139216314232,
+        "Xeon_Cb": 89.82250057171439,
+        "GPU_3070_Gc": 84.06004113387468,
+        "HBM3": 83.24897636603754,
+        "CIM_colonnade_m512": 75.02132855004339,
+        "CIM_colonnade_m256": 69.97582451919027,
+        "CIM_basic_m256": 68.65362992235964,
+        "CIM_colonnade_m64": 68.40104601921695
+      }
+    }
+  }
+}

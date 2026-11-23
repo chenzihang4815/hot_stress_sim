@@ -1,0 +1,32 @@
+{
+  "question": "Does adding chip-center stress + warpage to SA change the layout vs Tmax-only, without blowing up Tmax?",
+  "n_steps": 16,
+  "seed": 22,
+  "heat_only": {
+    "Tmax_init_C": 70.99000000000001,
+    "Tmax_best_C": 70.04000000000002,
+    "vm_mean_init_MPa": 70.40180815271354,
+    "vm_mean_best_MPa": 56.8947823413267,
+    "w_pv_init_um": 4.456641535530455,
+    "w_pv_best_um": 4.479086381623181,
+    "J_full_best": 2.374268402578994,
+    "accepted": 10
+  },
+  "coupled": {
+    "Tmax_init_C": 70.99000000000001,
+    "Tmax_best_C": 70.73000000000002,
+    "vm_mean_init_MPa": 70.40180815271354,
+    "vm_mean_best_MPa": 52.55604702317509,
+    "w_pv_init_um": 4.456641535530455,
+    "w_pv_best_um": 4.471620789358035,
+    "J_full_best": 2.3389532704293994,
+    "accepted": 10
+  },
+  "delta_coupled_minus_heat": {
+    "dTmax_C": 0.6899999999999977,
+    "d_vm_mean_MPa": -4.338735318151613,
+    "d_w_pv_um": -0.007465592265146093
+  },
+  "wall_s": 1981.8000481128693,
+  "finished_utc": "2026-10-22T15:00:46.994211+00:00"
+}

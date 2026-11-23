@@ -1,0 +1,22 @@
+{
+  "name": "case3_3chip_hot",
+  "description": "Same 3-chip layout as case3_chips.json; power x2 for a hotter operating point. Do not overwrite the 73 W baseline.",
+  "chips": [
+    {"name": "CPU", "x_mm": 8,  "y_mm": 8,  "w_mm": 10, "h_mm": 10, "t_um": 150, "power_W": 50},
+    {"name": "GPU", "x_mm": 22, "y_mm": 8,  "w_mm": 12, "h_mm": 10, "t_um": 150, "power_W": 80},
+    {"name": "HBM", "x_mm": 8,  "y_mm": 22, "w_mm": 8,  "h_mm": 8,  "t_um": 150, "power_W": 16}
+  ],
+  "package": {
+    "comment": "Identical stack to case3_chips.json. Substrate/interposer/TIM follow chip bbox. No TSV/C4.",
+    "tim_um": 20,
+    "t_spreader_mm": 1.0,
+    "t_sink_mm": 6.9,
+    "t_substrate_mm": 1.0,
+    "t_interposer_um": 100.0,
+    "r_convec_K_per_W": 0.1,
+    "ambient_C": 45,
+    "pitch_die_mm": 0.5,
+    "pitch_coarse_mm": 3.0,
+    "fill_die": false
+  }
+}

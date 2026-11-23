@@ -1,0 +1,85 @@
+{
+  "label": "n8",
+  "n_chips": 8,
+  "source": "热仿真流水线/runs/closed_loop_suite/n8_epoxy/hotspot_init/layout.json",
+  "solver": "四层网格加 8 个外伸节点，均热片 96 mm，热沉 96 mm，无冷边",
+  "chips": [
+    {
+      "name": "Xeon_Ca",
+      "kind": "CPU",
+      "power_W": 103.94599,
+      "area_mm2": 425.25
+    },
+    {
+      "name": "GPU_2060S_Ga",
+      "kind": "GPU",
+      "power_W": 71.12082725952361,
+      "area_mm2": 445.5
+    },
+    {
+      "name": "GPU_3070_Gb",
+      "kind": "GPU",
+      "power_W": 66.88781634908364,
+      "area_mm2": 389.8125
+    },
+    {
+      "name": "CIM_jia_m64",
+      "kind": "CIM",
+      "power_W": 0.02051619509144024,
+      "area_mm2": 273.375
+    },
+    {
+      "name": "Xeon_Cb",
+      "kind": "CPU",
+      "power_W": 103.94599,
+      "area_mm2": 425.25
+    },
+    {
+      "name": "HBM3",
+      "kind": "HBM",
+      "power_W": 55.903999999999996,
+      "area_mm2": 121.5
+    },
+    {
+      "name": "CIM_colonnade_m512",
+      "kind": "CIM",
+      "power_W": 0.2967109271348416,
+      "area_mm2": 121.5
+    },
+    {
+      "name": "CIM_colonnade_m256",
+      "kind": "CIM",
+      "power_W": 0.29677526103697566,
+      "area_mm2": 60.75
+    }
+  ],
+  "power_W": 402.4186259918705,
+  "start_C": 78.629177058962,
+  "factor_once_s": 0.3175355559797026,
+  "exact_total_s": 83.24410448881099,
+  "exact_best_C": 70.33178637911362,
+  "exact": {
+    "assemble_s": 25.143029443221167,
+    "factor_s": 56.90722580708098,
+    "solve_s": 1.1938492385088466,
+    "accept": 63,
+    "legal": 200
+  },
+  "iter_total_s": 40.503167369868606,
+  "iter_priced_C": 70.33053190591085,
+  "iter_exact_C": 70.33169012151933,
+  "iter": {
+    "assemble_s": 27.784268359828275,
+    "solve_s": 12.401363454060629,
+    "accept": 65,
+    "legal": 200
+  },
+  "check_s": 0.3297994930180721,
+  "grid_max_abs_K": 0.05130901302743496,
+  "peak_price_minus_exact_K": -0.00115821560848417,
+  "speedup": 2.0552492531914557,
+  "steps": 200,
+  "seed": 22,
+  "n_iter": 8,
+  "acceptance": "只接受温度更低的布局"
+}

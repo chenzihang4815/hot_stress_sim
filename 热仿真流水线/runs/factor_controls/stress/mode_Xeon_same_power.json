@@ -1,0 +1,12 @@
+{
+  "tag": "mode_Xeon_same_power",
+  "fill_material": "silicon",
+  "vm_max_MPa": 85.05204783169462,
+  "vm_name": "Xeon",
+  "cpu_mean_MPa": 34.53134351407725,
+  "cpu_max_MPa": 85.05204783169462,
+  "cpu_n": 120,
+  "atsim_Tmax_C": 68.55921295962793,
+  "elapsed_s": 12.776910543441772,
+  "ndof": 35808
+}

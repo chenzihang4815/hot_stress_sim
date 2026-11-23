@@ -1,0 +1,3251 @@
+{
+  "timestamp": "2026-01-23T17:20:10",
+  "model": "BERT",
+  "total_tiers": 43,
+  "tiers": [
+    {
+      "tier_id": 0,
+      "layers": [
+        {
+          "layer_id": 0,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.63257e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.36815e-07
+        },
+        {
+          "layer_id": 1,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.6447e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.37351e-07
+        },
+        {
+          "layer_id": 2,
+          "tile_count": 4,
+          "tier_total_energy_pJ": 4.92892e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 2.17507e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 2.0206190000000002e-05,
+        "total_latency_all_layers_ns": 67983.0,
+        "num_layers_in_tier": 3
+      }
+    },
+    {
+      "tier_id": 1,
+      "layers": [
+        {
+          "layer_id": 2,
+          "tile_count": 2,
+          "tier_total_energy_pJ": 2.4743e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 1.09188e-07
+        },
+        {
+          "layer_id": 3,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.26788e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.31923e-08
+        },
+        {
+          "layer_id": 4,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 5,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.26791e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.31926e-08
+        },
+        {
+          "layer_id": 6,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 7,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.26834e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.3197e-08
+        },
+        {
+          "layer_id": 8,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 9,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.27152e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.32294e-08
+        },
+        {
+          "layer_id": 10,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 11,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.27033e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.32173e-08
+        },
+        {
+          "layer_id": 12,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 13,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.26873e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.32009e-08
+        },
+        {
+          "layer_id": 14,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 15,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.26803e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.31937e-08
+        },
+        {
+          "layer_id": 16,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 17,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.26888e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.32025e-08
+        },
+        {
+          "layer_id": 18,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 19,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.2681e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.31945e-08
+        },
+        {
+          "layer_id": 20,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 21,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.26707e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.31839e-08
+        },
+        {
+          "layer_id": 22,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 23,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.26616e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.31746e-08
+        },
+        {
+          "layer_id": 24,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 25,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.26766e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.31899e-08
+        },
+        {
+          "layer_id": 26,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 27,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.08816e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.12791e-07
+        },
+        {
+          "layer_id": 28,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 1.42654e-05,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 6.29512e-07
+        },
+        {
+          "layer_id": 33,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.28734e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.33913e-08
+        },
+        {
+          "layer_id": 34,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 35,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.28898e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.3408e-08
+        },
+        {
+          "layer_id": 36,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 37,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29155e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34343e-08
+        },
+        {
+          "layer_id": 38,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 39,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.28836e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34017e-08
+        },
+        {
+          "layer_id": 40,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 41,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.28903e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34085e-08
+        },
+        {
+          "layer_id": 42,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 43,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.28842e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34022e-08
+        },
+        {
+          "layer_id": 44,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 45,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.28946e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34129e-08
+        },
+        {
+          "layer_id": 46,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 47,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.289e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34082e-08
+        },
+        {
+          "layer_id": 48,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 49,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.28713e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.33891e-08
+        },
+        {
+          "layer_id": 50,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 51,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29061e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34247e-08
+        },
+        {
+          "layer_id": 52,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 53,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.28787e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.33967e-08
+        },
+        {
+          "layer_id": 54,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 55,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.28871e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34053e-08
+        },
+        {
+          "layer_id": 56,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 63,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31461e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36701e-08
+        },
+        {
+          "layer_id": 64,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 65,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31285e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.3652e-08
+        },
+        {
+          "layer_id": 66,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 67,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31498e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36739e-08
+        },
+        {
+          "layer_id": 68,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 69,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31336e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36574e-08
+        },
+        {
+          "layer_id": 70,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 71,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31372e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.3661e-08
+        },
+        {
+          "layer_id": 72,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 73,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31481e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36722e-08
+        },
+        {
+          "layer_id": 74,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 75,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31419e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36658e-08
+        },
+        {
+          "layer_id": 76,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 77,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31178e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36411e-08
+        },
+        {
+          "layer_id": 78,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 79,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31176e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36409e-08
+        },
+        {
+          "layer_id": 80,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 81,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31832e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.3708e-08
+        },
+        {
+          "layer_id": 82,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 83,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31255e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.3649e-08
+        },
+        {
+          "layer_id": 84,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 85,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.3155e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36792e-08
+        },
+        {
+          "layer_id": 86,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 93,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29485e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34681e-08
+        },
+        {
+          "layer_id": 94,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 95,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29672e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34871e-08
+        },
+        {
+          "layer_id": 96,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 97,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29272e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34462e-08
+        },
+        {
+          "layer_id": 98,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 99,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29727e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34928e-08
+        },
+        {
+          "layer_id": 100,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 101,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29723e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34924e-08
+        },
+        {
+          "layer_id": 102,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 103,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29432e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34626e-08
+        },
+        {
+          "layer_id": 104,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 105,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29466e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34661e-08
+        },
+        {
+          "layer_id": 106,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 107,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29824e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35027e-08
+        },
+        {
+          "layer_id": 108,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 109,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29423e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34616e-08
+        },
+        {
+          "layer_id": 110,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 111,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.2972e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34921e-08
+        },
+        {
+          "layer_id": 112,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 113,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29455e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.3465e-08
+        },
+        {
+          "layer_id": 114,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 115,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29701e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34901e-08
+        },
+        {
+          "layer_id": 116,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 123,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.2966e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34859e-08
+        },
+        {
+          "layer_id": 124,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 125,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29445e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34639e-08
+        },
+        {
+          "layer_id": 126,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 127,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29592e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34789e-08
+        },
+        {
+          "layer_id": 128,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 129,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29664e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34864e-08
+        },
+        {
+          "layer_id": 130,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 131,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.2969e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.3489e-08
+        },
+        {
+          "layer_id": 132,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 133,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29756e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34958e-08
+        },
+        {
+          "layer_id": 134,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 135,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29812e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35014e-08
+        },
+        {
+          "layer_id": 136,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 137,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29457e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34651e-08
+        },
+        {
+          "layer_id": 138,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 139,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29586e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34784e-08
+        },
+        {
+          "layer_id": 140,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 141,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29907e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35112e-08
+        },
+        {
+          "layer_id": 142,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 143,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29888e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35092e-08
+        },
+        {
+          "layer_id": 144,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 145,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29907e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35112e-08
+        },
+        {
+          "layer_id": 146,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 153,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30805e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.3603e-08
+        },
+        {
+          "layer_id": 154,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 155,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31053e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36283e-08
+        },
+        {
+          "layer_id": 156,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 157,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30855e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36081e-08
+        },
+        {
+          "layer_id": 158,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 159,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30875e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36102e-08
+        },
+        {
+          "layer_id": 160,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 161,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.3078e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36005e-08
+        },
+        {
+          "layer_id": 162,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 163,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30677e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35899e-08
+        },
+        {
+          "layer_id": 164,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 165,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30506e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35724e-08
+        },
+        {
+          "layer_id": 166,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 167,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30585e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35805e-08
+        },
+        {
+          "layer_id": 168,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 169,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30473e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35691e-08
+        },
+        {
+          "layer_id": 170,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 171,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30818e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36043e-08
+        },
+        {
+          "layer_id": 172,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 173,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31006e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36235e-08
+        },
+        {
+          "layer_id": 174,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 175,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30422e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35638e-08
+        },
+        {
+          "layer_id": 176,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 183,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31868e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.37118e-08
+        },
+        {
+          "layer_id": 184,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 185,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.3174e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36986e-08
+        },
+        {
+          "layer_id": 186,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 187,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31763e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.3701e-08
+        },
+        {
+          "layer_id": 188,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 189,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.3164e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36884e-08
+        },
+        {
+          "layer_id": 190,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 191,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31738e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36984e-08
+        },
+        {
+          "layer_id": 192,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 193,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31693e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36939e-08
+        },
+        {
+          "layer_id": 194,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 195,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31864e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.37114e-08
+        },
+        {
+          "layer_id": 196,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 197,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31805e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.37052e-08
+        },
+        {
+          "layer_id": 198,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 199,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.32025e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.37277e-08
+        },
+        {
+          "layer_id": 200,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 201,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31614e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36858e-08
+        },
+        {
+          "layer_id": 202,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 203,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31728e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36974e-08
+        },
+        {
+          "layer_id": 204,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 205,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31744e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.3699e-08
+        },
+        {
+          "layer_id": 206,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 213,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31696e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36941e-08
+        },
+        {
+          "layer_id": 214,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 215,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31861e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.3711e-08
+        },
+        {
+          "layer_id": 216,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 217,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31541e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36782e-08
+        },
+        {
+          "layer_id": 218,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 219,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31862e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.37111e-08
+        },
+        {
+          "layer_id": 220,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 221,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31743e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.3699e-08
+        },
+        {
+          "layer_id": 222,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 223,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31697e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36943e-08
+        },
+        {
+          "layer_id": 224,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 225,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31467e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36707e-08
+        },
+        {
+          "layer_id": 226,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 227,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.32182e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.37438e-08
+        },
+        {
+          "layer_id": 228,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 229,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31576e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.36819e-08
+        },
+        {
+          "layer_id": 230,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 231,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31785e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.37033e-08
+        },
+        {
+          "layer_id": 232,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 233,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31986e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.37238e-08
+        },
+        {
+          "layer_id": 234,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 235,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.31801e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.37049e-08
+        },
+        {
+          "layer_id": 236,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 243,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30257e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.3547e-08
+        },
+        {
+          "layer_id": 244,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 245,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30009e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35216e-08
+        },
+        {
+          "layer_id": 246,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 247,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30148e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35358e-08
+        },
+        {
+          "layer_id": 248,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 249,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29664e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34864e-08
+        },
+        {
+          "layer_id": 250,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 251,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29874e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35078e-08
+        },
+        {
+          "layer_id": 252,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 253,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.3014e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.3535e-08
+        },
+        {
+          "layer_id": 254,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 255,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29947e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35152e-08
+        },
+        {
+          "layer_id": 256,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 257,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29956e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35162e-08
+        },
+        {
+          "layer_id": 258,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 259,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30172e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35382e-08
+        },
+        {
+          "layer_id": 260,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 261,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29929e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35135e-08
+        },
+        {
+          "layer_id": 262,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 263,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29929e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35134e-08
+        },
+        {
+          "layer_id": 264,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 265,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29633e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34831e-08
+        },
+        {
+          "layer_id": 266,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 273,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30248e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.3546e-08
+        },
+        {
+          "layer_id": 274,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 275,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29901e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35106e-08
+        },
+        {
+          "layer_id": 276,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 277,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30002e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35209e-08
+        },
+        {
+          "layer_id": 278,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 279,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30075e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35284e-08
+        },
+        {
+          "layer_id": 280,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 281,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30275e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35488e-08
+        },
+        {
+          "layer_id": 282,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 283,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30425e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35641e-08
+        },
+        {
+          "layer_id": 284,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 285,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30211e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35423e-08
+        },
+        {
+          "layer_id": 286,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 287,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30176e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35387e-08
+        },
+        {
+          "layer_id": 288,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 289,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30266e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35479e-08
+        },
+        {
+          "layer_id": 290,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 291,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30244e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35457e-08
+        },
+        {
+          "layer_id": 292,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 293,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30244e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35456e-08
+        },
+        {
+          "layer_id": 294,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 295,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30326e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.3554e-08
+        },
+        {
+          "layer_id": 296,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 303,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29375e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34568e-08
+        },
+        {
+          "layer_id": 304,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 305,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29447e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34641e-08
+        },
+        {
+          "layer_id": 306,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 307,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29211e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.344e-08
+        },
+        {
+          "layer_id": 308,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 309,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29378e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34571e-08
+        },
+        {
+          "layer_id": 310,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 311,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29135e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34322e-08
+        },
+        {
+          "layer_id": 312,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 313,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29454e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34649e-08
+        },
+        {
+          "layer_id": 314,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 315,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29524e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.3472e-08
+        },
+        {
+          "layer_id": 316,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 317,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29205e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34394e-08
+        },
+        {
+          "layer_id": 318,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 319,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.2918e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34368e-08
+        },
+        {
+          "layer_id": 320,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 321,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.28991e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34175e-08
+        },
+        {
+          "layer_id": 322,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 323,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29329e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34521e-08
+        },
+        {
+          "layer_id": 324,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 325,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29046e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34232e-08
+        },
+        {
+          "layer_id": 326,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 333,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29937e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35142e-08
+        },
+        {
+          "layer_id": 334,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 335,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30053e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35261e-08
+        },
+        {
+          "layer_id": 336,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 337,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.2975e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34952e-08
+        },
+        {
+          "layer_id": 338,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 339,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30004e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35211e-08
+        },
+        {
+          "layer_id": 340,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 341,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29761e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34963e-08
+        },
+        {
+          "layer_id": 342,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 343,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.301e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35309e-08
+        },
+        {
+          "layer_id": 344,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 345,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29931e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35137e-08
+        },
+        {
+          "layer_id": 346,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 347,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29757e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.34958e-08
+        },
+        {
+          "layer_id": 348,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 349,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30027e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35234e-08
+        },
+        {
+          "layer_id": 350,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 351,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.29943e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35148e-08
+        },
+        {
+          "layer_id": 352,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 353,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30123e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35333e-08
+        },
+        {
+          "layer_id": 354,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        },
+        {
+          "layer_id": 355,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 2.30282e-07,
+          "tier_max_latency_ns": 9778.62,
+          "tier_total_power_uW": 2.35495e-08
+        },
+        {
+          "layer_id": 356,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.10818e-07,
+          "tier_max_latency_ns": 6637.25,
+          "tier_total_power_uW": 1.66964e-08
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 7.290673399999998e-05,
+        "total_latency_all_layers_ns": 2431868.280000009,
+        "num_layers_in_tier": 291
+      }
+    },
+    {
+      "tier_id": 2,
+      "layers": [
+        {
+          "layer_id": 28,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 1.42388e-05,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 6.28342e-07
+        },
+        {
+          "layer_id": 29,
+          "tile_count": 10,
+          "tier_total_energy_pJ": 1.60401e-05,
+          "tier_max_latency_ns": 27013,
+          "tier_total_power_uW": 5.9379e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 3.02789e-05,
+        "total_latency_all_layers_ns": 49674.0,
+        "num_layers_in_tier": 2
+      }
+    },
+    {
+      "tier_id": 3,
+      "layers": [
+        {
+          "layer_id": 29,
+          "tile_count": 8,
+          "tier_total_energy_pJ": 1.28435e-05,
+          "tier_max_latency_ns": 27013,
+          "tier_total_power_uW": 4.75456e-07
+        },
+        {
+          "layer_id": 30,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.70871e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.40175e-07
+        },
+        {
+          "layer_id": 31,
+          "tile_count": 2,
+          "tier_total_energy_pJ": 2.57378e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 1.13578e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 2.312599e-05,
+        "total_latency_all_layers_ns": 72335.0,
+        "num_layers_in_tier": 3
+      }
+    },
+    {
+      "tier_id": 4,
+      "layers": [
+        {
+          "layer_id": 31,
+          "tile_count": 4,
+          "tier_total_energy_pJ": 5.14557e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 2.27067e-07
+        },
+        {
+          "layer_id": 32,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.44068e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.28348e-07
+        },
+        {
+          "layer_id": 57,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.10318e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.13454e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 1.968943e-05,
+        "total_latency_all_layers_ns": 67983.0,
+        "num_layers_in_tier": 3
+      }
+    },
+    {
+      "tier_id": 5,
+      "layers": [
+        {
+          "layer_id": 58,
+          "tile_count": 16,
+          "tier_total_energy_pJ": 1.90221e-05,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 8.3942e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 1.90221e-05,
+        "total_latency_all_layers_ns": 22661.0,
+        "num_layers_in_tier": 1
+      }
+    },
+    {
+      "tier_id": 6,
+      "layers": [
+        {
+          "layer_id": 58,
+          "tile_count": 8,
+          "tier_total_energy_pJ": 9.48552e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 4.18583e-07
+        },
+        {
+          "layer_id": 59,
+          "tile_count": 8,
+          "tier_total_energy_pJ": 1.27635e-05,
+          "tier_max_latency_ns": 27013,
+          "tier_total_power_uW": 4.72495e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 2.224902e-05,
+        "total_latency_all_layers_ns": 49674.0,
+        "num_layers_in_tier": 2
+      }
+    },
+    {
+      "tier_id": 7,
+      "layers": [
+        {
+          "layer_id": 59,
+          "tile_count": 10,
+          "tier_total_energy_pJ": 1.5992e-05,
+          "tier_max_latency_ns": 27013,
+          "tier_total_power_uW": 5.92013e-07
+        },
+        {
+          "layer_id": 60,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.87654e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.47581e-07
+        },
+        {
+          "layer_id": 61,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.84303e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.46103e-07
+        },
+        {
+          "layer_id": 62,
+          "tile_count": 3,
+          "tier_total_energy_pJ": 3.76108e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 1.65972e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 3.547265e-05,
+        "total_latency_all_layers_ns": 94996.0,
+        "num_layers_in_tier": 4
+      }
+    },
+    {
+      "tier_id": 8,
+      "layers": [
+        {
+          "layer_id": 62,
+          "tile_count": 3,
+          "tier_total_energy_pJ": 3.75153e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 1.6555e-07
+        },
+        {
+          "layer_id": 87,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.10595e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.13576e-07
+        },
+        {
+          "layer_id": 88,
+          "tile_count": 7,
+          "tier_total_energy_pJ": 8.33049e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.67614e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 1.918797e-05,
+        "total_latency_all_layers_ns": 67983.0,
+        "num_layers_in_tier": 3
+      }
+    },
+    {
+      "tier_id": 9,
+      "layers": [
+        {
+          "layer_id": 88,
+          "tile_count": 16,
+          "tier_total_energy_pJ": 1.90158e-05,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 8.39143e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 1.90158e-05,
+        "total_latency_all_layers_ns": 22661.0,
+        "num_layers_in_tier": 1
+      }
+    },
+    {
+      "tier_id": 10,
+      "layers": [
+        {
+          "layer_id": 88,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.20252e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 5.30655e-08
+        },
+        {
+          "layer_id": 89,
+          "tile_count": 15,
+          "tier_total_energy_pJ": 2.37433e-05,
+          "tier_max_latency_ns": 27013,
+          "tier_total_power_uW": 8.78959e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 2.494582e-05,
+        "total_latency_all_layers_ns": 49674.0,
+        "num_layers_in_tier": 2
+      }
+    },
+    {
+      "tier_id": 11,
+      "layers": [
+        {
+          "layer_id": 89,
+          "tile_count": 3,
+          "tier_total_energy_pJ": 4.77256e-06,
+          "tier_max_latency_ns": 27013,
+          "tier_total_power_uW": 1.76676e-07
+        },
+        {
+          "layer_id": 90,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.77387e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.4305e-07
+        },
+        {
+          "layer_id": 91,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.80178e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.44282e-07
+        },
+        {
+          "layer_id": 92,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.27006e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 5.60463e-08
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 2.161827e-05,
+        "total_latency_all_layers_ns": 94996.0,
+        "num_layers_in_tier": 4
+      }
+    },
+    {
+      "tier_id": 12,
+      "layers": [
+        {
+          "layer_id": 92,
+          "tile_count": 5,
+          "tier_total_energy_pJ": 6.28115e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 2.77179e-07
+        },
+        {
+          "layer_id": 117,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.18717e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.1716e-07
+        },
+        {
+          "layer_id": 118,
+          "tile_count": 14,
+          "tier_total_energy_pJ": 1.66814e-05,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 7.3613e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 3.014972e-05,
+        "total_latency_all_layers_ns": 67983.0,
+        "num_layers_in_tier": 3
+      }
+    },
+    {
+      "tier_id": 13,
+      "layers": [
+        {
+          "layer_id": 118,
+          "tile_count": 10,
+          "tier_total_energy_pJ": 1.19237e-05,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 5.26176e-07
+        },
+        {
+          "layer_id": 119,
+          "tile_count": 15,
+          "tier_total_energy_pJ": 2.3977e-05,
+          "tier_max_latency_ns": 27013,
+          "tier_total_power_uW": 8.8761e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 3.59007e-05,
+        "total_latency_all_layers_ns": 49674.0,
+        "num_layers_in_tier": 2
+      }
+    },
+    {
+      "tier_id": 14,
+      "layers": [
+        {
+          "layer_id": 119,
+          "tile_count": 3,
+          "tier_total_energy_pJ": 4.80635e-06,
+          "tier_max_latency_ns": 27013,
+          "tier_total_power_uW": 1.77927e-07
+        },
+        {
+          "layer_id": 120,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.77994e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.43318e-07
+        },
+        {
+          "layer_id": 121,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.75363e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.42157e-07
+        },
+        {
+          "layer_id": 122,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.27616e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 5.63152e-08
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 2.161608e-05,
+        "total_latency_all_layers_ns": 94996.0,
+        "num_layers_in_tier": 4
+      }
+    },
+    {
+      "tier_id": 15,
+      "layers": [
+        {
+          "layer_id": 122,
+          "tile_count": 5,
+          "tier_total_energy_pJ": 6.30207e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 2.78102e-07
+        },
+        {
+          "layer_id": 147,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.27869e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.21199e-07
+        },
+        {
+          "layer_id": 148,
+          "tile_count": 5,
+          "tier_total_energy_pJ": 5.95161e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 2.62637e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 1.953237e-05,
+        "total_latency_all_layers_ns": 67983.0,
+        "num_layers_in_tier": 3
+      }
+    },
+    {
+      "tier_id": 16,
+      "layers": [
+        {
+          "layer_id": 148,
+          "tile_count": 16,
+          "tier_total_energy_pJ": 1.90019e-05,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 8.38527e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 1.90019e-05,
+        "total_latency_all_layers_ns": 22661.0,
+        "num_layers_in_tier": 1
+      }
+    },
+    {
+      "tier_id": 17,
+      "layers": [
+        {
+          "layer_id": 148,
+          "tile_count": 3,
+          "tier_total_energy_pJ": 3.57512e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 1.57765e-07
+        },
+        {
+          "layer_id": 149,
+          "tile_count": 13,
+          "tier_total_energy_pJ": 2.08221e-05,
+          "tier_max_latency_ns": 27013,
+          "tier_total_power_uW": 7.70818e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 2.439722e-05,
+        "total_latency_all_layers_ns": 49674.0,
+        "num_layers_in_tier": 2
+      }
+    },
+    {
+      "tier_id": 18,
+      "layers": [
+        {
+          "layer_id": 149,
+          "tile_count": 5,
+          "tier_total_energy_pJ": 8.02459e-06,
+          "tier_max_latency_ns": 27013,
+          "tier_total_power_uW": 2.97064e-07
+        },
+        {
+          "layer_id": 150,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.84572e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.46221e-07
+        },
+        {
+          "layer_id": 151,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.84983e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.46403e-07
+        },
+        {
+          "layer_id": 152,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.5264e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.3213e-07
+        },
+        {
+          "layer_id": 177,
+          "tile_count": 2,
+          "tier_total_energy_pJ": 2.46769e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 1.08896e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 3.3714230000000005e-05,
+        "total_latency_all_layers_ns": 117657.0,
+        "num_layers_in_tier": 5
+      }
+    },
+    {
+      "tier_id": 19,
+      "layers": [
+        {
+          "layer_id": 177,
+          "tile_count": 4,
+          "tier_total_energy_pJ": 4.90616e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 2.16502e-07
+        },
+        {
+          "layer_id": 178,
+          "tile_count": 21,
+          "tier_total_energy_pJ": 2.50065e-05,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 1.1035e-06
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 2.991266e-05,
+        "total_latency_all_layers_ns": 45322.0,
+        "num_layers_in_tier": 2
+      }
+    },
+    {
+      "tier_id": 20,
+      "layers": [
+        {
+          "layer_id": 178,
+          "tile_count": 3,
+          "tier_total_energy_pJ": 3.58415e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 1.58164e-07
+        },
+        {
+          "layer_id": 179,
+          "tile_count": 13,
+          "tier_total_energy_pJ": 2.06667e-05,
+          "tier_max_latency_ns": 27013,
+          "tier_total_power_uW": 7.65065e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 2.425085e-05,
+        "total_latency_all_layers_ns": 49674.0,
+        "num_layers_in_tier": 2
+      }
+    },
+    {
+      "tier_id": 21,
+      "layers": [
+        {
+          "layer_id": 179,
+          "tile_count": 5,
+          "tier_total_energy_pJ": 7.95209e-06,
+          "tier_max_latency_ns": 27013,
+          "tier_total_power_uW": 2.9438e-07
+        },
+        {
+          "layer_id": 180,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.87911e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.47695e-07
+        },
+        {
+          "layer_id": 181,
+          "tile_count": 5,
+          "tier_total_energy_pJ": 6.54823e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 2.88965e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 2.237943e-05,
+        "total_latency_all_layers_ns": 72335.0,
+        "num_layers_in_tier": 3
+      }
+    },
+    {
+      "tier_id": 22,
+      "layers": [
+        {
+          "layer_id": 181,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.32539e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 5.84877e-08
+        },
+        {
+          "layer_id": 182,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.46241e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.29306e-07
+        },
+        {
+          "layer_id": 207,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.30843e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.22512e-07
+        },
+        {
+          "layer_id": 208,
+          "tile_count": 3,
+          "tier_total_energy_pJ": 3.57348e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 1.57693e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 1.966971e-05,
+        "total_latency_all_layers_ns": 90644.0,
+        "num_layers_in_tier": 4
+      }
+    },
+    {
+      "tier_id": 23,
+      "layers": [
+        {
+          "layer_id": 208,
+          "tile_count": 16,
+          "tier_total_energy_pJ": 1.89733e-05,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 8.37265e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 1.89733e-05,
+        "total_latency_all_layers_ns": 22661.0,
+        "num_layers_in_tier": 1
+      }
+    },
+    {
+      "tier_id": 24,
+      "layers": [
+        {
+          "layer_id": 208,
+          "tile_count": 5,
+          "tier_total_energy_pJ": 5.95223e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 2.62664e-07
+        },
+        {
+          "layer_id": 209,
+          "tile_count": 18,
+          "tier_total_energy_pJ": 2.8041e-05,
+          "tier_max_latency_ns": 27013,
+          "tier_total_power_uW": 1.03806e-06
+        },
+        {
+          "layer_id": 210,
+          "tile_count": 2,
+          "tier_total_energy_pJ": 2.65012e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 1.16946e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 3.664335e-05,
+        "total_latency_all_layers_ns": 72335.0,
+        "num_layers_in_tier": 3
+      }
+    },
+    {
+      "tier_id": 25,
+      "layers": [
+        {
+          "layer_id": 210,
+          "tile_count": 4,
+          "tier_total_energy_pJ": 5.27101e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 2.32603e-07
+        },
+        {
+          "layer_id": 211,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.8889e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.48127e-07
+        },
+        {
+          "layer_id": 212,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.40243e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.26659e-07
+        },
+        {
+          "layer_id": 237,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.32688e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.23325e-07
+        },
+        {
+          "layer_id": 238,
+          "tile_count": 3,
+          "tier_total_energy_pJ": 3.56488e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 1.57313e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 3.14541e-05,
+        "total_latency_all_layers_ns": 113305.0,
+        "num_layers_in_tier": 5
+      }
+    },
+    {
+      "tier_id": 26,
+      "layers": [
+        {
+          "layer_id": 238,
+          "tile_count": 16,
+          "tier_total_energy_pJ": 1.88765e-05,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 8.32995e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 1.88765e-05,
+        "total_latency_all_layers_ns": 22661.0,
+        "num_layers_in_tier": 1
+      }
+    },
+    {
+      "tier_id": 27,
+      "layers": [
+        {
+          "layer_id": 238,
+          "tile_count": 5,
+          "tier_total_energy_pJ": 5.89033e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 2.59932e-07
+        },
+        {
+          "layer_id": 239,
+          "tile_count": 11,
+          "tier_total_energy_pJ": 1.71716e-05,
+          "tier_max_latency_ns": 27013,
+          "tier_total_power_uW": 6.35678e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 2.306193e-05,
+        "total_latency_all_layers_ns": 49674.0,
+        "num_layers_in_tier": 2
+      }
+    },
+    {
+      "tier_id": 28,
+      "layers": [
+        {
+          "layer_id": 239,
+          "tile_count": 7,
+          "tier_total_energy_pJ": 1.09737e-05,
+          "tier_max_latency_ns": 27013,
+          "tier_total_power_uW": 4.06236e-07
+        },
+        {
+          "layer_id": 240,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.78308e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.43457e-07
+        },
+        {
+          "layer_id": 241,
+          "tile_count": 3,
+          "tier_total_energy_pJ": 3.90392e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 1.72275e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 2.26607e-05,
+        "total_latency_all_layers_ns": 72335.0,
+        "num_layers_in_tier": 3
+      }
+    },
+    {
+      "tier_id": 29,
+      "layers": [
+        {
+          "layer_id": 241,
+          "tile_count": 3,
+          "tier_total_energy_pJ": 3.90763e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 1.72439e-07
+        },
+        {
+          "layer_id": 242,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.38536e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.25906e-07
+        },
+        {
+          "layer_id": 267,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.24409e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.19672e-07
+        },
+        {
+          "layer_id": 268,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.19299e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 5.2645e-08
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 1.973007e-05,
+        "total_latency_all_layers_ns": 90644.0,
+        "num_layers_in_tier": 4
+      }
+    },
+    {
+      "tier_id": 30,
+      "layers": [
+        {
+          "layer_id": 268,
+          "tile_count": 23,
+          "tier_total_energy_pJ": 2.70153e-05,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 1.19215e-06
+        },
+        {
+          "layer_id": 269,
+          "tile_count": 2,
+          "tier_total_energy_pJ": 3.16621e-06,
+          "tier_max_latency_ns": 27013,
+          "tier_total_power_uW": 1.17211e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 3.018151e-05,
+        "total_latency_all_layers_ns": 49674.0,
+        "num_layers_in_tier": 2
+      }
+    },
+    {
+      "tier_id": 31,
+      "layers": [
+        {
+          "layer_id": 269,
+          "tile_count": 16,
+          "tier_total_energy_pJ": 2.50896e-05,
+          "tier_max_latency_ns": 27013,
+          "tier_total_power_uW": 9.28797e-07
+        },
+        {
+          "layer_id": 270,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.81837e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.45014e-07
+        },
+        {
+          "layer_id": 271,
+          "tile_count": 3,
+          "tier_total_energy_pJ": 3.89421e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 1.71846e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 3.6802180000000003e-05,
+        "total_latency_all_layers_ns": 72335.0,
+        "num_layers_in_tier": 3
+      }
+    },
+    {
+      "tier_id": 32,
+      "layers": [
+        {
+          "layer_id": 271,
+          "tile_count": 3,
+          "tier_total_energy_pJ": 3.88466e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 1.71425e-07
+        },
+        {
+          "layer_id": 272,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.41273e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.27114e-07
+        },
+        {
+          "layer_id": 297,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.24657e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.19781e-07
+        },
+        {
+          "layer_id": 298,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.19398e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 5.26888e-08
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 1.9737940000000002e-05,
+        "total_latency_all_layers_ns": 90644.0,
+        "num_layers_in_tier": 4
+      }
+    },
+    {
+      "tier_id": 33,
+      "layers": [
+        {
+          "layer_id": 298,
+          "tile_count": 16,
+          "tier_total_energy_pJ": 1.88085e-05,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 8.29994e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 1.88085e-05,
+        "total_latency_all_layers_ns": 22661.0,
+        "num_layers_in_tier": 1
+      }
+    },
+    {
+      "tier_id": 34,
+      "layers": [
+        {
+          "layer_id": 298,
+          "tile_count": 7,
+          "tier_total_energy_pJ": 8.20884e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.62245e-07
+        },
+        {
+          "layer_id": 299,
+          "tile_count": 9,
+          "tier_total_energy_pJ": 1.38831e-05,
+          "tier_max_latency_ns": 27013,
+          "tier_total_power_uW": 5.13942e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 2.209194e-05,
+        "total_latency_all_layers_ns": 49674.0,
+        "num_layers_in_tier": 2
+      }
+    },
+    {
+      "tier_id": 35,
+      "layers": [
+        {
+          "layer_id": 299,
+          "tile_count": 9,
+          "tier_total_energy_pJ": 1.38831e-05,
+          "tier_max_latency_ns": 27013,
+          "tier_total_power_uW": 5.13942e-07
+        },
+        {
+          "layer_id": 300,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.73482e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.41327e-07
+        },
+        {
+          "layer_id": 301,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.30807e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 5.77236e-08
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 2.292599e-05,
+        "total_latency_all_layers_ns": 72335.0,
+        "num_layers_in_tier": 3
+      }
+    },
+    {
+      "tier_id": 36,
+      "layers": [
+        {
+          "layer_id": 301,
+          "tile_count": 5,
+          "tier_total_energy_pJ": 6.4933e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 2.86541e-07
+        },
+        {
+          "layer_id": 302,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.44438e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.28511e-07
+        },
+        {
+          "layer_id": 327,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.30933e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.22551e-07
+        },
+        {
+          "layer_id": 328,
+          "tile_count": 8,
+          "tier_total_energy_pJ": 9.37533e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 4.13721e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 3.062234e-05,
+        "total_latency_all_layers_ns": 90644.0,
+        "num_layers_in_tier": 4
+      }
+    },
+    {
+      "tier_id": 37,
+      "layers": [
+        {
+          "layer_id": 328,
+          "tile_count": 16,
+          "tier_total_energy_pJ": 1.87214e-05,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 8.26152e-07
+        },
+        {
+          "layer_id": 329,
+          "tile_count": 9,
+          "tier_total_energy_pJ": 1.39285e-05,
+          "tier_max_latency_ns": 27013,
+          "tier_total_power_uW": 5.15621e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 3.26499e-05,
+        "total_latency_all_layers_ns": 49674.0,
+        "num_layers_in_tier": 2
+      }
+    },
+    {
+      "tier_id": 38,
+      "layers": [
+        {
+          "layer_id": 329,
+          "tile_count": 9,
+          "tier_total_energy_pJ": 1.38765e-05,
+          "tier_max_latency_ns": 27013,
+          "tier_total_power_uW": 5.13697e-07
+        },
+        {
+          "layer_id": 330,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.77466e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.43085e-07
+        },
+        {
+          "layer_id": 331,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.30497e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 5.75865e-08
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 2.2956129999999997e-05,
+        "total_latency_all_layers_ns": 72335.0,
+        "num_layers_in_tier": 3
+      }
+    },
+    {
+      "tier_id": 39,
+      "layers": [
+        {
+          "layer_id": 331,
+          "tile_count": 5,
+          "tier_total_energy_pJ": 6.46823e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 2.85434e-07
+        },
+        {
+          "layer_id": 332,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 7.50349e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 3.31119e-07
+        },
+        {
+          "layer_id": 357,
+          "tile_count": 5,
+          "tier_total_energy_pJ": 6.20591e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 2.73859e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 2.017763e-05,
+        "total_latency_all_layers_ns": 67983.0,
+        "num_layers_in_tier": 3
+      }
+    },
+    {
+      "tier_id": 40,
+      "layers": [
+        {
+          "layer_id": 357,
+          "tile_count": 1,
+          "tier_total_energy_pJ": 1.25693e-06,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 5.54665e-08
+        },
+        {
+          "layer_id": 358,
+          "tile_count": 15,
+          "tier_total_energy_pJ": 1.75451e-05,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 7.74241e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 1.880203e-05,
+        "total_latency_all_layers_ns": 45322.0,
+        "num_layers_in_tier": 2
+      }
+    },
+    {
+      "tier_id": 41,
+      "layers": [
+        {
+          "layer_id": 358,
+          "tile_count": 9,
+          "tier_total_energy_pJ": 1.05047e-05,
+          "tier_max_latency_ns": 22661,
+          "tier_total_power_uW": 4.63558e-07
+        },
+        {
+          "layer_id": 359,
+          "tile_count": 7,
+          "tier_total_energy_pJ": 1.0975e-05,
+          "tier_max_latency_ns": 27013,
+          "tier_total_power_uW": 4.06288e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 2.14797e-05,
+        "total_latency_all_layers_ns": 49674.0,
+        "num_layers_in_tier": 2
+      }
+    },
+    {
+      "tier_id": 42,
+      "layers": [
+        {
+          "layer_id": 359,
+          "tile_count": 11,
+          "tier_total_energy_pJ": 1.72003e-05,
+          "tier_max_latency_ns": 27013,
+          "tier_total_power_uW": 6.36741e-07
+        },
+        {
+          "layer_id": 360,
+          "tile_count": 6,
+          "tier_total_energy_pJ": 5.97817e-08,
+          "tier_max_latency_ns": 176.375,
+          "tier_total_power_uW": 3.38947e-07
+        }
+      ],
+      "tier_aggregated": {
+        "total_energy_all_layers_pJ": 1.72600817e-05,
+        "total_latency_all_layers_ns": 27189.375,
+        "num_layers_in_tier": 2
+      }
+    }
+  ]
+}

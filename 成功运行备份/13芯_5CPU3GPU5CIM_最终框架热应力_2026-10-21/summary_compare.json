@@ -1,0 +1,14 @@
+{
+  "case": "pkg_5cpu_3gpu_5cim",
+  "n_chiplets": 13,
+  "ATSim_Tmax_C": 75.59996172273719,
+  "HotSpot_chip_Tmax_C": 72.17000000000002,
+  "Tmax_dT_C": -3.4299617227371755,
+  "Tmax_rel_pct": -4.536988702873366,
+  "vm_max_package_MPa": 803.5308120910802,
+  "u_max_um": 26.289784128465286,
+  "warpage_PV_um": 4.5637329164126434,
+  "heat_s": 13.442954778671265,
+  "elast_s": 629.3420057296753,
+  "note": "HotSpot is block average; ATSim center is die mid probe. vm_max is whole-package solid, not chip center."
+}

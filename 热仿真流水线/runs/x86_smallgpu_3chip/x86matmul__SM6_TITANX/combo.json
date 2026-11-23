@@ -1,0 +1,16 @@
+{
+  "mix": "x86matmul__SM6_TITANX",
+  "CPU_task": "x86 TimingSimpleCPU + L1/L2，64x64 matmul（静态 gcc -static）；P=RuntimeDynamic(0.217977)+Leakage(0.78389)",
+  "CPU_mm2": 13.6345,
+  "CPU_W": 1.001867,
+  "GPU": "Pascal Titan X / SM6_TITANX，同一份 backprop 轨迹重跑功耗；AccelWattch gpu_tot_avg_power=67.41 W；面积为文献裸片 471.0 mm²",
+  "GPU_mm2": 471.0,
+  "GPU_W": 67.4063,
+  "CIM": "jia_jssc_2020",
+  "CIM_mm2": 4.281226257942074,
+  "CIM_W": 0.0027731351494352146,
+  "outline_mm2": 628.7473443529694,
+  "HotSpot_Tmax_C": 55.09000000000003,
+  "HotSpot_Tmin_C": 51.28000000000003,
+  "map": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/x86_smallgpu_3chip/x86matmul__SM6_TITANX/x86matmul__SM6_TITANX_hotspot.png"
+}

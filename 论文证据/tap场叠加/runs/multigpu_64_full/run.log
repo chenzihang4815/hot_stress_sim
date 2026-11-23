@@ -1,0 +1,31 @@
+generating initial placement using B*-tree and fastSA
+found a random placement at 0 th trial
+found a random placement at 29 th trial
+  第 10 步 温度 97.22 累计求解 126s 10 次
+found a random placement at 44 th trial
+  第 20 步 温度 96.42 累计求解 251s 20 次
+found a random placement at 3 th trial
+  第 30 步 温度 95.97 累计求解 377s 30 次
+  第 40 步 温度 95.74 累计求解 502s 40 次
+  第 50 步 温度 95.94 累计求解 625s 50 次
+found a random placement at 35 th trial
+found a random placement at 5 th trial
+  第 60 步 温度 94.60 累计求解 750s 60 次
+found a random placement at 15 th trial
+  第 70 步 温度 93.01 累计求解 871s 70 次
+found a random placement at 43 th trial
+found a random placement at 14 th trial
+  第 80 步 温度 93.12 累计求解 993s 80 次
+found a random placement at 2 th trial
+  第 90 步 温度 93.23 累计求解 1114s 90 次
+found a random placement at 8 th trial
+found a random placement at 10 th trial
+  第 100 步 温度 92.81 累计求解 1235s 100 次
+found a random placement at 13 th trial
+found a random placement at 5 th trial
+  第 110 步 温度 93.26 累计求解 1356s 110 次
+found a random placement at 0 th trial
+found a random placement at 117 th trial
+found a random placement at 26 th trial
+  第 120 步 温度 93.61 累计求解 1477s 120 次
+{"case": "multigpu", "rows_search": 64, "mode": "full", "steps": 120, "search_peak_C": 92.67, "final_64_C": 92.67, "solve_secs": 1477.5, "solves": 120, "wall_s": 1479.7}

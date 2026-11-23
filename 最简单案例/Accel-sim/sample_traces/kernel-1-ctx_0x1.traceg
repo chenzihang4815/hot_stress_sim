@@ -1,0 +1,34 @@
+-kernel name = saxpy
+-kernel id = 1
+-grid dim = (2,1,1)
+-block dim = (32,1,1)
+-shmem = 0
+-nregs = 8
+-binary version = 70
+-cuda stream id = 0
+-shmem base_addr = 0x00007f0001000000
+-local mem base_addr = 0x00007f0002000000
+-nvbit version = fake
+-accelsim tracer version = 4
+-enable lineinfo = 0
+#traces format: [line_num] PC mask dest_num [reg_dests] opcode src_num [reg_srcs] mem_width [addresscompress?] [mem_addresses] immediate1 immediate2
+
+#BEGIN_TB
+thread block = 0,0,0
+warp = 0
+insts = 4
+0 0000 ffffffff 1 R1 IMAD.MOV.U32 2 R255 R255 0
+0 0008 ffffffff 1 R2 IADD 2 R1 R3 0
+0 0010 ffffffff 0 LDG.E.SYS 1 R2 4 0 0x7f0000000000
+0 0018 ffffffff 1 R4 FFMA 3 R4 R5 R6 0
+#END_TB
+
+#BEGIN_TB
+thread block = 1,0,0
+warp = 0
+insts = 4
+0 0000 ffffffff 1 R1 IMAD.MOV.U32 2 R255 R255 0
+0 0008 ffffffff 1 R2 IADD 2 R1 R3 0
+0 0010 ffffffff 0 LDG.E.SYS 1 R2 4 0 0x7f0000000100
+0 0018 ffffffff 1 R4 FFMA 3 R4 R5 R6 0
+#END_TB

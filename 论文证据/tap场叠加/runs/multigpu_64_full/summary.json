@@ -1,0 +1,11 @@
+{
+  "case": "multigpu",
+  "rows_search": 64,
+  "mode": "full",
+  "steps": 120,
+  "search_peak_C": 92.67,
+  "final_64_C": 92.67,
+  "solve_secs": 1477.5,
+  "solves": 120,
+  "wall_s": 1479.7
+}

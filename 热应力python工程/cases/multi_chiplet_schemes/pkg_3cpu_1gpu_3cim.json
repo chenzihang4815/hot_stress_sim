@@ -1,0 +1,83 @@
+{
+  "name": "pkg_3cpu_1gpu_3cim",
+  "description": "3 CPU (x86 matmul, threads, ARM starter) + TitanX + 3 CIM (jia/colonnade/wang)",
+  "chips": [
+    {
+      "name": "CPU_matmul",
+      "x_mm": 18.375780337680627,
+      "y_mm": 0.0,
+      "w_mm": 4.414470897348692,
+      "h_mm": 3.0885921137658436,
+      "t_um": 150.0,
+      "power_W": 1.001867
+    },
+    {
+      "name": "CPU_threads",
+      "x_mm": 0.9531299355339353,
+      "y_mm": 25.751497634540094,
+      "w_mm": 4.482688879691296,
+      "h_mm": 3.04158962754938,
+      "t_um": 150.0,
+      "power_W": 0.9561569999999999
+    },
+    {
+      "name": "CPU_starter",
+      "x_mm": 22.84025123502932,
+      "y_mm": 0.0,
+      "w_mm": 1.7823309719512945,
+      "h_mm": 1.627245469916715,
+      "t_um": 150.0,
+      "power_W": 1.65068
+    },
+    {
+      "name": "GPU_TITANX",
+      "x_mm": 0.0,
+      "y_mm": 0.0,
+      "w_mm": 18.325780337680627,
+      "h_mm": 25.70149763454009,
+      "t_um": 150.0,
+      "power_W": 67.4063
+    },
+    {
+      "name": "CIM_jia",
+      "x_mm": 0.0,
+      "y_mm": 28.843087262089472,
+      "w_mm": 1.899590583107887,
+      "h_mm": 2.253762624437543,
+      "t_um": 150.0,
+      "power_W": 0.0027731351494352146
+    },
+    {
+      "name": "CIM_colonnade",
+      "x_mm": 0.3363178979439994,
+      "y_mm": 25.751497634540094,
+      "w_mm": 0.5668120375899358,
+      "h_mm": 0.40817744862253424,
+      "t_um": 150.0,
+      "power_W": 0.04119819389066705
+    },
+    {
+      "name": "CIM_wang",
+      "x_mm": 0.0,
+      "y_mm": 25.751497634540094,
+      "w_mm": 0.28631789794399937,
+      "h_mm": 0.42623810493523456,
+      "t_um": 150.0,
+      "power_W": 0.025999983362139024
+    }
+  ],
+  "package": {
+    "tim_um": 20,
+    "t_spreader_mm": 1.0,
+    "t_sink_mm": 6.9,
+    "t_substrate_mm": 1.0,
+    "t_interposer_um": 100.0,
+    "r_convec_K_per_W": 0.1,
+    "ambient_C": 45,
+    "pitch_die_mm": 1.0,
+    "pitch_coarse_mm": 4.0,
+    "fill_die": false
+  },
+  "layout_algorithm": "lbfgs",
+  "layout_seed": 13
+}

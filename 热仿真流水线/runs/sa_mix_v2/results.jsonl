@@ -1,0 +1,12 @@
+{"variant": "uniform", "seed": 22, "secs": 44.0, "evals_coarse": 42, "accepted_coarse": 42, "dropped_coarse": 49, "evals_fine": 19, "accepted_fine": 16, "final_64_C": 79.07}
+{"variant": "uniform", "seed": 23, "secs": 57.9, "evals_coarse": 54, "accepted_coarse": 52, "dropped_coarse": 37, "evals_fine": 18, "accepted_fine": 10, "final_64_C": 78.69}
+{"variant": "uniform", "seed": 24, "secs": 42.2, "evals_coarse": 47, "accepted_coarse": 47, "dropped_coarse": 44, "evals_fine": 11, "accepted_fine": 8, "final_64_C": 79.09}
+{"variant": "coarse_redraw", "seed": 22, "secs": 67.0, "evals_coarse": 91, "accepted_coarse": 88, "dropped_coarse": 0, "evals_fine": 15, "accepted_fine": 14, "final_64_C": 78.03}
+{"variant": "coarse_redraw", "seed": 23, "secs": 91.2, "evals_coarse": 91, "accepted_coarse": 87, "dropped_coarse": 0, "evals_fine": 18, "accepted_fine": 15, "final_64_C": 78.0}
+{"variant": "coarse_redraw", "seed": 24, "secs": 75.1, "evals_coarse": 91, "accepted_coarse": 91, "dropped_coarse": 0, "evals_fine": 12, "accepted_fine": 12, "final_64_C": 78.6}
+{"variant": "coarse_local", "seed": 22, "secs": 69.7, "evals_coarse": 91, "accepted_coarse": 88, "dropped_coarse": 0, "evals_fine": 13, "accepted_fine": 12, "final_64_C": 79.19}
+{"variant": "coarse_local", "seed": 23, "secs": 58.5, "evals_coarse": 91, "accepted_coarse": 90, "dropped_coarse": 0, "evals_fine": 16, "accepted_fine": 13, "final_64_C": 79.4}
+{"variant": "coarse_local", "seed": 24, "secs": 51.5, "evals_coarse": 91, "accepted_coarse": 90, "dropped_coarse": 0, "evals_fine": 12, "accepted_fine": 12, "final_64_C": 79.03}
+{"variant": "fine_nudge", "seed": 22, "secs": 57.4, "evals_coarse": 42, "accepted_coarse": 42, "dropped_coarse": 49, "evals_fine": 27, "accepted_fine": 22, "final_64_C": 79.09}
+{"variant": "fine_nudge", "seed": 23, "secs": 76.3, "evals_coarse": 54, "accepted_coarse": 52, "dropped_coarse": 37, "evals_fine": 27, "accepted_fine": 25, "final_64_C": 78.33}
+{"variant": "fine_nudge", "seed": 24, "secs": 52.2, "evals_coarse": 47, "accepted_coarse": 47, "dropped_coarse": 44, "evals_fine": 17, "accepted_fine": 16, "final_64_C": 78.96}

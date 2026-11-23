@@ -1,0 +1,110 @@
+{
+  "note": "10 步，种子 22，T0 2.0，每步乘 0.95。提议是生产退火的平移、跳动、对调、旋转，面积不变，位置变。接受由精确解决定，两条走同一批布局。frozen 用起点材料图的分解回代，不重分解。exact 每步按最新材料图重分解重解。err_max_over_steps 是 10 张误差场逐格取绝对值的最大。冷边 45 C，底面绝热，缝环氧 0.8。python，不是 HotSpot，也不是 ATSim。",
+  "start_factor_s": 0.6245233959634788,
+  "wall_s": {
+    "exact": 6.604659593023825,
+    "frozen": 0.07447846996365115
+  },
+  "rows": [
+    {
+      "step": 1,
+      "op": "rotate GPU_3070",
+      "accept": true,
+      "exact_Tmax_C": 69.70512101303802,
+      "frozen_Tmax_C": 88.29273777844787,
+      "peak_err_K": 18.587616765409848,
+      "grid_max_K": 29.182057138009498,
+      "grid_mean_K": 0.7580674180346021
+    },
+    {
+      "step": 2,
+      "op": "nudge CIM_jia (0.5,0.0)mm",
+      "accept": true,
+      "exact_Tmax_C": 69.70512101303802,
+      "frozen_Tmax_C": 88.29273777844787,
+      "peak_err_K": 18.587616765409848,
+      "grid_max_K": 29.182057138009498,
+      "grid_mean_K": 0.7580674180346021
+    },
+    {
+      "step": 3,
+      "op": "swap HBM3<->Penryn",
+      "accept": true,
+      "exact_Tmax_C": 64.52986209133485,
+      "frozen_Tmax_C": 88.2875641121285,
+      "peak_err_K": 23.75770202079366,
+      "grid_max_K": 29.17875345025459,
+      "grid_mean_K": 0.9522217329874336
+    },
+    {
+      "step": 4,
+      "op": "nudge HBM3 (-1.5,0.0)mm",
+      "accept": true,
+      "exact_Tmax_C": 64.51441097908537,
+      "frozen_Tmax_C": 88.24360610427732,
+      "peak_err_K": 23.72919512519195,
+      "grid_max_K": 29.164397409913477,
+      "grid_mean_K": 0.9947682580135051
+    },
+    {
+      "step": 5,
+      "op": "rotate CIM_jia",
+      "accept": true,
+      "exact_Tmax_C": 64.51441097908537,
+      "frozen_Tmax_C": 88.24360610427732,
+      "peak_err_K": 23.72919512519195,
+      "grid_max_K": 29.164397409913477,
+      "grid_mean_K": 0.9947682580135051
+    },
+    {
+      "step": 6,
+      "op": "swap Penryn<->HBM3",
+      "accept": false,
+      "exact_Tmax_C": 69.98859423730994,
+      "frozen_Tmax_C": 96.74989551333641,
+      "peak_err_K": 26.761301276026472,
+      "grid_max_K": 29.152155687151378,
+      "grid_mean_K": 0.8937695036563016
+    },
+    {
+      "step": 7,
+      "op": "nudge HBM3 (-2.0,0.0)mm",
+      "accept": true,
+      "exact_Tmax_C": 64.42796720924656,
+      "frozen_Tmax_C": 88.07045049262342,
+      "peak_err_K": 23.642483283376862,
+      "grid_max_K": 29.094720625134983,
+      "grid_mean_K": 1.0919261728375762
+    },
+    {
+      "step": 8,
+      "op": "nudge GPU_3070 (1.0,0.0)mm",
+      "accept": true,
+      "exact_Tmax_C": 64.38387513125787,
+      "frozen_Tmax_C": 88.94632793113203,
+      "peak_err_K": 24.562452799874166,
+      "grid_max_K": 29.767590945955305,
+      "grid_mean_K": 1.2008871825731589
+    },
+    {
+      "step": 9,
+      "op": "nudge CIM_jia (0.0,1.0)mm",
+      "accept": true,
+      "exact_Tmax_C": 64.38387696813027,
+      "frozen_Tmax_C": 88.94632498649935,
+      "peak_err_K": 24.562448018369082,
+      "grid_max_K": 29.767587222029988,
+      "grid_mean_K": 1.2009145295605794
+    },
+    {
+      "step": 10,
+      "op": "jump GPU_3070",
+      "accept": true,
+      "exact_Tmax_C": 64.22053264064652,
+      "frozen_Tmax_C": 90.17050453867398,
+      "peak_err_K": 25.949971898027457,
+      "grid_max_K": 31.392208169551566,
+      "grid_mean_K": 2.6793285259620885
+    }
+  ]
+}

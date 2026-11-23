@@ -1,0 +1,126 @@
+{
+  "hotspot_init_C": 61.59000000000003,
+  "modes": {
+    "layout": {
+      "grad_max_init": 4.161340520362501,
+      "grad_max_best": 4.146432219571681,
+      "grad_rms_best": 0.330592209134196,
+      "python_Tmax_init_C": 73.30232570861972,
+      "python_Tmax_best_C": 72.44954248486766,
+      "hotspot_Tmax_best_C": 61.52000000000004,
+      "hardware": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "dies": [
+        {
+          "name": "Penryn",
+          "role": "CPU",
+          "j0": 5,
+          "ib0": 4,
+          "w": 8,
+          "h": 9,
+          "power_W": 59.241324999999996,
+          "area_mm2": 91.1348,
+          "grid_area_mm2": 91.125
+        },
+        {
+          "name": "GPU_3070",
+          "role": "GPU",
+          "j0": 25,
+          "ib0": 3,
+          "w": 14,
+          "h": 22,
+          "power_W": 66.89,
+          "area_mm2": 392.0,
+          "grid_area_mm2": 389.8125
+        },
+        {
+          "name": "HBM3",
+          "role": "HBM",
+          "j0": 22,
+          "ib0": 28,
+          "w": 8,
+          "h": 12,
+          "power_W": 28.656,
+          "area_mm2": 121.0,
+          "grid_area_mm2": 121.5
+        },
+        {
+          "name": "CIM_jia",
+          "role": "CIM",
+          "j0": 4,
+          "ib0": 27,
+          "w": 2,
+          "h": 2,
+          "power_W": 0.002773,
+          "area_mm2": 4.281,
+          "grid_area_mm2": 5.0625
+        }
+      ]
+    },
+    "hardware": {
+      "grad_max_init": 4.161340520362501,
+      "grad_max_best": 1.8168469329885335,
+      "grad_rms_best": 0.24993973503297193,
+      "python_Tmax_init_C": 73.30232570861972,
+      "python_Tmax_best_C": 67.9146920242411,
+      "hotspot_Tmax_best_C": 58.44,
+      "hardware": [
+        "T2",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "dies": [
+        {
+          "name": "T2",
+          "role": "CPU",
+          "j0": 5,
+          "ib0": 4,
+          "w": 12,
+          "h": 18,
+          "power_W": 68.99682,
+          "area_mm2": 273.523,
+          "grid_area_mm2": 273.375
+        },
+        {
+          "name": "GPU_3070",
+          "role": "GPU",
+          "j0": 24,
+          "ib0": 4,
+          "w": 14,
+          "h": 22,
+          "power_W": 66.89,
+          "area_mm2": 392.0,
+          "grid_area_mm2": 389.8125
+        },
+        {
+          "name": "HBM3",
+          "role": "HBM",
+          "j0": 22,
+          "ib0": 28,
+          "w": 8,
+          "h": 12,
+          "power_W": 28.656,
+          "area_mm2": 121.0,
+          "grid_area_mm2": 121.5
+        },
+        {
+          "name": "CIM_jia",
+          "role": "CIM",
+          "j0": 4,
+          "ib0": 27,
+          "w": 2,
+          "h": 2,
+          "power_W": 0.002773,
+          "area_mm2": 4.281,
+          "grid_area_mm2": 5.0625
+        }
+      ]
+    }
+  },
+  "note": "代价是芯片层最大温度梯度，不是峰值。Python 场是整层硅、没有 spreader 外伸。HotSpot 峰值只在起点和两个终点各算一次。"
+}

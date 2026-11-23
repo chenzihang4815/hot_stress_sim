@@ -1,0 +1,44 @@
+[
+  {
+    "step": 0,
+    "die_cell_max_C": 71.16441111783246,
+    "vm_MPa": 104.82313865785801,
+    "vm_name": "CIM_basic_m256"
+  },
+  {
+    "step": 4,
+    "die_cell_max_C": 71.33895420041108,
+    "vm_MPa": 106.23823377084109,
+    "vm_name": "CIM_basic_m256"
+  },
+  {
+    "step": 7,
+    "die_cell_max_C": 75.0882379999315,
+    "vm_MPa": 91.64809687268367,
+    "vm_name": "Xeon_Cb"
+  },
+  {
+    "step": 10,
+    "die_cell_max_C": 75.09432088701817,
+    "vm_MPa": 91.05274647271112,
+    "vm_name": "Xeon_Cb"
+  },
+  {
+    "step": 18,
+    "die_cell_max_C": 75.10281971341777,
+    "vm_MPa": 91.13575852625992,
+    "vm_name": "Xeon_Cb"
+  },
+  {
+    "step": 21,
+    "die_cell_max_C": 75.13782270523689,
+    "vm_MPa": 100.5188533671083,
+    "vm_name": "GPU_3070_Gb"
+  },
+  {
+    "step": 22,
+    "die_cell_max_C": 74.83169631149366,
+    "vm_MPa": 99.97075654216805,
+    "vm_name": "GPU_3070_Gb"
+  }
+]

@@ -1,0 +1,91 @@
+{
+  "mix": "cpuMacros_cimJia",
+  "algorithm": "mcts",
+  "n_blocks": 5,
+  "layout": {
+    "width_m": 0.0040913658392740014,
+    "height_m": 0.004961015397243741,
+    "outline_mm2": 20.297328924395384,
+    "block_area_mm2": 17.915732457942074,
+    "deadspace_ratio": 0.11733546198735867,
+    "overlap_m2": 0.0,
+    "overlap_count": 0.0,
+    "algorithm": "mcts",
+    "seed": 11,
+    "n_sims": 80,
+    "cost": 20.884119355146296
+  },
+  "thermal": {
+    "Tmax_C": 46.52000000000004,
+    "Tmin_C": 45.07000000000005,
+    "block_T_C": {
+      "CPU_Core": 46.52000000000004,
+      "CPU_L2": 45.34000000000003,
+      "CPU_NoC": 45.81,
+      "CPU_MC": 45.59000000000003,
+      "CIM_jia": 45.30000000000001,
+      "iface_CPU_Core": 46.31,
+      "iface_CPU_L2": 45.32000000000005,
+      "iface_CPU_NoC": 45.72000000000003,
+      "iface_CPU_MC": 45.51000000000005,
+      "iface_CIM_jia": 45.28000000000003,
+      "hsink_CPU_Core": 45.170000000000016,
+      "hsink_CPU_L2": 45.150000000000034,
+      "hsink_CPU_NoC": 45.160000000000025,
+      "hsink_CPU_MC": 45.120000000000005,
+      "hsink_CIM_jia": 45.150000000000034,
+      "inode_0": 45.129999999999995,
+      "inode_1": 45.09000000000003,
+      "inode_2": 45.120000000000005,
+      "inode_3": 45.10000000000002,
+      "inode_4": 45.129999999999995,
+      "inode_5": 45.09000000000003,
+      "inode_6": 45.120000000000005,
+      "inode_7": 45.10000000000002,
+      "inode_8": 45.10000000000002,
+      "inode_9": 45.07000000000005,
+      "inode_10": 45.09000000000003,
+      "inode_11": 45.08000000000004
+    },
+    "returncode": 0
+  },
+  "power_total_W": 0.8706862311494353,
+  "area_total_mm2": 17.915732457942074,
+  "blocks": [
+    {
+      "name": "CPU_Core",
+      "kind": "CPU",
+      "area_mm2": 2.62332,
+      "power_W": 0.664504,
+      "notes": "Total Cores"
+    },
+    {
+      "name": "CPU_L2",
+      "kind": "CPU",
+      "area_mm2": 10.72,
+      "power_W": 0.163858939,
+      "notes": "L2"
+    },
+    {
+      "name": "CPU_NoC",
+      "kind": "CPU",
+      "area_mm2": 0.0226432,
+      "power_W": 0.001422647,
+      "notes": "NoC/Bus"
+    },
+    {
+      "name": "CPU_MC",
+      "kind": "CPU",
+      "area_mm2": 0.268543,
+      "power_W": 0.03812751,
+      "notes": "Memory Controller"
+    },
+    {
+      "name": "CIM_jia",
+      "kind": "CIM",
+      "area_mm2": 4.281226257942074,
+      "power_W": 0.0027731351494352146,
+      "notes": "AccelForge jia_jssc_2020+builtin；P=energy/latency=0.00277314 W"
+    }
+  ]
+}

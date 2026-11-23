@@ -1,0 +1,4 @@
+# unit-name  width  height  left-x  bottom-y   (meters)
+Xeon	0.0205347510333	0.0205347510333	0.0257326244833	0.0257326244833
+anchor_sw	0.0001	0.0001	0	0
+anchor_ne	0.0001	0.0001	0.0719	0.0719

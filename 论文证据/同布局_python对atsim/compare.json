@@ -1,0 +1,128 @@
+[
+  {
+    "case": "n5_silicon",
+    "power_W": 164.8578634713099,
+    "python_field_max_C": 61.48681172537175,
+    "atsim_die_cell_max_C": 61.263924265818616,
+    "field_max_diff_K": 0.22288745955313516,
+    "chips": [
+      {
+        "name": "T2_Ca",
+        "power_W": 68.99682,
+        "python_mean_C": 60.36465593911686,
+        "python_max_C": 61.48681172537175,
+        "atsim_column_mean_C": 60.03684840275946,
+        "atsim_column_max_C": 61.22153222587474,
+        "mean_diff_K": 0.32780753635739757
+      },
+      {
+        "name": "GPU_3070_Ga",
+        "power_W": 66.88781634908364,
+        "python_mean_C": 58.14996659831007,
+        "python_max_C": 59.91455570309557,
+        "atsim_column_mean_C": 57.909940915014204,
+        "atsim_column_max_C": 59.47065968272233,
+        "mean_diff_K": 0.24002568329586893
+      },
+      {
+        "name": "CIM_jia_m64",
+        "power_W": 0.02051619509144024,
+        "python_mean_C": 54.68839525199377,
+        "python_max_C": 56.11572163240584,
+        "atsim_column_mean_C": 53.693916411126374,
+        "atsim_column_max_C": 55.08367030760388,
+        "mean_diff_K": 0.9944788408673944
+      },
+      {
+        "name": "HBM3",
+        "power_W": 28.656,
+        "python_mean_C": 60.119680070716925,
+        "python_max_C": 60.769111119172976,
+        "atsim_column_mean_C": 59.260177948099894,
+        "atsim_column_max_C": 60.113946137114226,
+        "mean_diff_K": 0.8595021226170303
+      },
+      {
+        "name": "CIM_colonnade_m512",
+        "power_W": 0.2967109271348416,
+        "python_mean_C": 54.52000984685225,
+        "python_max_C": 55.71713123104382,
+        "atsim_column_mean_C": 53.52638116453081,
+        "atsim_column_max_C": 54.688827749467976,
+        "mean_diff_K": 0.993628682321436
+      }
+    ]
+  },
+  {
+    "case": "n7_silicon",
+    "power_W": 249.30345873234688,
+    "python_field_max_C": 65.15189837962714,
+    "atsim_die_cell_max_C": 64.21780871944185,
+    "field_max_diff_K": 0.9340896601852933,
+    "chips": [
+      {
+        "name": "T2_Ca",
+        "power_W": 68.99682,
+        "python_mean_C": 64.18622464678498,
+        "python_max_C": 65.15189837962714,
+        "atsim_column_mean_C": 62.91815810215496,
+        "atsim_column_max_C": 64.17537832498681,
+        "mean_diff_K": 1.2680665446300168
+      },
+      {
+        "name": "T2_Cb",
+        "power_W": 68.99682,
+        "python_mean_C": 60.95969285696236,
+        "python_max_C": 62.00021110199185,
+        "atsim_column_mean_C": 60.31494069610109,
+        "atsim_column_max_C": 61.67977849322426,
+        "mean_diff_K": 0.6447521608612732
+      },
+      {
+        "name": "GPU_3070_Ga",
+        "power_W": 66.88781634908364,
+        "python_mean_C": 62.363415843500434,
+        "python_max_C": 63.268668189850246,
+        "atsim_column_mean_C": 61.33498064306199,
+        "atsim_column_max_C": 62.42746830389217,
+        "mean_diff_K": 1.0284352004384445
+      },
+      {
+        "name": "CIM_jia_m64",
+        "power_W": 0.02051619509144024,
+        "python_mean_C": 56.351207542764826,
+        "python_max_C": 58.58860514284936,
+        "atsim_column_mean_C": 55.267670138716255,
+        "atsim_column_max_C": 57.67959542887843,
+        "mean_diff_K": 1.0835374040485704
+      },
+      {
+        "name": "HBM3",
+        "power_W": 43.808,
+        "python_mean_C": 63.214262786376196,
+        "python_max_C": 64.33504871183584,
+        "atsim_column_mean_C": 62.99870861452279,
+        "atsim_column_max_C": 64.06503382423574,
+        "mean_diff_K": 0.2155541718534053
+      },
+      {
+        "name": "CIM_colonnade_m512",
+        "power_W": 0.2967109271348416,
+        "python_mean_C": 57.60142694828596,
+        "python_max_C": 58.92256282191926,
+        "atsim_column_mean_C": 55.9440849572315,
+        "atsim_column_max_C": 57.48819900198146,
+        "mean_diff_K": 1.6573419910544587
+      },
+      {
+        "name": "CIM_colonnade_m256",
+        "power_W": 0.29677526103697566,
+        "python_mean_C": 59.233600966081156,
+        "python_max_C": 59.50811778320741,
+        "atsim_column_mean_C": 57.992043217481225,
+        "atsim_column_max_C": 58.489203643406086,
+        "mean_diff_K": 1.2415577485999307
+      }
+    ]
+  }
+]

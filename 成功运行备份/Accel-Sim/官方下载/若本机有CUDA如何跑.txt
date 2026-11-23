@@ -1,0 +1,20 @@
+# 本机目前没有 CUDA toolkit / nvcc，编不出 accel-sim.out。
+# 装好 CUDA 后（并 export CUDA_INSTALL_PATH），在原工程根目录：
+
+cd /home/czh/任务仿真产生功耗文件工具/accel-sim-framework-dev/accel-sim-framework-dev
+export CUDA_INSTALL_PATH=/usr/local/cuda
+source ./gpu-simulator/setup_environment.sh
+cmake -S ./gpu-simulator/ -B ./gpu-simulator/build
+cmake --build ./gpu-simulator/build -j2
+cmake --install ./gpu-simulator/build
+
+# 用官方下好的 backprop 轨迹 + QV100 配置（功耗用 AccelWattch SASS）：
+./gpu-simulator/bin/release/accel-sim.out \
+  -trace  ./hw_run/tesla-v100/rodinia_2.0-ft/11.0/backprop-rodinia-2.0-ft/4096___data_result_4096_txt/traces/kernelslist.g \
+  -config ./gpu-simulator/gpgpu-sim/configs/tested-cfgs/SM7_QV100/gpgpusim.config \
+  -config ./gpu-simulator/configs/tested-cfgs/SM7_QV100/trace.config
+
+# 打开功耗需在 gpgpusim.config 里有：
+#   -power_simulation_enabled 1
+#   -accelwattch_xml_file accelwattch_sass_sim.xml
+# 或运行目录里放好 xml。官方 QV100 目录已含 accelwattch_sass_sim.xml。

@@ -1,0 +1,110 @@
+{
+  "die_cell_max_C": 69.4860125202361,
+  "die_cell_min_C": 49.225600087169994,
+  "grad_max_K_per_mm": 3.392641201244872,
+  "vm_normal_chip_max_MPa": 78.19946593752292,
+  "vm_normal_chip_name": "GPU_3070_Ga",
+  "vm_package_max_not_the_gate_MPa": 82.90338833145093,
+  "per_chip_T": [
+    {
+      "name": "Penryn_Ca",
+      "T_column_max_C": 69.3783926786594,
+      "T_column_mean_C": 67.93822206892712
+    },
+    {
+      "name": "GPU_3070_Ga",
+      "T_column_max_C": 63.9290203404077,
+      "T_column_mean_C": 63.21097431592736
+    },
+    {
+      "name": "GPU_2060S_Gb",
+      "T_column_max_C": 61.55898110839905,
+      "T_column_mean_C": 60.018573440818976
+    },
+    {
+      "name": "CIM_jia_m64",
+      "T_column_max_C": 55.42677161989644,
+      "T_column_mean_C": 53.281254091836715
+    },
+    {
+      "name": "HBM3",
+      "T_column_max_C": 64.83631441818812,
+      "T_column_mean_C": 64.04059028157619
+    },
+    {
+      "name": "CIM_colonnade_m512",
+      "T_column_max_C": 60.60274069975202,
+      "T_column_mean_C": 60.03879029184504
+    }
+  ],
+  "chip_interiors": [
+    {
+      "name": "Penryn_Ca",
+      "area_mm2": 91.12500000000001,
+      "normal": true,
+      "n_cells": 30,
+      "vm_max_MPa": 47.10659540506768,
+      "vm_p95_MPa": 46.63184790823033,
+      "vm_mean_MPa": 31.33152195688234,
+      "gate_chip": true
+    },
+    {
+      "name": "GPU_3070_Ga",
+      "area_mm2": 389.8125,
+      "normal": true,
+      "n_cells": 117,
+      "vm_max_MPa": 78.19946593752292,
+      "vm_p95_MPa": 60.270545348972,
+      "vm_mean_MPa": 33.505748925591355,
+      "gate_chip": true
+    },
+    {
+      "name": "GPU_2060S_Gb",
+      "area_mm2": 445.5000000000001,
+      "normal": true,
+      "n_cells": 117,
+      "vm_max_MPa": 70.64589627120718,
+      "vm_p95_MPa": 53.41553589115117,
+      "vm_mean_MPa": 27.50155643460497,
+      "gate_chip": true
+    },
+    {
+      "name": "CIM_jia_m64",
+      "area_mm2": 273.375,
+      "normal": true,
+      "n_cells": 88,
+      "vm_max_MPa": 35.288037525286384,
+      "vm_p95_MPa": 33.797460268238204,
+      "vm_mean_MPa": 15.523735535770005,
+      "gate_chip": true
+    },
+    {
+      "name": "HBM3",
+      "area_mm2": 121.50000000000001,
+      "normal": true,
+      "n_cells": 35,
+      "vm_max_MPa": 45.02270081225311,
+      "vm_p95_MPa": 44.87388698954426,
+      "vm_mean_MPa": 26.49609617946878,
+      "gate_chip": false
+    },
+    {
+      "name": "CIM_colonnade_m512",
+      "area_mm2": 121.50000000000001,
+      "normal": true,
+      "n_cells": 35,
+      "vm_max_MPa": 46.228443790523826,
+      "vm_p95_MPa": 44.989791947825395,
+      "vm_mean_MPa": 27.0475622714703,
+      "gate_chip": true
+    }
+  ],
+  "heat_s": 2.5917460918426514,
+  "elast_s": 31.3733069896698,
+  "grid": [
+    40,
+    34,
+    16
+  ],
+  "note": "门槛用 die_cell_max_C 和 vm_normal_chip_max_MPa。vm_package_max 是整包最大，含边缘奇点，不是门槛。HBM 不进正常芯片。网格是代理的 2 mm / 8 mm，不是对齐检查用的 1.125 mm。梯度是芯粒层柱平均温度的相邻差分，单位 K/mm。"
+}

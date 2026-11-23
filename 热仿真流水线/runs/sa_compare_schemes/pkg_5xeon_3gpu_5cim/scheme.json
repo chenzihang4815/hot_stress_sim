@@ -1,0 +1,140 @@
+{
+  "id": "pkg_5xeon_3gpu_5cim",
+  "title": "5 Xeon + 3 GPU + 5 CIM（13 颗，CPU 全换大核）",
+  "why": "用户要求 5 颗 CPU 全部换成面积能和 GPU 比的硬件；用 McPAT 官方 Xeon 模板，不再用 gem5 TimingSimple",
+  "n_chiplets": 13,
+  "kinds": {
+    "CPU": 5,
+    "GPU": 3,
+    "CIM": 5
+  },
+  "cpu_model": "McPAT official Xeon.xml (2-core O3 + L3, 65 nm)",
+  "cpu_area_mm2": 421.676,
+  "cpu_power_W": 103.946,
+  "power_total_W": 725.2168914096719,
+  "area_total_mm2": 3421.063922123592,
+  "outline_mm2": 5884.629721136005,
+  "deadspace_ratio": 0.41864414852882725,
+  "overlap_m2": 0.0,
+  "HotSpot_Tmax_C": 128.74,
+  "HotSpot_Tmin_C": 108.60000000000002,
+  "layout_algorithm": "lbfgs",
+  "layout_seed": 13,
+  "chips": [
+    {
+      "name": "CPU_matmul",
+      "kind": "CPU",
+      "area_mm2": 421.676,
+      "power_W": 103.946,
+      "W_per_cm2": 24.650679668750417,
+      "notes": "原 matmul 槽位，现为 McPAT 官方 Xeon（2核 O3+L3，65 nm）；P=RuntimeDynamic(66.8485)+Leakage(37.0975)"
+    },
+    {
+      "name": "CPU_threads",
+      "kind": "CPU",
+      "area_mm2": 421.676,
+      "power_W": 103.946,
+      "W_per_cm2": 24.650679668750417,
+      "notes": "原 threads 槽位，现为 McPAT 官方 Xeon；P=RuntimeDynamic(66.8485)+Leakage(37.0975)"
+    },
+    {
+      "name": "CPU_armL2",
+      "kind": "CPU",
+      "area_mm2": 421.676,
+      "power_W": 103.946,
+      "W_per_cm2": 24.650679668750417,
+      "notes": "原 ARM L2 槽位，现为 McPAT 官方 Xeon；P=RuntimeDynamic(66.8485)+Leakage(37.0975)"
+    },
+    {
+      "name": "CPU_atomic",
+      "kind": "CPU",
+      "area_mm2": 421.676,
+      "power_W": 103.946,
+      "W_per_cm2": 24.650679668750417,
+      "notes": "原 atomic 槽位，现为 McPAT 官方 Xeon；P=RuntimeDynamic(66.8485)+Leakage(37.0975)"
+    },
+    {
+      "name": "CPU_starter",
+      "kind": "CPU",
+      "area_mm2": 421.676,
+      "power_W": 103.946,
+      "W_per_cm2": 24.650679668750417,
+      "notes": "原 starter 槽位，现为 McPAT 官方 Xeon；P=RuntimeDynamic(66.8485)+Leakage(37.0975)"
+    },
+    {
+      "name": "GPU_3070",
+      "kind": "GPU",
+      "area_mm2": 392.0,
+      "power_W": 66.8878,
+      "W_per_cm2": 17.063214285714285,
+      "notes": "RTX3070 backprop；P=66.89W 文献面积 392.0 mm²"
+    },
+    {
+      "name": "GPU_2060S",
+      "kind": "GPU",
+      "area_mm2": 445.0,
+      "power_W": 71.1194,
+      "W_per_cm2": 15.981887640449438,
+      "notes": "RTX2060S backprop；P=71.12W 文献面积 445.0 mm²"
+    },
+    {
+      "name": "GPU_TITANX",
+      "kind": "GPU",
+      "area_mm2": 471.0,
+      "power_W": 67.4063,
+      "W_per_cm2": 14.31131634819533,
+      "notes": "TitanX backprop；P=67.41W 文献面积 471.0 mm²"
+    },
+    {
+      "name": "CIM_jia",
+      "kind": "CIM",
+      "area_mm2": 4.281226257942074,
+      "power_W": 0.0027731351494352146,
+      "W_per_cm2": 0.06477431890666349,
+      "notes": "AccelForge jia_jssc_2020+builtin；P=energy/latency=0.00277314 W"
+    },
+    {
+      "name": "CIM_colonnade",
+      "kind": "CIM",
+      "area_mm2": 0.231359891352,
+      "power_W": 0.04119819389066705,
+      "W_per_cm2": 17.80697321818262,
+      "notes": "AccelForge colonnade_jssc_2021+builtin；P=energy/latency=0.0411982 W"
+    },
+    {
+      "name": "CIM_wang",
+      "kind": "CIM",
+      "area_mm2": 0.12203959822869019,
+      "power_W": 0.025999983362139024,
+      "W_per_cm2": 21.304546835214598,
+      "notes": "AccelForge wang_vlsi_2022+builtin；P=energy/latency=0.026 W"
+    },
+    {
+      "name": "CIM_basic",
+      "kind": "CIM",
+      "area_mm2": 0.04671951155777578,
+      "power_W": 0.0026253290280376118,
+      "W_per_cm2": 5.619341770709639,
+      "notes": "功率=energy_J/latency_s；面积=各组件 area_m2 之和（MainMemory=0 不占面积）"
+    },
+    {
+      "name": "CIM_sinangil",
+      "kind": "CIM",
+      "area_mm2": 0.0025768645113990983,
+      "power_W": 0.0007947682416197758,
+      "W_per_cm2": 30.84245361384016,
+      "notes": "AccelForge sinangil_jssc_2021+builtin；P=energy/latency=0.000794768 W"
+    }
+  ],
+  "heatmap": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/pkg_5xeon_3gpu_5cim/pkg_5xeon_3gpu_5cim_hotspot.png",
+  "atsim_pitch_die_mm": 2.5,
+  "atsim_pitch_coarse_mm": 10.0,
+  "atsim_nz": {
+    "nz_die": 2,
+    "nz_spreader": 2,
+    "nz_sink": 3,
+    "nz_tim": 1,
+    "nz_substrate": 2,
+    "nz_interposer": 2
+  }
+}

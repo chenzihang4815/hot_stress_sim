@@ -1,0 +1,37 @@
+{
+  "case": "case3_cpu_gpu_cim",
+  "json": "/home/czh/\u4efb\u52a1\u4eff\u771f\u4ea7\u751f\u529f\u8017\u6587\u4ef6\u5de5\u5177/\u70ed\u5e94\u529bpython\u5de5\u7a0b/cases/case3_cpu_gpu_cim.json",
+  "wall_compute_s": 936.8985729217529,
+  "heat": {
+    "grid_s": 0.011727333068847656,
+    "assemble_s": 0.6047298908233643,
+    "solve_s": 13.911817789077759,
+    "total_s": 14.539942264556885,
+    "n_iter": 1,
+    "n_cells": 56074,
+    "n_solid": 36400,
+    "n_unknown": 56074,
+    "nnz": 265206,
+    "solver": "spsolve",
+    "grid": [
+      53,
+      46,
+      23
+    ]
+  },
+  "elasticity": {
+    "assemble_s": 44.68910837173462,
+    "solve_s": 762.5563008785248,
+    "post_s": 2.626492500305176,
+    "total_s": 809.8719017505646,
+    "ndof": 119511,
+    "n_nodes": 41157,
+    "n_hex": 36400,
+    "n_solid": 36400,
+    "nnz": 8914851,
+    "solver": "spsolve_after_cg",
+    "bc": "substrate_bottom_fixed",
+    "element": "wilson"
+  },
+  "total_heat_plus_elast_s": 824.4118440151215
+}

@@ -1,0 +1,95 @@
+{
+  "hotspot_layer0_C": {
+    "n": 4096,
+    "min_C": 58.31,
+    "mean_C": 67.28520751953127,
+    "max_C": 78.07000000000005
+  },
+  "note": "HotSpot 芯片层 72 mm，spreader 和热沉 96 mm，r_convec=0.0390625。legacy 是旧代理：r_convec=0.1，热沉跟着外框加边。aligned 用 96 mm 和 0.0390625，芯片框 72 mm，基板和中介层还在。aligned_no_underlayer 把基板和中介层去掉，才是 HotSpot 的导热叠层。网格 pitch 1.125 mm，比代理应力用的 2 mm 细。没有算应力。Python 场和 ATSim 的温度不要混。",
+  "cases": {
+    "legacy_margin": {
+      "cell_max_C": 113.13413982812517,
+      "cell_min_C": 84.49493854814853,
+      "column_mean_C": 101.11298632433278,
+      "n_cells": 13680,
+      "grid": [
+        94,
+        78,
+        16
+      ],
+      "layout": {
+        "spreader_mm": [
+          94.0,
+          82.75
+        ],
+        "sink_mm": [
+          124.0,
+          112.75
+        ],
+        "frame_mm": null,
+        "h_W_m2K": 715.2564194263642,
+        "t_substrate_mm": 1.0,
+        "t_interposer_um": 99.99999999999999
+      },
+      "elapsed_s": 56.922712326049805,
+      "minus_hotspot_max_K": 35.06413982812512,
+      "minus_hotspot_mean_K": 33.82777880480151
+    },
+    "aligned_with_substrate": {
+      "cell_max_C": 79.75107186684164,
+      "cell_min_C": 54.57639976089047,
+      "column_mean_C": 67.45492122482585,
+      "n_cells": 13986,
+      "grid": [
+        82,
+        71,
+        16
+      ],
+      "layout": {
+        "spreader_mm": [
+          96.0,
+          96.0
+        ],
+        "sink_mm": [
+          96.0,
+          96.0
+        ],
+        "frame_mm": 72.00000000000001,
+        "h_W_m2K": 2777.777777777778,
+        "t_substrate_mm": 1.0,
+        "t_interposer_um": 99.99999999999999
+      },
+      "elapsed_s": 36.13869762420654,
+      "minus_hotspot_max_K": 1.6810718668415916,
+      "minus_hotspot_mean_K": 0.1697137052945834
+    },
+    "aligned_no_underlayer": {
+      "cell_max_C": 79.87577637368526,
+      "cell_min_C": 54.56034901819311,
+      "column_mean_C": 67.45922057588683,
+      "n_cells": 13986,
+      "grid": [
+        82,
+        71,
+        11
+      ],
+      "layout": {
+        "spreader_mm": [
+          96.0,
+          96.0
+        ],
+        "sink_mm": [
+          96.0,
+          96.0
+        ],
+        "frame_mm": 72.00000000000001,
+        "h_W_m2K": 2777.777777777778,
+        "t_substrate_mm": 0.0,
+        "t_interposer_um": 0.0
+      },
+      "elapsed_s": 11.28372049331665,
+      "minus_hotspot_max_K": 1.8057763736852053,
+      "minus_hotspot_mean_K": 0.1740130563555624
+    }
+  }
+}

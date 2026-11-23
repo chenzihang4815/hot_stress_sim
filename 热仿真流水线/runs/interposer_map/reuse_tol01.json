@@ -1,0 +1,61 @@
+{
+  "tol_K": 0.1,
+  "old_factor_ms": 493.21270297514275,
+  "note": "停在芯片层最大偏差低于 0.1 K。对照是同一张新矩阵的全部分解。迭代用的是起点材料图的分解，不重分解。iter_ms 是第二遍的墙钟。冷边 45 C，底面绝热，缝环氧 0.8。python，不是 HotSpot，也不是 ATSim。",
+  "rows": [
+    {
+      "scheme": "cpu_T2",
+      "full_ms": 491.3892499753274,
+      "iter_ms": 27.492205990711227,
+      "iters": 5,
+      "speedup": 17.87376575533272,
+      "chip_max_K": 0.0947830483233929,
+      "reached": true
+    },
+    {
+      "scheme": "cpu_Xeon",
+      "full_ms": 437.4819920049049,
+      "iter_ms": 34.831085009500384,
+      "iters": 6,
+      "speedup": 12.56010233059289,
+      "chip_max_K": 0.06179445358770863,
+      "reached": true
+    },
+    {
+      "scheme": "gpu_2060S",
+      "full_ms": 467.81853400170803,
+      "iter_ms": 22.341968986438587,
+      "iters": 4,
+      "speedup": 20.93900203181154,
+      "chip_max_K": 0.05121430970137908,
+      "reached": true
+    },
+    {
+      "scheme": "gpu_TITANX",
+      "full_ms": 486.19819700252265,
+      "iter_ms": 21.705555001972243,
+      "iters": 4,
+      "speedup": 22.399712744426253,
+      "chip_max_K": 0.04970321229438923,
+      "reached": true
+    },
+    {
+      "scheme": "cpu_half",
+      "full_ms": 475.90372600825503,
+      "iter_ms": 70.27732001733966,
+      "iters": 11,
+      "speedup": 6.771796731731295,
+      "chip_max_K": 0.04276517967497284,
+      "reached": true
+    },
+    {
+      "scheme": "cpu_quarter",
+      "full_ms": 450.8395850134548,
+      "iter_ms": 66.32511998759583,
+      "iters": 10,
+      "speedup": 6.797418309952114,
+      "chip_max_K": 0.0997937479798452,
+      "reached": true
+    }
+  ]
+}

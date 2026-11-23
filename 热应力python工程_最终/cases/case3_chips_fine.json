@@ -1,0 +1,22 @@
+{
+  "name": "case3_3chip_fine",
+  "description": "Same 3-chip layout as case3_chips.json; chip-plane pitch 0.25 mm (Case 2 die density) for stress mesh check. Baseline 0.5 mm remains case3_chips.json.",
+  "chips": [
+    {"name": "CPU", "x_mm": 8,  "y_mm": 8,  "w_mm": 10, "h_mm": 10, "t_um": 150, "power_W": 25},
+    {"name": "GPU", "x_mm": 22, "y_mm": 8,  "w_mm": 12, "h_mm": 10, "t_um": 150, "power_W": 40},
+    {"name": "HBM", "x_mm": 8,  "y_mm": 22, "w_mm": 8,  "h_mm": 8,  "t_um": 150, "power_W": 8}
+  ],
+  "package": {
+    "comment": "Identical stack to case3_chips.json. Only pitch_die_mm is 0.25 (was 0.5).",
+    "tim_um": 20,
+    "t_spreader_mm": 1.0,
+    "t_sink_mm": 6.9,
+    "t_substrate_mm": 1.0,
+    "t_interposer_um": 100.0,
+    "r_convec_K_per_W": 0.1,
+    "ambient_C": 45,
+    "pitch_die_mm": 0.25,
+    "pitch_coarse_mm": 3.0,
+    "fill_die": false
+  }
+}

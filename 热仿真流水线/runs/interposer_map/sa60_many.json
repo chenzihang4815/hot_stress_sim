@@ -1,0 +1,28 @@
+{
+  "n_chips": 64,
+  "steps": 60,
+  "seed": 22,
+  "n_iter": 8,
+  "note": "64 颗 2x2，每颗 2 W，间距 5 格。三条路径同一个随机序列，各自决定接受。checked 是该布局用自己的材料图全部分解。python，冷边 45 C，底面绝热。",
+  "full": {
+    "accepted": 59,
+    "wall_s": 29.315841039904626,
+    "priced_best_C": 58.29129064357488,
+    "checked_best_C": 58.29129064357488,
+    "checked_final_C": 58.29572211221955
+  },
+  "iter": {
+    "accepted": 59,
+    "wall_s": 4.428735119930934,
+    "priced_best_C": 58.74695533174611,
+    "checked_best_C": 58.74695547305936,
+    "checked_final_C": 58.74695547305936
+  },
+  "frozen": {
+    "accepted": 40,
+    "wall_s": 0.42410326006938703,
+    "priced_best_C": 59.04331893442759,
+    "checked_best_C": 58.8168808224022,
+    "checked_final_C": 58.8168808224022
+  }
+}

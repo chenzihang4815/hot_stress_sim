@@ -1,0 +1,44 @@
+{
+  "tag": "penryn_2060s_s7__hardware__both__best",
+  "vm_normal_chip_max_MPa": 97.0660349959833,
+  "vm_normal_chip_name": "T2",
+  "vm_normal_chip_p95_MPa": 78.08851361897237,
+  "w_pv_um": 2.6161831206047963,
+  "atsim_Tmax_C": 71.23832982491001,
+  "elapsed_s": 15.409765481948853,
+  "ndof": 38712,
+  "chips": [
+    {
+      "name": "T2",
+      "normal": true,
+      "n_cells": 99,
+      "vm_max_MPa": 97.0660349959833,
+      "vm_mean_MPa": 43.92154094555406,
+      "vm_p95_MPa": 78.08851361897237
+    },
+    {
+      "name": "GPU_2060S",
+      "normal": true,
+      "n_cells": 140,
+      "vm_max_MPa": 91.81179889714902,
+      "vm_mean_MPa": 35.68930907601334,
+      "vm_p95_MPa": 67.74950805355152
+    },
+    {
+      "name": "HBM3",
+      "normal": true,
+      "n_cells": 45,
+      "vm_max_MPa": 55.14497327314472,
+      "vm_mean_MPa": 30.040734020959057,
+      "vm_p95_MPa": 52.03543587467041
+    },
+    {
+      "name": "CIM_jia",
+      "normal": true,
+      "n_cells": 16,
+      "vm_max_MPa": 66.3390000950983,
+      "vm_mean_MPa": 55.37251666924821,
+      "vm_p95_MPa": 66.33270439063193
+    }
+  ]
+}

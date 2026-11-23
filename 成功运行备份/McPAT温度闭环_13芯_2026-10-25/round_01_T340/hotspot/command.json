@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/home/czh/任务仿真产生功耗文件工具/HotSpot-master/hotspot",
+    "-f",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/mcpat_13chip_tmax_loop/round_01_T340/hotspot/floorplan.flp",
+    "-p",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/mcpat_13chip_tmax_loop/round_01_T340/hotspot/power.ptrace",
+    "-c",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/mcpat_13chip_tmax_loop/round_01_T340/hotspot/hotspot.config",
+    "-model_type",
+    "grid",
+    "-steady_file",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/mcpat_13chip_tmax_loop/round_01_T340/hotspot/block.steady",
+    "-grid_steady_file",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/mcpat_13chip_tmax_loop/round_01_T340/hotspot/grid.steady"
+  ],
+  "returncode": 0,
+  "block_steady": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/mcpat_13chip_tmax_loop/round_01_T340/hotspot/block.steady",
+  "grid_steady": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/mcpat_13chip_tmax_loop/round_01_T340/hotspot/grid.steady"
+}

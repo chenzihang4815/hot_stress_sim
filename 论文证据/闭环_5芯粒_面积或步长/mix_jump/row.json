@@ -1,0 +1,127 @@
+{
+  "name": "mix_jump",
+  "frame": {
+    "n": 64,
+    "side_mm": 72.0,
+    "cell_mm": 1.125,
+    "overhang_mm": 12.000000000000004,
+    "spreader_mm": 96.0
+  },
+  "elapsed_s": 0.83,
+  "from_trace": {
+    "init": {
+      "Tmax_C": 62.533068049519215,
+      "grad_max": 1.7670173631132053,
+      "wirelength_mm_per_wire": 38.1875,
+      "J": 1.0
+    },
+    "search_best": {
+      "step": 35,
+      "op": "nudge HBM3 (-3,0)",
+      "Tmax_C": 61.066626222257355,
+      "grad_max": 1.7908934933052478,
+      "wirelength_mm_per_wire": 25.375,
+      "J_own": 0.8647859760305572
+    },
+    "n_accept": 8,
+    "n_new_best": 8,
+    "n_illegal": 21,
+    "moves": [
+      "jump",
+      "swap",
+      "改芯片",
+      "改芯片",
+      "swap",
+      "swap",
+      "改芯片",
+      "jump",
+      "jump",
+      "rotate",
+      "jump",
+      "nudge",
+      "改芯片",
+      "rotate",
+      "rotate",
+      "jump",
+      "nudge",
+      "nudge",
+      "jump",
+      "jump",
+      "jump",
+      "rotate",
+      "rotate",
+      "nudge",
+      "nudge",
+      "改芯片",
+      "nudge",
+      "jump",
+      "jump",
+      "jump",
+      "jump",
+      "jump",
+      "swap",
+      "rotate",
+      "nudge",
+      "改芯片",
+      "jump",
+      "jump",
+      "jump",
+      "改芯片"
+    ]
+  },
+  "rescored_best": {
+    "Tmax_C": 61.066626222257355,
+    "grad_max": 1.7908934933052478,
+    "wirelength_mm_per_wire": 25.375,
+    "hardware": [
+      "T2_Ca",
+      "GPU_3070_Ga",
+      "CIM_jia_m64",
+      "HBM3",
+      "CIM_colonnade_m512"
+    ],
+    "places": [
+      {
+        "name": "T2_Ca",
+        "j0": 13,
+        "ib0": 14,
+        "w": 18,
+        "h": 12
+      },
+      {
+        "name": "GPU_3070_Ga",
+        "j0": 41,
+        "ib0": 0,
+        "w": 14,
+        "h": 22
+      },
+      {
+        "name": "CIM_jia_m64",
+        "j0": 0,
+        "ib0": 0,
+        "w": 12,
+        "h": 18
+      },
+      {
+        "name": "HBM3",
+        "j0": 26,
+        "ib0": 0,
+        "w": 8,
+        "h": 12
+      },
+      {
+        "name": "CIM_colonnade_m512",
+        "j0": 13,
+        "ib0": 0,
+        "w": 8,
+        "h": 12
+      }
+    ],
+    "terms_on_72mm_init": {
+      "temperature": 0.9163613679522522,
+      "gradient": 1.0135121084209249,
+      "wirelength": 0.6644844517184942
+    },
+    "J_on_72mm_init": 0.8647859760305572
+  }
+}

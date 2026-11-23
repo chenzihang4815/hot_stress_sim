@@ -1,0 +1,44 @@
+{
+  "tag": "penryn_3070_s11__hardware__both__best",
+  "vm_normal_chip_max_MPa": 91.66824184502539,
+  "vm_normal_chip_name": "GPU_TITANX",
+  "vm_normal_chip_p95_MPa": 67.05020771939745,
+  "w_pv_um": 2.5477328849174556,
+  "atsim_Tmax_C": 71.15635833419526,
+  "elapsed_s": 16.67381501197815,
+  "ndof": 43068,
+  "chips": [
+    {
+      "name": "T2",
+      "normal": true,
+      "n_cells": 77,
+      "vm_max_MPa": 53.917385655215426,
+      "vm_mean_MPa": 27.56969153598947,
+      "vm_p95_MPa": 44.29497427264883
+    },
+    {
+      "name": "GPU_TITANX",
+      "normal": true,
+      "n_cells": 150,
+      "vm_max_MPa": 91.66824184502539,
+      "vm_mean_MPa": 35.67698848505208,
+      "vm_p95_MPa": 67.05020771939745
+    },
+    {
+      "name": "HBM3",
+      "normal": true,
+      "n_cells": 45,
+      "vm_max_MPa": 51.53193335614334,
+      "vm_mean_MPa": 28.45653277345641,
+      "vm_p95_MPa": 50.75625770047715
+    },
+    {
+      "name": "CIM_jia",
+      "normal": true,
+      "n_cells": 8,
+      "vm_max_MPa": 60.62542357970641,
+      "vm_mean_MPa": 56.441654159073245,
+      "vm_p95_MPa": 60.618007871624734
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+multigpu 开始，50 mm 中介层
+  全解 1050 步 1886s 搜索峰值 157.73
+  场叠加 455s 求解 319 次 搜索峰值 157.69
+{
+  "label": "multigpu",
+  "steps": 1050,
+  "step_mm": 1,
+  "rows_search": 16,
+  "full_secs": 1886.3,
+  "full_final_64_C": 158.41,
+  "field_secs": 454.9,
+  "field_solves": 319,
+  "field_final_64_C": 158.06,
+  "speedup": 4.15,
+  "delta_C": -0.35,
+  "wall_s": 2450.0
+}

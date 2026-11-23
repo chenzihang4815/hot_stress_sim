@@ -1,0 +1,583 @@
+{
+  "arm": "coupled",
+  "coupled": true,
+  "n_steps": 16,
+  "accepted": 14,
+  "n_hotspot": 14,
+  "n_stress": 15,
+  "seed": 22,
+  "init": {
+    "Tmax_C": 55.49000000000001,
+    "vm_chip_max_MPa": 34.73743868349705,
+    "vm_chip_name": "CIM_jia",
+    "vm_center_mean_MPa": 22.472738149579925,
+    "w_pv_um": 0.744018571431271,
+    "J_heat": 0.41960000000000036,
+    "J_full": 0.8599767082638796,
+    "min_gap_mm": 0.6377433062612193,
+    "gpu_gap_mm": null,
+    "outline_mm": [
+      22.973677849075177,
+      29.52819001643146
+    ],
+    "stress": {
+      "json": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/sa_heat_vs_coupled_pkg_2cpu_1gpu_2cim/coupled/init.json",
+      "fill_die": true,
+      "Tmax_C": 57.830338932065786,
+      "vm_center_mean_MPa": 22.472738149579925,
+      "vm_center_max_MPa": 31.04290399881071,
+      "vm_normal_chip_max_MPa": 34.73743868349705,
+      "vm_normal_chip_name": "CIM_jia",
+      "vm_normal_chip_p95_MPa": 33.90191215276863,
+      "chip_interiors": [
+        {
+          "name": "CPU_matmul",
+          "area_mm2": 13.634499999999997,
+          "normal": true,
+          "n_cells": 8,
+          "vm_max_MPa": 27.89773433108598,
+          "vm_p95_MPa": 27.852997302576643,
+          "vm_mean_MPa": 25.581175061829452
+        },
+        {
+          "name": "CPU_threads",
+          "area_mm2": 13.634499999999997,
+          "normal": true,
+          "n_cells": 24,
+          "vm_max_MPa": 31.99311622048084,
+          "vm_p95_MPa": 30.573911898258462,
+          "vm_mean_MPa": 24.93898410140631
+        },
+        {
+          "name": "GPU_3070",
+          "area_mm2": 392.0,
+          "normal": true,
+          "n_cells": 168,
+          "vm_max_MPa": 25.568965853765683,
+          "vm_p95_MPa": 21.02944509396276,
+          "vm_mean_MPa": 13.450759106357152
+        },
+        {
+          "name": "CIM_jia",
+          "area_mm2": 4.281226257942074,
+          "normal": true,
+          "n_cells": 8,
+          "vm_max_MPa": 34.73743868349705,
+          "vm_p95_MPa": 33.90191215276863,
+          "vm_mean_MPa": 30.04108556833894
+        },
+        {
+          "name": "CIM_colonnade",
+          "area_mm2": 0.23135989135199997,
+          "normal": false,
+          "n_cells": 4,
+          "vm_max_MPa": 21.609461207541614,
+          "vm_p95_MPa": 21.577009044499036,
+          "vm_mean_MPa": 20.981954143366117
+        }
+      ],
+      "w_pv_um": 0.744018571431271,
+      "u_max_um": 6.169350344751051,
+      "vm_package_max_MPa": 35.12034455081769,
+      "chip_centers": [
+        {
+          "name": "CPU_matmul",
+          "T_C": 54.32906758861702,
+          "vm_MPa": 24.681633445793196,
+          "uz_um": 0.1281353281271682
+        },
+        {
+          "name": "CPU_threads",
+          "T_C": 53.87806647983348,
+          "vm_MPa": 31.04290399881071,
+          "uz_um": 0.015818881338065527
+        },
+        {
+          "name": "GPU_3070",
+          "T_C": 57.80887919013958,
+          "vm_MPa": 4.9888400474097345,
+          "uz_um": 0.4659885766809572
+        },
+        {
+          "name": "CIM_jia",
+          "T_C": 53.48517368360103,
+          "vm_MPa": 30.25719980196155,
+          "uz_um": -0.17521599281366285
+        },
+        {
+          "name": "CIM_colonnade",
+          "T_C": 54.15705219359205,
+          "vm_MPa": 21.393113453924435,
+          "uz_um": 0.14468985662029055
+        }
+      ],
+      "heat_s": 0.8746862411499023,
+      "elast_s": 16.708664894104004,
+      "elapsed_s": 17.790129899978638,
+      "ndof": 34836,
+      "element": "wilson",
+      "solver": "cg",
+      "wall_s": 17.79025936126709
+    }
+  },
+  "best": {
+    "Tmax_C": 55.49000000000001,
+    "vm_chip_max_MPa": 34.73743868349705,
+    "vm_chip_name": "CIM_jia",
+    "vm_center_mean_MPa": 22.472738149579925,
+    "w_pv_um": 0.744018571431271,
+    "J_heat": 0.41960000000000036,
+    "J_full": 0.8599767082638796,
+    "min_gap_mm": 0.6377433062612193,
+    "gpu_gap_mm": null,
+    "outline_mm": [
+      22.973677849075177,
+      29.52819001643146
+    ],
+    "stress": {
+      "json": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/sa_heat_vs_coupled_pkg_2cpu_1gpu_2cim/coupled/init.json",
+      "fill_die": true,
+      "Tmax_C": 57.830338932065786,
+      "vm_center_mean_MPa": 22.472738149579925,
+      "vm_center_max_MPa": 31.04290399881071,
+      "vm_normal_chip_max_MPa": 34.73743868349705,
+      "vm_normal_chip_name": "CIM_jia",
+      "vm_normal_chip_p95_MPa": 33.90191215276863,
+      "chip_interiors": [
+        {
+          "name": "CPU_matmul",
+          "area_mm2": 13.634499999999997,
+          "normal": true,
+          "n_cells": 8,
+          "vm_max_MPa": 27.89773433108598,
+          "vm_p95_MPa": 27.852997302576643,
+          "vm_mean_MPa": 25.581175061829452
+        },
+        {
+          "name": "CPU_threads",
+          "area_mm2": 13.634499999999997,
+          "normal": true,
+          "n_cells": 24,
+          "vm_max_MPa": 31.99311622048084,
+          "vm_p95_MPa": 30.573911898258462,
+          "vm_mean_MPa": 24.93898410140631
+        },
+        {
+          "name": "GPU_3070",
+          "area_mm2": 392.0,
+          "normal": true,
+          "n_cells": 168,
+          "vm_max_MPa": 25.568965853765683,
+          "vm_p95_MPa": 21.02944509396276,
+          "vm_mean_MPa": 13.450759106357152
+        },
+        {
+          "name": "CIM_jia",
+          "area_mm2": 4.281226257942074,
+          "normal": true,
+          "n_cells": 8,
+          "vm_max_MPa": 34.73743868349705,
+          "vm_p95_MPa": 33.90191215276863,
+          "vm_mean_MPa": 30.04108556833894
+        },
+        {
+          "name": "CIM_colonnade",
+          "area_mm2": 0.23135989135199997,
+          "normal": false,
+          "n_cells": 4,
+          "vm_max_MPa": 21.609461207541614,
+          "vm_p95_MPa": 21.577009044499036,
+          "vm_mean_MPa": 20.981954143366117
+        }
+      ],
+      "w_pv_um": 0.744018571431271,
+      "u_max_um": 6.169350344751051,
+      "vm_package_max_MPa": 35.12034455081769,
+      "chip_centers": [
+        {
+          "name": "CPU_matmul",
+          "T_C": 54.32906758861702,
+          "vm_MPa": 24.681633445793196,
+          "uz_um": 0.1281353281271682
+        },
+        {
+          "name": "CPU_threads",
+          "T_C": 53.87806647983348,
+          "vm_MPa": 31.04290399881071,
+          "uz_um": 0.015818881338065527
+        },
+        {
+          "name": "GPU_3070",
+          "T_C": 57.80887919013958,
+          "vm_MPa": 4.9888400474097345,
+          "uz_um": 0.4659885766809572
+        },
+        {
+          "name": "CIM_jia",
+          "T_C": 53.48517368360103,
+          "vm_MPa": 30.25719980196155,
+          "uz_um": -0.17521599281366285
+        },
+        {
+          "name": "CIM_colonnade",
+          "T_C": 54.15705219359205,
+          "vm_MPa": 21.393113453924435,
+          "uz_um": 0.14468985662029055
+        }
+      ],
+      "heat_s": 0.8746862411499023,
+      "elast_s": 16.708664894104004,
+      "elapsed_s": 17.790129899978638,
+      "ndof": 34836,
+      "element": "wilson",
+      "solver": "cg",
+      "wall_s": 17.79025936126709
+    }
+  },
+  "dTmax_C": 0.0,
+  "d_vm_chip_max_MPa": 0.0,
+  "d_w_pv_um": 0.0,
+  "init_layout": [
+    {
+      "name": "CPU_matmul",
+      "kind": "CPU",
+      "x_m": 0.0,
+      "y_m": 0.002,
+      "w_m": 0.0033564377469530765,
+      "h_m": 0.004062193619523315,
+      "area_mm2": 13.6345,
+      "power_W": 1.001867
+    },
+    {
+      "name": "CPU_threads",
+      "kind": "CPU",
+      "x_m": 0.0,
+      "y_m": 0.026000000000000002,
+      "w_m": 0.003864446057752421,
+      "h_m": 0.0035281900164314582,
+      "area_mm2": 13.6345,
+      "power_W": 0.9561569999999999
+    },
+    {
+      "name": "GPU_3070",
+      "kind": "GPU",
+      "x_m": 0.0045000000000000005,
+      "y_m": 0.0025,
+      "w_m": 0.016718413269146738,
+      "h_m": 0.023447201219952054,
+      "area_mm2": 392.0,
+      "power_W": 66.8878
+    },
+    {
+      "name": "CIM_jia",
+      "kind": "CIM",
+      "x_m": 0.0205,
+      "y_m": 0.0,
+      "w_m": 0.002473677849075174,
+      "h_m": 0.0017307129380419047,
+      "area_mm2": 4.281226257942074,
+      "power_W": 0.0027731351494352146
+    },
+    {
+      "name": "CIM_colonnade",
+      "kind": "CIM",
+      "x_m": 0.005,
+      "y_m": 0.027,
+      "w_m": 0.00039422317211386556,
+      "h_m": 0.0005868754241700817,
+      "area_mm2": 0.231359891352,
+      "power_W": 0.04119819389066705
+    }
+  ],
+  "best_layout": [
+    {
+      "name": "CPU_matmul",
+      "kind": "CPU",
+      "x_m": 0.0,
+      "y_m": 0.002,
+      "w_m": 0.0033564377469530765,
+      "h_m": 0.004062193619523315,
+      "area_mm2": 13.6345,
+      "power_W": 1.001867
+    },
+    {
+      "name": "CPU_threads",
+      "kind": "CPU",
+      "x_m": 0.0,
+      "y_m": 0.026000000000000002,
+      "w_m": 0.003864446057752421,
+      "h_m": 0.0035281900164314582,
+      "area_mm2": 13.6345,
+      "power_W": 0.9561569999999999
+    },
+    {
+      "name": "GPU_3070",
+      "kind": "GPU",
+      "x_m": 0.0045000000000000005,
+      "y_m": 0.0025,
+      "w_m": 0.016718413269146738,
+      "h_m": 0.023447201219952054,
+      "area_mm2": 392.0,
+      "power_W": 66.8878
+    },
+    {
+      "name": "CIM_jia",
+      "kind": "CIM",
+      "x_m": 0.0205,
+      "y_m": 0.0,
+      "w_m": 0.002473677849075174,
+      "h_m": 0.0017307129380419047,
+      "area_mm2": 4.281226257942074,
+      "power_W": 0.0027731351494352146
+    },
+    {
+      "name": "CIM_colonnade",
+      "kind": "CIM",
+      "x_m": 0.005,
+      "y_m": 0.027,
+      "w_m": 0.00039422317211386556,
+      "h_m": 0.0005868754241700817,
+      "area_mm2": 0.231359891352,
+      "power_W": 0.04119819389066705
+    }
+  ],
+  "log": [
+    {
+      "step": 0,
+      "op": "init",
+      "accept": true,
+      "Tmax_C": 55.49000000000001,
+      "vm_chip_max_MPa": 34.73743868349705,
+      "vm_chip_name": "CIM_jia",
+      "w_pv_um": 0.744018571431271,
+      "J": 0.8599767082638796,
+      "T": 2.0
+    },
+    {
+      "step": 1,
+      "op": "rotate CPU_threads",
+      "T": 2.0,
+      "arm": "coupled",
+      "Tmax_C": 55.5,
+      "vm_chip_max_MPa": 34.90804244335594,
+      "vm_chip_name": "CIM_jia",
+      "w_pv_um": 0.7421213774760518,
+      "J": 0.8618455966180658,
+      "delta_J": -0.0018688883541861934,
+      "ap": 0.9990659922799081,
+      "accept": true,
+      "stressed": true
+    },
+    {
+      "step": 2,
+      "op": "jump GPU_3070",
+      "T": 1.9,
+      "arm": "coupled",
+      "Tmax_C": 55.48000000000002,
+      "vm_chip_max_MPa": 36.92360854594169,
+      "vm_chip_name": "GPU_3070",
+      "w_pv_um": 0.9325598946681282,
+      "J": 0.9050060722929337,
+      "delta_J": -0.043160475674867915,
+      "ap": 0.9775400267991182,
+      "accept": true,
+      "stressed": true
+    },
+    {
+      "step": 3,
+      "op": "rotate GPU_3070",
+      "T": 1.805,
+      "arm": "coupled",
+      "accept": false,
+      "reason": "illegal"
+    },
+    {
+      "step": 4,
+      "op": "rotate CPU_threads",
+      "T": 1.7147499999999998,
+      "arm": "coupled",
+      "Tmax_C": 55.48000000000002,
+      "vm_chip_max_MPa": 36.49181565961947,
+      "vm_chip_name": "GPU_3070",
+      "w_pv_um": 0.9328583852629753,
+      "J": 0.9007254547540673,
+      "delta_J": 0.004280617538866438,
+      "ap": 1.0,
+      "accept": true,
+      "stressed": true
+    },
+    {
+      "step": 5,
+      "op": "swap CIM_jia<->CPU_matmul",
+      "T": 1.6290124999999998,
+      "arm": "coupled",
+      "Tmax_C": 55.49000000000001,
+      "vm_chip_max_MPa": 36.39947322084568,
+      "vm_chip_name": "GPU_3070",
+      "w_pv_um": 0.9564402382009014,
+      "J": 0.9031497619835698,
+      "delta_J": -0.002424307229502487,
+      "ap": 0.9985129001840196,
+      "accept": true,
+      "stressed": true
+    },
+    {
+      "step": 6,
+      "op": "nudge GPU_3070 (-0.5,0.0)mm",
+      "T": 1.5475618749999998,
+      "arm": "coupled",
+      "Tmax_C": 55.49000000000001,
+      "vm_chip_max_MPa": 36.31577058269191,
+      "vm_chip_name": "GPU_3070",
+      "w_pv_um": 0.9507871777431764,
+      "J": 0.9016061030448166,
+      "delta_J": 0.0015436589387531896,
+      "ap": 1.0,
+      "accept": true,
+      "stressed": true
+    },
+    {
+      "step": 7,
+      "op": "jump CIM_colonnade",
+      "T": 1.4701837812499996,
+      "arm": "coupled",
+      "Tmax_C": 55.48000000000002,
+      "vm_chip_max_MPa": 36.3193096943582,
+      "vm_chip_name": "GPU_3070",
+      "w_pv_um": 0.9453732124792555,
+      "J": 0.9005647485034898,
+      "delta_J": 0.001041354541326811,
+      "ap": 1.0,
+      "accept": true,
+      "stressed": true
+    },
+    {
+      "step": 8,
+      "op": "rotate GPU_3070",
+      "T": 1.3966745921874995,
+      "arm": "coupled",
+      "accept": false,
+      "reason": "illegal"
+    },
+    {
+      "step": 9,
+      "op": "rotate CIM_colonnade",
+      "T": 1.3268408625781245,
+      "arm": "coupled",
+      "Tmax_C": 55.48000000000002,
+      "vm_chip_max_MPa": 36.31530227996721,
+      "vm_chip_name": "GPU_3070",
+      "w_pv_um": 0.9462631456925392,
+      "J": 0.9006359160112403,
+      "delta_J": -7.116750775049141e-05,
+      "ap": 0.9999463646310626,
+      "accept": true,
+      "stressed": true
+    },
+    {
+      "step": 10,
+      "op": "swap CPU_threads<->CIM_jia",
+      "T": 1.2604988194492182,
+      "arm": "coupled",
+      "Tmax_C": 55.48000000000002,
+      "vm_chip_max_MPa": 36.07340441865433,
+      "vm_chip_name": "GPU_3070",
+      "w_pv_um": 0.9352027970872963,
+      "J": 0.896834393822456,
+      "delta_J": 0.0038015221887842676,
+      "ap": 1.0,
+      "accept": true,
+      "stressed": true
+    },
+    {
+      "step": 11,
+      "op": "jump GPU_3070",
+      "T": 1.1974738784767571,
+      "arm": "coupled",
+      "Tmax_C": 55.52000000000004,
+      "vm_chip_max_MPa": 35.63832158622909,
+      "vm_chip_name": "GPU_3070",
+      "w_pv_um": 0.8674774097007993,
+      "J": 0.8856178920748924,
+      "delta_J": 0.011216501747563612,
+      "ap": 1.0,
+      "accept": true,
+      "stressed": true
+    },
+    {
+      "step": 12,
+      "op": "rotate CPU_threads",
+      "T": 1.1376001845529191,
+      "arm": "coupled",
+      "Tmax_C": 55.52000000000004,
+      "vm_chip_max_MPa": 35.63520735076159,
+      "vm_chip_name": "GPU_3070",
+      "w_pv_um": 0.8678798969774714,
+      "J": 0.8856370606298013,
+      "delta_J": -1.916855490891045e-05,
+      "ap": 0.9999831501491692,
+      "accept": true,
+      "stressed": true
+    },
+    {
+      "step": 13,
+      "op": "nudge GPU_3070 (0.0,-1.5)mm",
+      "T": 1.080720175325273,
+      "arm": "coupled",
+      "Tmax_C": 55.51000000000005,
+      "vm_chip_max_MPa": 37.189154822464786,
+      "vm_chip_name": "GPU_3070",
+      "w_pv_um": 0.8435392732852145,
+      "J": 0.8977339573853016,
+      "delta_J": -0.012096896755500297,
+      "ap": 0.9888690463701004,
+      "accept": true,
+      "stressed": true
+    },
+    {
+      "step": 14,
+      "op": "rotate CIM_jia",
+      "T": 1.0266841665590094,
+      "arm": "coupled",
+      "Tmax_C": 55.51000000000005,
+      "vm_chip_max_MPa": 38.50854189956808,
+      "vm_chip_name": "GPU_3070",
+      "w_pv_um": 0.8694575231861583,
+      "J": 0.9141676093939524,
+      "delta_J": -0.016433652008650768,
+      "ap": 0.9841208926742092,
+      "accept": true,
+      "stressed": true
+    },
+    {
+      "step": 15,
+      "op": "rotate GPU_3070",
+      "T": 0.9753499582310589,
+      "arm": "coupled",
+      "Tmax_C": 55.49000000000001,
+      "vm_chip_max_MPa": 33.763305587259815,
+      "vm_chip_name": "CIM_jia",
+      "w_pv_um": 0.9586216336370073,
+      "J": 0.8770607600772244,
+      "delta_J": 0.03710684931672792,
+      "ap": 1.0,
+      "accept": true,
+      "stressed": true
+    },
+    {
+      "step": 16,
+      "op": "swap CPU_matmul<->CPU_threads",
+      "T": 0.9265824603195059,
+      "arm": "coupled",
+      "Tmax_C": 55.49000000000001,
+      "vm_chip_max_MPa": 33.78685484736361,
+      "vm_chip_name": "CIM_jia",
+      "w_pv_um": 0.9583231761852611,
+      "J": 0.8772589454967941,
+      "delta_J": -0.00019818541956961866,
+      "ap": 0.9997861342786352,
+      "accept": true,
+      "stressed": true
+    }
+  ]
+}

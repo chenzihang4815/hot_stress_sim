@@ -1,0 +1,1225 @@
+from collections import defaultdict
+import copy
+import functools
+import itertools
+
+from typing import Any, Callable, Iterable
+
+import sympy
+
+from accelforge.frontend.mapping import Nested, TilePattern
+from accelforge.frontend.mapping import Loop as MappingLoop
+from accelforge.mapper.FFM._join_pmappings.compatibility import (
+    Compatibility,
+    Loop,
+    TensorReservation,
+)
+from accelforge.util import _fillna_and__numeric_cast, _numeric_cast
+from accelforge.util._mathfuncs import RESERVATION_PRECISION_TOLERANCE
+from accelforge.util._frozenset import fzs, oset
+
+from accelforge._accelerated_imports import pd
+
+from accelforge.mapper.FFM._pareto_df.df_convention import *
+from accelforge.mapper.FFM._pareto_df.pareto import makepareto
+
+CHECK_CORRECTNESS = False
+DEBUG_PRINT_NO_VALID = False
+
+
+def error_check_wrapper(func):
+    if not CHECK_CORRECTNESS:
+        return func
+
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        try:
+            prev_args, prev_kwargs = copy.deepcopy(args), copy.deepcopy(kwargs)
+            return func(*args, **kwargs)
+        except Exception as e:
+            print(f"EXCEPTION: {e}")
+            live_tensors = oset()
+            if "live_tensors" in kwargs:
+                live_tensors = kwargs["live_tensors"]
+            else:
+                argnames = func.__code__.co_varnames[: func.__code__.co_argcount]
+                if "live_tensors" in argnames:
+                    idx = argnames.index("live_tensors")
+                    if idx < len(args):
+                        live_tensors = args[idx]
+            for prev_arg in itertools.chain(prev_args, prev_kwargs.values()):
+                if isinstance(prev_arg, PmappingDataframe):
+                    prev_arg.fail(0, live_tensors)
+                break
+            func(*args, **kwargs)  # For debugging
+
+    return wrapper
+
+
+def reduce_precision(data: pd.DataFrame) -> pd.DataFrame:
+    data = _numeric_cast(data)
+
+    # def _reduce_precision(c: str, s: pd.Series) -> pd.Series:
+    #     # If it's an int type, check the range. If within range of 8b change to 8b. If
+    #     # within the range of 16b change to 16b...
+
+    #     # If it's a float, cast to NUMPY_FLOAT_TYPE
+    #     if pd.api.types.is_float_dtype(s) and s.dtype != NUMPY_FLOAT_TYPE:
+    #         return s.astype(NUMPY_FLOAT_TYPE)
+
+    #     if not is_fused_loop_col(c):
+    #         return s
+
+    #     # Get the range of the column
+    #     min_val = s.min()
+    #     if min_val < 0:
+    #         return s
+
+    #     max_val = s.max()
+    #     if max_val <= 2**8 - 1 and s.dtype != np.uint8:
+    #         return s.astype(np.uint8)
+    #     elif max_val <= 2**16 - 1 and s.dtype != np.uint16:
+    #         return s.astype(np.uint16)
+    #     elif max_val <= 2**32 - 1 and s.dtype != np.uint32:
+    #         return s.astype(np.uint32)
+    #     return s
+
+    # for c in data.columns:
+    #     data.loc[:, c] = _reduce_precision(c, data.loc[:, c])
+
+    return data
+
+
+def get_reservation_or_parent(
+    name: str,
+    level: int,
+    l_reservations: dict[str, set[int]],
+    r_reservations: dict[str, set[int]],
+    left: bool = False,
+    return_name_level_left: bool = False,
+) -> str | tuple[str, int, bool] | None:
+    reservations = l_reservations if left else r_reservations
+    # Previously we had the below here, but I think that's bugged because it would
+    # return None if we checked for left, it didn't exist on the left, and did exist on
+    # the right.
+    # if (levels := reservations.get(name, None)) is not None:
+
+    levels = reservations.get(name, oset())
+    while level >= -1:
+        if level in levels:
+            if return_name_level_left:
+                return name, level, left
+            return reservation2col(name, level, left)
+        # The parent of left nodes are right nodes, so if we don't find a
+        # left node immediately then we're back on the right nodes
+        levels = r_reservations.get(name, oset())
+        left = False
+        level -= 1
+    return None
+
+
+def get_latency_or_below(
+    name: str, level: int, latencies: dict[str, oset]
+) -> str | None:
+    """Latency columns include all levels below them, so the value at a level with
+    no column is the value at the closest level below it."""
+    levels = [l for l in latencies.get(name, oset()) if l >= level]
+    if not levels:
+        return None
+    return complatency2col(name, min(levels))
+
+
+class PmappingDataframe:
+    def __init__(
+        self,
+        data: pd.DataFrame,
+        n_total_pmappings: float,
+        n_valid_pmappings: float,
+        ignored_resources: set[str],
+        drop_valid_reservations: bool,
+        skip_pareto: bool = False,
+        fill_reservation_cols: set | str = fzs(),
+        check_above_subset_below: bool = CHECK_CORRECTNESS,
+        max_right_to_left: bool = False,
+        next_shared_loop_index: int = None,
+        excess_resource_tolerance: float = 0,
+    ):
+        self._data: pd.DataFrame = reduce_precision(data)
+        self._prev_free_to_loop_index = None
+        self.n_total_pmappings: float = n_total_pmappings
+        self.n_valid_pmappings: float = n_valid_pmappings
+        self.drop_valid_reservations: bool = drop_valid_reservations
+        self.excess_resource_tolerance: float = excess_resource_tolerance
+
+        if next_shared_loop_index is not None:
+            assert (
+                ignored_resources is not None
+            ), "ignored_resources must be set if next_shared_loop_index is set"
+            self.free_to_loop_index(next_shared_loop_index)
+            self.limit_capacity(
+                next_shared_loop_index=next_shared_loop_index,
+                ignored_resources=ignored_resources,
+            )
+
+        if fill_reservation_cols:  # Affects PmappingDataframe so must go before
+            self.fill_reservation_cols(fill_reservation_cols)
+        if check_above_subset_below:
+            self.check_above_subset_below()
+        if max_right_to_left:  # Affects PmappingDataframe so must go before
+            self.max_right_to_left()
+        if check_above_subset_below:
+            self.check_above_subset_below()
+
+        if not skip_pareto:
+            self.make_pareto()
+
+        if check_above_subset_below:
+            self.check_above_subset_below()
+
+        self.ignored_resources = ignored_resources
+
+        assert len(self.data.columns) == len(
+            oset(self.data.columns)
+        ), f"Duplicate columns: {self.data.columns}"
+
+    def rename(self, renames: dict[str, str]) -> "PmappingDataframe":
+        new = self.copy()
+        new.data.rename(columns=renames, inplace=True)
+        return new
+
+    @error_check_wrapper
+    def fill_reservation_cols(self, columns: set | str):
+        l_reservations, r_reservations = self._make_reservations()
+        latencies = self._make_latencies()
+        targets = []
+        latency_targets = []
+        if columns == "auto":
+            for left, reservations_dict in [
+                (True, l_reservations),
+                (False, r_reservations),
+            ]:
+                for resource, reservations in reservations_dict.items():
+                    for r in sorted(reservations):
+                        above = get_reservation_or_parent(
+                            resource, r - 1, l_reservations, r_reservations
+                        )
+                        if above is not None:
+                            below = reservation2col(resource, r, left=left)
+                            targets.append((r, above, below))
+            for component, levels in latencies.items():
+                for r in sorted(levels):
+                    source = get_latency_or_below(component, r + 1, latencies)
+                    if source is not None:
+                        latency_targets.append(
+                            (r, source, complatency2col(component, r))
+                        )
+        else:
+            for below in columns:
+                if (name_nloops := col2reservation(below)) is not None:
+                    name, nloops = name_nloops.name, name_nloops.nloops
+                    above = get_reservation_or_parent(
+                        name, nloops - 1, l_reservations, r_reservations
+                    )
+                    if above is not None:
+                        targets.append((nloops, above, below))
+                elif (name_nloops := col2complatency(below)) is not None:
+                    name, nloops = name_nloops.name, name_nloops.nloops
+                    source = get_latency_or_below(name, nloops + 1, latencies)
+                    if source is not None:
+                        latency_targets.append((nloops, source, below))
+                elif col2commlatency(below) is not None:
+                    pass
+                else:
+                    raise ValueError(f"{below} is not a valid reservation column")
+
+        # Sort so maxes propagate: reservations from top to bottom (e.g. 0->1 then
+        # 1->2), latencies from bottom to top.
+        ordered = sorted(targets, key=lambda x: x[0]) + sorted(
+            latency_targets, key=lambda x: x[0], reverse=True
+        )
+        for _, above, below in ordered:
+            assert (
+                above in self.data.columns
+            ), f"Missing column {above}. Have columns:\n\t" + "\n\t".join(
+                list(self.data.columns)
+            )
+            assert (
+                below in self.data.columns
+            ), f"Missing column {below}. Have columns:\n\t" + "\n\t".join(
+                list(self.data.columns)
+            )
+            max_to_col(self.data, below, above)
+
+    @error_check_wrapper
+    def max_right_to_left(self):
+        l_reservations, r_reservations = self._make_reservations()
+        for resource, reservations in l_reservations.items():
+            for r in reservations:
+                if r in r_reservations.get(resource, oset()):
+                    source = reservation2col(resource, r)
+                    target = reservation2col(resource, r, left=True)
+                    max_to_col(self.data, target, source)
+
+    @property
+    def data(self) -> pd.DataFrame:
+        return self._data
+
+    @error_check_wrapper
+    def _make_reservations(self) -> tuple[dict[str, set[int]], dict[str, set[int]]]:
+        """
+        Create a dictionary of reservations for each resource. The dictionary keys are
+        the resource names and the values are lists of above_loop_index values for that
+        resource.
+        """
+        l_reservations, r_reservations = {}, {}
+        for c in self.data.columns:
+            if (key := col2reservation(c)) is not None:
+                target = l_reservations if is_left_col(c) else r_reservations
+                target.setdefault(key.name, oset()).add(key.nloops)
+                assert key.nloops >= -1
+
+        return l_reservations, r_reservations
+
+    def _make_latencies(self) -> dict[str, oset]:
+        """
+        Keys component name, values are sets of column indices for that component.
+        """
+        latencies = {}
+        for c in self.data.columns:
+            if (key := col2complatency(c)) is not None:
+                latencies.setdefault(key.name, oset()).add(key.nloops)
+                assert key.nloops >= -1
+        return latencies
+
+    def _make_commlatencies(self) -> dict[str, oset]:
+        """Fused loop levels with a "descent" or "ascent" column."""
+        levels = {"descent": oset(), "ascent": oset()}
+        for c in self.data.columns:
+            if (key := col2commlatency(c)) is not None:
+                levels[key.direction].add(key.nloops)
+        return levels
+
+    def clear_fused_loop_symbols(self):
+        dropcols = [c for c in self.data.columns if is_fused_loop_col(c)]
+        if not dropcols:
+            return
+        self.data.drop(columns=dropcols, inplace=True)
+        self.make_pareto()
+
+    @error_check_wrapper
+    def free_to_loop_index(self, loop_index: int) -> bool:
+        """
+        Reservations follow:
+           A  B
+            / | --- 0
+           C  D
+            / | --- 1  <- Shared Loop Index
+           E  F
+            / | --- 2
+           G  H
+        ->
+           A  B
+            / | --- 0
+           C  D
+              | --- 1  <- Shared Loop Index
+          max(E,G,H)
+        We skip incorporating E into the max because its reservations are
+        already incorporated into F and G.
+
+        For latencies, we do:
+            A
+            | --- 0
+            B
+            | --- 1  <- Shared Loop Index
+            C
+            | --- 2
+            D
+        ->
+            A
+            | --- 0
+            B
+            | --- 1  <- Shared Loop Index
+
+        Skip incorporating D,C into B because levels already include sub-levels. Also we
+        do:
+           Total<SEP>latency = max(Total<SEP>latency, C)
+
+        since C must complete before exiting this fused loop block.
+        """
+        if loop_index == self._prev_free_to_loop_index:
+            return False
+        self._prev_free_to_loop_index = loop_index
+
+        drop_columns = []
+        l_reservations, r_reservations = self._make_reservations()
+        for resource in oset(l_reservations) | oset(r_reservations):
+            max_columns = []
+            cur_l_reservations = l_reservations.get(resource, oset())
+            cur_r_reservations = r_reservations.get(resource, oset())
+            left_big_enough = [l for l in cur_l_reservations if l > loop_index]
+            right_big_enough = [
+                r for r in cur_r_reservations if r > loop_index + 1
+            ]  # + 1 is target
+
+            if len(right_big_enough) > 1:  # All ones above the last are subsets
+                right_biggest = max(right_big_enough)
+                right_big_enough.remove(right_biggest)
+                drop_columns += [reservation2col(resource, r) for r in right_big_enough]
+                right_big_enough = [right_biggest]
+
+            max_columns = [reservation2col(resource, r) for r in right_big_enough] + [
+                reservation2col(resource, l, left=True) for l in left_big_enough
+            ]
+
+            if not max_columns:
+                continue
+
+            target = reservation2col(resource, loop_index + 1)
+            if target in self.data:
+                max_columns.append(target)
+
+            if len(max_columns) == 1:
+                self.data.rename(columns={max_columns[0]: target}, inplace=True)
+            else:
+                for c in max_columns:
+                    max_to_col(self.data, target, c)
+                drop_columns += [m for m in max_columns if m != target]
+
+        for component, levels in self._make_latencies().items():
+            done = [l for l in levels if l > loop_index]
+            if not done:
+                continue
+            # Latency can only be shared between Einsums whose reservations live at the
+            # same time (a transfer needs its space to already be reserved), so levels
+            # whose reservations future Einsums would max rather than sum are finished.
+            # Columns include all levels below, so the shallowest done column has all of
+            # the finished latency
+            assert "Total<SEP>latency" in self.data
+            max_to_col(
+                self.data, "Total<SEP>latency", complatency2col(component, min(done))
+            )
+            drop_columns += [complatency2col(component, l) for l in done]
+
+        # Wind-up/down times serialize with the freed window's busy time, so add them
+        # after the maxes above.
+        for direction, levels in self._make_commlatencies().items():
+            for level in levels:
+                if level > loop_index:
+                    col = commlatency2col(direction, level)
+                    self.data["Total<SEP>latency"] += self.data[col]
+                    drop_columns.append(col)
+
+        self._data = self.data.drop(columns=drop_columns)
+
+        return len(drop_columns) != 0
+
+    @error_check_wrapper
+    def shift_bottom_reservation_left(self, bottom_loop_index: int):
+        """
+        Shifts the bottom reservation from right to left.
+        Example:
+            Before:                After:
+            A  B                   A  B
+             / | --- 0             / | --- 0
+            C  D                  C  D
+               | --- 1             /   --- 1
+               E                  E
+        """
+        _l_reservations, r_reservations = self._make_reservations()
+        for resource in r_reservations:
+            if bottom_loop_index + 1 not in r_reservations[resource]:
+                continue
+            source = reservation2col(resource, bottom_loop_index + 1)
+            target = reservation2col(resource, bottom_loop_index + 1, left=True)
+            if target in self.data:
+                max_to_col(self.data, target, source)
+                self.data.drop(columns=[source], inplace=True)
+            else:
+                self.data.rename(columns={source: target}, inplace=True)
+
+    @staticmethod
+    def _get_target_path(suffix: str = None) -> str:
+        import os
+
+        f = "./images"
+        os.makedirs(f, exist_ok=True)
+        suffix = "" if suffix is None else f".{suffix}"
+        i = 0
+        while os.path.exists(os.path.join(f, f"test_{i}{suffix}.png")):
+            i += 1
+        return os.path.join(f, f"test_{i}{suffix}.png")
+
+    def get_max_loop_index(self):
+        l_reservations, r_reservations = self._make_reservations()
+        return max(
+            max(
+                (max(r, default=-1) for r in r_reservations.values()),
+                default=-1,
+            ),
+            max(
+                (max(r, default=-1) for r in l_reservations.values()),
+                default=-1,
+            ),
+        )
+
+    def get_min_loop_index(self):
+        l_reservations, r_reservations = self._make_reservations()
+        return min(
+            min(
+                (min(r, default=1000000) for r in r_reservations.values()),
+                default=1000000,
+            ),
+            min(
+                (min(r, default=1000000) for r in l_reservations.values()),
+                default=1000000,
+            ),
+        )
+
+    @error_check_wrapper
+    def merge_next(
+        self,
+        right: "PmappingDataframe",
+        duplicated_aliased_tensors: set[TensorReservation],
+        compatibility_left: Compatibility,
+        compatibility_right: Compatibility,
+        compatibility_joined: Compatibility,
+        ignored_resources: set[str],
+        do_not_free: set[str] = fzs(),
+        _pmapping_row_filter_function: Callable[[pd.Series], bool] | None = None,
+        _force_allow_invalid_only_for_runtime_test: bool = False,
+        _is_invalid: bool = False,
+    ) -> "PmappingDataframe":
+        """
+           A  B            A2
+            / | --- 0      |
+           C  D            C2
+              | --- 1      |     < Shared Loop Index
+              E            E2
+                           |
+                           F2
+           ->
+           A  A+A2
+            / | --- 0
+        C+A2  C+C2
+            / | --- 1  < Shared Loop Index
+        E+C2  E2+D
+              |
+              F2+D
+        """
+        live_tensors = compatibility_joined.tensor_names
+        shared_loop_index = compatibility_left.n_loops - 1
+        next_shared_loop_index = compatibility_joined.n_loops - 1
+
+        self.free_to_loop_index(shared_loop_index)
+        self.shift_bottom_reservation_left(shared_loop_index)
+
+        shared_tensor_names = (
+            compatibility_left.tensor_names & compatibility_right.tensor_names
+        )
+        shared_tensors = [
+            compatibility_left.get_reservation_of_tensor(s) for s in shared_tensor_names
+        ]
+        left_match, right_match = [], []
+        make_empty_result = False
+
+        def check_match(la: Loop, lb: Loop, param: str):
+            a, b = getattr(la.tile_pattern, param), getattr(lb.tile_pattern, param)
+            if isinstance(a, str) and isinstance(b, str):
+                if a in left_match and b in left_match:
+                    return
+                left_match.append(a)
+                right_match.append(b)
+            elif a != b:
+                raise ValueError(f"Mismatch in {param}: {a} != {b}")
+
+        try:
+            for s in shared_tensor_names:
+                ta = compatibility_left.get_reservation_of_tensor(s)
+                tb = compatibility_right.get_reservation_of_tensor(s)
+                for la, lb in zip(ta.loops, tb.loops):
+                    check_match(la, lb, "initial_tile_shape")
+                    check_match(la, lb, "tile_shape")
+                for la, lb in zip(ta.physical_spatial_loops, tb.physical_spatial_loops):
+                    check_match(la, lb, "initial_tile_shape")
+                    check_match(la, lb, "tile_shape")
+                    check_match(la, lb, "calculated_n_iterations")
+
+            for la, lb in zip(compatibility_left.loops, compatibility_right.loops):
+                check_match(la, lb, "calculated_n_iterations")
+
+        except ValueError as e:
+            make_empty_result = True
+
+        right_df_l_reservations, right_df_r_reservations = right._make_reservations()
+        assert not right_df_l_reservations, f"{right_df_l_reservations} is not None"
+
+        l_reservations, r_reservations = self._make_reservations()
+        l_latencies = self._make_latencies()
+        r_latencies = right._make_latencies()
+
+        for resource, reservations in r_reservations.items():
+            n_reservations = max(reservations, default=-1)
+            assert (
+                n_reservations <= shared_loop_index
+            ), f"{resource}: {reservations} > {shared_loop_index}"
+
+        for resource, reservations in l_reservations.items():
+            n_reservations = max(reservations, default=-1)
+            assert (
+                n_reservations <= shared_loop_index + 1
+            ), f"{resource}: {reservations} > {shared_loop_index}"
+
+        max_nloops = max(
+            shared_loop_index, self.get_max_loop_index(), right.get_max_loop_index()
+        )
+        min_nloops = min(self.get_min_loop_index(), right.get_min_loop_index())
+
+        sd, rd = self.data, right.data
+        if make_empty_result:
+            sd = sd.iloc[0:0]
+            rd = rd.iloc[0:0]
+
+        # _force_allow_invalid_only_for_runtime_test -> only merge matched ones
+        if left_match and not _force_allow_invalid_only_for_runtime_test:
+            df = pd.merge(
+                sd,
+                rd,
+                how="inner",
+                left_on=left_match,
+                right_on=right_match,
+                suffixes=["", "_RIGHT_MERGE"],
+            )
+        else:
+            df = pd.merge(sd, rd, how="cross", suffixes=["", "_RIGHT_MERGE"])
+
+        df = reduce_precision(df)
+
+        # Drop all fused loop columns that are not used anymore
+        remaining_symbols = compatibility_joined.symbols()
+        dropcols = [
+            c for c in df.columns if is_fused_loop_col(c) and c not in remaining_symbols
+        ]
+        df = df.drop(columns=dropcols)
+
+        # Number of combinations
+        n_total_pmappings = self.n_total_pmappings * right.n_total_pmappings
+        n_valid_pmappings = self.n_valid_pmappings * right.n_valid_pmappings
+        scale_by = len(df) / max(1, len(self.data) * len(right.data))
+        n_total_pmappings *= scale_by
+        n_valid_pmappings *= scale_by
+
+        def from_right(c: str) -> str:
+            # If a column is in both DFs, do the appropriate rename to grab the one from
+            # the right side
+            right_merge = c + "_RIGHT_MERGE"
+            return right_merge if right_merge in df else c
+
+        # Make sure everything is done in increasing loop order so we don't have
+        # read-after-write hazards
+        for nloops in range(max_nloops, min_nloops - 1, -1):
+
+            def iter_reservations(reservations_dict):
+                for resource in reservations_dict:
+                    if nloops in reservations_dict[resource]:
+                        yield resource
+
+            # For the RIGHT tree, RIGHT reservations: If there is no matching node in
+            # the left tree, add the above-this-level reservation from the left tree. If
+            # there is a matching node in the left tree, then we'll add this node to it
+            # in the next step.
+            for resource in iter_reservations(right_df_r_reservations):
+                if (
+                    source := get_reservation_or_parent(
+                        resource, nloops - 1, l_reservations, r_reservations
+                    )
+                ) is None:
+                    continue
+                target = reservation2col(resource, nloops)
+                # If there's a merged version column, then it's in both trees
+                if target + "_RIGHT_MERGE" in df:
+                    continue
+                add_to_col(df, target, source)
+            # For LEFT tree, LEFT reservations: Add the immediately-above
+            # reservation from the right tree.
+            for resource in iter_reservations(l_reservations):
+                if (
+                    source := get_reservation_or_parent(
+                        resource,
+                        nloops - 1,
+                        right_df_l_reservations,
+                        right_df_r_reservations,
+                    )
+                ) is None:
+                    continue
+                target = reservation2col(resource, nloops, left=True)
+                if source is not None:
+                    add_to_col(df, target, from_right(source))
+            # For LEFT tree, RIGHT reservations: Add the same-level reservation from the
+            # right tree. This will double-count reservations that are in both branches,
+            # so we remove them later.
+            for resource in iter_reservations(r_reservations):
+                if (
+                    source := get_reservation_or_parent(
+                        resource,
+                        nloops,
+                        right_df_l_reservations,
+                        right_df_r_reservations,
+                    )
+                ) is None:
+                    continue
+                target = reservation2col(resource, nloops)
+                if source is not None:
+                    add_to_col(df, target, from_right(source))
+
+        # PIPELINE: The following would need some maxes
+
+        # Component latencies are always summed. Some extra logic needed in case there's
+        # missing columns that make us need to grab from a column below. A side with no
+        # column at or below a level has no latency there and contributes nothing.
+        for component in oset(l_latencies) | oset(r_latencies):
+            l_levels = l_latencies.get(component, oset())
+            r_levels = r_latencies.get(component, oset())
+            # max_nloops/min_nloops only cover reservation levels, so iterate the
+            # latency levels directly (ascending so the deeper columns we read are
+            # still unmodified).
+            for nloops in sorted(l_levels | r_levels):
+                target = complatency2col(component, nloops)
+                # In both: Simple add
+                if nloops in l_levels and nloops in r_levels:
+                    add_to_col(df, target, from_right(target))
+
+                # In left only: Add the closest-below one from the right
+                elif nloops in l_levels:
+                    source = get_latency_or_below(component, nloops, r_latencies)
+                    if source is not None:
+                        add_to_col(df, target, from_right(source))
+
+                # In right only: Same thing
+                elif nloops in r_levels:
+                    source = get_latency_or_below(component, nloops, l_latencies)
+                    if source is not None:
+                        add_to_col(df, target, source)
+
+        # Most other things: Simple add. Descent/ascent wind-up latencies are maxed
+        # because they can be paid in parallel across all Einsums that are
+        # descending/ascending together.
+        dropcols = [c for c in df.columns if c.endswith("_RIGHT_MERGE")]
+        for source in dropcols:
+            target = source[: -len("_RIGHT_MERGE")]
+            if is_tensor_col(target):
+                continue
+            if col2complatency(target) is not None:
+                continue
+            if col2commlatency(target) is not None:
+                max_to_col(df, target, source)
+                continue
+            if not col_used_in_pareto(target):
+                raise ValueError(f"{target} is not used in pareto")
+            if col2reservation(target) is None:
+                add_to_col(df, target, source)
+
+        df = df.drop(columns=dropcols)
+
+        result = PmappingDataframe(
+            df,
+            skip_pareto=True,
+            check_above_subset_below=False,
+            n_total_pmappings=n_total_pmappings,
+            n_valid_pmappings=n_valid_pmappings,
+            ignored_resources=self.ignored_resources,
+            drop_valid_reservations=self.drop_valid_reservations,
+        )
+        # Remove tensors that were allocated in both branches and got added
+        # together.
+        shared_to_free = [
+            s
+            for s in shared_tensors
+            if s.above_loop_index <= shared_loop_index and s.name not in do_not_free
+        ]
+        reservations_of_live_tensor_not_in_right = [
+            compatibility_joined.get_reservation_of_tensor(t)
+            for t in compatibility_joined.tensor_names
+            - compatibility_right.tensor_names
+        ]
+        live_to_alloc = [
+            r
+            for r in reservations_of_live_tensor_not_in_right
+            if r.above_loop_index > shared_loop_index
+        ]
+
+        # Assert duplicated aliased tensors have the same reservation sizes
+        shared_keys = {(s.resource_name, s.above_loop_index) for s in shared_to_free}
+        free = list(shared_to_free)
+        for d in duplicated_aliased_tensors:
+            key = (d.resource_name, d.above_loop_index)
+            if key in shared_keys:
+                for s in shared_to_free:
+                    if (s.resource_name, s.above_loop_index) == key:
+                        assert (
+                            result.data[tensor2col(s.name)]
+                            == result.data[tensor2col(d.name)]
+                        ).all(), (
+                            f"Duplicated tensors {s.name} and {d.name} in "
+                            f"{d.resource_name} have different reservation sizes"
+                        )
+                continue
+            free.append(d)
+
+        result.adjust_reservations(
+            alloc=live_to_alloc,
+            free=free,
+            ignored_resources=ignored_resources,
+        )
+
+        dead_tensor_cols = [
+            c
+            for c in result.data.columns
+            if is_tensor_col(c) and col2nametensor(c) not in live_tensors
+        ]
+        result.data.drop(columns=dead_tensor_cols, inplace=True)
+
+        if CHECK_CORRECTNESS:
+            result.check_above_subset_below(live_tensors)
+            result.check_reservations(live_tensors)
+
+        result.free_to_loop_index(next_shared_loop_index)
+        if not CHECK_CORRECTNESS:
+            result.limit_capacity(
+                next_shared_loop_index, ignored_resources=ignored_resources
+            )
+        result.max_right_to_left()
+        if _pmapping_row_filter_function is not None:
+            result = result.filter_rows(_pmapping_row_filter_function)
+        result.make_pareto()
+
+        # This join was invalid (we only ran it for runtime measurement). Clear all the
+        # mappings.
+        if _is_invalid:
+            result._data = result.data.iloc[0:0]
+
+        # If we're running _force_allow_invalid_only_for_runtime_test, we don't want to
+        # have all those invalid combinations, so return the actual merge result.
+        elif _force_allow_invalid_only_for_runtime_test:
+            return self.merge_next(
+                right,
+                duplicated_aliased_tensors,
+                compatibility_left,
+                compatibility_right,
+                compatibility_joined,
+                ignored_resources,
+                _pmapping_row_filter_function,
+                _force_allow_invalid_only_for_runtime_test=False,
+            )
+
+        return result
+
+    @error_check_wrapper
+    def _adjust_reservations_one_resource(
+        self,
+        resource: str,
+        alloc: Iterable[TensorReservation],
+        free: Iterable[TensorReservation],
+    ):
+        alloc, free = list(alloc), list(free)
+        # Iterate through each reservation and level
+        targets = defaultdict(int)
+
+        l_reservations, r_reservations = self._make_reservations()
+
+        # Must allocate at the above_loop_index level
+        for t in itertools.chain(alloc, free):
+            r_reservations.setdefault(resource, oset()).add(t.above_loop_index)
+
+        for t, negate in [(t, False) for t in alloc] + [(t, True) for t in free]:
+            size = self.data[tensor2col(t.name)]
+            size = -size if negate else size
+            targets[t.above_loop_index, False] += size
+            # Allocate at any levels below the above_loop_index level
+            for level in r_reservations[resource]:
+                if level > t.above_loop_index:
+                    targets[level, False] += size
+            for level in l_reservations.get(resource, oset()):
+                if level > t.above_loop_index:
+                    targets[level, True] += size
+
+        # Now apply the allocations. Sort so we go from top to bottom in case
+        # there are maxes that propagate down.
+        for (level, left), size in sorted(
+            targets.items(), key=lambda x: x[0], reverse=True
+        ):
+            target = reservation2col(resource, level, left=left)
+            if target in self.data:
+                add_to_col(self.data, target, size)
+                continue
+
+            # We're creating a new column, so copy allocations from any parents
+            source = get_reservation_or_parent(
+                resource, level - 1, l_reservations, r_reservations
+            )
+            if source:
+                assert (
+                    source in self.data.columns
+                ), f"{source} not in {sorted(self.data.columns)}"
+                add_to_col(self.data, target, source)
+                add_to_col(self.data, target, size)
+            else:
+                self.data[target] = size
+
+            # We made a new column! Update our reservations so future iterations
+            # know about it.
+            l_reservations, r_reservations = self._make_reservations()
+
+            # Assert all reservations are >= 0
+            assert (self.data[target] >= 0).all(), f"Negative reservation: {target}"
+
+    @error_check_wrapper
+    def adjust_reservations(
+        self,
+        alloc: Iterable[TensorReservation],
+        free: Iterable[TensorReservation],
+        ignored_resources: set[str] = oset(),
+    ):
+        alloc, free = list(alloc), list(free)
+        all_resources = oset(t.resource_name for t in alloc) | oset(
+            t.resource_name for t in free
+        )
+        ignored_resources = ignored_resources | self.ignored_resources
+        # Handle each resource separately
+        for resource in all_resources:
+            if resource in ignored_resources:
+                continue
+            cur_alloc = [t for t in alloc if t.resource_name == resource]
+            cur_free = [t for t in free if t.resource_name == resource]
+            if cur_alloc or cur_free:
+                self._adjust_reservations_one_resource(resource, cur_alloc, cur_free)
+
+    @staticmethod
+    def concat(
+        paretos: list["PmappingDataframe"], skip_pareto: bool = False
+    ) -> "PmappingDataframe":
+        if len(paretos) == 0:
+            raise ValueError("No paretos to concatenate")
+        if len(paretos) == 1:
+            return paretos[0]
+
+        required_cols = oset.union(*[oset(p.data.columns) for p in paretos])
+        shared_cols = oset.intersection(*[oset(p.data.columns) for p in paretos])
+        fill_cols = required_cols - shared_cols
+        fill_cols = [c for c in fill_cols if col_used_in_pareto(c)]
+
+        concatenated = pd.concat([p.data for p in paretos]).reset_index(drop=True)
+
+        p = PmappingDataframe(
+            _fillna_and__numeric_cast(concatenated, 0),
+            skip_pareto=len(paretos) == 1 or skip_pareto,
+            fill_reservation_cols=fill_cols,
+            n_total_pmappings=sum(p.n_total_pmappings for p in paretos),
+            n_valid_pmappings=sum(p.n_valid_pmappings for p in paretos),
+            ignored_resources=next(iter(paretos)).ignored_resources,
+            drop_valid_reservations=next(iter(paretos)).drop_valid_reservations,
+        )
+        return p
+
+    def update(
+        self,
+        skip_pareto: bool,
+        **kwargs,
+    ) -> "PmappingDataframe":
+        args = dict(
+            data=self.data,
+            skip_pareto=skip_pareto,
+            check_above_subset_below=False,
+            n_total_pmappings=self.n_total_pmappings,
+            n_valid_pmappings=self.n_valid_pmappings,
+            ignored_resources=self.ignored_resources,
+            drop_valid_reservations=self.drop_valid_reservations,
+        )
+        args.update(kwargs)
+        return PmappingDataframe(**args)
+
+    def copy(self, copy_df: bool = True) -> "PmappingDataframe":
+        return self.update(
+            data=self.data.copy() if copy_df else self.data,
+            skip_pareto=True,
+            check_above_subset_below=False,
+        )
+
+    def split_in_half(self) -> tuple["PmappingDataframe", "PmappingDataframe"]:
+        mid = len(self.data) // 2
+        half_total = self.n_total_pmappings / 2
+        half_valid = self.n_valid_pmappings / 2
+        first = self.update(
+            data=self.data.iloc[:mid].copy(),
+            skip_pareto=True,
+            n_total_pmappings=half_total,
+            n_valid_pmappings=half_valid,
+        )
+        second = self.update(
+            data=self.data.iloc[mid:].copy(),
+            skip_pareto=True,
+            n_total_pmappings=half_total,
+            n_valid_pmappings=half_valid,
+        )
+        return first, second
+
+    def limit_capacity(
+        self,
+        next_shared_loop_index: int = None,
+        ignored_resources: set[str] = oset(),
+        finished: bool = False,
+    ):
+        dropcols = []
+        l_reservations, r_reservations = self._make_reservations()
+        tolerance = self.excess_resource_tolerance
+        for resource in sorted(oset(r_reservations) | oset(l_reservations)):
+            # Right reservations: Only check the greatest-index level. If a loop
+            # is 0 and the next shared loop index is -1, then we can drop the
+            # column.
+            right_loops = r_reservations.get(resource, oset())
+            for l in list(right_loops):
+                col = reservation2col(resource, l)
+                if (
+                    DEBUG_PRINT_NO_VALID
+                    and sum(self.data[col] <= 1 + tolerance) == 0
+                    and len(self.data) == 1
+                    and tolerance == 0
+                ):
+                    print(
+                        f"Resource {resource} has no valid reservations. Failed for {col}: {next(iter(self.data[col]))} <= {1 + tolerance}: {next(iter(self.data[col])) <= 1 + tolerance}"
+                    )
+                    for col2 in self.data.columns:
+                        print(f"{col2}: {list[Any](self.data[col2])}")
+                self._data = self.data[
+                    self.data[col] <= 1 + tolerance + RESERVATION_PRECISION_TOLERANCE
+                ]
+                if (
+                    l <= 0
+                    and next_shared_loop_index == -1
+                    # CAN'T DROP RESERVATIONS UNTIL WE'RE FINISHED JOINING. Persistent
+                    # tensors may get saved later and would live at the same time as
+                    # these reservations.
+                    and finished
+                    and self.drop_valid_reservations
+                    and resource not in ignored_resources
+                    and (tolerance == 0 or not any(self.data[col] > 1))
+                ):
+                    right_loops.discard(l)
+                    dropcols.append(col)
+
+            # Left reservations: Check all levels. If a loop is 0,
+            # then we can drop the column.
+            left_loops = l_reservations.get(resource, oset())
+            for l in list(left_loops):
+                col = reservation2col(resource, l, left=True)
+                if (
+                    DEBUG_PRINT_NO_VALID
+                    and sum(self.data[col] <= 1 + tolerance) == 0
+                    and len(self.data) == 1
+                    and tolerance == 0
+                ):
+                    print(
+                        f"Resource {resource} has no valid reservations. Failed for {col}: {next(iter(self.data[col]))} <= {1 + tolerance}: {next(iter(self.data[col])) <= 1 + tolerance}"
+                    )
+                    for col2 in self.data.columns:
+                        print(f"{col2}: {list[Any](self.data[col2])}")
+                self._data = self.data[
+                    self.data[col] <= 1 + tolerance + RESERVATION_PRECISION_TOLERANCE
+                ]
+                if (
+                    l <= 0
+                    # CAN'T DROP RESERVATIONS UNTIL WE'RE FINISHED JOINING. Persistent
+                    # tensors may get saved later.
+                    and finished
+                    and self.drop_valid_reservations
+                    and resource not in ignored_resources
+                    and (tolerance == 0 or not any(self.data[col] > 1))
+                ):
+                    left_loops.discard(l)
+                    dropcols.append(col)
+
+        self._data = self.data.drop(columns=dropcols)
+
+    def make_pareto(
+        self,
+        columns: list[str] = None,
+        objective_tolerance: float = 0,
+        resource_usage_tolerance: float = 0,
+        absolute_resource_usage_tolerance: float = 0,
+        inplace: bool = True,
+    ) -> "PmappingDataframe":
+        # The error for absolute_resource_usage_tolerance sums each time we modify the
+        # df and prune, so if we use it more, we need to use a lower threshold. The
+        # max_n_einsums value assumes that absolute_resource_usage_tolerance is only
+        # used for joining.
+        if self.drop_valid_reservations:
+            resource_usage_tolerance = objective_tolerance
+
+        new_data = makepareto(
+            self.data,
+            columns,
+            resource_usage_tolerance=resource_usage_tolerance,
+            absolute_resource_usage_tolerance=absolute_resource_usage_tolerance,
+            objective_tolerance=objective_tolerance,
+        )
+        if inplace:
+            self._data = new_data
+            return self
+        else:
+            return self.update(data=new_data, skip_pareto=True)
+
+    def has_reservations(self):
+        return any(col2reservation(c) is not None for c in self.data.columns)
+
+    # ============================================================================
+    # Checking functions
+    # ============================================================================
+    def check_above_subset_below(self, live_tensors: set[str] = fzs()):
+        assert not self.data.isnull().values.any(), f"NaN in {self.data}"
+        targets = []
+        l_reservations, r_reservations = self._make_reservations()
+        for left, reservations_dict in [
+            (True, l_reservations),
+            (False, r_reservations),
+        ]:
+            for resource, reservations in reservations_dict.items():
+                for r in reservations:
+                    above = get_reservation_or_parent(
+                        resource, r - 1, l_reservations, r_reservations
+                    )
+                    if above is not None:
+                        below = reservation2col(resource, r, left=left)
+                        targets.append((above, below))
+
+        for above, below in targets:
+            if (self.data[below] < self.data[above]).any():
+                first_failing_index = (self.data[below] < self.data[above]).idxmax()
+                fail_row = self.data.iloc[first_failing_index]
+                error = f"""
+                {below} column is less than {above} column. A reservation at
+                a level should include all reservations above it. There were {len(fail_row)} rows
+                with this error. One example: {fail_row}
+                """
+                self.fail(first_failing_index, live_tensors)
+                raise ValueError(error)
+
+    def filter_rows(
+        self, _pmapping_row_filter_function: Callable[[pd.Series], bool] | None = None
+    ) -> "PmappingDataframe":
+        if _pmapping_row_filter_function is None:
+            return self.copy()
+
+        # s = _pmapping_row_filter_function(self._data)
+        # if s.sum() > 0:
+        #     print(f"Filter rate: {s.sum() / len(s):.2%}")
+        return self.update(
+            data=self._data[_pmapping_row_filter_function(self._data)].copy(),
+            skip_pareto=True,
+        )
+
+    def __len__(self) -> int:
+        return len(self._data)
+
+    # @error_check_wrapper
+    # def check_reservations(self, live_tensors: set[int]):
+    #     from accelforge.visualization.reservationtree import mappings2reservationtree
+    #     assert not self.data.isnull().values.any(), f"NaN in {self.data}"
+
+    #     self = self.copy()
+
+    #     self.free_to_loop_index(-1)
+    #     self.shift_bottom_reservation_left(-1)
+
+    #     for i, r in self.data.iterrows():
+    #         looptree = mappings2reservationtree(
+    #             r[MAPPING_COLUMN],
+    #             r.get(STATS, None),
+    #             still_live_tensors=live_tensors
+    #         )
+    #         reservations = dict(looptree.get_reservations())
+
+    #         # If r doesn't have any columns, continue. It's a copy Einsum so it has no
+    #         # stats.
+    #         if r.empty:
+    #             continue
+
+    #         for k, v in reservations.items():
+    #             col = get_reservation_or_parent(k, 0, left=True)
+    #             if str(k) == "0":
+    #                 continue
+    #             if col not in self.data.columns:
+    #                 got = r[[c for c in self.data.columns if col2reservation(c) is not None]]
+    #                 self.fail(i, live_tensors)
+    #                 raise ValueError(f"Missing {k}: Expected {reservations}. Got: {got}")
+    #             if r[col] != v:
+    #                 got = r[[c for c in self.data.columns if col2reservation(c) is not None]]
+    #                 self.fail(i, live_tensors)
+    #                 looptree = mappings2reservationtree(
+    #                     r[MAPPING_COLUMN],
+    #                     r.get(STATS, None),
+    #                     # skip_backing_tensors_in_right_branch=live_tensors,
+    #                     still_live_tensors=live_tensors,
+    #                 )
+    #                 raise ValueError(
+    #                     f"Mismatched {k}: {v} != {r[col]}. Expected {reservations}. Got: {got}"
+    #                 )
+
+    # def fail(self, index, live_tensors):
+    #     from accelforge.mapper.FFM._join_pmappings.pmapping_group import TensorReservation
+    #     r = self.data.iloc[index]
+    #     assert not self.data.isnull().values.any(), f"NaN in {self.data}"
+    #     self = self.copy()
+    #     self._draw_index(index, live_tensors, self._get_target_path(suffix="fail"))
+    #     all_tensors = oset(t for tn in r[MAPPING_COLUMN].values() for t in tn.tensors)
+    #     all_tensors = TensorReservation.get_backing_tensors(all_tensors)
+    #     for t in sorted(all_tensors):
+    #         print(f"{t.__repr__()},")
+
+    # def _draw_index(self, index: int, live_tensors, to_file: str = "test.png"):
+    #     from accelforge.visualization.reservationtree import mappings2reservationtree
+    #     import pydot
+    #     looptree = mappings2reservationtree(
+    #         self.data.iloc[index][MAPPING_COLUMN],
+    #         self.data.iloc[index].get(STATS, None),
+    #         still_live_tensors=live_tensors,
+    #     )
+    #     graph = pydot.Dot(graph_type="digraph", ranksep="0.2", nodesep="0.2")
+    #     looptree.to_pydot(graph)
+    #     row = self.data.iloc[index]
+    #     all_data = sorted(f"{k}: {v}" for k, v in row.items() if k not in DICT_COLUMNS)
+    #     data_str = "\n".join(all_data)
+    #     graph.add_node(pydot.Node("data", label=data_str, shape="plaintext"))
+    #     with open(to_file, "wb") as f:
+    #         f.write(graph.create_png())
+
+    def clear_irrelevant_columns(
+        self, compatibility: Compatibility
+    ) -> "PmappingDataframe":
+        return self.update(
+            data=compatibility.clear_unrelated_columns(self._data),
+            skip_pareto=True,
+        )
+
+
+def row2pmappings(
+    row: pd.Series,
+    einsum_names: list[str],
+    rank_variable_bounds: dict[str, dict[str, int]],
+) -> list[Nested]:
+    pmappings: list[Nested] = []
+    for einsum_name in einsum_names:
+        pmapping: Nested = copy.deepcopy(row[f"{einsum_name}<SEP>{MAPPING_COLUMN}"])
+        for node in pmapping.nodes:
+
+            def acc(s: str | None | int):
+                s = s.name if isinstance(s, sympy.Symbol) else s
+                return row[f"{einsum_name}<SEP>{s}"] if isinstance(s, str) else s
+
+            if isinstance(node, MappingLoop):
+                tp: TilePattern = node.tile_pattern
+                node.tile_pattern = tp.update(
+                    initial_tile_shape=acc(tp.initial_tile_shape),
+                    tile_shape=acc(tp.tile_shape),
+                )
+        pmappings.append(pmapping)
+        pmapping._beautify_loops(rank_variable_bounds)
+    return pmappings

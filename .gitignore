@@ -1,0 +1,14 @@
+# 编译产物。这些是 Linux 二进制，Windows 上不能执行，而且 gem5 的
+# gem5.opt 单文件就超过 1 GB，超过 GitHub 的 100 MB 单文件上限。
+gem5-stable/**/build/
+**/gpu-simulator/build/
+**/gpu-simulator/bin/
+
+# 编译中间文件
+*.o
+*.os
+*.pyc
+*.pyo
+
+# Python 缓存
+__pycache__/

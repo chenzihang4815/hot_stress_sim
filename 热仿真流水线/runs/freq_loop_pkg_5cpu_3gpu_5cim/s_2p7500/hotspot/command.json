@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/home/czh/任务仿真产生功耗文件工具/HotSpot-master/hotspot",
+    "-f",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/freq_loop_pkg_5cpu_3gpu_5cim/s_2p7500/hotspot/floorplan.flp",
+    "-p",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/freq_loop_pkg_5cpu_3gpu_5cim/s_2p7500/hotspot/power.ptrace",
+    "-c",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/freq_loop_pkg_5cpu_3gpu_5cim/s_2p7500/hotspot/hotspot.config",
+    "-model_type",
+    "grid",
+    "-steady_file",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/freq_loop_pkg_5cpu_3gpu_5cim/s_2p7500/hotspot/block.steady",
+    "-grid_steady_file",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/freq_loop_pkg_5cpu_3gpu_5cim/s_2p7500/hotspot/grid.steady"
+  ],
+  "returncode": 0,
+  "block_steady": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/freq_loop_pkg_5cpu_3gpu_5cim/s_2p7500/hotspot/block.steady",
+  "grid_steady": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/freq_loop_pkg_5cpu_3gpu_5cim/s_2p7500/hotspot/grid.steady"
+}

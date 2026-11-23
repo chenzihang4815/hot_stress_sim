@@ -1,0 +1,75 @@
+{
+  "mix": "noCache__colonnade",
+  "algorithm": "lbfgs",
+  "n_blocks": 3,
+  "layout": {
+    "width_m": 0.03293470809173048,
+    "height_m": 0.027132121794683724,
+    "outline_mm2": 893.5885112171869,
+    "block_area_mm2": 818.131649891352,
+    "deadspace_ratio": 0.08444251507111766,
+    "overlap_m2": 0.0,
+    "overlap_count": 0.0,
+    "algorithm": "lbfgs",
+    "seed": 13,
+    "max_iter": 40,
+    "cost": 928.2255615542934,
+    "history_tail": [
+      928.2255615542934,
+      928.2255615542934
+    ]
+  },
+  "thermal": {
+    "Tmax_C": 54.629999999999995,
+    "Tmin_C": 51.870000000000005,
+    "block_T_C": {
+      "CPU": 54.23000000000002,
+      "GPU": 54.629999999999995,
+      "CIM": 53.950000000000045,
+      "iface_CPU": 54.05000000000001,
+      "iface_GPU": 54.52000000000004,
+      "iface_CIM": 53.83000000000004,
+      "hsink_CPU": 53.09000000000003,
+      "hsink_GPU": 53.89000000000004,
+      "hsink_CIM": 53.14000000000004,
+      "inode_0": 53.26000000000005,
+      "inode_1": 53.32000000000005,
+      "inode_2": 52.670000000000016,
+      "inode_3": 52.97000000000003,
+      "inode_4": 53.170000000000016,
+      "inode_5": 53.22000000000003,
+      "inode_6": 52.64000000000004,
+      "inode_7": 52.93000000000001,
+      "inode_8": 52.49000000000001,
+      "inode_9": 52.54000000000002,
+      "inode_10": 51.870000000000005,
+      "inode_11": 52.129999999999995
+    },
+    "returncode": 0
+  },
+  "power_total_W": 73.67251539389066,
+  "area_total_mm2": 818.131649891352,
+  "blocks": [
+    {
+      "name": "CPU",
+      "kind": "CPU",
+      "area_mm2": 2.90029,
+      "power_W": 0.6763172000000001,
+      "notes": "gem5 TimingSimpleCPU 无 cache，hello；P=RuntimeDynamic(0.0566172)+Leakage(0.6197)"
+    },
+    {
+      "name": "GPU",
+      "kind": "GPU",
+      "area_mm2": 815.0,
+      "power_W": 72.955,
+      "notes": "backprop kernel=_Z22bpnn_layerforward_CUDAPfS_S_S_ii；功率来自 AccelWattch kernel_avg_power；面积不是仿真器输出，采用 GV100 裸片 815.0 mm²"
+    },
+    {
+      "name": "CIM",
+      "kind": "CIM",
+      "area_mm2": 0.231359891352,
+      "power_W": 0.04119819389066705,
+      "notes": "AccelForge colonnade 自带任务；AccelForge colonnade_jssc_2021+builtin；P=energy/latency=0.0411982 W"
+    }
+  ]
+}

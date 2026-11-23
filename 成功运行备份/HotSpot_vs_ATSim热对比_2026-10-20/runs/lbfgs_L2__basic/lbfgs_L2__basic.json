@@ -1,0 +1,49 @@
+{
+  "name": "lbfgs_L2__basic",
+  "description": "L-BFGS initial floorplan: CPU + GPU + CIM. Heat-only compare vs HotSpot.",
+  "chips": [
+    {
+      "name": "CPU",
+      "x_mm": 0.0,
+      "y_mm": 25.258587168002904,
+      "w_mm": 3.3564377469530764,
+      "h_mm": 4.062193619523315,
+      "t_um": 150.0,
+      "power_W": 0.8679134
+    },
+    {
+      "name": "GPU",
+      "x_mm": 0.2991560949397331,
+      "y_mm": 0.0,
+      "w_mm": 32.33025296373904,
+      "h_mm": 25.208587168002904,
+      "t_um": 150.0,
+      "power_W": 72.955
+    },
+    {
+      "name": "CIM",
+      "x_mm": 0.0,
+      "y_mm": 0.0,
+      "w_mm": 0.2491560949397331,
+      "h_mm": 0.18751101219930616,
+      "t_um": 150.0,
+      "power_W": 0.0026253290280376118
+    }
+  ],
+  "package": {
+    "tim_um": 20,
+    "t_spreader_mm": 1.0,
+    "t_sink_mm": 6.9,
+    "t_substrate_mm": 1.0,
+    "t_interposer_um": 100.0,
+    "r_convec_K_per_W": 0.1,
+    "ambient_C": 45,
+    "pitch_die_mm": 1.0,
+    "pitch_coarse_mm": 4.0,
+    "fill_die": false
+  },
+  "total_power_W": 73.82553872902804,
+  "layout_algorithm": "lbfgs",
+  "layout_seed": 13,
+  "mix": "L2__basic"
+}

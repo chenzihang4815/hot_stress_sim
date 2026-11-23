@@ -1,0 +1,16 @@
+{
+  "mix": "x86threads__SM86_RTX3070",
+  "CPU_task": "x86 TimingSimpleCPU + L1/L2，gem5 自带 threads；P=RuntimeDynamic(0.172267)+Leakage(0.78389)",
+  "CPU_mm2": 13.6345,
+  "CPU_W": 0.9561569999999999,
+  "GPU": "Ampere RTX 3070 / SM86_RTX3070，同一份 backprop 重跑功耗（AccelWattch XML 仍是 Volta 标定）；AccelWattch gpu_tot_avg_power=66.89 W；面积为文献裸片 392.0 mm²",
+  "GPU_mm2": 392.0,
+  "GPU_W": 66.8878,
+  "CIM": "jia_jssc_2020",
+  "CIM_mm2": 4.281226257942074,
+  "CIM_W": 0.0027731351494352146,
+  "outline_mm2": 536.7895138134849,
+  "HotSpot_Tmax_C": 55.49000000000001,
+  "HotSpot_Tmin_C": 51.170000000000016,
+  "map": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/x86_smallgpu_3chip/x86threads__SM86_RTX3070/x86threads__SM86_RTX3070_hotspot.png"
+}

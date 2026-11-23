@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Xeon",
+    "role": "CPU",
+    "j0": 4,
+    "ib0": 4,
+    "w": 16,
+    "h": 21,
+    "power_W": 59.241324999999996,
+    "area_mm2": 421.676,
+    "grid_area_mm2": 425.25
+  },
+  {
+    "name": "GPU_3070",
+    "role": "GPU",
+    "j0": 22,
+    "ib0": 4,
+    "w": 14,
+    "h": 22,
+    "power_W": 66.89,
+    "area_mm2": 392.0,
+    "grid_area_mm2": 389.8125
+  },
+  {
+    "name": "HBM3",
+    "role": "HBM",
+    "j0": 22,
+    "ib0": 28,
+    "w": 8,
+    "h": 12,
+    "power_W": 28.656,
+    "area_mm2": 121.0,
+    "grid_area_mm2": 121.5
+  },
+  {
+    "name": "CIM_jia",
+    "role": "CIM",
+    "j0": 4,
+    "ib0": 27,
+    "w": 2,
+    "h": 2,
+    "power_W": 0.002773,
+    "area_mm2": 4.281,
+    "grid_area_mm2": 5.0625
+  }
+]

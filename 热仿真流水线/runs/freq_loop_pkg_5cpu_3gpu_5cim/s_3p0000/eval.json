@@ -1,0 +1,39 @@
+{
+  "s": 3.0,
+  "Tmax_C": 79.69,
+  "sigma_chip_max_MPa": 202.1957081822744,
+  "sigma_chip_name": "GPU_2060S",
+  "w_pv_um": 5.911438700339613,
+  "ATSim_Tmax_C": 86.53885023425607,
+  "feasible": false,
+  "fail_T": false,
+  "fail_sigma": true,
+  "elapsed_s": 149.44169640541077,
+  "power_W": {
+    "CPU_matmul": 1.4378210000000002,
+    "CPU_threads": 1.3006909999999998,
+    "CPU_armL2": 1.0359601999999999,
+    "CPU_atomic": 2.1912409999999993,
+    "CPU_starter": 3.71264,
+    "GPU_3070": 90.84359999999998,
+    "GPU_2060S": 99.81439999999999,
+    "GPU_TITANX": 78.8189,
+    "CIM_jia": 0.0027731351494352146,
+    "CIM_colonnade": 0.04119819389066705,
+    "CIM_wang": 0.025999983362139024,
+    "CIM_basic": 0.0026253290280376118,
+    "CIM_sinangil": 0.0007947682416197758
+  },
+  "stress": {
+    "vm_normal_chip_max_MPa": 202.1957081822744,
+    "vm_normal_chip_name": "GPU_2060S",
+    "w_pv_um": 5.911438700339613,
+    "Tmax_C": 86.53885023425607,
+    "elapsed_s": 146.51428961753845
+  },
+  "Theta_CPU_rel": 3.0,
+  "Theta_GPU_rel": 3.0,
+  "Theta_CIM_rel": 1.0,
+  "Theta_pkg": 2.3333333333333335,
+  "note": "CPU/GPU IPC held fixed so relative throughput = s; CIM analog latency_s unchanged"
+}

@@ -1,0 +1,551 @@
+[
+  {
+    "cpu": "Penryn",
+    "gpu": "GPU_3070",
+    "cpu_area_mm2": 91.1348,
+    "gpu_area_mm2": 392.0,
+    "cpu_grid_mm2": 91.125,
+    "gpu_grid_mm2": 389.8125,
+    "cpu_wh_cells": [
+      8,
+      9
+    ],
+    "gpu_wh_cells": [
+      14,
+      22
+    ],
+    "cpu_power_W": 59.241324999999996,
+    "gpu_power_W": 66.89,
+    "spreader_contact_mm2": 480.9375,
+    "fill_replaced_mm2": 0.0,
+    "cpu_to_cim": {
+      "vertical_gap_mm": 15.75,
+      "horizontal_gap_mm": -9.0,
+      "facing_width_mm": 2.25,
+      "facing_height_mm": 0.0
+    },
+    "gpu_to_hbm": {
+      "vertical_gap_mm": 2.25,
+      "horizontal_gap_mm": -15.75,
+      "facing_width_mm": 9.0,
+      "facing_height_mm": 0.0
+    },
+    "cpu_to_gpu_gap_mm": 11.25,
+    "Tmax_epoxy_C": 73.38901255791683,
+    "Tmax_silicon_C": 73.30232570861972,
+    "Tmax_cpu_C": 73.38901255791683,
+    "Tmax_gpu_C": 64.56196573202743,
+    "naive": {
+      "Tmax_truth_C": 73.38901255791683,
+      "Tmax_sum_C": 73.39209087702744,
+      "dTmax_K": 0.0030783191106138474,
+      "max_abs_K": 0.04426922677504308,
+      "rmse_K": 0.004779295218432271
+    },
+    "frozen": {
+      "Tmax_truth_C": 73.38901255791683,
+      "Tmax_sum_C": 73.38901255769161,
+      "dTmax_K": -2.2521362552652135e-10,
+      "max_abs_K": 2.547722033341415e-10,
+      "rmse_K": 2.3337852729191773e-10
+    },
+    "ring_epoxy_minus_silicon_dTmax_K": 0.0,
+    "ring_max_abs_K": 0.0,
+    "Q_cpu_up_W": 59.20096245645224,
+    "Q_gpu_up_W": 66.86575443590725,
+    "Q_cpu_toward_cim_W": 0.010023409078821034,
+    "Q_gpu_toward_hbm_W": 0.0049202253554962855,
+    "Q_cpu_toward_gpu_W": 0.010933097503538027,
+    "Q_gpu_toward_cpu_W": 0.006273367873161203,
+    "cpu_lateral_frac": 0.0006813241187255337,
+    "gpu_lateral_frac": 0.00036246918960609496
+  },
+  {
+    "cpu": "Penryn",
+    "gpu": "GPU_2060S",
+    "cpu_area_mm2": 91.1348,
+    "gpu_area_mm2": 445.0,
+    "cpu_grid_mm2": 91.125,
+    "gpu_grid_mm2": 445.5,
+    "cpu_wh_cells": [
+      8,
+      9
+    ],
+    "gpu_wh_cells": [
+      16,
+      22
+    ],
+    "cpu_power_W": 59.241324999999996,
+    "gpu_power_W": 71.12,
+    "spreader_contact_mm2": 536.625,
+    "fill_replaced_mm2": 55.6875,
+    "cpu_to_cim": {
+      "vertical_gap_mm": 15.75,
+      "horizontal_gap_mm": -9.0,
+      "facing_width_mm": 2.25,
+      "facing_height_mm": 0.0
+    },
+    "gpu_to_hbm": {
+      "vertical_gap_mm": 2.25,
+      "horizontal_gap_mm": -18.0,
+      "facing_width_mm": 9.0,
+      "facing_height_mm": 0.0
+    },
+    "cpu_to_gpu_gap_mm": 11.25,
+    "Tmax_epoxy_C": 73.58416533559569,
+    "Tmax_silicon_C": 73.50011003713877,
+    "Tmax_cpu_C": 73.58416533559569,
+    "Tmax_gpu_C": 64.73187252234362,
+    "naive": {
+      "Tmax_truth_C": 73.58416533559569,
+      "Tmax_sum_C": 73.58749590097267,
+      "dTmax_K": 0.0033305653769843957,
+      "max_abs_K": 0.044727433734976785,
+      "rmse_K": 0.004899113444317808
+    },
+    "frozen": {
+      "Tmax_truth_C": 73.58416533559569,
+      "Tmax_sum_C": 73.58416533536496,
+      "dTmax_K": -2.3072743715601973e-10,
+      "max_abs_K": 2.5409008230781183e-10,
+      "rmse_K": 2.3649752151177377e-10
+    },
+    "ring_epoxy_minus_silicon_dTmax_K": 16.711033140801078,
+    "ring_max_abs_K": 29.153029986640547,
+    "Q_cpu_up_W": 59.20096624516076,
+    "Q_gpu_up_W": 71.09597618004616,
+    "Q_cpu_toward_cim_W": 0.010025219182138905,
+    "Q_gpu_toward_hbm_W": 0.005340379332490996,
+    "Q_cpu_toward_gpu_W": 0.010926156897630719,
+    "Q_gpu_toward_cpu_W": 0.005864761744409201,
+    "cpu_lateral_frac": 0.0006812601649142631,
+    "gpu_lateral_frac": 0.00033779274400786867
+  },
+  {
+    "cpu": "Penryn",
+    "gpu": "GPU_TITANX",
+    "cpu_area_mm2": 91.1348,
+    "gpu_area_mm2": 471.0,
+    "cpu_grid_mm2": 91.125,
+    "gpu_grid_mm2": 473.34375,
+    "cpu_wh_cells": [
+      8,
+      9
+    ],
+    "gpu_wh_cells": [
+      17,
+      22
+    ],
+    "cpu_power_W": 59.241324999999996,
+    "gpu_power_W": 67.41,
+    "spreader_contact_mm2": 564.46875,
+    "fill_replaced_mm2": 83.53125,
+    "cpu_to_cim": {
+      "vertical_gap_mm": 15.75,
+      "horizontal_gap_mm": -9.0,
+      "facing_width_mm": 2.25,
+      "facing_height_mm": 0.0
+    },
+    "gpu_to_hbm": {
+      "vertical_gap_mm": 2.25,
+      "horizontal_gap_mm": -19.125,
+      "facing_width_mm": 9.0,
+      "facing_height_mm": 0.0
+    },
+    "cpu_to_gpu_gap_mm": 11.25,
+    "Tmax_epoxy_C": 73.16969098822807,
+    "Tmax_silicon_C": 73.08325901993038,
+    "Tmax_cpu_C": 73.16969098822807,
+    "Tmax_gpu_C": 64.01667782543882,
+    "naive": {
+      "Tmax_truth_C": 73.16969098822807,
+      "Tmax_sum_C": 73.17320342580456,
+      "dTmax_K": 0.0035124375764894467,
+      "max_abs_K": 0.0448539124471381,
+      "rmse_K": 0.004877780120390563
+    },
+    "frozen": {
+      "Tmax_truth_C": 73.16969098822807,
+      "Tmax_sum_C": 73.1696909879895,
+      "dTmax_K": -2.3857182895881124e-10,
+      "max_abs_K": 2.590354597487021e-10,
+      "rmse_K": 2.4613386464436565e-10
+    },
+    "ring_epoxy_minus_silicon_dTmax_K": 14.03151671409347,
+    "ring_max_abs_K": 26.512171981952918,
+    "Q_cpu_up_W": 59.20095819459941,
+    "Q_gpu_up_W": 67.38798352091463,
+    "Q_cpu_toward_cim_W": 0.010018556812439206,
+    "Q_gpu_toward_hbm_W": 0.00509911623440553,
+    "Q_cpu_toward_gpu_W": 0.01094568419535356,
+    "Q_gpu_toward_cpu_W": 0.005135033756556402,
+    "cpu_lateral_frac": 0.0006813960592641654,
+    "gpu_lateral_frac": 0.00032660553457003206
+  },
+  {
+    "cpu": "T2",
+    "gpu": "GPU_3070",
+    "cpu_area_mm2": 273.523,
+    "gpu_area_mm2": 392.0,
+    "cpu_grid_mm2": 273.375,
+    "gpu_grid_mm2": 389.8125,
+    "cpu_wh_cells": [
+      12,
+      18
+    ],
+    "gpu_wh_cells": [
+      14,
+      22
+    ],
+    "cpu_power_W": 68.99682,
+    "gpu_power_W": 66.89,
+    "spreader_contact_mm2": 663.1875,
+    "fill_replaced_mm2": 182.25,
+    "cpu_to_cim": {
+      "vertical_gap_mm": 5.625,
+      "horizontal_gap_mm": -13.499999999999998,
+      "facing_width_mm": 2.25,
+      "facing_height_mm": 0.0
+    },
+    "gpu_to_hbm": {
+      "vertical_gap_mm": 2.25,
+      "horizontal_gap_mm": -15.75,
+      "facing_width_mm": 9.0,
+      "facing_height_mm": 0.0
+    },
+    "cpu_to_gpu_gap_mm": 6.749999999999999,
+    "Tmax_epoxy_C": 68.6149209198789,
+    "Tmax_silicon_C": 68.57736336369715,
+    "Tmax_cpu_C": 68.6149209198789,
+    "Tmax_gpu_C": 65.41298822167607,
+    "naive": {
+      "Tmax_truth_C": 68.6149209198789,
+      "Tmax_sum_C": 68.61791799981182,
+      "dTmax_K": 0.002997079932924862,
+      "max_abs_K": 0.0509182562250885,
+      "rmse_K": 0.005579218022548399
+    },
+    "frozen": {
+      "Tmax_truth_C": 68.6149209198789,
+      "Tmax_sum_C": 68.61492091964794,
+      "dTmax_K": -2.3095481083146296e-10,
+      "max_abs_K": 2.5363533495692536e-10,
+      "rmse_K": 2.3500111659369794e-10
+    },
+    "ring_epoxy_minus_silicon_dTmax_K": 46.47178990462373,
+    "ring_max_abs_K": 47.04463999007527,
+    "Q_cpu_up_W": 68.96766436945997,
+    "Q_gpu_up_W": 66.86582849667265,
+    "Q_cpu_toward_cim_W": 0.0065773987587304395,
+    "Q_gpu_toward_hbm_W": 0.004962915235531053,
+    "Q_cpu_toward_gpu_W": 0.008803416162080076,
+    "Q_gpu_toward_cpu_W": 0.005991512161730752,
+    "cpu_lateral_frac": 0.0004225648448730247,
+    "gpu_lateral_frac": 0.00036136198725298524
+  },
+  {
+    "cpu": "T2",
+    "gpu": "GPU_2060S",
+    "cpu_area_mm2": 273.523,
+    "gpu_area_mm2": 445.0,
+    "cpu_grid_mm2": 273.375,
+    "gpu_grid_mm2": 445.5,
+    "cpu_wh_cells": [
+      12,
+      18
+    ],
+    "gpu_wh_cells": [
+      16,
+      22
+    ],
+    "cpu_power_W": 68.99682,
+    "gpu_power_W": 71.12,
+    "spreader_contact_mm2": 718.875,
+    "fill_replaced_mm2": 237.9375,
+    "cpu_to_cim": {
+      "vertical_gap_mm": 5.625,
+      "horizontal_gap_mm": -13.499999999999998,
+      "facing_width_mm": 2.25,
+      "facing_height_mm": 0.0
+    },
+    "gpu_to_hbm": {
+      "vertical_gap_mm": 2.25,
+      "horizontal_gap_mm": -18.0,
+      "facing_width_mm": 9.0,
+      "facing_height_mm": 0.0
+    },
+    "cpu_to_gpu_gap_mm": 6.749999999999999,
+    "Tmax_epoxy_C": 68.81252031570523,
+    "Tmax_silicon_C": 68.77577457834417,
+    "Tmax_cpu_C": 68.81252031570523,
+    "Tmax_gpu_C": 65.57316097005645,
+    "naive": {
+      "Tmax_truth_C": 68.81252031570523,
+      "Tmax_sum_C": 68.81579564220698,
+      "dTmax_K": 0.003275326501750442,
+      "max_abs_K": 0.050202950090692866,
+      "rmse_K": 0.005711584756374631
+    },
+    "frozen": {
+      "Tmax_truth_C": 68.81252031570523,
+      "Tmax_sum_C": 68.8125203154708,
+      "dTmax_K": -2.3442225938197225e-10,
+      "max_abs_K": 2.6074076231452636e-10,
+      "rmse_K": 2.408404160539656e-10
+    },
+    "ring_epoxy_minus_silicon_dTmax_K": 46.48672657556159,
+    "ring_max_abs_K": 47.045576842264154,
+    "Q_cpu_up_W": 68.96767583175675,
+    "Q_gpu_up_W": 71.09605867440945,
+    "Q_cpu_toward_cim_W": 0.006579463823685657,
+    "Q_gpu_toward_hbm_W": 0.005384933225953228,
+    "Q_cpu_toward_gpu_W": 0.00878770037966197,
+    "Q_gpu_toward_cpu_W": 0.005582901010124784,
+    "cpu_lateral_frac": 0.0004223987169734659,
+    "gpu_lateral_frac": 0.00033663281201569265
+  },
+  {
+    "cpu": "T2",
+    "gpu": "GPU_TITANX",
+    "cpu_area_mm2": 273.523,
+    "gpu_area_mm2": 471.0,
+    "cpu_grid_mm2": 273.375,
+    "gpu_grid_mm2": 473.34375,
+    "cpu_wh_cells": [
+      12,
+      18
+    ],
+    "gpu_wh_cells": [
+      17,
+      22
+    ],
+    "cpu_power_W": 68.99682,
+    "gpu_power_W": 67.41,
+    "spreader_contact_mm2": 746.71875,
+    "fill_replaced_mm2": 265.78125,
+    "cpu_to_cim": {
+      "vertical_gap_mm": 5.625,
+      "horizontal_gap_mm": -13.499999999999998,
+      "facing_width_mm": 2.25,
+      "facing_height_mm": 0.0
+    },
+    "gpu_to_hbm": {
+      "vertical_gap_mm": 2.25,
+      "horizontal_gap_mm": -19.125,
+      "facing_width_mm": 9.0,
+      "facing_height_mm": 0.0
+    },
+    "cpu_to_gpu_gap_mm": 6.749999999999999,
+    "Tmax_epoxy_C": 68.39101565969213,
+    "Tmax_silicon_C": 68.35483816552153,
+    "Tmax_cpu_C": 68.39101565969213,
+    "Tmax_gpu_C": 64.8488157945718,
+    "naive": {
+      "Tmax_truth_C": 68.39101565969213,
+      "Tmax_sum_C": 68.39449939528095,
+      "dTmax_K": 0.0034837355888157617,
+      "max_abs_K": 0.0487599514235626,
+      "rmse_K": 0.005670798712201653
+    },
+    "frozen": {
+      "Tmax_truth_C": 68.39101565969213,
+      "Tmax_sum_C": 68.39101565945197,
+      "dTmax_K": -2.4016344468691386e-10,
+      "max_abs_K": 2.639808371895924e-10,
+      "rmse_K": 2.468595007815546e-10
+    },
+    "ring_epoxy_minus_silicon_dTmax_K": 46.44808335463159,
+    "ring_max_abs_K": 47.04592481719004,
+    "Q_cpu_up_W": 68.96765160452415,
+    "Q_gpu_up_W": 67.3880700700306,
+    "Q_cpu_toward_cim_W": 0.006558687212919842,
+    "Q_gpu_toward_hbm_W": 0.005144493579469448,
+    "Q_cpu_toward_gpu_W": 0.00884337481583901,
+    "Q_gpu_toward_cpu_W": 0.004853146468702776,
+    "cpu_lateral_frac": 0.00042274985246928346,
+    "gpu_lateral_frac": 0.00032532161354996154
+  },
+  {
+    "cpu": "Xeon",
+    "gpu": "GPU_3070",
+    "cpu_area_mm2": 421.676,
+    "gpu_area_mm2": 392.0,
+    "cpu_grid_mm2": 425.25,
+    "gpu_grid_mm2": 389.8125,
+    "cpu_wh_cells": [
+      16,
+      21
+    ],
+    "gpu_wh_cells": [
+      14,
+      22
+    ],
+    "cpu_power_W": 103.94599000000001,
+    "gpu_power_W": 66.89,
+    "spreader_contact_mm2": 815.0625,
+    "fill_replaced_mm2": 334.125,
+    "cpu_to_cim": {
+      "vertical_gap_mm": 2.25,
+      "horizontal_gap_mm": -18.0,
+      "facing_width_mm": 2.25,
+      "facing_height_mm": 0.0
+    },
+    "gpu_to_hbm": {
+      "vertical_gap_mm": 2.25,
+      "horizontal_gap_mm": -15.75,
+      "facing_width_mm": 9.0,
+      "facing_height_mm": 0.0
+    },
+    "cpu_to_gpu_gap_mm": 2.25,
+    "Tmax_epoxy_C": 73.11661639562601,
+    "Tmax_silicon_C": 73.07867426427941,
+    "Tmax_cpu_C": 73.11661639562601,
+    "Tmax_gpu_C": 69.93548628899936,
+    "naive": {
+      "Tmax_truth_C": 73.11661639562601,
+      "Tmax_sum_C": 73.12126360805536,
+      "dTmax_K": 0.004647212429347292,
+      "max_abs_K": 0.0736385479741557,
+      "rmse_K": 0.008247110562931542
+    },
+    "frozen": {
+      "Tmax_truth_C": 73.11661639562601,
+      "Tmax_sum_C": 73.11661639539324,
+      "dTmax_K": -2.3277380023500882e-10,
+      "max_abs_K": 2.573870006017387e-10,
+      "rmse_K": 2.3990190571490917e-10
+    },
+    "ring_epoxy_minus_silicon_dTmax_K": 45.32358845800292,
+    "ring_max_abs_K": 45.56668255201947,
+    "Q_cpu_up_W": 103.91028027112003,
+    "Q_gpu_up_W": 66.86624193369434,
+    "Q_cpu_toward_cim_W": 0.008954713838267521,
+    "Q_gpu_toward_hbm_W": 0.005207640037296788,
+    "Q_cpu_toward_gpu_W": 0.010060729127100113,
+    "Q_gpu_toward_cpu_W": 0.00484206296869887,
+    "cpu_lateral_frac": 0.00034354118788016016,
+    "gpu_lateral_frac": 0.00035518113777336616
+  },
+  {
+    "cpu": "Xeon",
+    "gpu": "GPU_2060S",
+    "cpu_area_mm2": 421.676,
+    "gpu_area_mm2": 445.0,
+    "cpu_grid_mm2": 425.25,
+    "gpu_grid_mm2": 445.5,
+    "cpu_wh_cells": [
+      16,
+      21
+    ],
+    "gpu_wh_cells": [
+      16,
+      22
+    ],
+    "cpu_power_W": 103.94599000000001,
+    "gpu_power_W": 71.12,
+    "spreader_contact_mm2": 870.75,
+    "fill_replaced_mm2": 389.8125,
+    "cpu_to_cim": {
+      "vertical_gap_mm": 2.25,
+      "horizontal_gap_mm": -18.0,
+      "facing_width_mm": 2.25,
+      "facing_height_mm": 0.0
+    },
+    "gpu_to_hbm": {
+      "vertical_gap_mm": 2.25,
+      "horizontal_gap_mm": -18.0,
+      "facing_width_mm": 9.0,
+      "facing_height_mm": 0.0
+    },
+    "cpu_to_gpu_gap_mm": 2.25,
+    "Tmax_epoxy_C": 73.31571903086154,
+    "Tmax_silicon_C": 73.27849029811159,
+    "Tmax_cpu_C": 73.31571903086154,
+    "Tmax_gpu_C": 70.09141661961257,
+    "naive": {
+      "Tmax_truth_C": 73.31571903086154,
+      "Tmax_sum_C": 73.32089341165778,
+      "dTmax_K": 0.005174380796233891,
+      "max_abs_K": 0.07303447427227638,
+      "rmse_K": 0.008435713447568908
+    },
+    "frozen": {
+      "Tmax_truth_C": 73.31571903086154,
+      "Tmax_sum_C": 73.3157190306245,
+      "dTmax_K": -2.370370566495694e-10,
+      "max_abs_K": 2.5988811103161424e-10,
+      "rmse_K": 2.404959895668892e-10
+    },
+    "ring_epoxy_minus_silicon_dTmax_K": 45.335643746562596,
+    "ring_max_abs_K": 45.5679248185013,
+    "Q_cpu_up_W": 103.91029249462464,
+    "Q_gpu_up_W": 71.09650422487069,
+    "Q_cpu_toward_cim_W": 0.00895618190355464,
+    "Q_gpu_toward_hbm_W": 0.005647323709624127,
+    "Q_cpu_toward_gpu_W": 0.010046518754886146,
+    "Q_gpu_toward_cpu_W": 0.004433433941366068,
+    "cpu_lateral_frac": 0.00034342359311183816,
+    "gpu_lateral_frac": 0.00033036804175083575
+  },
+  {
+    "cpu": "Xeon",
+    "gpu": "GPU_TITANX",
+    "cpu_area_mm2": 421.676,
+    "gpu_area_mm2": 471.0,
+    "cpu_grid_mm2": 425.25,
+    "gpu_grid_mm2": 473.34375,
+    "cpu_wh_cells": [
+      16,
+      21
+    ],
+    "gpu_wh_cells": [
+      17,
+      22
+    ],
+    "cpu_power_W": 103.94599000000001,
+    "gpu_power_W": 67.41,
+    "spreader_contact_mm2": 898.59375,
+    "fill_replaced_mm2": 417.65625,
+    "cpu_to_cim": {
+      "vertical_gap_mm": 2.25,
+      "horizontal_gap_mm": -18.0,
+      "facing_width_mm": 2.25,
+      "facing_height_mm": 0.0
+    },
+    "gpu_to_hbm": {
+      "vertical_gap_mm": 2.25,
+      "horizontal_gap_mm": -19.125,
+      "facing_width_mm": 9.0,
+      "facing_height_mm": 0.0
+    },
+    "cpu_to_gpu_gap_mm": 2.25,
+    "Tmax_epoxy_C": 72.88947094479312,
+    "Tmax_silicon_C": 72.85320526570587,
+    "Tmax_cpu_C": 72.88947094479312,
+    "Tmax_gpu_C": 69.36474970515513,
+    "naive": {
+      "Tmax_truth_C": 72.88947094479312,
+      "Tmax_sum_C": 72.89488058931528,
+      "dTmax_K": 0.005409644522160306,
+      "max_abs_K": 0.0716443292732265,
+      "rmse_K": 0.00840480479196207
+    },
+    "frozen": {
+      "Tmax_truth_C": 72.88947094479312,
+      "Tmax_sum_C": 72.88947094455011,
+      "dTmax_K": -2.4300561562995426e-10,
+      "max_abs_K": 2.6926727514364757e-10,
+      "rmse_K": 2.5241109324397526e-10
+    },
+    "ring_epoxy_minus_silicon_dTmax_K": 45.30324109609063,
+    "ring_max_abs_K": 45.56833384202258,
+    "Q_cpu_up_W": 103.91024471413748,
+    "Q_gpu_up_W": 67.38853111733944,
+    "Q_cpu_toward_cim_W": 0.008920423627533017,
+    "Q_gpu_toward_hbm_W": 0.005414935839305498,
+    "Q_cpu_toward_gpu_W": 0.01014414410936609,
+    "Q_gpu_toward_cpu_W": 0.0037034992667705864,
+    "cpu_lateral_frac": 0.0003438832595902182,
+    "gpu_lateral_frac": 0.00031848216378217904
+  }
+]

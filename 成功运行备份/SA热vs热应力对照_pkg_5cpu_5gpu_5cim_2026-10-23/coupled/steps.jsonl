@@ -1,0 +1,17 @@
+{"step": 0, "op": "init", "accept": true, "Tmax_C": 85.47000000000003, "vm_chip_max_MPa": 253.00042703544574, "vm_chip_name": "GPU_3070b", "w_pv_um": 7.32465855141175, "J": 5.064386589280928, "T": 2.0}
+{"step": 1, "op": "rotate CPU_armL2", "T": 2.0, "arm": "coupled", "accept": false, "reason": "illegal"}
+{"step": 2, "op": "nudge GPU_TITANX (0.5,0.0)mm", "T": 1.9, "arm": "coupled", "Tmax_C": 85.42000000000002, "vm_chip_max_MPa": 253.51833090509675, "vm_chip_name": "GPU_3070b", "w_pv_um": 7.344309281174998, "J": 5.070021969197843, "delta_J": -0.005635379916915539, "ap": 0.9970384047712354, "accept": true, "stressed": true}
+{"step": 3, "op": "rotate CIM_wang", "T": 1.805, "arm": "coupled", "Tmax_C": 85.42000000000002, "vm_chip_max_MPa": 253.5183132311415, "vm_chip_name": "GPU_3070b", "w_pv_um": 7.344309153662214, "J": 5.070021776519193, "delta_J": 1.926786508121836e-07, "ap": 1.0, "accept": true, "stressed": true}
+{"step": 4, "op": "nudge GPU_3070 (-1.5,0.0)mm", "T": 1.7147499999999998, "arm": "coupled", "accept": false, "reason": "illegal"}
+{"step": 5, "op": "rotate CIM_jia", "T": 1.6290124999999998, "arm": "coupled", "Tmax_C": 85.42000000000002, "vm_chip_max_MPa": 253.52256517060843, "vm_chip_name": "GPU_3070b", "w_pv_um": 7.344233617324214, "J": 5.0700548538716115, "delta_J": -3.3077352418864336e-05, "ap": 0.9999796950504672, "accept": true, "stressed": true}
+{"step": 6, "op": "jump+rot GPU_3070c", "T": 1.5475618749999998, "arm": "coupled", "accept": false, "reason": "illegal"}
+{"step": 7, "op": "nudge GPU_3070c (1.5,0.0)mm", "T": 1.4701837812499996, "arm": "coupled", "Tmax_C": 85.48000000000002, "vm_chip_max_MPa": 253.3300511323641, "vm_chip_name": "GPU_3070b", "w_pv_um": 7.341524035929767, "J": 5.070191015814862, "delta_J": -0.0001361619432502792, "ap": 0.9999073886953306, "accept": true, "stressed": true}
+{"step": 8, "op": "jump+rot GPU_3070b", "T": 1.3966745921874995, "arm": "coupled", "accept": false, "reason": "illegal"}
+{"step": 9, "op": "nudge GPU_2060S (0.0,0.5)mm", "T": 1.3268408625781245, "arm": "coupled", "accept": false, "reason": "illegal"}
+{"step": 10, "op": "jump GPU_TITANX", "T": 1.2604988194492182, "arm": "coupled", "accept": false, "reason": "illegal"}
+{"step": 11, "op": "jump CIM_sinangil", "T": 1.1974738784767571, "arm": "coupled", "accept": false, "reason": "illegal"}
+{"step": 12, "op": "nudge GPU_3070c (0.0,-1.5)mm", "T": 1.1376001845529191, "arm": "coupled", "accept": false, "reason": "illegal"}
+{"step": 13, "op": "swap CIM_sinangil<->GPU_3070b", "T": 1.080720175325273, "arm": "coupled", "accept": false, "reason": "illegal"}
+{"step": 14, "op": "jump GPU_3070b", "T": 1.0266841665590094, "arm": "coupled", "accept": false, "reason": "illegal"}
+{"step": 15, "op": "jump CPU_atomic", "T": 0.9753499582310589, "arm": "coupled", "accept": false, "reason": "illegal"}
+{"step": 16, "op": "nudge CPU_armL2 (0.0,-0.5)mm", "T": 0.9265824603195059, "arm": "coupled", "Tmax_C": 85.48000000000002, "vm_chip_max_MPa": 259.3911940994319, "vm_chip_name": "GPU_3070b", "w_pv_um": 7.341145936820629, "J": 5.130755183096899, "delta_J": -0.060564167282037396, "ap": 0.93672741215141, "accept": true, "stressed": true}

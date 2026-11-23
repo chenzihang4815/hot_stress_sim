@@ -1,0 +1,65 @@
+{
+  "mix": "cpuStarter_cimColonnade",
+  "algorithm": "lbfgs",
+  "n_blocks": 2,
+  "layout": {
+    "width_m": 0.0025330944224903774,
+    "height_m": 0.001503801155702105,
+    "outline_mm2": 3.8092703200435856,
+    "block_area_mm2": 3.131649891352,
+    "deadspace_ratio": 0.177887199321636,
+    "overlap_m2": 0.0,
+    "overlap_count": 0.0,
+    "algorithm": "lbfgs",
+    "seed": 13,
+    "max_iter": 40,
+    "cost": 4.206535800633486,
+    "history_tail": [
+      4.206535800633486,
+      4.206535800633486
+    ]
+  },
+  "thermal": {
+    "Tmax_C": 48.860000000000014,
+    "Tmin_C": 45.160000000000025,
+    "block_T_C": {
+      "CPU": 48.860000000000014,
+      "CIM_colonnade": 47.660000000000025,
+      "iface_CPU": 48.29000000000002,
+      "iface_CIM_colonnade": 47.29000000000002,
+      "hsink_CPU": 45.29000000000002,
+      "hsink_CIM_colonnade": 45.27000000000004,
+      "inode_0": 45.22000000000003,
+      "inode_1": 45.23000000000002,
+      "inode_2": 45.210000000000036,
+      "inode_3": 45.22000000000003,
+      "inode_4": 45.22000000000003,
+      "inode_5": 45.23000000000002,
+      "inode_6": 45.210000000000036,
+      "inode_7": 45.210000000000036,
+      "inode_8": 45.160000000000025,
+      "inode_9": 45.170000000000016,
+      "inode_10": 45.160000000000025,
+      "inode_11": 45.160000000000025
+    },
+    "returncode": 0
+  },
+  "power_total_W": 1.691878193890667,
+  "area_total_mm2": 3.131649891352,
+  "blocks": [
+    {
+      "name": "CPU",
+      "kind": "CPU",
+      "area_mm2": 2.90029,
+      "power_W": 1.65068,
+      "notes": "gem5 ARM starter_se atomic，hello；P=RuntimeDynamic(1.03098)+Leakage(0.6197)"
+    },
+    {
+      "name": "CIM_colonnade",
+      "kind": "CIM",
+      "area_mm2": 0.231359891352,
+      "power_W": 0.04119819389066705,
+      "notes": "AccelForge colonnade_jssc_2021+builtin；P=energy/latency=0.0411982 W"
+    }
+  ]
+}

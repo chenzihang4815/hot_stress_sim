@@ -1,0 +1,10 @@
+{
+  "steps": 40,
+  "pre_s": 5.2,
+  "full_s": 62.1,
+  "field_s": 31.6,
+  "solved": 31,
+  "cached": 249,
+  "err_max_K": 0.03,
+  "err_median_K": 0.02
+}

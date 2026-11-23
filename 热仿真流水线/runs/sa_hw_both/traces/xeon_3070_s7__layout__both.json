@@ -1,0 +1,474 @@
+[
+  {
+    "step": 0,
+    "op": "init",
+    "move": "init",
+    "accept": true,
+    "J": 2.0,
+    "grad_max": 1.8817541291223279,
+    "grad_rms": 0.28184381105620576,
+    "Tmax_C": 73.07867426427941,
+    "hardware": [
+      "Xeon",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ]
+  },
+  {
+    "step": 1,
+    "op": "nudge Xeon (1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.9847050810869868,
+    "grad_max": 1.8725879474086975,
+    "grad_rms": 0.2798623211924536,
+    "Tmax_C": 72.78598678847845,
+    "hardware": [
+      "Xeon",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.2,
+    "new_best": true
+  },
+  {
+    "step": 2,
+    "op": "nudge Xeon (1,0) cells",
+    "move": "nudge",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 3,
+    "op": "rotate Xeon",
+    "move": "rotate",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 4,
+    "op": "nudge GPU_3070 (1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.973713986572172,
+    "grad_max": 1.8665639345805782,
+    "grad_rms": 0.27989495565905614,
+    "Tmax_C": 72.56725898939095,
+    "hardware": [
+      "Xeon",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.14580000000000004,
+    "new_best": true
+  },
+  {
+    "step": 5,
+    "op": "nudge GPU_3070 (1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.963393478104325,
+    "grad_max": 1.8610756605374565,
+    "grad_rms": 0.2785639340963654,
+    "Tmax_C": 72.35936630841837,
+    "hardware": [
+      "Xeon",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.13122000000000003,
+    "new_best": true
+  },
+  {
+    "step": 6,
+    "op": "rotate Xeon",
+    "move": "rotate",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 7,
+    "op": "nudge GPU_3070 (-1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.9074659018257257,
+    "J": 1.973713986572172,
+    "grad_max": 1.8665639345805782,
+    "grad_rms": 0.27989495565905614,
+    "Tmax_C": 72.56725898939095,
+    "hardware": [
+      "Xeon",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.10628820000000004
+  },
+  {
+    "step": 8,
+    "op": "nudge Xeon (0,-1) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.809170552574641,
+    "J": 1.993969436051056,
+    "grad_max": 1.8733495059970362,
+    "grad_rms": 0.28134921534222196,
+    "Tmax_C": 73.03475396492001,
+    "hardware": [
+      "Xeon",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.09565938000000004
+  },
+  {
+    "step": 9,
+    "op": "nudge Xeon (0,2) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.9558684938878057,
+    "grad_max": 1.860508443823518,
+    "grad_rms": 0.278591909372326,
+    "Tmax_C": 72.15653847607831,
+    "hardware": [
+      "Xeon",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.08609344200000005,
+    "new_best": true
+  },
+  {
+    "step": 10,
+    "op": "nudge Xeon (-1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.8254835607775944,
+    "J": 1.9707288536508802,
+    "grad_max": 1.8696455572405486,
+    "grad_rms": 0.27913672392592154,
+    "Tmax_C": 72.4374578508835,
+    "hardware": [
+      "Xeon",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.07748409780000004
+  },
+  {
+    "step": 11,
+    "op": "nudge Xeon (2,0) cells",
+    "move": "nudge",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 12,
+    "op": "nudge GPU_3070 (0,-2) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.855352936242412,
+    "J": 1.9805348764652893,
+    "grad_max": 1.8771767277695897,
+    "grad_rms": 0.2802925856656068,
+    "Tmax_C": 72.60042128998532,
+    "hardware": [
+      "Xeon",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.06276211921800003
+  },
+  {
+    "step": 13,
+    "op": "rotate GPU_3070",
+    "move": "rotate",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.9643973509447017,
+    "grad_max": 1.872955716055104,
+    "grad_rms": 0.276721836731764,
+    "Tmax_C": 72.21028497326864,
+    "hardware": [
+      "Xeon",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.056485907296200025
+  },
+  {
+    "step": 14,
+    "op": "nudge GPU_3070 (0,1) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.9616824428057704,
+    "grad_max": 1.8714071100607725,
+    "grad_rms": 0.27604674187866834,
+    "Tmax_C": 72.15716154218114,
+    "hardware": [
+      "Xeon",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.050837316566580026
+  },
+  {
+    "step": 15,
+    "op": "nudge Xeon (-2,0) cells",
+    "move": "nudge",
+    "accept": false,
+    "ap": 0.3860165163903917,
+    "J": 2.0052341420172772,
+    "grad_max": 1.8987498024429845,
+    "grad_rms": 0.277457754244899,
+    "Tmax_C": 72.9720403707953,
+    "hardware": [
+      "Xeon",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.04575358490992203
+  },
+  {
+    "step": 16,
+    "op": "nudge GPU_3070 (0,-2) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.8817169288774503,
+    "J": 1.9668661315879021,
+    "grad_max": 1.874275054224654,
+    "grad_rms": 0.27729088776642724,
+    "Tmax_C": 72.25991850017374,
+    "hardware": [
+      "Xeon",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.04117822641892983
+  },
+  {
+    "step": 17,
+    "op": "rotate GPU_3070",
+    "move": "rotate",
+    "accept": true,
+    "ap": 0.6148206266475016,
+    "J": 1.9848932280332041,
+    "grad_max": 1.8803391041949706,
+    "grad_rms": 0.2807641572015424,
+    "Tmax_C": 72.67561048967025,
+    "hardware": [
+      "Xeon",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.03706040377703684
+  },
+  {
+    "step": 18,
+    "op": "nudge Xeon (0,-1) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.54055118591057,
+    "J": 2.005411696525289,
+    "grad_max": 1.8881094673031131,
+    "grad_rms": 0.2823027100089093,
+    "Tmax_C": 73.13579607928796,
+    "hardware": [
+      "Xeon",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.03335436339933316
+  },
+  {
+    "step": 19,
+    "op": "nudge GPU_3070 (0,-1) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.8562845984766081,
+    "J": 2.0100692076028173,
+    "grad_max": 1.8912849962821383,
+    "grad_rms": 0.2808376491239794,
+    "Tmax_C": 73.21918902500784,
+    "hardware": [
+      "Xeon",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.030018927059399847
+  },
+  {
+    "step": 20,
+    "op": "nudge Xeon (0,2) cells",
+    "move": "nudge",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 21,
+    "op": "nudge GPU_3070 (0,-2) cells",
+    "move": "nudge",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 22,
+    "op": "nudge GPU_3070 (1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.998760404315806,
+    "grad_max": 1.8853752538741193,
+    "grad_rms": 0.27915165499932804,
+    "Tmax_C": 72.98983529386174,
+    "hardware": [
+      "Xeon",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.02188379782630249
+  },
+  {
+    "step": 23,
+    "op": "rotate GPU_3070",
+    "move": "rotate",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.98107354474216,
+    "grad_max": 1.8796608008354572,
+    "grad_rms": 0.27489194894958613,
+    "Tmax_C": 72.57848017917394,
+    "hardware": [
+      "Xeon",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.019695418043672242
+  },
+  {
+    "step": 24,
+    "op": "nudge Xeon (0,1) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.9591428922101208,
+    "grad_max": 1.8706366593652193,
+    "grad_rms": 0.2732188565983063,
+    "Tmax_C": 72.0973506410474,
+    "hardware": [
+      "Xeon",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.01772587623930502
+  },
+  {
+    "step": 25,
+    "op": "nudge GPU_3070 (0,-1) cells",
+    "move": "nudge",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 26,
+    "op": "rotate GPU_3070",
+    "move": "rotate",
+    "accept": false,
+    "ap": 0.271597562979889,
+    "J": 1.9778575430587402,
+    "grad_max": 1.877318683276725,
+    "grad_rms": 0.27757448411640795,
+    "Tmax_C": 72.5231271222292,
+    "hardware": [
+      "Xeon",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.014357959753837067
+  },
+  {
+    "step": 27,
+    "op": "nudge GPU_3070 (-1,0) cells",
+    "move": "nudge",
+    "accept": false,
+    "ap": 0.4656100245897062,
+    "J": 1.9690206827491785,
+    "grad_max": 1.8753869147536635,
+    "grad_rms": 0.2745697083683827,
+    "Tmax_C": 72.30382476624851,
+    "hardware": [
+      "Xeon",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.012922163778453361
+  },
+  {
+    "step": 28,
+    "op": "nudge GPU_3070 (-1,0) cells",
+    "move": "nudge",
+    "accept": false,
+    "ap": 0.4276967138765403,
+    "J": 1.9690206827491785,
+    "grad_max": 1.8753869147536635,
+    "grad_rms": 0.2745697083683827,
+    "Tmax_C": 72.30382476624851,
+    "hardware": [
+      "Xeon",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.011629947400608026
+  },
+  {
+    "step": 29,
+    "op": "rotate Xeon",
+    "move": "rotate",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 30,
+    "op": "rotate GPU_3070",
+    "move": "rotate",
+    "accept": false,
+    "ap": 0.13715562998589012,
+    "J": 1.9778575430587402,
+    "grad_max": 1.877318683276725,
+    "grad_rms": 0.27757448411640795,
+    "Tmax_C": 72.5231271222292,
+    "hardware": [
+      "Xeon",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.0094202573944925
+  }
+]

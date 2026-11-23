@@ -1,0 +1,11 @@
+step  1 rotate GPU_3070                  取  精确  69.71  旧图  88.29  整图   29.18 K
+step  2 nudge CIM_jia (0.5,0.0)mm        取  精确  69.71  旧图  88.29  整图   29.18 K
+step  3 swap HBM3<->Penryn               取  精确  64.53  旧图  88.29  整图   29.18 K
+step  4 nudge HBM3 (-1.5,0.0)mm          取  精确  64.51  旧图  88.24  整图   29.16 K
+step  5 rotate CIM_jia                   取  精确  64.51  旧图  88.24  整图   29.16 K
+step  6 swap Penryn<->HBM3               弃  精确  69.99  旧图  96.75  整图   29.15 K
+step  7 nudge HBM3 (-2.0,0.0)mm          取  精确  64.43  旧图  88.07  整图   29.09 K
+step  8 nudge GPU_3070 (1.0,0.0)mm       取  精确  64.38  旧图  88.95  整图   29.77 K
+step  9 nudge CIM_jia (0.0,1.0)mm        取  精确  64.38  旧图  88.95  整图   29.77 K
+step 10 jump GPU_3070                    取  精确  64.22  旧图  90.17  整图   31.39 K
+精确 6.60 s   旧图 0.074 s

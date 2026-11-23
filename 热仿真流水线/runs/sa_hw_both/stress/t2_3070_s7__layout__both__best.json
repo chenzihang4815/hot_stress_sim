@@ -1,0 +1,44 @@
+{
+  "tag": "t2_3070_s7__layout__both__best",
+  "vm_normal_chip_max_MPa": 95.56835919770275,
+  "vm_normal_chip_name": "GPU_3070",
+  "vm_normal_chip_p95_MPa": 72.43605136476863,
+  "w_pv_um": 2.785648967066928,
+  "atsim_Tmax_C": 70.76553783351306,
+  "elapsed_s": 19.31691884994507,
+  "ndof": 45684,
+  "chips": [
+    {
+      "name": "T2",
+      "normal": true,
+      "n_cells": 104,
+      "vm_max_MPa": 82.28782610027405,
+      "vm_mean_MPa": 37.49460991621122,
+      "vm_p95_MPa": 73.12847109877157
+    },
+    {
+      "name": "GPU_3070",
+      "normal": true,
+      "n_cells": 117,
+      "vm_max_MPa": 95.56835919770275,
+      "vm_mean_MPa": 40.194363356242675,
+      "vm_p95_MPa": 72.43605136476863
+    },
+    {
+      "name": "HBM3",
+      "normal": true,
+      "n_cells": 45,
+      "vm_max_MPa": 50.9881823549745,
+      "vm_mean_MPa": 28.620268058733007,
+      "vm_p95_MPa": 50.93727722413385
+    },
+    {
+      "name": "CIM_jia",
+      "normal": true,
+      "n_cells": 8,
+      "vm_max_MPa": 57.77158748888867,
+      "vm_mean_MPa": 52.49027905267846,
+      "vm_p95_MPa": 57.7602211512299
+    }
+  ]
+}

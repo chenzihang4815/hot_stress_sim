@@ -1,0 +1,118 @@
+{
+  "name": "case1_2d_ic",
+  "description": "最小芯片级稳态热仿真算例：单层硅片 + 四区块功耗。COMSOL / Python / HotSpot 共用本文件。",
+  "comment": "第一阶段只做线性稳态（常数热导率、无漏电），用于三方交叉验证。确认几何与边界无误后再打开 nonlinear。",
+  "geometry": {
+    "width_m": 0.008,
+    "height_m": 0.008,
+    "thickness_m": 0.00015,
+    "origin": "bottom-left-front, z=0 at die bottom, z=t at die top (cooled face)"
+  },
+  "ambient_K": 318.15,
+  "convection": {
+    "face": "top",
+    "h_W_m2K": 5000.0,
+    "comment": "等效对流换热系数，把封装散热折算到芯片顶面。侧面与底面绝热。不要和 HotSpot 的 r_convec 直接对比——HotSpot 还含 TIM/均热板/散热器。"
+  },
+  "grid": {
+    "nx": 64,
+    "ny": 64,
+    "nz": 6,
+    "comment": "Python FVM 默认网格。COMSOL 建议扫掠网格达到相近分辨率：平面 64x64、厚度方向至少 4 层。"
+  },
+  "solver": {
+    "type": "fvm3d",
+    "nonlinear": false,
+    "leakage": false,
+    "kirchhoff": false,
+    "tolerance_K": 0.05,
+    "max_iter": 20
+  },
+  "material_default": "silicon",
+  "materials": {
+    "silicon": {
+      "kappa0_W_mK": 130.0,
+      "T_ref_K": 300.0,
+      "alpha": 1.5,
+      "rho_kg_m3": 2330.0,
+      "cp_J_kgK": 700.0,
+      "comment": "线性模式使用 kappa0；非线性模式 kappa(T)=kappa0*(T_ref/T)^alpha，与论文硅材料 alpha≈1.5 一致。"
+    },
+    "copper": {
+      "kappa0_W_mK": 400.0,
+      "T_ref_K": 300.0,
+      "alpha": 0.0,
+      "rho_kg_m3": 8960.0,
+      "cp_J_kgK": 385.0
+    }
+  },
+  "blocks": [
+    {
+      "name": "Cache",
+      "x0_m": 0.0,
+      "y0_m": 0.0,
+      "w_m": 0.004,
+      "h_m": 0.004,
+      "power_W": 2.0,
+      "material": "silicon"
+    },
+    {
+      "name": "Uncore",
+      "x0_m": 0.004,
+      "y0_m": 0.0,
+      "w_m": 0.004,
+      "h_m": 0.004,
+      "power_W": 1.5,
+      "material": "silicon"
+    },
+    {
+      "name": "CoreA",
+      "x0_m": 0.0,
+      "y0_m": 0.004,
+      "w_m": 0.004,
+      "h_m": 0.004,
+      "power_W": 8.0,
+      "material": "silicon",
+      "comment": "高功耗区块，预期峰值温度出现在此块中心附近。"
+    },
+    {
+      "name": "CoreB",
+      "x0_m": 0.004,
+      "y0_m": 0.004,
+      "w_m": 0.004,
+      "h_m": 0.004,
+      "power_W": 6.0,
+      "material": "silicon"
+    }
+  ],
+  "probes": [
+    {"name": "Cache_center",  "x_m": 0.002, "y_m": 0.002, "z_m": 7.5e-5},
+    {"name": "Uncore_center", "x_m": 0.006, "y_m": 0.002, "z_m": 7.5e-5},
+    {"name": "CoreA_center",  "x_m": 0.002, "y_m": 0.006, "z_m": 7.5e-5},
+    {"name": "CoreB_center",  "x_m": 0.006, "y_m": 0.006, "z_m": 7.5e-5},
+    {"name": "Chip_center",   "x_m": 0.004, "y_m": 0.004, "z_m": 7.5e-5},
+    {"name": "CoreA_top",     "x_m": 0.002, "y_m": 0.006, "z_m": 0.00015},
+    {"name": "Chip_top_center","x_m": 0.004,"y_m": 0.004, "z_m": 0.00015},
+    {"name": "Cache_bottom",  "x_m": 0.002, "y_m": 0.002, "z_m": 0.0}
+  ],
+  "hotspot": {
+    "r_convec_K_per_W": 0.1,
+    "t_chip_m": 0.00015,
+    "k_chip": 130.0,
+    "t_interface_m": 2.0e-5,
+    "k_interface": 4.0,
+    "s_spreader_m": 0.03,
+    "t_spreader_m": 0.001,
+    "k_spreader": 400.0,
+    "s_sink_m": 0.06,
+    "t_sink_m": 0.0069,
+    "k_sink": 400.0,
+    "grid_rows": 64,
+    "grid_cols": 64,
+    "comment": "HotSpot 自带封装层，温度会明显低于芯片级等效对流模型。本阶段 HotSpot 用于趋势对照，不作为 Python↔COMSOL 的精度判据。"
+  },
+  "analytical_1d_check": {
+    "comment": "均匀发热一维解析：Tmax = Tamb + P/(hA) + P*t/(2kA)。非均匀功耗会使 CoreA 明显高于此值。",
+    "expected_uniform_Tmax_C": 99.85
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "case": "pkg_5cpu_3gpu_5cim",
+  "json": "/home/czh/\u4efb\u52a1\u4eff\u771f\u4ea7\u751f\u529f\u8017\u6587\u4ef6\u5de5\u5177/\u70ed\u5e94\u529bpython\u5de5\u7a0b_\u6700\u7ec8/cases/from_pipeline/large_package/pkg_5cpu_3gpu_5cim.json",
+  "wall_compute_s": 723.7945237159729,
+  "heat": {
+    "grid_s": 0.013844966888427734,
+    "assemble_s": 0.7857577800750732,
+    "solve_s": 12.63005542755127,
+    "total_s": 13.442954778671265,
+    "n_iter": 1,
+    "n_cells": 54096,
+    "n_solid": 40713,
+    "n_unknown": 54096,
+    "nnz": 284878,
+    "solver": "spsolve",
+    "grid": [
+      69,
+      49,
+      16
+    ]
+  },
+  "elasticity": {
+    "assemble_s": 63.529942750930786,
+    "solve_s": 551.4225792884827,
+    "post_s": 14.38948369026184,
+    "total_s": 629.3420057296753,
+    "ndof": 134766,
+    "n_nodes": 47526,
+    "n_hex": 40713,
+    "n_solid": 40713,
+    "nnz": 9825768,
+    "solver": "spsolve_after_cg",
+    "bc": "substrate_bottom_fixed",
+    "element": "wilson"
+  },
+  "total_heat_plus_elast_s": 642.7849605083466
+}

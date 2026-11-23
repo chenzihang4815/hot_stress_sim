@@ -1,0 +1,11 @@
+{
+  "id": "pkg_5cpu_3gpu_5cim",
+  "title": "5 CPU + 3 GPU + 5 CIM（13 颗）",
+  "why": "已有大封装；对照实验的基准规模",
+  "layout": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/sa_compare_schemes/pkg_5cpu_3gpu_5cim/layout.json",
+  "source": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/large_package/pkg_5cpu_3gpu_5cim/layout.json",
+  "n_chiplets": 13,
+  "atsim_pitch_die_mm": 2.0,
+  "atsim_pitch_coarse_mm": 8.0,
+  "atsim_nz": null
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "label": "C1_4芯",
+    "chips": 4,
+    "span_mm": 51,
+    "power_W": 165,
+    "pre_s": 6.9,
+    "full_s": 1.98,
+    "delta_s": 1.77,
+    "breakeven": 32.7
+  },
+  {
+    "label": "big_6芯",
+    "chips": 6,
+    "span_mm": 60,
+    "power_W": 264,
+    "pre_s": 7.6,
+    "full_s": 1.3,
+    "delta_s": 1.66,
+    "breakeven": Infinity
+  },
+  {
+    "label": "hbm_7芯",
+    "chips": 7,
+    "span_mm": 59,
+    "power_W": 281,
+    "pre_s": 9.1,
+    "full_s": 1.79,
+    "delta_s": 0.83,
+    "breakeven": 9.5
+  },
+  {
+    "label": "hbm2_7芯",
+    "chips": 7,
+    "span_mm": 61,
+    "power_W": 293,
+    "pre_s": 9.8,
+    "full_s": 1.43,
+    "delta_s": 1.37,
+    "breakeven": 167.2
+  },
+  {
+    "label": "t2_9芯",
+    "chips": 9,
+    "span_mm": 57,
+    "power_W": 268,
+    "pre_s": 8.3,
+    "full_s": 1.79,
+    "delta_s": 0.32,
+    "breakeven": 5.7
+  },
+  {
+    "label": "mix_9芯",
+    "chips": 9,
+    "span_mm": 60,
+    "power_W": 293,
+    "pre_s": 9.8,
+    "full_s": 2.04,
+    "delta_s": 0.67,
+    "breakeven": 7.2
+  },
+  {
+    "label": "xeon2_9芯",
+    "chips": 9,
+    "span_mm": 60,
+    "power_W": 329,
+    "pre_s": 10.8,
+    "full_s": 3.31,
+    "delta_s": 1.06,
+    "breakeven": 4.8
+  },
+  {
+    "label": "xeon3g_10芯",
+    "chips": 10,
+    "span_mm": 67,
+    "power_W": 407,
+    "pre_s": 14.1,
+    "full_s": 2.97,
+    "delta_s": 0.82,
+    "breakeven": 6.5
+  },
+  {
+    "label": "xeon3_11芯",
+    "chips": 11,
+    "span_mm": 70,
+    "power_W": 517,
+    "pre_s": 14.3,
+    "full_s": 2.69,
+    "delta_s": 1.01,
+    "breakeven": 8.5
+  }
+]

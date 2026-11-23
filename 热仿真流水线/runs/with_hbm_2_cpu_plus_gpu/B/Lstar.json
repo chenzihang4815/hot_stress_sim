@@ -1,0 +1,89 @@
+{
+  "name": "Lstar",
+  "description": "Lstar",
+  "chips": [
+    {
+      "name": "CPU_T2_0",
+      "x_mm": 21.5,
+      "y_mm": 19.0,
+      "w_mm": 18.9248786280512,
+      "h_mm": 14.453091371195029,
+      "t_um": 150.0,
+      "power_W": 64.78982255474452
+    },
+    {
+      "name": "CPU_T2_1",
+      "x_mm": 1.0,
+      "y_mm": 0.5,
+      "w_mm": 17.58365068103082,
+      "h_mm": 15.5555296770696,
+      "t_um": 150.0,
+      "power_W": 64.78982255474452
+    },
+    {
+      "name": "GPU_TITANX_0",
+      "x_mm": 43.0,
+      "y_mm": 18.5,
+      "w_mm": 17.85634307521685,
+      "h_mm": 26.377181375603705,
+      "t_um": 150.0,
+      "power_W": 67.41
+    },
+    {
+      "name": "GPU_TITANX_1",
+      "x_mm": 0.0,
+      "y_mm": 38.0,
+      "w_mm": 22.1883440710926,
+      "h_mm": 21.22736146919714,
+      "t_um": 150.0,
+      "power_W": 67.41
+    },
+    {
+      "name": "CIM_jia64_0",
+      "x_mm": 31.5,
+      "y_mm": 0.0,
+      "w_mm": 19.806017565375814,
+      "h_mm": 13.834103655395849,
+      "t_um": 150.0,
+      "power_W": 0.020516
+    },
+    {
+      "name": "CIM_jia64_1",
+      "x_mm": 1.5,
+      "y_mm": 18.5,
+      "w_mm": 19.05231361683121,
+      "h_mm": 14.381376745653819,
+      "t_um": 150.0,
+      "power_W": 0.020516
+    },
+    {
+      "name": "HBM3_stack",
+      "x_mm": 19.5,
+      "y_mm": 0.5,
+      "w_mm": 10.822530198734343,
+      "h_mm": 11.180379983060757,
+      "t_um": 150.0,
+      "power_W": 28.656
+    }
+  ],
+  "package": {
+    "tim_um": 20,
+    "t_spreader_mm": 1.0,
+    "t_sink_mm": 6.9,
+    "t_substrate_mm": 1.0,
+    "t_interposer_um": 100.0,
+    "r_convec_K_per_W": 0.1,
+    "ambient_C": 45,
+    "pitch_die_mm": 2.0,
+    "pitch_coarse_mm": 8.0,
+    "nz_die": 3,
+    "nz_spreader": 3,
+    "nz_sink": 4,
+    "nz_tim": 1,
+    "nz_substrate": 3,
+    "nz_interposer": 2,
+    "fill_die": true,
+    "fill_xy": "chips",
+    "fill_material": "silicon"
+  }
+}

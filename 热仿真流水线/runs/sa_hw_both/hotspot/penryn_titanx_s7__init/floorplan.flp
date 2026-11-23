@@ -1,0 +1,7 @@
+# unit-name  width  height  left-x  bottom-y   (meters)
+Penryn	0.009	0.010125	0.0045	0.0045
+GPU_TITANX	0.019125	0.02475	0.02475	0.0045
+HBM3	0.009	0.0135	0.02475	0.0315
+CIM_jia	0.00225	0.00225	0.0045	0.030375
+anchor_sw	0.0001	0.0001	0	0
+anchor_ne	0.0001	0.0001	0.0719	0.0719

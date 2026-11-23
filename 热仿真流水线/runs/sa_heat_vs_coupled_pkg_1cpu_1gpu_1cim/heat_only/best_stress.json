@@ -1,0 +1,69 @@
+{
+  "json": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/sa_heat_vs_coupled_pkg_1cpu_1gpu_1cim/heat_only/best.json",
+  "fill_die": true,
+  "Tmax_C": 57.922221929233956,
+  "vm_center_mean_MPa": 16.262981212268226,
+  "vm_center_max_MPa": 23.157745947030993,
+  "vm_normal_chip_max_MPa": 32.487329748676295,
+  "vm_normal_chip_name": "GPU_3070",
+  "vm_normal_chip_p95_MPa": 25.610680751727777,
+  "chip_interiors": [
+    {
+      "name": "CPU_matmul",
+      "area_mm2": 13.634499999999997,
+      "normal": true,
+      "n_cells": 8,
+      "vm_max_MPa": 23.907829476860954,
+      "vm_p95_MPa": 23.598525874559655,
+      "vm_mean_MPa": 19.129454119573214
+    },
+    {
+      "name": "GPU_3070",
+      "area_mm2": 391.99999999999994,
+      "normal": true,
+      "n_cells": 120,
+      "vm_max_MPa": 32.487329748676295,
+      "vm_p95_MPa": 25.610680751727777,
+      "vm_mean_MPa": 13.924715509625205
+    },
+    {
+      "name": "CIM_jia",
+      "area_mm2": 4.281226257942074,
+      "normal": true,
+      "n_cells": 8,
+      "vm_max_MPa": 27.71215292599206,
+      "vm_p95_MPa": 27.02635515601819,
+      "vm_mean_MPa": 24.381893840207127
+    }
+  ],
+  "w_pv_um": 0.8773151910268584,
+  "u_max_um": 6.503958306669703,
+  "vm_package_max_MPa": 34.991068773508715,
+  "chip_centers": [
+    {
+      "name": "CPU_matmul",
+      "T_C": 54.344640688691925,
+      "vm_MPa": 17.65336872043979,
+      "uz_um": 0.2137141702006095
+    },
+    {
+      "name": "GPU_3070",
+      "T_C": 57.89009741459233,
+      "vm_MPa": 7.977828969333898,
+      "uz_um": 0.4447271553428356
+    },
+    {
+      "name": "CIM_jia",
+      "T_C": 52.03193563261851,
+      "vm_MPa": 23.157745947030993,
+      "uz_um": -0.17291622339640614
+    }
+  ],
+  "heat_s": 0.2716503143310547,
+  "elast_s": 10.73029899597168,
+  "elapsed_s": 11.126930713653564,
+  "ndof": 20964,
+  "element": "wilson",
+  "solver": "cg",
+  "wall_s": 11.127163171768188
+}

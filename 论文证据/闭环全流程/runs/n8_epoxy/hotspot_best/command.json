@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/home/czh/任务仿真产生功耗文件工具/HotSpot-master/hotspot",
+    "-f",
+    "/home/czh/任务仿真产生功耗文件工具/论文证据/闭环全流程/runs/n8_epoxy/hotspot_best/floorplan.flp",
+    "-p",
+    "/home/czh/任务仿真产生功耗文件工具/论文证据/闭环全流程/runs/n8_epoxy/hotspot_best/power.ptrace",
+    "-c",
+    "/home/czh/任务仿真产生功耗文件工具/论文证据/闭环全流程/runs/n8_epoxy/hotspot_best/hotspot.config",
+    "-model_type",
+    "grid",
+    "-steady_file",
+    "/home/czh/任务仿真产生功耗文件工具/论文证据/闭环全流程/runs/n8_epoxy/hotspot_best/block.steady",
+    "-grid_steady_file",
+    "/home/czh/任务仿真产生功耗文件工具/论文证据/闭环全流程/runs/n8_epoxy/hotspot_best/grid.steady"
+  ],
+  "returncode": 0,
+  "block_steady": "/home/czh/任务仿真产生功耗文件工具/论文证据/闭环全流程/runs/n8_epoxy/hotspot_best/block.steady",
+  "grid_steady": "/home/czh/任务仿真产生功耗文件工具/论文证据/闭环全流程/runs/n8_epoxy/hotspot_best/grid.steady"
+}

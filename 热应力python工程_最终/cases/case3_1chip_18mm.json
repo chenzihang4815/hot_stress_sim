@@ -1,0 +1,19 @@
+{
+  "name": "case3_1chip_18mm",
+  "description": "One 18x18 mm die filling the 4-chip bbox. 60 W. Same 70x70 package as case3_4chip. No streets.",
+  "chips": [
+    {"name": "Die", "x_mm": 0, "y_mm": 0, "w_mm": 18, "h_mm": 18, "t_um": 150, "power_W": 60}
+  ],
+  "package": {
+    "tim_um": 20,
+    "t_spreader_mm": 1.0,
+    "t_sink_mm": 6.9,
+    "t_substrate_mm": 1.0,
+    "t_interposer_um": 100.0,
+    "r_convec_K_per_W": 0.1,
+    "ambient_C": 45,
+    "pitch_die_mm": 0.5,
+    "pitch_coarse_mm": 3.0,
+    "fill_die": false
+  }
+}

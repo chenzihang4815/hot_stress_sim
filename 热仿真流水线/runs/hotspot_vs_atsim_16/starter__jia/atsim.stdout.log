@@ -1,0 +1,43 @@
+================================================================
+Case: cpu_gpu_cim_starter__jia
+JSON: /home/czh/任务仿真产生功耗文件工具/热应力python工程/cases/cpu_gpu_cim_lbfgs/starter__jia.json
+Domain: 86.8 x 79.1 x 9.17 mm
+Chips: 3   P=74.61 W   h=1456.47 W/m2K   Tamb=45.00 C
+BBox 34.8 x 27.1 mm   Spreader 56.8 x 49.1 mm   Sink 86.8 x 79.1 mm
+Centered, layout shift (26.00, 26.00) mm
+Substrate 1.0 mm  Interposer 100 um  34.8 x 27.1 mm  fill_die=False  tim_cover=chips
+
+Chips (edit cases/case3_chips.json):
+  name           x_mm     y_mm     w_mm     h_mm        W
+  CPU           26.00    51.26     1.55     1.87     1.65
+  GPU           28.44    26.00    32.33    25.21    72.95
+  CIM           26.00    26.00     2.39     1.79     0.00
+
+-- FVM 3D package --
+  Picard 1  dTmax=12.7694 K  Tmin=51.28 C  Tmax=57.77 C
+[fvm3d] cpu_gpu_cim_starter__jia  cells=52x43x23  solid=32974  Tmax=57.769 C  Tmin=51.276 C  8.54s
+[fvm3d] timing  grid=0.01s  assemble=0.49s  solve=8.03s (spsolve)  ndof=51428  nnz=240806
+
+Probes:
+  CPU_center            57.659 C
+  GPU_center            56.678 C
+  CIM_center            53.505 C
+  Sink_top_center       55.179 C
+  Spreader_center       56.038 C
+  Interposer_center     56.667 C
+  Substrate_center      56.656 C
+  TIM_mid               56.505 C
+
+Timing (heat only):
+  grid     0.01 s
+  assemble 0.49 s
+  solve    8.03 s  (spsolve)
+  total    8.54 s   ndof=51428  solid=32974
+
+HotSpot files:
+  flp: /home/czh/任务仿真产生功耗文件工具/热应力python工程/hotspot_starter__jia/cpu_gpu_cim_starter__jia.flp
+  ptrace: /home/czh/任务仿真产生功耗文件工具/热应力python工程/hotspot_starter__jia/cpu_gpu_cim_starter__jia.ptrace
+  config: /home/czh/任务仿真产生功耗文件工具/热应力python工程/hotspot_starter__jia/cpu_gpu_cim_starter__jia.config
+  materials: /home/czh/任务仿真产生功耗文件工具/热应力python工程/hotspot_starter__jia/cpu_gpu_cim_starter__jia.materials
+Outputs: /home/czh/任务仿真产生功耗文件工具/热应力python工程/results/python_starter__jia
+================================================================

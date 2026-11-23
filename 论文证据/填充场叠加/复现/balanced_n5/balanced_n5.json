@@ -1,0 +1,64 @@
+{
+  "n_chips": 5,
+  "source": "热仿真流水线/runs/closed_loop_suite/n5_epoxy/hotspot_init/layout.json",
+  "chips": [
+    {
+      "name": "Xeon_Ca",
+      "kind": "CPU",
+      "power_W": 103.94599,
+      "area_mm2": 425.25
+    },
+    {
+      "name": "GPU_3070_Ga",
+      "kind": "GPU",
+      "power_W": 66.88781634908364,
+      "area_mm2": 389.8125
+    },
+    {
+      "name": "CIM_jia_m64",
+      "kind": "CIM",
+      "power_W": 0.02051619509144024,
+      "area_mm2": 273.375
+    },
+    {
+      "name": "HBM3",
+      "kind": "HBM",
+      "power_W": 28.656,
+      "area_mm2": 121.5
+    },
+    {
+      "name": "CIM_colonnade_m512",
+      "kind": "CIM",
+      "power_W": 0.2967109271348416,
+      "area_mm2": 121.5
+    }
+  ],
+  "power_W": 199.80703347130992,
+  "start_C": 58.39801143397625,
+  "factor_once_s": 0.6521652439842001,
+  "exact_total_s": 133.69791694864398,
+  "exact_best_C": 57.20910800432267,
+  "exact": {
+    "assemble_s": 31.736413485661615,
+    "factor_s": 100.29182324453723,
+    "solve_s": 1.6696802184451371,
+    "accept": 125,
+    "legal": 200
+  },
+  "iter_total_s": 49.029654325626325,
+  "iter_priced_C": 56.238166266014844,
+  "iter_exact_C": 59.09312850263626,
+  "iter": {
+    "assemble_s": 31.536135621543508,
+    "solve_s": 16.841353460098617,
+    "accept": 122,
+    "legal": 200
+  },
+  "check_s": 0.5935936860041693,
+  "grid_max_abs_K": 4.352519382801461,
+  "peak_price_minus_exact_K": -2.854962236621418,
+  "speedup": 2.7268786367674656,
+  "steps": 200,
+  "seed": 22,
+  "n_iter": 8
+}

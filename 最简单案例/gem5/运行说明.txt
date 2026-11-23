@@ -1,0 +1,73 @@
+gem5 —— 最简单案例（ARM hello world, SE 模式）
+=============================================
+
+gem5 是 CPU 性能仿真器。最小例子：一个 Timing CPU，跑 ARM 的 hello world。
+本目录没有拷 123MB 源码，配置指向你原来的仓库。
+
+官方最小脚本（已拷贝）：
+  configs/arm-hello.py
+  来源：gem5-stable/configs/example/gem5_library/arm-hello.py
+
+样例输出（伪造，示范格式，不是真跑出来的）：
+  sample_m5out/stats.txt
+  sample_m5out/config.ini
+
+------------------------------------------------
+A. Windows 上现在就能做
+------------------------------------------------
+
+看 stats 长什么样：
+
+  python scripts/peek_stats.py sample_m5out/stats.txt
+
+把这份假 stats 填进 McPAT 的 ARM A9 模板：
+
+  python scripts/gem5_stats_to_mcpat.py \
+      --template ../McPAT/input/ARM_A9_2000.xml \
+      --stats    sample_m5out/stats.txt \
+      --out      sample_m5out/from_gem5.xml
+
+打开 from_gem5.xml，搜 total_cycles / committed_instructions / read_accesses，
+会看到它们已经被 stats.txt 里的数字替换。这就是 gem5 → McPAT 的接口。
+
+注意：arm-hello.py 本身是 NoCache + Timing CPU，真跑出来的 cache 计数几乎是 0。
+假 stats.txt 里我填了有 cache 的数字，只为了让你看清转换脚本改了哪些字段。
+真要给 McPAT 用，请用带 --caches 的配置（见 B 节注释）。
+
+------------------------------------------------
+B. Linux 上真正跑 gem5（依赖重）
+------------------------------------------------
+
+依赖：g++、scons、python3、protobuf、zlib、m4
+      Ubuntu 可参考 https://www.gem5.org/documentation/general_docs/building
+
+源码在（不要复制进本目录，太大）：
+  E:\给claude操作文件临时存放\任务仿真产生功耗文件工具\gem5-stable\gem5-stable
+
+  cd 那个目录
+  scons build/ARM/gem5.opt -j8
+
+  ./build/ARM/gem5.opt -d /path/to/最简单案例/gem5/m5out \
+      configs/example/gem5_library/arm-hello.py
+
+跑完看：
+  m5out/stats.txt
+  m5out/config.ini
+
+hello world 太短，stats 里很多计数是 0，这是正常的。
+下一步（仍然简单，但 McPAT 更有东西可吃）是 classic SE + cache，例如：
+
+  ./build/ARM/gem5.opt -d m5out_se \
+      configs/deprecated/example/se.py \
+      --cpu-type TimingSimpleCPU --caches --l2cache \
+      --cmd <一个 ARM 静态链接小程序>
+
+然后再：
+
+  python 最简单案例/gem5/scripts/gem5_stats_to_mcpat.py \
+      --template 最简单案例/McPAT/input/ARM_A9_2000.xml \
+      --stats    m5out_se/stats.txt \
+      --out      最简单案例/McPAT/output/from_gem5.xml
+
+gem5 不输出功耗。功耗是 McPAT 的事。
+本树里的 MathExprPowerModel（fs_power.py）是示意公式，论文级不要用。

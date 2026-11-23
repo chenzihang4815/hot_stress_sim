@@ -1,0 +1,52 @@
+{
+  "s": 1.0,
+  "McPAT_T_K": 390,
+  "Tmax_C": 112.06,
+  "in_window": false,
+  "sa": {
+    "Tmax_init_C": 114.90000000000003,
+    "Tmax_best_C": 112.06,
+    "accepted": 9
+  },
+  "cpu_dyn_W": 263.5535,
+  "cpu_leak_W": 104.72108032996701,
+  "cpu_tot_W": 368.27458032996697,
+  "cpu_dyn_over_leak": 2.5167186890124302,
+  "cpu_leak_frac": 0.28435598307148685,
+  "pkg_dyn_W": 295.5852,
+  "pkg_leak_W": 181.12728032996702,
+  "pkg_tot_W": 573.7614717396389,
+  "pkg_dyn_over_leak": 1.6319198271045656,
+  "per_cpu": {
+    "CPU_matmul": {
+      "dyn": 47.9315,
+      "leak": 12.484805821917808,
+      "model": "Penryn",
+      "McPAT_T": 390
+    },
+    "CPU_threads": {
+      "dyn": 47.9315,
+      "leak": 12.484805821917808,
+      "model": "Penryn",
+      "McPAT_T": 390
+    },
+    "CPU_armL2": {
+      "dyn": 50.421,
+      "leak": 19.84066890510949,
+      "model": "T2",
+      "McPAT_T": 390
+    },
+    "CPU_atomic": {
+      "dyn": 50.421,
+      "leak": 19.84066890510949,
+      "model": "T2",
+      "McPAT_T": 390
+    },
+    "CPU_starter": {
+      "dyn": 66.8485,
+      "leak": 40.07013087591242,
+      "model": "Xeon",
+      "McPAT_T": 390
+    }
+  }
+}

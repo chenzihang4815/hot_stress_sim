@@ -1,0 +1,824 @@
+[
+ {
+  "case": "n5_silicon",
+  "formula": {
+   "CPU": "并行吞吐 = 核数 × 主频 / 3700 MHz × 倍率。3700 是 Penryn 的主频，用来当 1。",
+   "GPU": "每秒指令数 = 该卡目录里的数 × 倍率。3070 是 19.081e9，2060S 是 29.306e9，TITANX 是 17.410e9。",
+   "note": "布局里存的是倍率 1.0 的底数，倍率存在 s 里。CPU 和 GPU 的单位不同，不加总。"
+  },
+  "gates": {
+   "T_C": 90.0,
+   "stress_MPa": 200.0,
+   "note": "温度是 ATSim 芯粒层最热一格，应力是正常芯片内部 von Mises 最大。"
+  },
+  "slots": [
+   {
+    "slot": "Ca",
+    "name": "T2_Ca",
+    "role": "CPU",
+    "part": "T2",
+    "s": 2.5,
+    "f_MHz_base": 1400,
+    "f_MHz": 3500.0,
+    "cores": 8,
+    "unit": "并行吞吐",
+    "before": 3.027027027027027,
+    "after": 7.567567567567568
+   },
+   {
+    "slot": "Ga",
+    "name": "GPU_3070_Ga",
+    "role": "GPU",
+    "part": "3070",
+    "s": 2.5,
+    "f_MHz_base": 1132.0,
+    "f_MHz": 2830.0,
+    "cores": null,
+    "unit": "Ginst/s",
+    "before": 19.08132229751239,
+    "after": 47.70330574378097
+   }
+  ],
+  "before": {
+   "T_C": 61.263924265818616,
+   "stress_MPa": 46.24614387955317
+  },
+  "after": {
+   "T_C": 74.42163812875742,
+   "stress_MPa": 74.51319414966426
+  }
+ },
+ {
+  "case": "n5_epoxy",
+  "formula": {
+   "CPU": "并行吞吐 = 核数 × 主频 / 3700 MHz × 倍率。3700 是 Penryn 的主频，用来当 1。",
+   "GPU": "每秒指令数 = 该卡目录里的数 × 倍率。3070 是 19.081e9，2060S 是 29.306e9，TITANX 是 17.410e9。",
+   "note": "布局里存的是倍率 1.0 的底数，倍率存在 s 里。CPU 和 GPU 的单位不同，不加总。"
+  },
+  "gates": {
+   "T_C": 90.0,
+   "stress_MPa": 200.0,
+   "note": "温度是 ATSim 芯粒层最热一格，应力是正常芯片内部 von Mises 最大。"
+  },
+  "slots": [
+   {
+    "slot": "Ca",
+    "name": "T2_Ca",
+    "role": "CPU",
+    "part": "T2",
+    "s": 2.5,
+    "f_MHz_base": 1400,
+    "f_MHz": 3500.0,
+    "cores": 8,
+    "unit": "并行吞吐",
+    "before": 3.027027027027027,
+    "after": 7.567567567567568
+   },
+   {
+    "slot": "Ga",
+    "name": "GPU_3070_Ga",
+    "role": "GPU",
+    "part": "3070",
+    "s": 2.5,
+    "f_MHz_base": 1132.0,
+    "f_MHz": 2830.0,
+    "cores": null,
+    "unit": "Ginst/s",
+    "before": 19.08132229751239,
+    "after": 47.70330574378097
+   }
+  ],
+  "before": {
+   "T_C": 62.388654914293625,
+   "stress_MPa": 50.67482308406147
+  },
+  "after": {
+   "T_C": 75.3996236740669,
+   "stress_MPa": 79.80661196714803
+  }
+ },
+ {
+  "case": "n6_silicon",
+  "formula": {
+   "CPU": "并行吞吐 = 核数 × 主频 / 3700 MHz × 倍率。3700 是 Penryn 的主频，用来当 1。",
+   "GPU": "每秒指令数 = 该卡目录里的数 × 倍率。3070 是 19.081e9，2060S 是 29.306e9，TITANX 是 17.410e9。",
+   "note": "布局里存的是倍率 1.0 的底数，倍率存在 s 里。CPU 和 GPU 的单位不同，不加总。"
+  },
+  "gates": {
+   "T_C": 90.0,
+   "stress_MPa": 200.0,
+   "note": "温度是 ATSim 芯粒层最热一格，应力是正常芯片内部 von Mises 最大。"
+  },
+  "slots": [
+   {
+    "slot": "Ca",
+    "name": "T2_Ca",
+    "role": "CPU",
+    "part": "T2",
+    "s": 2.5,
+    "f_MHz_base": 1400,
+    "f_MHz": 3500.0,
+    "cores": 8,
+    "unit": "并行吞吐",
+    "before": 3.027027027027027,
+    "after": 7.567567567567568
+   },
+   {
+    "slot": "Ga",
+    "name": "GPU_3070_Ga",
+    "role": "GPU",
+    "part": "3070",
+    "s": 2.5,
+    "f_MHz_base": 1132.0,
+    "f_MHz": 2830.0,
+    "cores": null,
+    "unit": "Ginst/s",
+    "before": 19.08132229751239,
+    "after": 47.70330574378097
+   },
+   {
+    "slot": "Gb",
+    "name": "GPU_2060S_Gb",
+    "role": "GPU",
+    "part": "2060S",
+    "s": 2.5,
+    "f_MHz_base": 1905.0,
+    "f_MHz": 4762.5,
+    "cores": null,
+    "unit": "Ginst/s",
+    "before": 29.30552141256536,
+    "after": 73.2638035314134
+   }
+  ],
+  "before": {
+   "T_C": 65.43894267009017,
+   "stress_MPa": 77.69135532734246
+  },
+  "after": {
+   "T_C": 78.28204385348448,
+   "stress_MPa": 114.77564855672648
+  }
+ },
+ {
+  "case": "n6_epoxy",
+  "formula": {
+   "CPU": "并行吞吐 = 核数 × 主频 / 3700 MHz × 倍率。3700 是 Penryn 的主频，用来当 1。",
+   "GPU": "每秒指令数 = 该卡目录里的数 × 倍率。3070 是 19.081e9，2060S 是 29.306e9，TITANX 是 17.410e9。",
+   "note": "布局里存的是倍率 1.0 的底数，倍率存在 s 里。CPU 和 GPU 的单位不同，不加总。"
+  },
+  "gates": {
+   "T_C": 90.0,
+   "stress_MPa": 200.0,
+   "note": "温度是 ATSim 芯粒层最热一格，应力是正常芯片内部 von Mises 最大。"
+  },
+  "slots": [
+   {
+    "slot": "Ca",
+    "name": "T2_Ca",
+    "role": "CPU",
+    "part": "T2",
+    "s": 2.5,
+    "f_MHz_base": 1400,
+    "f_MHz": 3500.0,
+    "cores": 8,
+    "unit": "并行吞吐",
+    "before": 3.027027027027027,
+    "after": 7.567567567567568
+   },
+   {
+    "slot": "Ga",
+    "name": "GPU_TITANX_Ga",
+    "role": "GPU",
+    "part": "TITANX",
+    "s": 2.5,
+    "f_MHz_base": 1417.0,
+    "f_MHz": 3542.5,
+    "cores": null,
+    "unit": "Ginst/s",
+    "before": 17.410487521129557,
+    "after": 43.52621880282389
+   },
+   {
+    "slot": "Gb",
+    "name": "GPU_2060S_Gb",
+    "role": "GPU",
+    "part": "2060S",
+    "s": 2.5,
+    "f_MHz_base": 1905.0,
+    "f_MHz": 4762.5,
+    "cores": null,
+    "unit": "Ginst/s",
+    "before": 29.30552141256536,
+    "after": 73.2638035314134
+   }
+  ],
+  "before": {
+   "T_C": 66.25938442282842,
+   "stress_MPa": 74.98001993299783
+  },
+  "after": {
+   "T_C": 80.77285470256822,
+   "stress_MPa": 111.39412755074142
+  }
+ },
+ {
+  "case": "n7_silicon",
+  "formula": {
+   "CPU": "并行吞吐 = 核数 × 主频 / 3700 MHz × 倍率。3700 是 Penryn 的主频，用来当 1。",
+   "GPU": "每秒指令数 = 该卡目录里的数 × 倍率。3070 是 19.081e9，2060S 是 29.306e9，TITANX 是 17.410e9。",
+   "note": "布局里存的是倍率 1.0 的底数，倍率存在 s 里。CPU 和 GPU 的单位不同，不加总。"
+  },
+  "gates": {
+   "T_C": 90.0,
+   "stress_MPa": 200.0,
+   "note": "温度是 ATSim 芯粒层最热一格，应力是正常芯片内部 von Mises 最大。"
+  },
+  "slots": [
+   {
+    "slot": "Ca",
+    "name": "T2_Ca",
+    "role": "CPU",
+    "part": "T2",
+    "s": 2.5,
+    "f_MHz_base": 1400,
+    "f_MHz": 3500.0,
+    "cores": 8,
+    "unit": "并行吞吐",
+    "before": 3.027027027027027,
+    "after": 7.567567567567568
+   },
+   {
+    "slot": "Cb",
+    "name": "T2_Cb",
+    "role": "CPU",
+    "part": "T2",
+    "s": 2.5,
+    "f_MHz_base": 1400,
+    "f_MHz": 3500.0,
+    "cores": 8,
+    "unit": "并行吞吐",
+    "before": 3.027027027027027,
+    "after": 7.567567567567568
+   },
+   {
+    "slot": "Ga",
+    "name": "GPU_3070_Ga",
+    "role": "GPU",
+    "part": "3070",
+    "s": 2.5,
+    "f_MHz_base": 1132.0,
+    "f_MHz": 2830.0,
+    "cores": null,
+    "unit": "Ginst/s",
+    "before": 19.08132229751239,
+    "after": 47.70330574378097
+   }
+  ],
+  "before": {
+   "T_C": 64.21780871944185,
+   "stress_MPa": 60.13503248681724
+  },
+  "after": {
+   "T_C": 80.05839918750814,
+   "stress_MPa": 103.19599250181747
+  }
+ },
+ {
+  "case": "n7_epoxy",
+  "formula": {
+   "CPU": "并行吞吐 = 核数 × 主频 / 3700 MHz × 倍率。3700 是 Penryn 的主频，用来当 1。",
+   "GPU": "每秒指令数 = 该卡目录里的数 × 倍率。3070 是 19.081e9，2060S 是 29.306e9，TITANX 是 17.410e9。",
+   "note": "布局里存的是倍率 1.0 的底数，倍率存在 s 里。CPU 和 GPU 的单位不同，不加总。"
+  },
+  "gates": {
+   "T_C": 90.0,
+   "stress_MPa": 200.0,
+   "note": "温度是 ATSim 芯粒层最热一格，应力是正常芯片内部 von Mises 最大。"
+  },
+  "slots": [
+   {
+    "slot": "Ca",
+    "name": "T2_Ca",
+    "role": "CPU",
+    "part": "T2",
+    "s": 2.5,
+    "f_MHz_base": 1400,
+    "f_MHz": 3500.0,
+    "cores": 8,
+    "unit": "并行吞吐",
+    "before": 3.027027027027027,
+    "after": 7.567567567567568
+   },
+   {
+    "slot": "Cb",
+    "name": "T2_Cb",
+    "role": "CPU",
+    "part": "T2",
+    "s": 2.5,
+    "f_MHz_base": 1400,
+    "f_MHz": 3500.0,
+    "cores": 8,
+    "unit": "并行吞吐",
+    "before": 3.027027027027027,
+    "after": 7.567567567567568
+   },
+   {
+    "slot": "Ga",
+    "name": "GPU_3070_Ga",
+    "role": "GPU",
+    "part": "3070",
+    "s": 2.5,
+    "f_MHz_base": 1132.0,
+    "f_MHz": 2830.0,
+    "cores": null,
+    "unit": "Ginst/s",
+    "before": 19.08132229751239,
+    "after": 47.70330574378097
+   }
+  ],
+  "before": {
+   "T_C": 65.30533496301837,
+   "stress_MPa": 68.65949049430772
+  },
+  "after": {
+   "T_C": 80.77364254583756,
+   "stress_MPa": 108.92870649173632
+  }
+ },
+ {
+  "case": "n8_silicon",
+  "formula": {
+   "CPU": "并行吞吐 = 核数 × 主频 / 3700 MHz × 倍率。3700 是 Penryn 的主频，用来当 1。",
+   "GPU": "每秒指令数 = 该卡目录里的数 × 倍率。3070 是 19.081e9，2060S 是 29.306e9，TITANX 是 17.410e9。",
+   "note": "布局里存的是倍率 1.0 的底数，倍率存在 s 里。CPU 和 GPU 的单位不同，不加总。"
+  },
+  "gates": {
+   "T_C": 90.0,
+   "stress_MPa": 200.0,
+   "note": "温度是 ATSim 芯粒层最热一格，应力是正常芯片内部 von Mises 最大。"
+  },
+  "slots": [
+   {
+    "slot": "Ca",
+    "name": "Xeon_Ca",
+    "role": "CPU",
+    "part": "Xeon",
+    "s": 2.5,
+    "f_MHz_base": 3400,
+    "f_MHz": 8500.0,
+    "cores": 2,
+    "unit": "并行吞吐",
+    "before": 1.837837837837838,
+    "after": 4.594594594594595
+   },
+   {
+    "slot": "Ga",
+    "name": "GPU_3070_Ga",
+    "role": "GPU",
+    "part": "3070",
+    "s": 2.5,
+    "f_MHz_base": 1132.0,
+    "f_MHz": 2830.0,
+    "cores": null,
+    "unit": "Ginst/s",
+    "before": 19.08132229751239,
+    "after": 47.70330574378097
+   },
+   {
+    "slot": "Gb",
+    "name": "GPU_3070_Gb",
+    "role": "GPU",
+    "part": "3070",
+    "s": 2.5,
+    "f_MHz_base": 1132.0,
+    "f_MHz": 2830.0,
+    "cores": null,
+    "unit": "Ginst/s",
+    "before": 19.08132229751239,
+    "after": 47.70330574378097
+   },
+   {
+    "slot": "Cb",
+    "name": "Xeon_Cb",
+    "role": "CPU",
+    "part": "Xeon",
+    "s": 2.5,
+    "f_MHz_base": 3400,
+    "f_MHz": 8500.0,
+    "cores": 2,
+    "unit": "并行吞吐",
+    "before": 1.837837837837838,
+    "after": 4.594594594594595
+   }
+  ],
+  "before": {
+   "T_C": 74.09366239825835,
+   "stress_MPa": 84.56520080494882
+  },
+  "after": {
+   "T_C": 88.66649427403524,
+   "stress_MPa": 140.5406412197544
+  }
+ },
+ {
+  "case": "n8_epoxy",
+  "formula": {
+   "CPU": "并行吞吐 = 核数 × 主频 / 3700 MHz × 倍率。3700 是 Penryn 的主频，用来当 1。",
+   "GPU": "每秒指令数 = 该卡目录里的数 × 倍率。3070 是 19.081e9，2060S 是 29.306e9，TITANX 是 17.410e9。",
+   "note": "布局里存的是倍率 1.0 的底数，倍率存在 s 里。CPU 和 GPU 的单位不同，不加总。"
+  },
+  "gates": {
+   "T_C": 90.0,
+   "stress_MPa": 200.0,
+   "note": "温度是 ATSim 芯粒层最热一格，应力是正常芯片内部 von Mises 最大。"
+  },
+  "slots": [
+   {
+    "slot": "Ca",
+    "name": "Xeon_Ca",
+    "role": "CPU",
+    "part": "Xeon",
+    "s": 2.5,
+    "f_MHz_base": 3400,
+    "f_MHz": 8500.0,
+    "cores": 2,
+    "unit": "并行吞吐",
+    "before": 1.837837837837838,
+    "after": 4.594594594594595
+   },
+   {
+    "slot": "Ga",
+    "name": "GPU_3070_Ga",
+    "role": "GPU",
+    "part": "3070",
+    "s": 2.5,
+    "f_MHz_base": 1132.0,
+    "f_MHz": 2830.0,
+    "cores": null,
+    "unit": "Ginst/s",
+    "before": 19.08132229751239,
+    "after": 47.70330574378097
+   },
+   {
+    "slot": "Gb",
+    "name": "GPU_3070_Gb",
+    "role": "GPU",
+    "part": "3070",
+    "s": 2.5,
+    "f_MHz_base": 1132.0,
+    "f_MHz": 2830.0,
+    "cores": null,
+    "unit": "Ginst/s",
+    "before": 19.08132229751239,
+    "after": 47.70330574378097
+   },
+   {
+    "slot": "Cb",
+    "name": "Xeon_Cb",
+    "role": "CPU",
+    "part": "Xeon",
+    "s": 2.5,
+    "f_MHz_base": 3400,
+    "f_MHz": 8500.0,
+    "cores": 2,
+    "unit": "并行吞吐",
+    "before": 1.837837837837838,
+    "after": 4.594594594594595
+   }
+  ],
+  "before": {
+   "T_C": 74.16095974878573,
+   "stress_MPa": 91.70242438520724
+  },
+  "after": {
+   "T_C": 88.71486947681296,
+   "stress_MPa": 153.81504960463292
+  }
+ },
+ {
+  "case": "n9_silicon",
+  "formula": {
+   "CPU": "并行吞吐 = 核数 × 主频 / 3700 MHz × 倍率。3700 是 Penryn 的主频，用来当 1。",
+   "GPU": "每秒指令数 = 该卡目录里的数 × 倍率。3070 是 19.081e9，2060S 是 29.306e9，TITANX 是 17.410e9。",
+   "note": "布局里存的是倍率 1.0 的底数，倍率存在 s 里。CPU 和 GPU 的单位不同，不加总。"
+  },
+  "gates": {
+   "T_C": 90.0,
+   "stress_MPa": 200.0,
+   "note": "温度是 ATSim 芯粒层最热一格，应力是正常芯片内部 von Mises 最大。"
+  },
+  "slots": [
+   {
+    "slot": "Ca",
+    "name": "Xeon_Ca",
+    "role": "CPU",
+    "part": "Xeon",
+    "s": 2.5,
+    "f_MHz_base": 3400,
+    "f_MHz": 8500.0,
+    "cores": 2,
+    "unit": "并行吞吐",
+    "before": 1.837837837837838,
+    "after": 4.594594594594595
+   },
+   {
+    "slot": "Ga",
+    "name": "GPU_3070_Ga",
+    "role": "GPU",
+    "part": "3070",
+    "s": 2.5,
+    "f_MHz_base": 1132.0,
+    "f_MHz": 2830.0,
+    "cores": null,
+    "unit": "Ginst/s",
+    "before": 19.08132229751239,
+    "after": 47.70330574378097
+   },
+   {
+    "slot": "Gb",
+    "name": "GPU_3070_Gb",
+    "role": "GPU",
+    "part": "3070",
+    "s": 2.5,
+    "f_MHz_base": 1132.0,
+    "f_MHz": 2830.0,
+    "cores": null,
+    "unit": "Ginst/s",
+    "before": 19.08132229751239,
+    "after": 47.70330574378097
+   },
+   {
+    "slot": "Cb",
+    "name": "Xeon_Cb",
+    "role": "CPU",
+    "part": "Xeon",
+    "s": 2.5,
+    "f_MHz_base": 3400,
+    "f_MHz": 8500.0,
+    "cores": 2,
+    "unit": "并行吞吐",
+    "before": 1.837837837837838,
+    "after": 4.594594594594595
+   }
+  ],
+  "before": {
+   "T_C": 71.18597265468355,
+   "stress_MPa": 96.49845099344179
+  },
+  "after": {
+   "T_C": 88.38926785376566,
+   "stress_MPa": 152.082536158408
+  }
+ },
+ {
+  "case": "n9_epoxy",
+  "formula": {
+   "CPU": "并行吞吐 = 核数 × 主频 / 3700 MHz × 倍率。3700 是 Penryn 的主频，用来当 1。",
+   "GPU": "每秒指令数 = 该卡目录里的数 × 倍率。3070 是 19.081e9，2060S 是 29.306e9，TITANX 是 17.410e9。",
+   "note": "布局里存的是倍率 1.0 的底数，倍率存在 s 里。CPU 和 GPU 的单位不同，不加总。"
+  },
+  "gates": {
+   "T_C": 90.0,
+   "stress_MPa": 200.0,
+   "note": "温度是 ATSim 芯粒层最热一格，应力是正常芯片内部 von Mises 最大。"
+  },
+  "slots": [
+   {
+    "slot": "Ca",
+    "name": "Xeon_Ca",
+    "role": "CPU",
+    "part": "Xeon",
+    "s": 2.5,
+    "f_MHz_base": 3400,
+    "f_MHz": 8500.0,
+    "cores": 2,
+    "unit": "并行吞吐",
+    "before": 1.837837837837838,
+    "after": 4.594594594594595
+   },
+   {
+    "slot": "Ga",
+    "name": "GPU_3070_Ga",
+    "role": "GPU",
+    "part": "3070",
+    "s": 2.5,
+    "f_MHz_base": 1132.0,
+    "f_MHz": 2830.0,
+    "cores": null,
+    "unit": "Ginst/s",
+    "before": 19.08132229751239,
+    "after": 47.70330574378097
+   },
+   {
+    "slot": "Gb",
+    "name": "GPU_3070_Gb",
+    "role": "GPU",
+    "part": "3070",
+    "s": 2.5,
+    "f_MHz_base": 1132.0,
+    "f_MHz": 2830.0,
+    "cores": null,
+    "unit": "Ginst/s",
+    "before": 19.08132229751239,
+    "after": 47.70330574378097
+   },
+   {
+    "slot": "Cb",
+    "name": "Xeon_Cb",
+    "role": "CPU",
+    "part": "Xeon",
+    "s": 2.5,
+    "f_MHz_base": 3400,
+    "f_MHz": 8500.0,
+    "cores": 2,
+    "unit": "并行吞吐",
+    "before": 1.837837837837838,
+    "after": 4.594594594594595
+   }
+  ],
+  "before": {
+   "T_C": 71.21955187407701,
+   "stress_MPa": 93.97060077283697
+  },
+  "after": {
+   "T_C": 88.43676996769346,
+   "stress_MPa": 147.51612214969464
+  }
+ },
+ {
+  "case": "n11_silicon",
+  "formula": {
+   "CPU": "并行吞吐 = 核数 × 主频 / 3700 MHz × 倍率。3700 是 Penryn 的主频，用来当 1。",
+   "GPU": "每秒指令数 = 该卡目录里的数 × 倍率。3070 是 19.081e9，2060S 是 29.306e9，TITANX 是 17.410e9。",
+   "note": "布局里存的是倍率 1.0 的底数，倍率存在 s 里。CPU 和 GPU 的单位不同，不加总。"
+  },
+  "gates": {
+   "T_C": 90.0,
+   "stress_MPa": 200.0,
+   "note": "温度是 ATSim 芯粒层最热一格，应力是正常芯片内部 von Mises 最大。"
+  },
+  "slots": [
+   {
+    "slot": "Ca",
+    "name": "T2_Ca",
+    "role": "CPU",
+    "part": "T2",
+    "s": 2.5,
+    "f_MHz_base": 1400,
+    "f_MHz": 3500.0,
+    "cores": 8,
+    "unit": "并行吞吐",
+    "before": 3.027027027027027,
+    "after": 7.567567567567568
+   },
+   {
+    "slot": "Ga",
+    "name": "GPU_2060S_Ga",
+    "role": "GPU",
+    "part": "2060S",
+    "s": 2.5,
+    "f_MHz_base": 1905.0,
+    "f_MHz": 4762.5,
+    "cores": null,
+    "unit": "Ginst/s",
+    "before": 29.30552141256536,
+    "after": 73.2638035314134
+   },
+   {
+    "slot": "Gb",
+    "name": "GPU_TITANX_Gb",
+    "role": "GPU",
+    "part": "TITANX",
+    "s": 2.5,
+    "f_MHz_base": 1417.0,
+    "f_MHz": 3542.5,
+    "cores": null,
+    "unit": "Ginst/s",
+    "before": 17.410487521129557,
+    "after": 43.52621880282389
+   },
+   {
+    "slot": "Cb",
+    "name": "Xeon_Cb",
+    "role": "CPU",
+    "part": "Xeon",
+    "s": 2.2,
+    "f_MHz_base": 3400,
+    "f_MHz": 7480.000000000001,
+    "cores": 2,
+    "unit": "并行吞吐",
+    "before": 1.837837837837838,
+    "after": 4.043243243243244
+   },
+   {
+    "slot": "Gc",
+    "name": "GPU_3070_Gc",
+    "role": "GPU",
+    "part": "3070",
+    "s": 2.5,
+    "f_MHz_base": 1132.0,
+    "f_MHz": 2830.0,
+    "cores": null,
+    "unit": "Ginst/s",
+    "before": 19.08132229751239,
+    "after": 47.70330574378097
+   }
+  ],
+  "before": {
+   "T_C": 74.8067975022816,
+   "stress_MPa": 108.50796408848966
+  },
+  "after": {
+   "T_C": 89.11332175675642,
+   "stress_MPa": 161.5503849640495
+  }
+ },
+ {
+  "case": "n11_epoxy",
+  "formula": {
+   "CPU": "并行吞吐 = 核数 × 主频 / 3700 MHz × 倍率。3700 是 Penryn 的主频，用来当 1。",
+   "GPU": "每秒指令数 = 该卡目录里的数 × 倍率。3070 是 19.081e9，2060S 是 29.306e9，TITANX 是 17.410e9。",
+   "note": "布局里存的是倍率 1.0 的底数，倍率存在 s 里。CPU 和 GPU 的单位不同，不加总。"
+  },
+  "gates": {
+   "T_C": 90.0,
+   "stress_MPa": 200.0,
+   "note": "温度是 ATSim 芯粒层最热一格，应力是正常芯片内部 von Mises 最大。"
+  },
+  "slots": [
+   {
+    "slot": "Ca",
+    "name": "T2_Ca",
+    "role": "CPU",
+    "part": "T2",
+    "s": 2.5,
+    "f_MHz_base": 1400,
+    "f_MHz": 3500.0,
+    "cores": 8,
+    "unit": "并行吞吐",
+    "before": 3.027027027027027,
+    "after": 7.567567567567568
+   },
+   {
+    "slot": "Ga",
+    "name": "GPU_2060S_Ga",
+    "role": "GPU",
+    "part": "2060S",
+    "s": 2.5,
+    "f_MHz_base": 1905.0,
+    "f_MHz": 4762.5,
+    "cores": null,
+    "unit": "Ginst/s",
+    "before": 29.30552141256536,
+    "after": 73.2638035314134
+   },
+   {
+    "slot": "Gb",
+    "name": "GPU_TITANX_Gb",
+    "role": "GPU",
+    "part": "TITANX",
+    "s": 2.5,
+    "f_MHz_base": 1417.0,
+    "f_MHz": 3542.5,
+    "cores": null,
+    "unit": "Ginst/s",
+    "before": 17.410487521129557,
+    "after": 43.52621880282389
+   },
+   {
+    "slot": "Cb",
+    "name": "Xeon_Cb",
+    "role": "CPU",
+    "part": "Xeon",
+    "s": 2.2,
+    "f_MHz_base": 3400,
+    "f_MHz": 7480.000000000001,
+    "cores": 2,
+    "unit": "并行吞吐",
+    "before": 1.837837837837838,
+    "after": 4.043243243243244
+   },
+   {
+    "slot": "Gc",
+    "name": "GPU_3070_Gc",
+    "role": "GPU",
+    "part": "3070",
+    "s": 2.5,
+    "f_MHz_base": 1132.0,
+    "f_MHz": 2830.0,
+    "cores": null,
+    "unit": "Ginst/s",
+    "before": 19.08132229751239,
+    "after": 47.70330574378097
+   }
+  ],
+  "before": {
+   "T_C": 74.95028048353458,
+   "stress_MPa": 102.50513324991485
+  },
+  "after": {
+   "T_C": 89.17505461360122,
+   "stress_MPa": 152.4616038402678
+  }
+ }
+]

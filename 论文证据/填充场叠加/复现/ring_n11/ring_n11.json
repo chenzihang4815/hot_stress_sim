@@ -1,0 +1,103 @@
+{
+  "label": "n11",
+  "n_chips": 11,
+  "source": "热仿真流水线/runs/closed_loop_suite/n11_epoxy/hotspot_init/layout.json",
+  "solver": "四层网格加 8 个外伸节点，均热片 96 mm，热沉 96 mm，无冷边",
+  "chips": [
+    {
+      "name": "Xeon_Ca",
+      "kind": "CPU",
+      "power_W": 103.94599,
+      "area_mm2": 425.25
+    },
+    {
+      "name": "GPU_2060S_Ga",
+      "kind": "GPU",
+      "power_W": 71.12082725952361,
+      "area_mm2": 445.5
+    },
+    {
+      "name": "GPU_TITANX_Gb",
+      "kind": "GPU",
+      "power_W": 67.4071250008286,
+      "area_mm2": 473.34375
+    },
+    {
+      "name": "CIM_jia_m64",
+      "kind": "CIM",
+      "power_W": 0.02051619509144024,
+      "area_mm2": 273.375
+    },
+    {
+      "name": "Xeon_Cb",
+      "kind": "CPU",
+      "power_W": 103.94599,
+      "area_mm2": 425.25
+    },
+    {
+      "name": "GPU_3070_Gc",
+      "kind": "GPU",
+      "power_W": 66.88781634908364,
+      "area_mm2": 389.8125
+    },
+    {
+      "name": "HBM3",
+      "kind": "HBM",
+      "power_W": 68.0,
+      "area_mm2": 121.5
+    },
+    {
+      "name": "CIM_colonnade_m512",
+      "kind": "CIM",
+      "power_W": 0.2967109271348416,
+      "area_mm2": 121.5
+    },
+    {
+      "name": "CIM_colonnade_m256",
+      "kind": "CIM",
+      "power_W": 0.29677526103697566,
+      "area_mm2": 60.75
+    },
+    {
+      "name": "CIM_basic_m256",
+      "kind": "CIM",
+      "power_W": 0.0022112712579585407,
+      "area_mm2": 11.390625
+    },
+    {
+      "name": "CIM_colonnade_m64",
+      "kind": "CIM",
+      "power_W": 0.29716126444977986,
+      "area_mm2": 15.1875
+    }
+  ],
+  "power_W": 482.22112352840685,
+  "start_C": 82.02954382635829,
+  "factor_once_s": 0.30065077100880444,
+  "exact_total_s": 83.95635765581392,
+  "exact_best_C": 75.79121118973342,
+  "exact": {
+    "assemble_s": 25.165537423512433,
+    "factor_s": 57.58115640497999,
+    "solve_s": 1.2096638273214921,
+    "accept": 100,
+    "legal": 200
+  },
+  "iter_total_s": 42.70918521087151,
+  "iter_priced_C": 76.19477517026951,
+  "iter_exact_C": 76.19410176147369,
+  "iter": {
+    "assemble_s": 29.406671937787905,
+    "solve_s": 13.0018625020748,
+    "accept": 91,
+    "legal": 200
+  },
+  "check_s": 0.31561600300483406,
+  "grid_max_abs_K": 0.07254413764684386,
+  "peak_price_minus_exact_K": 0.0006734087958193413,
+  "speedup": 1.9657681887699194,
+  "steps": 200,
+  "seed": 22,
+  "n_iter": 8,
+  "acceptance": "只接受温度更低的布局"
+}

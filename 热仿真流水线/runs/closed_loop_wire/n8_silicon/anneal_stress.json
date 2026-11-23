@@ -1,0 +1,98 @@
+[
+  {
+    "step": 0,
+    "die_cell_max_C": 76.73199024663478,
+    "vm_MPa": 131.52755619199974,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 1,
+    "die_cell_max_C": 76.7325893959785,
+    "vm_MPa": 131.5282363975636,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 3,
+    "die_cell_max_C": 76.98331486915129,
+    "vm_MPa": 145.44942502503284,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 5,
+    "die_cell_max_C": 76.81974899610873,
+    "vm_MPa": 144.36564809738437,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 10,
+    "die_cell_max_C": 76.80505680373517,
+    "vm_MPa": 144.36595805179698,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 11,
+    "die_cell_max_C": 76.98503293223536,
+    "vm_MPa": 149.97680725671924,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 13,
+    "die_cell_max_C": 76.98501919461438,
+    "vm_MPa": 151.41145942711182,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 14,
+    "die_cell_max_C": 76.93321691506026,
+    "vm_MPa": 150.74197635673534,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 18,
+    "die_cell_max_C": 74.32915824704412,
+    "vm_MPa": 140.005527335104,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 19,
+    "die_cell_max_C": 74.32036006403843,
+    "vm_MPa": 138.9077728061538,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 20,
+    "die_cell_max_C": 74.38014099557978,
+    "vm_MPa": 133.4590329084569,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 22,
+    "die_cell_max_C": 74.29901311713542,
+    "vm_MPa": 132.84848908107426,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 23,
+    "die_cell_max_C": 74.29968765782775,
+    "vm_MPa": 132.84603428095326,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 26,
+    "die_cell_max_C": 74.29973252686852,
+    "vm_MPa": 133.01449583269073,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 31,
+    "die_cell_max_C": 74.38078917576286,
+    "vm_MPa": 133.62620168029633,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 39,
+    "die_cell_max_C": 72.13171956875647,
+    "vm_MPa": 117.19198781925577,
+    "vm_name": "T2_Ca"
+  }
+]

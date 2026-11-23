@@ -1,0 +1,96 @@
+{
+  "name": "freq_6",
+  "description": "closed_loop_suite",
+  "chips": [
+    {
+      "name": "T2_Ca",
+      "x_mm": 21.375,
+      "y_mm": 6.75,
+      "w_mm": 13.5,
+      "h_mm": 20.25,
+      "t_um": 150.0,
+      "power_W": 43.78632
+    },
+    {
+      "name": "GPU_TITANX_Ga",
+      "x_mm": 0.0,
+      "y_mm": 0.0,
+      "w_mm": 19.125,
+      "h_mm": 24.75,
+      "t_um": 150.0,
+      "power_W": 168.51264462695954
+    },
+    {
+      "name": "GPU_2060S_Gb",
+      "x_mm": 38.25,
+      "y_mm": 14.625,
+      "w_mm": 18.0,
+      "h_mm": 24.75,
+      "t_um": 150.0,
+      "power_W": 319.6628220163499
+    },
+    {
+      "name": "CIM_jia_m64",
+      "x_mm": 57.375,
+      "y_mm": 0.0,
+      "w_mm": 13.5,
+      "h_mm": 20.25,
+      "t_um": 150.0,
+      "power_W": 0.02051619509144024
+    },
+    {
+      "name": "HBM3",
+      "x_mm": 47.25,
+      "y_mm": 0.0,
+      "w_mm": 9.0,
+      "h_mm": 13.5,
+      "t_um": 150.0,
+      "power_W": 40.751999999999995
+    },
+    {
+      "name": "CIM_colonnade_m512",
+      "x_mm": 37.125,
+      "y_mm": 0.0,
+      "w_mm": 9.0,
+      "h_mm": 13.5,
+      "t_um": 150.0,
+      "power_W": 0.2967109271348416
+    }
+  ],
+  "package": {
+    "tim_um": 20,
+    "t_spreader_mm": 1.0,
+    "t_sink_mm": 6.9,
+    "s_spreader_mm": 96.0,
+    "s_sink_mm": 96.0,
+    "frame_mm": 72.0,
+    "tim_cover": "frame",
+    "t_substrate_mm": 1.0,
+    "t_interposer_um": 100.0,
+    "r_convec_K_per_W": 0.0390625,
+    "ambient_C": 45,
+    "pitch_die_mm": 2.0,
+    "pitch_coarse_mm": 8.0,
+    "nz_die": 3,
+    "nz_spreader": 3,
+    "nz_sink": 4,
+    "nz_tim": 1,
+    "nz_substrate": 3,
+    "nz_interposer": 2,
+    "fill_die": true,
+    "fill_xy": "chips",
+    "fill_material": "epoxy"
+  },
+  "materials": {
+    "epoxy": {
+      "kappa0_W_mK": 0.8,
+      "T_ref_K": 300.0,
+      "alpha": 0.0,
+      "rho_kg_m3": 1800.0,
+      "cp_J_kgK": 1000.0,
+      "E_Pa": 25000000000.0,
+      "nu": 0.3,
+      "alpha_cte_1_K": 1.5e-05
+    }
+  }
+}

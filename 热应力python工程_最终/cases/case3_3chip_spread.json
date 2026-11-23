@@ -1,0 +1,21 @@
+{
+  "name": "case3_3chip_spread",
+  "description": "Same three chips and watts as case3_chips.json, larger streets. Warpage PV should change with placement, not with power.",
+  "chips": [
+    {"name": "CPU", "x_mm": 0,  "y_mm": 0,  "w_mm": 10, "h_mm": 10, "t_um": 150, "power_W": 25},
+    {"name": "GPU", "x_mm": 16, "y_mm": 0,  "w_mm": 12, "h_mm": 10, "t_um": 150, "power_W": 40},
+    {"name": "HBM", "x_mm": 0,  "y_mm": 16, "w_mm": 8,  "h_mm": 8,  "t_um": 150, "power_W": 8}
+  ],
+  "package": {
+    "tim_um": 20,
+    "t_spreader_mm": 1.0,
+    "t_sink_mm": 6.9,
+    "t_substrate_mm": 1.0,
+    "t_interposer_um": 100.0,
+    "r_convec_K_per_W": 0.1,
+    "ambient_C": 45,
+    "pitch_die_mm": 0.5,
+    "pitch_coarse_mm": 3.0,
+    "fill_die": false
+  }
+}

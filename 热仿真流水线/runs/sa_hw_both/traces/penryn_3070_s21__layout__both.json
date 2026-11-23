@@ -1,0 +1,517 @@
+[
+  {
+    "step": 0,
+    "op": "init",
+    "move": "init",
+    "accept": true,
+    "J": 2.0,
+    "grad_max": 4.161340520362501,
+    "grad_rms": 0.333021158232424,
+    "Tmax_C": 73.30232570861972,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ]
+  },
+  {
+    "step": 1,
+    "op": "nudge GPU_3070 (0,2) cells",
+    "move": "nudge",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 2,
+    "op": "nudge Penryn (-1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.8930000640549427,
+    "J": 2.0203703527476047,
+    "grad_max": 4.179823745536851,
+    "grad_rms": 0.3336388587552066,
+    "Tmax_C": 73.75314499393522,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.18000000000000002
+  },
+  {
+    "step": 3,
+    "op": "nudge Penryn (1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 2.0,
+    "grad_max": 4.161340520362501,
+    "grad_rms": 0.333021158232424,
+    "Tmax_C": 73.30232570861972,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.16200000000000003
+  },
+  {
+    "step": 4,
+    "op": "nudge GPU_3070 (-1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.9466042134885724,
+    "J": 2.008000659867313,
+    "grad_max": 4.163121967116897,
+    "grad_rms": 0.3339202500166657,
+    "Tmax_C": 73.5166469216935,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.14580000000000004
+  },
+  {
+    "step": 5,
+    "op": "rotate Penryn",
+    "move": "rotate",
+    "accept": true,
+    "ap": 0.994153291004388,
+    "J": 2.0087701166149188,
+    "grad_max": 4.158825122105352,
+    "grad_rms": 0.33418392118952855,
+    "Tmax_C": 73.56764826308881,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.13122000000000003
+  },
+  {
+    "step": 6,
+    "op": "rotate Penryn",
+    "move": "rotate",
+    "accept": true,
+    "ap": 1.0,
+    "J": 2.008000659867313,
+    "grad_max": 4.163121967116897,
+    "grad_rms": 0.3339202500166657,
+    "Tmax_C": 73.5166469216935,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.11809800000000004
+  },
+  {
+    "step": 7,
+    "op": "nudge GPU_3070 (0,-2) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.9036870615424245,
+    "J": 2.0187646943351583,
+    "grad_max": 4.176259022998794,
+    "grad_rms": 0.33507303985424425,
+    "Tmax_C": 73.73194570300797,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.10628820000000004
+  },
+  {
+    "step": 8,
+    "op": "nudge GPU_3070 (0,-2) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.9007796503172566,
+    "J": 2.0287605841831073,
+    "grad_max": 4.189010738364333,
+    "grad_rms": 0.3343931990432122,
+    "Tmax_C": 73.9281250030723,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.09565938000000004
+  },
+  {
+    "step": 9,
+    "op": "nudge GPU_3070 (-1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.8882468153521373,
+    "J": 2.0389631417139453,
+    "grad_max": 4.193562834044668,
+    "grad_rms": 0.3354632808717481,
+    "Tmax_C": 74.18592115933296,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.08609344200000005
+  },
+  {
+    "step": 10,
+    "op": "rotate Penryn",
+    "move": "rotate",
+    "accept": true,
+    "ap": 0.9865223571667591,
+    "J": 2.0400145459583205,
+    "grad_max": 4.190439268576079,
+    "grad_rms": 0.3358595363470382,
+    "Tmax_C": 74.23692250072804,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.07748409780000004
+  },
+  {
+    "step": 11,
+    "op": "nudge Penryn (-1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.7836566733297897,
+    "J": 2.057015009840052,
+    "grad_max": 4.2046981103523855,
+    "grad_rms": 0.33628546415418986,
+    "Tmax_C": 74.6210971899689,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.06973568802000003
+  },
+  {
+    "step": 12,
+    "op": "nudge GPU_3070 (0,-1) cells",
+    "move": "nudge",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 13,
+    "op": "nudge Penryn (-1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.6701399404277266,
+    "J": 2.07962455176997,
+    "grad_max": 4.226895032419533,
+    "grad_rms": 0.3368622613297719,
+    "Tmax_C": 75.11003294827259,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.056485907296200025
+  },
+  {
+    "step": 14,
+    "op": "nudge Penryn (1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 2.057015009840052,
+    "grad_max": 4.2046981103523855,
+    "grad_rms": 0.33628546415418986,
+    "Tmax_C": 74.6210971899689,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.050837316566580026
+  },
+  {
+    "step": 15,
+    "op": "nudge GPU_3070 (0,-2) cells",
+    "move": "nudge",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 16,
+    "op": "nudge Penryn (0,-2) cells",
+    "move": "nudge",
+    "accept": false,
+    "ap": 0.2912673803971241,
+    "J": 2.107808912180484,
+    "grad_max": 4.240215362146551,
+    "grad_rms": 0.33864395176921364,
+    "Tmax_C": 75.81712097675353,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.04117822641892983
+  },
+  {
+    "step": 17,
+    "op": "nudge GPU_3070 (0,-2) cells",
+    "move": "nudge",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 18,
+    "op": "nudge GPU_3070 (0,1) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 2.0519743987786927,
+    "grad_max": 4.1982595058337004,
+    "grad_rms": 0.3374185454089937,
+    "Tmax_C": 74.5222267460656,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.03335436339933316
+  },
+  {
+    "step": 19,
+    "op": "nudge Penryn (0,-1) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.4560457215493031,
+    "J": 2.0755441258285994,
+    "grad_max": 4.214615675060941,
+    "grad_rms": 0.33853473659978683,
+    "Tmax_C": 75.07806240855086,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.030018927059399847
+  },
+  {
+    "step": 20,
+    "op": "nudge Penryn (-2,0) cells",
+    "move": "nudge",
+    "accept": false,
+    "ap": 0.12258547889217253,
+    "J": 2.1322514410761624,
+    "grad_max": 4.272876855234699,
+    "grad_rms": 0.33928593684521746,
+    "Tmax_C": 76.286762344164,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.027017034353459864
+  },
+  {
+    "step": 21,
+    "op": "nudge GPU_3070 (2,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 2.0570081846935677,
+    "grad_max": 4.208523709014571,
+    "grad_rms": 0.33652018091985697,
+    "Tmax_C": 74.59488516173974,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.02431533091811388
+  },
+  {
+    "step": 22,
+    "op": "nudge Penryn (0,2) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 2.0125801178934273,
+    "grad_max": 4.17709473636104,
+    "grad_rms": 0.33443242787007876,
+    "Tmax_C": 73.55122390897333,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.02188379782630249
+  },
+  {
+    "step": 23,
+    "op": "rotate GPU_3070",
+    "move": "rotate",
+    "accept": true,
+    "ap": 1.0,
+    "J": 2.000748265546435,
+    "grad_max": 4.187172494207061,
+    "grad_rms": 0.3333866762875471,
+    "Tmax_C": 73.14781359899058,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.019695418043672242
+  },
+  {
+    "step": 24,
+    "op": "nudge GPU_3070 (1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.9923605518302643,
+    "grad_max": 4.182392677034335,
+    "grad_rms": 0.33260939256949046,
+    "Tmax_C": 72.94293053474786,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.01772587623930502,
+    "new_best": true
+  },
+  {
+    "step": 25,
+    "op": "nudge Penryn (0,1) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.973554440179373,
+    "grad_max": 4.169797747597335,
+    "grad_rms": 0.3316992830022844,
+    "Tmax_C": 72.49633512703497,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.015953288615374518,
+    "new_best": true
+  },
+  {
+    "step": 26,
+    "op": "nudge Penryn (-2,0) cells",
+    "move": "nudge",
+    "accept": false,
+    "ap": 0.03523231875745049,
+    "J": 2.0215931794661337,
+    "grad_max": 4.216893312046725,
+    "grad_rms": 0.3323317594972494,
+    "Tmax_C": 73.53563436911321,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.014357959753837067
+  },
+  {
+    "step": 27,
+    "op": "nudge Penryn (2,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.9455472262646136,
+    "grad_max": 4.149490793935507,
+    "grad_rms": 0.33090204490138087,
+    "Tmax_C": 71.84177854667337,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.012922163778453361,
+    "new_best": true
+  },
+  {
+    "step": 28,
+    "op": "rotate GPU_3070",
+    "move": "rotate",
+    "accept": true,
+    "ap": 0.37427315118402155,
+    "J": 1.9569767826631228,
+    "grad_max": 4.13871357560639,
+    "grad_rms": 0.3319197690349625,
+    "Tmax_C": 72.23856015272935,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.011629947400608026
+  },
+  {
+    "step": 29,
+    "op": "nudge Penryn (-1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.29352050988085165,
+    "J": 1.9698072544769392,
+    "grad_max": 4.148578273740895,
+    "grad_rms": 0.33220199481295803,
+    "Tmax_C": 72.53460004667522,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.010466952660547223
+  },
+  {
+    "step": 30,
+    "op": "nudge GPU_3070 (0,-1) cells",
+    "move": "nudge",
+    "accept": false,
+    "ap": 0.6607414463212683,
+    "J": 1.9737109401000574,
+    "grad_max": 4.154112678999961,
+    "grad_rms": 0.3309433888891827,
+    "Tmax_C": 72.60744254357923,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.0094202573944925
+  }
+]

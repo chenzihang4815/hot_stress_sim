@@ -1,0 +1,230 @@
+[
+  {
+    "id": "pkg_2cpu_1gpu_2cim",
+    "title": "2 CPU (x86 matmul + threads) + RTX3070 + 2 CIM (jia 大而冷, colonnade 小而热)",
+    "why": "后续回馈的基线：两颗 CPU 任务不同、两颗 CIM 密度差一个数量级、GPU 用较小的 392 mm²",
+    "n_chiplets": 5,
+    "kinds": {
+      "CPU": 2,
+      "GPU": 1,
+      "CIM": 2
+    },
+    "power_total_W": 68.8897953290401,
+    "area_total_mm2": 423.78158614929407,
+    "outline_mm2": 612.0853535098792,
+    "deadspace_ratio": 0.30764298848321625,
+    "overlap_m2": 0.0,
+    "HotSpot_Tmax_C": 55.59000000000003,
+    "HotSpot_Tmin_C": 51.48000000000002,
+    "chips": [
+      {
+        "name": "CPU_matmul",
+        "kind": "CPU",
+        "area_mm2": 13.6345,
+        "power_W": 1.001867,
+        "W_per_mm2": 0.0734802889728263,
+        "W_per_cm2": 7.34802889728263,
+        "notes": "x86 Timing+L1/L2，64x64 matmul；P=RuntimeDynamic(0.217977)+Leakage(0.78389)"
+      },
+      {
+        "name": "CPU_threads",
+        "kind": "CPU",
+        "area_mm2": 13.6345,
+        "power_W": 0.9561569999999999,
+        "W_per_mm2": 0.07012776412776413,
+        "W_per_cm2": 7.012776412776413,
+        "notes": "x86 Timing+L1/L2，gem5 threads；P=RuntimeDynamic(0.172267)+Leakage(0.78389)"
+      },
+      {
+        "name": "GPU_3070",
+        "kind": "GPU",
+        "area_mm2": 392.0,
+        "power_W": 66.8878,
+        "W_per_mm2": 0.17063214285714284,
+        "W_per_cm2": 17.063214285714285,
+        "notes": "RTX3070，backprop 按该配置重跑 AccelWattch；P=66.89 W；文献面积 392.0 mm²"
+      },
+      {
+        "name": "CIM_jia",
+        "kind": "CIM",
+        "area_mm2": 4.281226257942074,
+        "power_W": 0.0027731351494352146,
+        "W_per_mm2": 0.0006477431890666348,
+        "W_per_cm2": 0.06477431890666349,
+        "notes": "AccelForge jia_jssc_2020+builtin；P=energy/latency=0.00277314 W"
+      },
+      {
+        "name": "CIM_colonnade",
+        "kind": "CIM",
+        "area_mm2": 0.231359891352,
+        "power_W": 0.04119819389066705,
+        "W_per_mm2": 0.1780697321818262,
+        "W_per_cm2": 17.80697321818262,
+        "notes": "AccelForge colonnade_jssc_2021+builtin；P=energy/latency=0.0411982 W"
+      }
+    ],
+    "atsim_json": "/home/czh/任务仿真产生功耗文件工具/热应力python工程/cases/multi_chiplet_schemes/pkg_2cpu_1gpu_2cim.json",
+    "heatmap": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/multi_chiplet_schemes/pkg_2cpu_1gpu_2cim/pkg_2cpu_1gpu_2cim_hotspot.png"
+  },
+  {
+    "id": "pkg_3cpu_1gpu_3cim",
+    "title": "3 CPU (x86 matmul, threads, ARM starter) + TitanX + 3 CIM (jia/colonnade/wang)",
+    "why": "更多频率/架构旋钮：三颗 CPU 密度不同；三颗 CIM 面积和功率密度都不同",
+    "n_chiplets": 7,
+    "kinds": {
+      "CPU": 3,
+      "GPU": 1,
+      "CIM": 3
+    },
+    "power_total_W": 71.08497531240225,
+    "area_total_mm2": 505.80391574752275,
+    "outline_mm2": 765.6847427091473,
+    "deadspace_ratio": 0.3394096975762031,
+    "overlap_m2": 0.0,
+    "HotSpot_Tmax_C": 55.950000000000045,
+    "HotSpot_Tmin_C": 51.29000000000002,
+    "chips": [
+      {
+        "name": "CPU_matmul",
+        "kind": "CPU",
+        "area_mm2": 13.6345,
+        "power_W": 1.001867,
+        "W_per_mm2": 0.0734802889728263,
+        "W_per_cm2": 7.34802889728263,
+        "notes": "x86 Timing+L1/L2，64x64 matmul；P=RuntimeDynamic(0.217977)+Leakage(0.78389)"
+      },
+      {
+        "name": "CPU_threads",
+        "kind": "CPU",
+        "area_mm2": 13.6345,
+        "power_W": 0.9561569999999999,
+        "W_per_mm2": 0.07012776412776413,
+        "W_per_cm2": 7.012776412776413,
+        "notes": "x86 Timing+L1/L2，gem5 threads；P=RuntimeDynamic(0.172267)+Leakage(0.78389)"
+      },
+      {
+        "name": "CPU_starter",
+        "kind": "CPU",
+        "area_mm2": 2.90029,
+        "power_W": 1.65068,
+        "W_per_mm2": 0.5691430856914308,
+        "W_per_cm2": 56.91430856914308,
+        "notes": "ARM starter_se atomic，hello（高功率密度对照）；P=RuntimeDynamic(1.03098)+Leakage(0.6197)"
+      },
+      {
+        "name": "GPU_TITANX",
+        "kind": "GPU",
+        "area_mm2": 471.0,
+        "power_W": 67.4063,
+        "W_per_mm2": 0.1431131634819533,
+        "W_per_cm2": 14.31131634819533,
+        "notes": "Pascal Titan X，backprop 按该配置重跑；P=67.41 W；文献面积 471.0 mm²"
+      },
+      {
+        "name": "CIM_jia",
+        "kind": "CIM",
+        "area_mm2": 4.281226257942074,
+        "power_W": 0.0027731351494352146,
+        "W_per_mm2": 0.0006477431890666348,
+        "W_per_cm2": 0.06477431890666349,
+        "notes": "AccelForge jia_jssc_2020+builtin；P=energy/latency=0.00277314 W"
+      },
+      {
+        "name": "CIM_colonnade",
+        "kind": "CIM",
+        "area_mm2": 0.231359891352,
+        "power_W": 0.04119819389066705,
+        "W_per_mm2": 0.1780697321818262,
+        "W_per_cm2": 17.80697321818262,
+        "notes": "AccelForge colonnade_jssc_2021+builtin；P=energy/latency=0.0411982 W"
+      },
+      {
+        "name": "CIM_wang",
+        "kind": "CIM",
+        "area_mm2": 0.12203959822869019,
+        "power_W": 0.025999983362139024,
+        "W_per_mm2": 0.21304546835214597,
+        "W_per_cm2": 21.304546835214598,
+        "notes": "AccelForge wang_vlsi_2022+builtin；P=energy/latency=0.026 W"
+      }
+    ],
+    "atsim_json": "/home/czh/任务仿真产生功耗文件工具/热应力python工程/cases/multi_chiplet_schemes/pkg_3cpu_1gpu_3cim.json",
+    "heatmap": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/multi_chiplet_schemes/pkg_3cpu_1gpu_3cim/pkg_3cpu_1gpu_3cim_hotspot.png"
+  },
+  {
+    "id": "pkg_2cpu_2gpu_2cim",
+    "title": "2 CPU (x86 matmul + ARM starter) + 2 GPU (3070 + 2060S) + 2 CIM (jia + wang)",
+    "why": "两颗不同面积/功耗的 GPU，布局回馈可以挪 GPU 相对位置；CPU 一颗带 L2、一颗小核高密度",
+    "n_chiplets": 6,
+    "kinds": {
+      "CPU": 2,
+      "GPU": 2,
+      "CIM": 2
+    },
+    "power_total_W": 140.68852011851155,
+    "area_total_mm2": 857.9380558561706,
+    "outline_mm2": 1135.4917203054938,
+    "deadspace_ratio": 0.2444347761291028,
+    "overlap_m2": 0.0,
+    "HotSpot_Tmax_C": 63.72000000000003,
+    "HotSpot_Tmin_C": 57.19,
+    "chips": [
+      {
+        "name": "CPU_matmul",
+        "kind": "CPU",
+        "area_mm2": 13.6345,
+        "power_W": 1.001867,
+        "W_per_mm2": 0.0734802889728263,
+        "W_per_cm2": 7.34802889728263,
+        "notes": "x86 Timing+L1/L2，64x64 matmul；P=RuntimeDynamic(0.217977)+Leakage(0.78389)"
+      },
+      {
+        "name": "CPU_starter",
+        "kind": "CPU",
+        "area_mm2": 2.90029,
+        "power_W": 1.65068,
+        "W_per_mm2": 0.5691430856914308,
+        "W_per_cm2": 56.91430856914308,
+        "notes": "ARM starter_se atomic，hello（高功率密度对照）；P=RuntimeDynamic(1.03098)+Leakage(0.6197)"
+      },
+      {
+        "name": "GPU_3070",
+        "kind": "GPU",
+        "area_mm2": 392.0,
+        "power_W": 66.8878,
+        "W_per_mm2": 0.17063214285714284,
+        "W_per_cm2": 17.063214285714285,
+        "notes": "RTX3070，backprop 按该配置重跑 AccelWattch；P=66.89 W；文献面积 392.0 mm²"
+      },
+      {
+        "name": "GPU_2060S",
+        "kind": "GPU",
+        "area_mm2": 445.0,
+        "power_W": 71.1194,
+        "W_per_mm2": 0.15981887640449438,
+        "W_per_cm2": 15.981887640449438,
+        "notes": "RTX2060 Super，backprop 按该配置重跑；P=71.12 W；文献面积 445.0 mm²"
+      },
+      {
+        "name": "CIM_jia",
+        "kind": "CIM",
+        "area_mm2": 4.281226257942074,
+        "power_W": 0.0027731351494352146,
+        "W_per_mm2": 0.0006477431890666348,
+        "W_per_cm2": 0.06477431890666349,
+        "notes": "AccelForge jia_jssc_2020+builtin；P=energy/latency=0.00277314 W"
+      },
+      {
+        "name": "CIM_wang",
+        "kind": "CIM",
+        "area_mm2": 0.12203959822869019,
+        "power_W": 0.025999983362139024,
+        "W_per_mm2": 0.21304546835214597,
+        "W_per_cm2": 21.304546835214598,
+        "notes": "AccelForge wang_vlsi_2022+builtin；P=energy/latency=0.026 W"
+      }
+    ],
+    "atsim_json": "/home/czh/任务仿真产生功耗文件工具/热应力python工程/cases/multi_chiplet_schemes/pkg_2cpu_2gpu_2cim.json",
+    "heatmap": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/multi_chiplet_schemes/pkg_2cpu_2gpu_2cim/pkg_2cpu_2gpu_2cim_hotspot.png"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "step": 0,
+    "die_cell_max_C": 62.493210929594795,
+    "vm_MPa": 47.22674527042978,
+    "vm_name": "CIM_jia_m64"
+  },
+  {
+    "step": 1,
+    "die_cell_max_C": 63.084776085084286,
+    "vm_MPa": 54.45938654207202,
+    "vm_name": "CIM_colonnade_m512"
+  },
+  {
+    "step": 4,
+    "die_cell_max_C": 63.90026572883778,
+    "vm_MPa": 56.22260136170727,
+    "vm_name": "CIM_colonnade_m512"
+  },
+  {
+    "step": 7,
+    "die_cell_max_C": 66.50104444320738,
+    "vm_MPa": 46.162901751324284,
+    "vm_name": "CIM_colonnade_m512"
+  },
+  {
+    "step": 10,
+    "die_cell_max_C": 63.90026572883778,
+    "vm_MPa": 56.22260136170727,
+    "vm_name": "CIM_colonnade_m512"
+  },
+  {
+    "step": 11,
+    "die_cell_max_C": 63.89987185940373,
+    "vm_MPa": 57.34098068559703,
+    "vm_name": "CIM_jia_m64"
+  },
+  {
+    "step": 16,
+    "die_cell_max_C": 63.798222598488394,
+    "vm_MPa": 57.1721933696954,
+    "vm_name": "CIM_jia_m64"
+  },
+  {
+    "step": 25,
+    "die_cell_max_C": 63.80226922034166,
+    "vm_MPa": 53.576753526053714,
+    "vm_name": "CIM_jia_m64"
+  },
+  {
+    "step": 27,
+    "die_cell_max_C": 63.8015304372866,
+    "vm_MPa": 53.06361274757169,
+    "vm_name": "CIM_jia_m64"
+  },
+  {
+    "step": 28,
+    "die_cell_max_C": 63.80615505803769,
+    "vm_MPa": 52.871856648819154,
+    "vm_name": "CIM_jia_m64"
+  },
+  {
+    "step": 31,
+    "die_cell_max_C": 63.81415907838834,
+    "vm_MPa": 52.078906398682996,
+    "vm_name": "GPU_3070_Ga"
+  },
+  {
+    "step": 38,
+    "die_cell_max_C": 61.016608372857945,
+    "vm_MPa": 45.05186091710612,
+    "vm_name": "GPU_3070_Ga"
+  }
+]

@@ -1,0 +1,3028 @@
+{
+  "layout": "n11_epoxy 内环最优，冻住",
+  "fill": "epoxy",
+  "free_slots": [
+    "Ca",
+    "Cb",
+    "Ga"
+  ],
+  "fixed": {
+    "Gb": 1.0,
+    "Gc": 1.0
+  },
+  "levels": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5
+  ],
+  "objectives": "芯粒层最热一格越低越好，正常芯片内部应力越低越好",
+  "nominal_matches_saved_run": {
+    "dT_C": 0.0,
+    "dMPa": 0.0
+  },
+  "n_front": 1,
+  "rows": [
+    {
+      "tag": "s_Ca0.5_Cb0.5_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 0.5,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 75.51187597141262,
+      "vm_MPa": 125.77338509984386,
+      "vm_name": "Xeon_Ca",
+      "power_W": 376.377,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": true
+    },
+    {
+      "tag": "s_Ca0.5_Cb0.5_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 0.5,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 75.94265084920391,
+      "vm_MPa": 129.1437456222133,
+      "vm_name": "Xeon_Ca",
+      "power_W": 384.404,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca0.5_Cb0.5_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 0.5,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 76.37342572699623,
+      "vm_MPa": 132.5153289767349,
+      "vm_name": "Xeon_Ca",
+      "power_W": 392.431,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca0.5_Cb0.5_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 0.5,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 76.80420060478872,
+      "vm_MPa": 135.88804278540675,
+      "vm_name": "Xeon_Ca",
+      "power_W": 400.459,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca0.5_Cb0.5_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 0.5,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 77.23497548258047,
+      "vm_MPa": 139.26180445528175,
+      "vm_name": "Xeon_Ca",
+      "power_W": 408.486,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca0.5_Cb1.0_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 1.0,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 76.45771316035638,
+      "vm_MPa": 133.21190682206736,
+      "vm_name": "Xeon_Ca",
+      "power_W": 401.587,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca0.5_Cb1.0_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 1.0,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 76.88848803814847,
+      "vm_MPa": 136.57460187205413,
+      "vm_name": "Xeon_Ca",
+      "power_W": 409.615,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca0.5_Cb1.0_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 1.0,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 77.31926291593999,
+      "vm_MPa": 139.93882301217187,
+      "vm_name": "Xeon_Ca",
+      "power_W": 417.642,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca0.5_Cb1.0_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 1.0,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 77.7500377937323,
+      "vm_MPa": 143.30446262805492,
+      "vm_name": "Xeon_Ca",
+      "power_W": 425.669,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca0.5_Cb1.0_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 1.0,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 78.18081267152417,
+      "vm_MPa": 146.67142252076704,
+      "vm_name": "Xeon_Ca",
+      "power_W": 433.696,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca0.5_Cb1.5_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 1.5,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 77.40355034930059,
+      "vm_MPa": 140.6934986395227,
+      "vm_name": "Xeon_Ca",
+      "power_W": 426.798,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca0.5_Cb1.5_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 1.5,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 77.83432522709279,
+      "vm_MPa": 144.04831672349076,
+      "vm_name": "Xeon_Ca",
+      "power_W": 434.825,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca0.5_Cb1.5_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 1.5,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 78.26510010488443,
+      "vm_MPa": 147.40494231315347,
+      "vm_name": "Xeon_Ca",
+      "power_W": 442.852,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca0.5_Cb1.5_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 1.5,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 78.70043853368304,
+      "vm_MPa": 150.7632532058065,
+      "vm_name": "Xeon_Ca",
+      "power_W": 450.88,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca0.5_Cb1.5_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 1.5,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 79.1453589404253,
+      "vm_MPa": 154.12314193525904,
+      "vm_name": "Xeon_Ca",
+      "power_W": 458.907,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca0.5_Cb2.0_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 2.0,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 80.47806890416945,
+      "vm_MPa": 148.21163955773525,
+      "vm_name": "Xeon_Ca",
+      "power_W": 452.008,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca0.5_Cb2.0_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 2.0,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 80.86889479853409,
+      "vm_MPa": 151.55854957620596,
+      "vm_name": "Xeon_Ca",
+      "power_W": 460.036,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca0.5_Cb2.0_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 2.0,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 81.25972069289935,
+      "vm_MPa": 154.90752151266148,
+      "vm_name": "Xeon_Ca",
+      "power_W": 468.063,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca0.5_Cb2.0_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 2.0,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 81.66901558651318,
+      "vm_MPa": 158.25842524563637,
+      "vm_name": "Xeon_Ca",
+      "power_W": 476.09,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca0.5_Cb2.0_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 2.0,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 82.08964259469417,
+      "vm_MPa": 161.61113977960377,
+      "vm_name": "Xeon_Ca",
+      "power_W": 484.117,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca0.5_Cb2.5_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 2.5,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 84.58425609449773,
+      "vm_MPa": 155.76103656569427,
+      "vm_name": "Xeon_Ca",
+      "power_W": 477.219,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca0.5_Cb2.5_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 2.5,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 84.97508198886277,
+      "vm_MPa": 159.1001301827077,
+      "vm_name": "Xeon_Ca",
+      "power_W": 485.246,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca0.5_Cb2.5_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 2.5,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 85.36590788322684,
+      "vm_MPa": 162.441512259034,
+      "vm_name": "Xeon_Ca",
+      "power_W": 493.273,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca0.5_Cb2.5_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 2.5,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 85.75673377759182,
+      "vm_MPa": 165.78504391423846,
+      "vm_name": "Xeon_Ca",
+      "power_W": 501.301,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca0.5_Cb2.5_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 0.5,
+        "Cb": 2.5,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 86.14755967195657,
+      "vm_MPa": 169.13059853312916,
+      "vm_name": "Xeon_Ca",
+      "power_W": 509.328,
+      "cpu_f_MHz": {
+        "Ca": 1700.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb0.5_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 0.5,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 76.73162489972265,
+      "vm_MPa": 144.17226860641466,
+      "vm_name": "Xeon_Ca",
+      "power_W": 409.801,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb0.5_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 0.5,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 77.16239977751354,
+      "vm_MPa": 147.53872139460074,
+      "vm_name": "Xeon_Ca",
+      "power_W": 417.828,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb0.5_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 0.5,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 77.59317465530552,
+      "vm_MPa": 150.90642199251124,
+      "vm_name": "Xeon_Ca",
+      "power_W": 425.856,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb0.5_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 0.5,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 78.02394953309755,
+      "vm_MPa": 154.2752885453075,
+      "vm_name": "Xeon_Ca",
+      "power_W": 433.883,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb0.5_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 0.5,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 78.48456271804093,
+      "vm_MPa": 157.64524478329596,
+      "vm_name": "Xeon_Ca",
+      "power_W": 441.91,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb1.0_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 1.0,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 77.67746208866612,
+      "vm_MPa": 151.61908136412464,
+      "vm_name": "Xeon_Ca",
+      "power_W": 435.012,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb1.0_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 1.0,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 78.1082369664577,
+      "vm_MPa": 154.97878674235542,
+      "vm_name": "Xeon_Ca",
+      "power_W": 443.039,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb1.0_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 1.0,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 78.53901184424979,
+      "vm_MPa": 158.33996663870636,
+      "vm_name": "Xeon_Ca",
+      "power_W": 451.066,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb1.0_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 1.0,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 78.99090587387121,
+      "vm_MPa": 161.70253061610197,
+      "vm_name": "Xeon_Ca",
+      "power_W": 459.093,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb1.0_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 1.0,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 79.46504220428955,
+      "vm_MPa": 165.0663937377741,
+      "vm_name": "Xeon_Ca",
+      "power_W": 467.121,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb1.5_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 1.5,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 78.9900367962033,
+      "vm_MPa": 159.1032039080879,
+      "vm_name": "Xeon_Ca",
+      "power_W": 460.222,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb1.5_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 1.5,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 79.43065570733864,
+      "vm_MPa": 162.45600954205625,
+      "vm_name": "Xeon_Ca",
+      "power_W": 468.249,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb1.5_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 1.5,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 79.87127461847291,
+      "vm_MPa": 165.81050370802689,
+      "vm_name": "Xeon_Ca",
+      "power_W": 476.277,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb1.5_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 1.5,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 80.33365097731729,
+      "vm_MPa": 169.1665845311214,
+      "vm_name": "Xeon_Ca",
+      "power_W": 484.304,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb1.5_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 1.5,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 80.95488027189958,
+      "vm_MPa": 172.52416157440803,
+      "vm_name": "Xeon_Ca",
+      "power_W": 492.331,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb2.0_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 2.0,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 82.88414688205313,
+      "vm_MPa": 166.61960952362458,
+      "vm_name": "Xeon_Ca",
+      "power_W": 485.433,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb2.0_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 2.0,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 83.29292433776772,
+      "vm_MPa": 169.96548668631158,
+      "vm_name": "Xeon_Ca",
+      "power_W": 493.46,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb2.0_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 2.0,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 83.70170179348236,
+      "vm_MPa": 173.31324720313899,
+      "vm_name": "Xeon_Ca",
+      "power_W": 501.487,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb2.0_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 2.0,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 84.11047924919689,
+      "vm_MPa": 176.6627829326229,
+      "vm_name": "Xeon_Ca",
+      "power_W": 509.514,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb2.0_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 2.0,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 84.5192567049117,
+      "vm_MPa": 180.0139973360861,
+      "vm_name": "Xeon_Ca",
+      "power_W": 517.542,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb2.5_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 2.5,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 86.88473557002516,
+      "vm_MPa": 174.16411719095564,
+      "vm_name": "Xeon_Ca",
+      "power_W": 510.643,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb2.5_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 2.5,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 87.2935130257394,
+      "vm_MPa": 177.50312489961703,
+      "vm_name": "Xeon_Ca",
+      "power_W": 518.67,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb2.5_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 2.5,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 87.70229048145427,
+      "vm_MPa": 180.84419039968904,
+      "vm_name": "Xeon_Ca",
+      "power_W": 526.698,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb2.5_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 2.5,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 88.11106793716857,
+      "vm_MPa": 184.1872032074331,
+      "vm_name": "Xeon_Ca",
+      "power_W": 534.725,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.0_Cb2.5_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.0,
+        "Cb": 2.5,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 88.51984539288412,
+      "vm_MPa": 187.53205862179394,
+      "vm_name": "Xeon_Ca",
+      "power_W": 542.752,
+      "cpu_f_MHz": {
+        "Ca": 3400.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb0.5_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 0.5,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 80.3520356652947,
+      "vm_MPa": 162.5913284968743,
+      "vm_name": "Xeon_Ca",
+      "power_W": 443.225,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb0.5_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 0.5,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 80.94033429707434,
+      "vm_MPa": 165.9543302117937,
+      "vm_name": "Xeon_Ca",
+      "power_W": 451.253,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb0.5_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 0.5,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 81.54415329155836,
+      "vm_MPa": 169.31858386946357,
+      "vm_name": "Xeon_Ca",
+      "power_W": 459.28,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb0.5_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 0.5,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 82.15707552365859,
+      "vm_MPa": 172.6840110082844,
+      "vm_name": "Xeon_Ca",
+      "power_W": 467.307,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb0.5_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 0.5,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 82.78032369367554,
+      "vm_MPa": 176.05054667154585,
+      "vm_name": "Xeon_Ca",
+      "power_W": 475.334,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb1.0_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 1.0,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 81.87698243345818,
+      "vm_MPa": 170.0437535346183,
+      "vm_name": "Xeon_Ca",
+      "power_W": 468.436,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb1.0_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 1.0,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 82.45451682484327,
+      "vm_MPa": 173.4007655998285,
+      "vm_name": "Xeon_Ca",
+      "power_W": 476.463,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb1.0_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 1.0,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 83.0425734142695,
+      "vm_MPa": 176.7592007385766,
+      "vm_name": "Xeon_Ca",
+      "power_W": 484.49,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb1.0_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 1.0,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 83.64171469189705,
+      "vm_MPa": 180.11897966934507,
+      "vm_name": "Xeon_Ca",
+      "power_W": 492.518,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb1.0_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 1.0,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 84.25036468867734,
+      "vm_MPa": 183.48002969932398,
+      "vm_name": "Xeon_Ca",
+      "power_W": 500.545,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb1.5_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 1.5,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 83.44789787458996,
+      "vm_MPa": 177.52914520838615,
+      "vm_name": "Xeon_Ca",
+      "power_W": 493.646,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb1.5_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 1.5,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 84.01592689532526,
+      "vm_MPa": 180.88004654841407,
+      "vm_name": "Xeon_Ca",
+      "power_W": 501.674,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb1.5_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 1.5,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 84.58395591605972,
+      "vm_MPa": 184.2325375233044,
+      "vm_name": "Xeon_Ca",
+      "power_W": 509.701,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb1.5_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 1.5,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 85.16532771980485,
+      "vm_MPa": 187.58653228367672,
+      "vm_name": "Xeon_Ca",
+      "power_W": 517.728,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb1.5_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 1.5,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 85.75586558288478,
+      "vm_MPa": 190.94195071967806,
+      "vm_name": "Xeon_Ca",
+      "power_W": 525.755,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb2.0_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 2.0,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 85.4274053886162,
+      "vm_MPa": 185.04349901534235,
+      "vm_name": "Xeon_Ca",
+      "power_W": 518.857,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb2.0_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 2.0,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 85.85431316858813,
+      "vm_MPa": 188.38826457744602,
+      "vm_name": "Xeon_Ca",
+      "power_W": 526.884,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb2.0_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 2.0,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 86.28122094856008,
+      "vm_MPa": 191.73476879961575,
+      "vm_name": "Xeon_Ca",
+      "power_W": 534.911,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb2.0_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 2.0,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 86.7669513383168,
+      "vm_MPa": 195.08292496424045,
+      "vm_name": "Xeon_Ca",
+      "power_W": 542.939,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb2.0_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 2.0,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 87.34523674659124,
+      "vm_MPa": 198.43264924018263,
+      "vm_name": "Xeon_Ca",
+      "power_W": 550.966,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb2.5_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 2.5,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 89.32715353149086,
+      "vm_MPa": 192.5834299000938,
+      "vm_name": "Xeon_Ca",
+      "power_W": 544.067,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb2.5_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 2.5,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 89.73593098720659,
+      "vm_MPa": 195.9220914707072,
+      "vm_name": "Xeon_Ca",
+      "power_W": 552.095,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb2.5_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 2.5,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 90.14470844292111,
+      "vm_MPa": 199.26263112247202,
+      "vm_name": "Xeon_Ca",
+      "power_W": 560.122,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb2.5_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 2.5,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 90.55348589863502,
+      "vm_MPa": 202.60495930440285,
+      "vm_name": "Xeon_Ca",
+      "power_W": 568.149,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca1.5_Cb2.5_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 1.5,
+        "Cb": 2.5,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 90.97123006556438,
+      "vm_MPa": 205.94898732282357,
+      "vm_name": "Xeon_Ca",
+      "power_W": 576.176,
+      "cpu_f_MHz": {
+        "Ca": 5100.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb0.5_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 0.5,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 85.45121550020434,
+      "vm_MPa": 181.02440706732207,
+      "vm_name": "Xeon_Ca",
+      "power_W": 476.65,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb0.5_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 0.5,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 86.03562392355576,
+      "vm_MPa": 184.3843915245381,
+      "vm_name": "Xeon_Ca",
+      "power_W": 484.677,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb0.5_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 0.5,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 86.62003234690712,
+      "vm_MPa": 187.7456141606789,
+      "vm_name": "Xeon_Ca",
+      "power_W": 492.704,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb0.5_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 0.5,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 87.20444077025871,
+      "vm_MPa": 191.10800440060092,
+      "vm_name": "Xeon_Ca",
+      "power_W": 500.731,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb0.5_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 0.5,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 87.7888491936103,
+      "vm_MPa": 194.47150001448384,
+      "vm_name": "Xeon_Ca",
+      "power_W": 508.759,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb1.0_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 1.0,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 86.92684011439752,
+      "vm_MPa": 188.48079222067838,
+      "vm_name": "Xeon_Ca",
+      "power_W": 501.86,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb1.0_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 1.0,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 87.50437450578255,
+      "vm_MPa": 191.83541224772287,
+      "vm_name": "Xeon_Ca",
+      "power_W": 509.887,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb1.0_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 1.0,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 88.0819088971678,
+      "vm_MPa": 195.19139926187913,
+      "vm_name": "Xeon_Ca",
+      "power_W": 517.915,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb1.0_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 1.0,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 88.65944328855255,
+      "vm_MPa": 198.54869369486923,
+      "vm_name": "Xeon_Ca",
+      "power_W": 525.942,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb1.0_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 1.0,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 89.23697767993843,
+      "vm_MPa": 201.90722146860267,
+      "vm_name": "Xeon_Ca",
+      "power_W": 533.969,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb1.5_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 1.5,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 88.45184658304669,
+      "vm_MPa": 195.96674144130296,
+      "vm_name": "Xeon_Ca",
+      "power_W": 527.071,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb1.5_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 1.5,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 89.029380974432,
+      "vm_MPa": 199.31589544254004,
+      "vm_name": "Xeon_Ca",
+      "power_W": 535.098,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb1.5_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 1.5,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 89.60691536581737,
+      "vm_MPa": 202.66655330363514,
+      "vm_name": "Xeon_Ca",
+      "power_W": 543.125,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb1.5_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 1.5,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 90.18444975720269,
+      "vm_MPa": 206.01863720329257,
+      "vm_name": "Xeon_Ca",
+      "power_W": 551.152,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb1.5_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 1.5,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 90.76198414858823,
+      "vm_MPa": 209.37208400935222,
+      "vm_name": "Xeon_Ca",
+      "power_W": 559.18,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb2.0_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 2.0,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 90.04461732316082,
+      "vm_MPa": 203.47898851235297,
+      "vm_name": "Xeon_Ca",
+      "power_W": 552.281,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb2.0_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 2.0,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 90.59751567158997,
+      "vm_MPa": 206.8226491609123,
+      "vm_name": "Xeon_Ca",
+      "power_W": 560.308,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb2.0_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 2.0,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 91.1655446923254,
+      "vm_MPa": 210.1679335066427,
+      "vm_name": "Xeon_Ca",
+      "power_W": 568.336,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb2.0_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 2.0,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 91.73357371305974,
+      "vm_MPa": 213.51476514417166,
+      "vm_name": "Xeon_Ca",
+      "power_W": 576.363,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb2.0_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 2.0,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 92.30160273379488,
+      "vm_MPa": 216.8630726664449,
+      "vm_name": "Xeon_Ca",
+      "power_W": 584.39,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb2.5_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 2.5,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 91.8979698483626,
+      "vm_MPa": 211.01472507576102,
+      "vm_name": "Xeon_Ca",
+      "power_W": 577.492,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb2.5_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 2.5,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 92.32487762833438,
+      "vm_MPa": 214.35291154482988,
+      "vm_name": "Xeon_Ca",
+      "power_W": 585.519,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb2.5_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 2.5,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 92.78051109384603,
+      "vm_MPa": 217.69283575183428,
+      "vm_name": "Xeon_Ca",
+      "power_W": 593.546,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb2.5_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 2.5,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 93.34854011458157,
+      "vm_MPa": 221.03441457741565,
+      "vm_name": "Xeon_Ca",
+      "power_W": 601.573,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.0_Cb2.5_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.0,
+        "Cb": 2.5,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 93.91656913531597,
+      "vm_MPa": 224.3775760438916,
+      "vm_name": "Xeon_Ca",
+      "power_W": 609.601,
+      "cpu_f_MHz": {
+        "Ca": 6800.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb0.5_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 0.5,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 90.56307365919395,
+      "vm_MPa": 199.4676175318361,
+      "vm_name": "Xeon_Ca",
+      "power_W": 510.074,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb0.5_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 0.5,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 91.1348037584649,
+      "vm_MPa": 202.82496870551228,
+      "vm_name": "Xeon_Ca",
+      "power_W": 518.101,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb0.5_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 0.5,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 91.71921218181654,
+      "vm_MPa": 206.18352790553763,
+      "vm_name": "Xeon_Ca",
+      "power_W": 526.128,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb0.5_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 0.5,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 92.30362060516853,
+      "vm_MPa": 209.54323923777724,
+      "vm_name": "Xeon_Ca",
+      "power_W": 534.156,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb0.5_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 0.5,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 92.88802902852052,
+      "vm_MPa": 212.90404896358115,
+      "vm_name": "Xeon_Ca",
+      "power_W": 542.183,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 700.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb1.0_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 1.0,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 92.03384132032414,
+      "vm_MPa": 206.9268920077718,
+      "vm_name": "Xeon_Ca",
+      "power_W": 535.284,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb1.0_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 1.0,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 92.59154334684433,
+      "vm_MPa": 210.27939254406112,
+      "vm_name": "Xeon_Ca",
+      "power_W": 543.312,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb1.0_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 1.0,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 93.16573976578218,
+      "vm_MPa": 213.63321199570524,
+      "vm_name": "Xeon_Ca",
+      "power_W": 551.339,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb1.0_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 1.0,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 93.7501481891336,
+      "vm_MPa": 216.98829150279465,
+      "vm_name": "Xeon_Ca",
+      "power_W": 559.366,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb1.0_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 1.0,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 94.33455661248519,
+      "vm_MPa": 220.34457098605637,
+      "vm_name": "Xeon_Ca",
+      "power_W": 567.393,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 1400.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb1.5_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 1.5,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 93.55372579907532,
+      "vm_MPa": 214.41298688676144,
+      "vm_name": "Xeon_Ca",
+      "power_W": 560.495,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb1.5_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 1.5,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 94.10466259738848,
+      "vm_MPa": 217.76055690929093,
+      "vm_name": "Xeon_Ca",
+      "power_W": 568.522,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb1.5_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 1.5,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 94.65677304675694,
+      "vm_MPa": 221.10955201846932,
+      "vm_name": "Xeon_Ca",
+      "power_W": 576.549,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb1.5_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 1.5,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 95.23430743814168,
+      "vm_MPa": 224.45990654444458,
+      "vm_name": "Xeon_Ca",
+      "power_W": 584.577,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb1.5_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 1.5,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 95.81184182952745,
+      "vm_MPa": 227.81156400860365,
+      "vm_name": "Xeon_Ca",
+      "power_W": 592.604,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 2100.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb2.0_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 2.0,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 95.10492933179222,
+      "vm_MPa": 221.92318233574449,
+      "vm_name": "Xeon_Ca",
+      "power_W": 585.705,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb2.0_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 2.0,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 95.65586613010538,
+      "vm_MPa": 225.26579231378426,
+      "vm_name": "Xeon_Ca",
+      "power_W": 593.733,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb2.0_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 2.0,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 96.20680292841922,
+      "vm_MPa": 228.60992378584032,
+      "vm_name": "Xeon_Ca",
+      "power_W": 601.76,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb2.0_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 2.0,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 96.75931390679176,
+      "vm_MPa": 231.95551512086962,
+      "vm_name": "Xeon_Ca",
+      "power_W": 609.787,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb2.0_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 2.0,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 97.33684829817668,
+      "vm_MPa": 235.3025016955371,
+      "vm_name": "Xeon_Ca",
+      "power_W": 617.814,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 2800.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb2.5_Ga0.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 2.5,
+        "Ga": 0.5
+      },
+      "die_cell_max_C": 96.71157960327588,
+      "vm_MPa": 229.4551143556168,
+      "vm_name": "Xeon_Ca",
+      "power_W": 610.916,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 566.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb2.5_Ga1.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 2.5,
+        "Ga": 1.0
+      },
+      "die_cell_max_C": 97.2535028981481,
+      "vm_MPa": 232.79277251675884,
+      "vm_name": "Xeon_Ca",
+      "power_W": 618.943,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1132.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb2.5_Ga1.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 2.5,
+        "Ga": 1.5
+      },
+      "die_cell_max_C": 97.79542619301964,
+      "vm_MPa": 236.1320457523925,
+      "vm_name": "Xeon_Ca",
+      "power_W": 626.97,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 1698.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb2.5_Ga2.0",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 2.5,
+        "Ga": 2.0
+      },
+      "die_cell_max_C": 98.33734948789191,
+      "vm_MPa": 239.47286463738325,
+      "vm_name": "Xeon_Ca",
+      "power_W": 634.998,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2264.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    },
+    {
+      "tag": "s_Ca2.5_Cb2.5_Ga2.5",
+      "scales": {
+        "Gb": 1.0,
+        "Gc": 1.0,
+        "Ca": 2.5,
+        "Cb": 2.5,
+        "Ga": 2.5
+      },
+      "die_cell_max_C": 98.88319151005959,
+      "vm_MPa": 242.8151682251479,
+      "vm_name": "Xeon_Ca",
+      "power_W": 643.025,
+      "cpu_f_MHz": {
+        "Ca": 8500.0,
+        "Cb": 3500.0
+      },
+      "gpu_f_MHz": {
+        "Ga": 2830.0,
+        "Gb": 1417.0,
+        "Gc": 1132.0
+      },
+      "on_front": false
+    }
+  ]
+}

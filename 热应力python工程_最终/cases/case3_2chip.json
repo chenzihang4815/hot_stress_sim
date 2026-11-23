@@ -1,0 +1,20 @@
+{
+  "name": "case3_2chip",
+  "description": "Two chiplets, 1 mm gap. Same stack rules as case3_chips.json. For COMSOL: fewer free edges than 3-chip.",
+  "chips": [
+    {"name": "CPU", "x_mm": 0, "y_mm": 0, "w_mm": 10, "h_mm": 10, "t_um": 150, "power_W": 25},
+    {"name": "GPU", "x_mm": 11, "y_mm": 0, "w_mm": 12, "h_mm": 10, "t_um": 150, "power_W": 40}
+  ],
+  "package": {
+    "tim_um": 20,
+    "t_spreader_mm": 1.0,
+    "t_sink_mm": 6.9,
+    "t_substrate_mm": 1.0,
+    "t_interposer_um": 100.0,
+    "r_convec_K_per_W": 0.1,
+    "ambient_C": 45,
+    "pitch_die_mm": 0.5,
+    "pitch_coarse_mm": 3.0,
+    "fill_die": false
+  }
+}

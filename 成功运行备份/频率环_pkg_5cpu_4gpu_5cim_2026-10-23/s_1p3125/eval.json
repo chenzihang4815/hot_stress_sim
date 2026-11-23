@@ -1,0 +1,40 @@
+{
+  "s": 1.3125,
+  "Tmax_C": 78.24000000000001,
+  "sigma_chip_max_MPa": 198.92331249902415,
+  "sigma_chip_name": "GPU_3070b",
+  "w_pv_um": 5.830728056302068,
+  "ATSim_Tmax_C": 84.04701530427712,
+  "feasible": true,
+  "fail_T": false,
+  "fail_sigma": false,
+  "elapsed_s": 105.73055982589722,
+  "power_W": {
+    "CPU_matmul": 1.0699848125,
+    "CPU_threads": 1.0099904375,
+    "CPU_armL2": 0.8941707124999999,
+    "CPU_atomic": 1.3072491874999999,
+    "CPU_starter": 1.9728612500000002,
+    "GPU_3070": 70.63089375,
+    "GPU_2060S": 75.60299375,
+    "GPU_TITANX": 69.18951875,
+    "GPU_3070b": 70.63089375,
+    "CIM_jia": 0.0027731351494352146,
+    "CIM_colonnade": 0.04119819389066705,
+    "CIM_wang": 0.025999983362139024,
+    "CIM_basic": 0.0026253290280376118,
+    "CIM_sinangil": 0.0007947682416197758
+  },
+  "stress": {
+    "vm_normal_chip_max_MPa": 198.92331249902415,
+    "vm_normal_chip_name": "GPU_3070b",
+    "w_pv_um": 5.830728056302068,
+    "Tmax_C": 84.04701530427712,
+    "elapsed_s": 101.76647472381592
+  },
+  "Theta_CPU_rel": 1.3125,
+  "Theta_GPU_rel": 1.3125,
+  "Theta_CIM_rel": 1.0,
+  "Theta_pkg": 1.2083333333333333,
+  "note": "CPU/GPU IPC held fixed so relative throughput = s; CIM analog latency_s unchanged"
+}

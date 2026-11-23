@@ -1,0 +1,41 @@
+{
+  "scheme": "pkg_1cpu_1gpu_1cim",
+  "title": "1 CPU + 1 GPU + 1 CIM（3 颗）",
+  "n_chiplets": 3,
+  "n_steps": 16,
+  "seed": 22,
+  "package_overrides": {
+    "pitch_die_mm": 2.0,
+    "pitch_coarse_mm": 8.0
+  },
+  "vm_metric": "worst interior von Mises among CPU/GPU and CIM≥1mm2",
+  "heat_only": {
+    "Tmax_init_C": 55.47000000000003,
+    "Tmax_best_C": 55.410000000000025,
+    "vm_chip_max_init_MPa": 31.213608645700372,
+    "vm_chip_max_best_MPa": 32.487329748676295,
+    "vm_chip_name_best": "GPU_3070",
+    "w_pv_init_um": 0.7162786145883098,
+    "w_pv_best_um": 0.8773151910268584,
+    "J_full_best": 0.8509376963651213,
+    "accepted": 8
+  },
+  "coupled": {
+    "Tmax_init_C": 55.47000000000003,
+    "Tmax_best_C": 55.49000000000001,
+    "vm_chip_max_init_MPa": 31.213608645700372,
+    "vm_chip_max_best_MPa": 30.386399927231423,
+    "vm_chip_name_best": "GPU_3070",
+    "w_pv_init_um": 0.7162786145883098,
+    "w_pv_best_um": 0.599226819279014,
+    "J_full_best": 0.7983673516821914,
+    "accepted": 8
+  },
+  "delta_coupled_minus_heat": {
+    "dTmax_C": 0.07999999999998408,
+    "d_vm_chip_max_MPa": -2.100929821444872,
+    "d_w_pv_um": -0.2780883717478444
+  },
+  "wall_s": 157.68561053276062,
+  "finished_utc": "2026-10-25T12:54:07.486968+00:00"
+}

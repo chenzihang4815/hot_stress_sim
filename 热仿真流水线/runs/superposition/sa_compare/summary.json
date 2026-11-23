@@ -1,0 +1,15 @@
+{
+  "start_C": 64.64,
+  "full": {
+    "best_C": 62.35,
+    "secs": 195.4,
+    "solves": 121,
+    "accepted": 115
+  },
+  "field": {
+    "best_C": 62.35,
+    "secs": 92.1,
+    "solves": 111,
+    "accepted": 115
+  }
+}

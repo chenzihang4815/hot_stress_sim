@@ -1,0 +1,2 @@
+CPU_matmul	CPU_threads	GPU_2060S	GPU_TITANX	CIM_jia	CIM_colonnade	CIM_wang	CIM_basic	CIM_sinangil	anchor_sw	anchor_ne
+0	0	0	0	0	0	0.026	0	0	0	0

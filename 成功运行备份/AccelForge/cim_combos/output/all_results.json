@@ -1,0 +1,206 @@
+{
+  "runs": [
+    {
+      "combo": "basic_analog+builtin",
+      "energy_J": 2.6253290587174625e-10,
+      "latency_s": 1.0000000116860974e-07,
+      "n_computes": 1024.0,
+      "energy_per_MAC_J": 2.563797908903772e-13,
+      "avg_power_W": 0.0026253290280376118,
+      "avg_power_mW": 2.6253290280376116,
+      "energy_per_component_J": {
+        "RowDrivers": 5.141431198644013e-11,
+        "ColumnDrivers": 1.742357995688647e-15,
+        "ADC": 2.0782334126282736e-10,
+        "CimUnit": 3.2935102644830822e-12
+      },
+      "power_per_component_W": {
+        "RowDrivers": 0.0005141431138560749,
+        "ColumnDrivers": 1.7423579753272818e-08,
+        "ADC": 0.0020782333883418358,
+        "CimUnit": 3.293510225994801e-05
+      },
+      "area_m2": {
+        "MainMemory": 0.0,
+        "ADC": 4.5571664457775785e-08,
+        "ColumnDrivers": 4.5490249999999997e-10,
+        "RowDrivers": 5.198886e-10,
+        "DummyRowDriverMemory": 0.0,
+        "CimUnit": 1.73056e-10,
+        "FreeCompute": 0.0
+      },
+      "area_mm2": {
+        "MainMemory": 0.0,
+        "ADC": 0.04557166445777579,
+        "ColumnDrivers": 0.0004549025,
+        "RowDrivers": 0.0005198886,
+        "DummyRowDriverMemory": 0.0,
+        "CimUnit": 0.00017305600000000002,
+        "FreeCompute": 0.0
+      },
+      "area_total_mm2": 0.04671951155777578,
+      "wall_s": 5.20731258392334
+    },
+    {
+      "combo": "colonnade_jssc_2021+builtin",
+      "energy_J": 2.3730160180812567e-09,
+      "latency_s": 5.760000121313169e-08,
+      "n_computes": 16384.0,
+      "energy_per_MAC_J": 1.4483740344734233e-13,
+      "avg_power_W": 0.04119819389066705,
+      "avg_power_mW": 41.19819389066705,
+      "energy_per_component_J": {
+        "DigitalLogicInputPorts": 3.1264743571846054e-10,
+        "RowDrivers": 4.084270421866876e-11,
+        "Register": 1.4362965261582872e-09,
+        "ColumnDrivers": 4.921133850052145e-11,
+        "CimLogic": 3.1115327209395245e-10,
+        "CimUnit": 2.209405158826172e-10,
+        "WeightDrivers": 1.924162001606944e-12
+      },
+      "power_per_component_W": {
+        "DigitalLogicInputPorts": 0.005427906755793313,
+        "RowDrivers": 0.0007090747110845096,
+        "Register": 0.024935703053958258,
+        "ColumnDrivers": 0.000854363497640035,
+        "CimLogic": 0.005401966415636386,
+        "CimUnit": 0.0038357727643979116,
+        "WeightDrivers": 3.340558960211049e-05
+      },
+      "area_m2": {
+        "MainMemory": 0.0,
+        "DummyRowDriverMemory": 0.0,
+        "RowDrivers": 2.6267448e-09,
+        "DigitalLogicInputPorts": 0.0,
+        "ColumnDrivers": 1.0008870999999999e-08,
+        "WeightDrivers": 2.0249368e-09,
+        "ColumnBandwidthLimiter": 0.0,
+        "Register": 2.8724527104e-08,
+        "CimUnit": 8.998912e-09,
+        "CimLogic": 1.78975899648e-07,
+        "FreeCompute": 0.0
+      },
+      "area_mm2": {
+        "MainMemory": 0.0,
+        "DummyRowDriverMemory": 0.0,
+        "RowDrivers": 0.0026267447999999997,
+        "DigitalLogicInputPorts": 0.0,
+        "ColumnDrivers": 0.010008870999999999,
+        "WeightDrivers": 0.0020249368,
+        "ColumnBandwidthLimiter": 0.0,
+        "Register": 0.028724527104000003,
+        "CimUnit": 0.008998912,
+        "CimLogic": 0.178975899648,
+        "FreeCompute": 0.0
+      },
+      "area_total_mm2": 0.231359891352,
+      "wall_s": 6.9157421588897705
+    },
+    {
+      "combo": "jia_jssc_2020+builtin",
+      "energy_J": 2.3959888538601973e-07,
+      "latency_s": 8.64000030560419e-05,
+      "n_computes": 589824.0,
+      "energy_per_MAC_J": 4.062209835239321e-13,
+      "avg_power_W": 0.0027731351494352146,
+      "avg_power_mW": 2.7731351494352148,
+      "energy_per_component_J": {
+        "RowDrivers": 5.0596117517898165e-08,
+        "InputZeroGating": 5.450651041627452e-09,
+        "ADC": 2.9261526449806092e-08,
+        "ShiftAdd": 2.157558392120611e-08,
+        "OutDatapath": 7.70050117574555e-09,
+        "BitcellCapacitor": 1.2273057791999998e-07,
+        "CimUnit": 1.4106075196806955e-09,
+        "WeightDrivers": 8.733185286047274e-10
+      },
+      "power_per_component_W": {
+        "RowDrivers": 0.0005856031912994245,
+        "InputZeroGating": 6.3086236676311e-05,
+        "ADC": 0.0003386750626713068,
+        "ShiftAdd": 0.00024971739766272317,
+        "OutDatapath": 8.912616786310471e-05,
+        "BitcellCapacitor": 0.0014204927497559563,
+        "CimUnit": 1.6326475344748876e-05,
+        "WeightDrivers": 1.0107852982809087e-05
+      },
+      "area_m2": {
+        "MainMemory": 0.0,
+        "OutDatapath": 3.3712e-07,
+        "ShiftAdd": 1.6e-07,
+        "InputZeroGating": 3.721102561046154e-07,
+        "DummyRowDriverMemory": 0.0,
+        "RowDrivers": 5.349171646e-07,
+        "WeightDrivers": 5.349171646e-07,
+        "ADC": 5.005689430374586e-07,
+        "ColumnDrivers": 0.0,
+        "ColumnBandwidthLimiter": 0.0,
+        "CimUnit": 1.8415927296e-06,
+        "BitcellCapacitor": 0.0,
+        "FreeCompute": 0.0
+      },
+      "area_mm2": {
+        "MainMemory": 0.0,
+        "OutDatapath": 0.33712,
+        "ShiftAdd": 0.16,
+        "InputZeroGating": 0.3721102561046154,
+        "DummyRowDriverMemory": 0.0,
+        "RowDrivers": 0.5349171645999999,
+        "WeightDrivers": 0.5349171645999999,
+        "ADC": 0.5005689430374586,
+        "ColumnDrivers": 0.0,
+        "ColumnBandwidthLimiter": 0.0,
+        "CimUnit": 1.8415927296,
+        "BitcellCapacitor": 0.0,
+        "FreeCompute": 0.0
+      },
+      "area_total_mm2": 4.281226257942074,
+      "wall_s": 8.28967022895813
+    },
+    {
+      "combo": "basic_analog+alexnet",
+      "energy_J": 0.00017012992086038465,
+      "latency_s": 0.0661533996462822,
+      "n_computes": 604384448.0,
+      "energy_per_MAC_J": 2.814928832523246e-13,
+      "avg_power_W": 0.0025717487199457315,
+      "avg_power_mW": 2.5717487199457314,
+      "energy_per_component_J": {
+        "RowDrivers": 3.07026639347896e-05,
+        "ColumnDrivers": 1.1526290651098225e-09,
+        "ADC": 0.0001374822313664481,
+        "CimUnit": 1.943892952326115e-06
+      },
+      "power_per_component_W": {
+        "RowDrivers": 0.00046411316877068584,
+        "ColumnDrivers": 1.742358021315387e-08,
+        "ADC": 0.002078233803577086,
+        "CimUnit": 2.938462668162151e-05
+      },
+      "area_m2": {
+        "MainMemory": 0.0,
+        "ADC": 4.5571664457775785e-08,
+        "ColumnDrivers": 4.5490249999999997e-10,
+        "RowDrivers": 5.198886e-10,
+        "DummyRowDriverMemory": 0.0,
+        "CimUnit": 1.73056e-10,
+        "FreeCompute": 0.0
+      },
+      "area_mm2": {
+        "MainMemory": 0.0,
+        "ADC": 0.04557166445777579,
+        "ColumnDrivers": 0.0004549025,
+        "RowDrivers": 0.0005198886,
+        "DummyRowDriverMemory": 0.0,
+        "CimUnit": 0.00017305600000000002,
+        "FreeCompute": 0.0
+      },
+      "area_total_mm2": 0.04671951155777578,
+      "wall_s": 23.432454109191895
+    }
+  ],
+  "errors": [
+    "isaac_isca_2016+builtin FAILED: EvaluationError: EvaluationError in nodes.ADC.extra_attributes_for_component_model.throughput: Failed to evaluate: 1 / cycle_period * cols_active_at_once * throughput_scale / 100\nProblem encountered: TypeError: 'NoneType' object is not subscriptable\nStack trace:\n  File \"/home/czh/miniconda3/envs/accelforge/lib/python3.12/site-packages/accelforge/util/_eval_expressions.py\", line 211, in eval_expression\n    v = eval(expression, {**FUNCTION_BINDINGS, **symbol_table}, {})\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 1, in <module>\n\nSymbol table: \n\t0 = MainMemory (size: inf)\n\t1 = InputBuffer (size: 8192)\n\t10 = CimUnit (size: cim_unit_width_cells * cim_unit_depth_cells * bits_per_cell)\n\t11 = FreeCompute\n\t2 = OutputBuffer (size: 16384)\n\t3 = ShiftAdd\n\t4 = Macro [8\u00d7 array]\n\t5 = ADC\n\t6 = DummyRowDriverMemory (size: input.bits_per_value * array_parallel_inputs)\n\t7 = RowDrivers\n\t8 = ColumnDrivers\n\t9 = MemoryCell [128\u00d7 columns_ARRAY_COLUMNS, 128\u00d7 rows_ARRAY_ROWS]\n\tADC = ADC\n\tAll = All()\n\tCimUnit = CimUnit (size: cim_unit_width_cells * cim_unit_depth_cells * bits_per_cell)\n\tColumnDrivers = ColumnDrivers\n\tDummyRowDriverMemory = DummyRowDriverMemory (size: input.bits_per_value * array_parallel_inputs)\n\tFreeCompute = FreeCompute\n\tInputBuffer = InputBuffer (size: 8192)\n\tInputs = Inputs()\n\tIntermediates = Intermediates()\n\tList = List(*args, **kwargs)\n\tMacro = Macro [8\u00d7 array]\n\tMainMemory = MainMemory (size: inf)\n\tMemoryCell = MemoryCell [128\u00d7 columns_ARRAY_COLUMNS, 128\u00d7 rows_ARRAY_ROWS]\n\tNamedTuple = NamedTuple(*args, **kwargs)\n\tNothing = Nothing()\n\tOutputBuffer = OutputBuffer (size: 16384)\n\tOutputs = Outputs()\n\tPersistent = Persistent()\n\tProbableBits = ProbableBits(*args, **kwargs)\n\tRowDrivers = RowDrivers\n\tShared = Shared()\n\tShiftAdd = ShiftAdd\n\tTensors = Tensors()\n\tUnion = Union(*args, **kwargs)\n\t_eval_fanout = _eval_fanout(*args, **kwargs)\n\tadc_area_scale = 1\n\tadc_energy_scale = 1\n\tadc_resolution = 8\n\tarch_extra_attributes_for_all_component_models = {'average_cell_value': 0.46759259259259256, 'average_input_value': 0.5833333333333334, 'cell_config'...\n\tarray_bitlines = 128\n\tarray_parallel_inputs = 128\n\tarray_parallel_outputs = 128\n\tarray_parallel_weights = 16384\n\tarray_wordlines = 128\n\tassert_hist_pow2_minus1 = assert_hist_pow2_minus1(*args, **kwargs)\n\taverage_cell_value = 0.46759259259259256\n\taverage_input_bits_per_slice = 1.0\n\taverage_input_bits_per_sliced_psum = 0.125\n\taverage_input_value = 0.5833333333333334\n\taverage_output_bits_per_sliced_psum = 0.125\n\taverage_weight_bits_per_slice = 2.0\n\taverage_weight_bits_per_sliced_psum = 0.125\n\taverage_weight_value = 0.46759259259259256\n\tbits_per_cell = 2\n\tcell_config = /home/czh/\u4efb\u52a1\u4eff\u771f\u4ea7\u751f\u529f\u8017\u6587\u4ef6\u5de5\u5177/accelforge-main/accelforge-main/examples/arches/compute_in_memory/memory_cell...\n\tcim_unit_depth_cells = 1\n\tcim_unit_width_cells = 1\n\tcols = 128\n\tcols_active_at_once = 128\n\tcycle_period = 1e-09\n\tdac_resolution = 1\n\tehtas = ehtas(*args, **kwargs)\n\tencoded_hist_to_avg_slice = encoded_hist_to_avg_slice(*args, **kwargs)\n\tencoded_input_bits = 16\n\tencoded_output_bits = 16\n\tencoded_weight_bits = 16\n\textra_attributes_for_all_component_models = tech_node=3.2e-08 cycle_period=1e-09 rows=128 cols=128 cols_active_at_once=128 cell_config='/home/cz...\n\tget_array_fanout_reuse_input = get_array_fanout_reuse_input(*args, **kwargs)\n\tget_array_fanout_reuse_output = get_array_fanout_reuse_output(*args, **kwargs)\n\tget_array_fanout_total = get_array_fanout_total(*args, **kwargs)\n\tget_n_bits = get_n_bits(*args, **kwargs)\n\thist_to_magnitude = hist_to_magnitude(*args, **kwargs)\n\tin_b = 16\n\tin_enc_fn = in_enc_fn(*args, **kwargs)\n\tinput = input()\n\tinput_bit_distribution = [0.25, 0.75, 0.75, 0.5833333333333334, 0.5833333333333334, 0.5833333333333334, 0.5833333333333334, 0...\n\tinput_bits = 16\n\tinput_encoding_func = input_encoding_func(*args, **kwargs)\n\tinputs_hist = [0, 0, 0, 3, 1, 0, 0]\n\tis_hist_signed = is_hist_signed(*args, **kwargs)\n\tk = k()\n\tlog2 = log2(*args, **kwargs)\n\tm = m()\n\tmagnitude_encode_hist = magnitude_encode_hist(*args, **kwargs)\n\tmax_input_bits_per_slice = 1\n\tmax_weight_bits_per_slice = 2\n\tmin_input_slices = 1\n\tmin_supported_input_bits = 1\n\tmin_supported_output_bits = 1\n\tmin_supported_weight_bits = 2\n\tmin_weight_slices = 1\n\tn = n()\n\tn_adc_per_bank = 1\n\tn_adcs = 1\n\tn_bits = 8\n\tn_input_slices = 16\n\tn_sliced_psums = 128\n\tn_virtual_macs = 32\n\tn_weight_slices = 8\n\tnorm = norm(*args, **kwargs)\n\tnorm_encoded_hist = norm_encoded_hist(*args, **kwargs)\n\toffset_encode_hist = offset_encode_hist(*args, **kwargs)\n\toffset_encode_if_signed_hist = offset_encode_if_signed_hist(*args, **kwargs)\n\toutput = output()\n\toutput_bits = 16\n\toutputs_hist = [0, 0, 0, 3, 1, 0, 0]\n\tread_pulse_width = 1e-09\n\trenames = einsums=[]\n\tresolution = 8\n\trow_col_drivers_area_scale = 1\n\trows = 128\n\tsigned_sum_across_inputs = False\n\tsigned_sum_across_weights = False\n\tspec = arch=Arch(nodes=ArchNodes([Memory(name='MainMemory', spatial=[], component_class='Dummy', component_...\n\tsupported_input_bits = 8\n\tsupported_output_bits = 8\n\tsupported_weight_bits = 8\n\ttech_node = 3.2e-08\n\ttemporal_dac_bits = 1\n\ttemporal_dac_resolution = 1\n\tto_bits_unsigned = to_bits_unsigned(*args, **kwargs)\n\ttwo_part_magnitude_encode_hist = two_part_magnitude_encode_hist(*args, **kwargs)\n\ttwo_part_magnitude_encode_if_signed_hist = two_part_magnitude_encode_if_signed_hist(*args, **kwargs)\n\tvariables = encoded_input_bits=16 encoded_weight_bits=16 encoded_output_bits=16 input_encoding_func=<accelforge....\n\tvoltage = 1\n\tvoltage_dac_resolution = 1\n\tvoltage_energy_scale = 1\n\tvoltage_latency_scale = 1\n\tw_b = 16\n\tw_enc_fn = w_enc_fn(*args, **kwargs)\n\tweight = weight()\n\tweight_bit_distribution = [0.3333333333333333, 0.5833333333333333, 0.49999999999999994, 0.4722222222222222, 0.4722222222222222...\n\tweight_bits = 16\n\tweight_encoding_func = weight_encoding_func(*args, **kwargs)\n\tweights_hist = [0, 1, 3, 4, 3, 1, 0]\n\tworkload = einsums=[Einsum(name='Matmul', tensor_accesses=[TensorAccess(name='input', projection={'M': 'm', 'K'...\n\txnor_encode_hist = xnor_encode_hist(*args, **kwargs)\n\tzero_gated_xnor_encode_hist = zero_gated_xnor_encode_hist(*args, **kwargs)\n\nFailed to evaluate: 1 / cycle_period * cols_active_at_once * throughput_scale / 100\nProblem encountered: TypeError: 'NoneType' object is not subscriptable\nStack trace:\n  File \"/home/czh/miniconda3/envs/accelforge/lib/python3.12/site-packages/accelforge/util/_eval_expressions.py\", line 211, in eval_expression\n    v = eval(expression, {**FUNCTION_BINDINGS, **symbol_table}, {})\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<string>\", line 1, in <module>\n\nPlease ensure that the expression used is a valid Python expression.\nThe following may have been used in the expression:\n\tcycle_period = 1e-09\n\tcols_active_at_once = 128\n\tthroughput_scale = UNDEFINED\n\nIf you meant to enter a string in a YAML file, please wrap the\nexpression in single or double quotes. If you meant to enter a raw \nstring, cast it to a accelforge.LiteralString object.",
+    "raella_isca_2023+builtin FAILED: EstimatorError: Component adc is supported by models, but the following models could could not be initialized.\n\tADC\n\tArgument for ['adc', 'pim_adc', 'sar_adc', 'array_adc', 'pim_array_adc', 'cim_array_adc', 'cim_adc'].__init__ is missing: n_bits. Arguments provided: actions, actions_scale, area_scale, bits_per_value, component_class, component_modeling_log, direction, enabled, energy_scale, extra_attributes_for_component_model, latency_scale, leak_power_scale, n_parallel_instances, name, spatial, tensors, throughput_scale, total_latency, values_per_action, adc_resolution, average_cell_value, average_input_value, cell_config, cols, cols_active_at_once, cycle_period, n_adcs, read_pulse_width, resolution, rows, tech_node, temporal_dac_bits, throughput, voltage, width"
+  ]
+}

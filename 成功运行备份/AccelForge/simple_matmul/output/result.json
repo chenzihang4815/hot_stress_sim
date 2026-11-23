@@ -1,0 +1,34 @@
+{
+  "case": "simple_matmul",
+  "source_tree": "/home/czh/\u4efb\u52a1\u4eff\u771f\u4ea7\u751f\u529f\u8017\u6587\u4ef6\u5de5\u5177/accelforge-main/accelforge-main",
+  "inputs": {
+    "arch": "examples/arches/simple.yaml",
+    "workload": "examples/workloads/basic/matmuls.yaml",
+    "mapping": "examples/mappings/unfused_matmuls_to_simple.yaml",
+    "jinja": {
+      "N_EINSUMS": 1,
+      "M": 64,
+      "KN": 32
+    }
+  },
+  "energy": 2228224.0,
+  "latency": 65536.0,
+  "n_computes": 65536.0,
+  "energy_per_component": {
+    "GlobalBuffer": 2121728.0,
+    "MainMemory": 40960.0,
+    "MAC": 65536.0
+  },
+  "energy_breakdown": {
+    "('GlobalBuffer', 'A')": 1048576.0,
+    "('MainMemory', 'A')": 16384.0,
+    "('GlobalBuffer', 'I')": 540672.0,
+    "('MainMemory', 'I')": 16384.0,
+    "('GlobalBuffer', 'WA')": 532480.0,
+    "('MainMemory', 'WA')": 8192.0,
+    "('MAC', 'None')": 65536.0,
+    "('MainMemory', None)": 0.0,
+    "('GlobalBuffer', None)": 0.0,
+    "('MAC', None)": 0.0
+  }
+}

@@ -1,0 +1,616 @@
+{
+ "case": "ascend910",
+ "variant": "老化加次散热",
+ "mode": "field",
+ "aged": true,
+ "secondary": true,
+ "r_convec_sec": 0.00225,
+ "start_C": 66.83,
+ "best_on_path_C": 66.06,
+ "best_on_path_step": 78,
+ "stored_best_rescored_C": 66.1,
+ "solve_secs": 35.8,
+ "solves": 78,
+ "steps": [
+  {
+   "step": 1,
+   "temp_C": 66.83,
+   "accepted": true
+  },
+  {
+   "step": 2,
+   "temp_C": 66.84,
+   "accepted": true
+  },
+  {
+   "step": 3,
+   "temp_C": 66.67,
+   "accepted": true
+  },
+  {
+   "step": 4,
+   "temp_C": 66.52,
+   "accepted": true
+  },
+  {
+   "step": 5,
+   "temp_C": 66.48,
+   "accepted": true
+  },
+  {
+   "step": 6,
+   "temp_C": 66.48,
+   "accepted": true
+  },
+  {
+   "step": 7,
+   "temp_C": 66.44,
+   "accepted": true
+  },
+  {
+   "step": 8,
+   "temp_C": 66.35,
+   "accepted": true
+  },
+  {
+   "step": 9,
+   "temp_C": 66.37,
+   "accepted": true
+  },
+  {
+   "step": 10,
+   "temp_C": 66.39,
+   "accepted": true
+  },
+  {
+   "step": 11,
+   "temp_C": 66.42,
+   "accepted": true
+  },
+  {
+   "step": 12,
+   "temp_C": 66.42,
+   "accepted": true
+  },
+  {
+   "step": 13,
+   "temp_C": 66.53,
+   "accepted": true
+  },
+  {
+   "step": 14,
+   "temp_C": 66.54,
+   "accepted": true
+  },
+  {
+   "step": 15,
+   "temp_C": 66.56,
+   "accepted": true
+  },
+  {
+   "step": 16,
+   "temp_C": 66.52,
+   "accepted": true
+  },
+  {
+   "step": 17,
+   "temp_C": 66.55,
+   "accepted": true
+  },
+  {
+   "step": 18,
+   "temp_C": 66.53,
+   "accepted": true
+  },
+  {
+   "step": 19,
+   "temp_C": 66.49,
+   "accepted": true
+  },
+  {
+   "step": 20,
+   "temp_C": 66.47,
+   "accepted": true
+  },
+  {
+   "step": 21,
+   "temp_C": 66.46,
+   "accepted": true
+  },
+  {
+   "step": 22,
+   "temp_C": 66.63,
+   "accepted": false
+  },
+  {
+   "step": 23,
+   "temp_C": 66.42,
+   "accepted": true
+  },
+  {
+   "step": 24,
+   "temp_C": 66.39,
+   "accepted": true
+  },
+  {
+   "step": 25,
+   "temp_C": 66.37,
+   "accepted": true
+  },
+  {
+   "step": 26,
+   "temp_C": 66.25,
+   "accepted": true
+  },
+  {
+   "step": 27,
+   "temp_C": 66.24,
+   "accepted": true
+  },
+  {
+   "step": 28,
+   "temp_C": 66.23,
+   "accepted": true
+  },
+  {
+   "step": 29,
+   "temp_C": 66.25,
+   "accepted": false
+  },
+  {
+   "step": 30,
+   "temp_C": 66.2,
+   "accepted": true
+  },
+  {
+   "step": 31,
+   "temp_C": 66.28,
+   "accepted": false
+  },
+  {
+   "step": 32,
+   "temp_C": 66.19,
+   "accepted": true
+  },
+  {
+   "step": 33,
+   "temp_C": 66.17,
+   "accepted": true
+  },
+  {
+   "step": 34,
+   "temp_C": 66.18,
+   "accepted": true
+  },
+  {
+   "step": 35,
+   "temp_C": 66.2,
+   "accepted": true
+  },
+  {
+   "step": 36,
+   "temp_C": 66.18,
+   "accepted": true
+  },
+  {
+   "step": 37,
+   "temp_C": 66.19,
+   "accepted": true
+  },
+  {
+   "step": 38,
+   "temp_C": 66.18,
+   "accepted": true
+  },
+  {
+   "step": 39,
+   "temp_C": 66.15,
+   "accepted": true
+  },
+  {
+   "step": 40,
+   "temp_C": 66.17,
+   "accepted": true
+  },
+  {
+   "step": 41,
+   "temp_C": 66.15,
+   "accepted": true
+  },
+  {
+   "step": 42,
+   "temp_C": 66.17,
+   "accepted": true
+  },
+  {
+   "step": 43,
+   "temp_C": 66.1,
+   "accepted": true
+  },
+  {
+   "step": 44,
+   "temp_C": 66.12,
+   "accepted": true
+  },
+  {
+   "step": 45,
+   "temp_C": 66.25,
+   "accepted": false
+  },
+  {
+   "step": 46,
+   "temp_C": 66.18,
+   "accepted": true
+  },
+  {
+   "step": 47,
+   "temp_C": 66.2,
+   "accepted": true
+  },
+  {
+   "step": 48,
+   "temp_C": 66.21,
+   "accepted": true
+  },
+  {
+   "step": 49,
+   "temp_C": 66.2,
+   "accepted": true
+  },
+  {
+   "step": 50,
+   "temp_C": 66.21,
+   "accepted": true
+  },
+  {
+   "step": 51,
+   "temp_C": 66.22,
+   "accepted": true
+  },
+  {
+   "step": 52,
+   "temp_C": 66.21,
+   "accepted": true
+  },
+  {
+   "step": 53,
+   "temp_C": 66.28,
+   "accepted": true
+  },
+  {
+   "step": 54,
+   "temp_C": 66.26,
+   "accepted": true
+  },
+  {
+   "step": 55,
+   "temp_C": 66.25,
+   "accepted": true
+  },
+  {
+   "step": 56,
+   "temp_C": 66.27,
+   "accepted": true
+  },
+  {
+   "step": 57,
+   "temp_C": 66.28,
+   "accepted": true
+  },
+  {
+   "step": 58,
+   "temp_C": 66.32,
+   "accepted": false
+  },
+  {
+   "step": 59,
+   "temp_C": 66.27,
+   "accepted": true
+  },
+  {
+   "step": 60,
+   "temp_C": 66.28,
+   "accepted": true
+  },
+  {
+   "step": 61,
+   "temp_C": 66.29,
+   "accepted": true
+  },
+  {
+   "step": 62,
+   "temp_C": 66.28,
+   "accepted": true
+  },
+  {
+   "step": 63,
+   "temp_C": 66.26,
+   "accepted": true
+  },
+  {
+   "step": 64,
+   "temp_C": 66.24,
+   "accepted": true
+  },
+  {
+   "step": 65,
+   "temp_C": 66.23,
+   "accepted": true
+  },
+  {
+   "step": 66,
+   "temp_C": 66.24,
+   "accepted": true
+  },
+  {
+   "step": 67,
+   "temp_C": 66.23,
+   "accepted": true
+  },
+  {
+   "step": 68,
+   "temp_C": 66.24,
+   "accepted": true
+  },
+  {
+   "step": 69,
+   "temp_C": 66.23,
+   "accepted": true
+  },
+  {
+   "step": 70,
+   "temp_C": 66.24,
+   "accepted": true
+  },
+  {
+   "step": 71,
+   "temp_C": 66.23,
+   "accepted": true
+  },
+  {
+   "step": 72,
+   "temp_C": 66.24,
+   "accepted": true
+  },
+  {
+   "step": 73,
+   "temp_C": 66.25,
+   "accepted": true
+  },
+  {
+   "step": 74,
+   "temp_C": 66.24,
+   "accepted": true
+  },
+  {
+   "step": 75,
+   "temp_C": 66.26,
+   "accepted": false
+  },
+  {
+   "step": 76,
+   "temp_C": 66.24,
+   "accepted": true
+  },
+  {
+   "step": 77,
+   "temp_C": 66.07,
+   "accepted": true
+  },
+  {
+   "step": 78,
+   "temp_C": 66.06,
+   "accepted": true
+  },
+  {
+   "step": 79,
+   "temp_C": 66.08,
+   "accepted": true
+  },
+  {
+   "step": 80,
+   "temp_C": 66.09,
+   "accepted": true
+  },
+  {
+   "step": 81,
+   "temp_C": 66.26,
+   "accepted": true
+  },
+  {
+   "step": 82,
+   "temp_C": 66.3,
+   "accepted": true
+  },
+  {
+   "step": 83,
+   "temp_C": 66.29,
+   "accepted": true
+  },
+  {
+   "step": 84,
+   "temp_C": 66.28,
+   "accepted": true
+  },
+  {
+   "step": 85,
+   "temp_C": 66.28,
+   "accepted": true
+  },
+  {
+   "step": 86,
+   "temp_C": 66.27,
+   "accepted": true
+  },
+  {
+   "step": 87,
+   "temp_C": 66.26,
+   "accepted": true
+  },
+  {
+   "step": 88,
+   "temp_C": 66.27,
+   "accepted": true
+  },
+  {
+   "step": 89,
+   "temp_C": 66.28,
+   "accepted": true
+  },
+  {
+   "step": 90,
+   "temp_C": 66.29,
+   "accepted": true
+  },
+  {
+   "step": 91,
+   "temp_C": 66.28,
+   "accepted": true
+  },
+  {
+   "step": 92,
+   "temp_C": 66.31,
+   "accepted": true
+  },
+  {
+   "step": 93,
+   "temp_C": 66.3,
+   "accepted": true
+  },
+  {
+   "step": 94,
+   "temp_C": 66.31,
+   "accepted": true
+  },
+  {
+   "step": 95,
+   "temp_C": 66.33,
+   "accepted": true
+  },
+  {
+   "step": 96,
+   "temp_C": 66.37,
+   "accepted": true
+  },
+  {
+   "step": 97,
+   "temp_C": 66.36,
+   "accepted": true
+  },
+  {
+   "step": 98,
+   "temp_C": 66.35,
+   "accepted": true
+  },
+  {
+   "step": 99,
+   "temp_C": 66.25,
+   "accepted": true
+  },
+  {
+   "step": 100,
+   "temp_C": 66.24,
+   "accepted": true
+  },
+  {
+   "step": 101,
+   "temp_C": 66.23,
+   "accepted": true
+  },
+  {
+   "step": 102,
+   "temp_C": 66.21,
+   "accepted": true
+  },
+  {
+   "step": 103,
+   "temp_C": 66.19,
+   "accepted": true
+  },
+  {
+   "step": 104,
+   "temp_C": 66.18,
+   "accepted": true
+  },
+  {
+   "step": 105,
+   "temp_C": 66.14,
+   "accepted": true
+  },
+  {
+   "step": 106,
+   "temp_C": 66.15,
+   "accepted": true
+  },
+  {
+   "step": 107,
+   "temp_C": 66.17,
+   "accepted": true
+  },
+  {
+   "step": 108,
+   "temp_C": 66.18,
+   "accepted": true
+  },
+  {
+   "step": 109,
+   "temp_C": 66.2,
+   "accepted": true
+  },
+  {
+   "step": 110,
+   "temp_C": 66.21,
+   "accepted": true
+  },
+  {
+   "step": 111,
+   "temp_C": 66.22,
+   "accepted": true
+  },
+  {
+   "step": 112,
+   "temp_C": 66.21,
+   "accepted": true
+  },
+  {
+   "step": 113,
+   "temp_C": 66.23,
+   "accepted": true
+  },
+  {
+   "step": 114,
+   "temp_C": 66.27,
+   "accepted": true
+  },
+  {
+   "step": 115,
+   "temp_C": 66.23,
+   "accepted": true
+  },
+  {
+   "step": 116,
+   "temp_C": 66.21,
+   "accepted": true
+  },
+  {
+   "step": 117,
+   "temp_C": 66.29,
+   "accepted": true
+  },
+  {
+   "step": 118,
+   "temp_C": 66.27,
+   "accepted": true
+  },
+  {
+   "step": 119,
+   "temp_C": 66.25,
+   "accepted": true
+  },
+  {
+   "step": 120,
+   "temp_C": 66.25,
+   "accepted": true
+  }
+ ]
+}

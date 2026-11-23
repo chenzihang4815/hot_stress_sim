@@ -1,0 +1,929 @@
+{
+  "objective": "both = (T_python-45)/(T_init-45) + grad/grad_init。两项在起点都是 1。tmax 和 grad 是对照，只在 Penryn+3070、种子 7 上跑。",
+  "moves": "nudge 0.45 / rotate 0.20 / hardware 0.35。layout 对照没有 hardware，nudge 0.70 / rotate 0.30。",
+  "note": "Python 场是整层硅、没有 spreader 外伸，绝对温度不能当成 HotSpot。CPU 功耗是各自 McPAT 380 K 总功耗，不是把 matmul 重跑到这三颗核上。GPU 功耗是同一份 backprop 在三张卡上的平均值。只允许换成面积更大的硬件。最优是代价最低的那一步，不是退火结束时的状态。应力在 phase=stress，指标是正常芯片内部 von Mises 最大，不是封装最大。",
+  "static": [
+    {
+      "id": "static_Penryn",
+      "kind": "static",
+      "cpu": "Penryn",
+      "gpu": "GPU_3070",
+      "hardware": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "grad_max": 4.161340520362501,
+      "grad_rms": 0.333021158232424,
+      "python_Tmax_C": 73.30232570861972,
+      "hotspot_Tmax_C": 61.59000000000003,
+      "dies": [
+        {
+          "name": "Penryn",
+          "role": "CPU",
+          "j0": 4,
+          "ib0": 4,
+          "w": 8,
+          "h": 9,
+          "power_W": 59.241324999999996,
+          "area_mm2": 91.1348,
+          "grid_area_mm2": 91.125
+        },
+        {
+          "name": "GPU_3070",
+          "role": "GPU",
+          "j0": 22,
+          "ib0": 4,
+          "w": 14,
+          "h": 22,
+          "power_W": 66.89,
+          "area_mm2": 392.0,
+          "grid_area_mm2": 389.8125
+        },
+        {
+          "name": "HBM3",
+          "role": "HBM",
+          "j0": 22,
+          "ib0": 28,
+          "w": 8,
+          "h": 12,
+          "power_W": 28.656,
+          "area_mm2": 121.0,
+          "grid_area_mm2": 121.5
+        },
+        {
+          "name": "CIM_jia",
+          "role": "CIM",
+          "j0": 4,
+          "ib0": 27,
+          "w": 2,
+          "h": 2,
+          "power_W": 0.002773,
+          "area_mm2": 4.281,
+          "grid_area_mm2": 5.0625
+        }
+      ]
+    },
+    {
+      "id": "static_T2",
+      "kind": "static",
+      "cpu": "T2",
+      "gpu": "GPU_3070",
+      "hardware": [
+        "T2",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "grad_max": 1.8349447981341251,
+      "grad_rms": 0.25269961969850535,
+      "python_Tmax_C": 68.57736336369715,
+      "hotspot_Tmax_C": 58.52000000000004,
+      "dies": [
+        {
+          "name": "T2",
+          "role": "CPU",
+          "j0": 4,
+          "ib0": 4,
+          "w": 12,
+          "h": 18,
+          "power_W": 68.99682,
+          "area_mm2": 273.523,
+          "grid_area_mm2": 273.375
+        },
+        {
+          "name": "GPU_3070",
+          "role": "GPU",
+          "j0": 22,
+          "ib0": 4,
+          "w": 14,
+          "h": 22,
+          "power_W": 66.89,
+          "area_mm2": 392.0,
+          "grid_area_mm2": 389.8125
+        },
+        {
+          "name": "HBM3",
+          "role": "HBM",
+          "j0": 22,
+          "ib0": 28,
+          "w": 8,
+          "h": 12,
+          "power_W": 28.656,
+          "area_mm2": 121.0,
+          "grid_area_mm2": 121.5
+        },
+        {
+          "name": "CIM_jia",
+          "role": "CIM",
+          "j0": 4,
+          "ib0": 27,
+          "w": 2,
+          "h": 2,
+          "power_W": 0.002773,
+          "area_mm2": 4.281,
+          "grid_area_mm2": 5.0625
+        }
+      ]
+    },
+    {
+      "id": "static_Xeon",
+      "kind": "static",
+      "cpu": "Xeon",
+      "gpu": "GPU_3070",
+      "hardware": [
+        "Xeon",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "grad_max": 1.8817541291223279,
+      "grad_rms": 0.28184381105620576,
+      "python_Tmax_C": 73.07867426427941,
+      "hotspot_Tmax_C": 61.32000000000005,
+      "dies": [
+        {
+          "name": "Xeon",
+          "role": "CPU",
+          "j0": 4,
+          "ib0": 4,
+          "w": 16,
+          "h": 21,
+          "power_W": 103.94599000000001,
+          "area_mm2": 421.676,
+          "grid_area_mm2": 425.25
+        },
+        {
+          "name": "GPU_3070",
+          "role": "GPU",
+          "j0": 22,
+          "ib0": 4,
+          "w": 14,
+          "h": 22,
+          "power_W": 66.89,
+          "area_mm2": 392.0,
+          "grid_area_mm2": 389.8125
+        },
+        {
+          "name": "HBM3",
+          "role": "HBM",
+          "j0": 22,
+          "ib0": 28,
+          "w": 8,
+          "h": 12,
+          "power_W": 28.656,
+          "area_mm2": 121.0,
+          "grid_area_mm2": 121.5
+        },
+        {
+          "name": "CIM_jia",
+          "role": "CIM",
+          "j0": 4,
+          "ib0": 27,
+          "w": 2,
+          "h": 2,
+          "power_W": 0.002773,
+          "area_mm2": 4.281,
+          "grid_area_mm2": 5.0625
+        }
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "id": "penryn_3070_s7",
+      "mode": "layout",
+      "cost": "both",
+      "seed": 7,
+      "cpu": "Penryn",
+      "gpu": "GPU_3070",
+      "init_tag": "penryn_3070_s7__init",
+      "best_tag": "penryn_3070_s7__layout__both__best",
+      "hardware_init": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_best": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_final": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "grad_init": 4.161340520362501,
+      "grad_best": 4.123144577644173,
+      "grad_rms_best": 0.3301961468913998,
+      "python_T_init_C": 73.30232570861972,
+      "python_T_best_C": 71.96969305504211,
+      "hotspot_init_C": 61.59000000000003,
+      "hotspot_best_C": 61.710000000000036,
+      "J_init": 2.0,
+      "J_best": 1.9437356172296945,
+      "swaps": []
+    },
+    {
+      "id": "penryn_3070_s7",
+      "mode": "hardware",
+      "cost": "tmax",
+      "seed": 7,
+      "cpu": "Penryn",
+      "gpu": "GPU_3070",
+      "init_tag": "penryn_3070_s7__init",
+      "best_tag": "penryn_3070_s7__hardware__tmax__best",
+      "hardware_init": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_best": [
+        "T2",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_final": [
+        "T2",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "grad_init": 4.161340520362501,
+      "grad_best": 1.8263461315577336,
+      "grad_rms_best": 0.25259651545691253,
+      "python_T_init_C": 73.30232570861972,
+      "python_T_best_C": 68.32967073292019,
+      "hotspot_init_C": 61.59000000000003,
+      "hotspot_best_C": 58.660000000000025,
+      "J_init": 73.30232570861972,
+      "J_best": 68.32967073292019,
+      "swaps": [
+        "swap Penryn -> T2 (sharp 4.003)"
+      ]
+    },
+    {
+      "id": "penryn_3070_s7",
+      "mode": "hardware",
+      "cost": "grad",
+      "seed": 7,
+      "cpu": "Penryn",
+      "gpu": "GPU_3070",
+      "init_tag": "penryn_3070_s7__init",
+      "best_tag": "penryn_3070_s7__hardware__grad__best",
+      "hardware_init": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_best": [
+        "T2",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_final": [
+        "Xeon",
+        "GPU_TITANX",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "grad_init": 4.161340520362501,
+      "grad_best": 1.8263461315577336,
+      "grad_rms_best": 0.25259651545691253,
+      "python_T_init_C": 73.30232570861972,
+      "python_T_best_C": 68.32967073292019,
+      "hotspot_init_C": 61.59000000000003,
+      "hotspot_best_C": 58.660000000000025,
+      "J_init": 4.161340520362501,
+      "J_best": 1.8263461315577336,
+      "swaps": [
+        "swap Penryn -> T2 (sharp 4.003)",
+        "swap T2 -> Xeon (sharp 1.648)",
+        "swap GPU_3070 -> GPU_TITANX (sharp 1.370)"
+      ]
+    },
+    {
+      "id": "penryn_3070_s7",
+      "mode": "hardware",
+      "cost": "both",
+      "seed": 7,
+      "cpu": "Penryn",
+      "gpu": "GPU_3070",
+      "init_tag": "penryn_3070_s7__init",
+      "best_tag": "penryn_3070_s7__hardware__both__best",
+      "hardware_init": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_best": [
+        "T2",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_final": [
+        "T2",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "grad_init": 4.161340520362501,
+      "grad_best": 1.8263461315577336,
+      "grad_rms_best": 0.25259651545691253,
+      "python_T_init_C": 73.30232570861972,
+      "python_T_best_C": 68.32967073292019,
+      "hotspot_init_C": 61.59000000000003,
+      "hotspot_best_C": 58.660000000000025,
+      "J_init": 2.0,
+      "J_best": 1.263186335156607,
+      "swaps": [
+        "swap Penryn -> T2 (sharp 4.003)"
+      ]
+    },
+    {
+      "id": "penryn_2060s_s7",
+      "mode": "layout",
+      "cost": "both",
+      "seed": 7,
+      "cpu": "Penryn",
+      "gpu": "GPU_2060S",
+      "init_tag": "penryn_2060s_s7__init",
+      "best_tag": "penryn_2060s_s7__layout__both__best",
+      "hardware_init": [
+        "Penryn",
+        "GPU_2060S",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_best": [
+        "Penryn",
+        "GPU_2060S",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_final": [
+        "Penryn",
+        "GPU_2060S",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "grad_init": 4.162091476016737,
+      "grad_best": 4.123883133319042,
+      "grad_rms_best": 0.32898756079844865,
+      "python_T_init_C": 73.50011003713877,
+      "python_T_best_C": 72.163753895377,
+      "hotspot_init_C": 61.73000000000002,
+      "hotspot_best_C": 61.84000000000003,
+      "J_init": 2.0,
+      "J_best": 1.9439304094555645,
+      "swaps": []
+    },
+    {
+      "id": "penryn_2060s_s7",
+      "mode": "hardware",
+      "cost": "both",
+      "seed": 7,
+      "cpu": "Penryn",
+      "gpu": "GPU_2060S",
+      "init_tag": "penryn_2060s_s7__init",
+      "best_tag": "penryn_2060s_s7__hardware__both__best",
+      "hardware_init": [
+        "Penryn",
+        "GPU_2060S",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_best": [
+        "T2",
+        "GPU_2060S",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_final": [
+        "T2",
+        "GPU_2060S",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "grad_init": 4.162091476016737,
+      "grad_best": 1.8269738967219888,
+      "grad_rms_best": 0.25092557347963573,
+      "python_T_init_C": 73.50011003713877,
+      "python_T_best_C": 68.53282430429664,
+      "hotspot_init_C": 61.73000000000002,
+      "hotspot_best_C": 58.79000000000002,
+      "J_init": 2.0,
+      "J_best": 1.264665674145659,
+      "swaps": [
+        "swap Penryn -> T2 (sharp 3.999)"
+      ]
+    },
+    {
+      "id": "penryn_titanx_s7",
+      "mode": "layout",
+      "cost": "both",
+      "seed": 7,
+      "cpu": "Penryn",
+      "gpu": "GPU_TITANX",
+      "init_tag": "penryn_titanx_s7__init",
+      "best_tag": "penryn_titanx_s7__layout__both__best",
+      "hardware_init": [
+        "Penryn",
+        "GPU_TITANX",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_best": [
+        "Penryn",
+        "GPU_TITANX",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_final": [
+        "Penryn",
+        "GPU_TITANX",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "grad_init": 4.159189235353147,
+      "grad_best": 4.120520076282649,
+      "grad_rms_best": 0.3242787013646732,
+      "python_T_init_C": 73.08325901993038,
+      "python_T_best_C": 71.76005457578918,
+      "hotspot_init_C": 61.51000000000005,
+      "hotspot_best_C": 61.629999999999995,
+      "J_init": 2.0,
+      "J_best": 1.9435855201971342,
+      "swaps": []
+    },
+    {
+      "id": "penryn_titanx_s7",
+      "mode": "hardware",
+      "cost": "both",
+      "seed": 7,
+      "cpu": "Penryn",
+      "gpu": "GPU_TITANX",
+      "init_tag": "penryn_titanx_s7__init",
+      "best_tag": "penryn_titanx_s7__hardware__both__best",
+      "hardware_init": [
+        "Penryn",
+        "GPU_TITANX",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_best": [
+        "T2",
+        "GPU_TITANX",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_final": [
+        "T2",
+        "GPU_TITANX",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "grad_init": 4.159189235353147,
+      "grad_best": 1.8210512242234875,
+      "grad_rms_best": 0.24446003149638101,
+      "python_T_init_C": 73.08325901993038,
+      "python_T_best_C": 68.09867315181378,
+      "hotspot_init_C": 61.51000000000005,
+      "hotspot_best_C": 58.55000000000001,
+      "J_init": 2.0,
+      "J_best": 1.260344889186366,
+      "swaps": [
+        "swap Penryn -> T2 (sharp 4.008)"
+      ]
+    },
+    {
+      "id": "penryn_3070_s11",
+      "mode": "layout",
+      "cost": "both",
+      "seed": 11,
+      "cpu": "Penryn",
+      "gpu": "GPU_3070",
+      "init_tag": "penryn_3070_s7__init",
+      "best_tag": "penryn_3070_s11__layout__both__best",
+      "hardware_init": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_best": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_final": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "grad_init": 4.161340520362501,
+      "grad_best": 4.111226216027717,
+      "grad_rms_best": 0.330123252002571,
+      "python_T_init_C": 73.30232570861972,
+      "python_T_best_C": 71.57720646255495,
+      "hotspot_init_C": 61.59000000000003,
+      "hotspot_best_C": 62.03000000000003,
+      "J_init": 2.0,
+      "J_best": 1.927003904838451,
+      "swaps": []
+    },
+    {
+      "id": "penryn_3070_s11",
+      "mode": "hardware",
+      "cost": "both",
+      "seed": 11,
+      "cpu": "Penryn",
+      "gpu": "GPU_3070",
+      "init_tag": "penryn_3070_s7__init",
+      "best_tag": "penryn_3070_s11__hardware__both__best",
+      "hardware_init": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_best": [
+        "T2",
+        "GPU_TITANX",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_final": [
+        "T2",
+        "GPU_TITANX",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "grad_init": 4.161340520362501,
+      "grad_best": 1.806845963572414,
+      "grad_rms_best": 0.241556536079181,
+      "python_T_init_C": 73.30232570861972,
+      "python_T_best_C": 66.99060555444197,
+      "hotspot_init_C": 61.59000000000003,
+      "hotspot_best_C": 58.85000000000002,
+      "J_init": 2.0,
+      "J_best": 1.2111874022439784,
+      "swaps": [
+        "swap Penryn -> T2 (sharp 4.024)",
+        "swap GPU_3070 -> GPU_TITANX (sharp 1.361)"
+      ]
+    },
+    {
+      "id": "penryn_3070_s21",
+      "mode": "layout",
+      "cost": "both",
+      "seed": 21,
+      "cpu": "Penryn",
+      "gpu": "GPU_3070",
+      "init_tag": "penryn_3070_s7__init",
+      "best_tag": "penryn_3070_s21__layout__both__best",
+      "hardware_init": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_best": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_final": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "grad_init": 4.161340520362501,
+      "grad_best": 4.149490793935507,
+      "grad_rms_best": 0.33090204490138087,
+      "python_T_init_C": 73.30232570861972,
+      "python_T_best_C": 71.84177854667337,
+      "hotspot_init_C": 61.59000000000003,
+      "hotspot_best_C": 61.73000000000002,
+      "J_init": 2.0,
+      "J_best": 1.9455472262646136,
+      "swaps": []
+    },
+    {
+      "id": "penryn_3070_s21",
+      "mode": "hardware",
+      "cost": "both",
+      "seed": 21,
+      "cpu": "Penryn",
+      "gpu": "GPU_3070",
+      "init_tag": "penryn_3070_s7__init",
+      "best_tag": "penryn_3070_s21__hardware__both__best",
+      "hardware_init": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_best": [
+        "T2",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_final": [
+        "Xeon",
+        "GPU_TITANX",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "grad_init": 4.161340520362501,
+      "grad_best": 1.8349447981341251,
+      "grad_rms_best": 0.25269961969850535,
+      "python_T_init_C": 73.30232570861972,
+      "python_T_best_C": 68.57736336369715,
+      "hotspot_init_C": 61.59000000000003,
+      "hotspot_best_C": 58.52000000000004,
+      "J_init": 2.0,
+      "J_best": 1.2740043270253376,
+      "swaps": [
+        "swap Penryn -> T2 (sharp 4.020)",
+        "swap T2 -> Xeon (sharp 1.634)",
+        "swap GPU_3070 -> GPU_TITANX (sharp 1.458)"
+      ]
+    },
+    {
+      "id": "t2_3070_s7",
+      "mode": "layout",
+      "cost": "both",
+      "seed": 7,
+      "cpu": "T2",
+      "gpu": "GPU_3070",
+      "init_tag": "t2_3070_s7__init",
+      "best_tag": "t2_3070_s7__layout__both__best",
+      "hardware_init": [
+        "T2",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_best": [
+        "T2",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_final": [
+        "T2",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "grad_init": 1.8349447981341251,
+      "grad_best": 1.8186516168984275,
+      "grad_rms_best": 0.24877734858906772,
+      "python_T_init_C": 68.57736336369715,
+      "python_T_best_C": 67.18108940051252,
+      "hotspot_init_C": 58.52000000000004,
+      "hotspot_best_C": 58.360000000000014,
+      "J_init": 2.0,
+      "J_best": 1.9318996605357777,
+      "swaps": []
+    },
+    {
+      "id": "t2_3070_s7",
+      "mode": "hardware",
+      "cost": "both",
+      "seed": 7,
+      "cpu": "T2",
+      "gpu": "GPU_3070",
+      "init_tag": "t2_3070_s7__init",
+      "best_tag": "t2_3070_s7__hardware__both__best",
+      "hardware_init": [
+        "T2",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_best": [
+        "T2",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_final": [
+        "T2",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "grad_init": 1.8349447981341251,
+      "grad_best": 1.8263461315577336,
+      "grad_rms_best": 0.25259651545691253,
+      "python_T_init_C": 68.57736336369715,
+      "python_T_best_C": 68.32967073292019,
+      "hotspot_init_C": 58.52000000000004,
+      "hotspot_best_C": 58.660000000000025,
+      "J_init": 2.0,
+      "J_best": 1.98480841004733,
+      "swaps": []
+    },
+    {
+      "id": "t2_titanx_s7",
+      "mode": "layout",
+      "cost": "both",
+      "seed": 7,
+      "cpu": "T2",
+      "gpu": "GPU_TITANX",
+      "init_tag": "t2_titanx_s7__init",
+      "best_tag": "t2_titanx_s7__layout__both__best",
+      "hardware_init": [
+        "T2",
+        "GPU_TITANX",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_best": [
+        "T2",
+        "GPU_TITANX",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_final": [
+        "T2",
+        "GPU_TITANX",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "grad_init": 1.8301503301732838,
+      "grad_best": 1.8128831206312397,
+      "grad_rms_best": 0.24139253772353017,
+      "python_T_init_C": 68.35483816552153,
+      "python_T_best_C": 67.13876604536847,
+      "hotspot_init_C": 58.420000000000016,
+      "hotspot_best_C": 58.360000000000014,
+      "J_init": 2.0,
+      "J_best": 1.938495753848458,
+      "swaps": []
+    },
+    {
+      "id": "t2_titanx_s7",
+      "mode": "hardware",
+      "cost": "both",
+      "seed": 7,
+      "cpu": "T2",
+      "gpu": "GPU_TITANX",
+      "init_tag": "t2_titanx_s7__init",
+      "best_tag": "t2_titanx_s7__hardware__both__best",
+      "hardware_init": [
+        "T2",
+        "GPU_TITANX",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_best": [
+        "T2",
+        "GPU_TITANX",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_final": [
+        "T2",
+        "GPU_TITANX",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "grad_init": 1.8301503301732838,
+      "grad_best": 1.8210512242234875,
+      "grad_rms_best": 0.24446003149638101,
+      "python_T_init_C": 68.35483816552153,
+      "python_T_best_C": 68.09867315181378,
+      "hotspot_init_C": 58.420000000000016,
+      "hotspot_best_C": 58.55000000000001,
+      "J_init": 2.0,
+      "J_best": 1.9840598276499493,
+      "swaps": []
+    },
+    {
+      "id": "xeon_3070_s7",
+      "mode": "layout",
+      "cost": "both",
+      "seed": 7,
+      "cpu": "Xeon",
+      "gpu": "GPU_3070",
+      "init_tag": "xeon_3070_s7__init",
+      "best_tag": "xeon_3070_s7__layout__both__best",
+      "hardware_init": [
+        "Xeon",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_best": [
+        "Xeon",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_final": [
+        "Xeon",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "grad_init": 1.8817541291223279,
+      "grad_best": 1.860508443823518,
+      "grad_rms_best": 0.278591909372326,
+      "python_T_init_C": 73.07867426427941,
+      "python_T_best_C": 72.15653847607831,
+      "hotspot_init_C": 61.32000000000005,
+      "hotspot_best_C": 61.370000000000005,
+      "J_init": 2.0,
+      "J_best": 1.9558684938878057,
+      "swaps": []
+    },
+    {
+      "id": "xeon_3070_s7",
+      "mode": "hardware",
+      "cost": "both",
+      "seed": 7,
+      "cpu": "Xeon",
+      "gpu": "GPU_3070",
+      "init_tag": "xeon_3070_s7__init",
+      "best_tag": "xeon_3070_s7__hardware__both__best",
+      "hardware_init": [
+        "Xeon",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_best": [
+        "Xeon",
+        "GPU_TITANX",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "hardware_final": [
+        "Xeon",
+        "GPU_TITANX",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "grad_init": 1.8817541291223279,
+      "grad_best": 1.8662663706683007,
+      "grad_rms_best": 0.27213906461961973,
+      "python_T_init_C": 73.07867426427941,
+      "python_T_best_C": 72.55067990976863,
+      "hotspot_init_C": 61.32000000000005,
+      "hotspot_best_C": 61.34000000000003,
+      "J_init": 2.0,
+      "J_best": 1.9729654044989506,
+      "swaps": [
+        "swap GPU_3070 -> GPU_TITANX (sharp 1.429)"
+      ]
+    }
+  ],
+  "endpoints": [
+    "static_Penryn",
+    "static_T2",
+    "static_Xeon",
+    "penryn_3070_s7__layout__both__best",
+    "penryn_3070_s7__init",
+    "penryn_3070_s7__hardware__tmax__best",
+    "penryn_3070_s7__hardware__grad__best",
+    "penryn_3070_s7__hardware__both__best",
+    "penryn_2060s_s7__layout__both__best",
+    "penryn_2060s_s7__init",
+    "penryn_2060s_s7__hardware__both__best",
+    "penryn_titanx_s7__layout__both__best",
+    "penryn_titanx_s7__init",
+    "penryn_titanx_s7__hardware__both__best",
+    "penryn_3070_s11__layout__both__best",
+    "penryn_3070_s11__hardware__both__best",
+    "penryn_3070_s21__layout__both__best",
+    "penryn_3070_s21__hardware__both__best",
+    "t2_3070_s7__layout__both__best",
+    "t2_3070_s7__init",
+    "t2_3070_s7__hardware__both__best",
+    "t2_titanx_s7__layout__both__best",
+    "t2_titanx_s7__init",
+    "t2_titanx_s7__hardware__both__best",
+    "xeon_3070_s7__layout__both__best",
+    "xeon_3070_s7__init",
+    "xeon_3070_s7__hardware__both__best"
+  ]
+}

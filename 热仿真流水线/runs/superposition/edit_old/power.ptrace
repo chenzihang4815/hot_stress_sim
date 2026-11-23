@@ -1,0 +1,2 @@
+CPU_matmul	CPU_threads	GPU_3070	GPU_TITANX	CIM_jia64_0	CIM_jia64_1	HBM3_stack
+0	0	66.89	0	0	0	0

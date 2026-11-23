@@ -1,0 +1,12 @@
+{
+  "tag": "ladder_nudge_4",
+  "fill_material": "silicon",
+  "vm_max_MPa": 84.76180976625417,
+  "vm_name": "GPU_3070",
+  "cpu_mean_MPa": 42.516732430423055,
+  "cpu_max_MPa": 66.38652417717019,
+  "cpu_n": 30,
+  "atsim_Tmax_C": 74.96510939496818,
+  "elapsed_s": 11.541311264038086,
+  "ndof": 32904
+}

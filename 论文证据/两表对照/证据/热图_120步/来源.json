@@ -1,0 +1,86 @@
+[
+  {
+    "case": "ascend910",
+    "method": "全解64",
+    "init_peak_C": 118.31,
+    "best_peak_C": 116.94,
+    "drop_C": 1.37,
+    "figure": "图/ascend910_120步_全解64.png",
+    "sources": {
+      "init_64.grid": "热仿真流水线/runs/superposition/tap_field/sfull/ascend910/init_64.grid",
+      "init.json": "热仿真流水线/runs/superposition/tap_field/sfull/ascend910/init.json",
+      "best_64.grid": "热仿真流水线/runs/superposition/tap_field/s120_64_real/ascend910/best_full_64.grid",
+      "best.json": "热仿真流水线/runs/superposition/tap_field/s120_64_real/ascend910/best_full.json"
+    }
+  },
+  {
+    "case": "ascend910",
+    "method": "场叠加16",
+    "init_peak_C": 118.31,
+    "best_peak_C": 116.94,
+    "drop_C": 1.37,
+    "figure": "图/ascend910_120步_场叠加16.png",
+    "sources": {
+      "init_64.grid": "热仿真流水线/runs/superposition/tap_field/sfull/ascend910/init_64.grid",
+      "init.json": "热仿真流水线/runs/superposition/tap_field/sfull/ascend910/init.json",
+      "best_64.grid": "论文证据/四列对照/s120_16_ascend910/ascend910/best_field_64.grid",
+      "best.json": "论文证据/四列对照/s120_16_ascend910/ascend910/best_field.json"
+    }
+  },
+  {
+    "case": "micro150",
+    "method": "全解64",
+    "init_peak_C": 218.34,
+    "best_peak_C": 171.01,
+    "drop_C": 47.33,
+    "figure": "图/micro150_120步_全解64.png",
+    "sources": {
+      "init_64.grid": "热仿真流水线/runs/superposition/tap_field/sfull/micro150/init_64.grid",
+      "init.json": "热仿真流水线/runs/superposition/tap_field/sfull/micro150/init.json",
+      "best_64.grid": "热仿真流水线/runs/superposition/tap_field/s120_64/micro150/best_full_64.grid",
+      "best.json": "热仿真流水线/runs/superposition/tap_field/s120_64/micro150/best_full.json"
+    }
+  },
+  {
+    "case": "micro150",
+    "method": "场叠加16",
+    "init_peak_C": 218.34,
+    "best_peak_C": 170.08,
+    "drop_C": 48.26,
+    "figure": "图/micro150_120步_场叠加16.png",
+    "sources": {
+      "init_64.grid": "热仿真流水线/runs/superposition/tap_field/sfull/micro150/init_64.grid",
+      "init.json": "热仿真流水线/runs/superposition/tap_field/sfull/micro150/init.json",
+      "best_64.grid": "热仿真流水线/runs/superposition/tap_field/s120/micro150/best_field_64.grid",
+      "best.json": "热仿真流水线/runs/superposition/tap_field/s120/micro150/best_field.json"
+    }
+  },
+  {
+    "case": "multigpu",
+    "method": "全解64",
+    "init_peak_C": 180.39,
+    "best_peak_C": 169.02,
+    "drop_C": 11.37,
+    "figure": "图/multigpu_120步_全解64.png",
+    "sources": {
+      "init_64.grid": "热仿真流水线/runs/superposition/tap_field/sfull/multigpu/init_64.grid",
+      "init.json": "热仿真流水线/runs/superposition/tap_field/sfull/multigpu/init.json",
+      "best_64.grid": "热仿真流水线/runs/superposition/tap_field/s120_64/multigpu/best_full_64.grid",
+      "best.json": "热仿真流水线/runs/superposition/tap_field/s120_64/multigpu/best_full.json"
+    }
+  },
+  {
+    "case": "multigpu",
+    "method": "场叠加16",
+    "init_peak_C": 180.39,
+    "best_peak_C": 169.5,
+    "drop_C": 10.89,
+    "figure": "图/multigpu_120步_场叠加16.png",
+    "sources": {
+      "init_64.grid": "热仿真流水线/runs/superposition/tap_field/sfull/multigpu/init_64.grid",
+      "init.json": "热仿真流水线/runs/superposition/tap_field/sfull/multigpu/init.json",
+      "best_64.grid": "热仿真流水线/runs/superposition/tap_field/s120/multigpu/best_field_64.grid",
+      "best.json": "热仿真流水线/runs/superposition/tap_field/s120/multigpu/best_field.json"
+    }
+  }
+]

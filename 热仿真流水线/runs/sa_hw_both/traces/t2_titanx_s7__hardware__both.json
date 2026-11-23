@@ -1,0 +1,471 @@
+[
+  {
+    "step": 0,
+    "op": "init",
+    "move": "init",
+    "accept": true,
+    "J": 2.0,
+    "grad_max": 1.8301503301732838,
+    "grad_rms": 0.24461735172802956,
+    "Tmax_C": 68.35483816552153,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ]
+  },
+  {
+    "step": 1,
+    "op": "nudge T2 (1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.9840598276499493,
+    "grad_max": 1.8210512242234875,
+    "grad_rms": 0.24446003149638101,
+    "Tmax_C": 68.09867315181378,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.2,
+    "new_best": true
+  },
+  {
+    "step": 2,
+    "op": "nudge T2 (1,0) cells",
+    "move": "nudge",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 3,
+    "op": "swap T2 -> Xeon (sharp 1.619)",
+    "move": "hardware",
+    "accept": false,
+    "ap": 0.2646890846553475,
+    "J": 2.199390131626421,
+    "grad_max": 1.8662663706683007,
+    "grad_rms": 0.27213906461961973,
+    "Tmax_C": 72.55067990976863,
+    "hardware": [
+      "Xeon",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.16200000000000003
+  },
+  {
+    "step": 4,
+    "op": "nudge T2 (0,-1) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.8787046938343426,
+    "J": 2.0029126999973053,
+    "grad_max": 1.8264696232391644,
+    "grad_rms": 0.2453932885744628,
+    "Tmax_C": 68.46983388660527,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.14580000000000004
+  },
+  {
+    "step": 5,
+    "op": "nudge T2 (0,-2) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.6942250667526054,
+    "J": 2.050802628817898,
+    "grad_max": 1.8400233942766642,
+    "grad_rms": 0.24732071865844613,
+    "Tmax_C": 69.41533360553512,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.13122000000000003
+  },
+  {
+    "step": 6,
+    "op": "nudge T2 (1,0) cells",
+    "move": "nudge",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 7,
+    "op": "rotate GPU_TITANX",
+    "move": "rotate",
+    "accept": true,
+    "ap": 1.0,
+    "J": 2.050262131651582,
+    "grad_max": 1.8498300619024424,
+    "grad_rms": 0.24598108658673698,
+    "Tmax_C": 69.27756594323989,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.10628820000000004
+  },
+  {
+    "step": 8,
+    "op": "nudge T2 (-1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.8235565992088756,
+    "J": 2.0688318176341953,
+    "grad_max": 1.8595660546049355,
+    "grad_rms": 0.24628335731699258,
+    "Tmax_C": 69.58701540958873,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.09565938000000004
+  },
+  {
+    "step": 9,
+    "op": "nudge T2 (2,0) cells",
+    "move": "nudge",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 10,
+    "op": "rotate T2",
+    "move": "rotate",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 11,
+    "op": "nudge T2 (1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 2.050262131651582,
+    "grad_max": 1.8498300619024424,
+    "grad_rms": 0.24598108658673698,
+    "Tmax_C": 69.27756594323989,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.06973568802000003
+  },
+  {
+    "step": 12,
+    "op": "rotate T2",
+    "move": "rotate",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 13,
+    "op": "rotate T2",
+    "move": "rotate",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 14,
+    "op": "rotate GPU_TITANX",
+    "move": "rotate",
+    "accept": true,
+    "ap": 0.9894244208200467,
+    "J": 2.050802628817898,
+    "grad_max": 1.8400233942766642,
+    "grad_rms": 0.24732071865844613,
+    "Tmax_C": 69.41533360553512,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.050837316566580026
+  },
+  {
+    "step": 15,
+    "op": "swap T2 -> Xeon (sharp 1.675)",
+    "move": "hardware",
+    "accept": false,
+    "ap": 0.006369649813826703,
+    "J": 2.2821423983005857,
+    "grad_max": 1.8891518052742968,
+    "grad_rms": 0.2769909407160496,
+    "Tmax_C": 74.1913010508847,
+    "hardware": [
+      "Xeon",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.04575358490992203
+  },
+  {
+    "step": 16,
+    "op": "rotate GPU_TITANX",
+    "move": "rotate",
+    "accept": true,
+    "ap": 1.0,
+    "J": 2.050262131651582,
+    "grad_max": 1.8498300619024424,
+    "grad_rms": 0.24598108658673698,
+    "Tmax_C": 69.27756594323989,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.04117822641892983
+  },
+  {
+    "step": 17,
+    "op": "nudge T2 (-1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.6058848070374839,
+    "J": 2.0688318176341953,
+    "grad_max": 1.8595660546049355,
+    "grad_rms": 0.24628335731699258,
+    "Tmax_C": 69.58701540958873,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.03706040377703684
+  },
+  {
+    "step": 18,
+    "op": "nudge GPU_TITANX (0,-2) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.6891804665432927,
+    "J": 2.0812480500190533,
+    "grad_max": 1.8684470564353939,
+    "grad_rms": 0.2478064504006866,
+    "Tmax_C": 69.76366263690778,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.03335436339933316
+  },
+  {
+    "step": 19,
+    "op": "swap T2 -> Xeon (sharp 1.663)",
+    "move": "hardware",
+    "accept": false,
+    "ap": 0.00041486690796095117,
+    "J": 2.3150220292797004,
+    "grad_max": 1.91451424872821,
+    "grad_rms": 0.2784927308243827,
+    "Tmax_C": 74.63554535431513,
+    "hardware": [
+      "Xeon",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.030018927059399847
+  },
+  {
+    "step": 20,
+    "op": "swap T2 -> Xeon (sharp 1.663)",
+    "move": "hardware",
+    "accept": false,
+    "ap": 0.00017463081578259545,
+    "J": 2.3150220292797004,
+    "grad_max": 1.91451424872821,
+    "grad_rms": 0.2784927308243827,
+    "Tmax_C": 74.63554535431513,
+    "hardware": [
+      "Xeon",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.027017034353459864
+  },
+  {
+    "step": 21,
+    "op": "nudge T2 (0,-1) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.21794877221271772,
+    "J": 2.1182923407776024,
+    "grad_max": 1.8786457099877225,
+    "grad_rms": 0.2446894221345855,
+    "Tmax_C": 70.498679419604,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.02431533091811388
+  },
+  {
+    "step": 22,
+    "op": "nudge GPU_TITANX (0,-1) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.7601587884522625,
+    "J": 2.1242934894731484,
+    "grad_max": 1.8829524546408214,
+    "grad_rms": 0.24546790210443828,
+    "Tmax_C": 70.5838762257095,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.02188379782630249
+  },
+  {
+    "step": 23,
+    "op": "nudge T2 (0,2) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 2.0576794865540995,
+    "grad_max": 1.862970428285583,
+    "grad_rms": 0.2474120083540291,
+    "Tmax_C": 69.28311077042741,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.019695418043672242
+  },
+  {
+    "step": 24,
+    "op": "nudge GPU_TITANX (0,-2) cells",
+    "move": "nudge",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 25,
+    "op": "rotate GPU_TITANX",
+    "move": "rotate",
+    "accept": false,
+    "ap": 0.6533571800219973,
+    "J": 2.0644697057829164,
+    "grad_max": 1.8590378302647979,
+    "grad_rms": 0.24868101872811615,
+    "Tmax_C": 69.4918797476904,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.015953288615374518
+  },
+  {
+    "step": 26,
+    "op": "nudge T2 (0,-1) cells",
+    "move": "nudge",
+    "accept": false,
+    "ap": 0.1305459966243045,
+    "J": 2.086912718323064,
+    "grad_max": 1.8724780812648936,
+    "grad_rms": 0.24853947418718728,
+    "Tmax_C": 69.84451950225196,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.014357959753837067
+  },
+  {
+    "step": 27,
+    "op": "swap T2 -> Xeon (sharp 1.642)",
+    "move": "hardware",
+    "accept": false,
+    "ap": 2.4418978518040495e-08,
+    "J": 2.2841779482270606,
+    "grad_max": 1.9060765087401705,
+    "grad_rms": 0.27739734246902514,
+    "Tmax_C": 74.0228621690602,
+    "hardware": [
+      "Xeon",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.012922163778453361
+  },
+  {
+    "step": 28,
+    "op": "nudge GPU_TITANX (0,-2) cells",
+    "move": "nudge",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 29,
+    "op": "nudge GPU_TITANX (0,2) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 2.0468003446165923,
+    "grad_max": 1.8551695141351148,
+    "grad_rms": 0.24595035520383635,
+    "Tmax_C": 69.12857887183702,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.010466952660547223
+  },
+  {
+    "step": 30,
+    "op": "nudge GPU_TITANX (-1,0) cells",
+    "move": "nudge",
+    "accept": false,
+    "ap": 0.2799406625347156,
+    "J": 2.0587940054850797,
+    "grad_max": 1.8606212104827036,
+    "grad_rms": 0.24723016600087985,
+    "Tmax_C": 69.33911892007131,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.0094202573944925
+  }
+]

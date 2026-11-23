@@ -1,0 +1,17 @@
+{
+  "id": "pkg_2cpu_1gpu_2cim",
+  "title": "2 CPU + 1 GPU + 2 CIM（5 颗）",
+  "why": "小规模基线：两颗 CPU、一颗 3070、jia/colonnade",
+  "layout": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/sa_compare_schemes/pkg_2cpu_1gpu_2cim/layout.json",
+  "source": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/multi_chiplet_schemes/pkg_2cpu_1gpu_2cim/layout.json",
+  "n_chiplets": 5,
+  "kinds": {
+    "CPU": 2,
+    "GPU": 1,
+    "CIM": 2
+  },
+  "power_total_W": 68.8897953290401,
+  "atsim_pitch_die_mm": 2.0,
+  "atsim_pitch_coarse_mm": 8.0,
+  "atsim_nz": null
+}

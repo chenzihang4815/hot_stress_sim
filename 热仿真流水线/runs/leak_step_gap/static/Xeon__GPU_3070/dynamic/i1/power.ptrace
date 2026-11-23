@@ -1,0 +1,2 @@
+CPU_matmul	GPU_3070	HBM3_stack	anchor_sw	anchor_ne
+88.2426914599	66.8878163491	28.656	0	0

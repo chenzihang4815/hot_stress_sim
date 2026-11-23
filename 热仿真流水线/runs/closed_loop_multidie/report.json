@@ -1,0 +1,237 @@
+{
+  "fill": "silicon",
+  "k_Si": 130.0,
+  "package": "72 mm 芯粒框，96 mm 热沉，r_convec 0.0390625",
+  "inner_cost": "(T_python-45)/(T_init-45) + grad/grad_init",
+  "inner_steps": 40,
+  "seed": 11,
+  "superposition_max_abs_init_K": 8.995471034722868e-10,
+  "superposition_max_abs_best_K": 8.988081390270963e-10,
+  "superposition_note": "均匀硅、冻结材料图，只开一颗的功耗再相加。这个数是和方法误差，不是 HotSpot 外伸造成的温差。",
+  "hbm_formula": "每通道 0.088 + n_cpu*(1.035-0.088) + n_gpu*(0.844-0.088)，再乘 16。只认颗数。",
+  "hbm_W_init": 68.0,
+  "hbm_W_best": 68.0,
+  "kcal_python_rise_to_hotspot_block": 0.5650257533266669,
+  "kcal_note": "把 Python 芯粒层峰值的温升，按内环最优那一点的 HotSpot 块平均峰值缩放。只用于频率搜索的向导，不是 HotSpot，也不是 ATSim。",
+  "gates": {
+    "T_C": 90.0,
+    "vm_MPa": 200.0,
+    "near_T_C": 5.0,
+    "near_vm_MPa": 20.0
+  },
+  "near_note": "附近 = 没越出门槛，但温度距 90 C 不足 5 C，或应力距 200 MPa 不足 20 MPa。这是这一次跑的带宽。",
+  "freq_mode": "inside",
+  "freq_box": {
+    "step": 0.1,
+    "lo": 0.5,
+    "hi": 2.5
+  },
+  "freq_objective": "各颗 CPU/GPU 倍率之和最大，且向导温度 < 90 C。倍率之和不是吞吐。漏电不乘倍率。",
+  "walkback": [
+    {
+      "attempt": 0,
+      "scales": {
+        "Ca": 1.2,
+        "Ga": 1.4,
+        "Gb": 1.0,
+        "Cb": 1.2,
+        "Gc": 1.1
+      },
+      "die_cell_max_C": 80.62062760331173,
+      "vm_normal_chip_max_MPa": 168.37488644126606
+    }
+  ],
+  "init": {
+    "python_Tmax_C": 100.0811677360308,
+    "python_grad_K_per_mm": 3.8377599968275717,
+    "hotspot_block_max_C": 76.18,
+    "atsim": {
+      "die_cell_max_C": 79.72620634304008,
+      "grad_max_K_per_mm": 3.766705645261288,
+      "vm_normal_chip_max_MPa": 150.12302119624874,
+      "vm_normal_chip_name": "Xeon_Ca"
+    }
+  },
+  "best": {
+    "python_Tmax_C": 97.22770789872118,
+    "python_grad_K_per_mm": 3.793676689855349,
+    "hotspot_block_max_C": 74.51000000000005,
+    "atsim": {
+      "die_cell_max_C": 78.03168938502802,
+      "grad_max_K_per_mm": 3.727153124498887,
+      "vm_normal_chip_max_MPa": 154.95707368340834,
+      "vm_normal_chip_name": "Xeon_Ca"
+    }
+  },
+  "freq": {
+    "python_Tmax_C": 102.30449967505592,
+    "python_grad_K_per_mm": 3.829595089138719,
+    "hotspot_block_max_C": 75.77000000000004,
+    "atsim": {
+      "die_cell_max_C": 80.62062760331173,
+      "grad_max_K_per_mm": 3.7561375941356125,
+      "vm_normal_chip_max_MPa": 168.37488644126606,
+      "vm_normal_chip_name": "Xeon_Ca"
+    }
+  },
+  "guide_at_freq": {
+    "T_python_C": 102.3044996750267,
+    "T_est_C": 77.3785180978897,
+    "grad_max": 3.829595089138517,
+    "ok": true
+  },
+  "tunable": [
+    {
+      "slot": "Ca",
+      "role": "CPU",
+      "name_before": "Xeon_Ca",
+      "name_after": "Xeon_Ca",
+      "s_before": 1.0,
+      "s_after": 1.2,
+      "power_before_W": 103.94599,
+      "power_after_W": 117.31568999999999,
+      "dyn_W": 66.8485,
+      "leak_W": 37.09749,
+      "theta_serial_before": 0.918918918918919,
+      "theta_serial_after": 1.1027027027027028,
+      "theta_parallel_before": 1.837837837837838,
+      "theta_parallel_after": 2.2054054054054055
+    },
+    {
+      "slot": "Ga",
+      "role": "GPU",
+      "name_before": "GPU_3070_Ga",
+      "name_after": "GPU_3070_Ga",
+      "s_before": 1.0,
+      "s_after": 1.4,
+      "power_before_W": 66.88781634908364,
+      "power_after_W": 73.30958491336577,
+      "dyn_W": 16.054421410705352,
+      "leak_W": 50.833394938378284,
+      "inst_per_s_before": 19081322297.51239,
+      "inst_per_s_after": 26713851216.517345
+    },
+    {
+      "slot": "Gb",
+      "role": "GPU",
+      "name_before": "GPU_TITANX_Gb",
+      "name_after": "GPU_TITANX_Gb",
+      "s_before": 1.0,
+      "s_after": 1.0,
+      "power_before_W": 67.4071250008286,
+      "power_after_W": 67.4071250008286,
+      "dyn_W": 10.531824961055307,
+      "leak_W": 56.87530003977329,
+      "inst_per_s_before": 17410487521.12956,
+      "inst_per_s_after": 17410487521.12956
+    },
+    {
+      "slot": "Cb",
+      "role": "CPU",
+      "name_before": "T2_Cb",
+      "name_after": "T2_Cb",
+      "s_before": 1.0,
+      "s_after": 1.2,
+      "power_before_W": 68.99682,
+      "power_after_W": 79.08102,
+      "dyn_W": 50.421,
+      "leak_W": 18.57582,
+      "theta_serial_before": 0.3783783783783784,
+      "theta_serial_after": 0.4540540540540541,
+      "theta_parallel_before": 3.027027027027027,
+      "theta_parallel_after": 3.6324324324324326
+    },
+    {
+      "slot": "Gc",
+      "role": "GPU",
+      "name_before": "GPU_3070_Gc",
+      "name_after": "GPU_3070_Gc",
+      "s_before": 1.0,
+      "s_after": 1.1,
+      "power_before_W": 66.88781634908364,
+      "power_after_W": 68.49325849015418,
+      "dyn_W": 16.054421410705352,
+      "leak_W": 50.833394938378284,
+      "inst_per_s_before": 19081322297.51239,
+      "inst_per_s_after": 20989454527.26363
+    }
+  ],
+  "sum_s_before": 5.0,
+  "sum_s_after": 5.9,
+  "accepted_inner": 10,
+  "hardware_init": [
+    "Xeon_Ca",
+    "GPU_2060S_Ga",
+    "GPU_TITANX_Gb",
+    "CIM_jia_m64",
+    "Xeon_Cb",
+    "GPU_3070_Gc",
+    "HBM3",
+    "CIM_colonnade_m512",
+    "CIM_colonnade_m256",
+    "CIM_basic_m256",
+    "CIM_colonnade_m64"
+  ],
+  "hardware_best": [
+    "Xeon_Ca",
+    "GPU_3070_Ga",
+    "GPU_TITANX_Gb",
+    "CIM_jia_m64",
+    "T2_Cb",
+    "GPU_3070_Gc",
+    "HBM3",
+    "CIM_colonnade_m512",
+    "CIM_colonnade_m256",
+    "CIM_basic_m256",
+    "CIM_colonnade_m64"
+  ],
+  "note": "没有改生产 SA。Python、HotSpot、ATSim 的温度分列。ATSim 网格是 2 mm，比对齐检查的 1.125 mm 粗。正常芯片内部应力才是门槛，整包最大应力不是。CIM 不换、不调频。HBM 不调频。",
+  "block_average": {
+    "definition": "三列都是块平均。每颗芯片先把自己盖住的格子求平均，再取最热的那颗。Python 用 64x64 芯粒层，一格 1.125 mm。HotSpot 的块温度本来就是第 0 层被该块盖住的格子的平均，grid_map_mode=avg。ATSim 是芯粒层厚度上先做柱平均，再对落在这颗芯片里的柱求平均。网格 2 mm。以前报告里的 Python 100.08/97.23/102.30 和 ATSim 79.73/78.03/80.62 是最热一格，不是这个数。",
+    "hottest": {
+      "init": {
+        "python_hottest_block_mean": {
+          "name": "Xeon_Ca",
+          "C": 97.80222449356043
+        },
+        "hotspot_hottest_block_mean": {
+          "name": "HBM3",
+          "C": 76.18
+        },
+        "atsim_hottest_block_mean": {
+          "name": "Xeon_Ca",
+          "C": 77.99792626357213
+        }
+      },
+      "best": {
+        "python_hottest_block_mean": {
+          "name": "Xeon_Ca",
+          "C": 94.6787265962833
+        },
+        "hotspot_hottest_block_mean": {
+          "name": "HBM3",
+          "C": 74.51000000000005
+        },
+        "atsim_hottest_block_mean": {
+          "name": "Xeon_Ca",
+          "C": 75.99189746198185
+        }
+      },
+      "freq": {
+        "python_hottest_block_mean": {
+          "name": "Xeon_Ca",
+          "C": 99.35669136094891
+        },
+        "hotspot_hottest_block_mean": {
+          "name": "HBM3",
+          "C": 75.77000000000004
+        },
+        "atsim_hottest_block_mean": {
+          "name": "Xeon_Ca",
+          "C": 78.98354480878669
+        }
+      }
+    }
+  },
+  "note_temperature_columns": "三列都是块平均。每颗芯片先把自己盖住的格子求平均，再取最热的那颗。Python 用 64x64 芯粒层，一格 1.125 mm。HotSpot 的块温度本来就是第 0 层被该块盖住的格子的平均，grid_map_mode=avg。ATSim 是芯粒层厚度上先做柱平均，再对落在这颗芯片里的柱求平均。网格 2 mm。以前报告里的 Python 100.08/97.23/102.30 和 ATSim 79.73/78.03/80.62 是最热一格，不是这个数。"
+}

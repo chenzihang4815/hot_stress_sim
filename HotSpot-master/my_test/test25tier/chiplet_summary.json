@@ -1,0 +1,310 @@
+{
+  "chiplets": [
+    {
+      "tier_id": 0,
+      "position": {
+        "x": 3,
+        "y": 1
+      },
+      "type": "rram",
+      "area_mm2": 55.6101,
+      "width_mm": 7.4572199999999995,
+      "height_mm": 7.4572199999999995,
+      "power_uW": 1.61015e-07
+    },
+    {
+      "tier_id": 1,
+      "position": {
+        "x": 3,
+        "y": 2
+      },
+      "type": "sram",
+      "area_mm2": 18.2049,
+      "width_mm": 4.26672,
+      "height_mm": 4.26672,
+      "power_uW": 1.609902e-07
+    },
+    {
+      "tier_id": 2,
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "type": "sram",
+      "area_mm2": 18.2049,
+      "width_mm": 4.26672,
+      "height_mm": 4.26672,
+      "power_uW": 2.306573e-07
+    },
+    {
+      "tier_id": 3,
+      "position": {
+        "x": 3,
+        "y": 0
+      },
+      "type": "rram",
+      "area_mm2": 55.6531,
+      "width_mm": 7.4601,
+      "height_mm": 7.4601,
+      "power_uW": 3.24297e-07
+    },
+    {
+      "tier_id": 4,
+      "position": {
+        "x": 4,
+        "y": 0
+      },
+      "type": "rram",
+      "area_mm2": 55.6245,
+      "width_mm": 7.45818,
+      "height_mm": 7.45818,
+      "power_uW": 1.50797e-07
+    },
+    {
+      "tier_id": 5,
+      "position": {
+        "x": 4,
+        "y": 1
+      },
+      "type": "rram",
+      "area_mm2": 54.3379,
+      "width_mm": 7.37142,
+      "height_mm": 7.37142,
+      "power_uW": 3.33626e-07
+    },
+    {
+      "tier_id": 6,
+      "position": {
+        "x": 2,
+        "y": 2
+      },
+      "type": "rram",
+      "area_mm2": 54.9668,
+      "width_mm": 7.413959999999999,
+      "height_mm": 7.413959999999999,
+      "power_uW": 1.68579e-07
+    },
+    {
+      "tier_id": 7,
+      "position": {
+        "x": 1,
+        "y": 0
+      },
+      "type": "rram",
+      "area_mm2": 54.3162,
+      "width_mm": 7.36995,
+      "height_mm": 7.36995,
+      "power_uW": 3.37175e-07
+    },
+    {
+      "tier_id": 8,
+      "position": {
+        "x": 1,
+        "y": 1
+      },
+      "type": "rram",
+      "area_mm2": 54.3379,
+      "width_mm": 7.37142,
+      "height_mm": 7.37142,
+      "power_uW": 4.862e-07
+    },
+    {
+      "tier_id": 9,
+      "position": {
+        "x": 0,
+        "y": 1
+      },
+      "type": "rram",
+      "area_mm2": 54.3379,
+      "width_mm": 7.37142,
+      "height_mm": 7.37142,
+      "power_uW": 3.13074e-07
+    },
+    {
+      "tier_id": 10,
+      "position": {
+        "x": 0,
+        "y": 2
+      },
+      "type": "rram",
+      "area_mm2": 54.3379,
+      "width_mm": 7.37142,
+      "height_mm": 7.37142,
+      "power_uW": 4.79642e-07
+    },
+    {
+      "tier_id": 11,
+      "position": {
+        "x": 1,
+        "y": 2
+      },
+      "type": "rram",
+      "area_mm2": 54.3162,
+      "width_mm": 7.36995,
+      "height_mm": 7.36995,
+      "power_uW": 3.06742e-07
+    },
+    {
+      "tier_id": 12,
+      "position": {
+        "x": 2,
+        "y": 0
+      },
+      "type": "rram",
+      "area_mm2": 55.6531,
+      "width_mm": 7.4601,
+      "height_mm": 7.4601,
+      "power_uW": 4.78457e-07
+    },
+    {
+      "tier_id": 13,
+      "position": {
+        "x": 2,
+        "y": 1
+      },
+      "type": "rram",
+      "area_mm2": 54.3162,
+      "width_mm": 7.36995,
+      "height_mm": 7.36995,
+      "power_uW": 2.55184e-07
+    },
+    {
+      "tier_id": 14,
+      "position": {
+        "x": 4,
+        "y": 2
+      },
+      "type": "rram",
+      "area_mm2": 55.6531,
+      "width_mm": 7.4601,
+      "height_mm": 7.4601,
+      "power_uW": 4.7692e-07
+    },
+    {
+      "tier_id": 15,
+      "position": {
+        "x": 4,
+        "y": 3
+      },
+      "type": "rram",
+      "area_mm2": 54.3162,
+      "width_mm": 7.36995,
+      "height_mm": 7.36995,
+      "power_uW": 2.56467e-07
+    },
+    {
+      "tier_id": 16,
+      "position": {
+        "x": 3,
+        "y": 3
+      },
+      "type": "rram",
+      "area_mm2": 55.6531,
+      "width_mm": 7.4601,
+      "height_mm": 7.4601,
+      "power_uW": 4.77359e-07
+    },
+    {
+      "tier_id": 17,
+      "position": {
+        "x": 2,
+        "y": 3
+      },
+      "type": "rram",
+      "area_mm2": 54.9738,
+      "width_mm": 7.414429999999999,
+      "height_mm": 7.414429999999999,
+      "power_uW": 2.61174e-07
+    },
+    {
+      "tier_id": 18,
+      "position": {
+        "x": 1,
+        "y": 3
+      },
+      "type": "rram",
+      "area_mm2": 55.6531,
+      "width_mm": 7.4601,
+      "height_mm": 7.4601,
+      "power_uW": 4.74169e-07
+    },
+    {
+      "tier_id": 19,
+      "position": {
+        "x": 0,
+        "y": 3
+      },
+      "type": "rram",
+      "area_mm2": 55.6101,
+      "width_mm": 7.4572199999999995,
+      "height_mm": 7.4572199999999995,
+      "power_uW": 1.58402e-07
+    },
+    {
+      "tier_id": 20,
+      "position": {
+        "x": 0,
+        "y": 4
+      },
+      "type": "rram",
+      "area_mm2": 54.3379,
+      "width_mm": 7.37142,
+      "height_mm": 7.37142,
+      "power_uW": 3.65445e-07
+    },
+    {
+      "tier_id": 21,
+      "position": {
+        "x": 1,
+        "y": 4
+      },
+      "type": "rram",
+      "area_mm2": 55.6101,
+      "width_mm": 7.4572199999999995,
+      "height_mm": 7.4572199999999995,
+      "power_uW": 1.50768e-07
+    },
+    {
+      "tier_id": 22,
+      "position": {
+        "x": 2,
+        "y": 4
+      },
+      "type": "rram",
+      "area_mm2": 55.6531,
+      "width_mm": 7.4601,
+      "height_mm": 7.4601,
+      "power_uW": 4.81728e-07
+    },
+    {
+      "tier_id": 23,
+      "position": {
+        "x": 3,
+        "y": 4
+      },
+      "type": "rram",
+      "area_mm2": 55.6241,
+      "width_mm": 7.45816,
+      "height_mm": 7.45816,
+      "power_uW": 1.49598e-07
+    },
+    {
+      "tier_id": 24,
+      "position": {
+        "x": 4,
+        "y": 4
+      },
+      "type": "rram",
+      "area_mm2": 55.6531,
+      "width_mm": 7.4601,
+      "height_mm": 7.4601,
+      "power_uW": 3.2481e-07
+    }
+  ],
+  "meta": {
+    "batchsize": 1,
+    "way": 6,
+    "sram_top_k": 4,
+    "total_chiplets": 25
+  }
+}

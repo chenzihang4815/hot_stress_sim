@@ -1,0 +1,12 @@
+{
+  "tag": "fill_organic",
+  "fill_material": "organic",
+  "vm_max_MPa": 92.24825330146857,
+  "vm_name": "Penryn",
+  "cpu_mean_MPa": 60.5893431343571,
+  "cpu_max_MPa": 92.24825330146857,
+  "cpu_n": 36,
+  "atsim_Tmax_C": 74.66861921050753,
+  "elapsed_s": 10.983309268951416,
+  "ndof": 31452
+}

@@ -1,0 +1,140 @@
+{
+  "die_cell_max_C": 93.20585537601875,
+  "die_cell_min_C": 63.34363914328759,
+  "grad_max_K_per_mm": 4.120977034916497,
+  "vm_normal_chip_max_MPa": 144.79187821057133,
+  "vm_normal_chip_name": "Xeon_Cb",
+  "vm_package_max_not_the_gate_MPa": 205.91937625469225,
+  "per_chip_T": [
+    {
+      "name": "Xeon_Ca",
+      "T_column_max_C": 82.39274571106972,
+      "T_column_mean_C": 77.90696711665618
+    },
+    {
+      "name": "GPU_3070_Ga",
+      "T_column_max_C": 91.55135797818764,
+      "T_column_mean_C": 88.0239880750116
+    },
+    {
+      "name": "GPU_3070_Gb",
+      "T_column_max_C": 93.11396316023269,
+      "T_column_mean_C": 89.00031794019866
+    },
+    {
+      "name": "CIM_jia_m64",
+      "T_column_max_C": 71.55968853905927,
+      "T_column_mean_C": 66.8695979860221
+    },
+    {
+      "name": "Xeon_Cb",
+      "T_column_max_C": 81.18215424248177,
+      "T_column_mean_C": 77.45484431931746
+    },
+    {
+      "name": "HBM3",
+      "T_column_max_C": 90.24355030447379,
+      "T_column_mean_C": 87.69136460111284
+    },
+    {
+      "name": "CIM_colonnade_m512",
+      "T_column_max_C": 70.49211498827606,
+      "T_column_mean_C": 67.59209876271225
+    },
+    {
+      "name": "CIM_colonnade_m256",
+      "T_column_max_C": 66.7335829851317,
+      "T_column_mean_C": 65.57701163367999
+    }
+  ],
+  "chip_interiors": [
+    {
+      "name": "Xeon_Ca",
+      "area_mm2": 425.25000000000006,
+      "normal": true,
+      "n_cells": 221,
+      "vm_max_MPa": 135.96346836107205,
+      "vm_p95_MPa": 92.63483372386088,
+      "vm_mean_MPa": 57.772917452910285,
+      "gate_chip": true
+    },
+    {
+      "name": "GPU_3070_Ga",
+      "area_mm2": 389.8125,
+      "normal": true,
+      "n_cells": 153,
+      "vm_max_MPa": 139.55359115722786,
+      "vm_p95_MPa": 107.71714914105242,
+      "vm_mean_MPa": 48.5051395444777,
+      "gate_chip": true
+    },
+    {
+      "name": "GPU_3070_Gb",
+      "area_mm2": 389.8125,
+      "normal": true,
+      "n_cells": 150,
+      "vm_max_MPa": 63.44328213360483,
+      "vm_p95_MPa": 47.673960445418764,
+      "vm_mean_MPa": 22.927001477237674,
+      "gate_chip": true
+    },
+    {
+      "name": "CIM_jia_m64",
+      "area_mm2": 273.375,
+      "normal": true,
+      "n_cells": 84,
+      "vm_max_MPa": 118.79381454420185,
+      "vm_p95_MPa": 89.26894424036213,
+      "vm_mean_MPa": 58.36057104368941,
+      "gate_chip": true
+    },
+    {
+      "name": "Xeon_Cb",
+      "area_mm2": 425.25000000000006,
+      "normal": true,
+      "n_cells": 187,
+      "vm_max_MPa": 144.79187821057133,
+      "vm_p95_MPa": 104.83491295472821,
+      "vm_mean_MPa": 59.01709953283158,
+      "gate_chip": true
+    },
+    {
+      "name": "HBM3",
+      "area_mm2": 121.50000000000001,
+      "normal": true,
+      "n_cells": 45,
+      "vm_max_MPa": 85.79927253081644,
+      "vm_p95_MPa": 65.89838768418612,
+      "vm_mean_MPa": 39.296369030053,
+      "gate_chip": false
+    },
+    {
+      "name": "CIM_colonnade_m512",
+      "area_mm2": 121.50000000000001,
+      "normal": true,
+      "n_cells": 40,
+      "vm_max_MPa": 95.95596948545897,
+      "vm_p95_MPa": 86.85110726809417,
+      "vm_mean_MPa": 60.86547585072403,
+      "gate_chip": true
+    },
+    {
+      "name": "CIM_colonnade_m256",
+      "area_mm2": 60.75000000000001,
+      "normal": true,
+      "n_cells": 20,
+      "vm_max_MPa": 132.0111253407395,
+      "vm_p95_MPa": 127.60703323189696,
+      "vm_mean_MPa": 94.26501075001961,
+      "gate_chip": true
+    }
+  ],
+  "heat_s": 7.1300084590911865,
+  "elast_s": 46.44940233230591,
+  "grid": [
+    47,
+    49,
+    16
+  ],
+  "note": "门槛用 die_cell_max_C 和 vm_normal_chip_max_MPa。vm_package_max 是整包最大，含边缘奇点，不是门槛。HBM 不进正常芯片。网格是代理的 2 mm / 8 mm，不是对齐检查用的 1.125 mm。梯度是芯粒层柱平均温度的相邻差分，单位 K/mm。"
+}

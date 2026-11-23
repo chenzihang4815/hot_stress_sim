@@ -1,0 +1,928 @@
+{
+  "schemes": [
+    {
+      "id": "pkg_5penryn_3gpu_5cim",
+      "title": "5×Penryn + 3 GPU + 5 CIM",
+      "why": "五颗都换成 91 mm² Penryn",
+      "n_chiplets": 13,
+      "kinds": {
+        "CPU": 5,
+        "GPU": 3,
+        "CIM": 5
+      },
+      "power_total_W": 501.69389140967183,
+      "area_total_mm2": 1768.3579221235918,
+      "cpu_area_mm2": 455.674,
+      "cpu_power_W": 296.207,
+      "outline_mm2": 3115.7125318406675,
+      "deadspace_ratio": 0.43243867845571105,
+      "HotSpot_Tmax_C": 108.09000000000003,
+      "HotSpot_Tmin_C": 88.49000000000001,
+      "layout_algorithm": "lbfgs",
+      "layout_seed": 13,
+      "layout": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/bigcpu_freq_schemes/pkg_5penryn_3gpu_5cim/layout.json",
+      "heatmap": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/bigcpu_freq_schemes/pkg_5penryn_3gpu_5cim/pkg_5penryn_3gpu_5cim_hotspot.png",
+      "atsim_pitch_die_mm": 2.5,
+      "atsim_pitch_coarse_mm": 10.0,
+      "chips": [
+        {
+          "name": "CPU_matmul",
+          "kind": "CPU",
+          "area_mm2": 91.1348,
+          "power_W": 59.2414,
+          "notes": "McPAT official Penryn；P=RuntimeDynamic(47.9315)+Leakage(11.3099)"
+        },
+        {
+          "name": "CPU_threads",
+          "kind": "CPU",
+          "area_mm2": 91.1348,
+          "power_W": 59.2414,
+          "notes": "McPAT official Penryn；P=RuntimeDynamic(47.9315)+Leakage(11.3099)"
+        },
+        {
+          "name": "CPU_armL2",
+          "kind": "CPU",
+          "area_mm2": 91.1348,
+          "power_W": 59.2414,
+          "notes": "McPAT official Penryn；P=RuntimeDynamic(47.9315)+Leakage(11.3099)"
+        },
+        {
+          "name": "CPU_atomic",
+          "kind": "CPU",
+          "area_mm2": 91.1348,
+          "power_W": 59.2414,
+          "notes": "McPAT official Penryn；P=RuntimeDynamic(47.9315)+Leakage(11.3099)"
+        },
+        {
+          "name": "CPU_starter",
+          "kind": "CPU",
+          "area_mm2": 91.1348,
+          "power_W": 59.2414,
+          "notes": "McPAT official Penryn；P=RuntimeDynamic(47.9315)+Leakage(11.3099)"
+        },
+        {
+          "name": "GPU_3070",
+          "kind": "GPU",
+          "area_mm2": 392.0,
+          "power_W": 66.8878,
+          "notes": "RTX3070 backprop；P=66.89W 文献面积 392.0 mm²"
+        },
+        {
+          "name": "GPU_2060S",
+          "kind": "GPU",
+          "area_mm2": 445.0,
+          "power_W": 71.1194,
+          "notes": "RTX2060S backprop；P=71.12W 文献面积 445.0 mm²"
+        },
+        {
+          "name": "GPU_TITANX",
+          "kind": "GPU",
+          "area_mm2": 471.0,
+          "power_W": 67.4063,
+          "notes": "TitanX backprop；P=67.41W 文献面积 471.0 mm²"
+        },
+        {
+          "name": "CIM_jia",
+          "kind": "CIM",
+          "area_mm2": 4.281226257942074,
+          "power_W": 0.0027731351494352146,
+          "notes": "AccelForge jia_jssc_2020+builtin；P=energy/latency=0.00277314 W"
+        },
+        {
+          "name": "CIM_colonnade",
+          "kind": "CIM",
+          "area_mm2": 0.231359891352,
+          "power_W": 0.04119819389066705,
+          "notes": "AccelForge colonnade_jssc_2021+builtin；P=energy/latency=0.0411982 W"
+        },
+        {
+          "name": "CIM_wang",
+          "kind": "CIM",
+          "area_mm2": 0.12203959822869019,
+          "power_W": 0.025999983362139024,
+          "notes": "AccelForge wang_vlsi_2022+builtin；P=energy/latency=0.026 W"
+        },
+        {
+          "name": "CIM_basic",
+          "kind": "CIM",
+          "area_mm2": 0.04671951155777578,
+          "power_W": 0.0026253290280376118,
+          "notes": "功率=energy_J/latency_s；面积=各组件 area_m2 之和（MainMemory=0 不占面积）"
+        },
+        {
+          "name": "CIM_sinangil",
+          "kind": "CIM",
+          "area_mm2": 0.0025768645113990983,
+          "power_W": 0.0007947682416197758,
+          "notes": "AccelForge sinangil_jssc_2021+builtin；P=energy/latency=0.000794768 W"
+        }
+      ]
+    },
+    {
+      "id": "pkg_5t2_3gpu_5cim",
+      "title": "5×Niagara2 + 3 GPU + 5 CIM",
+      "why": "五颗都换成 274 mm² Niagara2/T2",
+      "n_chiplets": 13,
+      "kinds": {
+        "CPU": 5,
+        "GPU": 3,
+        "CIM": 5
+      },
+      "power_total_W": 550.4708914096719,
+      "area_total_mm2": 2680.298922123592,
+      "cpu_area_mm2": 1367.6150000000002,
+      "cpu_power_W": 344.98400000000004,
+      "outline_mm2": 4498.233595385944,
+      "deadspace_ratio": 0.40414412340148265,
+      "HotSpot_Tmax_C": 110.54000000000002,
+      "HotSpot_Tmin_C": 92.21000000000004,
+      "layout_algorithm": "lbfgs",
+      "layout_seed": 13,
+      "layout": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/bigcpu_freq_schemes/pkg_5t2_3gpu_5cim/layout.json",
+      "heatmap": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/bigcpu_freq_schemes/pkg_5t2_3gpu_5cim/pkg_5t2_3gpu_5cim_hotspot.png",
+      "atsim_pitch_die_mm": 2.5,
+      "atsim_pitch_coarse_mm": 10.0,
+      "chips": [
+        {
+          "name": "CPU_matmul",
+          "kind": "CPU",
+          "area_mm2": 273.523,
+          "power_W": 68.99680000000001,
+          "notes": "McPAT official Niagara2/T2；P=RuntimeDynamic(50.421)+Leakage(18.5758)"
+        },
+        {
+          "name": "CPU_threads",
+          "kind": "CPU",
+          "area_mm2": 273.523,
+          "power_W": 68.99680000000001,
+          "notes": "McPAT official Niagara2/T2；P=RuntimeDynamic(50.421)+Leakage(18.5758)"
+        },
+        {
+          "name": "CPU_armL2",
+          "kind": "CPU",
+          "area_mm2": 273.523,
+          "power_W": 68.99680000000001,
+          "notes": "McPAT official Niagara2/T2；P=RuntimeDynamic(50.421)+Leakage(18.5758)"
+        },
+        {
+          "name": "CPU_atomic",
+          "kind": "CPU",
+          "area_mm2": 273.523,
+          "power_W": 68.99680000000001,
+          "notes": "McPAT official Niagara2/T2；P=RuntimeDynamic(50.421)+Leakage(18.5758)"
+        },
+        {
+          "name": "CPU_starter",
+          "kind": "CPU",
+          "area_mm2": 273.523,
+          "power_W": 68.99680000000001,
+          "notes": "McPAT official Niagara2/T2；P=RuntimeDynamic(50.421)+Leakage(18.5758)"
+        },
+        {
+          "name": "GPU_3070",
+          "kind": "GPU",
+          "area_mm2": 392.0,
+          "power_W": 66.8878,
+          "notes": "RTX3070 backprop；P=66.89W 文献面积 392.0 mm²"
+        },
+        {
+          "name": "GPU_2060S",
+          "kind": "GPU",
+          "area_mm2": 445.0,
+          "power_W": 71.1194,
+          "notes": "RTX2060S backprop；P=71.12W 文献面积 445.0 mm²"
+        },
+        {
+          "name": "GPU_TITANX",
+          "kind": "GPU",
+          "area_mm2": 471.0,
+          "power_W": 67.4063,
+          "notes": "TitanX backprop；P=67.41W 文献面积 471.0 mm²"
+        },
+        {
+          "name": "CIM_jia",
+          "kind": "CIM",
+          "area_mm2": 4.281226257942074,
+          "power_W": 0.0027731351494352146,
+          "notes": "AccelForge jia_jssc_2020+builtin；P=energy/latency=0.00277314 W"
+        },
+        {
+          "name": "CIM_colonnade",
+          "kind": "CIM",
+          "area_mm2": 0.231359891352,
+          "power_W": 0.04119819389066705,
+          "notes": "AccelForge colonnade_jssc_2021+builtin；P=energy/latency=0.0411982 W"
+        },
+        {
+          "name": "CIM_wang",
+          "kind": "CIM",
+          "area_mm2": 0.12203959822869019,
+          "power_W": 0.025999983362139024,
+          "notes": "AccelForge wang_vlsi_2022+builtin；P=energy/latency=0.026 W"
+        },
+        {
+          "name": "CIM_basic",
+          "kind": "CIM",
+          "area_mm2": 0.04671951155777578,
+          "power_W": 0.0026253290280376118,
+          "notes": "功率=energy_J/latency_s；面积=各组件 area_m2 之和（MainMemory=0 不占面积）"
+        },
+        {
+          "name": "CIM_sinangil",
+          "kind": "CIM",
+          "area_mm2": 0.0025768645113990983,
+          "power_W": 0.0007947682416197758,
+          "notes": "AccelForge sinangil_jssc_2021+builtin；P=energy/latency=0.000794768 W"
+        }
+      ]
+    },
+    {
+      "id": "pkg_2penryn_2t2_1xeon_3gpu_5cim",
+      "title": "2×Penryn + 2×T2 + 1×Xeon + 3 GPU + 5 CIM",
+      "why": "用户点的混搭：两颗91、两颗270、一颗420",
+      "n_chiplets": 13,
+      "kinds": {
+        "CPU": 5,
+        "GPU": 3,
+        "CIM": 5
+      },
+      "power_total_W": 565.9092914096719,
+      "area_total_mm2": 2463.675522123592,
+      "cpu_area_mm2": 1150.9916,
+      "cpu_power_W": 360.42240000000004,
+      "outline_mm2": 3771.7116404995627,
+      "deadspace_ratio": 0.34680172904276463,
+      "HotSpot_Tmax_C": 114.14000000000004,
+      "HotSpot_Tmin_C": 95.86000000000001,
+      "layout_algorithm": "lbfgs",
+      "layout_seed": 13,
+      "layout": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/bigcpu_freq_schemes/pkg_2penryn_2t2_1xeon_3gpu_5cim/layout.json",
+      "heatmap": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/bigcpu_freq_schemes/pkg_2penryn_2t2_1xeon_3gpu_5cim/pkg_2penryn_2t2_1xeon_3gpu_5cim_hotspot.png",
+      "atsim_pitch_die_mm": 2.5,
+      "atsim_pitch_coarse_mm": 10.0,
+      "chips": [
+        {
+          "name": "CPU_matmul",
+          "kind": "CPU",
+          "area_mm2": 91.1348,
+          "power_W": 59.2414,
+          "notes": "Penryn 91 mm²；P=RuntimeDynamic(47.9315)+Leakage(11.3099)"
+        },
+        {
+          "name": "CPU_threads",
+          "kind": "CPU",
+          "area_mm2": 91.1348,
+          "power_W": 59.2414,
+          "notes": "Penryn 91 mm²；P=RuntimeDynamic(47.9315)+Leakage(11.3099)"
+        },
+        {
+          "name": "CPU_armL2",
+          "kind": "CPU",
+          "area_mm2": 273.523,
+          "power_W": 68.99680000000001,
+          "notes": "Niagara2 274 mm²；P=RuntimeDynamic(50.421)+Leakage(18.5758)"
+        },
+        {
+          "name": "CPU_atomic",
+          "kind": "CPU",
+          "area_mm2": 273.523,
+          "power_W": 68.99680000000001,
+          "notes": "Niagara2 274 mm²；P=RuntimeDynamic(50.421)+Leakage(18.5758)"
+        },
+        {
+          "name": "CPU_starter",
+          "kind": "CPU",
+          "area_mm2": 421.676,
+          "power_W": 103.946,
+          "notes": "Xeon 422 mm²；P=RuntimeDynamic(66.8485)+Leakage(37.0975)"
+        },
+        {
+          "name": "GPU_3070",
+          "kind": "GPU",
+          "area_mm2": 392.0,
+          "power_W": 66.8878,
+          "notes": "RTX3070 backprop；P=66.89W 文献面积 392.0 mm²"
+        },
+        {
+          "name": "GPU_2060S",
+          "kind": "GPU",
+          "area_mm2": 445.0,
+          "power_W": 71.1194,
+          "notes": "RTX2060S backprop；P=71.12W 文献面积 445.0 mm²"
+        },
+        {
+          "name": "GPU_TITANX",
+          "kind": "GPU",
+          "area_mm2": 471.0,
+          "power_W": 67.4063,
+          "notes": "TitanX backprop；P=67.41W 文献面积 471.0 mm²"
+        },
+        {
+          "name": "CIM_jia",
+          "kind": "CIM",
+          "area_mm2": 4.281226257942074,
+          "power_W": 0.0027731351494352146,
+          "notes": "AccelForge jia_jssc_2020+builtin；P=energy/latency=0.00277314 W"
+        },
+        {
+          "name": "CIM_colonnade",
+          "kind": "CIM",
+          "area_mm2": 0.231359891352,
+          "power_W": 0.04119819389066705,
+          "notes": "AccelForge colonnade_jssc_2021+builtin；P=energy/latency=0.0411982 W"
+        },
+        {
+          "name": "CIM_wang",
+          "kind": "CIM",
+          "area_mm2": 0.12203959822869019,
+          "power_W": 0.025999983362139024,
+          "notes": "AccelForge wang_vlsi_2022+builtin；P=energy/latency=0.026 W"
+        },
+        {
+          "name": "CIM_basic",
+          "kind": "CIM",
+          "area_mm2": 0.04671951155777578,
+          "power_W": 0.0026253290280376118,
+          "notes": "功率=energy_J/latency_s；面积=各组件 area_m2 之和（MainMemory=0 不占面积）"
+        },
+        {
+          "name": "CIM_sinangil",
+          "kind": "CIM",
+          "area_mm2": 0.0025768645113990983,
+          "power_W": 0.0007947682416197758,
+          "notes": "AccelForge sinangil_jssc_2021+builtin；P=energy/latency=0.000794768 W"
+        }
+      ]
+    },
+    {
+      "id": "pkg_5xeon_3gpu_5cim",
+      "title": "5 Xeon + 3 GPU + 5 CIM（13 颗，CPU 全换大核）",
+      "why": "用户要求 5 颗 CPU 全部换成面积能和 GPU 比的硬件；用 McPAT 官方 Xeon 模板，不再用 gem5 TimingSimple",
+      "n_chiplets": 13,
+      "kinds": {
+        "CPU": 5,
+        "GPU": 3,
+        "CIM": 5
+      },
+      "cpu_model": "McPAT official Xeon.xml (2-core O3 + L3, 65 nm)",
+      "cpu_area_mm2": 421.676,
+      "cpu_power_W": 103.946,
+      "power_total_W": 725.2168914096719,
+      "area_total_mm2": 3421.063922123592,
+      "outline_mm2": 5884.629721136005,
+      "deadspace_ratio": 0.41864414852882725,
+      "overlap_m2": 0.0,
+      "HotSpot_Tmax_C": 128.74,
+      "HotSpot_Tmin_C": 108.60000000000002,
+      "layout_algorithm": "lbfgs",
+      "layout_seed": 13,
+      "heatmap": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/pkg_5xeon_3gpu_5cim/pkg_5xeon_3gpu_5cim_hotspot.png",
+      "atsim_pitch_die_mm": 2.5,
+      "atsim_pitch_coarse_mm": 10.0,
+      "atsim_nz": {
+        "nz_die": 2,
+        "nz_spreader": 2,
+        "nz_sink": 3,
+        "nz_tim": 1,
+        "nz_substrate": 2,
+        "nz_interposer": 2
+      },
+      "layout": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/pkg_5xeon_3gpu_5cim/layout.json",
+      "chips": [
+        {
+          "name": "CPU_matmul",
+          "kind": "CPU",
+          "area_mm2": 421.676,
+          "power_W": 103.946,
+          "W_per_cm2": 24.650679668750417,
+          "notes": "原 matmul 槽位，现为 McPAT 官方 Xeon（2核 O3+L3，65 nm）；P=RuntimeDynamic(66.8485)+Leakage(37.0975)"
+        },
+        {
+          "name": "CPU_threads",
+          "kind": "CPU",
+          "area_mm2": 421.676,
+          "power_W": 103.946,
+          "W_per_cm2": 24.650679668750417,
+          "notes": "原 threads 槽位，现为 McPAT 官方 Xeon；P=RuntimeDynamic(66.8485)+Leakage(37.0975)"
+        },
+        {
+          "name": "CPU_armL2",
+          "kind": "CPU",
+          "area_mm2": 421.676,
+          "power_W": 103.946,
+          "W_per_cm2": 24.650679668750417,
+          "notes": "原 ARM L2 槽位，现为 McPAT 官方 Xeon；P=RuntimeDynamic(66.8485)+Leakage(37.0975)"
+        },
+        {
+          "name": "CPU_atomic",
+          "kind": "CPU",
+          "area_mm2": 421.676,
+          "power_W": 103.946,
+          "W_per_cm2": 24.650679668750417,
+          "notes": "原 atomic 槽位，现为 McPAT 官方 Xeon；P=RuntimeDynamic(66.8485)+Leakage(37.0975)"
+        },
+        {
+          "name": "CPU_starter",
+          "kind": "CPU",
+          "area_mm2": 421.676,
+          "power_W": 103.946,
+          "W_per_cm2": 24.650679668750417,
+          "notes": "原 starter 槽位，现为 McPAT 官方 Xeon；P=RuntimeDynamic(66.8485)+Leakage(37.0975)"
+        },
+        {
+          "name": "GPU_3070",
+          "kind": "GPU",
+          "area_mm2": 392.0,
+          "power_W": 66.8878,
+          "W_per_cm2": 17.063214285714285,
+          "notes": "RTX3070 backprop；P=66.89W 文献面积 392.0 mm²"
+        },
+        {
+          "name": "GPU_2060S",
+          "kind": "GPU",
+          "area_mm2": 445.0,
+          "power_W": 71.1194,
+          "W_per_cm2": 15.981887640449438,
+          "notes": "RTX2060S backprop；P=71.12W 文献面积 445.0 mm²"
+        },
+        {
+          "name": "GPU_TITANX",
+          "kind": "GPU",
+          "area_mm2": 471.0,
+          "power_W": 67.4063,
+          "W_per_cm2": 14.31131634819533,
+          "notes": "TitanX backprop；P=67.41W 文献面积 471.0 mm²"
+        },
+        {
+          "name": "CIM_jia",
+          "kind": "CIM",
+          "area_mm2": 4.281226257942074,
+          "power_W": 0.0027731351494352146,
+          "W_per_cm2": 0.06477431890666349,
+          "notes": "AccelForge jia_jssc_2020+builtin；P=energy/latency=0.00277314 W"
+        },
+        {
+          "name": "CIM_colonnade",
+          "kind": "CIM",
+          "area_mm2": 0.231359891352,
+          "power_W": 0.04119819389066705,
+          "W_per_cm2": 17.80697321818262,
+          "notes": "AccelForge colonnade_jssc_2021+builtin；P=energy/latency=0.0411982 W"
+        },
+        {
+          "name": "CIM_wang",
+          "kind": "CIM",
+          "area_mm2": 0.12203959822869019,
+          "power_W": 0.025999983362139024,
+          "W_per_cm2": 21.304546835214598,
+          "notes": "AccelForge wang_vlsi_2022+builtin；P=energy/latency=0.026 W"
+        },
+        {
+          "name": "CIM_basic",
+          "kind": "CIM",
+          "area_mm2": 0.04671951155777578,
+          "power_W": 0.0026253290280376118,
+          "W_per_cm2": 5.619341770709639,
+          "notes": "功率=energy_J/latency_s；面积=各组件 area_m2 之和（MainMemory=0 不占面积）"
+        },
+        {
+          "name": "CIM_sinangil",
+          "kind": "CIM",
+          "area_mm2": 0.0025768645113990983,
+          "power_W": 0.0007947682416197758,
+          "W_per_cm2": 30.84245361384016,
+          "notes": "AccelForge sinangil_jssc_2021+builtin；P=energy/latency=0.000794768 W"
+        }
+      ]
+    }
+  ],
+  "freq": {
+    "pkg_5penryn_3gpu_5cim": [
+      {
+        "s": 0.5,
+        "cpu_dyn_W": 119.82875,
+        "cpu_leak_W": 56.5495,
+        "cpu_tot_W": 176.37825,
+        "cpu_dyn_over_leak": 2.1190063572622213,
+        "cpu_leak_frac": 0.3206149284279666,
+        "gpu_dyn_W": 16.015849999999997,
+        "gpu_leak_W": 76.40620000000001,
+        "pkg_dyn_W": 135.84459999999999,
+        "pkg_leak_W": 132.9557,
+        "pkg_tot_W": 365.8492914096719,
+        "pkg_dyn_over_leak": 1.0217282899492084,
+        "pkg_leak_frac": 0.3634165847026842,
+        "Tmax_C": 90.41000000000003,
+        "in_window": false
+      },
+      {
+        "s": 0.75,
+        "cpu_dyn_W": 179.743125,
+        "cpu_leak_W": 56.5495,
+        "cpu_tot_W": 236.292625,
+        "cpu_dyn_over_leak": 3.178509535893332,
+        "cpu_leak_frac": 0.23931978410244503,
+        "gpu_dyn_W": 24.023774999999993,
+        "gpu_leak_W": 76.40620000000001,
+        "pkg_dyn_W": 203.7669,
+        "pkg_leak_W": 132.9557,
+        "pkg_tot_W": 433.77159140967194,
+        "pkg_dyn_over_leak": 1.532592434923813,
+        "pkg_leak_frac": 0.3065108518700366,
+        "Tmax_C": 99.25,
+        "in_window": false
+      },
+      {
+        "s": 1.0,
+        "cpu_dyn_W": 239.6575,
+        "cpu_leak_W": 56.5495,
+        "cpu_tot_W": 296.207,
+        "cpu_dyn_over_leak": 4.238012714524443,
+        "cpu_leak_frac": 0.19091209863372574,
+        "gpu_dyn_W": 32.031699999999994,
+        "gpu_leak_W": 76.40620000000001,
+        "pkg_dyn_W": 271.68919999999997,
+        "pkg_leak_W": 132.9557,
+        "pkg_tot_W": 501.6938914096719,
+        "pkg_dyn_over_leak": 2.043456579898417,
+        "pkg_leak_frac": 0.2650135915077973,
+        "Tmax_C": 108.09000000000003,
+        "in_window": false
+      },
+      {
+        "s": 1.25,
+        "cpu_dyn_W": 299.571875,
+        "cpu_leak_W": 56.5495,
+        "cpu_tot_W": 356.121375,
+        "cpu_dyn_over_leak": 5.297515893155554,
+        "cpu_leak_frac": 0.15879277114438864,
+        "gpu_dyn_W": 40.039624999999994,
+        "gpu_leak_W": 76.40620000000001,
+        "pkg_dyn_W": 339.6115,
+        "pkg_leak_W": 132.9557,
+        "pkg_tot_W": 569.6161914096718,
+        "pkg_dyn_over_leak": 2.5543207248730213,
+        "pkg_leak_frac": 0.23341278215944772,
+        "Tmax_C": 116.93,
+        "in_window": false
+      },
+      {
+        "s": 1.5,
+        "cpu_dyn_W": 359.48625,
+        "cpu_leak_W": 56.5495,
+        "cpu_tot_W": 416.03575,
+        "cpu_dyn_over_leak": 6.357019071786664,
+        "cpu_leak_frac": 0.13592461705514491,
+        "gpu_dyn_W": 48.04754999999999,
+        "gpu_leak_W": 76.40620000000001,
+        "pkg_dyn_W": 407.5338,
+        "pkg_leak_W": 132.9557,
+        "pkg_tot_W": 637.5384914096719,
+        "pkg_dyn_over_leak": 3.065184869847626,
+        "pkg_leak_frac": 0.20854536908982463,
+        "Tmax_C": 125.77000000000004,
+        "in_window": false
+      },
+      {
+        "s": 2.0,
+        "cpu_dyn_W": 479.315,
+        "cpu_leak_W": 56.5495,
+        "cpu_tot_W": 535.8645,
+        "cpu_dyn_over_leak": 8.476025429048885,
+        "cpu_leak_frac": 0.10552947620153975,
+        "gpu_dyn_W": 64.06339999999999,
+        "gpu_leak_W": 76.40620000000001,
+        "pkg_dyn_W": 543.3783999999999,
+        "pkg_leak_W": 132.9557,
+        "pkg_tot_W": 773.3830914096718,
+        "pkg_dyn_over_leak": 4.086913159796834,
+        "pkg_leak_frac": 0.17191441276231822,
+        "Tmax_C": 143.44,
+        "in_window": false
+      }
+    ],
+    "pkg_5t2_3gpu_5cim": [
+      {
+        "s": 0.5,
+        "cpu_dyn_W": 126.0525,
+        "cpu_leak_W": 92.879,
+        "cpu_tot_W": 218.9315,
+        "cpu_dyn_over_leak": 1.3571690048342466,
+        "cpu_leak_frac": 0.4242377181903929,
+        "gpu_dyn_W": 16.015849999999997,
+        "gpu_leak_W": 76.40620000000001,
+        "pkg_dyn_W": 142.06834999999998,
+        "pkg_leak_W": 169.28520000000003,
+        "pkg_tot_W": 408.4025414096719,
+        "pkg_dyn_over_leak": 0.8392248702190147,
+        "pkg_leak_frac": 0.4145057457666226,
+        "Tmax_C": 93.68,
+        "in_window": false
+      },
+      {
+        "s": 0.75,
+        "cpu_dyn_W": 189.07875,
+        "cpu_leak_W": 92.879,
+        "cpu_tot_W": 281.95775000000003,
+        "cpu_dyn_over_leak": 2.03575350725137,
+        "cpu_leak_frac": 0.32940750874909447,
+        "gpu_dyn_W": 24.023774999999993,
+        "gpu_leak_W": 76.40620000000001,
+        "pkg_dyn_W": 213.102525,
+        "pkg_leak_W": 169.28520000000003,
+        "pkg_tot_W": 479.43671640967193,
+        "pkg_dyn_over_leak": 1.2588373053285224,
+        "pkg_leak_frac": 0.3530918559340128,
+        "Tmax_C": 102.11000000000001,
+        "in_window": false
+      },
+      {
+        "s": 1.0,
+        "cpu_dyn_W": 252.105,
+        "cpu_leak_W": 92.879,
+        "cpu_tot_W": 344.984,
+        "cpu_dyn_over_leak": 2.7143380096684933,
+        "cpu_leak_frac": 0.2692269786424878,
+        "gpu_dyn_W": 32.031699999999994,
+        "gpu_leak_W": 76.40620000000001,
+        "pkg_dyn_W": 284.13669999999996,
+        "pkg_leak_W": 169.28520000000003,
+        "pkg_tot_W": 550.4708914096719,
+        "pkg_dyn_over_leak": 1.6784497404380294,
+        "pkg_leak_frac": 0.307527977667423,
+        "Tmax_C": 110.54000000000002,
+        "in_window": false
+      },
+      {
+        "s": 1.25,
+        "cpu_dyn_W": 315.13124999999997,
+        "cpu_leak_W": 92.879,
+        "cpu_tot_W": 408.01025,
+        "cpu_dyn_over_leak": 3.392922512085616,
+        "cpu_leak_frac": 0.22763888897399026,
+        "gpu_dyn_W": 40.039624999999994,
+        "gpu_leak_W": 76.40620000000001,
+        "pkg_dyn_W": 355.17087499999997,
+        "pkg_leak_W": 169.28520000000003,
+        "pkg_tot_W": 621.5050664096719,
+        "pkg_dyn_over_leak": 2.098062175547537,
+        "pkg_leak_frac": 0.27237943686916594,
+        "Tmax_C": 118.97000000000003,
+        "in_window": false
+      },
+      {
+        "s": 1.5,
+        "cpu_dyn_W": 378.1575,
+        "cpu_leak_W": 92.879,
+        "cpu_tot_W": 471.03650000000005,
+        "cpu_dyn_over_leak": 4.07150701450274,
+        "cpu_leak_frac": 0.19718004867987937,
+        "gpu_dyn_W": 48.04754999999999,
+        "gpu_leak_W": 76.40620000000001,
+        "pkg_dyn_W": 426.20505,
+        "pkg_leak_W": 169.28520000000003,
+        "pkg_tot_W": 692.539241409672,
+        "pkg_dyn_over_leak": 2.517674610657045,
+        "pkg_leak_frac": 0.24444131087130597,
+        "Tmax_C": 127.39000000000004,
+        "in_window": false
+      },
+      {
+        "s": 2.0,
+        "cpu_dyn_W": 504.21,
+        "cpu_leak_W": 92.879,
+        "cpu_tot_W": 597.0889999999999,
+        "cpu_dyn_over_leak": 5.4286760193369865,
+        "cpu_leak_frac": 0.15555302475845312,
+        "gpu_dyn_W": 64.06339999999999,
+        "gpu_leak_W": 76.40620000000001,
+        "pkg_dyn_W": 568.2733999999999,
+        "pkg_leak_W": 169.28520000000003,
+        "pkg_tot_W": 834.6075914096718,
+        "pkg_dyn_over_leak": 3.356899480876059,
+        "pkg_leak_frac": 0.2028320874892515,
+        "Tmax_C": 144.25,
+        "in_window": false
+      }
+    ],
+    "pkg_2penryn_2t2_1xeon_3gpu_5cim": [
+      {
+        "s": 0.5,
+        "cpu_dyn_W": 131.77675,
+        "cpu_leak_W": 96.8689,
+        "cpu_tot_W": 228.64565,
+        "cpu_dyn_over_leak": 1.36036178794226,
+        "cpu_leak_frac": 0.4236638658990451,
+        "gpu_dyn_W": 16.015849999999997,
+        "gpu_leak_W": 76.40620000000001,
+        "pkg_dyn_W": 147.7926,
+        "pkg_leak_W": 173.2751,
+        "pkg_tot_W": 418.11669140967194,
+        "pkg_dyn_over_leak": 0.8529361691322065,
+        "pkg_leak_frac": 0.41441804060920534,
+        "Tmax_C": 95.5,
+        "in_window": false
+      },
+      {
+        "s": 0.75,
+        "cpu_dyn_W": 197.665125,
+        "cpu_leak_W": 96.8689,
+        "cpu_tot_W": 294.534025,
+        "cpu_dyn_over_leak": 2.04054268191339,
+        "cpu_leak_frac": 0.3288886572612451,
+        "gpu_dyn_W": 24.023774999999993,
+        "gpu_leak_W": 76.40620000000001,
+        "pkg_dyn_W": 221.6889,
+        "pkg_leak_W": 173.2751,
+        "pkg_tot_W": 492.01299140967194,
+        "pkg_dyn_over_leak": 1.2794042536983097,
+        "pkg_leak_frac": 0.35217586329081996,
+        "Tmax_C": 104.82000000000005,
+        "in_window": false
+      },
+      {
+        "s": 1.0,
+        "cpu_dyn_W": 263.5535,
+        "cpu_leak_W": 96.8689,
+        "cpu_tot_W": 360.4224,
+        "cpu_dyn_over_leak": 2.72072357588452,
+        "cpu_leak_frac": 0.2687649269301797,
+        "gpu_dyn_W": 32.031699999999994,
+        "gpu_leak_W": 76.40620000000001,
+        "pkg_dyn_W": 295.5852,
+        "pkg_leak_W": 173.2751,
+        "pkg_tot_W": 565.9092914096719,
+        "pkg_dyn_over_leak": 1.705872338264413,
+        "pkg_leak_frac": 0.306188823244754,
+        "Tmax_C": 114.14000000000004,
+        "in_window": false
+      },
+      {
+        "s": 1.25,
+        "cpu_dyn_W": 329.441875,
+        "cpu_leak_W": 96.8689,
+        "cpu_tot_W": 426.310775,
+        "cpu_dyn_over_leak": 3.40090446985565,
+        "cpu_leak_frac": 0.2272260183899879,
+        "gpu_dyn_W": 40.039624999999994,
+        "gpu_leak_W": 76.40620000000001,
+        "pkg_dyn_W": 369.4815,
+        "pkg_leak_W": 173.2751,
+        "pkg_tot_W": 639.8055914096718,
+        "pkg_dyn_over_leak": 2.132340422830516,
+        "pkg_leak_frac": 0.27082461036051,
+        "Tmax_C": 123.46000000000004,
+        "in_window": false
+      },
+      {
+        "s": 1.5,
+        "cpu_dyn_W": 395.33025,
+        "cpu_leak_W": 96.8689,
+        "cpu_tot_W": 492.19915,
+        "cpu_dyn_over_leak": 4.08108536382678,
+        "cpu_leak_frac": 0.1968083447523223,
+        "gpu_dyn_W": 48.04754999999999,
+        "gpu_leak_W": 76.40620000000001,
+        "pkg_dyn_W": 443.3778,
+        "pkg_leak_W": 173.2751,
+        "pkg_tot_W": 713.7018914096719,
+        "pkg_dyn_over_leak": 2.5588085073966194,
+        "pkg_leak_frac": 0.24278357965081865,
+        "Tmax_C": 132.78000000000003,
+        "in_window": false
+      },
+      {
+        "s": 2.0,
+        "cpu_dyn_W": 527.107,
+        "cpu_leak_W": 96.8689,
+        "cpu_tot_W": 623.9758999999999,
+        "cpu_dyn_over_leak": 5.44144715176904,
+        "cpu_leak_frac": 0.1552446176206485,
+        "gpu_dyn_W": 64.06339999999999,
+        "gpu_leak_W": 76.40620000000001,
+        "pkg_dyn_W": 591.1704,
+        "pkg_leak_W": 173.2751,
+        "pkg_tot_W": 861.4944914096719,
+        "pkg_dyn_over_leak": 3.411744676528826,
+        "pkg_leak_frac": 0.20113314911215308,
+        "Tmax_C": 151.43,
+        "in_window": false
+      }
+    ],
+    "pkg_5xeon_3gpu_5cim": [
+      {
+        "s": 0.5,
+        "cpu_dyn_W": 167.12125,
+        "cpu_leak_W": 185.48749999999998,
+        "cpu_tot_W": 352.60875,
+        "cpu_dyn_over_leak": 0.9009838937933824,
+        "cpu_leak_frac": 0.5260433837787633,
+        "gpu_dyn_W": 16.015849999999997,
+        "gpu_leak_W": 76.40620000000001,
+        "pkg_dyn_W": 183.1371,
+        "pkg_leak_W": 261.89369999999997,
+        "pkg_tot_W": 542.0797914096719,
+        "pkg_dyn_over_leak": 0.699280280510757,
+        "pkg_leak_frac": 0.4831275840756738,
+        "Tmax_C": 107.79000000000002,
+        "in_window": false
+      },
+      {
+        "s": 0.75,
+        "cpu_dyn_W": 250.681875,
+        "cpu_leak_W": 185.48749999999998,
+        "cpu_tot_W": 436.16937499999995,
+        "cpu_dyn_over_leak": 1.3514758406900735,
+        "cpu_leak_frac": 0.42526484120990843,
+        "gpu_dyn_W": 24.023774999999993,
+        "gpu_leak_W": 76.40620000000001,
+        "pkg_dyn_W": 274.70565,
+        "pkg_leak_W": 261.89369999999997,
+        "pkg_tot_W": 633.6483414096718,
+        "pkg_dyn_over_leak": 1.0489204207661353,
+        "pkg_leak_frac": 0.413310795412748,
+        "Tmax_C": 118.26000000000005,
+        "in_window": false
+      },
+      {
+        "s": 1.0,
+        "cpu_dyn_W": 334.2425,
+        "cpu_leak_W": 185.48749999999998,
+        "cpu_tot_W": 519.73,
+        "cpu_dyn_over_leak": 1.8019677875867648,
+        "cpu_leak_frac": 0.356892040097743,
+        "gpu_dyn_W": 32.031699999999994,
+        "gpu_leak_W": 76.40620000000001,
+        "pkg_dyn_W": 366.2742,
+        "pkg_leak_W": 261.89369999999997,
+        "pkg_tot_W": 725.2168914096718,
+        "pkg_dyn_over_leak": 1.398560561021514,
+        "pkg_leak_frac": 0.3611246553992044,
+        "Tmax_C": 128.74,
+        "in_window": false
+      },
+      {
+        "s": 1.25,
+        "cpu_dyn_W": 417.803125,
+        "cpu_leak_W": 185.48749999999998,
+        "cpu_tot_W": 603.290625,
+        "cpu_dyn_over_leak": 2.2524597344834563,
+        "cpu_leak_frac": 0.3074596095372773,
+        "gpu_dyn_W": 40.039624999999994,
+        "gpu_leak_W": 76.40620000000001,
+        "pkg_dyn_W": 457.84275,
+        "pkg_leak_W": 261.89369999999997,
+        "pkg_tot_W": 816.7854414096719,
+        "pkg_dyn_over_leak": 1.7482007012768925,
+        "pkg_leak_frac": 0.32063952994559186,
+        "Tmax_C": 139.22000000000003,
+        "in_window": false
+      },
+      {
+        "s": 1.5,
+        "cpu_dyn_W": 501.36375,
+        "cpu_leak_W": 185.48749999999998,
+        "cpu_tot_W": 686.8512499999999,
+        "cpu_dyn_over_leak": 2.702951681380147,
+        "cpu_leak_frac": 0.27005483356112403,
+        "gpu_dyn_W": 48.04754999999999,
+        "gpu_leak_W": 76.40620000000001,
+        "pkg_dyn_W": 549.4113,
+        "pkg_leak_W": 261.89369999999997,
+        "pkg_tot_W": 908.3539914096718,
+        "pkg_dyn_over_leak": 2.0978408415322707,
+        "pkg_leak_frac": 0.2883167823081483,
+        "Tmax_C": 149.70000000000005,
+        "in_window": false
+      },
+      {
+        "s": 2.0,
+        "cpu_dyn_W": 668.485,
+        "cpu_leak_W": 185.48749999999998,
+        "cpu_tot_W": 853.9725,
+        "cpu_dyn_over_leak": 3.6039355751735296,
+        "cpu_leak_frac": 0.21720547207316393,
+        "gpu_dyn_W": 64.06339999999999,
+        "gpu_leak_W": 76.40620000000001,
+        "pkg_dyn_W": 732.5484,
+        "pkg_leak_W": 261.89369999999997,
+        "pkg_tot_W": 1091.4910914096718,
+        "pkg_dyn_over_leak": 2.797121122043028,
+        "pkg_leak_frac": 0.23994121625102924,
+        "Tmax_C": 170.66000000000003,
+        "in_window": false
+      }
+    ]
+  },
+  "s_list": [
+    0.5,
+    0.75,
+    1.0,
+    1.25,
+    1.5,
+    2.0
+  ],
+  "T_lim_C": 90.0,
+  "finished_utc": "2026-10-26T02:40:33.001062+00:00",
+  "note": "CPU dyn/leak from official McPAT templates; GPU STATIC=leak unscaled; layout frozen."
+}

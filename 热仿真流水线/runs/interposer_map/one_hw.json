@@ -1,0 +1,159 @@
+{
+  "note": "四颗起点：Penryn + GPU_3070 + HBM3 + CIM_jia，左下对齐。每次只换一颗硬件，原点不动。面积按该模板裸片取最近矩形，功耗用该模板自己的数：CPU 是 McPAT 380 K 总功耗，不是同一趟 matmul 重跑；GPU 是各自的 AccelWattch backprop 平均。stale：其余三颗的场是起点材料图上单独解的，被换的那颗按新足迹重解。truth：最新材料图上四颗功耗一次求解。误差是两张芯片层网格逐格相减，整张 64x64，含环氧格子。冷边 45 C，底面绝热，缝环氧 0.8，中介层 100 um 硅，TIM k=4。python 摄氏度，不是 HotSpot，也不是 ATSim。",
+  "start": [
+    {
+      "name": "Penryn",
+      "role": "CPU",
+      "j0": 4,
+      "ib0": 4,
+      "w": 8,
+      "h": 9,
+      "power_W": 59.241324999999996,
+      "area_mm2": 91.1348,
+      "grid_area_mm2": 91.125
+    },
+    {
+      "name": "GPU_3070",
+      "role": "GPU",
+      "j0": 22,
+      "ib0": 4,
+      "w": 14,
+      "h": 22,
+      "power_W": 66.89,
+      "area_mm2": 392.0,
+      "grid_area_mm2": 389.8125
+    },
+    {
+      "name": "HBM3",
+      "role": "HBM",
+      "j0": 22,
+      "ib0": 28,
+      "w": 8,
+      "h": 12,
+      "power_W": 28.656,
+      "area_mm2": 121.0,
+      "grid_area_mm2": 121.5
+    },
+    {
+      "name": "CIM_jia",
+      "role": "CIM",
+      "j0": 4,
+      "ib0": 27,
+      "w": 2,
+      "h": 2,
+      "power_W": 0.002773,
+      "area_mm2": 4.281,
+      "grid_area_mm2": 5.0625
+    }
+  ],
+  "rows": [
+    {
+      "scheme": "cpu_T2",
+      "changed": "Penryn -> T2",
+      "old_grid_mm2": 91.125,
+      "new_grid_mm2": 273.375,
+      "old_power_W": 59.241324999999996,
+      "new_power_W": 68.99682,
+      "power_source": "McPAT 380 K 模板总功耗",
+      "cells_changed": 144,
+      "grid_max_K": 0.3676855472664329,
+      "grid_mean_K": 0.003876248626429088,
+      "grid_rmse_K": 0.023207146764675633,
+      "truth_Tmax_C": 65.44279910162953,
+      "stale_Tmax_C": 65.44160913885884,
+      "die_truth_C": {
+        "T2": 65.44279910162953,
+        "GPU_3070": 62.756846708084424,
+        "HBM3": 60.334187677636805,
+        "CIM_jia": 57.818110576295396
+      },
+      "die_stale_C": {
+        "T2": 65.44160913885884,
+        "GPU_3070": 62.75841424625321,
+        "HBM3": 60.33486216387894,
+        "CIM_jia": 57.817380098342824
+      }
+    },
+    {
+      "scheme": "cpu_Xeon",
+      "changed": "Penryn -> Xeon",
+      "old_grid_mm2": 91.125,
+      "new_grid_mm2": 425.25,
+      "old_power_W": 59.241324999999996,
+      "new_power_W": 103.94599000000001,
+      "power_source": "McPAT 380 K 模板总功耗",
+      "cells_changed": 264,
+      "grid_max_K": 0.3934175200144523,
+      "grid_mean_K": 0.007709024313543783,
+      "grid_rmse_K": 0.03327706928264053,
+      "truth_Tmax_C": 69.39977127291206,
+      "stale_Tmax_C": 69.3851290655358,
+      "die_truth_C": {
+        "Xeon": 69.39977127291206,
+        "GPU_3070": 66.75837390340928,
+        "HBM3": 63.20488125779377,
+        "CIM_jia": 61.421359733574036
+      },
+      "die_stale_C": {
+        "Xeon": 69.3851290655358,
+        "GPU_3070": 66.76465064293569,
+        "HBM3": 63.20633777876452,
+        "CIM_jia": 61.417349334556434
+      }
+    },
+    {
+      "scheme": "gpu_2060S",
+      "changed": "GPU_3070 -> GPU_2060S",
+      "old_grid_mm2": 389.8125,
+      "new_grid_mm2": 445.5,
+      "old_power_W": 66.89,
+      "new_power_W": 71.12,
+      "power_source": "AccelWattch backprop 平均",
+      "cells_changed": 44,
+      "grid_max_K": 0.23030366851969575,
+      "grid_mean_K": 0.0007188661495378806,
+      "grid_rmse_K": 0.005907035927381311,
+      "truth_Tmax_C": 70.15827110719243,
+      "stale_Tmax_C": 70.15855253606225,
+      "die_truth_C": {
+        "Penryn": 70.15827110719243,
+        "GPU_2060S": 61.9871593512994,
+        "HBM3": 59.55334241882747,
+        "CIM_jia": 56.32959432710817
+      },
+      "die_stale_C": {
+        "Penryn": 70.15855253606225,
+        "GPU_2060S": 61.987619197830156,
+        "HBM3": 59.55361313951232,
+        "CIM_jia": 56.32979078014256
+      }
+    },
+    {
+      "scheme": "gpu_TITANX",
+      "changed": "GPU_3070 -> GPU_TITANX",
+      "old_grid_mm2": 389.8125,
+      "new_grid_mm2": 473.34375,
+      "old_power_W": 66.89,
+      "new_power_W": 67.41,
+      "power_source": "AccelWattch backprop 平均",
+      "cells_changed": 66,
+      "grid_max_K": 0.24650981728598254,
+      "grid_mean_K": 0.0010234021886252054,
+      "grid_rmse_K": 0.00770065992249418,
+      "truth_Tmax_C": 69.81111062778132,
+      "stale_Tmax_C": 69.81151502569037,
+      "die_truth_C": {
+        "Penryn": 69.81111062778132,
+        "GPU_TITANX": 61.31092364278436,
+        "HBM3": 59.19628535885562,
+        "CIM_jia": 56.06371407846035
+      },
+      "die_stale_C": {
+        "Penryn": 69.81151502569037,
+        "GPU_TITANX": 61.31155887223605,
+        "HBM3": 59.19667766506228,
+        "CIM_jia": 56.063997304806264
+      }
+    }
+  ]
+}

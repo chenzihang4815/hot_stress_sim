@@ -1,0 +1,58 @@
+{
+  "operator": "四层网格加 8 个外伸节点，和 ring_solver.py 同一套",
+  "k_fill": 130.0,
+  "note": "没有覆盖 fields/*.npy 和 report.json。HotSpot、ATSim 没重算。",
+  "stages": {
+    "init": {
+      "field_max_C": 73.37976241612648,
+      "grad_K_per_mm": 2.9996561487718685,
+      "hottest_block_mean_name": "HBM3",
+      "hottest_block_mean_C": 72.26435533495004,
+      "per_chip_mean_C": {
+        "Xeon_Ca": 67.82654732958525,
+        "GPU_2060S_Ga": 69.44476488319026,
+        "GPU_3070_Gb": 66.84701556191624,
+        "CIM_jia_m64": 64.53258793777098,
+        "Xeon_Cb": 70.04677537580267,
+        "HBM3": 72.26435533495004,
+        "CIM_colonnade_m512": 67.10304263312713,
+        "CIM_colonnade_m256": 65.3119515908731,
+        "CIM_basic_m256": 64.51441634873436
+      }
+    },
+    "best": {
+      "field_max_C": 73.55407113945807,
+      "grad_K_per_mm": 2.9982698013951046,
+      "hottest_block_mean_name": "HBM3",
+      "hottest_block_mean_C": 72.44162041976773,
+      "per_chip_mean_C": {
+        "Xeon_Ca": 67.73045963104317,
+        "GPU_2060S_Ga": 69.76188037787546,
+        "GPU_3070_Gb": 66.6655005220415,
+        "CIM_jia_m64": 64.78051794780077,
+        "Xeon_Cb": 70.33100982522109,
+        "HBM3": 72.44162041976773,
+        "CIM_colonnade_m512": 67.31962960626004,
+        "CIM_colonnade_m256": 65.46876165586775,
+        "CIM_basic_m256": 64.71208643596151
+      }
+    },
+    "freq": {
+      "field_max_C": 91.77819901928177,
+      "grad_K_per_mm": 3.483834596048382,
+      "hottest_block_mean_name": "Xeon_Cb",
+      "hottest_block_mean_C": 89.01577902572126,
+      "per_chip_mean_C": {
+        "Xeon_Ca": 84.78919029639104,
+        "GPU_2060S_Ga": 84.09065941404396,
+        "GPU_3070_Gb": 78.37249695235357,
+        "CIM_jia_m64": 74.80277292906823,
+        "Xeon_Cb": 89.01577902572126,
+        "HBM3": 81.38700108648737,
+        "CIM_colonnade_m512": 77.49324347875137,
+        "CIM_colonnade_m256": 78.78872055021418,
+        "CIM_basic_m256": 78.97290076563235
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "mix": "noCache__wang",
+  "algorithm": "bstree",
+  "n_blocks": 3,
+  "layout": {
+    "candidate": 12,
+    "cost": 860.2814726866472,
+    "width_m": 0.028177090408064306,
+    "height_m": 0.030214788979756404,
+    "outline_mm2": 851.3648407431813,
+    "block_area_mm2": 818.0223295982287,
+    "deadspace_ratio": 0.03916359890531418,
+    "overlap_m2": 0.0,
+    "overlap_count": 0.0,
+    "algorithm": "bstree",
+    "seed": 7,
+    "n_candidates": 48
+  },
+  "thermal": {
+    "Tmax_C": 54.660000000000025,
+    "Tmin_C": 52.110000000000014,
+    "block_T_C": {
+      "CPU": 54.53000000000003,
+      "GPU": 54.660000000000025,
+      "CIM": 54.370000000000005,
+      "iface_CPU": 54.32000000000005,
+      "iface_GPU": 54.56,
+      "iface_CIM": 54.200000000000045,
+      "hsink_CPU": 53.210000000000036,
+      "hsink_GPU": 53.920000000000016,
+      "hsink_CIM": 53.24000000000001,
+      "inode_0": 53.22000000000003,
+      "inode_1": 53.05000000000001,
+      "inode_2": 53.33000000000004,
+      "inode_3": 53.35000000000002,
+      "inode_4": 53.14000000000004,
+      "inode_5": 52.99000000000001,
+      "inode_6": 53.210000000000036,
+      "inode_7": 53.23000000000002,
+      "inode_8": 52.25,
+      "inode_9": 52.110000000000014,
+      "inode_10": 52.370000000000005,
+      "inode_11": 52.39000000000004
+    },
+    "returncode": 0
+  },
+  "power_total_W": 73.65731718336214,
+  "area_total_mm2": 818.0223295982287,
+  "blocks": [
+    {
+      "name": "CPU",
+      "kind": "CPU",
+      "area_mm2": 2.90029,
+      "power_W": 0.6763172000000001,
+      "notes": "gem5 TimingSimpleCPU 无 cache，hello；P=RuntimeDynamic(0.0566172)+Leakage(0.6197)"
+    },
+    {
+      "name": "GPU",
+      "kind": "GPU",
+      "area_mm2": 815.0,
+      "power_W": 72.955,
+      "notes": "backprop kernel=_Z22bpnn_layerforward_CUDAPfS_S_S_ii；功率来自 AccelWattch kernel_avg_power；面积不是仿真器输出，采用 GV100 裸片 815.0 mm²"
+    },
+    {
+      "name": "CIM",
+      "kind": "CIM",
+      "area_mm2": 0.12203959822869019,
+      "power_W": 0.025999983362139024,
+      "notes": "AccelForge wang_vlsi_2022 自带任务；AccelForge wang_vlsi_2022+builtin；P=energy/latency=0.026 W"
+    }
+  ]
+}

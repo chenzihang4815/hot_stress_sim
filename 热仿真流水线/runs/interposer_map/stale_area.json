@@ -1,0 +1,171 @@
+{
+  "note": "默认：其余三颗的场不改，是在起点材料图上单独解出来的。被换的那一颗按新足迹重解：新硅、旧硅改回环氧 0.8。中介层 100 um 硅，最外一圈 45 C，底面绝热，TIM k=4。stale 是这个做法对真解的误差。frozen 是同一张新材料图上四颗分开再相加，应当接近 0。python 场，不是 HotSpot，也不是 ATSim。CPU 功耗是各模板 McPAT 380 K 总功耗，不是同一趟 matmul 重跑；GPU 功耗是各自的 backprop 平均。half 和 quarter 是把 Penryn 按格子等比缩小。",
+  "start": [
+    {
+      "name": "Penryn",
+      "role": "CPU",
+      "j0": 4,
+      "ib0": 4,
+      "w": 8,
+      "h": 9,
+      "power_W": 59.241324999999996,
+      "area_mm2": 91.1348,
+      "grid_area_mm2": 91.125
+    },
+    {
+      "name": "GPU_3070",
+      "role": "GPU",
+      "j0": 22,
+      "ib0": 4,
+      "w": 14,
+      "h": 22,
+      "power_W": 66.89,
+      "area_mm2": 392.0,
+      "grid_area_mm2": 389.8125
+    },
+    {
+      "name": "HBM3",
+      "role": "HBM",
+      "j0": 22,
+      "ib0": 28,
+      "w": 8,
+      "h": 12,
+      "power_W": 28.656,
+      "area_mm2": 121.0,
+      "grid_area_mm2": 121.5
+    },
+    {
+      "name": "CIM_jia",
+      "role": "CIM",
+      "j0": 4,
+      "ib0": 27,
+      "w": 2,
+      "h": 2,
+      "power_W": 0.002773,
+      "area_mm2": 4.281,
+      "grid_area_mm2": 5.0625
+    }
+  ],
+  "rows": [
+    {
+      "scheme": "cpu_T2",
+      "legal": true,
+      "changed": "Penryn -> T2",
+      "old_grid_mm2": 91.125,
+      "new_grid_mm2": 273.375,
+      "old_power_W": 59.241324999999996,
+      "new_power_W": 68.99682,
+      "cells_changed": 144,
+      "stale_max_K": 0.3676855472664329,
+      "stale_rmse_K": 0.023207146764675633,
+      "frozen_max_K": 2.6381030693301e-10,
+      "python_Tmax_C": 65.44279910162953,
+      "die_C": {
+        "T2": 65.44279910162953,
+        "GPU_3070": 62.756846708084424,
+        "HBM3": 60.334187677636805,
+        "CIM_jia": 57.818110576295396
+      }
+    },
+    {
+      "scheme": "cpu_Xeon",
+      "legal": true,
+      "changed": "Penryn -> Xeon",
+      "old_grid_mm2": 91.125,
+      "new_grid_mm2": 425.25,
+      "old_power_W": 59.241324999999996,
+      "new_power_W": 103.94599000000001,
+      "cells_changed": 264,
+      "stale_max_K": 0.3934175200144523,
+      "stale_rmse_K": 0.03327706928264053,
+      "frozen_max_K": 2.3868551579653285e-10,
+      "python_Tmax_C": 69.39977127291206,
+      "die_C": {
+        "Xeon": 69.39977127291206,
+        "GPU_3070": 66.75837390340928,
+        "HBM3": 63.20488125779377,
+        "CIM_jia": 61.421359733574036
+      }
+    },
+    {
+      "scheme": "gpu_2060S",
+      "legal": true,
+      "changed": "GPU_3070 -> GPU_2060S",
+      "old_grid_mm2": 389.8125,
+      "new_grid_mm2": 445.5,
+      "old_power_W": 66.89,
+      "new_power_W": 71.12,
+      "cells_changed": 44,
+      "stale_max_K": 0.23030366851969575,
+      "stale_rmse_K": 0.005907035927381311,
+      "frozen_max_K": 2.431761458865367e-10,
+      "python_Tmax_C": 70.15827110719243,
+      "die_C": {
+        "Penryn": 70.15827110719243,
+        "GPU_2060S": 61.9871593512994,
+        "HBM3": 59.55334241882747,
+        "CIM_jia": 56.32959432710817
+      }
+    },
+    {
+      "scheme": "gpu_TITANX",
+      "legal": true,
+      "changed": "GPU_3070 -> GPU_TITANX",
+      "old_grid_mm2": 389.8125,
+      "new_grid_mm2": 473.34375,
+      "old_power_W": 66.89,
+      "new_power_W": 67.41,
+      "cells_changed": 66,
+      "stale_max_K": 0.24650981728598254,
+      "stale_rmse_K": 0.00770065992249418,
+      "frozen_max_K": 2.5289637051173486e-10,
+      "python_Tmax_C": 69.81111062778132,
+      "die_C": {
+        "Penryn": 69.81111062778132,
+        "GPU_TITANX": 61.31092364278436,
+        "HBM3": 59.19628535885562,
+        "CIM_jia": 56.06371407846035
+      }
+    },
+    {
+      "scheme": "cpu_half",
+      "legal": true,
+      "changed": "Penryn -> Penryn_half",
+      "old_grid_mm2": 91.125,
+      "new_grid_mm2": 45.5625,
+      "old_power_W": 59.241324999999996,
+      "new_power_W": 29.620662499999998,
+      "cells_changed": 36,
+      "stale_max_K": 0.308056881518894,
+      "stale_rmse_K": 0.012231460678608582,
+      "frozen_max_K": 2.5693225325085223e-10,
+      "python_Tmax_C": 64.1234397660429,
+      "die_C": {
+        "Penryn_half": 64.1234397660429,
+        "GPU_3070": 58.92810002525397,
+        "HBM3": 57.47489646083801,
+        "CIM_jia": 53.44726796784215
+      }
+    },
+    {
+      "scheme": "cpu_quarter",
+      "legal": true,
+      "changed": "Penryn -> Penryn_quarter",
+      "old_grid_mm2": 91.125,
+      "new_grid_mm2": 20.25,
+      "old_power_W": 59.241324999999996,
+      "new_power_W": 13.164738888888888,
+      "cells_changed": 56,
+      "stale_max_K": 0.3452890138981388,
+      "stale_rmse_K": 0.018308536437070276,
+      "frozen_max_K": 2.4158453015843406e-10,
+      "python_Tmax_C": 60.04699884156207,
+      "die_C": {
+        "Penryn_quarter": 60.04699884156207,
+        "GPU_3070": 57.51962918435527,
+        "HBM3": 56.50696448863454,
+        "CIM_jia": 51.980941054915775
+      }
+    }
+  ]
+}

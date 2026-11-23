@@ -1,0 +1,47 @@
+AccelWattch: power report (FAKE example - format only, numbers invented)
+
+kernel_name=saxpy
+gpu_sim_cycle=12500
+gpu_tot_sim_cycle=12500
+
+kernel_avg_power=95.40
+gpu_avg_IBP,=1.20
+gpu_avg_ICP,=3.10
+gpu_avg_DCP,=8.50
+gpu_avg_TCP,=0.40
+gpu_avg_CCP,=0.30
+gpu_avg_SHRDP,=2.10
+gpu_avg_RFP,=12.80
+gpu_avg_INTP,=9.40
+gpu_avg_FPUP,=18.60
+gpu_avg_DPUP,=0.00
+gpu_avg_INT_MUL24P,=0.20
+gpu_avg_INT_MUL32P,=0.40
+gpu_avg_INT_MULP,=1.10
+gpu_avg_INT_DIVP,=0.10
+gpu_avg_FP_MULP,=7.20
+gpu_avg_FP_DIVP,=0.50
+gpu_avg_FP_SQRTP,=0.00
+gpu_avg_FP_LGP,=0.00
+gpu_avg_FP_SINP,=0.00
+gpu_avg_FP_EXP,=0.00
+gpu_avg_DP_MULP,=0.00
+gpu_avg_DP_DIVP,=0.00
+gpu_avg_TENSORP,=0.00
+gpu_avg_TEXP,=0.10
+gpu_avg_SCHEDP,=4.80
+gpu_avg_L2CP,=6.70
+gpu_avg_MCP,=3.20
+gpu_avg_NOCP,=2.90
+gpu_avg_DRAMP,=8.40
+gpu_avg_PIPEP,=1.50
+gpu_avg_IDLE_COREP,=2.00
+gpu_avg_CONSTP=5.10
+gpu_avg_STATICP=14.80
+
+gpu_tot_avg_power=95.40
+gpu_tot_max_power=110.00
+gpu_tot_min_power=80.00
+
+# These are chip-total + functional-unit Watts for ONE kernel.
+# Not a spatial map. Not per-SM. Not per-cycle (unless you enable -power_trace_enabled).

@@ -1,0 +1,14 @@
+[
+  {
+    "label": "tpu_v4i matmul 256x256x256",
+    "error": "1 validation error for Spec\narch.nodes.1.Memory\n  Value error, Field separate_read_write_ports is not supported for Memory. Supported fields are:\n\tactions\n\tactions_scale\n\tarea\n\tarea_scale\n\tbits_per_action\n\tbits_per_value\n\tcomponent_class\n\tcomponent_model\n\tcomponent_modeling_log\n\tenabled\n\tenergy_scale\n\textra_attributes_for_component_model\n\tlatency_scale\n\tleak_power\n\tleak_power_scale\n\tn_parallel_ins"
+  },
+  {
+    "label": "tpu_v4i matmul 512x512x512",
+    "error": "1 validation error for Spec\narch.nodes.1.Memory\n  Value error, Field separate_read_write_ports is not supported for Memory. Supported fields are:\n\tactions\n\tactions_scale\n\tarea\n\tarea_scale\n\tbits_per_action\n\tbits_per_value\n\tcomponent_class\n\tcomponent_model\n\tcomponent_modeling_log\n\tenabled\n\tenergy_scale\n\textra_attributes_for_component_model\n\tlatency_scale\n\tleak_power\n\tleak_power_scale\n\tn_parallel_ins"
+  },
+  {
+    "label": "eyeriss matmul 256",
+    "error": "The mapping uses 1050624.0 bits of GlobalBuffer but its size is only 1048576 bits. Use a smaller tile shape for loops below the storage nodes of GlobalBuffer."
+  }
+]

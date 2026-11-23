@@ -1,0 +1,16 @@
+{
+  "mix": "x86matmul__SM75_RTX2060_S",
+  "CPU_task": "x86 TimingSimpleCPU + L1/L2，64x64 matmul（静态 gcc -static）；P=RuntimeDynamic(0.217977)+Leakage(0.78389)",
+  "CPU_mm2": 13.6345,
+  "CPU_W": 1.001867,
+  "GPU": "Turing RTX 2060 Super / SM75_RTX2060_S，同一份 backprop 重跑功耗；AccelWattch gpu_tot_avg_power=71.12 W；面积为文献裸片 445.0 mm²",
+  "GPU_mm2": 445.0,
+  "GPU_W": 71.1194,
+  "CIM": "jia_jssc_2020",
+  "CIM_mm2": 4.281226257942074,
+  "CIM_W": 0.0027731351494352146,
+  "outline_mm2": 598.6118863351539,
+  "HotSpot_Tmax_C": 55.78000000000003,
+  "HotSpot_Tmin_C": 51.60000000000002,
+  "map": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/x86_smallgpu_3chip/x86matmul__SM75_RTX2060_S/x86matmul__SM75_RTX2060_S_hotspot.png"
+}

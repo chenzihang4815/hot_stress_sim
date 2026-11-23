@@ -1,0 +1,13 @@
+{
+  "case": "micro150",
+  "rows_search": 16,
+  "mode": "field",
+  "steps": 120,
+  "seed": 23,
+  "init": "/home/czh/任务仿真产生功耗文件工具/论文证据/tap场叠加/runs/micro150_16_field/init.json",
+  "search_peak_C": 98.59,
+  "final_64_C": 99.4,
+  "solve_secs": 33.3,
+  "solves": 95,
+  "wall_s": 34.8
+}

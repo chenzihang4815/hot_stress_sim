@@ -1,0 +1,44 @@
+{
+  "tag": "xeon_3070_s7__init",
+  "vm_normal_chip_max_MPa": 113.21944224928205,
+  "vm_normal_chip_name": "Xeon",
+  "vm_normal_chip_p95_MPa": 85.5204305064715,
+  "w_pv_um": 2.877770865119736,
+  "atsim_Tmax_C": 76.0401965384471,
+  "elapsed_s": 14.01854658126831,
+  "ndof": 35808,
+  "chips": [
+    {
+      "name": "Xeon",
+      "normal": true,
+      "n_cells": 120,
+      "vm_max_MPa": 113.21944224928205,
+      "vm_mean_MPa": 45.80912832021821,
+      "vm_p95_MPa": 85.5204305064715
+    },
+    {
+      "name": "GPU_3070",
+      "normal": true,
+      "n_cells": 126,
+      "vm_max_MPa": 106.30993756219524,
+      "vm_mean_MPa": 43.32185276223265,
+      "vm_p95_MPa": 79.6599871386878
+    },
+    {
+      "name": "HBM3",
+      "normal": true,
+      "n_cells": 45,
+      "vm_max_MPa": 67.93108272693912,
+      "vm_mean_MPa": 37.09609317902132,
+      "vm_p95_MPa": 63.167834732367766
+    },
+    {
+      "name": "CIM_jia",
+      "normal": true,
+      "n_cells": 8,
+      "vm_max_MPa": 70.24483222917407,
+      "vm_mean_MPa": 65.47955746863326,
+      "vm_p95_MPa": 70.21080064390088
+    }
+  ]
+}

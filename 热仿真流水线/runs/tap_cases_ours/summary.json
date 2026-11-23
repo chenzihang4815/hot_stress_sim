@@ -1,0 +1,43 @@
+[
+  {
+    "case": "multigpu",
+    "steps": 1050,
+    "seed": 22,
+    "search_grid": 16,
+    "note": "TAP 侧是 runs/superposition/tap_field 里只按峰值温度接受的那次完整跑，没有重跑。我们这一侧按温度、梯度、线长各三分之一，搜索用我们自己的求解器，封装数取 TAP 的。两边最优布局的温度和温差用 TAP 的 HotSpot 在 64 网格上重评，尺寸收成整数毫米，只为绕开 fill_space 的递归。线长按真实尺寸、用 TAP 的连接矩阵。",
+    "tap_reference": {
+      "full_secs": 1886.3,
+      "full_final_64_C": 158.41,
+      "source": "runs/superposition/tap_field"
+    },
+    "ours": {
+      "solve_secs": 0.0,
+      "solves": 6,
+      "search_s": 0.0,
+      "solve_ms_per_step": 0.0,
+      "accepted": 0,
+      "worse_accepted": 0,
+      "best_step": 0,
+      "best_J": 1.0
+    },
+    "time_ratio_tap_over_ours": 1315330.95,
+    "rescored_64": {
+      "ours": {
+        "Tmax_C": 180.21,
+        "spread_K": 37.17,
+        "wirelength_mm_per_wire": 39.5881,
+        "solve_s": 0.0
+      },
+      "tap": {
+        "Tmax_C": 147.09,
+        "spread_K": 33.31,
+        "wirelength_mm_per_wire": 34.5007,
+        "solve_s": 0.0
+      },
+      "Tmax_error_K": 33.12,
+      "spread_error_K": 3.85,
+      "wirelength_error_mm": 5.0874,
+      "solver": "我们自己的四层网格，封装数取 TAP 的"
+    }
+  }
+]

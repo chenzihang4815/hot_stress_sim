@@ -1,0 +1,2 @@
+CPU_matmul	GPU_TITANX	HBM3_stack	anchor_sw	anchor_ne
+103.94599	67.4071250008	28.656	0	0

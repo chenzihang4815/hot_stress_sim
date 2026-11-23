@@ -1,0 +1,66 @@
+{
+  "steps": 60,
+  "seed": 22,
+  "n_iter": 8,
+  "note": "布局是 full_chain 的 L-BFGS 初值加一颗 HBM3。HBM 功耗按每通道背景 0.088 W、CPU 流量 1.035、GPU 流量 0.844、16 通道。三条路径同一个随机序列，各自决定接受。checked 用该布局自己的材料图全部分解。python，冷边 45 C，底面绝热，不是 HotSpot。",
+  "cases": {
+    "11_2xeon_3gpu": {
+      "n_chips": 11,
+      "board_mm": 72.0,
+      "start_C": 80.15785473855175,
+      "full": {
+        "accepted": 58,
+        "illegal": 0,
+        "wall_s": 27.66063276102068,
+        "priced_best_C": 77.59048123229235,
+        "checked_best_C": 77.59048123229235,
+        "checked_final_C": 77.59133048478367
+      },
+      "iter": {
+        "accepted": 55,
+        "illegal": 0,
+        "wall_s": 4.53751021012431,
+        "priced_best_C": 79.18534362903137,
+        "checked_best_C": 79.18543283448355,
+        "checked_final_C": 79.18749515165649
+      },
+      "frozen": {
+        "accepted": 41,
+        "illegal": 0,
+        "wall_s": 0.43221292496309616,
+        "priced_best_C": 79.760051604193,
+        "checked_best_C": 77.63619476921986,
+        "checked_final_C": 77.63597188142967
+      }
+    },
+    "12_3xeon_3gpu": {
+      "n_chips": 12,
+      "board_mm": 72.0,
+      "start_C": 82.0185398328847,
+      "full": {
+        "accepted": 56,
+        "illegal": 2,
+        "wall_s": 26.622908879013266,
+        "priced_best_C": 79.71891795048481,
+        "checked_best_C": 79.71891795048481,
+        "checked_final_C": 79.79873374951126
+      },
+      "iter": {
+        "accepted": 52,
+        "illegal": 2,
+        "wall_s": 4.407518544059712,
+        "priced_best_C": 75.07723083532517,
+        "checked_best_C": 75.07723083532318,
+        "checked_final_C": 75.0811184895237
+      },
+      "frozen": {
+        "accepted": 0,
+        "illegal": 42,
+        "wall_s": 0.1325220259896014,
+        "priced_best_C": 82.0185398328847,
+        "checked_best_C": 82.0185398328847,
+        "checked_final_C": 82.0185398328847
+      }
+    }
+  }
+}

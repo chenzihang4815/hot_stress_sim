@@ -1,0 +1,72 @@
+{
+  "title": "TAP-2.5D 只考虑温度，完整 1050 步，与场叠加对照",
+  "date_of_run": "2026-11-10",
+  "source": "热仿真流水线/runs/superposition/tap_field",
+  "driver": "热仿真流水线/src/run_tap_field.py",
+  "setup": {
+    "steps": 1050,
+    "schedule": "T 从 1.0 起，每 50 步乘 0.8，降到 0.01",
+    "acceptance": "只按峰值温度，不含线长",
+    "moves": "90% 为 1 mm 平移，10% 为跳跃并可能旋转",
+    "seed": 22,
+    "search_grid": "16 x 16",
+    "rescore_grid": "64 x 64，HotSpot detailed_3D，读 Layer 4",
+    "interposer_mm": 50,
+    "granularity_mm": 1,
+    "initial_layout": "pack_positions 紧凑放置，不用 B*-tree，因为那一步需要 CPLEX",
+    "wirelength": "中心到中心曼哈顿距离乘连线权重，除以连线总数，单位 mm/wire。连线矩阵取自 TAP-2.5D/configs/sys_*.cfg。线长不参与接受，这里是事后按存档布局重算的。"
+  },
+  "cases": [
+    {
+      "case": "ascend910",
+      "chiplets": 6,
+      "wires": 2448,
+      "full_solve_s": 1646.8,
+      "field_solve_s": 485.3,
+      "field_solves": 392,
+      "speedup": 3.39,
+      "init": {"Tmax_C": 118.31, "spread_K": 67.60, "wirelength_mm_per_wire": 37.48},
+      "best_full": {"Tmax_C": 115.97, "spread_K": 59.48, "wirelength_mm_per_wire": 43.24},
+      "best_field": {"Tmax_C": 115.91, "spread_K": 60.49, "wirelength_mm_per_wire": 43.96},
+      "Tmax_error_K": -0.06,
+      "spread_error_K": 1.01,
+      "wirelength_error_mm": 0.72
+    },
+    {
+      "case": "micro150",
+      "chiplets": 8,
+      "wires": 10240,
+      "full_solve_s": 1667.6,
+      "field_solve_s": 448.7,
+      "field_solves": 355,
+      "speedup": 3.72,
+      "init": {"Tmax_C": 218.34, "spread_K": 164.27, "wirelength_mm_per_wire": 22.85},
+      "best_full": {"Tmax_C": 162.03, "spread_K": 94.24, "wirelength_mm_per_wire": 25.95},
+      "best_field": {"Tmax_C": 162.12, "spread_K": 95.29, "wirelength_mm_per_wire": 31.80},
+      "Tmax_error_K": 0.09,
+      "spread_error_K": 1.05,
+      "wirelength_error_mm": 5.85
+    },
+    {
+      "case": "multigpu",
+      "chiplets": 6,
+      "wires": 6912,
+      "full_solve_s": 1886.3,
+      "field_solve_s": 454.9,
+      "field_solves": 319,
+      "speedup": 4.15,
+      "init": {"Tmax_C": 180.39, "spread_K": 123.12, "wirelength_mm_per_wire": 39.59},
+      "best_full": {"Tmax_C": 158.41, "spread_K": 90.64, "wirelength_mm_per_wire": 34.50},
+      "best_field": {"Tmax_C": 158.06, "spread_K": 88.03, "wirelength_mm_per_wire": 36.88},
+      "Tmax_error_K": -0.35,
+      "spread_error_K": -2.61,
+      "wirelength_error_mm": 2.38
+    }
+  ],
+  "error_definition": "误差 = 场叠加最优布局 − 全解最优布局，两边都用 HotSpot 64 网格重评。温度为峰值，单位 K；线长单位 mm/wire。",
+  "not_cited": [
+    "sfull_64/ascend910.json 的 7.27 倍、89468.8 s、12306.1 s 是 64 网格搜索的原始数字，不引用。",
+    "ascend910_64.json 的 151.86 C、46.3 倍、5014.8 s 是方形芯粒的早期对照，不引用。",
+    "8.4 倍、7.1 倍、9.0 倍不引用。"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "area_mm2": 421.676,
+  "dyn_W": 66.8485,
+  "sub_W": 35.4132,
+  "gate_W": 1.68429,
+  "leak_W": 37.09749,
+  "tot_W": 103.94599,
+  "Ioff_ratio": 1.0,
+  "T_K": 380,
+  "from_cache": "itrs_hp_table"
+}

@@ -1,0 +1,71 @@
+{
+  "mix": "cpuTiming_eyeriss_cimBasic",
+  "algorithm": "mcts",
+  "n_blocks": 3,
+  "layout": {
+    "width_m": 0.00237571047051538,
+    "height_m": 0.004656460056303872,
+    "outline_mm2": 11.062400911297745,
+    "block_area_mm2": 10.737315263480852,
+    "deadspace_ratio": 0.029386536469211855,
+    "overlap_m2": 0.0,
+    "overlap_count": 0.0,
+    "algorithm": "mcts",
+    "seed": 11,
+    "n_sims": 80,
+    "cost": 12.179082210797771
+  },
+  "thermal": {
+    "Tmax_C": 46.28000000000003,
+    "Tmin_C": 45.07000000000005,
+    "block_T_C": {
+      "CPU": 46.23000000000002,
+      "ACCEL_Eyeriss": 45.39000000000004,
+      "CIM_AccelForge": 46.28000000000003,
+      "iface_CPU": 46.05000000000001,
+      "iface_ACCEL_Eyeriss": 45.35000000000002,
+      "iface_CIM_AccelForge": 46.09000000000003,
+      "hsink_CPU": 45.129999999999995,
+      "hsink_ACCEL_Eyeriss": 45.129999999999995,
+      "hsink_CIM_AccelForge": 45.120000000000005,
+      "inode_0": 45.09000000000003,
+      "inode_1": 45.09000000000003,
+      "inode_2": 45.110000000000014,
+      "inode_3": 45.09000000000003,
+      "inode_4": 45.09000000000003,
+      "inode_5": 45.09000000000003,
+      "inode_6": 45.10000000000002,
+      "inode_7": 45.09000000000003,
+      "inode_8": 45.07000000000005,
+      "inode_9": 45.07000000000005,
+      "inode_10": 45.08000000000004,
+      "inode_11": 45.07000000000005
+    },
+    "returncode": 0
+  },
+  "power_total_W": 0.718655635404388,
+  "area_total_mm2": 10.737315263480852,
+  "blocks": [
+    {
+      "name": "CPU",
+      "kind": "CPU",
+      "area_mm2": 2.90029,
+      "power_W": 0.6763172000000001,
+      "notes": "gem5 TimingSimpleCPU 无 cache，hello；P=RuntimeDynamic(0.0566172)+Leakage(0.6197)"
+    },
+    {
+      "name": "ACCEL_Eyeriss",
+      "kind": "ACCEL",
+      "area_mm2": 7.790305751923076,
+      "power_W": 0.03971310637635045,
+      "notes": "AccelForge eyeriss+matmul32；P=energy/latency=0.0397131 W"
+    },
+    {
+      "name": "CIM_AccelForge",
+      "kind": "CIM",
+      "area_mm2": 0.04671951155777578,
+      "power_W": 0.0026253290280376118,
+      "notes": "功率=energy_J/latency_s；面积=各组件 area_m2 之和（MainMemory=0 不占面积）"
+    }
+  ]
+}

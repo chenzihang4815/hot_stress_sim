@@ -1,0 +1,78 @@
+================================================================
+Case 3 thermoelasticity (one-way)
+JSON: /home/czh/任务仿真产生功耗文件工具/热应力python工程_最终/cases/sa_feedback/sa13_init.json
+Chips: 13   P=211.11 W   h=1032.46 W/m2K
+T_ref = Tamb = 45.00 C
+BC: substrate_bottom_fixed  (no TSV / C4; interfaces bonded)
+Materials:
+  silicon   E=1.70e+11 Pa  nu=0.28  alpha=2.60e-06 1/K
+  tim       E=5.00e+09 Pa  nu=0.40  alpha=4.00e-05 1/K
+  copper    E=1.10e+11 Pa  nu=0.35  alpha=1.70e-05 1/K
+  organic   E=2.50e+10 Pa  nu=0.30  alpha=1.50e-05 1/K
+
+Chips:
+  name           x_mm     y_mm     w_mm     h_mm        W
+  CPU_matmul    77.59    26.00     3.12     4.36     1.00
+  CPU_threads    51.66    26.00     3.39     4.02     0.96
+  CPU_armL2     52.40    43.51     3.56     3.83     0.87
+  CPU_atomic    26.00    62.68     1.46     1.98     1.14
+  CPU_starter    26.00    43.51     1.66     1.75     1.65
+  GPU_3070      55.10    26.00    22.45    17.46    66.89
+  GPU_2060S     26.00    26.00    25.61    17.38    71.12
+  GPU_TITANX    27.71    43.51    24.64    19.11    67.41
+  CIM_jia       56.02    43.51     2.08     2.05     0.00
+  CIM_colonnade    28.22    62.68     0.43     0.53     0.04
+  CIM_wang      27.51    62.68     0.40     0.31     0.03
+  CIM_basic     27.96    62.68     0.22     0.22     0.00
+  CIM_sinangil    26.00    64.71     0.06     0.05     0.00
+
+-- heat --
+  Picard 1  dTmax=30.6000 K  Tmin=61.11 C  Tmax=75.60 C
+[fvm3d] sa13_init  cells=69x49x16  solid=40713  Tmax=75.600 C  Tmin=61.105 C  8.88s
+[fvm3d] timing  grid=0.01s  assemble=0.59s  solve=8.27s (spsolve)  ndof=54096  nnz=284878
+
+-- elasticity --
+[elast] bc=substrate_bottom_fixed  element=wilson  nodes=47526  ndof=134766  solid cells=40713
+[elast] assembled 40713 hexes  nnz=9825768  56.7s
+[warn] CG failed (cg() got an unexpected keyword argument 'tol'), spsolve
+[elast] |u|_max=2.629e-05 m  uz_max=1.434e-05 m  vm_max=8.035e+08 Pa  598.3s
+[elast] timing  assemble=56.69s  solve=528.88s (spsolve_after_cg)  post=12.77s  ndof=134766  nnz=9825768
+
+Mechanical probes:
+  name                      T C      uz um     |u| um     vm MPa
+  CPU_matmul_center       68.52    -0.4477     4.6752    113.059
+  CPU_threads_center      72.57     0.5556     2.9555     77.351
+  CPU_armL2_center        72.54     1.0511     1.7937     34.224
+  CPU_atomic_center       71.07    -2.1292     5.8798    156.267
+  CPU_starter_center      75.39     0.1493     3.5350     89.020
+  GPU_3070_center         73.19     1.0528     2.2203     33.540
+  GPU_2060S_center        75.21     1.1440     2.0260     29.710
+  GPU_TITANX_center       74.07     1.1650     1.9499     25.208
+  CIM_jia_center          71.84     1.0374     1.8883     37.689
+  CIM_colonnade_center    70.14    -0.7827     4.2054    352.687
+  CIM_wang_center         70.36    -0.9766     4.6192    188.686
+  CIM_basic_center        70.02    -0.8389     4.4180    141.933
+  CIM_sinangil_center     70.75    -3.1165     7.1255    166.910
+  Sink_top_center         71.58     5.8713     6.5903     28.974
+  Spreader_center         72.48     1.5744     2.2491     54.519
+  Interposer_center       72.93     1.0864     1.6451     21.889
+  Substrate_center        73.03     0.5642     0.8257     28.064
+  TIM_mid                 72.73     1.1359     1.7786     23.661
+
+Package warpage (interposer mid, ATMPlace-style w=uz):
+  plane z=1.025 mm  n=2501
+  w min/mean/max = -3.3283 / 0.3732 / 1.2355 um
+  peak-to-valley  4.5637 um   |w|_max 3.3283 um
+  corners (um): SW=-2.473  SE=-1.786  NW=-3.328  NE=0.492
+  corner PV     3.8200 um
+
+Timing:
+  heat   assemble 0.59s  solve 8.27s (spsolve)  total 8.88s  ndof=54096
+  elast  assemble 56.69s  solve 528.88s (spsolve_after_cg)  post 12.77s  total 598.34s  ndof=134766
+  heat+elast 607.21s  (plots not included in this sum; wall compute 663.31s)
+  wrote /home/czh/任务仿真产生功耗文件工具/热应力python工程_最终/results/python_sa13_init_stress/timing.json
+
+Outputs: /home/czh/任务仿真产生功耗文件工具/热应力python工程_最终/results/python_sa13_init_stress
+================================================================
+
+--- STDERR ---

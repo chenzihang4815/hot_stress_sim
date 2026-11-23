@@ -1,0 +1,352 @@
+{
+  "definition": "三列都是块平均。每颗芯片先把自己盖住的格子求平均，再取最热的那颗。Python 用 64x64 芯粒层，一格 1.125 mm。HotSpot 的块温度本来就是第 0 层被该块盖住的格子的平均，grid_map_mode=avg。ATSim 是芯粒层厚度上先做柱平均，再对落在这颗芯片里的柱求平均。网格 2 mm。以前报告里的 Python 100.08/97.23/102.30 和 ATSim 79.73/78.03/80.62 是最热一格，不是这个数。",
+  "hottest_block_mean": {
+    "init": {
+      "python_hottest_block_mean": {
+        "name": "Xeon_Ca",
+        "C": 97.80222449356043
+      },
+      "hotspot_hottest_block_mean": {
+        "name": "HBM3",
+        "C": 76.18
+      },
+      "atsim_hottest_block_mean": {
+        "name": "Xeon_Ca",
+        "C": 77.99792626357213
+      }
+    },
+    "best": {
+      "python_hottest_block_mean": {
+        "name": "Xeon_Ca",
+        "C": 94.6787265962833
+      },
+      "hotspot_hottest_block_mean": {
+        "name": "HBM3",
+        "C": 74.51000000000005
+      },
+      "atsim_hottest_block_mean": {
+        "name": "Xeon_Ca",
+        "C": 75.99189746198185
+      }
+    },
+    "freq": {
+      "python_hottest_block_mean": {
+        "name": "Xeon_Ca",
+        "C": 99.35669136094891
+      },
+      "hotspot_hottest_block_mean": {
+        "name": "HBM3",
+        "C": 75.77000000000004
+      },
+      "atsim_hottest_block_mean": {
+        "name": "Xeon_Ca",
+        "C": 78.98354480878669
+      }
+    }
+  },
+  "per_chip": {
+    "init": [
+      {
+        "name": "Xeon_Ca",
+        "n_cells_python": 336,
+        "python_block_mean_C": 97.80222449356043,
+        "python_cell_max_C": 100.0811677360308,
+        "hotspot_block_mean_C": 73.91000000000003,
+        "atsim_block_mean_C": 77.99792626357213,
+        "atsim_column_max_C": 79.4460386416153
+      },
+      {
+        "name": "GPU_2060S_Ga",
+        "n_cells_python": 352,
+        "python_block_mean_C": 91.48914073534621,
+        "python_cell_max_C": 95.20054684805126,
+        "hotspot_block_mean_C": 73.57000000000005,
+        "atsim_block_mean_C": 75.50914682440258,
+        "atsim_column_max_C": 77.85854667205189
+      },
+      {
+        "name": "GPU_TITANX_Gb",
+        "n_cells_python": 374,
+        "python_block_mean_C": 83.65173891607645,
+        "python_cell_max_C": 87.94278408313409,
+        "hotspot_block_mean_C": 69.88,
+        "atsim_block_mean_C": 70.15894455740914,
+        "atsim_column_max_C": 74.88112963014675
+      },
+      {
+        "name": "CIM_jia_m64",
+        "n_cells_python": 216,
+        "python_block_mean_C": 75.85534588588168,
+        "python_cell_max_C": 78.19295770379193,
+        "hotspot_block_mean_C": 62.89000000000004,
+        "atsim_block_mean_C": 61.78788149891547,
+        "atsim_column_max_C": 64.05002884792572
+      },
+      {
+        "name": "Xeon_Cb",
+        "n_cells_python": 336,
+        "python_block_mean_C": 90.56457684785636,
+        "python_cell_max_C": 95.4823289505934,
+        "hotspot_block_mean_C": 73.68,
+        "atsim_block_mean_C": 75.45546615324163,
+        "atsim_column_max_C": 78.58395102168271
+      },
+      {
+        "name": "GPU_3070_Gc",
+        "n_cells_python": 308,
+        "python_block_mean_C": 85.76206475336947,
+        "python_cell_max_C": 91.67145648181918,
+        "hotspot_block_mean_C": 73.01000000000005,
+        "atsim_block_mean_C": 73.20902184014855,
+        "atsim_column_max_C": 77.38331765727668
+      },
+      {
+        "name": "HBM3",
+        "n_cells_python": 96,
+        "python_block_mean_C": 87.74399738399579,
+        "python_cell_max_C": 90.44041990441991,
+        "hotspot_block_mean_C": 76.18,
+        "atsim_block_mean_C": 77.6715399626147,
+        "atsim_column_max_C": 79.63516847726243
+      },
+      {
+        "name": "CIM_colonnade_m512",
+        "n_cells_python": 96,
+        "python_block_mean_C": 77.37898561438955,
+        "python_cell_max_C": 81.5630372076808,
+        "hotspot_block_mean_C": 66.52000000000004,
+        "atsim_block_mean_C": 66.18596498814846,
+        "atsim_column_max_C": 69.79886771845207
+      },
+      {
+        "name": "CIM_colonnade_m256",
+        "n_cells_python": 48,
+        "python_block_mean_C": 78.48013687682472,
+        "python_cell_max_C": 80.79851699838991,
+        "hotspot_block_mean_C": 66.02000000000004,
+        "atsim_block_mean_C": 64.27002619128088,
+        "atsim_column_max_C": 66.26445882608061
+      },
+      {
+        "name": "CIM_basic_m256",
+        "n_cells_python": 9,
+        "python_block_mean_C": 79.5598303048071,
+        "python_cell_max_C": 80.37941775698596,
+        "hotspot_block_mean_C": 66.71000000000004,
+        "atsim_block_mean_C": 65.97320975882775,
+        "atsim_column_max_C": 66.50777446397518
+      },
+      {
+        "name": "CIM_colonnade_m64",
+        "n_cells_python": 12,
+        "python_block_mean_C": 78.83771322003922,
+        "python_cell_max_C": 79.99402327315738,
+        "hotspot_block_mean_C": 66.41000000000003,
+        "atsim_block_mean_C": 65.53327108204685,
+        "atsim_column_max_C": 66.67931052255449
+      }
+    ],
+    "best": [
+      {
+        "name": "Xeon_Ca",
+        "n_cells_python": 336,
+        "python_block_mean_C": 94.6787265962833,
+        "python_cell_max_C": 97.22770789872118,
+        "hotspot_block_mean_C": 72.0,
+        "atsim_block_mean_C": 75.99189746198185,
+        "atsim_column_max_C": 77.46523653739547
+      },
+      {
+        "name": "GPU_3070_Ga",
+        "n_cells_python": 308,
+        "python_block_mean_C": 89.126599440614,
+        "python_cell_max_C": 92.63901754770944,
+        "hotspot_block_mean_C": 72.04000000000002,
+        "atsim_block_mean_C": 74.35796306396145,
+        "atsim_column_max_C": 76.04534084598032
+      },
+      {
+        "name": "GPU_TITANX_Gb",
+        "n_cells_python": 374,
+        "python_block_mean_C": 81.34072131293041,
+        "python_cell_max_C": 85.18064279090294,
+        "hotspot_block_mean_C": 68.44,
+        "atsim_block_mean_C": 68.9876918658045,
+        "atsim_column_max_C": 73.07484469778058
+      },
+      {
+        "name": "CIM_jia_m64",
+        "n_cells_python": 216,
+        "python_block_mean_C": 73.57860505899139,
+        "python_cell_max_C": 76.16171861099576,
+        "hotspot_block_mean_C": 61.39000000000004,
+        "atsim_block_mean_C": 61.09017264231031,
+        "atsim_column_max_C": 63.40862981898903
+      },
+      {
+        "name": "T2_Cb",
+        "n_cells_python": 216,
+        "python_block_mean_C": 86.82452969777025,
+        "python_cell_max_C": 91.22300468755515,
+        "hotspot_block_mean_C": 71.05000000000001,
+        "atsim_block_mean_C": 72.90211154190357,
+        "atsim_column_max_C": 75.60211289408602
+      },
+      {
+        "name": "GPU_3070_Gc",
+        "n_cells_python": 308,
+        "python_block_mean_C": 82.22218812875529,
+        "python_cell_max_C": 87.81773323395907,
+        "hotspot_block_mean_C": 70.65000000000003,
+        "atsim_block_mean_C": 71.25684888099069,
+        "atsim_column_max_C": 74.7888601635974
+      },
+      {
+        "name": "HBM3",
+        "n_cells_python": 96,
+        "python_block_mean_C": 85.18199589863845,
+        "python_cell_max_C": 87.7066147139625,
+        "hotspot_block_mean_C": 74.51000000000005,
+        "atsim_block_mean_C": 75.769944961376,
+        "atsim_column_max_C": 77.93855426815622
+      },
+      {
+        "name": "CIM_colonnade_m512",
+        "n_cells_python": 96,
+        "python_block_mean_C": 74.94602998676436,
+        "python_cell_max_C": 79.2721884301518,
+        "hotspot_block_mean_C": 64.66000000000003,
+        "atsim_block_mean_C": 63.61141141086137,
+        "atsim_column_max_C": 68.37888080768528
+      },
+      {
+        "name": "CIM_colonnade_m256",
+        "n_cells_python": 48,
+        "python_block_mean_C": 73.4015848536491,
+        "python_cell_max_C": 75.07861183503508,
+        "hotspot_block_mean_C": 63.26000000000005,
+        "atsim_block_mean_C": 60.98722738270266,
+        "atsim_column_max_C": 62.43525673536561
+      },
+      {
+        "name": "CIM_basic_m256",
+        "n_cells_python": 9,
+        "python_block_mean_C": 74.26593898013591,
+        "python_cell_max_C": 74.84300139778509,
+        "hotspot_block_mean_C": 63.47000000000003,
+        "atsim_block_mean_C": 62.26825088990395,
+        "atsim_column_max_C": 62.65262852265448
+      },
+      {
+        "name": "CIM_colonnade_m64",
+        "n_cells_python": 12,
+        "python_block_mean_C": 73.89389980619558,
+        "python_cell_max_C": 74.70999862242064,
+        "hotspot_block_mean_C": 63.26000000000005,
+        "atsim_block_mean_C": 62.10330631670968,
+        "atsim_column_max_C": 62.93914362503682
+      }
+    ],
+    "freq": [
+      {
+        "name": "Xeon_Ca",
+        "n_cells_python": 336,
+        "python_block_mean_C": 99.35669136094891,
+        "python_cell_max_C": 102.30449967505592,
+        "hotspot_block_mean_C": 74.45000000000005,
+        "atsim_block_mean_C": 78.98354480878669,
+        "atsim_column_max_C": 80.57405852826003
+      },
+      {
+        "name": "GPU_3070_Ga",
+        "n_cells_python": 308,
+        "python_block_mean_C": 92.59115697299704,
+        "python_cell_max_C": 96.79171699059776,
+        "hotspot_block_mean_C": 74.07000000000005,
+        "atsim_block_mean_C": 76.62405167783979,
+        "atsim_column_max_C": 78.70346628323756
+      },
+      {
+        "name": "GPU_TITANX_Gb",
+        "n_cells_python": 374,
+        "python_block_mean_C": 83.36423508978322,
+        "python_cell_max_C": 87.75793681593461,
+        "hotspot_block_mean_C": 69.71000000000004,
+        "atsim_block_mean_C": 70.17524874292991,
+        "atsim_column_max_C": 74.48857432312855
+      },
+      {
+        "name": "CIM_jia_m64",
+        "n_cells_python": 216,
+        "python_block_mean_C": 75.12250559961072,
+        "python_cell_max_C": 77.83635483186873,
+        "hotspot_block_mean_C": 62.34000000000003,
+        "atsim_block_mean_C": 61.88245825057785,
+        "atsim_column_max_C": 64.29692681236628
+      },
+      {
+        "name": "T2_Cb",
+        "n_cells_python": 216,
+        "python_block_mean_C": 90.68837014282859,
+        "python_cell_max_C": 95.64611508138745,
+        "hotspot_block_mean_C": 73.49000000000001,
+        "atsim_block_mean_C": 75.59988581030747,
+        "atsim_column_max_C": 78.5687677540742
+      },
+      {
+        "name": "GPU_3070_Gc",
+        "n_cells_python": 308,
+        "python_block_mean_C": 84.75131856529482,
+        "python_cell_max_C": 91.23124807667216,
+        "hotspot_block_mean_C": 72.25,
+        "atsim_block_mean_C": 72.89422385389031,
+        "atsim_column_max_C": 76.96745918701288
+      },
+      {
+        "name": "HBM3",
+        "n_cells_python": 96,
+        "python_block_mean_C": 87.19755683922433,
+        "python_cell_max_C": 89.9701055720306,
+        "hotspot_block_mean_C": 75.77000000000004,
+        "atsim_block_mean_C": 77.01367951569254,
+        "atsim_column_max_C": 79.25678525322377
+      },
+      {
+        "name": "CIM_colonnade_m512",
+        "n_cells_python": 96,
+        "python_block_mean_C": 76.58573531347099,
+        "python_cell_max_C": 81.14847802193003,
+        "hotspot_block_mean_C": 65.67000000000002,
+        "atsim_block_mean_C": 64.50143704027218,
+        "atsim_column_max_C": 69.47489445818502
+      },
+      {
+        "name": "CIM_colonnade_m256",
+        "n_cells_python": 48,
+        "python_block_mean_C": 75.70538376558062,
+        "python_cell_max_C": 77.58029092717288,
+        "hotspot_block_mean_C": 64.80000000000001,
+        "atsim_block_mean_C": 62.333040545840774,
+        "atsim_column_max_C": 63.91149888849412
+      },
+      {
+        "name": "CIM_basic_m256",
+        "n_cells_python": 9,
+        "python_block_mean_C": 76.62556420322754,
+        "python_cell_max_C": 77.27815423208659,
+        "hotspot_block_mean_C": 64.98000000000002,
+        "atsim_block_mean_C": 63.68505512064131,
+        "atsim_column_max_C": 64.09686479775144
+      },
+      {
+        "name": "CIM_colonnade_m64",
+        "n_cells_python": 12,
+        "python_block_mean_C": 76.14142575548017,
+        "python_cell_max_C": 77.05697512926042,
+        "hotspot_block_mean_C": 64.67000000000002,
+        "atsim_block_mean_C": 63.42309533602335,
+        "atsim_column_max_C": 64.32384565992322
+      }
+    ]
+  }
+}

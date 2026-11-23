@@ -1,0 +1,114 @@
+{
+  "chip_k": 130.0,
+  "chip_material": "silicon",
+  "fills": [
+    {
+      "name": "emc",
+      "note": "环氧模塑料",
+      "k": 0.8
+    },
+    {
+      "name": "underfill",
+      "note": "底部填充，和模塑料同一量级",
+      "k": 1.0
+    },
+    {
+      "name": "air",
+      "note": "空气，HotSpot package.h 的 0.028",
+      "k": 0.028
+    }
+  ],
+  "note": "芯片足迹是硅 k=130。芯片以外的芯片层换成表里的填充。绝对温度不是 HotSpot。默认流水线的填充没有改。",
+  "cases": [
+    {
+      "k_fill": 0.8,
+      "Tmax_C": 73.38901255791683,
+      "Tmax_silicon_fill_C": 73.30232570861972,
+      "fill_minus_silicon_K": 0.08668684929710935,
+      "naive_max_abs_K": 0.04426922677504308,
+      "naive_dTmax_K": 0.0030783191106138474,
+      "frozen_max_abs_K": 2.547722033341415e-10,
+      "cpu": "Penryn",
+      "gpu": "GPU_3070",
+      "fill": "emc",
+      "fill_note": "环氧模塑料",
+      "cpu_power_W": 59.241324999999996,
+      "gpu_power_W": 66.89
+    },
+    {
+      "k_fill": 1.0,
+      "Tmax_C": 73.38878808935527,
+      "Tmax_silicon_fill_C": 73.30232570861972,
+      "fill_minus_silicon_K": 0.08646238073555423,
+      "naive_max_abs_K": 0.044127833293771346,
+      "naive_dTmax_K": 0.003075146607500301,
+      "frozen_max_abs_K": 2.681872501852922e-10,
+      "cpu": "Penryn",
+      "gpu": "GPU_3070",
+      "fill": "underfill",
+      "fill_note": "底部填充，和模塑料同一量级",
+      "cpu_power_W": 59.241324999999996,
+      "gpu_power_W": 66.89
+    },
+    {
+      "k_fill": 0.028,
+      "Tmax_C": 73.38988504855848,
+      "Tmax_silicon_fill_C": 73.30232570861972,
+      "fill_minus_silicon_K": 0.08755933993876397,
+      "naive_max_abs_K": 0.04482024741338364,
+      "naive_dTmax_K": 0.0030904595922720546,
+      "frozen_max_abs_K": 2.703473001020029e-10,
+      "cpu": "Penryn",
+      "gpu": "GPU_3070",
+      "fill": "air",
+      "fill_note": "空气，HotSpot package.h 的 0.028",
+      "cpu_power_W": 59.241324999999996,
+      "gpu_power_W": 66.89
+    },
+    {
+      "k_fill": 0.8,
+      "Tmax_C": 72.88947094479312,
+      "Tmax_silicon_fill_C": 72.85320526570587,
+      "fill_minus_silicon_K": 0.036265679087250646,
+      "naive_max_abs_K": 0.0716443292732265,
+      "naive_dTmax_K": 0.005409644522160306,
+      "frozen_max_abs_K": 2.6926727514364757e-10,
+      "cpu": "Xeon",
+      "gpu": "GPU_TITANX",
+      "fill": "emc",
+      "fill_note": "环氧模塑料",
+      "cpu_power_W": 103.94599000000001,
+      "gpu_power_W": 67.41
+    },
+    {
+      "k_fill": 1.0,
+      "Tmax_C": 72.88939395768455,
+      "Tmax_silicon_fill_C": 72.85320526570587,
+      "fill_minus_silicon_K": 0.0361886919786798,
+      "naive_max_abs_K": 0.0714083359991946,
+      "naive_dTmax_K": 0.005403709448785321,
+      "frozen_max_abs_K": 2.594333636807278e-10,
+      "cpu": "Xeon",
+      "gpu": "GPU_TITANX",
+      "fill": "underfill",
+      "fill_note": "底部填充，和模塑料同一量级",
+      "cpu_power_W": 103.94599000000001,
+      "gpu_power_W": 67.41
+    },
+    {
+      "k_fill": 0.028,
+      "Tmax_C": 72.88976951005918,
+      "Tmax_silicon_fill_C": 72.85320526570587,
+      "fill_minus_silicon_K": 0.036564244353314734,
+      "naive_max_abs_K": 0.07256422210298297,
+      "naive_dTmax_K": 0.005432393970863814,
+      "frozen_max_abs_K": 2.7557689463719726e-10,
+      "cpu": "Xeon",
+      "gpu": "GPU_TITANX",
+      "fill": "air",
+      "fill_note": "空气，HotSpot package.h 的 0.028",
+      "cpu_power_W": 103.94599000000001,
+      "gpu_power_W": 67.41
+    }
+  ]
+}

@@ -1,0 +1,467 @@
+[
+  {
+    "step": 0,
+    "op": "init",
+    "move": "init",
+    "accept": true,
+    "J": 2.0,
+    "grad_max": 4.161340520362501,
+    "grad_rms": 0.333021158232424,
+    "Tmax_C": 73.30232570861972,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ]
+  },
+  {
+    "step": 1,
+    "op": "rotate GPU_3070",
+    "move": "rotate",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.9929096129522772,
+    "grad_max": 4.175538955311771,
+    "grad_rms": 0.33173023109176636,
+    "Tmax_C": 73.00508413031304,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.2,
+    "new_best": true
+  },
+  {
+    "step": 2,
+    "op": "rotate Penryn",
+    "move": "rotate",
+    "accept": true,
+    "ap": 0.9936285615835755,
+    "J": 1.9940601410312464,
+    "grad_max": 4.172827877872603,
+    "grad_rms": 0.3320163240124368,
+    "Tmax_C": 73.05608547170817,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.18000000000000002
+  },
+  {
+    "step": 3,
+    "op": "nudge GPU_3070 (-2,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.9015005086993839,
+    "J": 2.010858677904619,
+    "grad_max": 4.17984850150717,
+    "grad_rms": 0.3337538782298241,
+    "Tmax_C": 73.4837741029009,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.16200000000000003
+  },
+  {
+    "step": 4,
+    "op": "nudge GPU_3070 (1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 2.0022269660261394,
+    "grad_max": 4.176218785355205,
+    "grad_rms": 0.33285466633481003,
+    "Tmax_C": 73.26416319628106,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.14580000000000004
+  },
+  {
+    "step": 5,
+    "op": "rotate Penryn",
+    "move": "rotate",
+    "accept": true,
+    "ap": 1.0,
+    "J": 2.0011334043323212,
+    "grad_max": 4.179166919321233,
+    "grad_rms": 0.3325480036547551,
+    "Tmax_C": 73.2131618548857,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.13122000000000003
+  },
+  {
+    "step": 6,
+    "op": "rotate GPU_3070",
+    "move": "rotate",
+    "accept": true,
+    "ap": 0.9435095543346339,
+    "J": 2.008000659867313,
+    "grad_max": 4.163121967116897,
+    "grad_rms": 0.3339202500166657,
+    "Tmax_C": 73.5166469216935,
+    "hardware": [
+      "Penryn",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.11809800000000004
+  },
+  {
+    "step": 7,
+    "op": "swap Penryn -> T2 (sharp 4.024)",
+    "move": "hardware",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.2828670974143763,
+    "grad_max": 1.839946920477309,
+    "grad_rms": 0.2540902772978514,
+    "Tmax_C": 68.79417968313106,
+    "hardware": [
+      "T2",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.10628820000000004,
+    "new_best": true
+  },
+  {
+    "step": 8,
+    "op": "swap T2 -> Xeon (sharp 1.626)",
+    "move": "hardware",
+    "accept": false,
+    "ap": 0.16781302480187946,
+    "J": 1.4536099903479798,
+    "grad_max": 1.887911028247749,
+    "grad_rms": 0.2818563633181384,
+    "Tmax_C": 73.30038466548751,
+    "hardware": [
+      "Xeon",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.09565938000000004
+  },
+  {
+    "step": 9,
+    "op": "rotate T2",
+    "move": "rotate",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 10,
+    "op": "rotate T2",
+    "move": "rotate",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 11,
+    "op": "nudge T2 (1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.2724343133258957,
+    "grad_max": 1.8317393556264707,
+    "grad_rms": 0.25400613148980133,
+    "Tmax_C": 68.55472934700697,
+    "hardware": [
+      "T2",
+      "GPU_3070",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.06973568802000003,
+    "new_best": true
+  },
+  {
+    "step": 12,
+    "op": "swap GPU_3070 -> GPU_TITANX (sharp 1.361)",
+    "move": "hardware",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.2624438582673,
+    "grad_max": 1.8259917658223357,
+    "grad_rms": 0.24582912081447852,
+    "Tmax_C": 68.31106704084914,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.06276211921800003,
+    "new_best": true
+  },
+  {
+    "step": 13,
+    "op": "nudge T2 (-2,0) cells",
+    "move": "nudge",
+    "accept": false,
+    "ap": 0.645927086703282,
+    "J": 1.2871320775386983,
+    "grad_max": 1.846420812147446,
+    "grad_rms": 0.24629629599198394,
+    "Tmax_C": 68.8708579708138,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.056485907296200025
+  },
+  {
+    "step": 14,
+    "op": "rotate GPU_TITANX",
+    "move": "rotate",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.2582587352370072,
+    "grad_max": 1.833621004679066,
+    "grad_rms": 0.2441336614088811,
+    "Tmax_C": 68.14072994936731,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.050837316566580026,
+    "new_best": true
+  },
+  {
+    "step": 15,
+    "op": "nudge T2 (0,1) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.244768089204726,
+    "grad_max": 1.8276494482254546,
+    "grad_rms": 0.24319251761270724,
+    "Tmax_C": 67.7995273518618,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.04575358490992203,
+    "new_best": true
+  },
+  {
+    "step": 16,
+    "op": "nudge T2 (0,2) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.221508059372745,
+    "grad_max": 1.817133658890422,
+    "grad_rms": 0.24153952033162596,
+    "Tmax_C": 67.21273494524553,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.04117822641892983,
+    "new_best": true
+  },
+  {
+    "step": 17,
+    "op": "nudge T2 (0,2) cells",
+    "move": "nudge",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 18,
+    "op": "nudge T2 (1,0) cells",
+    "move": "nudge",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 19,
+    "op": "no larger part fits",
+    "move": "hardware",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 20,
+    "op": "nudge T2 (2,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.2111874022439784,
+    "grad_max": 1.806845963572414,
+    "grad_rms": 0.241556536079181,
+    "Tmax_C": 66.99060555444197,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.027017034353459864,
+    "new_best": true
+  },
+  {
+    "step": 21,
+    "op": "nudge T2 (0,-1) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.6538645420540059,
+    "J": 1.2215178938929143,
+    "grad_max": 1.8118199155584687,
+    "grad_rms": 0.24229814969201474,
+    "Tmax_C": 67.2491533927219,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.02431533091811388
+  },
+  {
+    "step": 22,
+    "op": "no larger part fits",
+    "move": "hardware",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 23,
+    "op": "nudge T2 (-2,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.5727458342975241,
+    "J": 1.2324944109554818,
+    "grad_max": 1.8221613004092836,
+    "grad_rms": 0.24233188867343985,
+    "Tmax_C": 67.48947998894653,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.019695418043672242
+  },
+  {
+    "step": 24,
+    "op": "no larger part fits",
+    "move": "hardware",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 25,
+    "op": "nudge T2 (0,1) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.221508059372745,
+    "grad_max": 1.817133658890422,
+    "grad_rms": 0.24153952033162596,
+    "Tmax_C": 67.21273494524553,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.015953288615374518
+  },
+  {
+    "step": 26,
+    "op": "nudge GPU_TITANX (-1,0) cells",
+    "move": "nudge",
+    "accept": false,
+    "ap": 0.5345311068503106,
+    "J": 1.2305013878904623,
+    "grad_max": 1.8233145216818736,
+    "grad_rms": 0.24274828215116767,
+    "Tmax_C": 67.42522945248129,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.014357959753837067
+  },
+  {
+    "step": 27,
+    "op": "nudge T2 (1,0) cells",
+    "move": "nudge",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 28,
+    "op": "rotate GPU_TITANX",
+    "move": "rotate",
+    "accept": false,
+    "ap": 0.542296589145476,
+    "J": 1.2286249151426514,
+    "grad_max": 1.8142112742955052,
+    "grad_rms": 0.24351973499629334,
+    "Tmax_C": 67.4340343894583,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.011629947400608026
+  },
+  {
+    "step": 29,
+    "op": "nudge T2 (-1,0) cells",
+    "move": "nudge",
+    "accept": false,
+    "ap": 0.4434906369864517,
+    "J": 1.2300185144741391,
+    "grad_max": 1.824409816447466,
+    "grad_rms": 0.2416375263560353,
+    "Tmax_C": 67.40411363601618,
+    "hardware": [
+      "T2",
+      "GPU_TITANX",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.010466952660547223
+  },
+  {
+    "step": 30,
+    "op": "no larger part fits",
+    "move": "hardware",
+    "accept": false,
+    "reason": "illegal"
+  }
+]

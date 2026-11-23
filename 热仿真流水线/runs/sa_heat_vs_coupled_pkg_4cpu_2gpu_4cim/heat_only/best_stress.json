@@ -1,0 +1,174 @@
+{
+  "json": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/sa_heat_vs_coupled_pkg_4cpu_2gpu_4cim/heat_only/best.json",
+  "fill_die": true,
+  "Tmax_C": 66.24810867804365,
+  "vm_center_mean_MPa": 33.992706608993984,
+  "vm_center_max_MPa": 67.84493798357362,
+  "vm_normal_chip_max_MPa": 70.60254771570914,
+  "vm_normal_chip_name": "CPU_starter",
+  "vm_normal_chip_p95_MPa": 70.13428054048154,
+  "chip_interiors": [
+    {
+      "name": "CPU_matmul",
+      "area_mm2": 13.634499999999996,
+      "normal": true,
+      "n_cells": 12,
+      "vm_max_MPa": 66.7750592993174,
+      "vm_p95_MPa": 64.75150908331594,
+      "vm_mean_MPa": 56.84655497617589
+    },
+    {
+      "name": "CPU_threads",
+      "area_mm2": 13.634499999999997,
+      "normal": true,
+      "n_cells": 16,
+      "vm_max_MPa": 49.422032284013675,
+      "vm_p95_MPa": 48.99557800341815,
+      "vm_mean_MPa": 41.82020336638964
+    },
+    {
+      "name": "CPU_armL2",
+      "area_mm2": 13.6345,
+      "normal": true,
+      "n_cells": 12,
+      "vm_max_MPa": 14.735984307582266,
+      "vm_p95_MPa": 14.7151064095775,
+      "vm_mean_MPa": 13.411619500150211
+    },
+    {
+      "name": "CPU_starter",
+      "area_mm2": 2.900289999999999,
+      "normal": true,
+      "n_cells": 8,
+      "vm_max_MPa": 70.60254771570914,
+      "vm_p95_MPa": 70.13428054048154,
+      "vm_mean_MPa": 65.50884039262112
+    },
+    {
+      "name": "GPU_3070",
+      "area_mm2": 392.0,
+      "normal": true,
+      "n_cells": 352,
+      "vm_max_MPa": 67.86712215307949,
+      "vm_p95_MPa": 57.5186143970941,
+      "vm_mean_MPa": 30.014535147747157
+    },
+    {
+      "name": "GPU_TITANX",
+      "area_mm2": 470.99999999999994,
+      "normal": true,
+      "n_cells": 330,
+      "vm_max_MPa": 59.830177088508066,
+      "vm_p95_MPa": 51.92312444955011,
+      "vm_mean_MPa": 27.60060088560923
+    },
+    {
+      "name": "CIM_jia",
+      "area_mm2": 4.281226257942075,
+      "normal": true,
+      "n_cells": 8,
+      "vm_max_MPa": 69.18112612481926,
+      "vm_p95_MPa": 67.68733342422124,
+      "vm_mean_MPa": 57.29393945968695
+    },
+    {
+      "name": "CIM_colonnade",
+      "area_mm2": 0.23135989135199997,
+      "normal": false,
+      "n_cells": 4,
+      "vm_max_MPa": 7.944820521264977,
+      "vm_p95_MPa": 7.931550452158846,
+      "vm_mean_MPa": 7.749488666384928
+    },
+    {
+      "name": "CIM_wang",
+      "area_mm2": 0.12203959822869019,
+      "normal": false,
+      "n_cells": 4,
+      "vm_max_MPa": 47.906024043293336,
+      "vm_p95_MPa": 47.877450268654314,
+      "vm_mean_MPa": 47.49275870919173
+    },
+    {
+      "name": "CIM_basic",
+      "area_mm2": 0.04671951155777578,
+      "normal": false,
+      "n_cells": 4,
+      "vm_max_MPa": 14.324143339193247,
+      "vm_p95_MPa": 14.323714340337663,
+      "vm_mean_MPa": 14.261347432134706
+    }
+  ],
+  "w_pv_um": 2.371511249333193,
+  "u_max_um": 17.006176528176866,
+  "vm_package_max_MPa": 87.73446121995043,
+  "chip_centers": [
+    {
+      "name": "CPU_matmul",
+      "T_C": 61.68741872973544,
+      "vm_MPa": 54.788681659897705,
+      "uz_um": 0.03087840167166963
+    },
+    {
+      "name": "CPU_threads",
+      "T_C": 62.085098327675155,
+      "vm_MPa": 39.29549373468883,
+      "uz_um": 0.31548116831120515
+    },
+    {
+      "name": "CPU_armL2",
+      "T_C": 62.82536581873205,
+      "vm_MPa": 12.394181905679217,
+      "uz_um": 0.7250340346900549
+    },
+    {
+      "name": "CPU_starter",
+      "T_C": 64.25701089105075,
+      "vm_MPa": 67.84493798357362,
+      "uz_um": -0.23052920927570153
+    },
+    {
+      "name": "GPU_3070",
+      "T_C": 66.02323068104499,
+      "vm_MPa": 18.424510012760663,
+      "uz_um": 0.7792854547472529
+    },
+    {
+      "name": "GPU_TITANX",
+      "T_C": 65.40665549963558,
+      "vm_MPa": 18.43199414742103,
+      "uz_um": 0.772554154944663
+    },
+    {
+      "name": "CIM_jia",
+      "T_C": 60.69541087340144,
+      "vm_MPa": 59.18797702130359,
+      "uz_um": -0.16832115425349845
+    },
+    {
+      "name": "CIM_colonnade",
+      "T_C": 63.89734469273861,
+      "vm_MPa": 7.6434663507676515,
+      "uz_um": 0.7789752014633916
+    },
+    {
+      "name": "CIM_wang",
+      "T_C": 62.362346065244026,
+      "vm_MPa": 47.71553221236655,
+      "uz_um": 0.16053831530245705
+    },
+    {
+      "name": "CIM_basic",
+      "T_C": 62.50694625718887,
+      "vm_MPa": 14.200291061480986,
+      "uz_um": 0.7205896652608308
+    }
+  ],
+  "heat_s": 8.635976791381836,
+  "elast_s": 52.22364616394043,
+  "elapsed_s": 61.43595218658447,
+  "ndof": 98880,
+  "element": "wilson",
+  "solver": "cg",
+  "wall_s": 61.43611216545105
+}

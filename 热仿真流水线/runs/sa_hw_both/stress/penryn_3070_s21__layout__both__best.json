@@ -1,0 +1,44 @@
+{
+  "tag": "penryn_3070_s21__layout__both__best",
+  "vm_normal_chip_max_MPa": 89.22258339067065,
+  "vm_normal_chip_name": "GPU_3070",
+  "vm_normal_chip_p95_MPa": 65.89382618998596,
+  "w_pv_um": 2.5545677230956576,
+  "atsim_Tmax_C": 74.79255197383804,
+  "elapsed_s": 15.687488079071045,
+  "ndof": 40164,
+  "chips": [
+    {
+      "name": "Penryn",
+      "normal": true,
+      "n_cells": 35,
+      "vm_max_MPa": 72.08815649560447,
+      "vm_mean_MPa": 44.68615593119321,
+      "vm_p95_MPa": 68.01663582143031
+    },
+    {
+      "name": "GPU_3070",
+      "normal": true,
+      "n_cells": 130,
+      "vm_max_MPa": 89.22258339067065,
+      "vm_mean_MPa": 35.813466611850245,
+      "vm_p95_MPa": 65.89382618998596
+    },
+    {
+      "name": "HBM3",
+      "normal": true,
+      "n_cells": 54,
+      "vm_max_MPa": 47.0083499240591,
+      "vm_mean_MPa": 26.4664292289441,
+      "vm_p95_MPa": 46.6568357572269
+    },
+    {
+      "name": "CIM_jia",
+      "normal": true,
+      "n_cells": 16,
+      "vm_max_MPa": 64.22095954810486,
+      "vm_mean_MPa": 53.84190948950875,
+      "vm_p95_MPa": 64.11383384191981
+    }
+  ]
+}

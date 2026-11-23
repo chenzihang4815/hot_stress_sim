@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/home/czh/任务仿真产生功耗文件工具/HotSpot-master/hotspot",
+    "-f",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/superposition/solo_4/floorplan.flp",
+    "-p",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/superposition/solo_4/power.ptrace",
+    "-c",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/superposition/solo_4/hotspot.config",
+    "-model_type",
+    "grid",
+    "-steady_file",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/superposition/solo_4/block.steady",
+    "-grid_steady_file",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/superposition/solo_4/grid.steady"
+  ],
+  "returncode": 0,
+  "block_steady": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/superposition/solo_4/block.steady",
+  "grid_steady": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/superposition/solo_4/grid.steady"
+}

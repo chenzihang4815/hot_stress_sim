@@ -1,0 +1,84 @@
+{
+  "json": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/sa_heat_vs_coupled_pkg_2cpu_1gpu_1cim/coupled/try_002.json",
+  "fill_die": true,
+  "Tmax_C": 57.84609178858602,
+  "vm_center_mean_MPa": 22.476073866688594,
+  "vm_center_max_MPa": 30.30928198391421,
+  "vm_normal_chip_max_MPa": 32.258191065248404,
+  "vm_normal_chip_name": "CIM_jia",
+  "vm_normal_chip_p95_MPa": 31.918353168710414,
+  "chip_interiors": [
+    {
+      "name": "CPU_matmul",
+      "area_mm2": 13.634499999999997,
+      "normal": true,
+      "n_cells": 6,
+      "vm_max_MPa": 23.679135868006533,
+      "vm_p95_MPa": 23.37722082305164,
+      "vm_mean_MPa": 20.117983514859183
+    },
+    {
+      "name": "CPU_threads",
+      "area_mm2": 13.634499999999997,
+      "normal": true,
+      "n_cells": 36,
+      "vm_max_MPa": 30.815651654591584,
+      "vm_p95_MPa": 29.314544241911964,
+      "vm_mean_MPa": 23.78738141207592
+    },
+    {
+      "name": "GPU_3070",
+      "area_mm2": 392.0,
+      "normal": true,
+      "n_cells": 168,
+      "vm_max_MPa": 32.134824985948164,
+      "vm_p95_MPa": 27.702584244626017,
+      "vm_mean_MPa": 16.356585859275693
+    },
+    {
+      "name": "CIM_jia",
+      "area_mm2": 4.281226257942074,
+      "normal": true,
+      "n_cells": 4,
+      "vm_max_MPa": 32.258191065248404,
+      "vm_p95_MPa": 31.918353168710414,
+      "vm_mean_MPa": 29.847855399082174
+    }
+  ],
+  "w_pv_um": 0.8052567926545078,
+  "u_max_um": 5.917932239499652,
+  "vm_package_max_MPa": 39.30845684373896,
+  "chip_centers": [
+    {
+      "name": "CPU_matmul",
+      "T_C": 54.11437011581438,
+      "vm_MPa": 22.47147568818696,
+      "uz_um": 0.1253997771948331
+    },
+    {
+      "name": "CPU_threads",
+      "T_C": 53.64460808895717,
+      "vm_MPa": 30.30928198391421,
+      "uz_um": -0.05727047567123257
+    },
+    {
+      "name": "GPU_3070",
+      "T_C": 57.8246183674766,
+      "vm_MPa": 7.1309327063247325,
+      "uz_um": 0.4425931530162427
+    },
+    {
+      "name": "CIM_jia",
+      "T_C": 53.67764720881843,
+      "vm_MPa": 29.992605088328467,
+      "uz_um": 0.015279298853920764
+    }
+  ],
+  "heat_s": 0.9665629863739014,
+  "elast_s": 14.028581380844116,
+  "elapsed_s": 15.17227554321289,
+  "ndof": 28776,
+  "element": "wilson",
+  "solver": "cg",
+  "wall_s": 15.172390699386597
+}

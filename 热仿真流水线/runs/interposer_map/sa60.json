@@ -1,0 +1,1614 @@
+{
+  "seed": 22,
+  "steps": 60,
+  "n_iter": 8,
+  "full": {
+    "mode": "full",
+    "accepted": 46,
+    "wall_s": 28.158082197012845,
+    "priced_best_C": 62.947327115937014,
+    "checked_best_C": 62.947327115937014,
+    "checked_final_C": 62.947327115937014,
+    "best": [
+      {
+        "name": "Penryn",
+        "x_mm": 43.0,
+        "y_mm": 32.5,
+        "w_mm": 10.124999999999998,
+        "h_mm": 9.0
+      },
+      {
+        "name": "GPU_3070",
+        "x_mm": 1.4999999999999987,
+        "y_mm": 32.875,
+        "w_mm": 15.75,
+        "h_mm": 24.749999999999996
+      },
+      {
+        "name": "HBM3",
+        "x_mm": 6.0,
+        "y_mm": 11.5,
+        "w_mm": 13.499999999999998,
+        "h_mm": 9.0
+      },
+      {
+        "name": "CIM_jia",
+        "x_mm": 46.0,
+        "y_mm": 26.5,
+        "w_mm": 2.25,
+        "h_mm": 2.25
+      }
+    ],
+    "final": [
+      {
+        "name": "Penryn",
+        "x_mm": 43.0,
+        "y_mm": 32.5,
+        "w_mm": 10.124999999999998,
+        "h_mm": 9.0
+      },
+      {
+        "name": "GPU_3070",
+        "x_mm": 1.4999999999999987,
+        "y_mm": 32.875,
+        "w_mm": 15.75,
+        "h_mm": 24.749999999999996
+      },
+      {
+        "name": "HBM3",
+        "x_mm": 6.0,
+        "y_mm": 11.5,
+        "w_mm": 13.499999999999998,
+        "h_mm": 9.0
+      },
+      {
+        "name": "CIM_jia",
+        "x_mm": 46.0,
+        "y_mm": 26.5,
+        "w_mm": 2.25,
+        "h_mm": 2.25
+      }
+    ],
+    "log": [
+      {
+        "step": 0,
+        "Tmax_C": 70.01507269904238,
+        "accept": true
+      },
+      {
+        "step": 1,
+        "op": "rotate GPU_3070",
+        "legal": true,
+        "Tmax_C": 69.70512101303802,
+        "accept": true,
+        "ms": 467.79943598085083
+      },
+      {
+        "step": 2,
+        "op": "nudge CIM_jia (0.5,0.0)mm",
+        "legal": true,
+        "Tmax_C": 69.70512101303802,
+        "accept": true,
+        "ms": 448.6954260210041
+      },
+      {
+        "step": 3,
+        "op": "swap HBM3<->Penryn",
+        "legal": true,
+        "Tmax_C": 64.52986209133485,
+        "accept": true,
+        "ms": 481.9511940004304
+      },
+      {
+        "step": 4,
+        "op": "nudge HBM3 (-1.5,0.0)mm",
+        "legal": true,
+        "Tmax_C": 64.51441097908537,
+        "accept": true,
+        "ms": 472.27644399390556
+      },
+      {
+        "step": 5,
+        "op": "rotate CIM_jia",
+        "legal": true,
+        "Tmax_C": 64.51441097908537,
+        "accept": true,
+        "ms": 463.4461129899137
+      },
+      {
+        "step": 6,
+        "op": "swap Penryn<->HBM3",
+        "legal": true,
+        "Tmax_C": 69.98859423730994,
+        "accept": false,
+        "ms": 455.1824620284606
+      },
+      {
+        "step": 7,
+        "op": "nudge HBM3 (-2.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 64.42796720924656,
+        "accept": true,
+        "ms": 453.62068599206395
+      },
+      {
+        "step": 8,
+        "op": "nudge GPU_3070 (1.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 64.38387513125787,
+        "accept": true,
+        "ms": 474.9650369922165
+      },
+      {
+        "step": 9,
+        "op": "nudge CIM_jia (0.0,1.0)mm",
+        "legal": true,
+        "Tmax_C": 64.38387696813027,
+        "accept": true,
+        "ms": 460.6685870094225
+      },
+      {
+        "step": 10,
+        "op": "jump GPU_3070",
+        "legal": true,
+        "Tmax_C": 64.22053264064652,
+        "accept": true,
+        "ms": 445.68363999133
+      },
+      {
+        "step": 11,
+        "op": "nudge GPU_3070 (0.0,-1.0)mm",
+        "legal": true,
+        "Tmax_C": 64.23911660000022,
+        "accept": true,
+        "ms": 469.1246370202862
+      },
+      {
+        "step": 12,
+        "op": "swap GPU_3070<->HBM3",
+        "legal": true,
+        "Tmax_C": 64.7473163842169,
+        "accept": true,
+        "ms": 497.6051280100364
+      },
+      {
+        "step": 13,
+        "op": "nudge GPU_3070 (0.5,0.0)mm",
+        "legal": true,
+        "Tmax_C": 64.7473163842169,
+        "accept": true,
+        "ms": 495.05212900112383
+      },
+      {
+        "step": 14,
+        "op": "nudge GPU_3070 (2.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 64.8743578616689,
+        "accept": true,
+        "ms": 464.67534502153285
+      },
+      {
+        "step": 15,
+        "op": "jump+rot GPU_3070",
+        "legal": true,
+        "Tmax_C": 65.14389758871062,
+        "accept": true,
+        "ms": 464.40037101274356
+      },
+      {
+        "step": 16,
+        "op": "rotate Penryn",
+        "legal": true,
+        "Tmax_C": 65.10497951026258,
+        "accept": true,
+        "ms": 477.5602929876186
+      },
+      {
+        "step": 17,
+        "op": "swap HBM3<->Penryn",
+        "legal": true,
+        "Tmax_C": 65.36066398502442,
+        "accept": true,
+        "ms": 465.8177950186655
+      },
+      {
+        "step": 18,
+        "op": "jump HBM3",
+        "legal": true,
+        "Tmax_C": 64.52124833956691,
+        "accept": true,
+        "ms": 454.6813619963359
+      },
+      {
+        "step": 19,
+        "op": "jump GPU_3070",
+        "legal": true,
+        "Tmax_C": 63.724370874619865,
+        "accept": true,
+        "ms": 447.7434189757332
+      },
+      {
+        "step": 20,
+        "op": "nudge GPU_3070 (-0.5,0.0)mm",
+        "legal": true,
+        "Tmax_C": 63.64483848367087,
+        "accept": true,
+        "ms": 460.35752398893237
+      },
+      {
+        "step": 21,
+        "op": "swap CIM_jia<->Penryn",
+        "legal": true,
+        "Tmax_C": 68.02131106210823,
+        "accept": false,
+        "ms": 510.51376800751314
+      },
+      {
+        "step": 22,
+        "op": "swap CIM_jia<->GPU_3070",
+        "legal": true,
+        "Tmax_C": 63.14982219819768,
+        "accept": true,
+        "ms": 485.5465670116246
+      },
+      {
+        "step": 23,
+        "op": "nudge GPU_3070 (-0.5,0.0)mm",
+        "legal": true,
+        "Tmax_C": 63.14982219819768,
+        "accept": true,
+        "ms": 450.5455640028231
+      },
+      {
+        "step": 24,
+        "op": "nudge HBM3 (0.5,0.0)mm",
+        "legal": true,
+        "Tmax_C": 63.165220893580454,
+        "accept": true,
+        "ms": 453.5573869943619
+      },
+      {
+        "step": 25,
+        "op": "jump+rot GPU_3070",
+        "legal": true,
+        "Tmax_C": 64.13864288335031,
+        "accept": false,
+        "ms": 477.27054700953886
+      },
+      {
+        "step": 26,
+        "op": "nudge CIM_jia (-2.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 63.16521985035433,
+        "accept": true,
+        "ms": 484.11655801464804
+      },
+      {
+        "step": 27,
+        "op": "jump GPU_3070",
+        "legal": true,
+        "Tmax_C": 64.59381247393719,
+        "accept": false,
+        "ms": 496.90871700295247
+      },
+      {
+        "step": 28,
+        "op": "nudge GPU_3070 (0.0,0.5)mm",
+        "legal": true,
+        "Tmax_C": 63.16521985035433,
+        "accept": true,
+        "ms": 456.8880159931723
+      },
+      {
+        "step": 29,
+        "op": "nudge HBM3 (0.0,0.5)mm",
+        "legal": true,
+        "Tmax_C": 63.1736806932542,
+        "accept": true,
+        "ms": 464.40600499045104
+      },
+      {
+        "step": 30,
+        "op": "nudge CIM_jia (0.0,-2.0)mm",
+        "legal": true,
+        "Tmax_C": 63.17362548653472,
+        "accept": true,
+        "ms": 489.15581198525615
+      },
+      {
+        "step": 31,
+        "op": "jump Penryn",
+        "legal": true,
+        "Tmax_C": 65.90250378072437,
+        "accept": false,
+        "ms": 505.3521959926002
+      },
+      {
+        "step": 32,
+        "op": "nudge GPU_3070 (-1.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 63.117195041716684,
+        "accept": true,
+        "ms": 474.1626970062498
+      },
+      {
+        "step": 33,
+        "op": "nudge GPU_3070 (0.0,0.5)mm",
+        "legal": true,
+        "Tmax_C": 63.11061407270057,
+        "accept": true,
+        "ms": 453.63656399422325
+      },
+      {
+        "step": 34,
+        "op": "rotate Penryn",
+        "legal": true,
+        "Tmax_C": 63.1643051926294,
+        "accept": true,
+        "ms": 458.19786700303666
+      },
+      {
+        "step": 35,
+        "op": "rotate Penryn",
+        "legal": true,
+        "Tmax_C": 63.11061407270057,
+        "accept": true,
+        "ms": 483.5112400178332
+      },
+      {
+        "step": 36,
+        "op": "jump HBM3",
+        "legal": true,
+        "Tmax_C": 64.13870719435323,
+        "accept": false,
+        "ms": 481.9780260149855
+      },
+      {
+        "step": 37,
+        "op": "jump HBM3",
+        "legal": true,
+        "Tmax_C": 63.56213342577513,
+        "accept": false,
+        "ms": 458.91637197928503
+      },
+      {
+        "step": 38,
+        "op": "rotate HBM3",
+        "legal": true,
+        "Tmax_C": 63.12949479100371,
+        "accept": true,
+        "ms": 446.4216659835074
+      },
+      {
+        "step": 39,
+        "op": "nudge GPU_3070 (0.0,1.0)mm",
+        "legal": true,
+        "Tmax_C": 63.121657993884014,
+        "accept": true,
+        "ms": 449.40325399511494
+      },
+      {
+        "step": 40,
+        "op": "rotate HBM3",
+        "legal": true,
+        "Tmax_C": 63.102777418534174,
+        "accept": true,
+        "ms": 489.9552529968787
+      },
+      {
+        "step": 41,
+        "op": "nudge HBM3 (-0.5,0.0)mm",
+        "legal": true,
+        "Tmax_C": 63.0869055639543,
+        "accept": true,
+        "ms": 459.7226869955193
+      },
+      {
+        "step": 42,
+        "op": "jump+rot GPU_3070",
+        "legal": true,
+        "Tmax_C": 63.93875559424333,
+        "accept": false,
+        "ms": 441.02178199682385
+      },
+      {
+        "step": 43,
+        "op": "rotate HBM3",
+        "legal": true,
+        "Tmax_C": 63.10470931963772,
+        "accept": true,
+        "ms": 454.30117700016126
+      },
+      {
+        "step": 44,
+        "op": "nudge GPU_3070 (0.0,-0.5)mm",
+        "legal": true,
+        "Tmax_C": 63.11254545535678,
+        "accept": true,
+        "ms": 485.96274000010453
+      },
+      {
+        "step": 45,
+        "op": "nudge GPU_3070 (0.0,-0.5)mm",
+        "legal": true,
+        "Tmax_C": 63.11254545535678,
+        "accept": true,
+        "ms": 569.0183659899049
+      },
+      {
+        "step": 46,
+        "op": "nudge CIM_jia (1.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 63.1125466205022,
+        "accept": true,
+        "ms": 455.7985640130937
+      },
+      {
+        "step": 47,
+        "op": "jump+rot CIM_jia",
+        "legal": true,
+        "Tmax_C": 63.1127048410728,
+        "accept": true,
+        "ms": 447.1687620098237
+      },
+      {
+        "step": 48,
+        "op": "nudge GPU_3070 (-0.5,0.0)mm",
+        "legal": true,
+        "Tmax_C": 63.1127048410728,
+        "accept": true,
+        "ms": 460.0595599913504
+      },
+      {
+        "step": 49,
+        "op": "jump+rot HBM3",
+        "legal": true,
+        "Tmax_C": 63.828011808380325,
+        "accept": false,
+        "ms": 451.0120890045073
+      },
+      {
+        "step": 50,
+        "op": "jump+rot GPU_3070",
+        "legal": true,
+        "Tmax_C": 65.82312511100986,
+        "accept": false,
+        "ms": 449.5446860091761
+      },
+      {
+        "step": 51,
+        "op": "rotate CIM_jia",
+        "legal": true,
+        "Tmax_C": 63.1127048410728,
+        "accept": true,
+        "ms": 487.46749898418784
+      },
+      {
+        "step": 52,
+        "op": "nudge GPU_3070 (0.0,0.5)mm",
+        "legal": true,
+        "Tmax_C": 63.1127048410728,
+        "accept": true,
+        "ms": 475.49110002000816
+      },
+      {
+        "step": 53,
+        "op": "swap Penryn<->HBM3",
+        "legal": true,
+        "Tmax_C": 66.96353116129626,
+        "accept": false,
+        "ms": 442.46346899308264
+      },
+      {
+        "step": 54,
+        "op": "nudge HBM3 (0.0,1.0)mm",
+        "legal": true,
+        "Tmax_C": 63.12197001903263,
+        "accept": true,
+        "ms": 448.2652489969041
+      },
+      {
+        "step": 55,
+        "op": "swap Penryn<->HBM3",
+        "legal": true,
+        "Tmax_C": 66.93752111800069,
+        "accept": false,
+        "ms": 473.9980009908322
+      },
+      {
+        "step": 56,
+        "op": "nudge GPU_3070 (-2.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 62.95634891568665,
+        "accept": true,
+        "ms": 480.58495999430306
+      },
+      {
+        "step": 57,
+        "op": "nudge GPU_3070 (0.5,0.0)mm",
+        "legal": true,
+        "Tmax_C": 62.95634891568665,
+        "accept": true,
+        "ms": 449.4495049875695
+      },
+      {
+        "step": 58,
+        "op": "nudge HBM3 (0.0,-0.5)mm",
+        "legal": true,
+        "Tmax_C": 62.947327115937014,
+        "accept": true,
+        "ms": 449.78796801296994
+      },
+      {
+        "step": 59,
+        "op": "rotate GPU_3070",
+        "legal": true,
+        "Tmax_C": 63.28926482390699,
+        "accept": false,
+        "ms": 496.9236169999931
+      },
+      {
+        "step": 60,
+        "op": "nudge GPU_3070 (0.5,0.0)mm",
+        "legal": true,
+        "Tmax_C": 63.05164149194775,
+        "accept": false,
+        "ms": 488.28931199386716
+      }
+    ]
+  },
+  "iter": {
+    "mode": "iter",
+    "accepted": 48,
+    "wall_s": 4.490300627076067,
+    "priced_best_C": 63.06995093268961,
+    "checked_best_C": 63.06942235629799,
+    "checked_final_C": 63.06942235629799,
+    "best": [
+      {
+        "name": "Penryn",
+        "x_mm": 24.249999999999996,
+        "y_mm": 33.0,
+        "w_mm": 10.124999999999998,
+        "h_mm": 9.0
+      },
+      {
+        "name": "GPU_3070",
+        "x_mm": 49.5,
+        "y_mm": 21.0,
+        "w_mm": 15.75,
+        "h_mm": 24.749999999999996
+      },
+      {
+        "name": "HBM3",
+        "x_mm": 4.0,
+        "y_mm": 0.5,
+        "w_mm": 13.499999999999998,
+        "h_mm": 9.0
+      },
+      {
+        "name": "CIM_jia",
+        "x_mm": 68.0,
+        "y_mm": 42.5,
+        "w_mm": 2.25,
+        "h_mm": 2.25
+      }
+    ],
+    "final": [
+      {
+        "name": "Penryn",
+        "x_mm": 24.249999999999996,
+        "y_mm": 33.0,
+        "w_mm": 10.124999999999998,
+        "h_mm": 9.0
+      },
+      {
+        "name": "GPU_3070",
+        "x_mm": 49.5,
+        "y_mm": 21.0,
+        "w_mm": 15.75,
+        "h_mm": 24.749999999999996
+      },
+      {
+        "name": "HBM3",
+        "x_mm": 4.0,
+        "y_mm": 0.5,
+        "w_mm": 13.499999999999998,
+        "h_mm": 9.0
+      },
+      {
+        "name": "CIM_jia",
+        "x_mm": 68.0,
+        "y_mm": 42.5,
+        "w_mm": 2.25,
+        "h_mm": 2.25
+      }
+    ],
+    "log": [
+      {
+        "step": 0,
+        "Tmax_C": 70.01507269904238,
+        "accept": true
+      },
+      {
+        "step": 1,
+        "op": "rotate GPU_3070",
+        "legal": true,
+        "Tmax_C": 69.70474895388173,
+        "accept": true,
+        "ms": 72.41303898626938
+      },
+      {
+        "step": 2,
+        "op": "nudge CIM_jia (0.5,0.0)mm",
+        "legal": true,
+        "Tmax_C": 69.70512101303319,
+        "accept": true,
+        "ms": 77.71427498664707
+      },
+      {
+        "step": 3,
+        "op": "rotate Penryn",
+        "legal": true,
+        "Tmax_C": 69.73128991863564,
+        "accept": true,
+        "ms": 79.4132839946542
+      },
+      {
+        "step": 4,
+        "op": "rotate HBM3",
+        "legal": true,
+        "Tmax_C": 69.74040710268372,
+        "accept": true,
+        "ms": 72.56834500003606
+      },
+      {
+        "step": 5,
+        "op": "nudge CIM_jia (2.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 69.74060942866095,
+        "accept": true,
+        "ms": 114.67871800414287
+      },
+      {
+        "step": 6,
+        "op": "nudge GPU_3070 (-0.5,0.0)mm",
+        "legal": true,
+        "Tmax_C": 69.7406000338425,
+        "accept": true,
+        "ms": 77.71353001589887
+      },
+      {
+        "step": 7,
+        "op": "swap Penryn<->HBM3",
+        "legal": true,
+        "Tmax_C": 64.57677301116837,
+        "accept": true,
+        "ms": 78.0966810125392
+      },
+      {
+        "step": 8,
+        "op": "nudge GPU_3070 (0.0,1.0)mm",
+        "legal": true,
+        "Tmax_C": 64.67092284117291,
+        "accept": true,
+        "ms": 72.56040300126188
+      },
+      {
+        "step": 9,
+        "op": "rotate GPU_3070",
+        "legal": true,
+        "Tmax_C": 65.6583603208847,
+        "accept": true,
+        "ms": 70.86092798272148
+      },
+      {
+        "step": 10,
+        "op": "nudge CIM_jia (0.0,0.5)mm",
+        "legal": true,
+        "Tmax_C": 65.65817887533194,
+        "accept": true,
+        "ms": 69.68121099635027
+      },
+      {
+        "step": 11,
+        "op": "jump GPU_3070",
+        "legal": true,
+        "Tmax_C": 63.763898077013266,
+        "accept": true,
+        "ms": 75.31650102464482
+      },
+      {
+        "step": 12,
+        "op": "jump GPU_3070",
+        "legal": true,
+        "Tmax_C": 65.72935951639892,
+        "accept": false,
+        "ms": 75.835438008653
+      },
+      {
+        "step": 13,
+        "op": "jump+rot GPU_3070",
+        "legal": true,
+        "Tmax_C": 65.08463811137415,
+        "accept": false,
+        "ms": 73.29650799511
+      },
+      {
+        "step": 14,
+        "op": "nudge GPU_3070 (-2.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 63.888716516737816,
+        "accept": true,
+        "ms": 71.02289199247025
+      },
+      {
+        "step": 15,
+        "op": "nudge GPU_3070 (2.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 63.767346585539826,
+        "accept": true,
+        "ms": 70.03095198888332
+      },
+      {
+        "step": 16,
+        "op": "nudge GPU_3070 (0.0,-1.5)mm",
+        "legal": true,
+        "Tmax_C": 63.798493122495586,
+        "accept": true,
+        "ms": 76.47751402691938
+      },
+      {
+        "step": 17,
+        "op": "nudge GPU_3070 (0.0,1.5)mm",
+        "legal": true,
+        "Tmax_C": 63.76743091906803,
+        "accept": true,
+        "ms": 78.72351698460989
+      },
+      {
+        "step": 18,
+        "op": "rotate CIM_jia",
+        "legal": true,
+        "Tmax_C": 63.76744807424427,
+        "accept": true,
+        "ms": 70.424178004032
+      },
+      {
+        "step": 19,
+        "op": "nudge Penryn (0.0,1.5)mm",
+        "legal": true,
+        "Tmax_C": 63.7957283818962,
+        "accept": true,
+        "ms": 70.80511300591752
+      },
+      {
+        "step": 20,
+        "op": "nudge GPU_3070 (1.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 63.729219642080466,
+        "accept": true,
+        "ms": 75.05636199493892
+      },
+      {
+        "step": 21,
+        "op": "nudge CIM_jia (0.0,2.0)mm",
+        "legal": true,
+        "Tmax_C": 63.72925029873801,
+        "accept": true,
+        "ms": 76.72422600444406
+      },
+      {
+        "step": 22,
+        "op": "nudge GPU_3070 (0.0,0.5)mm",
+        "legal": true,
+        "Tmax_C": 63.70034305250488,
+        "accept": true,
+        "ms": 77.39730400498956
+      },
+      {
+        "step": 23,
+        "op": "jump GPU_3070",
+        "legal": true,
+        "Tmax_C": 64.07750574527057,
+        "accept": true,
+        "ms": 74.96587000787258
+      },
+      {
+        "step": 24,
+        "op": "nudge Penryn (-0.5,0.0)mm",
+        "legal": true,
+        "Tmax_C": 64.07988562094204,
+        "accept": true,
+        "ms": 69.4029820151627
+      },
+      {
+        "step": 25,
+        "op": "jump+rot GPU_3070",
+        "legal": true,
+        "Tmax_C": 65.29189583914666,
+        "accept": false,
+        "ms": 76.95531399804167
+      },
+      {
+        "step": 26,
+        "op": "nudge GPU_3070 (0.0,0.5)mm",
+        "legal": true,
+        "Tmax_C": 64.07988562094204,
+        "accept": true,
+        "ms": 74.56000399542972
+      },
+      {
+        "step": 27,
+        "op": "nudge GPU_3070 (0.0,-0.5)mm",
+        "legal": true,
+        "Tmax_C": 64.07988562094204,
+        "accept": true,
+        "ms": 73.4846509876661
+      },
+      {
+        "step": 28,
+        "op": "swap HBM3<->Penryn",
+        "legal": true,
+        "Tmax_C": 66.91646246889832,
+        "accept": false,
+        "ms": 72.74062800570391
+      },
+      {
+        "step": 29,
+        "op": "swap CIM_jia<->HBM3",
+        "legal": true,
+        "Tmax_C": 64.83823978809716,
+        "accept": false,
+        "ms": 74.61817399598658
+      },
+      {
+        "step": 30,
+        "op": "jump+rot GPU_3070",
+        "legal": true,
+        "Tmax_C": 65.78072099110392,
+        "accept": false,
+        "ms": 71.07701399945654
+      },
+      {
+        "step": 31,
+        "op": "nudge GPU_3070 (0.0,-1.5)mm",
+        "legal": true,
+        "Tmax_C": 64.12541448602104,
+        "accept": true,
+        "ms": 72.126979008317
+      },
+      {
+        "step": 32,
+        "op": "swap GPU_3070<->CIM_jia",
+        "legal": true,
+        "Tmax_C": 65.80018039141964,
+        "accept": false,
+        "ms": 75.61790000181645
+      },
+      {
+        "step": 33,
+        "op": "rotate Penryn",
+        "legal": true,
+        "Tmax_C": 64.11824686568178,
+        "accept": true,
+        "ms": 76.43131702207029
+      },
+      {
+        "step": 34,
+        "op": "nudge GPU_3070 (-2.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 64.3052620740088,
+        "accept": true,
+        "ms": 81.33320600609295
+      },
+      {
+        "step": 35,
+        "op": "rotate HBM3",
+        "legal": true,
+        "Tmax_C": 64.32798821367908,
+        "accept": true,
+        "ms": 72.25584200932644
+      },
+      {
+        "step": 36,
+        "op": "rotate Penryn",
+        "legal": true,
+        "Tmax_C": 64.34949167198755,
+        "accept": true,
+        "ms": 70.75067001278512
+      },
+      {
+        "step": 37,
+        "op": "swap Penryn<->CIM_jia",
+        "legal": true,
+        "Tmax_C": 64.92712496709765,
+        "accept": false,
+        "ms": 73.73666699277237
+      },
+      {
+        "step": 38,
+        "op": "swap Penryn<->CIM_jia",
+        "legal": true,
+        "Tmax_C": 64.92712496709765,
+        "accept": false,
+        "ms": 77.06608498119749
+      },
+      {
+        "step": 39,
+        "op": "rotate HBM3",
+        "legal": true,
+        "Tmax_C": 64.3216897379234,
+        "accept": true,
+        "ms": 73.87199898948893
+      },
+      {
+        "step": 40,
+        "op": "jump+rot CIM_jia",
+        "legal": true,
+        "Tmax_C": 64.32019858485427,
+        "accept": true,
+        "ms": 76.20787600171752
+      },
+      {
+        "step": 41,
+        "op": "nudge GPU_3070 (0.0,0.5)mm",
+        "legal": true,
+        "Tmax_C": 64.29686751091418,
+        "accept": true,
+        "ms": 71.12275398685597
+      },
+      {
+        "step": 42,
+        "op": "nudge GPU_3070 (0.5,0.0)mm",
+        "legal": true,
+        "Tmax_C": 64.29682329846725,
+        "accept": true,
+        "ms": 73.58654201379977
+      },
+      {
+        "step": 43,
+        "op": "rotate HBM3",
+        "legal": true,
+        "Tmax_C": 64.31545016587108,
+        "accept": true,
+        "ms": 74.70203400589526
+      },
+      {
+        "step": 44,
+        "op": "nudge GPU_3070 (-1.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 64.3154995057705,
+        "accept": true,
+        "ms": 74.09721298608929
+      },
+      {
+        "step": 45,
+        "op": "nudge GPU_3070 (0.0,-0.5)mm",
+        "legal": true,
+        "Tmax_C": 64.33890411979945,
+        "accept": false,
+        "ms": 74.84912301879376
+      },
+      {
+        "step": 46,
+        "op": "jump GPU_3070",
+        "legal": true,
+        "Tmax_C": 63.72740894928779,
+        "accept": true,
+        "ms": 73.66297100088559
+      },
+      {
+        "step": 47,
+        "op": "jump+rot GPU_3070",
+        "legal": true,
+        "Tmax_C": 65.0400562247325,
+        "accept": false,
+        "ms": 70.78965799883008
+      },
+      {
+        "step": 48,
+        "op": "nudge CIM_jia (1.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 63.72740079012317,
+        "accept": true,
+        "ms": 72.29733400163241
+      },
+      {
+        "step": 49,
+        "op": "nudge GPU_3070 (-1.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 63.788378316186595,
+        "accept": true,
+        "ms": 77.26523099699989
+      },
+      {
+        "step": 50,
+        "op": "nudge GPU_3070 (1.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 63.72734708890391,
+        "accept": true,
+        "ms": 73.76289201783948
+      },
+      {
+        "step": 51,
+        "op": "nudge GPU_3070 (-2.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 63.85199322956254,
+        "accept": true,
+        "ms": 71.41304001561366
+      },
+      {
+        "step": 52,
+        "op": "rotate HBM3",
+        "legal": true,
+        "Tmax_C": 63.83264861207783,
+        "accept": true,
+        "ms": 74.05503999325447
+      },
+      {
+        "step": 53,
+        "op": "jump GPU_3070",
+        "legal": true,
+        "Tmax_C": 63.92104134446555,
+        "accept": true,
+        "ms": 75.98678598878905
+      },
+      {
+        "step": 54,
+        "op": "rotate CIM_jia",
+        "legal": true,
+        "Tmax_C": 63.92130941337365,
+        "accept": true,
+        "ms": 75.21707200794481
+      },
+      {
+        "step": 55,
+        "op": "nudge GPU_3070 (0.0,-1.0)mm",
+        "legal": true,
+        "Tmax_C": 63.91187800630473,
+        "accept": true,
+        "ms": 75.93929598806426
+      },
+      {
+        "step": 56,
+        "op": "nudge GPU_3070 (0.0,0.5)mm",
+        "legal": true,
+        "Tmax_C": 63.92130396279288,
+        "accept": true,
+        "ms": 73.99494602577761
+      },
+      {
+        "step": 57,
+        "op": "nudge GPU_3070 (-1.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 64.00147986183316,
+        "accept": true,
+        "ms": 70.97905199043453
+      },
+      {
+        "step": 58,
+        "op": "swap HBM3<->GPU_3070",
+        "legal": true,
+        "Tmax_C": 64.5521416139324,
+        "accept": false,
+        "ms": 76.82124699931592
+      },
+      {
+        "step": 59,
+        "op": "nudge HBM3 (0.0,-2.0)mm",
+        "legal": true,
+        "Tmax_C": 63.956281849934555,
+        "accept": true,
+        "ms": 75.82675397861749
+      },
+      {
+        "step": 60,
+        "op": "jump HBM3",
+        "legal": true,
+        "Tmax_C": 63.06995093268961,
+        "accept": true,
+        "ms": 69.91754501359537
+      }
+    ]
+  },
+  "note": "两条路径同一个随机序列，但各自按自己的峰值决定接受，所以布局会分开。checked 是终点用全部分解复核的峰值。priced 是退火当时用的峰值。iter 的旧分解只在接受时更新。python，冷边 45 C，底面绝热。",
+  "frozen": {
+    "mode": "frozen_material",
+    "accepted": 30,
+    "wall_s": 0.44974178791744635,
+    "priced_best_C": 69.71855695543377,
+    "priced_final_C": 69.71855695543377,
+    "frozen_final_C": 69.71855695543377,
+    "checked_best_C": 69.71557801996005,
+    "checked_final_C": 69.71557801996005,
+    "best": [
+      {
+        "name": "Penryn",
+        "x_mm": 4.5,
+        "y_mm": 4.999999999999999,
+        "w_mm": 9.0,
+        "h_mm": 10.124999999999998
+      },
+      {
+        "name": "GPU_3070",
+        "x_mm": 25.749999999999996,
+        "y_mm": 6.0,
+        "w_mm": 15.75,
+        "h_mm": 24.749999999999996
+      },
+      {
+        "name": "HBM3",
+        "x_mm": 24.249999999999996,
+        "y_mm": 32.5,
+        "w_mm": 9.0,
+        "h_mm": 13.499999999999998
+      },
+      {
+        "name": "CIM_jia",
+        "x_mm": 68.0,
+        "y_mm": 55.0,
+        "w_mm": 2.25,
+        "h_mm": 2.25
+      }
+    ],
+    "final": [
+      {
+        "name": "Penryn",
+        "x_mm": 4.5,
+        "y_mm": 4.999999999999999,
+        "w_mm": 9.0,
+        "h_mm": 10.124999999999998
+      },
+      {
+        "name": "GPU_3070",
+        "x_mm": 25.749999999999996,
+        "y_mm": 6.0,
+        "w_mm": 15.75,
+        "h_mm": 24.749999999999996
+      },
+      {
+        "name": "HBM3",
+        "x_mm": 24.249999999999996,
+        "y_mm": 33.0,
+        "w_mm": 9.0,
+        "h_mm": 13.499999999999998
+      },
+      {
+        "name": "CIM_jia",
+        "x_mm": 68.0,
+        "y_mm": 55.0,
+        "w_mm": 2.25,
+        "h_mm": 2.25
+      }
+    ],
+    "log": [
+      {
+        "step": 0,
+        "Tmax_C": 70.01507269904238,
+        "accept": true
+      },
+      {
+        "step": 1,
+        "op": "rotate GPU_3070",
+        "legal": true,
+        "Tmax_C": 88.29273777844787,
+        "accept": false
+      },
+      {
+        "step": 2,
+        "op": "jump GPU_3070",
+        "legal": true,
+        "Tmax_C": 90.00328238431035,
+        "accept": false
+      },
+      {
+        "step": 3,
+        "op": "nudge GPU_3070 (-1.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 70.20579318849445,
+        "accept": false
+      },
+      {
+        "step": 4,
+        "op": "swap CIM_jia<->HBM3",
+        "legal": true,
+        "Tmax_C": 99.5177159067245,
+        "accept": false
+      },
+      {
+        "step": 5,
+        "op": "swap Penryn<->HBM3",
+        "legal": true,
+        "Tmax_C": 85.58575383817771,
+        "accept": false
+      },
+      {
+        "step": 6,
+        "op": "nudge GPU_3070 (-1.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 70.20579318849445,
+        "accept": true
+      },
+      {
+        "step": 7,
+        "op": "nudge CIM_jia (0.0,0.5)mm",
+        "legal": true,
+        "Tmax_C": 70.20579318849445,
+        "accept": true
+      },
+      {
+        "step": 8,
+        "op": "jump GPU_3070",
+        "legal": true,
+        "Tmax_C": 90.20734063333418,
+        "accept": false
+      },
+      {
+        "step": 9,
+        "op": "nudge GPU_3070 (0.0,-1.0)mm",
+        "legal": true,
+        "Tmax_C": 70.34143853275185,
+        "accept": true
+      },
+      {
+        "step": 10,
+        "op": "swap GPU_3070<->HBM3",
+        "legal": true,
+        "Tmax_C": 87.60896337180986,
+        "accept": false
+      },
+      {
+        "step": 11,
+        "op": "nudge GPU_3070 (0.5,0.0)mm",
+        "legal": true,
+        "Tmax_C": 70.06768715984788,
+        "accept": true
+      },
+      {
+        "step": 12,
+        "op": "nudge GPU_3070 (2.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 69.87972408331893,
+        "accept": true
+      },
+      {
+        "step": 13,
+        "op": "nudge GPU_3070 (0.0,-1.5)mm",
+        "legal": true,
+        "Tmax_C": 71.68502954888987,
+        "accept": true
+      },
+      {
+        "step": 14,
+        "op": "nudge GPU_3070 (0.0,1.5)mm",
+        "legal": true,
+        "Tmax_C": 69.87972408331893,
+        "accept": true
+      },
+      {
+        "step": 15,
+        "op": "rotate CIM_jia",
+        "legal": true,
+        "Tmax_C": 69.87972408331893,
+        "accept": true
+      },
+      {
+        "step": 16,
+        "op": "jump GPU_3070",
+        "legal": true,
+        "Tmax_C": 90.741600159558,
+        "accept": false
+      },
+      {
+        "step": 17,
+        "op": "rotate Penryn",
+        "legal": true,
+        "Tmax_C": 98.063044893322,
+        "accept": false
+      },
+      {
+        "step": 18,
+        "op": "nudge GPU_3070 (0.0,-0.5)mm",
+        "legal": true,
+        "Tmax_C": 69.87972408331893,
+        "accept": true
+      },
+      {
+        "step": 19,
+        "op": "swap GPU_3070<->Penryn",
+        "legal": true,
+        "Tmax_C": 95.25294159019597,
+        "accept": false
+      },
+      {
+        "step": 20,
+        "op": "nudge GPU_3070 (0.0,1.5)mm",
+        "legal": true,
+        "Tmax_C": 69.83222326103504,
+        "accept": true
+      },
+      {
+        "step": 21,
+        "op": "jump GPU_3070",
+        "legal": true,
+        "Tmax_C": 90.68136983161793,
+        "accept": false
+      },
+      {
+        "step": 22,
+        "op": "swap Penryn<->CIM_jia",
+        "legal": true,
+        "Tmax_C": 172.83652056797695,
+        "accept": false
+      },
+      {
+        "step": 23,
+        "op": "nudge GPU_3070 (-2.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 70.01507269904238,
+        "accept": true
+      },
+      {
+        "step": 24,
+        "op": "rotate HBM3",
+        "legal": true,
+        "Tmax_C": 87.69411771292391,
+        "accept": false
+      },
+      {
+        "step": 25,
+        "op": "jump Penryn",
+        "legal": true,
+        "Tmax_C": 172.8114447369777,
+        "accept": false
+      },
+      {
+        "step": 26,
+        "op": "swap GPU_3070<->HBM3",
+        "legal": true,
+        "Tmax_C": 87.6384318343288,
+        "accept": false
+      },
+      {
+        "step": 27,
+        "op": "jump+rot CIM_jia",
+        "legal": true,
+        "Tmax_C": 70.01488272157673,
+        "accept": true
+      },
+      {
+        "step": 28,
+        "op": "nudge Penryn (0.0,-2.0)mm",
+        "legal": true,
+        "Tmax_C": 112.8403881349123,
+        "accept": false
+      },
+      {
+        "step": 29,
+        "op": "nudge HBM3 (0.0,1.0)mm",
+        "legal": true,
+        "Tmax_C": 69.97535154035904,
+        "accept": true
+      },
+      {
+        "step": 30,
+        "op": "nudge GPU_3070 (0.0,-1.0)mm",
+        "legal": true,
+        "Tmax_C": 70.02796600116471,
+        "accept": true
+      },
+      {
+        "step": 31,
+        "op": "nudge GPU_3070 (0.0,1.0)mm",
+        "legal": true,
+        "Tmax_C": 69.97535154035904,
+        "accept": true
+      },
+      {
+        "step": 32,
+        "op": "nudge GPU_3070 (0.0,0.5)mm",
+        "legal": true,
+        "Tmax_C": 69.97535154035904,
+        "accept": true
+      },
+      {
+        "step": 33,
+        "op": "rotate Penryn",
+        "legal": true,
+        "Tmax_C": 98.1564785858157,
+        "accept": false
+      },
+      {
+        "step": 34,
+        "op": "rotate Penryn",
+        "legal": true,
+        "Tmax_C": 98.1564785858157,
+        "accept": false
+      },
+      {
+        "step": 35,
+        "op": "swap Penryn<->HBM3",
+        "legal": true,
+        "Tmax_C": 85.49669477594148,
+        "accept": false
+      },
+      {
+        "step": 36,
+        "op": "nudge GPU_3070 (0.0,1.0)mm",
+        "legal": true,
+        "Tmax_C": 69.89480734181808,
+        "accept": true
+      },
+      {
+        "step": 37,
+        "op": "nudge Penryn (0.0,0.5)mm",
+        "legal": true,
+        "Tmax_C": 69.89480734181808,
+        "accept": true
+      },
+      {
+        "step": 38,
+        "op": "nudge GPU_3070 (1.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 69.89480734181808,
+        "accept": true
+      },
+      {
+        "step": 39,
+        "op": "rotate Penryn",
+        "legal": true,
+        "Tmax_C": 98.04901493508817,
+        "accept": false
+      },
+      {
+        "step": 40,
+        "op": "nudge GPU_3070 (-1.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 69.89480734181808,
+        "accept": true
+      },
+      {
+        "step": 41,
+        "op": "jump HBM3",
+        "legal": true,
+        "Tmax_C": 99.0217818899128,
+        "accept": false
+      },
+      {
+        "step": 42,
+        "op": "jump GPU_3070",
+        "legal": true,
+        "Tmax_C": 89.75752620158431,
+        "accept": false
+      },
+      {
+        "step": 43,
+        "op": "nudge GPU_3070 (0.0,-0.5)mm",
+        "legal": true,
+        "Tmax_C": 69.89480734181808,
+        "accept": true
+      },
+      {
+        "step": 44,
+        "op": "nudge GPU_3070 (0.0,0.5)mm",
+        "legal": true,
+        "Tmax_C": 69.89480734181808,
+        "accept": true
+      },
+      {
+        "step": 45,
+        "op": "nudge GPU_3070 (1.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 69.89480734181808,
+        "accept": true
+      },
+      {
+        "step": 46,
+        "op": "nudge GPU_3070 (-1.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 69.89480734181808,
+        "accept": true
+      },
+      {
+        "step": 47,
+        "op": "nudge GPU_3070 (-0.5,0.0)mm",
+        "legal": true,
+        "Tmax_C": 70.07966749151171,
+        "accept": false
+      },
+      {
+        "step": 48,
+        "op": "rotate HBM3",
+        "legal": true,
+        "Tmax_C": 87.67252934894515,
+        "accept": false
+      },
+      {
+        "step": 49,
+        "op": "jump GPU_3070",
+        "legal": true,
+        "Tmax_C": 89.58086436173653,
+        "accept": false
+      },
+      {
+        "step": 50,
+        "op": "swap GPU_3070<->Penryn",
+        "legal": true,
+        "Tmax_C": 93.657803106031,
+        "accept": false
+      },
+      {
+        "step": 51,
+        "op": "jump+rot Penryn",
+        "legal": true,
+        "Tmax_C": 172.7914207929055,
+        "accept": false
+      },
+      {
+        "step": 52,
+        "op": "nudge HBM3 (-0.5,0.0)mm",
+        "legal": true,
+        "Tmax_C": 69.89480734181808,
+        "accept": true
+      },
+      {
+        "step": 53,
+        "op": "nudge GPU_3070 (0.0,0.5)mm",
+        "legal": true,
+        "Tmax_C": 71.49624576725824,
+        "accept": false
+      },
+      {
+        "step": 54,
+        "op": "nudge GPU_3070 (-1.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 70.07966749151171,
+        "accept": true
+      },
+      {
+        "step": 55,
+        "op": "jump Penryn",
+        "legal": true,
+        "Tmax_C": 155.9415361304401,
+        "accept": false
+      },
+      {
+        "step": 56,
+        "op": "nudge GPU_3070 (2.0,0.0)mm",
+        "legal": true,
+        "Tmax_C": 69.89480734181808,
+        "accept": true
+      },
+      {
+        "step": 57,
+        "op": "nudge GPU_3070 (0.5,0.0)mm",
+        "legal": true,
+        "Tmax_C": 69.71855695543377,
+        "accept": true
+      },
+      {
+        "step": 58,
+        "op": "jump HBM3",
+        "legal": true,
+        "Tmax_C": 96.78869647319476,
+        "accept": false
+      },
+      {
+        "step": 59,
+        "op": "rotate CIM_jia",
+        "legal": true,
+        "Tmax_C": 69.71855695543377,
+        "accept": true
+      },
+      {
+        "step": 60,
+        "op": "nudge HBM3 (0.0,0.5)mm",
+        "legal": true,
+        "Tmax_C": 69.71855695543377,
+        "accept": true
+      }
+    ],
+    "note": "材料图停在起点，只换功耗。priced 是冻住的材料图给出的峰值，checked 是同一布局用它自己的材料图全部分解。python，冷边 45 C，底面绝热。"
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "step": 0,
+    "die_cell_max_C": 68.67752011935312,
+    "vm_MPa": 84.98497797486559,
+    "vm_name": "GPU_3070_Ga"
+  },
+  {
+    "step": 10,
+    "die_cell_max_C": 65.99064887491068,
+    "vm_MPa": 76.19323872534652,
+    "vm_name": "GPU_3070_Ga"
+  },
+  {
+    "step": 12,
+    "die_cell_max_C": 65.88160597947814,
+    "vm_MPa": 79.9110017636224,
+    "vm_name": "CIM_colonnade_m512"
+  },
+  {
+    "step": 13,
+    "die_cell_max_C": 66.11608325135171,
+    "vm_MPa": 80.66661138543331,
+    "vm_name": "CIM_colonnade_m512"
+  },
+  {
+    "step": 18,
+    "die_cell_max_C": 66.01934607040704,
+    "vm_MPa": 75.65233671570633,
+    "vm_name": "GPU_3070_Ga"
+  },
+  {
+    "step": 29,
+    "die_cell_max_C": 66.25938442282842,
+    "vm_MPa": 74.98001993299783,
+    "vm_name": "GPU_TITANX_Ga"
+  }
+]

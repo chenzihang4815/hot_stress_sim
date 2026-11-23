@@ -1,0 +1,79 @@
+[
+  {
+    "combo": "colonnade_jssc_2021+builtin",
+    "kind": "CIM",
+    "area_total_mm2": 0.231359891352,
+    "avg_power_W": 0.04119819389066705,
+    "avg_power_mW": 41.19819389066705,
+    "energy": 2.3730160180812567e-09,
+    "latency": 5.760000121313169e-08,
+    "n_computes": 16384.0,
+    "wall_s": 5.0406060218811035
+  },
+  {
+    "combo": "jia_jssc_2020+builtin",
+    "kind": "CIM",
+    "area_total_mm2": 4.281226257942074,
+    "avg_power_W": 0.0027731351494352146,
+    "avg_power_mW": 2.7731351494352148,
+    "energy": 2.3959888538601973e-07,
+    "latency": 8.64000030560419e-05,
+    "n_computes": 589824.0,
+    "wall_s": 3.9275567531585693
+  },
+  {
+    "combo": "sinangil_jssc_2021+builtin",
+    "kind": "CIM",
+    "area_total_mm2": 0.0025768645113990983,
+    "avg_power_W": 0.0007947682416197758,
+    "avg_power_mW": 0.7947682416197758,
+    "energy": 4.3712253376375716e-12,
+    "latency": 5.500000010982831e-09,
+    "n_computes": 1024.0,
+    "wall_s": 4.172139644622803
+  },
+  {
+    "combo": "wang_vlsi_2022+builtin",
+    "kind": "CIM",
+    "area_total_mm2": 0.12203959822869019,
+    "avg_power_W": 0.025999983362139024,
+    "avg_power_mW": 25.999983362139023,
+    "energy": 1.1942350571319157e-10,
+    "latency": 4.593214697479198e-09,
+    "n_computes": 1024.0,
+    "wall_s": 4.307663917541504
+  },
+  {
+    "combo": "eyeriss+matmul32",
+    "kind": "digital",
+    "area_total_mm2": 7.790305751923076,
+    "avg_power_W": 0.03971310637635045,
+    "avg_power_mW": null,
+    "energy": 2.908674718410157e-07,
+    "latency": 7.324218586290954e-06,
+    "n_computes": 32768.0,
+    "wall_s": 7.273101806640625
+  },
+  {
+    "combo": "simba+matmul32",
+    "kind": "digital",
+    "area_total_mm2": 2.224216128486264,
+    "avg_power_W": 0.030109191568920692,
+    "avg_power_mW": null,
+    "energy": 2.2052630050728383e-07,
+    "latency": 7.324218586290954e-06,
+    "n_computes": 32768.0,
+    "wall_s": 1.9521098136901855
+  },
+  {
+    "combo": "snowcat+matmul32",
+    "kind": "digital",
+    "area_total_mm2": null,
+    "avg_power_W": null,
+    "avg_power_mW": null,
+    "energy": 24576.0,
+    "latency": 0.0,
+    "n_computes": 32768.0,
+    "wall_s": 0.39327502250671387
+  }
+]

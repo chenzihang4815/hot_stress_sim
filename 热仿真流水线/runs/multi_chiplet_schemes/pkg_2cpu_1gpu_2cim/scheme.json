@@ -1,0 +1,67 @@
+{
+  "id": "pkg_2cpu_1gpu_2cim",
+  "title": "2 CPU (x86 matmul + threads) + RTX3070 + 2 CIM (jia 大而冷, colonnade 小而热)",
+  "why": "后续回馈的基线：两颗 CPU 任务不同、两颗 CIM 密度差一个数量级、GPU 用较小的 392 mm²",
+  "n_chiplets": 5,
+  "kinds": {
+    "CPU": 2,
+    "GPU": 1,
+    "CIM": 2
+  },
+  "power_total_W": 68.8897953290401,
+  "area_total_mm2": 423.78158614929407,
+  "outline_mm2": 612.0853535098792,
+  "deadspace_ratio": 0.30764298848321625,
+  "overlap_m2": 0.0,
+  "HotSpot_Tmax_C": 55.59000000000003,
+  "HotSpot_Tmin_C": 51.48000000000002,
+  "chips": [
+    {
+      "name": "CPU_matmul",
+      "kind": "CPU",
+      "area_mm2": 13.6345,
+      "power_W": 1.001867,
+      "W_per_mm2": 0.0734802889728263,
+      "W_per_cm2": 7.34802889728263,
+      "notes": "x86 Timing+L1/L2，64x64 matmul；P=RuntimeDynamic(0.217977)+Leakage(0.78389)"
+    },
+    {
+      "name": "CPU_threads",
+      "kind": "CPU",
+      "area_mm2": 13.6345,
+      "power_W": 0.9561569999999999,
+      "W_per_mm2": 0.07012776412776413,
+      "W_per_cm2": 7.012776412776413,
+      "notes": "x86 Timing+L1/L2，gem5 threads；P=RuntimeDynamic(0.172267)+Leakage(0.78389)"
+    },
+    {
+      "name": "GPU_3070",
+      "kind": "GPU",
+      "area_mm2": 392.0,
+      "power_W": 66.8878,
+      "W_per_mm2": 0.17063214285714284,
+      "W_per_cm2": 17.063214285714285,
+      "notes": "RTX3070，backprop 按该配置重跑 AccelWattch；P=66.89 W；文献面积 392.0 mm²"
+    },
+    {
+      "name": "CIM_jia",
+      "kind": "CIM",
+      "area_mm2": 4.281226257942074,
+      "power_W": 0.0027731351494352146,
+      "W_per_mm2": 0.0006477431890666348,
+      "W_per_cm2": 0.06477431890666349,
+      "notes": "AccelForge jia_jssc_2020+builtin；P=energy/latency=0.00277314 W"
+    },
+    {
+      "name": "CIM_colonnade",
+      "kind": "CIM",
+      "area_mm2": 0.231359891352,
+      "power_W": 0.04119819389066705,
+      "W_per_mm2": 0.1780697321818262,
+      "W_per_cm2": 17.80697321818262,
+      "notes": "AccelForge colonnade_jssc_2021+builtin；P=energy/latency=0.0411982 W"
+    }
+  ],
+  "atsim_json": "/home/czh/任务仿真产生功耗文件工具/热应力python工程/cases/multi_chiplet_schemes/pkg_2cpu_1gpu_2cim.json",
+  "heatmap": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/multi_chiplet_schemes/pkg_2cpu_1gpu_2cim/pkg_2cpu_1gpu_2cim_hotspot.png"
+}

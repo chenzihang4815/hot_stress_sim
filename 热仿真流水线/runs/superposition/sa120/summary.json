@@ -1,0 +1,10 @@
+{
+  "steps": 120,
+  "accepted": 115,
+  "field_s": 95.8,
+  "full_s": 202.4,
+  "solved": 111,
+  "err_max_K": 0.01,
+  "start_C": 64.64,
+  "best_C": 62.35
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "step": 0,
+    "die_cell_max_C": 79.84253642486163,
+    "vm_MPa": 150.0612033382096,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 11,
+    "die_cell_max_C": 79.85223109755503,
+    "vm_MPa": 150.07722238703062,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 13,
+    "die_cell_max_C": 79.8500134970954,
+    "vm_MPa": 150.3582947347837,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 14,
+    "die_cell_max_C": 79.84956940609464,
+    "vm_MPa": 157.2663775454855,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 17,
+    "die_cell_max_C": 79.55439017363199,
+    "vm_MPa": 142.11761245022285,
+    "vm_name": "Penryn_Ca"
+  },
+  {
+    "step": 19,
+    "die_cell_max_C": 78.1041592623547,
+    "vm_MPa": 132.03046453620667,
+    "vm_name": "Penryn_Ca"
+  },
+  {
+    "step": 20,
+    "die_cell_max_C": 78.10384412631817,
+    "vm_MPa": 132.0217025032141,
+    "vm_name": "Penryn_Ca"
+  },
+  {
+    "step": 21,
+    "die_cell_max_C": 78.04011176301384,
+    "vm_MPa": 141.39987403408728,
+    "vm_name": "Penryn_Ca"
+  },
+  {
+    "step": 22,
+    "die_cell_max_C": 77.02323598615914,
+    "vm_MPa": 139.51791942298496,
+    "vm_name": "T2_Ca"
+  },
+  {
+    "step": 27,
+    "die_cell_max_C": 77.0232079393661,
+    "vm_MPa": 139.58920585516682,
+    "vm_name": "T2_Ca"
+  },
+  {
+    "step": 32,
+    "die_cell_max_C": 77.0237636003838,
+    "vm_MPa": 139.59003559281277,
+    "vm_name": "T2_Ca"
+  },
+  {
+    "step": 34,
+    "die_cell_max_C": 77.02459837007393,
+    "vm_MPa": 139.63499003663378,
+    "vm_name": "T2_Ca"
+  },
+  {
+    "step": 38,
+    "die_cell_max_C": 76.70283509634106,
+    "vm_MPa": 138.48222824849657,
+    "vm_name": "T2_Ca"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "Tmax_C": 112.75405271920283,
+  "vm_normal_chip_max_MPa": 399.69325477684265,
+  "vm_normal_chip_name": "GPU_2060S",
+  "vm_center_mean_MPa": 218.06300867130693,
+  "w_pv_um": 10.252352123104465,
+  "elapsed_s": 144.89292764663696,
+  "heat_s": 24.567402362823486,
+  "elast_s": 119.05254220962524,
+  "fill_die": true
+}

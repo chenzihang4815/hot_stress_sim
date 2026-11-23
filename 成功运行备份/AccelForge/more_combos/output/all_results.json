@@ -1,0 +1,221 @@
+{
+  "runs": [
+    {
+      "combo": "colonnade_jssc_2021+builtin",
+      "kind": "CIM",
+      "n_computes": 16384.0,
+      "avg_power_W": 0.04119819389066705,
+      "energy_per_component": {
+        "DigitalLogicInputPorts": 3.1264743571846054e-10,
+        "RowDrivers": 4.084270421866876e-11,
+        "Register": 1.4362965261582872e-09,
+        "ColumnDrivers": 4.921133850052145e-11,
+        "CimLogic": 3.1115327209395245e-10,
+        "CimUnit": 2.209405158826172e-10,
+        "WeightDrivers": 1.924162001606944e-12
+      },
+      "area_m2": {
+        "MainMemory": 0.0,
+        "DummyRowDriverMemory": 0.0,
+        "RowDrivers": 2.6267448e-09,
+        "DigitalLogicInputPorts": 0.0,
+        "ColumnDrivers": 1.0008870999999999e-08,
+        "WeightDrivers": 2.0249368e-09,
+        "ColumnBandwidthLimiter": 0.0,
+        "Register": 2.8724527104e-08,
+        "CimUnit": 8.998912e-09,
+        "CimLogic": 1.78975899648e-07,
+        "FreeCompute": 0.0
+      },
+      "area_total_mm2": 0.231359891352,
+      "wall_s": 5.0406060218811035,
+      "energy_J": 2.3730160180812567e-09,
+      "latency_s": 5.760000121313169e-08,
+      "avg_power_mW": 41.19819389066705
+    },
+    {
+      "combo": "jia_jssc_2020+builtin",
+      "kind": "CIM",
+      "n_computes": 589824.0,
+      "avg_power_W": 0.0027731351494352146,
+      "energy_per_component": {
+        "RowDrivers": 5.0596117517898165e-08,
+        "InputZeroGating": 5.450651041627452e-09,
+        "ADC": 2.9261526449806092e-08,
+        "ShiftAdd": 2.157558392120611e-08,
+        "OutDatapath": 7.70050117574555e-09,
+        "BitcellCapacitor": 1.2273057791999998e-07,
+        "CimUnit": 1.4106075196806955e-09,
+        "WeightDrivers": 8.733185286047274e-10
+      },
+      "area_m2": {
+        "MainMemory": 0.0,
+        "OutDatapath": 3.3712e-07,
+        "ShiftAdd": 1.6e-07,
+        "InputZeroGating": 3.721102561046154e-07,
+        "DummyRowDriverMemory": 0.0,
+        "RowDrivers": 5.349171646e-07,
+        "WeightDrivers": 5.349171646e-07,
+        "ADC": 5.005689430374586e-07,
+        "ColumnDrivers": 0.0,
+        "ColumnBandwidthLimiter": 0.0,
+        "CimUnit": 1.8415927296e-06,
+        "BitcellCapacitor": 0.0,
+        "FreeCompute": 0.0
+      },
+      "area_total_mm2": 4.281226257942074,
+      "wall_s": 3.9275567531585693,
+      "energy_J": 2.3959888538601973e-07,
+      "latency_s": 8.64000030560419e-05,
+      "avg_power_mW": 2.7731351494352148
+    },
+    {
+      "combo": "sinangil_jssc_2021+builtin",
+      "kind": "CIM",
+      "n_computes": 1024.0,
+      "avg_power_W": 0.0007947682416197758,
+      "energy_per_component": {
+        "RowDrivers": 1.014067730791802e-12,
+        "Counter": 2.192327936917563e-13,
+        "BinaryWeightingCapacitors": 6.530844444444444e-14,
+        "ColumnDrivers": 1.0015076858339424e-13,
+        "ADC": 2.9704356520911642e-12,
+        "CimUnit": 1.991916348322866e-15,
+        "WeightDrivers": 3.803168668748948e-17
+      },
+      "area_m2": {
+        "MainMemory": 0.0,
+        "WeightDrivers": 1.90345701e-10,
+        "Counter": 3.421236923076923e-10,
+        "DummyRowDriverMemory": 0.0,
+        "RowDrivers": 2.74426803e-10,
+        "ADC": 1.3717412124972885e-09,
+        "ColumnDrivers": 2.67985473e-11,
+        "ColumnBandwidthLimiter": 0.0,
+        "BinaryWeightingCapacitors": 1.5466823529411768e-10,
+        "CimUnit": 2.1676032000000001e-10,
+        "FreeCompute": 0.0
+      },
+      "area_total_mm2": 0.0025768645113990983,
+      "wall_s": 4.172139644622803,
+      "energy_J": 4.3712253376375716e-12,
+      "latency_s": 5.500000010982831e-09,
+      "avg_power_mW": 0.7947682416197758
+    },
+    {
+      "combo": "wang_vlsi_2022+builtin",
+      "kind": "CIM",
+      "n_computes": 1024.0,
+      "avg_power_W": 0.025999983362139024,
+      "energy_per_component": {
+        "C2CMultiplier": 5.130239982831242e-12,
+        "SelectWordlineDrivers": 2.6144612087071286e-11,
+        "RowDrivers": 1.1554708135960173e-11,
+        "DAC": 2.686770462870831e-11,
+        "ColumnDrivers": 2.087876594744189e-13,
+        "ADC": 4.2700704337292883e-11,
+        "C2CMultiplierPortB": 6.803369047562718e-12,
+        "CimUnit": 1.3244920365009828e-14,
+        "WeightDrivers": 1.3491392553100726e-16
+      },
+      "area_m2": {
+        "MainMemory": 0.0,
+        "DAC": 3.7361604992e-08,
+        "DummyRowDriverMemory": 0.0,
+        "RowDrivers": 1.3094174e-09,
+        "WeightDrivers": 1.361576086e-08,
+        "SelectWordlineDrivers": 1.3094174e-09,
+        "ADC": 1.619841963739416e-08,
+        "ColumnDrivers": 4.58648601e-10,
+        "ColumnBandwidthLimiter": 0.0,
+        "CimUnit": 1.26877696e-08,
+        "C2CMultiplier": 3.909855973829601e-08,
+        "C2CMultiplierPortB": 0.0,
+        "FreeCompute": 0.0
+      },
+      "area_total_mm2": 0.12203959822869019,
+      "wall_s": 4.307663917541504,
+      "energy_J": 1.1942350571319157e-10,
+      "latency_s": 4.593214697479198e-09,
+      "avg_power_mW": 25.999983362139023
+    },
+    {
+      "combo": "eyeriss+matmul32",
+      "kind": "digital",
+      "energy": 2.908674718410157e-07,
+      "latency": 7.324218586290954e-06,
+      "n_computes": 32768.0,
+      "avg_power_W": 0.03971310637635045,
+      "energy_per_component": {
+        "InputScratchpad": 6.757190806894187e-09,
+        "MainMemory": 1.96608e-07,
+        "OutputScratchpad": 1.7198420465547315e-08,
+        "WeightScratchpad": 1.5555395194155608e-08,
+        "MAC": 5.288019983214776e-08,
+        "GlobalBuffer": 1.8682646540923997e-09
+      },
+      "area_m2": {
+        "MainMemory": 0.0,
+        "GlobalBuffer": 6.8574526567307686e-06,
+        "InputScratchpad": 6.507750980769229e-08,
+        "WeightScratchpad": 5.937781984615383e-07,
+        "OutputScratchpad": 7.66305023076923e-08,
+        "MAC": 1.9736688461538463e-07
+      },
+      "area_total_mm2": 7.790305751923076,
+      "wall_s": 7.273101806640625,
+      "note": "energy/latency units from arch YAML (not necessarily Joules/seconds)"
+    },
+    {
+      "combo": "simba+matmul32",
+      "kind": "digital",
+      "energy": 2.2052630050728383e-07,
+      "latency": 7.324218586290954e-06,
+      "n_computes": 32768.0,
+      "avg_power_W": 0.030109191568920692,
+      "energy_per_component": {
+        "InputBuffer": 1.1354249762618451e-09,
+        "GlobalBuffer": 2.908870982065394e-09,
+        "MainMemory": 1.96608e-07,
+        "AccumulationBuffer": 2.125448483880632e-09,
+        "WeightBuffer": 2.5883417258872586e-09,
+        "MAC": 1.5160214353066504e-08
+      },
+      "area_m2": {
+        "MainMemory": 0.0,
+        "GlobalBuffer": 2.3951167124150845e-07,
+        "InputBuffer": 8.625933187132867e-08,
+        "WeightBuffer": 1.7125488610825178e-06,
+        "AccumulationBuffer": 3.5204916598601396e-08,
+        "Register": 0.0,
+        "MAC": 1.5069134769230769e-07
+      },
+      "area_total_mm2": 2.224216128486264,
+      "wall_s": 1.9521098136901855,
+      "note": "energy/latency units from arch YAML (not necessarily Joules/seconds)"
+    },
+    {
+      "combo": "snowcat+matmul32",
+      "kind": "digital",
+      "energy": 24576.0,
+      "latency": 0.0,
+      "n_computes": 32768.0,
+      "avg_power_W": null,
+      "energy_per_component": {
+        "MainMemory": 24576.0
+      },
+      "area_m2": {
+        "MainMemory": 0.0,
+        "GlobalBuffer": 0.0,
+        "MAC": 0.0
+      },
+      "area_total_mm2": null,
+      "wall_s": 0.39327502250671387,
+      "note": "energy units from arch YAML"
+    }
+  ],
+  "errors": [
+    "tpu_v4i+matmul32: ValidationError: 1 validation error for Spec\narch.nodes.1.Memory\n  Value error, Field separate_read_write_ports is not supported for Memory. Supported fields are:\n\tactions\n\tactions_scale\n\tarea\n\tarea_scale\n\tbits_per_action\n\tbits_per_value\n\tcomponent_class\n\tcomponent_model\n\tcomponent_modeling_log\n\tenabled\n\tenergy_scale\n\textra_attributes_for_component_model\n\tlatency_scale\n\tleak_power\n\tleak_power_scale\n\tn_parallel_instances\n\tname\n\tsize\n\tskip_initial_output_write\n\tspatial\n\ttensors\n\tthroughput_scale\n\ttotal_area\n\ttotal_latency\n\ttotal_leak_power\n\tvalues_per_action\n [type=value_error, input_value={'name': 'GlobalBuffer', ...rs', 'may_keep': 'All'}}, input_type=CommentedMap]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error",
+    "nvdla+matmul32: ValidationError: 1 validation error for Spec\narch.nodes.1.Memory\n  Value error, Field separate_read_write_ports is not supported for Memory. Supported fields are:\n\tactions\n\tactions_scale\n\tarea\n\tarea_scale\n\tbits_per_action\n\tbits_per_value\n\tcomponent_class\n\tcomponent_model\n\tcomponent_modeling_log\n\tenabled\n\tenergy_scale\n\textra_attributes_for_component_model\n\tlatency_scale\n\tleak_power\n\tleak_power_scale\n\tn_parallel_instances\n\tname\n\tsize\n\tskip_initial_output_write\n\tspatial\n\ttensors\n\tthroughput_scale\n\ttotal_area\n\ttotal_latency\n\ttotal_leak_power\n\tvalues_per_action\n [type=value_error, input_value={'name': 'GlobalBuffer', ...nsors': {'keep': 'All'}}, input_type=CommentedMap]\n    For further information visit https://errors.pydantic.dev/2.14/v/value_error"
+  ]
+}

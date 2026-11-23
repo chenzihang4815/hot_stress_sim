@@ -1,0 +1,43 @@
+================================================================
+Case: cpu_gpu_cim_noCache__jia
+JSON: /home/czh/任务仿真产生功耗文件工具/热应力python工程/cases/cpu_gpu_cim_lbfgs/noCache__jia.json
+Domain: 86.8 x 79.1 x 9.17 mm
+Chips: 3   P=73.63 W   h=1456.47 W/m2K   Tamb=45.00 C
+BBox 34.8 x 27.1 mm   Spreader 56.8 x 49.1 mm   Sink 86.8 x 79.1 mm
+Centered, layout shift (26.00, 26.00) mm
+Substrate 1.0 mm  Interposer 100 um  34.8 x 27.1 mm  fill_die=False  tim_cover=chips
+
+Chips (edit cases/case3_chips.json):
+  name           x_mm     y_mm     w_mm     h_mm        W
+  CPU           26.00    51.26     1.55     1.87     0.68
+  GPU           28.44    26.00    32.33    25.21    72.95
+  CIM           26.00    26.00     2.39     1.79     0.00
+
+-- FVM 3D package --
+  Picard 1  dTmax=11.5801 K  Tmin=51.15 C  Tmax=56.58 C
+[fvm3d] cpu_gpu_cim_noCache__jia  cells=52x43x23  solid=32974  Tmax=56.580 C  Tmin=51.147 C  8.47s
+[fvm3d] timing  grid=0.01s  assemble=0.50s  solve=7.95s (spsolve)  ndof=51428  nnz=240806
+
+Probes:
+  CPU_center            54.943 C
+  GPU_center            56.573 C
+  CIM_center            53.403 C
+  Sink_top_center       55.073 C
+  Spreader_center       55.931 C
+  Interposer_center     56.559 C
+  Substrate_center      56.549 C
+  TIM_mid               56.397 C
+
+Timing (heat only):
+  grid     0.01 s
+  assemble 0.50 s
+  solve    7.95 s  (spsolve)
+  total    8.47 s   ndof=51428  solid=32974
+
+HotSpot files:
+  flp: /home/czh/任务仿真产生功耗文件工具/热应力python工程/hotspot_noCache__jia/cpu_gpu_cim_noCache__jia.flp
+  ptrace: /home/czh/任务仿真产生功耗文件工具/热应力python工程/hotspot_noCache__jia/cpu_gpu_cim_noCache__jia.ptrace
+  config: /home/czh/任务仿真产生功耗文件工具/热应力python工程/hotspot_noCache__jia/cpu_gpu_cim_noCache__jia.config
+  materials: /home/czh/任务仿真产生功耗文件工具/热应力python工程/hotspot_noCache__jia/cpu_gpu_cim_noCache__jia.materials
+Outputs: /home/czh/任务仿真产生功耗文件工具/热应力python工程/results/python_noCache__jia
+================================================================

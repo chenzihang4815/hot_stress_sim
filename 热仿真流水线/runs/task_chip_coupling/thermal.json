@@ -1,0 +1,566 @@
+[
+  {
+    "model": "Penryn",
+    "s": 0.5,
+    "cores": 2,
+    "f_MHz": 3700,
+    "area_mm2": 91.1348,
+    "side_mm": 9.546454839363145,
+    "McPAT_T_K": 320,
+    "converged": true,
+    "power_W": 29.64100787671233,
+    "dyn_W": 23.96575,
+    "leak_W": 5.675257876712329,
+    "leak_frac": 0.1914664271983523,
+    "Tmax_C": 50.34000000000003,
+    "fail_T": false,
+    "Theta_serial_rel": 0.5,
+    "Theta_parallel_rel": 1.0,
+    "trace": [
+      {
+        "bin_K": 350,
+        "power_W": 32.15119417808219,
+        "dyn_W": 23.96575,
+        "leak_W": 8.185444178082191,
+        "T_C": 50.80000000000001,
+        "next_bin_K": 320
+      },
+      {
+        "bin_K": 320,
+        "power_W": 29.64100787671233,
+        "dyn_W": 23.96575,
+        "leak_W": 5.675257876712329,
+        "T_C": 50.34000000000003,
+        "next_bin_K": 320
+      }
+    ],
+    "stress": {
+      "Tmax_C": 54.28579709805433,
+      "vm_normal_chip_max_MPa": 12.76331258152238,
+      "vm_normal_chip_name": "Penryn",
+      "vm_normal_chip_p95_MPa": 12.763312427165019,
+      "w_pv_um": 0.02093691894001204,
+      "elapsed_s": 1.8207683563232422
+    },
+    "sigma_MPa": 12.76331258152238,
+    "fail_sigma": false,
+    "feasible": true
+  },
+  {
+    "model": "Penryn",
+    "s": 1.0,
+    "cores": 2,
+    "f_MHz": 3700,
+    "area_mm2": 91.1348,
+    "side_mm": 9.546454839363145,
+    "McPAT_T_K": 330,
+    "converged": true,
+    "power_W": 54.38117705479452,
+    "dyn_W": 47.9315,
+    "leak_W": 6.44967705479452,
+    "leak_frac": 0.11860127720839547,
+    "Tmax_C": 54.81,
+    "fail_T": false,
+    "Theta_serial_rel": 1.0,
+    "Theta_parallel_rel": 2.0,
+    "trace": [
+      {
+        "bin_K": 350,
+        "power_W": 56.11694417808219,
+        "dyn_W": 47.9315,
+        "leak_W": 8.185444178082191,
+        "T_C": 55.120000000000005,
+        "next_bin_K": 330
+      },
+      {
+        "bin_K": 330,
+        "power_W": 54.38117705479452,
+        "dyn_W": 47.9315,
+        "leak_W": 6.44967705479452,
+        "T_C": 54.81,
+        "next_bin_K": 330
+      }
+    ],
+    "stress": {
+      "Tmax_C": 62.03628224062072,
+      "vm_normal_chip_max_MPa": 23.416340864462335,
+      "vm_normal_chip_name": "Penryn",
+      "vm_normal_chip_p95_MPa": 23.416340822615123,
+      "w_pv_um": 0.03841213213928418,
+      "elapsed_s": 1.1739795207977295
+    },
+    "sigma_MPa": 23.416340864462335,
+    "fail_sigma": false,
+    "feasible": true
+  },
+  {
+    "model": "Penryn",
+    "s": 1.5,
+    "cores": 2,
+    "f_MHz": 3700,
+    "area_mm2": 91.1348,
+    "side_mm": 9.546454839363145,
+    "McPAT_T_K": 330,
+    "converged": true,
+    "power_W": 78.34692705479452,
+    "dyn_W": 71.89725,
+    "leak_W": 6.44967705479452,
+    "leak_frac": 0.08232201692203862,
+    "Tmax_C": 59.129999999999995,
+    "fail_T": false,
+    "Theta_serial_rel": 1.5,
+    "Theta_parallel_rel": 3.0,
+    "trace": [
+      {
+        "bin_K": 350,
+        "power_W": 80.08269417808219,
+        "dyn_W": 71.89725,
+        "leak_W": 8.185444178082191,
+        "T_C": 59.44,
+        "next_bin_K": 330
+      },
+      {
+        "bin_K": 330,
+        "power_W": 78.34692705479452,
+        "dyn_W": 71.89725,
+        "leak_W": 6.44967705479452,
+        "T_C": 59.129999999999995,
+        "next_bin_K": 330
+      }
+    ],
+    "stress": {
+      "Tmax_C": 69.54416094461988,
+      "vm_normal_chip_max_MPa": 33.735908069967735,
+      "vm_normal_chip_name": "Penryn",
+      "vm_normal_chip_p95_MPa": 33.73590744863938,
+      "w_pv_um": 0.055340334284949444,
+      "elapsed_s": 1.1355926990509033
+    },
+    "sigma_MPa": 33.735908069967735,
+    "fail_sigma": false,
+    "feasible": true
+  },
+  {
+    "model": "Penryn",
+    "s": 2.0,
+    "cores": 2,
+    "f_MHz": 3700,
+    "area_mm2": 91.1348,
+    "side_mm": 9.546454839363145,
+    "McPAT_T_K": 340,
+    "converged": true,
+    "power_W": 103.15385650684931,
+    "dyn_W": 95.863,
+    "leak_W": 7.290856506849315,
+    "leak_frac": 0.07067943704426805,
+    "Tmax_C": 63.60000000000002,
+    "fail_T": false,
+    "Theta_serial_rel": 2.0,
+    "Theta_parallel_rel": 4.0,
+    "trace": [
+      {
+        "bin_K": 350,
+        "power_W": 104.04844417808219,
+        "dyn_W": 95.863,
+        "leak_W": 8.185444178082191,
+        "T_C": 63.76000000000005,
+        "next_bin_K": 340
+      },
+      {
+        "bin_K": 340,
+        "power_W": 103.15385650684931,
+        "dyn_W": 95.863,
+        "leak_W": 7.290856506849315,
+        "T_C": 63.60000000000002,
+        "next_bin_K": 340
+      }
+    ],
+    "stress": {
+      "Tmax_C": 77.31556043533851,
+      "vm_normal_chip_max_MPa": 44.41768361527577,
+      "vm_normal_chip_name": "Penryn",
+      "vm_normal_chip_p95_MPa": 44.417682669438086,
+      "w_pv_um": 0.07286270342816337,
+      "elapsed_s": 1.1901235580444336
+    },
+    "sigma_MPa": 44.41768361527577,
+    "fail_sigma": false,
+    "feasible": true
+  },
+  {
+    "model": "T2",
+    "s": 0.5,
+    "cores": 8,
+    "f_MHz": 1400,
+    "area_mm2": 273.523,
+    "side_mm": 16.53853076908587,
+    "McPAT_T_K": 320,
+    "converged": true,
+    "power_W": 36.032246277372266,
+    "dyn_W": 25.2105,
+    "leak_W": 10.821746277372263,
+    "leak_frac": 0.30033504417314566,
+    "Tmax_C": 49.31,
+    "fail_T": false,
+    "Theta_serial_rel": 0.1891891891891892,
+    "Theta_parallel_rel": 1.5135135135135136,
+    "trace": [
+      {
+        "bin_K": 350,
+        "power_W": 39.57932255474452,
+        "dyn_W": 25.2105,
+        "leak_W": 14.368822554744526,
+        "T_C": 49.74000000000001,
+        "next_bin_K": 320
+      },
+      {
+        "bin_K": 320,
+        "power_W": 36.032246277372266,
+        "dyn_W": 25.2105,
+        "leak_W": 10.821746277372263,
+        "T_C": 49.31,
+        "next_bin_K": 320
+      }
+    ],
+    "stress": {
+      "Tmax_C": 52.459928956328895,
+      "vm_normal_chip_max_MPa": 12.78732870168294,
+      "vm_normal_chip_name": "T2",
+      "vm_normal_chip_p95_MPa": 12.27639023487217,
+      "w_pv_um": 0.1020227894386384,
+      "elapsed_s": 3.3259658813476562
+    },
+    "sigma_MPa": 12.78732870168294,
+    "fail_sigma": false,
+    "feasible": true
+  },
+  {
+    "model": "T2",
+    "s": 1.0,
+    "cores": 8,
+    "f_MHz": 1400,
+    "area_mm2": 273.523,
+    "side_mm": 16.53853076908587,
+    "McPAT_T_K": 330,
+    "converged": true,
+    "power_W": 62.31511817518248,
+    "dyn_W": 50.421,
+    "leak_W": 11.89411817518248,
+    "leak_frac": 0.19087050660395624,
+    "Tmax_C": 52.460000000000036,
+    "fail_T": false,
+    "Theta_serial_rel": 0.3783783783783784,
+    "Theta_parallel_rel": 3.027027027027027,
+    "trace": [
+      {
+        "bin_K": 350,
+        "power_W": 64.78982255474452,
+        "dyn_W": 50.421,
+        "leak_W": 14.368822554744526,
+        "T_C": 52.75,
+        "next_bin_K": 330
+      },
+      {
+        "bin_K": 330,
+        "power_W": 62.31511817518248,
+        "dyn_W": 50.421,
+        "leak_W": 11.89411817518248,
+        "T_C": 52.460000000000036,
+        "next_bin_K": 330
+      }
+    ],
+    "stress": {
+      "Tmax_C": 57.90139812305148,
+      "vm_normal_chip_max_MPa": 22.114743604429762,
+      "vm_normal_chip_name": "T2",
+      "vm_normal_chip_p95_MPa": 21.23111355308259,
+      "w_pv_um": 0.17644090606655835,
+      "elapsed_s": 2.6053099632263184
+    },
+    "sigma_MPa": 22.114743604429762,
+    "fail_sigma": false,
+    "feasible": true
+  },
+  {
+    "model": "T2",
+    "s": 1.5,
+    "cores": 8,
+    "f_MHz": 1400,
+    "area_mm2": 273.523,
+    "side_mm": 16.53853076908587,
+    "McPAT_T_K": 330,
+    "converged": true,
+    "power_W": 87.52561817518249,
+    "dyn_W": 75.6315,
+    "leak_W": 11.89411817518248,
+    "leak_frac": 0.13589299251079162,
+    "Tmax_C": 55.47000000000003,
+    "fail_T": false,
+    "Theta_serial_rel": 0.5675675675675675,
+    "Theta_parallel_rel": 4.54054054054054,
+    "trace": [
+      {
+        "bin_K": 350,
+        "power_W": 90.00032255474453,
+        "dyn_W": 75.6315,
+        "leak_W": 14.368822554744526,
+        "T_C": 55.77000000000004,
+        "next_bin_K": 330
+      },
+      {
+        "bin_K": 330,
+        "power_W": 87.52561817518249,
+        "dyn_W": 75.6315,
+        "leak_W": 11.89411817518248,
+        "T_C": 55.47000000000003,
+        "next_bin_K": 330
+      }
+    ],
+    "stress": {
+      "Tmax_C": 63.12084898675545,
+      "vm_normal_chip_max_MPa": 31.061588529805398,
+      "vm_normal_chip_name": "T2",
+      "vm_normal_chip_p95_MPa": 29.82047318241104,
+      "w_pv_um": 0.24782267280177683,
+      "elapsed_s": 2.381891965866089
+    },
+    "sigma_MPa": 31.061588529805398,
+    "fail_sigma": false,
+    "feasible": true
+  },
+  {
+    "model": "T2",
+    "s": 2.0,
+    "cores": 8,
+    "f_MHz": 1400,
+    "area_mm2": 273.523,
+    "side_mm": 16.53853076908587,
+    "McPAT_T_K": 330,
+    "converged": true,
+    "power_W": 112.73611817518248,
+    "dyn_W": 100.842,
+    "leak_W": 11.89411817518248,
+    "leak_frac": 0.10550405999167026,
+    "Tmax_C": 58.49000000000001,
+    "fail_T": false,
+    "Theta_serial_rel": 0.7567567567567568,
+    "Theta_parallel_rel": 6.054054054054054,
+    "trace": [
+      {
+        "bin_K": 350,
+        "power_W": 115.21082255474452,
+        "dyn_W": 100.842,
+        "leak_W": 14.368822554744526,
+        "T_C": 58.79000000000002,
+        "next_bin_K": 330
+      },
+      {
+        "bin_K": 330,
+        "power_W": 112.73611817518248,
+        "dyn_W": 100.842,
+        "leak_W": 11.89411817518248,
+        "T_C": 58.49000000000001,
+        "next_bin_K": 330
+      }
+    ],
+    "stress": {
+      "Tmax_C": 68.34029985045879,
+      "vm_normal_chip_max_MPa": 40.00843478326929,
+      "vm_normal_chip_name": "T2",
+      "vm_normal_chip_p95_MPa": 38.409834114964006,
+      "w_pv_um": 0.31920444164615824,
+      "elapsed_s": 2.410510301589966
+    },
+    "sigma_MPa": 40.00843478326929,
+    "fail_sigma": false,
+    "feasible": true
+  },
+  {
+    "model": "Xeon",
+    "s": 0.5,
+    "cores": 2,
+    "f_MHz": 3400,
+    "area_mm2": 421.676,
+    "side_mm": 20.534751033309362,
+    "McPAT_T_K": 320,
+    "converged": true,
+    "power_W": 52.298158978102194,
+    "dyn_W": 33.42425,
+    "leak_W": 18.873908978102193,
+    "leak_frac": 0.36089050450140897,
+    "Tmax_C": 50.30000000000001,
+    "fail_T": false,
+    "Theta_serial_rel": 0.4594594594594595,
+    "Theta_parallel_rel": 0.918918918918919,
+    "trace": [
+      {
+        "bin_K": 350,
+        "power_W": 60.63447795620438,
+        "dyn_W": 33.42425,
+        "leak_W": 27.21022795620438,
+        "T_C": 51.14000000000004,
+        "next_bin_K": 320
+      },
+      {
+        "bin_K": 320,
+        "power_W": 52.298158978102194,
+        "dyn_W": 33.42425,
+        "leak_W": 18.873908978102193,
+        "T_C": 50.30000000000001,
+        "next_bin_K": 320
+      }
+    ],
+    "stress": {
+      "Tmax_C": 54.581510291197844,
+      "vm_normal_chip_max_MPa": 19.514483940773616,
+      "vm_normal_chip_name": "Xeon",
+      "vm_normal_chip_p95_MPa": 19.086277372578436,
+      "w_pv_um": 0.2855132184703716,
+      "elapsed_s": 3.4167754650115967
+    },
+    "sigma_MPa": 19.514483940773616,
+    "fail_sigma": false,
+    "feasible": true
+  },
+  {
+    "model": "Xeon",
+    "s": 1.0,
+    "cores": 2,
+    "f_MHz": 3400,
+    "area_mm2": 421.676,
+    "side_mm": 20.534751033309362,
+    "McPAT_T_K": 330,
+    "converged": true,
+    "power_W": 88.24269145985402,
+    "dyn_W": 66.8485,
+    "leak_W": 21.394191459854017,
+    "leak_frac": 0.24244717727798792,
+    "Tmax_C": 53.93000000000001,
+    "fail_T": false,
+    "Theta_serial_rel": 0.918918918918919,
+    "Theta_parallel_rel": 1.837837837837838,
+    "trace": [
+      {
+        "bin_K": 350,
+        "power_W": 94.05872795620438,
+        "dyn_W": 66.8485,
+        "leak_W": 27.21022795620438,
+        "T_C": 54.52000000000004,
+        "next_bin_K": 330
+      },
+      {
+        "bin_K": 330,
+        "power_W": 88.24269145985402,
+        "dyn_W": 66.8485,
+        "leak_W": 21.394191459854017,
+        "T_C": 53.93000000000001,
+        "next_bin_K": 330
+      }
+    ],
+    "stress": {
+      "Tmax_C": 61.16688374632298,
+      "vm_normal_chip_max_MPa": 32.92679592442886,
+      "vm_normal_chip_name": "Xeon",
+      "vm_normal_chip_p95_MPa": 32.20428005645124,
+      "w_pv_um": 0.48174651127669016,
+      "elapsed_s": 3.1911513805389404
+    },
+    "sigma_MPa": 32.92679592442886,
+    "fail_sigma": false,
+    "feasible": true
+  },
+  {
+    "model": "Xeon",
+    "s": 1.5,
+    "cores": 2,
+    "f_MHz": 3400,
+    "area_mm2": 421.676,
+    "side_mm": 20.534751033309362,
+    "McPAT_T_K": 330,
+    "converged": true,
+    "power_W": 121.66694145985402,
+    "dyn_W": 100.27275,
+    "leak_W": 21.394191459854017,
+    "leak_frac": 0.17584227238023714,
+    "Tmax_C": 57.32000000000005,
+    "fail_T": false,
+    "Theta_serial_rel": 1.3783783783783783,
+    "Theta_parallel_rel": 2.7567567567567566,
+    "trace": [
+      {
+        "bin_K": 350,
+        "power_W": 127.48297795620438,
+        "dyn_W": 100.27275,
+        "leak_W": 27.21022795620438,
+        "T_C": 57.910000000000025,
+        "next_bin_K": 330
+      },
+      {
+        "bin_K": 330,
+        "power_W": 121.66694145985402,
+        "dyn_W": 100.27275,
+        "leak_W": 21.394191459854017,
+        "T_C": 57.32000000000005,
+        "next_bin_K": 330
+      }
+    ],
+    "stress": {
+      "Tmax_C": 67.29051795464699,
+      "vm_normal_chip_max_MPa": 45.398684777490054,
+      "vm_normal_chip_name": "Xeon",
+      "vm_normal_chip_p95_MPa": 44.402499615417554,
+      "w_pv_um": 0.664220706218499,
+      "elapsed_s": 3.214601993560791
+    },
+    "sigma_MPa": 45.398684777490054,
+    "fail_sigma": false,
+    "feasible": true
+  },
+  {
+    "model": "Xeon",
+    "s": 2.0,
+    "cores": 2,
+    "f_MHz": 3400,
+    "area_mm2": 421.676,
+    "side_mm": 20.534751033309362,
+    "McPAT_T_K": 330,
+    "converged": true,
+    "power_W": 155.09119145985403,
+    "dyn_W": 133.697,
+    "leak_W": 21.394191459854017,
+    "leak_frac": 0.13794588369895908,
+    "Tmax_C": 60.700000000000045,
+    "fail_T": false,
+    "Theta_serial_rel": 1.837837837837838,
+    "Theta_parallel_rel": 3.675675675675676,
+    "trace": [
+      {
+        "bin_K": 350,
+        "power_W": 160.9072279562044,
+        "dyn_W": 133.697,
+        "leak_W": 27.21022795620438,
+        "T_C": 61.29000000000002,
+        "next_bin_K": 330
+      },
+      {
+        "bin_K": 330,
+        "power_W": 155.09119145985403,
+        "dyn_W": 133.697,
+        "leak_W": 21.394191459854017,
+        "T_C": 60.700000000000045,
+        "next_bin_K": 330
+      }
+    ],
+    "stress": {
+      "Tmax_C": 73.41415216297077,
+      "vm_normal_chip_max_MPa": 57.870577919587504,
+      "vm_normal_chip_name": "Xeon",
+      "vm_normal_chip_p95_MPa": 56.60072136860679,
+      "w_pv_um": 0.8466949162907136,
+      "elapsed_s": 3.7410032749176025
+    },
+    "sigma_MPa": 57.870577919587504,
+    "fail_sigma": false,
+    "feasible": true
+  }
+]

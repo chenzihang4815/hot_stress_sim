@@ -1,0 +1,70 @@
+{
+  "note": "材料图停在起点：Penryn + GPU_3070 + HBM3 + CIM_jia 都是硅，缝是环氧 0.8。新足迹的功耗直接用这份旧分解回代一次，不重分解，也不重解任何一颗。on_silicon 是最新布局里芯片格子上的误差，on_epoxy 是仍为环氧的格子。watts_on_epoxy 是新足迹里、起点材料图上还是环氧的格子接到的功率。对照是最新材料图上的一次求解。冷边 45 C，底面绝热，中介层 100 um 硅，TIM k=4。CPU 功耗是各模板 McPAT 380 K 总功耗，GPU 是各自的 AccelWattch backprop 平均。python，不是 HotSpot，也不是 ATSim。",
+  "old_factor_s": 0.6667134930030443,
+  "rows": [
+    {
+      "scheme": "cpu_T2",
+      "changed": "Penryn -> T2",
+      "new_power_W": 68.99682,
+      "watts_on_epoxy": 45.997879999999995,
+      "cells_power_on_epoxy": 144,
+      "grid_max_K": 43.814116597177076,
+      "grid_mean_K": 1.4322463457359036,
+      "on_silicon_max_K": 43.814116597177076,
+      "on_silicon_mean_K": 7.663123077907754,
+      "on_epoxy_max_K": 14.803694157839232,
+      "on_epoxy_mean_K": 0.3124113570045572,
+      "truth_Tmax_C": 65.44279910162953,
+      "stale_Tmax_C": 108.17058989100605,
+      "backsub_ms": null
+    },
+    {
+      "scheme": "cpu_Xeon",
+      "changed": "Penryn -> Xeon",
+      "new_power_W": 103.94599000000001,
+      "watts_on_epoxy": 81.67184928571432,
+      "cells_power_on_epoxy": 264,
+      "grid_max_K": 44.39248492184328,
+      "grid_mean_K": 2.6342577172760984,
+      "on_silicon_max_K": 44.39248492184328,
+      "on_silicon_mean_K": 12.82780552061504,
+      "on_epoxy_max_K": 14.59496677108109,
+      "on_epoxy_mean_K": 0.37172801390969784,
+      "truth_Tmax_C": 69.39977127291206,
+      "stale_Tmax_C": 112.7783497758449,
+      "backsub_ms": null
+    },
+    {
+      "scheme": "gpu_2060S",
+      "changed": "GPU_3070 -> GPU_2060S",
+      "new_power_W": 71.12,
+      "watts_on_epoxy": 8.889999999999997,
+      "cells_power_on_epoxy": 44,
+      "grid_max_K": 12.783003239841719,
+      "grid_mean_K": 0.2023449343896133,
+      "on_silicon_max_K": 12.783003239841719,
+      "on_silicon_mean_K": 1.000432828211962,
+      "on_epoxy_max_K": 6.32752970998672,
+      "on_epoxy_mean_K": 0.08526821088375922,
+      "truth_Tmax_C": 70.15827110719243,
+      "stale_Tmax_C": 71.60495740789457,
+      "backsub_ms": null
+    },
+    {
+      "scheme": "gpu_TITANX",
+      "changed": "GPU_3070 -> GPU_TITANX",
+      "new_power_W": 67.41,
+      "watts_on_epoxy": 11.895882352941173,
+      "cells_power_on_epoxy": 66,
+      "grid_max_K": 15.66599143388521,
+      "grid_mean_K": 0.30398834201748737,
+      "on_silicon_max_K": 15.66599143388521,
+      "on_silicon_mean_K": 1.6304844513412697,
+      "on_epoxy_max_K": 7.039295629455637,
+      "on_epoxy_mean_K": 0.09996950379473094,
+      "truth_Tmax_C": 69.81111062778132,
+      "stale_Tmax_C": 74.11273550728043,
+      "backsub_ms": null
+    }
+  ]
+}

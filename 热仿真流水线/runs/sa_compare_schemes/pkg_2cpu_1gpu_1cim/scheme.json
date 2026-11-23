@@ -1,0 +1,49 @@
+{
+  "id": "pkg_2cpu_1gpu_1cim",
+  "title": "2 CPU + 1 GPU + 1 CIM（4 颗）",
+  "why": "两颗 x86 CPU + 一颗 GPU",
+  "layout": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/sa_compare_schemes/pkg_2cpu_1gpu_1cim/layout.json",
+  "source": "lbfgs",
+  "n_chiplets": 4,
+  "kinds": {
+    "CPU": 2,
+    "GPU": 1,
+    "CIM": 1
+  },
+  "power_total_W": 68.84859713514943,
+  "area_total_mm2": 423.5502262579421,
+  "outline_mm2": 534.3115103188488,
+  "atsim_pitch_die_mm": 2.0,
+  "atsim_pitch_coarse_mm": 8.0,
+  "atsim_nz": null,
+  "chips": [
+    {
+      "name": "CPU_matmul",
+      "kind": "CPU",
+      "area_mm2": 13.6345,
+      "power_W": 1.001867,
+      "notes": "x86 Timing+L1/L2 矩阵乘；P=RuntimeDynamic(0.217977)+Leakage(0.78389)"
+    },
+    {
+      "name": "CPU_threads",
+      "kind": "CPU",
+      "area_mm2": 13.6345,
+      "power_W": 0.9561569999999999,
+      "notes": "x86 Timing+L1/L2 threads；P=RuntimeDynamic(0.172267)+Leakage(0.78389)"
+    },
+    {
+      "name": "GPU_3070",
+      "kind": "GPU",
+      "area_mm2": 392.0,
+      "power_W": 66.8878,
+      "notes": "RTX3070 backprop；P=66.89W 文献面积 392.0 mm²"
+    },
+    {
+      "name": "CIM_jia",
+      "kind": "CIM",
+      "area_mm2": 4.281226257942074,
+      "power_W": 0.0027731351494352146,
+      "notes": "AccelForge jia_jssc_2020+builtin；P=energy/latency=0.00277314 W"
+    }
+  ]
+}

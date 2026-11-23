@@ -1,0 +1,61 @@
+{
+  "mix": "cpuL2_cimBasic",
+  "algorithm": "mcts",
+  "n_blocks": 2,
+  "layout": {
+    "width_m": 0.0037564625394233817,
+    "height_m": 0.0037842351042065314,
+    "outline_mm2": 14.215337409322771,
+    "block_area_mm2": 13.681219511557774,
+    "deadspace_ratio": 0.03757335351144808,
+    "overlap_m2": 0.0,
+    "overlap_count": 0.0,
+    "algorithm": "mcts",
+    "seed": 11,
+    "n_sims": 80,
+    "cost": 14.231044105820105
+  },
+  "thermal": {
+    "Tmax_C": 45.64000000000004,
+    "Tmin_C": 45.08000000000004,
+    "block_T_C": {
+      "CPU": 45.64000000000004,
+      "CIM_AccelForge": 45.56,
+      "iface_CPU": 45.56,
+      "iface_CIM_AccelForge": 45.49000000000001,
+      "hsink_CPU": 45.150000000000034,
+      "hsink_CIM_AccelForge": 45.14000000000004,
+      "inode_0": 45.110000000000014,
+      "inode_1": 45.110000000000014,
+      "inode_2": 45.110000000000014,
+      "inode_3": 45.110000000000014,
+      "inode_4": 45.110000000000014,
+      "inode_5": 45.110000000000014,
+      "inode_6": 45.110000000000014,
+      "inode_7": 45.110000000000014,
+      "inode_8": 45.08000000000004,
+      "inode_9": 45.09000000000003,
+      "inode_10": 45.08000000000004,
+      "inode_11": 45.08000000000004
+    },
+    "returncode": 0
+  },
+  "power_total_W": 0.8705387290280375,
+  "area_total_mm2": 13.681219511557774,
+  "blocks": [
+    {
+      "name": "CPU",
+      "kind": "CPU",
+      "area_mm2": 13.6345,
+      "power_W": 0.8679134,
+      "notes": "gem5 TimingSimpleCPU + L1/L2，hello；P=RuntimeDynamic(0.0840234)+Leakage(0.78389)"
+    },
+    {
+      "name": "CIM_AccelForge",
+      "kind": "CIM",
+      "area_mm2": 0.04671951155777578,
+      "power_W": 0.0026253290280376118,
+      "notes": "功率=energy_J/latency_s；面积=各组件 area_m2 之和（MainMemory=0 不占面积）"
+    }
+  ]
+}

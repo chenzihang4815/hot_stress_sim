@@ -1,0 +1,44 @@
+{
+  "tag": "t2_titanx_s7__init",
+  "vm_normal_chip_max_MPa": 96.4836275568313,
+  "vm_normal_chip_name": "T2",
+  "vm_normal_chip_p95_MPa": 79.72266947064504,
+  "w_pv_um": 2.415244948380703,
+  "atsim_Tmax_C": 70.68746191834981,
+  "elapsed_s": 13.396683931350708,
+  "ndof": 35808,
+  "chips": [
+    {
+      "name": "T2",
+      "normal": true,
+      "n_cells": 88,
+      "vm_max_MPa": 96.4836275568313,
+      "vm_mean_MPa": 45.11632802566682,
+      "vm_p95_MPa": 79.72266947064504
+    },
+    {
+      "name": "GPU_TITANX",
+      "normal": true,
+      "n_cells": 154,
+      "vm_max_MPa": 89.34696435535088,
+      "vm_mean_MPa": 34.3853932311981,
+      "vm_p95_MPa": 65.76189384284949
+    },
+    {
+      "name": "HBM3",
+      "normal": true,
+      "n_cells": 45,
+      "vm_max_MPa": 52.868032231904586,
+      "vm_mean_MPa": 28.83639380556853,
+      "vm_p95_MPa": 50.390430011811276
+    },
+    {
+      "name": "CIM_jia",
+      "normal": true,
+      "n_cells": 8,
+      "vm_max_MPa": 58.77696840477755,
+      "vm_mean_MPa": 54.88741814265168,
+      "vm_p95_MPa": 58.77415871628192
+    }
+  ]
+}

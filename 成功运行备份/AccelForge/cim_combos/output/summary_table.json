@@ -1,0 +1,38 @@
+[
+  {
+    "combo": "basic_analog+builtin",
+    "area_total_mm2": 0.04671951155777578,
+    "avg_power_mW": 2.6253290280376116,
+    "energy_J": 2.6253290587174625e-10,
+    "latency_s": 1.0000000116860974e-07,
+    "n_computes": 1024.0,
+    "wall_s": 5.20731258392334
+  },
+  {
+    "combo": "colonnade_jssc_2021+builtin",
+    "area_total_mm2": 0.231359891352,
+    "avg_power_mW": 41.19819389066705,
+    "energy_J": 2.3730160180812567e-09,
+    "latency_s": 5.760000121313169e-08,
+    "n_computes": 16384.0,
+    "wall_s": 6.9157421588897705
+  },
+  {
+    "combo": "jia_jssc_2020+builtin",
+    "area_total_mm2": 4.281226257942074,
+    "avg_power_mW": 2.7731351494352148,
+    "energy_J": 2.3959888538601973e-07,
+    "latency_s": 8.64000030560419e-05,
+    "n_computes": 589824.0,
+    "wall_s": 8.28967022895813
+  },
+  {
+    "combo": "basic_analog+alexnet",
+    "area_total_mm2": 0.04671951155777578,
+    "avg_power_mW": 2.5717487199457314,
+    "energy_J": 0.00017012992086038465,
+    "latency_s": 0.0661533996462822,
+    "n_computes": 604384448.0,
+    "wall_s": 23.432454109191895
+  }
+]

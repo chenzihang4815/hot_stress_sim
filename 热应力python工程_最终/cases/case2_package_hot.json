@@ -1,0 +1,70 @@
+{
+  "name": "case2_package_hot",
+  "description": "Same 2.5D 8x8 geometry as case2_package.json; block powers x2 (35 W total) to check if center stress error stays ~1%.",
+  "comment": "Do not overwrite case2_package.json. Geometry, h, T_ref unchanged.",
+  "ambient_K": 318.15,
+  "convection": {
+    "face": "sink_top",
+    "h_W_m2K": 2777.777777777778,
+    "r_convec_K_per_W": 0.1
+  },
+  "domain": {
+    "width_m": 0.06,
+    "height_m": 0.06
+  },
+  "chip_origin_m": [0.026, 0.026],
+  "grid": {
+    "x_regions": [
+      {"x0_m": 0.000, "x1_m": 0.015, "n": 8},
+      {"x0_m": 0.015, "x1_m": 0.026, "n": 8},
+      {"x0_m": 0.026, "x1_m": 0.034, "n": 32},
+      {"x0_m": 0.034, "x1_m": 0.045, "n": 8},
+      {"x0_m": 0.045, "x1_m": 0.060, "n": 8}
+    ],
+    "y_regions": [
+      {"y0_m": 0.000, "y1_m": 0.015, "n": 8},
+      {"y0_m": 0.015, "y1_m": 0.026, "n": 8},
+      {"y0_m": 0.026, "y1_m": 0.034, "n": 32},
+      {"y0_m": 0.034, "y1_m": 0.045, "n": 8},
+      {"y0_m": 0.045, "y1_m": 0.060, "n": 8}
+    ]
+  },
+  "stack": [
+    {"name": "substrate", "material": "organic", "x0_m": 0.026, "y0_m": 0.026, "w_m": 0.008, "h_m": 0.008, "z0_m": 0.0, "z1_m": 0.001, "nz": 4, "has_power": false},
+    {"name": "interposer", "material": "silicon", "x0_m": 0.026, "y0_m": 0.026, "w_m": 0.008, "h_m": 0.008, "z0_m": 0.001, "z1_m": 0.0011, "nz": 3, "has_power": false},
+    {"name": "die", "material": "silicon", "x0_m": 0.026, "y0_m": 0.026, "w_m": 0.008, "h_m": 0.008, "z0_m": 0.0011, "z1_m": 0.00125, "nz": 4, "has_power": true},
+    {"name": "tim", "material": "tim", "x0_m": 0.026, "y0_m": 0.026, "w_m": 0.008, "h_m": 0.008, "z0_m": 0.00125, "z1_m": 0.00127, "nz": 2, "has_power": false},
+    {"name": "spreader", "material": "copper", "x0_m": 0.015, "y0_m": 0.015, "w_m": 0.030, "h_m": 0.030, "z0_m": 0.00127, "z1_m": 0.00227, "nz": 4, "has_power": false},
+    {"name": "sink", "material": "copper", "x0_m": 0.000, "y0_m": 0.000, "w_m": 0.060, "h_m": 0.060, "z0_m": 0.00227, "z1_m": 0.00917, "nz": 6, "has_power": false}
+  ],
+  "solver": {"type": "fvm3d", "nonlinear": false, "leakage": false, "kirchhoff": false, "tolerance_K": 0.05, "max_iter": 20},
+  "mechanics": {"bc": "substrate_bottom_fixed"},
+  "material_default": "silicon",
+  "materials": {
+    "silicon": {"kappa0_W_mK": 130.0, "T_ref_K": 300.0, "alpha": 1.5, "rho_kg_m3": 2330.0, "cp_J_kgK": 700.0, "E_Pa": 1.7e11, "nu": 0.28, "alpha_cte_1_K": 2.6e-6},
+    "tim": {"kappa0_W_mK": 4.0, "T_ref_K": 300.0, "alpha": 0.0, "rho_kg_m3": 2500.0, "cp_J_kgK": 1600.0, "E_Pa": 5.0e9, "nu": 0.40, "alpha_cte_1_K": 4.0e-5},
+    "copper": {"kappa0_W_mK": 400.0, "T_ref_K": 300.0, "alpha": 0.0, "rho_kg_m3": 8960.0, "cp_J_kgK": 385.0, "E_Pa": 1.1e11, "nu": 0.35, "alpha_cte_1_K": 1.7e-5},
+    "organic": {"kappa0_W_mK": 0.5, "T_ref_K": 300.0, "alpha": 0.0, "rho_kg_m3": 1800.0, "cp_J_kgK": 1000.0, "E_Pa": 2.5e10, "nu": 0.30, "alpha_cte_1_K": 1.5e-5}
+  },
+  "blocks": [
+    {"name": "Cache",  "x0_m": 0.0, "y0_m": 0.0, "w_m": 0.004, "h_m": 0.004, "z0_m": 0.0011, "z1_m": 0.00125, "power_W": 4.0, "material": "silicon"},
+    {"name": "Uncore", "x0_m": 0.004, "y0_m": 0.0, "w_m": 0.004, "h_m": 0.004, "z0_m": 0.0011, "z1_m": 0.00125, "power_W": 3.0, "material": "silicon"},
+    {"name": "CoreA",  "x0_m": 0.0, "y0_m": 0.004, "w_m": 0.004, "h_m": 0.004, "z0_m": 0.0011, "z1_m": 0.00125, "power_W": 16.0, "material": "silicon"},
+    {"name": "CoreB",  "x0_m": 0.004, "y0_m": 0.004, "w_m": 0.004, "h_m": 0.004, "z0_m": 0.0011, "z1_m": 0.00125, "power_W": 12.0, "material": "silicon"}
+  ],
+  "probes": [
+    {"name": "Cache_center",      "x_m": 0.028, "y_m": 0.028, "z_m": 0.001175},
+    {"name": "Uncore_center",     "x_m": 0.032, "y_m": 0.028, "z_m": 0.001175},
+    {"name": "CoreA_center",      "x_m": 0.028, "y_m": 0.032, "z_m": 0.001175},
+    {"name": "CoreB_center",      "x_m": 0.032, "y_m": 0.032, "z_m": 0.001175},
+    {"name": "Chip_center",       "x_m": 0.030, "y_m": 0.030, "z_m": 0.001175},
+    {"name": "Chip_bottom_CoreA", "x_m": 0.028, "y_m": 0.032, "z_m": 0.0011},
+    {"name": "Interposer_center", "x_m": 0.030, "y_m": 0.030, "z_m": 0.00105},
+    {"name": "Substrate_center",  "x_m": 0.030, "y_m": 0.030, "z_m": 0.0005},
+    {"name": "TIM_mid",           "x_m": 0.030, "y_m": 0.030, "z_m": 0.00126},
+    {"name": "Spreader_center",   "x_m": 0.030, "y_m": 0.030, "z_m": 0.00177},
+    {"name": "Sink_center",       "x_m": 0.030, "y_m": 0.030, "z_m": 0.00572},
+    {"name": "Sink_top_center",   "x_m": 0.030, "y_m": 0.030, "z_m": 0.00917},
+    {"name": "Sink_top_corner",   "x_m": 0.001, "y_m": 0.001, "z_m": 0.00917}
+  ]
+}

@@ -1,0 +1,32 @@
+三个工具怎么跑 —— 先看这一页
+================================
+
+本机现状（2026-10-06 已检查）：
+  Windows 上没有 g++ / scons / WSL，三个仿真器都编不出二进制。
+  有 Python 3.6，所以「看格式 / 做转换 / 读结果」可以立刻做。
+  真正仿真请到 Linux（实验室服务器、WSL2、或 Accel-Sim 官方 Docker）。
+
+三个案例互相独立，不要把 gem5 的输出喂给 Accel-Sim。
+
+  gem5        CPU 性能仿真  →  输出 stats.txt
+  McPAT       CPU 功耗估算  →  吃 XML（param=微结构, stat=活动计数）
+  Accel-Sim   NVIDIA GPU    →  吃 SASS trace，不是 gem5 stats
+
+正确的 CPU 功耗链：
+
+  gem5 跑程序  →  stats.txt  →  scripts/gem5_stats_to_mcpat.py  →  McPAT XML  →  ./mcpat
+
+GPU 是另一条链：
+
+  真机 NVBit 采 trace  →  Accel-Sim 重放  →  accelwattch_power_report.log
+
+目录：
+  McPAT/      唯一一份完整可编译源码（约 2MB）+ 官方 ARM A9 例题
+  gem5/       最小配置 + 伪造的 stats.txt（示范格式）+ 转 McPAT 脚本
+  Accel-sim/  最小假 trace + 假功耗报告（示范格式）
+
+建议动手顺序：
+  1) 用 Python 读 McPAT 官方结果（Windows 就能做）
+  2) 用 Python 把假 stats.txt 转成 XML，对照官方 XML 看哪些 stat 被改了
+  3) Linux 上编译 McPAT，跑官方 ARM_A9_2000.xml
+  4) Linux 上再碰 gem5 / Accel-Sim（依赖重，见各自 运行说明.txt）

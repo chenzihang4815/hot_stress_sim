@@ -1,0 +1,14 @@
+{
+  "label": "multigpu",
+  "steps": 120,
+  "step_mm": 1,
+  "rows_search": 16,
+  "full_secs": 227.0,
+  "full_final_64_C": 170.22,
+  "field_secs": 115.0,
+  "field_solves": 80,
+  "field_final_64_C": 169.5,
+  "speedup": 1.97,
+  "delta_C": -0.72,
+  "wall_s": 444.7
+}

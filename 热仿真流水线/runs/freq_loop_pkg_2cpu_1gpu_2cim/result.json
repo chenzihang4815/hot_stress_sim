@@ -1,0 +1,151 @@
+{
+  "scheme": "pkg_2cpu_1gpu_2cim",
+  "T_lim_C": 90.0,
+  "sigma_lim_MPa": 200.0,
+  "s_min": 0.5,
+  "abandoned": false,
+  "winner_rule": "max Theta_pkg among feasible s; thermal/stress are gates only",
+  "winner": {
+    "s": 4.0,
+    "Tmax_C": 61.14000000000004,
+    "sigma_chip_max_MPa": 53.44632654250205,
+    "sigma_chip_name": "CIM_jia",
+    "Theta_pkg": 3.0,
+    "Theta_CPU_rel": 4.0,
+    "Theta_GPU_rel": 4.0,
+    "Theta_CIM_rel": 1.0,
+    "feasible": true,
+    "w_pv_um": 1.1448101150089556
+  },
+  "history": [
+    {
+      "s": 0.5,
+      "Tmax_C": 54.55000000000001,
+      "sigma_chip_max_MPa": 31.619289581391612,
+      "sigma_chip_name": "CIM_jia",
+      "w_pv_um": 0.6772199727312131,
+      "ATSim_Tmax_C": 56.67962049269232,
+      "feasible": true,
+      "fail_T": false,
+      "fail_sigma": false,
+      "elapsed_s": 22.817850589752197,
+      "power_W": {
+        "CPU_matmul": 0.8928785,
+        "CPU_threads": 0.8700235,
+        "GPU_3070": 60.89885,
+        "CIM_jia": 0.0027731351494352146,
+        "CIM_colonnade": 0.04119819389066705
+      },
+      "stress": {
+        "vm_normal_chip_max_MPa": 31.619289581391612,
+        "vm_normal_chip_name": "CIM_jia",
+        "w_pv_um": 0.6772199727312131,
+        "Tmax_C": 56.67962049269232,
+        "elapsed_s": 20.395963191986084
+      },
+      "Theta_CPU_rel": 0.5,
+      "Theta_GPU_rel": 0.5,
+      "Theta_CIM_rel": 1.0,
+      "Theta_pkg": 0.6666666666666666,
+      "note": "CPU/GPU IPC held fixed so relative throughput = s; CIM analog latency_s unchanged",
+      "why": "lowest frequency; abandon scheme if still over window"
+    },
+    {
+      "s": 1.0,
+      "Tmax_C": 55.49000000000001,
+      "sigma_chip_max_MPa": 34.73743868349705,
+      "sigma_chip_name": "CIM_jia",
+      "w_pv_um": 0.744018571431271,
+      "ATSim_Tmax_C": 57.830338932065786,
+      "feasible": true,
+      "fail_T": false,
+      "fail_sigma": false,
+      "elapsed_s": 20.262259244918823,
+      "power_W": {
+        "CPU_matmul": 1.001867,
+        "CPU_threads": 0.9561569999999999,
+        "GPU_3070": 66.8878,
+        "CIM_jia": 0.0027731351494352146,
+        "CIM_colonnade": 0.04119819389066705
+      },
+      "stress": {
+        "vm_normal_chip_max_MPa": 34.73743868349705,
+        "vm_normal_chip_name": "CIM_jia",
+        "w_pv_um": 0.744018571431271,
+        "Tmax_C": 57.830338932065786,
+        "elapsed_s": 17.59716558456421
+      },
+      "Theta_CPU_rel": 1.0,
+      "Theta_GPU_rel": 1.0,
+      "Theta_CIM_rel": 1.0,
+      "Theta_pkg": 1.0,
+      "note": "CPU/GPU IPC held fixed so relative throughput = s; CIM analog latency_s unchanged",
+      "why": "nominal frequency (throughput reference)"
+    },
+    {
+      "s": 2.0,
+      "Tmax_C": 57.370000000000005,
+      "sigma_chip_max_MPa": 40.97373643321219,
+      "sigma_chip_name": "CIM_jia",
+      "w_pv_um": 0.8776157513256774,
+      "ATSim_Tmax_C": 60.13177581081277,
+      "feasible": true,
+      "fail_T": false,
+      "fail_sigma": false,
+      "elapsed_s": 20.542900323867798,
+      "power_W": {
+        "CPU_matmul": 1.2198440000000002,
+        "CPU_threads": 1.1284239999999999,
+        "GPU_3070": 78.86569999999999,
+        "CIM_jia": 0.0027731351494352146,
+        "CIM_colonnade": 0.04119819389066705
+      },
+      "stress": {
+        "vm_normal_chip_max_MPa": 40.97373643321219,
+        "vm_normal_chip_name": "CIM_jia",
+        "w_pv_um": 0.8776157513256774,
+        "Tmax_C": 60.13177581081277,
+        "elapsed_s": 17.635619401931763
+      },
+      "Theta_CPU_rel": 2.0,
+      "Theta_GPU_rel": 2.0,
+      "Theta_CIM_rel": 1.0,
+      "Theta_pkg": 1.6666666666666667,
+      "note": "CPU/GPU IPC held fixed so relative throughput = s; CIM analog latency_s unchanged",
+      "why": "first up-clock f*2"
+    },
+    {
+      "s": 4.0,
+      "Tmax_C": 61.14000000000004,
+      "sigma_chip_max_MPa": 53.44632654250205,
+      "sigma_chip_name": "CIM_jia",
+      "w_pv_um": 1.1448101150089556,
+      "ATSim_Tmax_C": 64.73464956830685,
+      "feasible": true,
+      "fail_T": false,
+      "fail_sigma": false,
+      "elapsed_s": 22.86319613456726,
+      "power_W": {
+        "CPU_matmul": 1.6557980000000003,
+        "CPU_threads": 1.4729579999999998,
+        "GPU_3070": 102.82149999999997,
+        "CIM_jia": 0.0027731351494352146,
+        "CIM_colonnade": 0.04119819389066705
+      },
+      "stress": {
+        "vm_normal_chip_max_MPa": 53.44632654250205,
+        "vm_normal_chip_name": "CIM_jia",
+        "w_pv_um": 1.1448101150089556,
+        "Tmax_C": 64.73464956830685,
+        "elapsed_s": 19.462268352508545
+      },
+      "Theta_CPU_rel": 4.0,
+      "Theta_GPU_rel": 4.0,
+      "Theta_CIM_rel": 1.0,
+      "Theta_pkg": 3.0,
+      "note": "CPU/GPU IPC held fixed so relative throughput = s; CIM analog latency_s unchanged",
+      "why": "still in window, try s=4"
+    }
+  ],
+  "finished_utc": "2026-10-23T10:57:02.046232+00:00"
+}

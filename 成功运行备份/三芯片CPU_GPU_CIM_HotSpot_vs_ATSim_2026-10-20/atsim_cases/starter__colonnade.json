@@ -1,0 +1,52 @@
+{
+  "name": "cpu_gpu_cim_starter__colonnade",
+  "description": "3 chiplets CPU+GPU+CIM. CPU starter + GPU backprop + CIM colonnade. Initial layout=lbfgs.",
+  "chips": [
+    {
+      "name": "CPU",
+      "x_mm": 0.0,
+      "y_mm": 25.258587168002904,
+      "w_mm": 1.548031169905943,
+      "h_mm": 1.873534626680817,
+      "t_um": 150.0,
+      "power_W": 1.65068
+    },
+    {
+      "name": "GPU",
+      "x_mm": 0.6044551279914365,
+      "y_mm": 0.0,
+      "w_mm": 32.33025296373904,
+      "h_mm": 25.208587168002904,
+      "t_um": 150.0,
+      "power_W": 72.955
+    },
+    {
+      "name": "CIM",
+      "x_mm": 0.0,
+      "y_mm": 0.0,
+      "w_mm": 0.5544551279914365,
+      "h_mm": 0.417274328745271,
+      "t_um": 150.0,
+      "power_W": 0.04119819389066705
+    }
+  ],
+  "package": {
+    "tim_um": 20,
+    "t_spreader_mm": 1.0,
+    "t_sink_mm": 6.9,
+    "t_substrate_mm": 1.0,
+    "t_interposer_um": 100.0,
+    "r_convec_K_per_W": 0.1,
+    "ambient_C": 45,
+    "pitch_die_mm": 1.0,
+    "pitch_coarse_mm": 4.0,
+    "fill_die": false
+  },
+  "mix": "starter__colonnade",
+  "title": "CPU starter + GPU backprop + CIM colonnade",
+  "layout_algorithm": "lbfgs",
+  "layout_seed": 13,
+  "outline_mm2": 893.5885112171869,
+  "deadspace_ratio": 0.08444251507111766,
+  "overlap_m2": 0.0
+}

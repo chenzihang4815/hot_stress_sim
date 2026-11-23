@@ -1,0 +1,13 @@
+{
+  "block_count": 3,
+  "power_total_W": 74.13974519389066,
+  "geometry_units": "m",
+  "power_units": "W",
+  "width_m": 0.03293470809173048,
+  "height_m": 0.027132121794683724,
+  "outline_mm2": 893.5885112171869,
+  "block_area_mm2": 818.131649891352,
+  "deadspace_ratio": 0.08444251507111766,
+  "overlap_m2": 0.0,
+  "overlap_count": 0.0
+}

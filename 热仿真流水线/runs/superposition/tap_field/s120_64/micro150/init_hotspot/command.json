@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/home/czh/任务仿真产生功耗文件工具/HotSpot-master/hotspot",
+    "-f",
+    "runs/superposition/tap_field/s120_64/micro150/init_hotspot/floorplan.flp",
+    "-p",
+    "runs/superposition/tap_field/s120_64/micro150/init_hotspot/power.ptrace",
+    "-c",
+    "runs/superposition/tap_field/s120_64/micro150/init_hotspot/hotspot.config",
+    "-model_type",
+    "grid",
+    "-steady_file",
+    "runs/superposition/tap_field/s120_64/micro150/init_hotspot/block.steady",
+    "-grid_steady_file",
+    "runs/superposition/tap_field/s120_64/micro150/init_hotspot/grid.steady"
+  ],
+  "returncode": 1,
+  "block_steady": "runs/superposition/tap_field/s120_64/micro150/init_hotspot/block.steady",
+  "grid_steady": "runs/superposition/tap_field/s120_64/micro150/init_hotspot/grid.steady"
+}

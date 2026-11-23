@@ -1,0 +1,11 @@
+{
+  "case": "micro150",
+  "rows_search": 64,
+  "mode": "full",
+  "steps": 120,
+  "search_peak_C": 97.81,
+  "final_64_C": 97.81,
+  "solve_secs": 1316.0,
+  "solves": 120,
+  "wall_s": 1317.6
+}

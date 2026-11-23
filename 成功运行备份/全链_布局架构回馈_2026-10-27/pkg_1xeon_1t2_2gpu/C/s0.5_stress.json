@@ -1,0 +1,13 @@
+{
+  "Tmax_C": 76.32991391281672,
+  "vm_normal_chip_max_MPa": 137.0511448693664,
+  "vm_normal_chip_name": "GPU_TITANX",
+  "vm_normal_chip_p95_MPa": 101.08904013848255,
+  "vm_center_max_MPa": 99.38795165994044,
+  "w_pv_um": 4.872318893128721,
+  "u_max_um": 32.2732678287777,
+  "ndof": 121608,
+  "elapsed_s": 83.20204472541809,
+  "heat_s": 13.741080522537231,
+  "elast_s": 68.72617721557617
+}

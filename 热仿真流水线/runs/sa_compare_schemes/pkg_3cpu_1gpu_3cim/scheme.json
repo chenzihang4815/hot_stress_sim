@@ -1,0 +1,17 @@
+{
+  "id": "pkg_3cpu_1gpu_3cim",
+  "title": "3 CPU + 1 GPU + 3 CIM（7 颗）",
+  "why": "三颗 CPU + TitanX + 三 CIM",
+  "layout": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/sa_compare_schemes/pkg_3cpu_1gpu_3cim/layout.json",
+  "source": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/multi_chiplet_schemes/pkg_3cpu_1gpu_3cim/layout.json",
+  "n_chiplets": 7,
+  "kinds": {
+    "CPU": 3,
+    "GPU": 1,
+    "CIM": 3
+  },
+  "power_total_W": 71.08497531240225,
+  "atsim_pitch_die_mm": 2.0,
+  "atsim_pitch_coarse_mm": 8.0,
+  "atsim_nz": null
+}

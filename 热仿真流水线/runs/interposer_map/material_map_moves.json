@@ -1,0 +1,161 @@
+{
+  "note": "中介层 100 um 硅，最外一圈 45 C，底面绝热，缝是环氧 0.8，TIM k=4。起点是 Penryn+GPU_3070+HBM3+CIM。naive 每颗芯片单独成硅再相加。frozen 新材料图上轮流加功耗。stale_cache 只重算移动过的那颗，其余沿用旧材料图上的场。ignore_k 把新功耗放在旧材料图上。spike 是落在环氧上的格子，same 是材料没变的格子。python 场，不是 HotSpot，也不是 ATSim。",
+  "rows": [
+    {
+      "move": "nudge_1",
+      "legal": true,
+      "cells_changed": 18,
+      "hardware": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "field_moved_K": 4.422311856601198,
+      "naive_K": 0.5829386120029199,
+      "frozen_K": 2.6898305804934353e-10,
+      "stale_cache_K": 0.42833519755413363,
+      "ignore_k_spike_K": 29.930518770043705,
+      "ignore_k_rmse_K": 1.4974694548682586,
+      "ignore_k_same_mat_K": 14.507173130496483,
+      "python_Tmax_C": 69.77180671683647
+    },
+    {
+      "move": "nudge_2",
+      "legal": false
+    },
+    {
+      "move": "nudge_3",
+      "legal": true,
+      "cells_changed": 54,
+      "hardware": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "field_moved_K": 7.530491977150632,
+      "naive_K": 0.5733488808906486,
+      "frozen_K": 2.504521035007201e-10,
+      "stale_cache_K": 0.5828810422909783,
+      "ignore_k_spike_K": 70.04189619228111,
+      "ignore_k_rmse_K": 4.910338991832432,
+      "ignore_k_same_mat_K": 30.819347718836013,
+      "python_Tmax_C": 69.4176646332354
+    },
+    {
+      "move": "nudge_4",
+      "legal": true,
+      "cells_changed": 72,
+      "hardware": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "field_moved_K": 8.33418417401333,
+      "naive_K": 0.5679875500653111,
+      "frozen_K": 2.4346036298084073e-10,
+      "stale_cache_K": 0.5968574551804409,
+      "ignore_k_spike_K": 82.87995455171722,
+      "ignore_k_rmse_K": 6.478751570689872,
+      "ignore_k_same_mat_K": 33.86342970134166,
+      "python_Tmax_C": 69.32462837462162
+    },
+    {
+      "move": "rotate",
+      "legal": true,
+      "cells_changed": 16,
+      "hardware": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "field_moved_K": 3.568565528250133,
+      "naive_K": 0.6033930390398723,
+      "frozen_K": 2.4715518520679325e-10,
+      "stale_cache_K": 0.23211703866394373,
+      "ignore_k_spike_K": 29.721198445813457,
+      "ignore_k_rmse_K": 1.3889105823462726,
+      "ignore_k_same_mat_K": 14.267587169936974,
+      "python_Tmax_C": 70.02544015833922
+    },
+    {
+      "move": "jump",
+      "legal": true,
+      "cells_changed": 144,
+      "hardware": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "field_moved_K": 16.53881822438524,
+      "naive_K": 0.39857926904113583,
+      "frozen_K": 2.4635937734274194e-10,
+      "stale_cache_K": 0.6079709292377515,
+      "ignore_k_spike_K": 107.88170755950773,
+      "ignore_k_rmse_K": 11.913276102477736,
+      "ignore_k_same_mat_K": 36.69488979565148,
+      "python_Tmax_C": 67.90061653889364
+    },
+    {
+      "move": "swap_cpu_gpu",
+      "legal": true,
+      "cells_changed": 472,
+      "hardware": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "field_moved_K": 6.8337306826933855,
+      "naive_K": 0.6558712896497241,
+      "frozen_K": 2.551701072661672e-10,
+      "stale_cache_K": 0.21408644489906692,
+      "ignore_k_spike_K": 31.120183729108817,
+      "ignore_k_rmse_K": 6.168421314316953,
+      "ignore_k_same_mat_K": 10.229752913595348,
+      "python_Tmax_C": 68.59724950965307
+    },
+    {
+      "move": "hw_T2",
+      "legal": true,
+      "cells_changed": 144,
+      "hardware": [
+        "T2",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "field_moved_K": 4.8885929258499345,
+      "naive_K": 0.6605270563006229,
+      "frozen_K": 2.6381030693301e-10,
+      "stale_cache_K": 0.3676855472664329,
+      "ignore_k_spike_K": 43.814116597177076,
+      "ignore_k_rmse_K": 6.497207764138036,
+      "ignore_k_same_mat_K": 14.803694157839232,
+      "python_Tmax_C": 65.44279910162953
+    },
+    {
+      "move": "hw_Xeon",
+      "legal": true,
+      "cells_changed": 264,
+      "hardware": [
+        "Xeon",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "field_moved_K": 8.832584801923304,
+      "naive_K": 0.7661452719057138,
+      "frozen_K": 2.3868551579653285e-10,
+      "stale_cache_K": 0.3934175200144523,
+      "ignore_k_spike_K": 44.39248492184328,
+      "ignore_k_rmse_K": 9.456030041789893,
+      "ignore_k_same_mat_K": 14.59496677108109,
+      "python_Tmax_C": 69.39977127291206
+    }
+  ]
+}

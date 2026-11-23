@@ -1,0 +1,35 @@
+{
+  "name": "case",
+  "description": "Penryn s=2.0",
+  "chips": [
+    {
+      "name": "Penryn",
+      "x_mm": 31.226772580318425,
+      "y_mm": 31.226772580318425,
+      "w_mm": 9.546454839363145,
+      "h_mm": 9.546454839363145,
+      "t_um": 150.0,
+      "power_W": 103.15385650684931
+    }
+  ],
+  "package": {
+    "tim_um": 20,
+    "t_spreader_mm": 1.0,
+    "t_sink_mm": 6.9,
+    "t_substrate_mm": 1.0,
+    "t_interposer_um": 100.0,
+    "r_convec_K_per_W": 0.1,
+    "ambient_C": 45,
+    "pitch_die_mm": 2.0,
+    "pitch_coarse_mm": 8.0,
+    "nz_die": 3,
+    "nz_spreader": 3,
+    "nz_sink": 4,
+    "nz_tim": 1,
+    "nz_substrate": 3,
+    "nz_interposer": 2,
+    "fill_die": true,
+    "fill_xy": "chips",
+    "fill_material": "silicon"
+  }
+}

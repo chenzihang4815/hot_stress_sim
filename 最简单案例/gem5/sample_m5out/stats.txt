@@ -1,0 +1,63 @@
+---------- Begin Simulation Statistics ----------
+simSeconds                                   0.00003333                       # Number of seconds simulated (not counting simulation)
+simTicks                                     33330000                       # Number of ticks simulated
+simFreq                                      1000000000000                  # Frequency of simulated ticks
+hostSeconds                                  0.42                           # Real time
+simInsts                                     100000                         # Number of instructions simulated (SE committed)
+simOps                                       100000                         # Number of ops simulated
+
+system.clk_domain.clock                      333                            # Clock period in ticks (3 GHz)
+
+system.cpu.numCycles                         100000                         # Number of cpu cycles simulated
+system.cpu.idleCycles                        0                              # Number of idle cycles
+system.cpu.numWorkItemsStarted               0
+system.cpu.cpi                               1.000000                       # CPI: cycles per instruction
+system.cpu.ipc                               1.000000                       # IPC: instructions per cycle
+system.cpu.numInsts                          100000                         # Number of instructions committed
+system.cpu.committedInsts                    100000                         # Number of instructions committed
+system.cpu.committedOps                      100000
+system.cpu.numIntInsts                       70000                          # Number of integer instructions
+system.cpu.numFpInsts                        10000                          # Number of float instructions
+system.cpu.numLoadInsts                      25000                          # Number of load instructions
+system.cpu.numStoreInsts                     15000                          # Number of store instructions
+system.cpu.numBranches                       8000                           # Number of branches fetched
+system.cpu.numBranchMispred                  400                            # Number of branch mispredictions
+system.cpu.numIntAluAccesses                 70000                          # Number of integer alu accesses
+system.cpu.numFpAluAccesses                  10000                          # Number of float alu accesses
+system.cpu.numCalls                          50                             # Function calls
+
+system.cpu.icache.overallAccesses::total     100000                         # icache accesses
+system.cpu.icache.overallHits::total         98000
+system.cpu.icache.overallMisses::total       2000                           # icache misses
+system.cpu.icache.demandAccesses::total      100000
+system.cpu.icache.demandMisses::total        2000
+
+system.cpu.dcache.overallAccesses::total     40000                          # dcache accesses
+system.cpu.dcache.overallHits::total         37000
+system.cpu.dcache.overallMisses::total       3000
+system.cpu.dcache.ReadReq.accesses::total    25000                          # dcache reads
+system.cpu.dcache.ReadReq.misses::total      2000                           # dcache read misses
+system.cpu.dcache.WriteReq.accesses::total   15000                          # dcache writes
+system.cpu.dcache.WriteReq.misses::total     1000                           # dcache write misses
+
+system.cpu.itb.rdAccesses                    100000                         # itlb reads
+system.cpu.itb.wrAccesses                    0
+system.cpu.itb.rdMisses                      20
+system.cpu.dtb.rdAccesses                    25000
+system.cpu.dtb.wrAccesses                    15000
+system.cpu.dtb.rdMisses                      80
+system.cpu.dtb.wrMisses                      40
+
+system.l2.overallAccesses::total             5000                           # L2 accesses
+system.l2.overallHits::total                 3500
+system.l2.overallMisses::total               1500
+system.l2.ReadReq.accesses::total            3000
+system.l2.ReadReq.misses::total              900
+system.l2.WriteReq.accesses::total           2000
+system.l2.WriteReq.misses::total             600
+
+system.mem_ctrl.readReqs                     900                            # DRAM reads
+system.mem_ctrl.writeReqs                    600                            # DRAM writes
+system.mem_ctrl.averagePower                 0.85                           # DRAMPower average (W) if enabled
+
+---------- End Simulation Statistics ----------

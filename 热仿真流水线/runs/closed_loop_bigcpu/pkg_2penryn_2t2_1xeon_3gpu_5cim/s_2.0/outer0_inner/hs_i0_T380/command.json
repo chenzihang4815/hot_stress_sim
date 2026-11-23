@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/home/czh/任务仿真产生功耗文件工具/HotSpot-master/hotspot",
+    "-f",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/closed_loop_bigcpu/pkg_2penryn_2t2_1xeon_3gpu_5cim/s_2.0/outer0_inner/hs_i0_T380/floorplan.flp",
+    "-p",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/closed_loop_bigcpu/pkg_2penryn_2t2_1xeon_3gpu_5cim/s_2.0/outer0_inner/hs_i0_T380/power.ptrace",
+    "-c",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/closed_loop_bigcpu/pkg_2penryn_2t2_1xeon_3gpu_5cim/s_2.0/outer0_inner/hs_i0_T380/hotspot.config",
+    "-model_type",
+    "grid",
+    "-steady_file",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/closed_loop_bigcpu/pkg_2penryn_2t2_1xeon_3gpu_5cim/s_2.0/outer0_inner/hs_i0_T380/block.steady",
+    "-grid_steady_file",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/closed_loop_bigcpu/pkg_2penryn_2t2_1xeon_3gpu_5cim/s_2.0/outer0_inner/hs_i0_T380/grid.steady"
+  ],
+  "returncode": 0,
+  "block_steady": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/closed_loop_bigcpu/pkg_2penryn_2t2_1xeon_3gpu_5cim/s_2.0/outer0_inner/hs_i0_T380/block.steady",
+  "grid_steady": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/closed_loop_bigcpu/pkg_2penryn_2t2_1xeon_3gpu_5cim/s_2.0/outer0_inner/hs_i0_T380/grid.steady"
+}

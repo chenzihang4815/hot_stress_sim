@@ -1,0 +1,97 @@
+Accel-Sim —— 最简单案例（看格式，不是本机真跑 GPU）
+====================================================
+
+Accel-Sim 是 NVIDIA GPU 周期级仿真器。输入是真机采下来的 SASS 指令轨迹，
+不是 gem5 的 stats.txt。
+
+本机没有：Linux、CUDA、NVBit、GPGPU-Sim 源码（被 gitignore，要 setup_environment.sh 再 clone）。
+所以这个文件夹只放「最小假 trace + 假功耗报告」，让你先看懂输入输出长什么样。
+
+------------------------------------------------
+A. Windows 上现在就能做
+------------------------------------------------
+
+看一条假 kernel 轨迹：
+
+  python scripts/peek_trace.py sample_traces/kernelslist.g
+
+看假功耗报告（AccelWattch 每个 kernel 一份平均功率）：
+
+  python scripts/peek_power_report.py sample_output/accelwattch_power_report.log
+
+对照真机标定数字（官方 Volta 验证集的头几行）：
+
+  sample_output/hw_power_validation_volta_head.csv
+  例如 backprop_k1 ≈ 219.8 W（整卡平均，不是空间图）
+
+------------------------------------------------
+B. 假 trace 里有什么
+------------------------------------------------
+
+sample_traces/
+  kernelslist.g                 仿真器入口：列出 memcpy + kernel 文件
+  kernel-1-ctx_0x1.traceg       一个极小的 saxpy 风格 kernel（几个 thread block）
+
+一条指令（见 traceg 文件）大致是：
+  threadblock  PC  mask  dest  opcode  srcs  mem_width  [地址]
+
+这是执行轨迹，不是功耗。功耗是仿真器重放之后 AccelWattch 算出来的。
+
+------------------------------------------------
+C. Linux + NVIDIA GPU 上真正跑（实验室机器）
+------------------------------------------------
+
+源码在（不要整棵拷进本目录）：
+  .../accel-sim-framework-dev/accel-sim-framework-dev
+
+1) 编译仿真器（会 clone GPGPU-Sim + AccelWattch）：
+
+  cd accel-sim-framework-dev
+  pip3 install -r requirements.txt
+  source ./gpu-simulator/setup_environment.sh
+  cmake -S ./gpu-simulator/ -B ./gpu-simulator/build
+  cmake --build ./gpu-simulator/build -j8
+  cmake --install ./gpu-simulator/build
+  # 得到 ./gpu-simulator/bin/release/accel-sim.out
+
+2) 采 trace（需要一块能跑 CUDA 的 GPU）：
+
+  export CUDA_INSTALL_PATH=<你的cuda>
+  ./util/tracer_nvbit/install_nvbit.sh
+  make -C ./util/tracer_nvbit/
+  ./util/tracer_nvbit/run_hw_trace.py -B rodinia_2.0-ft -D 0
+  # 轨迹落在 ./hw_run/traces/
+
+  或者任意自己的程序：
+  NVBIT_INSTRUMENTATION_ENABLED=1 TRACES_FOLDER=./my_traces \
+      ./util/tracer_nvbit/others/torch_hook/run.sh ./your_cuda_app
+  ./util/tracer_nvbit/tracer_tool/traces-processing/post-traces-processing ./my_traces -j 8
+
+3) 只跑性能（H100 配置，不保证有校准过的功耗模型）：
+
+  ./gpu-simulator/bin/release/accel-sim.out \
+      -config ./gpu-simulator/gpgpu-sim/configs/tested-cfgs/SM90_H100/gpgpusim.config \
+      -config ./gpu-simulator/configs/tested-cfgs/SM90_H100/trace.config \
+      -trace  ./hw_run/traces/.../traces/kernelslist.g
+
+4) 跑功耗（MICRO'21 标定的是 Volta GV100/QV100，不要一上来用 H100）：
+
+  ./util/job_launching/run_simulations.py \
+      -B rodinia_2.0-ft -C GV100-Accelwattch_SASS_SIM \
+      -T ./hw_run/traces/device-0/<cuda>/ -N myTest
+
+  每个 run 目录会出现 accelwattch_power_report.log
+  字段见 sample_output/accelwattch_power_report.log（本目录的假文件格式相同）
+
+没有 GPU 时：用官方预采集轨迹
+
+  ./get-accel-sim-traces.py
+  # 然后同样用 accel-sim.out -trace kernelslist.g
+
+------------------------------------------------
+D. 不要做的事
+------------------------------------------------
+
+  gem5 stats.txt  →  Accel-Sim     没有这条路，CPU 计数器不是 SASS 指令
+  这份假 .traceg  →  accel-sim.out  指令条数太少，且缺 gpgpusim.config
+  H100-SASS + 打开功耗              AccelWattch XML 是 Volta 标定的

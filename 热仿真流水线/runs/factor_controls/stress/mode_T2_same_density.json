@@ -1,0 +1,12 @@
+{
+  "tag": "mode_T2_same_density",
+  "fill_material": "silicon",
+  "vm_max_MPa": 164.56712290849643,
+  "vm_name": "T2",
+  "cpu_mean_MPa": 77.0742675692761,
+  "cpu_max_MPa": 164.56712290849643,
+  "cpu_n": 88,
+  "atsim_Tmax_C": 94.73755901865064,
+  "elapsed_s": 11.519160032272339,
+  "ndof": 32904
+}

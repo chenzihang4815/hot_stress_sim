@@ -1,0 +1,1248 @@
+{
+  "moves": "TAP-like nudge/swap/jump/rotate with min clearance",
+  "gap_any_mm": 0.5,
+  "gap_gpu_mm": 2.0,
+  "inner_cost": "HotSpot Tmax",
+  "n_steps": 120,
+  "accepted": 48,
+  "seed": 22,
+  "HotSpot_Tmax_init_C": 70.99000000000001,
+  "HotSpot_Tmax_best_C": 70.04000000000002,
+  "dTmax_C": -0.9499999999999886,
+  "init_min_gap_mm": 0.5355659891987351,
+  "init_gpu_gap_mm": 2.623551567670933,
+  "best_min_gap_mm": 0.5650737171009821,
+  "best_gpu_gap_mm": 2.623551567670933,
+  "init_layout": [
+    {
+      "name": "CPU_matmul",
+      "kind": "CPU",
+      "x_m": 0.054,
+      "y_m": 0.001,
+      "w_m": 0.0031244705667589257,
+      "h_m": 0.00436377930554274,
+      "area_mm2": 13.6345,
+      "power_W": 1.001867
+    },
+    {
+      "name": "CPU_threads",
+      "kind": "CPU",
+      "x_m": 0.027,
+      "y_m": 0.001,
+      "w_m": 0.0033899674321547276,
+      "h_m": 0.0040220150408152005,
+      "area_mm2": 13.6345,
+      "power_W": 0.9561569999999999
+    },
+    {
+      "name": "CPU_armL2",
+      "kind": "CPU",
+      "x_m": 0.029,
+      "y_m": 0.0185,
+      "w_m": 0.0035601226827673108,
+      "h_m": 0.0038297837504301384,
+      "area_mm2": 13.6345,
+      "power_W": 0.8679134
+    },
+    {
+      "name": "CPU_atomic",
+      "kind": "CPU",
+      "x_m": 0.0,
+      "y_m": 0.0375,
+      "w_m": 0.0014611463799812066,
+      "h_m": 0.001984941440321197,
+      "area_mm2": 2.90029,
+      "power_W": 1.1435469999999999
+    },
+    {
+      "name": "CPU_starter",
+      "kind": "CPU",
+      "x_m": 0.0005,
+      "y_m": 0.0185,
+      "w_m": 0.001661494311208591,
+      "h_m": 0.0017455912911855196,
+      "area_mm2": 2.90029,
+      "power_W": 1.65068
+    },
+    {
+      "name": "GPU_3070",
+      "kind": "GPU",
+      "x_m": 0.031,
+      "y_m": 0.0005,
+      "w_m": 0.022445617175887805,
+      "h_m": 0.017464434010801264,
+      "area_mm2": 392.0,
+      "power_W": 66.8878
+    },
+    {
+      "name": "GPU_2060S",
+      "kind": "GPU",
+      "x_m": 0.0005,
+      "y_m": 0.0,
+      "w_m": 0.025609375916661587,
+      "h_m": 0.017376448432329068,
+      "area_mm2": 445.0,
+      "power_W": 71.1194
+    },
+    {
+      "name": "GPU_TITANX",
+      "kind": "GPU",
+      "x_m": 0.0035,
+      "y_m": 0.02,
+      "w_m": 0.02464343550493409,
+      "h_m": 0.01911259491014135,
+      "area_mm2": 471.0,
+      "power_W": 67.4063
+    },
+    {
+      "name": "CIM_jia",
+      "kind": "CIM",
+      "x_m": 0.0335,
+      "y_m": 0.019,
+      "w_m": 0.0020838551622299156,
+      "h_m": 0.00205447400353908,
+      "area_mm2": 4.281226257942074,
+      "power_W": 0.0027731351494352146
+    },
+    {
+      "name": "CIM_colonnade",
+      "kind": "CIM",
+      "x_m": 0.0025,
+      "y_m": 0.039,
+      "w_m": 0.00043492628289901794,
+      "h_m": 0.0005319519662271539,
+      "area_mm2": 0.231359891352,
+      "power_W": 0.04119819389066705
+    },
+    {
+      "name": "CIM_wang",
+      "kind": "CIM",
+      "x_m": 0.0025,
+      "y_m": 0.0365,
+      "w_m": 0.0003960945839322804,
+      "h_m": 0.00030810721271956365,
+      "area_mm2": 0.12203959822869019,
+      "power_W": 0.025999983362139024
+    },
+    {
+      "name": "CIM_basic",
+      "kind": "CIM",
+      "x_m": 0.0025,
+      "y_m": 0.038,
+      "w_m": 0.0002159626648270455,
+      "h_m": 0.00021633142744923651,
+      "area_mm2": 0.04671951155777578,
+      "power_W": 0.0026253290280376118
+    },
+    {
+      "name": "CIM_sinangil",
+      "kind": "CIM",
+      "x_m": 0.0015,
+      "y_m": 0.0405,
+      "w_m": 5.67036611381657e-05,
+      "h_m": 4.544441151904176e-05,
+      "area_mm2": 0.0025768645113990983,
+      "power_W": 0.0007947682416197758
+    }
+  ],
+  "best_layout": [
+    {
+      "name": "CPU_matmul",
+      "kind": "CPU",
+      "x_m": 0.054,
+      "y_m": 0.001,
+      "w_m": 0.0031244705667589257,
+      "h_m": 0.00436377930554274,
+      "area_mm2": 13.6345,
+      "power_W": 1.001867
+    },
+    {
+      "name": "CPU_threads",
+      "kind": "CPU",
+      "x_m": 0.027,
+      "y_m": 0.001,
+      "w_m": 0.0033899674321547276,
+      "h_m": 0.0040220150408152005,
+      "area_mm2": 13.6345,
+      "power_W": 0.9561569999999999
+    },
+    {
+      "name": "CPU_armL2",
+      "kind": "CPU",
+      "x_m": 0.029,
+      "y_m": 0.0185,
+      "w_m": 0.0038297837504301384,
+      "h_m": 0.0035601226827673108,
+      "area_mm2": 13.6345,
+      "power_W": 0.8679134
+    },
+    {
+      "name": "CPU_atomic",
+      "kind": "CPU",
+      "x_m": 0.0,
+      "y_m": 0.0375,
+      "w_m": 0.0014611463799812066,
+      "h_m": 0.001984941440321197,
+      "area_mm2": 2.90029,
+      "power_W": 1.1435469999999999
+    },
+    {
+      "name": "CPU_starter",
+      "kind": "CPU",
+      "x_m": 0.0005,
+      "y_m": 0.0185,
+      "w_m": 0.001661494311208591,
+      "h_m": 0.0017455912911855196,
+      "area_mm2": 2.90029,
+      "power_W": 1.65068
+    },
+    {
+      "name": "GPU_3070",
+      "kind": "GPU",
+      "x_m": 0.037,
+      "y_m": 0.0335,
+      "w_m": 0.022445617175887805,
+      "h_m": 0.017464434010801264,
+      "area_mm2": 392.0,
+      "power_W": 66.8878
+    },
+    {
+      "name": "GPU_2060S",
+      "kind": "GPU",
+      "x_m": 0.0005,
+      "y_m": 0.0,
+      "w_m": 0.025609375916661587,
+      "h_m": 0.017376448432329068,
+      "area_mm2": 445.0,
+      "power_W": 71.1194
+    },
+    {
+      "name": "GPU_TITANX",
+      "kind": "GPU",
+      "x_m": 0.0035,
+      "y_m": 0.02,
+      "w_m": 0.02464343550493409,
+      "h_m": 0.01911259491014135,
+      "area_mm2": 471.0,
+      "power_W": 67.4063
+    },
+    {
+      "name": "CIM_jia",
+      "kind": "CIM",
+      "x_m": 0.0335,
+      "y_m": 0.019,
+      "w_m": 0.0020838551622299156,
+      "h_m": 0.00205447400353908,
+      "area_mm2": 4.281226257942074,
+      "power_W": 0.0027731351494352146
+    },
+    {
+      "name": "CIM_colonnade",
+      "kind": "CIM",
+      "x_m": 0.0025,
+      "y_m": 0.039,
+      "w_m": 0.00043492628289901794,
+      "h_m": 0.0005319519662271539,
+      "area_mm2": 0.231359891352,
+      "power_W": 0.04119819389066705
+    },
+    {
+      "name": "CIM_wang",
+      "kind": "CIM",
+      "x_m": 0.0025,
+      "y_m": 0.0365,
+      "w_m": 0.00030810721271956365,
+      "h_m": 0.0003960945839322804,
+      "area_mm2": 0.12203959822869019,
+      "power_W": 0.025999983362139024
+    },
+    {
+      "name": "CIM_basic",
+      "kind": "CIM",
+      "x_m": 0.0025,
+      "y_m": 0.038,
+      "w_m": 0.0002159626648270455,
+      "h_m": 0.00021633142744923651,
+      "area_mm2": 0.04671951155777578,
+      "power_W": 0.0026253290280376118
+    },
+    {
+      "name": "CIM_sinangil",
+      "kind": "CIM",
+      "x_m": 0.0015,
+      "y_m": 0.0405,
+      "w_m": 5.67036611381657e-05,
+      "h_m": 4.544441151904176e-05,
+      "area_mm2": 0.0025768645113990983,
+      "power_W": 0.0007947682416197758
+    }
+  ],
+  "log": [
+    {
+      "step": 0,
+      "op": "init",
+      "accept": true,
+      "Tmax_C": 70.99000000000001,
+      "T": 2.0
+    },
+    {
+      "step": 1,
+      "op": "rotate CPU_armL2",
+      "Tmax_C": 70.99000000000001,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 2.0
+    },
+    {
+      "step": 2,
+      "op": "jump GPU_TITANX",
+      "accept": false,
+      "reason": "illegal",
+      "T": 1.9
+    },
+    {
+      "step": 3,
+      "op": "nudge GPU_3070 (-1.0,0.0)mm",
+      "accept": false,
+      "reason": "illegal",
+      "T": 1.805
+    },
+    {
+      "step": 4,
+      "op": "rotate CIM_wang",
+      "Tmax_C": 70.99000000000001,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 1.7147499999999998
+    },
+    {
+      "step": 5,
+      "op": "jump+rot CIM_colonnade",
+      "accept": false,
+      "reason": "illegal",
+      "T": 1.6290124999999998
+    },
+    {
+      "step": 6,
+      "op": "jump GPU_3070",
+      "Tmax_C": 70.04000000000002,
+      "delta_C": 0.9499999999999886,
+      "ap": 1.0,
+      "accept": true,
+      "T": 1.5475618749999998,
+      "new_best": true
+    },
+    {
+      "step": 7,
+      "op": "rotate CIM_colonnade",
+      "accept": false,
+      "reason": "illegal",
+      "T": 1.4701837812499996
+    },
+    {
+      "step": 8,
+      "op": "nudge GPU_2060S (-1.0,0.0)mm",
+      "Tmax_C": 70.62,
+      "delta_C": -0.5799999999999841,
+      "ap": 0.6601606222631861,
+      "accept": false,
+      "T": 1.3966745921874995
+    },
+    {
+      "step": 9,
+      "op": "nudge CIM_wang (-1.5,0.0)mm",
+      "Tmax_C": 70.04000000000002,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 1.3268408625781245
+    },
+    {
+      "step": 10,
+      "op": "nudge GPU_2060S (0.0,0.5)mm",
+      "Tmax_C": 70.05000000000001,
+      "delta_C": -0.009999999999990905,
+      "ap": 0.9920980188955847,
+      "accept": true,
+      "T": 1.2604988194492182
+    },
+    {
+      "step": 11,
+      "op": "nudge CIM_jia (0.0,-1.0)mm",
+      "Tmax_C": 70.05000000000001,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 1.1974738784767571
+    },
+    {
+      "step": 12,
+      "op": "rotate CPU_armL2",
+      "Tmax_C": 70.05000000000001,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 1.1376001845529191
+    },
+    {
+      "step": 13,
+      "op": "nudge CPU_starter (0.0,-1.5)mm",
+      "accept": false,
+      "reason": "illegal",
+      "T": 1.080720175325273
+    },
+    {
+      "step": 14,
+      "op": "swap CIM_jia<->GPU_2060S",
+      "accept": false,
+      "reason": "illegal",
+      "T": 1.0266841665590094
+    },
+    {
+      "step": 15,
+      "op": "nudge GPU_3070 (0.0,-0.5)mm",
+      "Tmax_C": 70.18,
+      "delta_C": -0.12999999999999545,
+      "ap": 0.875215188655018,
+      "accept": true,
+      "T": 0.9753499582310589
+    },
+    {
+      "step": 16,
+      "op": "nudge CPU_atomic (-1.5,0.0)mm",
+      "Tmax_C": 70.61000000000001,
+      "delta_C": -0.4300000000000068,
+      "ap": 0.6287189470489969,
+      "accept": true,
+      "T": 0.9265824603195059
+    },
+    {
+      "step": 17,
+      "op": "nudge CPU_armL2 (0.0,-0.5)mm",
+      "Tmax_C": 70.61000000000001,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.8802533373035305
+    },
+    {
+      "step": 18,
+      "op": "nudge GPU_3070 (1.0,0.0)mm",
+      "Tmax_C": 70.68,
+      "delta_C": -0.06999999999999318,
+      "ap": 0.9196998066613652,
+      "accept": true,
+      "T": 0.8362406704383539
+    },
+    {
+      "step": 19,
+      "op": "nudge CIM_basic (0.5,0.0)mm",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.7944286369164362
+    },
+    {
+      "step": 20,
+      "op": "nudge GPU_3070 (0.0,-1.5)mm",
+      "Tmax_C": 70.39000000000004,
+      "delta_C": 0.2899999999999636,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.7547072050706143
+    },
+    {
+      "step": 21,
+      "op": "nudge CPU_armL2 (0.0,1.5)mm",
+      "Tmax_C": 70.39000000000004,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.7169718448170835
+    },
+    {
+      "step": 22,
+      "op": "swap GPU_TITANX<->CIM_sinangil",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.6811232525762293
+    },
+    {
+      "step": 23,
+      "op": "swap CIM_wang<->CIM_basic",
+      "Tmax_C": 70.39000000000004,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.6470670899474178
+    },
+    {
+      "step": 24,
+      "op": "swap CIM_sinangil<->CIM_colonnade",
+      "Tmax_C": 70.39000000000004,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.6147137354500469
+    },
+    {
+      "step": 25,
+      "op": "nudge GPU_2060S (2.0,0.0)mm",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.5839780486775445
+    },
+    {
+      "step": 26,
+      "op": "nudge GPU_TITANX (0.0,-1.5)mm",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.5547791462436673
+    },
+    {
+      "step": 27,
+      "op": "swap CPU_armL2<->CPU_matmul",
+      "Tmax_C": 70.39000000000004,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.527040188931484
+    },
+    {
+      "step": 28,
+      "op": "nudge CPU_atomic (0.0,1.5)mm",
+      "Tmax_C": 70.39000000000004,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.5006881794849097
+    },
+    {
+      "step": 29,
+      "op": "nudge GPU_3070 (0.0,-1.5)mm",
+      "Tmax_C": 70.97000000000003,
+      "delta_C": -0.5799999999999841,
+      "ap": 0.29541493996963636,
+      "accept": false,
+      "T": 0.4756537705106642
+    },
+    {
+      "step": 30,
+      "op": "jump+rot GPU_TITANX",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.451871081985131
+    },
+    {
+      "step": 31,
+      "op": "swap CIM_colonnade<->CPU_matmul",
+      "Tmax_C": 70.41000000000003,
+      "delta_C": -0.01999999999998181,
+      "ap": 0.9544787426173911,
+      "accept": true,
+      "T": 0.4292775278858744
+    },
+    {
+      "step": 32,
+      "op": "swap CIM_wang<->GPU_2060S",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.40781365149158066
+    },
+    {
+      "step": 33,
+      "op": "nudge GPU_2060S (0.0,1.0)mm",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.3874229689170016
+    },
+    {
+      "step": 34,
+      "op": "nudge GPU_2060S (-0.5,0.0)mm",
+      "Tmax_C": 70.47000000000003,
+      "delta_C": -0.060000000000002274,
+      "ap": 0.8495737530436499,
+      "accept": true,
+      "T": 0.36805182047115154
+    },
+    {
+      "step": 35,
+      "op": "rotate GPU_3070",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.34964922944759397
+    },
+    {
+      "step": 36,
+      "op": "nudge GPU_TITANX (1.0,0.0)mm",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.33216676797521427
+    },
+    {
+      "step": 37,
+      "op": "swap CIM_basic<->CPU_matmul",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.3155584295764535
+    },
+    {
+      "step": 38,
+      "op": "nudge CPU_atomic (0.0,-2.0)mm",
+      "Tmax_C": 70.47000000000003,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.29978050809763085
+    },
+    {
+      "step": 39,
+      "op": "nudge GPU_3070 (0.0,1.0)mm",
+      "Tmax_C": 70.83000000000004,
+      "delta_C": -0.36000000000001364,
+      "ap": 0.28249829951572186,
+      "accept": true,
+      "T": 0.2847914826927493
+    },
+    {
+      "step": 40,
+      "op": "rotate CIM_basic",
+      "Tmax_C": 70.83000000000004,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.2705519085581118
+    },
+    {
+      "step": 41,
+      "op": "nudge CPU_armL2 (0.0,1.5)mm",
+      "Tmax_C": 70.83000000000004,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.2570243131302062
+    },
+    {
+      "step": 42,
+      "op": "swap CPU_starter<->CPU_atomic",
+      "Tmax_C": 70.28000000000003,
+      "delta_C": 0.5500000000000114,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.24417309747369587
+    },
+    {
+      "step": 43,
+      "op": "jump GPU_TITANX",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.23196444260001106
+    },
+    {
+      "step": 44,
+      "op": "rotate CPU_atomic",
+      "Tmax_C": 70.28000000000003,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.2203662204700105
+    },
+    {
+      "step": 45,
+      "op": "nudge CPU_threads (-1.0,0.0)mm",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.20934790944650997
+    },
+    {
+      "step": 46,
+      "op": "swap CPU_threads<->CPU_matmul",
+      "Tmax_C": 70.28000000000003,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.19888051397418446
+    },
+    {
+      "step": 47,
+      "op": "nudge GPU_TITANX (-0.5,0.0)mm",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.18893648827547524
+    },
+    {
+      "step": 48,
+      "op": "jump+rot CIM_colonnade",
+      "Tmax_C": 70.28000000000003,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.17948966386170148
+    },
+    {
+      "step": 49,
+      "op": "nudge GPU_3070 (2.0,0.0)mm",
+      "Tmax_C": 70.42000000000002,
+      "delta_C": -0.13999999999998636,
+      "ap": 0.4399732861872736,
+      "accept": true,
+      "T": 0.1705151806686164
+    },
+    {
+      "step": 50,
+      "op": "nudge GPU_TITANX (0.0,1.0)mm",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.16198942163518557
+    },
+    {
+      "step": 51,
+      "op": "rotate GPU_2060S",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.15388995055342627
+    },
+    {
+      "step": 52,
+      "op": "jump GPU_TITANX",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.14619545302575496
+    },
+    {
+      "step": 53,
+      "op": "rotate CIM_basic",
+      "Tmax_C": 70.42000000000002,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.1388856803744672
+    },
+    {
+      "step": 54,
+      "op": "nudge GPU_2060S (0.0,2.0)mm",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.1319413963557438
+    },
+    {
+      "step": 55,
+      "op": "nudge GPU_3070 (0.0,1.0)mm",
+      "Tmax_C": 70.35000000000002,
+      "delta_C": 0.06999999999999318,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.1253443265379566
+    },
+    {
+      "step": 56,
+      "op": "rotate CPU_threads",
+      "Tmax_C": 70.35000000000002,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.11907711021105877
+    },
+    {
+      "step": 57,
+      "op": "jump+rot GPU_3070",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.11312325470050583
+    },
+    {
+      "step": 58,
+      "op": "nudge GPU_2060S (-1.0,0.0)mm",
+      "Tmax_C": 70.42000000000002,
+      "delta_C": -0.06999999999999318,
+      "ap": 0.5213351371705199,
+      "accept": false,
+      "T": 0.10746709196548053
+    },
+    {
+      "step": 59,
+      "op": "rotate GPU_3070",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.1020937373672065
+    },
+    {
+      "step": 60,
+      "op": "rotate GPU_TITANX",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.09698905049884618
+    },
+    {
+      "step": 61,
+      "op": "rotate CIM_jia",
+      "Tmax_C": 70.35000000000002,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.09213959797390386
+    },
+    {
+      "step": 62,
+      "op": "nudge CIM_sinangil (-1.0,0.0)mm",
+      "Tmax_C": 70.35000000000002,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.08753261807520867
+    },
+    {
+      "step": 63,
+      "op": "nudge GPU_3070 (0.0,-0.5)mm",
+      "Tmax_C": 70.85000000000002,
+      "delta_C": -0.5,
+      "ap": 0.0024472357520969,
+      "accept": false,
+      "T": 0.08315598717144823
+    },
+    {
+      "step": 64,
+      "op": "nudge GPU_TITANX (-1.0,0.0)mm",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.07899818781287582
+    },
+    {
+      "step": 65,
+      "op": "nudge CIM_colonnade (0.0,-1.0)mm",
+      "Tmax_C": 70.35000000000002,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.07504827842223202
+    },
+    {
+      "step": 66,
+      "op": "nudge CIM_sinangil (0.0,-2.0)mm",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.07129586450112042
+    },
+    {
+      "step": 67,
+      "op": "nudge GPU_3070 (0.5,0.0)mm",
+      "Tmax_C": 70.34000000000003,
+      "delta_C": 0.009999999999990905,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.0677310712760644
+    },
+    {
+      "step": 68,
+      "op": "jump CPU_atomic",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.06434451771226117
+    },
+    {
+      "step": 69,
+      "op": "jump GPU_3070",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.06112729182664811
+    },
+    {
+      "step": 70,
+      "op": "jump GPU_2060S",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.058070927235315706
+    },
+    {
+      "step": 71,
+      "op": "nudge GPU_2060S (0.0,-1.5)mm",
+      "Tmax_C": 70.19,
+      "delta_C": 0.1500000000000341,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.055167380873549915
+    },
+    {
+      "step": 72,
+      "op": "rotate CIM_sinangil",
+      "Tmax_C": 70.19,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.05240901182987242
+    },
+    {
+      "step": 73,
+      "op": "jump GPU_2060S",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.0497885612383788
+    },
+    {
+      "step": 74,
+      "op": "nudge GPU_3070 (0.0,1.0)mm",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.047299133176459854
+    },
+    {
+      "step": 75,
+      "op": "rotate CPU_threads",
+      "Tmax_C": 70.19,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.044934176517636856
+    },
+    {
+      "step": 76,
+      "op": "nudge GPU_3070 (-2.0,0.0)mm",
+      "Tmax_C": 70.07000000000005,
+      "delta_C": 0.1199999999999477,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.042687467691755014
+    },
+    {
+      "step": 77,
+      "op": "jump GPU_3070",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.04055309430716726
+    },
+    {
+      "step": 78,
+      "op": "nudge GPU_2060S (0.0,1.5)mm",
+      "Tmax_C": 70.23000000000002,
+      "delta_C": -0.15999999999996817,
+      "ap": 0.015715623756193148,
+      "accept": true,
+      "T": 0.038525439591808895
+    },
+    {
+      "step": 79,
+      "op": "nudge GPU_3070 (0.0,-0.5)mm",
+      "Tmax_C": 70.29000000000002,
+      "delta_C": -0.060000000000002274,
+      "ap": 0.19410004703569472,
+      "accept": false,
+      "T": 0.03659916761221845
+    },
+    {
+      "step": 80,
+      "op": "jump+rot GPU_3070",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.03476920923160753
+    },
+    {
+      "step": 81,
+      "op": "nudge CIM_basic (0.0,1.5)mm",
+      "Tmax_C": 70.23000000000002,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.03303074877002715
+    },
+    {
+      "step": 82,
+      "op": "jump GPU_TITANX",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.03137921133152579
+    },
+    {
+      "step": 83,
+      "op": "swap CIM_wang<->CPU_matmul",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.0298102507649495
+    },
+    {
+      "step": 84,
+      "op": "jump GPU_3070",
+      "Tmax_C": 70.06,
+      "delta_C": 0.17000000000001592,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.028319738226702022
+    },
+    {
+      "step": 85,
+      "op": "rotate GPU_2060S",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.02690375131536692
+    },
+    {
+      "step": 86,
+      "op": "swap CPU_threads<->CPU_atomic",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.025558563749598574
+    },
+    {
+      "step": 87,
+      "op": "rotate GPU_2060S",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.024280635562118645
+    },
+    {
+      "step": 88,
+      "op": "nudge CIM_colonnade (0.0,1.5)mm",
+      "Tmax_C": 70.06,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.02306660378401271
+    },
+    {
+      "step": 89,
+      "op": "rotate GPU_2060S",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.021913273594812075
+    },
+    {
+      "step": 90,
+      "op": "jump+rot CIM_basic",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.02081760991507147
+    },
+    {
+      "step": 91,
+      "op": "jump+rot CPU_matmul",
+      "Tmax_C": 70.38,
+      "delta_C": -0.3199999999999932,
+      "ap": 9.393780093193889e-08,
+      "accept": false,
+      "T": 0.019776729419317896
+    },
+    {
+      "step": 92,
+      "op": "jump+rot GPU_2060S",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.018787892948352
+    },
+    {
+      "step": 93,
+      "op": "jump CPU_starter",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.0178484983009344
+    },
+    {
+      "step": 94,
+      "op": "nudge GPU_3070 (-1.0,0.0)mm",
+      "Tmax_C": 70.11000000000001,
+      "delta_C": -0.05000000000001137,
+      "ap": 0.05240276515839312,
+      "accept": false,
+      "T": 0.016956073385887678
+    },
+    {
+      "step": 95,
+      "op": "nudge GPU_2060S (0.0,-1.0)mm",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.016108269716593293
+    },
+    {
+      "step": 96,
+      "op": "jump+rot GPU_TITANX",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.015302856230763627
+    },
+    {
+      "step": 97,
+      "op": "nudge GPU_3070 (-0.5,0.0)mm",
+      "Tmax_C": 70.08000000000004,
+      "delta_C": -0.020000000000038654,
+      "ap": 0.25265454249610625,
+      "accept": false,
+      "T": 0.014537713419225445
+    },
+    {
+      "step": 98,
+      "op": "nudge CIM_sinangil (0.0,1.0)mm",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.013810827748264172
+    },
+    {
+      "step": 99,
+      "op": "swap CPU_matmul<->GPU_TITANX",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.013120286360850964
+    },
+    {
+      "step": 100,
+      "op": "jump+rot GPU_TITANX",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.012464272042808415
+    },
+    {
+      "step": 101,
+      "op": "swap CPU_matmul<->CIM_sinangil",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.011841058440667993
+    },
+    {
+      "step": 102,
+      "op": "swap CPU_threads<->CIM_jia",
+      "Tmax_C": 70.05000000000001,
+      "delta_C": 0.009999999999990905,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.011249005518634593
+    },
+    {
+      "step": 103,
+      "op": "nudge GPU_2060S (-1.0,0.0)mm",
+      "Tmax_C": 70.07000000000005,
+      "delta_C": -0.020000000000038654,
+      "ap": 0.15389103873601967,
+      "accept": true,
+      "T": 0.010686555242702863
+    },
+    {
+      "step": 104,
+      "op": "swap CPU_atomic<->CIM_colonnade",
+      "Tmax_C": 70.07000000000005,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.010152227480567719
+    },
+    {
+      "step": 105,
+      "op": "jump+rot GPU_3070",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.009644616106539333
+    },
+    {
+      "step": 106,
+      "op": "swap CPU_atomic<->CIM_basic",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.009162385301212366
+    },
+    {
+      "step": 107,
+      "op": "swap GPU_3070<->CIM_basic",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.008704266036151747
+    },
+    {
+      "step": 108,
+      "op": "rotate CIM_colonnade",
+      "Tmax_C": 70.07000000000005,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.008269052734344159
+    },
+    {
+      "step": 109,
+      "op": "nudge GPU_3070 (-0.5,0.0)mm",
+      "Tmax_C": 70.10000000000002,
+      "delta_C": -0.029999999999972715,
+      "ap": 0.021951239538855204,
+      "accept": false,
+      "T": 0.00785560009762695
+    },
+    {
+      "step": 110,
+      "op": "nudge GPU_3070 (-2.0,0.0)mm",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.007462820092745603
+    },
+    {
+      "step": 111,
+      "op": "rotate CIM_colonnade",
+      "Tmax_C": 70.07000000000005,
+      "delta_C": 0.0,
+      "ap": 1.0,
+      "accept": true,
+      "T": 0.0070896790881083225
+    },
+    {
+      "step": 112,
+      "op": "jump GPU_2060S",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.006735195133702906
+    },
+    {
+      "step": 113,
+      "op": "nudge CIM_colonnade (0.0,-1.0)mm",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.00639843537701776
+    },
+    {
+      "step": 114,
+      "op": "jump+rot CIM_sinangil",
+      "Tmax_C": 70.77000000000004,
+      "delta_C": -0.6999999999999886,
+      "ap": 9.699820944259296e-51,
+      "accept": false,
+      "T": 0.006078513608166872
+    },
+    {
+      "step": 115,
+      "op": "nudge GPU_3070 (0.0,-1.5)mm",
+      "Tmax_C": 70.24000000000001,
+      "delta_C": -0.16999999999995907,
+      "ap": 1.6393111826092035e-13,
+      "accept": false,
+      "T": 0.005774587927758527
+    },
+    {
+      "step": 116,
+      "op": "jump GPU_3070",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.005485858531370601
+    },
+    {
+      "step": 117,
+      "op": "swap CIM_basic<->CPU_matmul",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.005211565604802071
+    },
+    {
+      "step": 118,
+      "op": "jump GPU_3070",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.004950987324561967
+    },
+    {
+      "step": 119,
+      "op": "jump GPU_2060S",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.004703437958333868
+    },
+    {
+      "step": 120,
+      "op": "nudge GPU_2060S (0.0,1.5)mm",
+      "accept": false,
+      "reason": "illegal",
+      "T": 0.004468266060417175
+    }
+  ]
+}

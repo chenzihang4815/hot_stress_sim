@@ -1,0 +1,269 @@
+{
+  "note": "和 one_hw.json 同一套换硬件，缝里的填充换成空气 0.028、有机 0.5、底部填充 1.0。不跑硅。芯片足迹仍是硅 130。stale 对 truth，整张 64x64 芯片层网格。冷边 45 C，底面绝热，中介层 100 um 硅，TIM k=4。CPU 功耗是各模板 McPAT 380 K 总功耗，不是同一趟 matmul 重跑；GPU 是各自的 AccelWattch backprop 平均。python 摄氏度，不是 HotSpot，也不是 ATSim。",
+  "rows": [
+    {
+      "fill": "air",
+      "k_fill": 0.028,
+      "scheme": "cpu_T2",
+      "changed": "Penryn -> T2",
+      "old_grid_mm2": 91.125,
+      "new_grid_mm2": 273.375,
+      "old_power_W": 59.241324999999996,
+      "new_power_W": 68.99682,
+      "cells_changed": 144,
+      "grid_max_K": 3.095550927152999,
+      "grid_mean_K": 0.06307034641870622,
+      "grid_rmse_K": 0.2782423386895476,
+      "truth_Tmax_C": 67.6895585502059,
+      "stale_Tmax_C": 67.70895749051022,
+      "die_err_K": {
+        "T2": 0.019398940304313328,
+        "GPU_3070": 0.011336379712133748,
+        "HBM3": 0.010050042404998294,
+        "CIM_jia": -0.01048084621209
+      }
+    },
+    {
+      "fill": "air",
+      "k_fill": 0.028,
+      "scheme": "cpu_Xeon",
+      "changed": "Penryn -> Xeon",
+      "old_grid_mm2": 91.125,
+      "new_grid_mm2": 425.25,
+      "old_power_W": 59.241324999999996,
+      "new_power_W": 103.94599000000001,
+      "cells_changed": 264,
+      "grid_max_K": 3.0953186804314328,
+      "grid_mean_K": 0.08918458193568007,
+      "grid_rmse_K": 0.33980033669724385,
+      "truth_Tmax_C": 72.03105462733379,
+      "stale_Tmax_C": 72.05086978851517,
+      "die_err_K": {
+        "Xeon": 0.019815161181384155,
+        "GPU_3070": 0.02882124645117301,
+        "HBM3": 0.016498571843840182,
+        "CIM_jia": -0.035268922811724224
+      }
+    },
+    {
+      "fill": "air",
+      "k_fill": 0.028,
+      "scheme": "gpu_2060S",
+      "changed": "GPU_3070 -> GPU_2060S",
+      "old_grid_mm2": 389.8125,
+      "new_grid_mm2": 445.5,
+      "old_power_W": 66.89,
+      "new_power_W": 71.12,
+      "cells_changed": 44,
+      "grid_max_K": 1.6657967797285664,
+      "grid_mean_K": 0.013060018238028964,
+      "grid_rmse_K": 0.06914275054528649,
+      "truth_Tmax_C": 72.56301911235408,
+      "stale_Tmax_C": 72.56461102584433,
+      "die_err_K": {
+        "Penryn": 0.0015919134902446785,
+        "GPU_2060S": 0.002462610057762049,
+        "HBM3": 0.001432691933246133,
+        "CIM_jia": 0.0011438445569638134
+      }
+    },
+    {
+      "fill": "air",
+      "k_fill": 0.028,
+      "scheme": "gpu_TITANX",
+      "changed": "GPU_3070 -> GPU_TITANX",
+      "old_grid_mm2": 389.8125,
+      "new_grid_mm2": 473.34375,
+      "old_power_W": 66.89,
+      "new_power_W": 67.41,
+      "cells_changed": 66,
+      "grid_max_K": 2.00009076659245,
+      "grid_mean_K": 0.019341396486523277,
+      "grid_rmse_K": 0.09792726504147684,
+      "truth_Tmax_C": 72.16258430915104,
+      "stale_Tmax_C": 72.16490295871057,
+      "die_err_K": {
+        "Penryn": 0.0023186495595268752,
+        "GPU_TITANX": 0.0034487827001044025,
+        "HBM3": 0.002106906125561636,
+        "CIM_jia": 0.0016744852625265594
+      }
+    },
+    {
+      "fill": "organic",
+      "k_fill": 0.5,
+      "scheme": "cpu_T2",
+      "changed": "Penryn -> T2",
+      "old_grid_mm2": 91.125,
+      "new_grid_mm2": 273.375,
+      "old_power_W": 59.241324999999996,
+      "new_power_W": 68.99682,
+      "cells_changed": 144,
+      "grid_max_K": 0.6564174632151207,
+      "grid_mean_K": 0.007781301603302371,
+      "grid_rmse_K": 0.0444174219865577,
+      "truth_Tmax_C": 66.10754180847056,
+      "stale_Tmax_C": 66.10764782403749,
+      "die_err_K": {
+        "T2": 0.00010601556692790837,
+        "GPU_3070": 0.002498855666487998,
+        "HBM3": 0.0012189863475668972,
+        "CIM_jia": -0.0003615320644598796
+      }
+    },
+    {
+      "fill": "organic",
+      "k_fill": 0.5,
+      "scheme": "cpu_Xeon",
+      "changed": "Penryn -> Xeon",
+      "old_grid_mm2": 91.125,
+      "new_grid_mm2": 425.25,
+      "old_power_W": 59.241324999999996,
+      "new_power_W": 103.94599000000001,
+      "cells_changed": 264,
+      "grid_max_K": 0.7063430888544531,
+      "grid_mean_K": 0.014220774693150362,
+      "grid_rmse_K": 0.06076637704405778,
+      "truth_Tmax_C": 70.17279950878645,
+      "stale_Tmax_C": 70.16310534968324,
+      "die_err_K": {
+        "Xeon": -0.009694159103219135,
+        "GPU_3070": 0.008670371847244951,
+        "HBM3": 0.002359984384213476,
+        "CIM_jia": -0.0055499114396297955
+      }
+    },
+    {
+      "fill": "organic",
+      "k_fill": 0.5,
+      "scheme": "gpu_2060S",
+      "changed": "GPU_3070 -> GPU_2060S",
+      "old_grid_mm2": 389.8125,
+      "new_grid_mm2": 445.5,
+      "old_power_W": 66.89,
+      "new_power_W": 71.12,
+      "cells_changed": 44,
+      "grid_max_K": 0.3997120523752642,
+      "grid_mean_K": 0.0011455562915077544,
+      "grid_rmse_K": 0.010777460885290135,
+      "truth_Tmax_C": 70.87067747279332,
+      "stale_Tmax_C": 70.87103613720126,
+      "die_err_K": {
+        "Penryn": 0.00035866440794052323,
+        "GPU_2060S": 0.000576592895072281,
+        "HBM3": 0.0003312061497240393,
+        "CIM_jia": 0.00024970666851231726
+      }
+    },
+    {
+      "fill": "organic",
+      "k_fill": 0.5,
+      "scheme": "gpu_TITANX",
+      "changed": "GPU_3070 -> GPU_TITANX",
+      "old_grid_mm2": 389.8125,
+      "new_grid_mm2": 473.34375,
+      "old_power_W": 66.89,
+      "new_power_W": 67.41,
+      "cells_changed": 66,
+      "grid_max_K": 0.4372562439641001,
+      "grid_mean_K": 0.0016689692471566486,
+      "grid_rmse_K": 0.01435570251602631,
+      "truth_Tmax_C": 70.50818843586649,
+      "stale_Tmax_C": 70.5087048210832,
+      "die_err_K": {
+        "Penryn": 0.0005163852167129335,
+        "GPU_TITANX": 0.0007986985085608467,
+        "HBM3": 0.0004811389570136271,
+        "CIM_jia": 0.0003608728789572524
+      }
+    },
+    {
+      "fill": "underfill",
+      "k_fill": 1.0,
+      "scheme": "cpu_T2",
+      "changed": "Penryn -> T2",
+      "old_grid_mm2": 91.125,
+      "new_grid_mm2": 273.375,
+      "old_power_W": 59.241324999999996,
+      "new_power_W": 68.99682,
+      "cells_changed": 144,
+      "grid_max_K": 0.26622242159152165,
+      "grid_mean_K": 0.002747230475504861,
+      "grid_rmse_K": 0.016387695001413453,
+      "truth_Tmax_C": 65.0663982698506,
+      "stale_Tmax_C": 65.06489370508484,
+      "die_err_K": {
+        "T2": -0.0015045647657530026,
+        "GPU_3070": 0.0013724632642606593,
+        "HBM3": 0.00054283737449623,
+        "CIM_jia": -0.0008507942353617182
+      }
+    },
+    {
+      "fill": "underfill",
+      "k_fill": 1.0,
+      "scheme": "cpu_Xeon",
+      "changed": "Penryn -> Xeon",
+      "old_grid_mm2": 91.125,
+      "new_grid_mm2": 425.25,
+      "old_power_W": 59.241324999999996,
+      "new_power_W": 103.94599000000001,
+      "cells_changed": 264,
+      "grid_max_K": 0.2844722763494474,
+      "grid_mean_K": 0.005692954021677035,
+      "grid_rmse_K": 0.024315639165289702,
+      "truth_Tmax_C": 68.96118141925189,
+      "stale_Tmax_C": 68.94877846592658,
+      "die_err_K": {
+        "Xeon": -0.012402953325306498,
+        "GPU_3070": 0.005420599272497384,
+        "HBM3": 0.001238346988259309,
+        "CIM_jia": -0.003560334986957514
+      }
+    },
+    {
+      "fill": "underfill",
+      "k_fill": 1.0,
+      "scheme": "gpu_2060S",
+      "changed": "GPU_3070 -> GPU_2060S",
+      "old_grid_mm2": 389.8125,
+      "new_grid_mm2": 445.5,
+      "old_power_W": 66.89,
+      "new_power_W": 71.12,
+      "cells_changed": 44,
+      "grid_max_K": 0.1699918123682096,
+      "grid_mean_K": 0.0005988329848413965,
+      "grid_rmse_K": 0.004321490011082394,
+      "truth_Tmax_C": 69.75349950308816,
+      "stale_Tmax_C": 69.75375718833925,
+      "die_err_K": {
+        "Penryn": 0.00025768525108560425,
+        "GPU_2060S": 0.0004279634923136655,
+        "HBM3": 0.00025438757052143046,
+        "CIM_jia": 0.00018074025973646712
+      }
+    },
+    {
+      "fill": "underfill",
+      "k_fill": 1.0,
+      "scheme": "gpu_TITANX",
+      "changed": "GPU_3070 -> GPU_TITANX",
+      "old_grid_mm2": 389.8125,
+      "new_grid_mm2": 473.34375,
+      "old_power_W": 66.89,
+      "new_power_W": 67.41,
+      "cells_changed": 66,
+      "grid_max_K": 0.1801637843780668,
+      "grid_mean_K": 0.0008377809613686893,
+      "grid_rmse_K": 0.005552807250257574,
+      "truth_Tmax_C": 69.41499121419793,
+      "stale_Tmax_C": 69.41536129795566,
+      "die_err_K": {
+        "Penryn": 0.00037008375772984436,
+        "GPU_TITANX": 0.0006088004512321277,
+        "HBM3": 0.00036835067663787413,
+        "CIM_jia": 0.0002603940010885708
+      }
+    }
+  ]
+}

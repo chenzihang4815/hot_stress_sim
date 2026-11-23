@@ -1,0 +1,15 @@
+{
+  "fill": "silicon",
+  "k_fill": 130.0,
+  "steps": 120,
+  "seed": 22,
+  "start_factor_s": 0.6204811509815045,
+  "exact_solve_s": 62.281107144022826,
+  "frozen_solve_s": 2.174361928133294,
+  "exact_solves": 97,
+  "start_Tmax_C": 51.65444889880587,
+  "best_Tmax_C": 51.592104638855346,
+  "best_step": 5,
+  "err_max_over_steps_K": 6.212985681486316e-11,
+  "note": "120 步，种子 22，T0 2.0，每步乘 0.95。提议是生产退火的平移、跳动、对调、旋转。接受由 exact 决定，两条走同一批布局。frozen 用起点材料图的分解回代，不重分解。exact 每步按最新材料图重分解重解。err_max_over_steps 是每步误差场逐格取绝对值的最大。冷边 45 C，底面绝热。python，不是 HotSpot，也不是 ATSim。"
+}

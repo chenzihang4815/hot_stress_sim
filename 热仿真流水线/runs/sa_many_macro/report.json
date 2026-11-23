@@ -1,0 +1,159 @@
+{
+  "cost": "(T_python-45)/(T_init-45) + grad/grad_init",
+  "material": "整层硅，k=130。不是环氧填充。矩阵只分解一次。",
+  "steps": 60,
+  "seed": 7,
+  "alpha": 0.9,
+  "n_chips": 11,
+  "hbm_W": 68.0,
+  "note": "不用四芯片方案。CIM 只用 cim_macros_scale 里 n_macros>=64 的结果，不是 more_combos 里的单宏。CPU 功耗是 Xeon 380 K 合计，不是 matmul 重算。GPU 功耗是 backprop 周期加权。Python 温度不能当成 HotSpot。最优是代价最低的那一步，不是最后一步。没有算应力，没有改生产 SA。",
+  "init": {
+    "grad_max": 3.8377599968312603,
+    "grad_rms": 0.43533641622217084,
+    "Tmax_C": 100.08116773677858,
+    "J": 2.0,
+    "hotspot_C": 76.18
+  },
+  "best": {
+    "grad_max": 3.836429037279231,
+    "grad_rms": 0.43319280970672996,
+    "Tmax_C": 99.7752243033035,
+    "J": 1.9940987828365353,
+    "hotspot_C": 76.16000000000003
+  },
+  "accepted": 16,
+  "chips": [
+    {
+      "name": "Xeon_a",
+      "role": "CPU",
+      "j0": 0,
+      "ib0": 0,
+      "w": 16,
+      "h": 21,
+      "power_W": 103.94599000000001,
+      "area_mm2": 421.676,
+      "grid_area_mm2": 425.25,
+      "n_macros": null
+    },
+    {
+      "name": "GPU_2060S",
+      "role": "GPU",
+      "j0": 17,
+      "ib0": 0,
+      "w": 16,
+      "h": 22,
+      "power_W": 71.12082725952361,
+      "area_mm2": 445.0,
+      "grid_area_mm2": 445.5,
+      "n_macros": null
+    },
+    {
+      "name": "GPU_TITANX",
+      "role": "GPU",
+      "j0": 34,
+      "ib0": 0,
+      "w": 17,
+      "h": 22,
+      "power_W": 67.4071250008286,
+      "area_mm2": 471.0,
+      "grid_area_mm2": 473.34375,
+      "n_macros": null
+    },
+    {
+      "name": "CIM_jia_m64",
+      "role": "CIM",
+      "j0": 52,
+      "ib0": 0,
+      "w": 12,
+      "h": 18,
+      "power_W": 0.02051619509144024,
+      "area_mm2": 273.99848050829274,
+      "grid_area_mm2": 273.375,
+      "n_macros": 64
+    },
+    {
+      "name": "Xeon_b",
+      "role": "CPU",
+      "j0": 0,
+      "ib0": 23,
+      "w": 16,
+      "h": 21,
+      "power_W": 103.94599000000001,
+      "area_mm2": 421.676,
+      "grid_area_mm2": 425.25,
+      "n_macros": null
+    },
+    {
+      "name": "GPU_3070",
+      "role": "GPU",
+      "j0": 17,
+      "ib0": 23,
+      "w": 14,
+      "h": 22,
+      "power_W": 66.88781634908364,
+      "area_mm2": 392.0,
+      "grid_area_mm2": 389.8125,
+      "n_macros": null
+    },
+    {
+      "name": "HBM3",
+      "role": "HBM",
+      "j0": 32,
+      "ib0": 23,
+      "w": 8,
+      "h": 12,
+      "power_W": 68.0,
+      "area_mm2": 121.0,
+      "grid_area_mm2": 121.5,
+      "n_macros": null
+    },
+    {
+      "name": "CIM_colonnade_m512",
+      "role": "CIM",
+      "j0": 41,
+      "ib0": 23,
+      "w": 8,
+      "h": 12,
+      "power_W": 0.2967109271348416,
+      "area_mm2": 118.456264372224,
+      "grid_area_mm2": 121.5,
+      "n_macros": 512
+    },
+    {
+      "name": "CIM_colonnade_m256",
+      "role": "CIM",
+      "j0": 0,
+      "ib0": 46,
+      "w": 6,
+      "h": 8,
+      "power_W": 0.29677526103697566,
+      "area_mm2": 59.228132186112,
+      "grid_area_mm2": 60.75,
+      "n_macros": 256
+    },
+    {
+      "name": "CIM_basic_m256",
+      "role": "CIM",
+      "j0": 7,
+      "ib0": 46,
+      "w": 3,
+      "h": 3,
+      "power_W": 0.0022112712579585407,
+      "area_mm2": 11.9601949587906,
+      "grid_area_mm2": 11.390625,
+      "n_macros": 256
+    },
+    {
+      "name": "CIM_colonnade_m64",
+      "role": "CIM",
+      "j0": 11,
+      "ib0": 46,
+      "w": 3,
+      "h": 4,
+      "power_W": 0.29716126444977986,
+      "area_mm2": 14.807033046528,
+      "grid_area_mm2": 15.1875,
+      "n_macros": 64
+    }
+  ]
+}

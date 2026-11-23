@@ -1,0 +1,1221 @@
+{
+  "note": "python 绝对温度不是 HotSpot。naive 是每颗芯片单独成硅再相加。stale_cache 只重算被动过的那颗，其余沿用旧材料图。ignore_k 用新功耗、旧材料图。频率实验的漏电固定在 340 K，延迟是公式。生产退火和默认填充没有改。",
+  "conduction": {
+    "spreader_sweep": [
+      {
+        "k_spreader": 400,
+        "k_tim": 4.0,
+        "k_fill": 0.8,
+        "python_Tmax_C": 73.38901255791683,
+        "naive": {
+          "max_abs_K": 0.04426922677504308,
+          "rmse_K": 0.004779295218432271
+        },
+        "frozen": {
+          "max_abs_K": 2.547722033341415e-10,
+          "rmse_K": 2.3337852729191773e-10
+        },
+        "Q_up_W": 59.20096245645224,
+        "Q_lat_W": 0.04036254354683005,
+        "lat_frac": 0.000681324118709871
+      },
+      {
+        "k_spreader": 200,
+        "k_tim": 4.0,
+        "k_fill": 0.8,
+        "python_Tmax_C": 75.50237562642559,
+        "naive": {
+          "max_abs_K": 0.05400767105828663,
+          "rmse_K": 0.005656026322498585
+        },
+        "frozen": {
+          "max_abs_K": 4.791900209966116e-10,
+          "rmse_K": 4.5916603050814545e-10
+        },
+        "Q_up_W": 59.19473637701445,
+        "Q_lat_W": 0.04658862298453157,
+        "lat_frac": 0.0007864210158117086
+      },
+      {
+        "k_spreader": 80,
+        "k_tim": 4.0,
+        "k_fill": 0.8,
+        "python_Tmax_C": 80.53759711413278,
+        "naive": {
+          "max_abs_K": 0.0797480379890203,
+          "rmse_K": 0.007628822037001511
+        },
+        "frozen": {
+          "max_abs_K": 3.5765879147220403e-10,
+          "rmse_K": 3.3768987747189315e-10
+        },
+        "Q_up_W": 59.17637165198985,
+        "Q_lat_W": 0.0649533480093357,
+        "lat_frac": 0.0010964195687610922
+      },
+      {
+        "k_spreader": 40,
+        "k_tim": 4.0,
+        "k_fill": 0.8,
+        "python_Tmax_C": 88.33673039416436,
+        "naive": {
+          "max_abs_K": 0.12227386414406283,
+          "rmse_K": 0.010793074508229413
+        },
+        "frozen": {
+          "max_abs_K": 3.3998048820649274e-10,
+          "rmse_K": 3.2060301356481356e-10
+        },
+        "Q_up_W": 59.14564734857774,
+        "Q_lat_W": 0.09567765142113419,
+        "lat_frac": 0.0016150491472149582
+      },
+      {
+        "k_spreader": 20,
+        "k_tim": 4.0,
+        "k_fill": 0.8,
+        "python_Tmax_C": 103.43941807305936,
+        "naive": {
+          "max_abs_K": 0.2113066643483421,
+          "rmse_K": 0.017314217326857322
+        },
+        "frozen": {
+          "max_abs_K": 1.7001866581267677e-10,
+          "rmse_K": 1.4708250568093747e-10
+        },
+        "Q_up_W": 59.08352113857471,
+        "Q_lat_W": 0.1578038614235563,
+        "lat_frac": 0.0026637463193734494
+      },
+      {
+        "k_spreader": 10,
+        "k_tim": 4.0,
+        "k_fill": 0.8,
+        "python_Tmax_C": 132.75870470405926,
+        "naive": {
+          "max_abs_K": 0.40369736804456124,
+          "rmse_K": 0.031227149098821527
+        },
+        "frozen": {
+          "max_abs_K": 4.865796654485166e-11,
+          "rmse_K": 9.243655233841305e-12
+        },
+        "Q_up_W": 58.95765207510012,
+        "Q_lat_W": 0.2836729248997224,
+        "lat_frac": 0.004788429781064526
+      },
+      {
+        "k_spreader": 4,
+        "k_tim": 4.0,
+        "k_fill": 0.8,
+        "python_Tmax_C": 215.9947021870159,
+        "naive": {
+          "max_abs_K": 1.061342066861073,
+          "rmse_K": 0.08001856985592679
+        },
+        "frozen": {
+          "max_abs_K": 1.3505996321327984e-10,
+          "rmse_K": 6.341329134446274e-11
+        },
+        "Q_up_W": 58.57844870996984,
+        "Q_lat_W": 0.6628762900308623,
+        "lat_frac": 0.011189423768473483
+      },
+      {
+        "k_spreader": 2,
+        "k_tim": 4.0,
+        "k_fill": 0.8,
+        "python_Tmax_C": 347.29349676147353,
+        "naive": {
+          "max_abs_K": 2.4433513698539855,
+          "rmse_K": 0.18243806206688484
+        },
+        "frozen": {
+          "max_abs_K": 5.60476109967567e-10,
+          "rmse_K": 4.6106540045335016e-10
+        },
+        "Q_up_W": 57.9634153752348,
+        "Q_lat_W": 1.2779096247647532,
+        "lat_frac": 0.021571253255472482
+      },
+      {
+        "k_spreader": 0.8,
+        "k_tim": 4.0,
+        "k_fill": 0.8,
+        "python_Tmax_C": 717.5094875753148,
+        "naive": {
+          "max_abs_K": 8.956390724832545,
+          "rmse_K": 0.6268297852016743
+        },
+        "frozen": {
+          "max_abs_K": 3.299192030681297e-10,
+          "rmse_K": 1.7483329125487195e-10
+        },
+        "Q_up_W": 56.293228926469375,
+        "Q_lat_W": 2.9480960735300403,
+        "lat_frac": 0.049764181903933453
+      }
+    ],
+    "tim_sweep": [
+      {
+        "k_spreader": 400.0,
+        "k_tim": 4.0,
+        "k_fill": 0.8,
+        "python_Tmax_C": 73.38901255791683,
+        "naive_max_abs_K": 0.04426922677504308,
+        "Q_up_W": 59.20096245645224,
+        "Q_lat_W": 0.04036254354683005,
+        "lat_frac": 0.000681324118709871
+      },
+      {
+        "k_spreader": 400.0,
+        "k_tim": 1.0,
+        "k_fill": 0.8,
+        "python_Tmax_C": 83.07115548799283,
+        "naive_max_abs_K": 0.10663286629483082,
+        "Q_up_W": 59.124741410606845,
+        "Q_lat_W": 0.1165835893920426,
+        "lat_frac": 0.0019679436506871277
+      },
+      {
+        "k_spreader": 400.0,
+        "k_tim": 0.4,
+        "k_fill": 0.8,
+        "python_Tmax_C": 102.43153756015374,
+        "naive_max_abs_K": 0.1996833292217275,
+        "Q_up_W": 58.97485311828927,
+        "Q_lat_W": 0.26647188171047187,
+        "lat_frac": 0.004498074303882837
+      },
+      {
+        "k_spreader": 400.0,
+        "k_tim": 0.1,
+        "k_fill": 0.8,
+        "python_Tmax_C": 198.55418726953752,
+        "naive_max_abs_K": 0.48141463665166384,
+        "Q_up_W": 58.26258166270208,
+        "Q_lat_W": 0.9787433372967177,
+        "lat_frac": 0.01652129383157311
+      }
+    ],
+    "fill_by_spreader": [
+      {
+        "k_spreader": 400.0,
+        "k_fill": 130.0,
+        "python_Tmax_C": 73.30232570861972,
+        "naive_max_abs_K": 2.7000623958883807e-10
+      },
+      {
+        "k_spreader": 400.0,
+        "k_fill": 1.0,
+        "python_Tmax_C": 73.38878808935527,
+        "naive_max_abs_K": 0.044127833293771346
+      },
+      {
+        "k_spreader": 400.0,
+        "k_fill": 0.8,
+        "python_Tmax_C": 73.38901255791683,
+        "naive_max_abs_K": 0.04426922677504308
+      },
+      {
+        "k_spreader": 400.0,
+        "k_fill": 0.028,
+        "python_Tmax_C": 73.38988504855848,
+        "naive_max_abs_K": 0.04482024741338364
+      },
+      {
+        "k_spreader": 40.0,
+        "k_fill": 130.0,
+        "python_Tmax_C": 87.94904288679612,
+        "naive_max_abs_K": 3.5146285881637596e-10
+      },
+      {
+        "k_spreader": 40.0,
+        "k_fill": 1.0,
+        "python_Tmax_C": 88.3354320268823,
+        "naive_max_abs_K": 0.12189023945319377
+      },
+      {
+        "k_spreader": 40.0,
+        "k_fill": 0.8,
+        "python_Tmax_C": 88.33673039416436,
+        "naive_max_abs_K": 0.12227386414406283
+      },
+      {
+        "k_spreader": 40.0,
+        "k_fill": 0.028,
+        "python_Tmax_C": 88.34179750375523,
+        "naive_max_abs_K": 0.12376890023409715
+      },
+      {
+        "k_spreader": 4.0,
+        "k_fill": 130.0,
+        "python_Tmax_C": 193.51227369497047,
+        "naive_max_abs_K": 1.268745108973235e-10
+      },
+      {
+        "k_spreader": 4.0,
+        "k_fill": 1.0,
+        "python_Tmax_C": 215.84594850417864,
+        "naive_max_abs_K": 1.0625681925300796
+      },
+      {
+        "k_spreader": 4.0,
+        "k_fill": 0.8,
+        "python_Tmax_C": 215.9947021870159,
+        "naive_max_abs_K": 1.061342066861073
+      },
+      {
+        "k_spreader": 4.0,
+        "k_fill": 0.028,
+        "python_Tmax_C": 216.58957678572648,
+        "naive_max_abs_K": 1.0562422701447076
+      }
+    ]
+  },
+  "moves": [
+    {
+      "move": "nudge_1",
+      "k_spreader": 400.0,
+      "legal": true,
+      "cells_changed": 18,
+      "hardware": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "field_moved_K": 5.370002489682236,
+      "err_stale_cache_K": 0.01157719200170959,
+      "err_ignore_k_K": 114.78168023746753,
+      "err_naive_K": 0.04549054390361107,
+      "python_Tmax_C": 73.03800842243436,
+      "err_ignore_k_rmse_K": 5.36025008611211,
+      "err_ignore_k_same_mat_K": 1.928850848490299
+    },
+    {
+      "move": "nudge_3",
+      "k_spreader": 400.0,
+      "legal": true,
+      "cells_changed": 54,
+      "hardware": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "field_moved_K": 7.300839360773409,
+      "err_stale_cache_K": 0.016332567305767043,
+      "err_ignore_k_K": 121.04593673587516,
+      "err_ignore_k_rmse_K": 9.622346577347349,
+      "err_ignore_k_same_mat_K": 2.0068764047609307,
+      "err_naive_K": 0.04822086180712404,
+      "python_Tmax_C": 72.51247009074967
+    },
+    {
+      "move": "nudge_2",
+      "k_spreader": 400.0,
+      "legal": false,
+      "why": "x 投影刚好贴边，间隙函数返回 0；y 方向仍隔 14 格。不是热学结果。"
+    },
+    {
+      "move": "nudge_4",
+      "k_spreader": 400.0,
+      "legal": true,
+      "cells_changed": 72,
+      "hardware": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "field_moved_K": 8.05012004808924,
+      "err_stale_cache_K": 0.017922493646153725,
+      "err_ignore_k_K": 121.12202385924672,
+      "err_naive_K": 0.04968267149916983,
+      "python_Tmax_C": 72.32503676046952,
+      "err_ignore_k_rmse_K": 11.16150251742704,
+      "err_ignore_k_same_mat_K": 2.0099918652686597
+    },
+    {
+      "move": "rotate",
+      "k_spreader": 400.0,
+      "legal": true,
+      "cells_changed": 16,
+      "hardware": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "field_moved_K": 5.062536847275055,
+      "err_stale_cache_K": 0.013245705878034642,
+      "err_ignore_k_K": 114.77377636277282,
+      "err_naive_K": 0.04649595472943702,
+      "python_Tmax_C": 73.43485731593222,
+      "err_ignore_k_rmse_K": 5.05084505624681,
+      "err_ignore_k_same_mat_K": 1.9243926142243595
+    },
+    {
+      "move": "jump",
+      "k_spreader": 400.0,
+      "legal": true,
+      "cells_changed": 144,
+      "hardware": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "field_moved_K": 17.37874489435694,
+      "err_stale_cache_K": 0.015080560433489154,
+      "err_ignore_k_K": 121.17855988570591,
+      "err_naive_K": 0.04489117813153598,
+      "python_Tmax_C": 70.79599236178996,
+      "err_ignore_k_rmse_K": 15.924955487424182,
+      "err_ignore_k_same_mat_K": 2.0206312004856386
+    },
+    {
+      "move": "swap_cpu_gpu",
+      "k_spreader": 400.0,
+      "legal": true,
+      "cells_changed": 472,
+      "hardware": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "field_moved_K": 6.896052773083795,
+      "err_stale_cache_K": 0.02053085830539203,
+      "err_ignore_k_K": 31.97904287798366,
+      "err_naive_K": 0.051918666866811236,
+      "python_Tmax_C": 71.27406797646279,
+      "err_ignore_k_rmse_K": 7.622418524261005,
+      "err_ignore_k_same_mat_K": 0.8217145488378037
+    },
+    {
+      "move": "hw_T2",
+      "k_spreader": 400.0,
+      "legal": true,
+      "cells_changed": 144,
+      "hardware": [
+        "T2",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "field_moved_K": 4.918792223805951,
+      "err_stale_cache_K": 0.019886086616963894,
+      "err_ignore_k_K": 47.04463999007527,
+      "err_naive_K": 0.0509182562250885,
+      "python_Tmax_C": 68.6149209198789,
+      "err_ignore_k_rmse_K": 8.7348018127177,
+      "err_ignore_k_same_mat_K": 0.7848118170645648
+    },
+    {
+      "move": "hw_Xeon",
+      "k_spreader": 400.0,
+      "legal": true,
+      "cells_changed": 264,
+      "hardware": [
+        "Xeon",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "field_moved_K": 9.54414522963674,
+      "err_stale_cache_K": 0.028818350461108366,
+      "err_ignore_k_K": 45.56668255201947,
+      "err_naive_K": 0.0736385479741557,
+      "python_Tmax_C": 73.11661639562601,
+      "err_ignore_k_rmse_K": 11.493904327536969,
+      "err_ignore_k_same_mat_K": 0.7633033025131795
+    },
+    {
+      "move": "nudge_1",
+      "k_spreader": 4.0,
+      "legal": true,
+      "cells_changed": 18,
+      "hardware": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "field_moved_K": 84.68811539188465,
+      "err_stale_cache_K": 0.0951131851129503,
+      "err_ignore_k_K": 103.09987210426965,
+      "err_naive_K": 1.0643164289069205,
+      "python_Tmax_C": 215.63096745427026,
+      "err_ignore_k_rmse_K": 5.164444414217277,
+      "err_ignore_k_same_mat_K": 21.302890625472116
+    },
+    {
+      "move": "nudge_3",
+      "k_spreader": 4.0,
+      "legal": true,
+      "cells_changed": 54,
+      "hardware": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "field_moved_K": 128.19876464776473,
+      "err_stale_cache_K": 0.17328126443521796,
+      "err_ignore_k_K": 128.28572096116181,
+      "err_ignore_k_rmse_K": 9.793729702049404,
+      "err_ignore_k_same_mat_K": 32.99819064007676,
+      "err_naive_K": 1.0710332120120256,
+      "python_Tmax_C": 215.0915822719275
+    },
+    {
+      "move": "nudge_2",
+      "k_spreader": 4.0,
+      "legal": false,
+      "why": "x 投影刚好贴边，间隙函数返回 0；y 方向仍隔 14 格。不是热学结果。"
+    },
+    {
+      "move": "nudge_4",
+      "k_spreader": 4.0,
+      "legal": true,
+      "cells_changed": 72,
+      "hardware": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "field_moved_K": 137.3816847590935,
+      "err_stale_cache_K": 0.19896735925880193,
+      "err_ignore_k_K": 132.16543479293472,
+      "err_naive_K": 1.0746959631196091,
+      "python_Tmax_C": 214.9028361967114,
+      "err_ignore_k_rmse_K": 11.443326956169718,
+      "err_ignore_k_same_mat_K": 34.88807522759947
+    },
+    {
+      "move": "rotate",
+      "k_spreader": 4.0,
+      "legal": true,
+      "cells_changed": 16,
+      "hardware": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "field_moved_K": 83.43357866474099,
+      "err_stale_cache_K": 0.09393952529768512,
+      "err_ignore_k_K": 103.1284126794335,
+      "err_naive_K": 1.0630675242379084,
+      "python_Tmax_C": 216.09232818118545,
+      "err_ignore_k_rmse_K": 4.813414577445802,
+      "err_ignore_k_same_mat_K": 21.018126680089097
+    },
+    {
+      "move": "jump",
+      "k_spreader": 4.0,
+      "legal": true,
+      "cells_changed": 144,
+      "hardware": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "field_moved_K": 160.01044136183538,
+      "err_stale_cache_K": 0.15925242794634187,
+      "err_ignore_k_K": 136.83030074249388,
+      "err_naive_K": 1.0470340324314407,
+      "python_Tmax_C": 213.2072007497469,
+      "err_ignore_k_rmse_K": 16.318536238010413,
+      "err_ignore_k_same_mat_K": 4.7065604548184865
+    },
+    {
+      "move": "swap_cpu_gpu",
+      "k_spreader": 4.0,
+      "legal": true,
+      "cells_changed": 472,
+      "hardware": [
+        "Penryn",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "field_moved_K": 109.44410556897571,
+      "err_stale_cache_K": 1.034916428886845,
+      "err_ignore_k_K": 53.69928800352153,
+      "err_naive_K": 1.2188953218099527,
+      "python_Tmax_C": 213.66027475460425,
+      "err_ignore_k_rmse_K": 8.571421998115913,
+      "err_ignore_k_same_mat_K": 53.69928800352153
+    },
+    {
+      "move": "hw_T2",
+      "k_spreader": 4.0,
+      "legal": true,
+      "cells_changed": 144,
+      "hardware": [
+        "T2",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "field_moved_K": 88.92511899319805,
+      "err_stale_cache_K": 0.2276548653154009,
+      "err_ignore_k_K": 51.15352021227551,
+      "err_naive_K": 1.0905899742398333,
+      "python_Tmax_C": 129.29441985611993,
+      "err_ignore_k_rmse_K": 8.826906294047552,
+      "err_ignore_k_same_mat_K": 2.829782709073811
+    },
+    {
+      "move": "hw_Xeon",
+      "k_spreader": 4.0,
+      "legal": true,
+      "cells_changed": 264,
+      "hardware": [
+        "Xeon",
+        "GPU_3070",
+        "HBM3",
+        "CIM_jia"
+      ],
+      "field_moved_K": 85.8807702677754,
+      "err_stale_cache_K": 0.9065196075056292,
+      "err_ignore_k_K": 49.333049112175786,
+      "err_naive_K": 1.5540520139617797,
+      "python_Tmax_C": 133.2539344316163,
+      "err_ignore_k_rmse_K": 11.635351270337338,
+      "err_ignore_k_same_mat_K": 2.1451749158508733
+    }
+  ],
+  "ladder": [
+    {
+      "step": "start",
+      "python_Tmax_C": 73.30232570861972,
+      "grad_K_per_mm": 4.161340520362501,
+      "hotspot_Tmax_C": 61.59000000000003,
+      "dies": [
+        {
+          "name": "Penryn",
+          "role": "CPU",
+          "j0": 4,
+          "ib0": 4,
+          "w": 8,
+          "h": 9,
+          "power_W": 59.241324999999996,
+          "area_mm2": 91.1348,
+          "grid_area_mm2": 91.125
+        },
+        {
+          "name": "GPU_3070",
+          "role": "GPU",
+          "j0": 22,
+          "ib0": 4,
+          "w": 14,
+          "h": 22,
+          "power_W": 66.89,
+          "area_mm2": 392.0,
+          "grid_area_mm2": 389.8125
+        },
+        {
+          "name": "HBM3",
+          "role": "HBM",
+          "j0": 22,
+          "ib0": 28,
+          "w": 8,
+          "h": 12,
+          "power_W": 28.656,
+          "area_mm2": 121.0,
+          "grid_area_mm2": 121.5
+        },
+        {
+          "name": "CIM_jia",
+          "role": "CIM",
+          "j0": 4,
+          "ib0": 27,
+          "w": 2,
+          "h": 2,
+          "power_W": 0.002773,
+          "area_mm2": 4.281,
+          "grid_area_mm2": 5.0625
+        }
+      ],
+      "stress_tag": "ladder_start"
+    },
+    {
+      "step": "nudge_1",
+      "python_Tmax_C": 72.95766775329434,
+      "grad_K_per_mm": 4.146694176462107,
+      "hotspot_Tmax_C": 61.72000000000003,
+      "dies": [
+        {
+          "name": "Penryn",
+          "role": "CPU",
+          "j0": 5,
+          "ib0": 4,
+          "w": 8,
+          "h": 9,
+          "power_W": 59.241324999999996,
+          "area_mm2": 91.1348,
+          "grid_area_mm2": 91.125
+        },
+        {
+          "name": "GPU_3070",
+          "role": "GPU",
+          "j0": 22,
+          "ib0": 4,
+          "w": 14,
+          "h": 22,
+          "power_W": 66.89,
+          "area_mm2": 392.0,
+          "grid_area_mm2": 389.8125
+        },
+        {
+          "name": "HBM3",
+          "role": "HBM",
+          "j0": 22,
+          "ib0": 28,
+          "w": 8,
+          "h": 12,
+          "power_W": 28.656,
+          "area_mm2": 121.0,
+          "grid_area_mm2": 121.5
+        },
+        {
+          "name": "CIM_jia",
+          "role": "CIM",
+          "j0": 4,
+          "ib0": 27,
+          "w": 2,
+          "h": 2,
+          "power_W": 0.002773,
+          "area_mm2": 4.281,
+          "grid_area_mm2": 5.0625
+        }
+      ],
+      "stress_tag": "ladder_nudge_1"
+    },
+    {
+      "step": "nudge_3",
+      "python_Tmax_C": 72.43769519032242,
+      "grad_K_per_mm": 4.124783884565709,
+      "hotspot_Tmax_C": 62.0,
+      "dies": [
+        {
+          "name": "Penryn",
+          "role": "CPU",
+          "j0": 7,
+          "ib0": 4,
+          "w": 8,
+          "h": 9,
+          "power_W": 59.241324999999996,
+          "area_mm2": 91.1348,
+          "grid_area_mm2": 91.125
+        },
+        {
+          "name": "GPU_3070",
+          "role": "GPU",
+          "j0": 22,
+          "ib0": 4,
+          "w": 14,
+          "h": 22,
+          "power_W": 66.89,
+          "area_mm2": 392.0,
+          "grid_area_mm2": 389.8125
+        },
+        {
+          "name": "HBM3",
+          "role": "HBM",
+          "j0": 22,
+          "ib0": 28,
+          "w": 8,
+          "h": 12,
+          "power_W": 28.656,
+          "area_mm2": 121.0,
+          "grid_area_mm2": 121.5
+        },
+        {
+          "name": "CIM_jia",
+          "role": "CIM",
+          "j0": 4,
+          "ib0": 27,
+          "w": 2,
+          "h": 2,
+          "power_W": 0.002773,
+          "area_mm2": 4.281,
+          "grid_area_mm2": 5.0625
+        }
+      ],
+      "stress_tag": "ladder_nudge_3"
+    },
+    {
+      "step": "nudge_4",
+      "python_Tmax_C": 72.25425824705513,
+      "grad_K_per_mm": 4.116317605406443,
+      "hotspot_Tmax_C": 62.150000000000034,
+      "dies": [
+        {
+          "name": "Penryn",
+          "role": "CPU",
+          "j0": 8,
+          "ib0": 4,
+          "w": 8,
+          "h": 9,
+          "power_W": 59.241324999999996,
+          "area_mm2": 91.1348,
+          "grid_area_mm2": 91.125
+        },
+        {
+          "name": "GPU_3070",
+          "role": "GPU",
+          "j0": 22,
+          "ib0": 4,
+          "w": 14,
+          "h": 22,
+          "power_W": 66.89,
+          "area_mm2": 392.0,
+          "grid_area_mm2": 389.8125
+        },
+        {
+          "name": "HBM3",
+          "role": "HBM",
+          "j0": 22,
+          "ib0": 28,
+          "w": 8,
+          "h": 12,
+          "power_W": 28.656,
+          "area_mm2": 121.0,
+          "grid_area_mm2": 121.5
+        },
+        {
+          "name": "CIM_jia",
+          "role": "CIM",
+          "j0": 4,
+          "ib0": 27,
+          "w": 2,
+          "h": 2,
+          "power_W": 0.002773,
+          "area_mm2": 4.281,
+          "grid_area_mm2": 5.0625
+        }
+      ],
+      "stress_tag": "ladder_nudge_4"
+    },
+    {
+      "step": "T2",
+      "python_Tmax_C": 68.57736336369715,
+      "grad_K_per_mm": 1.8349447981341251,
+      "hotspot_Tmax_C": 58.52000000000004,
+      "dies": [
+        {
+          "name": "T2",
+          "role": "CPU",
+          "j0": 4,
+          "ib0": 4,
+          "w": 12,
+          "h": 18,
+          "power_W": 68.99682,
+          "area_mm2": 273.523,
+          "grid_area_mm2": 273.375
+        },
+        {
+          "name": "GPU_3070",
+          "role": "GPU",
+          "j0": 22,
+          "ib0": 4,
+          "w": 14,
+          "h": 22,
+          "power_W": 66.89,
+          "area_mm2": 392.0,
+          "grid_area_mm2": 389.8125
+        },
+        {
+          "name": "HBM3",
+          "role": "HBM",
+          "j0": 22,
+          "ib0": 28,
+          "w": 8,
+          "h": 12,
+          "power_W": 28.656,
+          "area_mm2": 121.0,
+          "grid_area_mm2": 121.5
+        },
+        {
+          "name": "CIM_jia",
+          "role": "CIM",
+          "j0": 4,
+          "ib0": 27,
+          "w": 2,
+          "h": 2,
+          "power_W": 0.002773,
+          "area_mm2": 4.281,
+          "grid_area_mm2": 5.0625
+        }
+      ],
+      "stress_tag": "ladder_T2"
+    },
+    {
+      "step": "Xeon",
+      "python_Tmax_C": 73.07867426427941,
+      "grad_K_per_mm": 1.8817541291223279,
+      "hotspot_Tmax_C": 61.32000000000005,
+      "dies": [
+        {
+          "name": "Xeon",
+          "role": "CPU",
+          "j0": 4,
+          "ib0": 4,
+          "w": 16,
+          "h": 21,
+          "power_W": 103.94599000000001,
+          "area_mm2": 421.676,
+          "grid_area_mm2": 425.25
+        },
+        {
+          "name": "GPU_3070",
+          "role": "GPU",
+          "j0": 22,
+          "ib0": 4,
+          "w": 14,
+          "h": 22,
+          "power_W": 66.89,
+          "area_mm2": 392.0,
+          "grid_area_mm2": 389.8125
+        },
+        {
+          "name": "HBM3",
+          "role": "HBM",
+          "j0": 22,
+          "ib0": 28,
+          "w": 8,
+          "h": 12,
+          "power_W": 28.656,
+          "area_mm2": 121.0,
+          "grid_area_mm2": 121.5
+        },
+        {
+          "name": "CIM_jia",
+          "role": "CIM",
+          "j0": 4,
+          "ib0": 27,
+          "w": 2,
+          "h": 2,
+          "power_W": 0.002773,
+          "area_mm2": 4.281,
+          "grid_area_mm2": 5.0625
+        }
+      ],
+      "stress_tag": "ladder_Xeon"
+    }
+  ],
+  "frequency": [
+    {
+      "cpu": "Penryn",
+      "s": 0.5,
+      "power_W": 31.256606506849316,
+      "python_Tmax_C": 63.71600806258817,
+      "hotspot_Tmax_C": 55.85000000000002,
+      "grad_K_per_mm": 2.2054759522587926,
+      "Theta_serial": 0.5,
+      "Theta_parallel": 1.0,
+      "leak_bin_K": 340
+    },
+    {
+      "cpu": "Penryn",
+      "s": 1.0,
+      "power_W": 55.222356506849316,
+      "python_Tmax_C": 71.92560617527255,
+      "hotspot_Tmax_C": 60.77000000000004,
+      "grad_K_per_mm": 3.880453003912913,
+      "Theta_serial": 1.0,
+      "Theta_parallel": 2.0,
+      "leak_bin_K": 340
+    },
+    {
+      "cpu": "Penryn",
+      "s": 1.5,
+      "power_W": 79.18810650684931,
+      "python_Tmax_C": 80.15758454987844,
+      "hotspot_Tmax_C": 65.68,
+      "grad_K_per_mm": 5.55543005556678,
+      "Theta_serial": 1.5,
+      "Theta_parallel": 3.0,
+      "leak_bin_K": 340
+    },
+    {
+      "cpu": "Penryn",
+      "s": 2.0,
+      "power_W": 103.15385650684931,
+      "python_Tmax_C": 88.39531986741525,
+      "hotspot_Tmax_C": 70.59000000000003,
+      "grad_K_per_mm": 7.230407107221051,
+      "Theta_serial": 2.0,
+      "Theta_parallel": 4.0,
+      "leak_bin_K": 340
+    },
+    {
+      "cpu": "Penryn",
+      "s": null,
+      "power_W": 59.241324999999996,
+      "python_Tmax_C": 73.30232570861972,
+      "hotspot_Tmax_C": 61.59000000000003,
+      "grad_K_per_mm": 4.161340520362501,
+      "Theta_serial": 1.0,
+      "Theta_parallel": 2.0,
+      "leak_bin_K": 380,
+      "template": true
+    },
+    {
+      "cpu": "T2",
+      "s": 0.5,
+      "power_W": 38.31447364963503,
+      "python_Tmax_C": 61.72073974306073,
+      "hotspot_Tmax_C": 55.98000000000002,
+      "grad_K_per_mm": 1.6058444613882885,
+      "Theta_serial": 0.1891891891891892,
+      "Theta_parallel": 1.5135135135135136,
+      "leak_bin_K": 340
+    },
+    {
+      "cpu": "T2",
+      "s": 1.0,
+      "power_W": 63.52497364963504,
+      "python_Tmax_C": 67.3475882221046,
+      "hotspot_Tmax_C": 57.82000000000005,
+      "grad_K_per_mm": 1.6930621489373658,
+      "Theta_serial": 0.3783783783783784,
+      "Theta_parallel": 3.027027027027027,
+      "leak_bin_K": 340
+    },
+    {
+      "cpu": "T2",
+      "s": 1.5,
+      "power_W": 88.73547364963504,
+      "python_Tmax_C": 73.01354523587446,
+      "hotspot_Tmax_C": 61.02000000000004,
+      "grad_K_per_mm": 2.346759694251634,
+      "Theta_serial": 0.5675675675675675,
+      "Theta_parallel": 4.54054054054054,
+      "leak_bin_K": 340
+    },
+    {
+      "cpu": "T2",
+      "s": 2.0,
+      "power_W": 113.94597364963504,
+      "python_Tmax_C": 78.69963076853713,
+      "hotspot_Tmax_C": 64.22000000000003,
+      "grad_K_per_mm": 3.000457239565902,
+      "Theta_serial": 0.7567567567567568,
+      "Theta_parallel": 6.054054054054054,
+      "leak_bin_K": 340
+    },
+    {
+      "cpu": "T2",
+      "s": null,
+      "power_W": 68.99682,
+      "python_Tmax_C": 68.57736336369715,
+      "hotspot_Tmax_C": 58.52000000000004,
+      "grad_K_per_mm": 1.8349447981341251,
+      "Theta_serial": 0.3783783783783784,
+      "Theta_parallel": 3.027027027027027,
+      "leak_bin_K": 380,
+      "template": true
+    },
+    {
+      "cpu": "Xeon",
+      "s": 0.5,
+      "power_W": 57.661837080291974,
+      "python_Tmax_C": 64.30525016314238,
+      "hotspot_Tmax_C": 57.22000000000003,
+      "grad_K_per_mm": 1.6332743833935537,
+      "Theta_serial": 0.4594594594594595,
+      "Theta_parallel": 0.918918918918919,
+      "leak_bin_K": 340
+    },
+    {
+      "cpu": "Xeon",
+      "s": 1.0,
+      "power_W": 91.08608708029197,
+      "python_Tmax_C": 70.62362342768574,
+      "hotspot_Tmax_C": 59.93000000000001,
+      "grad_K_per_mm": 1.6757509689029777,
+      "Theta_serial": 0.918918918918919,
+      "Theta_parallel": 1.837837837837838,
+      "leak_bin_K": 340
+    },
+    {
+      "cpu": "Xeon",
+      "s": 1.5,
+      "power_W": 124.51033708029198,
+      "python_Tmax_C": 77.0208749939099,
+      "hotspot_Tmax_C": 63.53000000000003,
+      "grad_K_per_mm": 2.242871592670781,
+      "Theta_serial": 1.3783783783783783,
+      "Theta_parallel": 2.7567567567567566,
+      "leak_bin_K": 340
+    },
+    {
+      "cpu": "Xeon",
+      "s": 2.0,
+      "power_W": 157.93458708029198,
+      "python_Tmax_C": 83.42983134706515,
+      "hotspot_Tmax_C": 67.14000000000004,
+      "grad_K_per_mm": 2.8298136596308723,
+      "Theta_serial": 1.837837837837838,
+      "Theta_parallel": 3.675675675675676,
+      "leak_bin_K": 340
+    },
+    {
+      "cpu": "Xeon",
+      "s": null,
+      "power_W": 103.94599000000001,
+      "python_Tmax_C": 73.07867426427941,
+      "hotspot_Tmax_C": 61.32000000000005,
+      "grad_K_per_mm": 1.8817541291223279,
+      "Theta_serial": 0.918918918918919,
+      "Theta_parallel": 1.837837837837838,
+      "leak_bin_K": 380,
+      "template": true
+    }
+  ],
+  "power_modes": [
+    {
+      "cpu": "Penryn",
+      "mode": "native",
+      "tag": "mode_Penryn_native",
+      "power_W": 59.241324999999996,
+      "grid_area_mm2": 91.125,
+      "density_W_mm2": 0.6501105624142661,
+      "python_Tmax_C": 73.30232570861972,
+      "grad_K_per_mm": 4.161340520362501,
+      "hotspot_Tmax_C": 61.59000000000003
+    },
+    {
+      "cpu": "Penryn",
+      "mode": "same_power",
+      "tag": "mode_Penryn_same_power",
+      "power_W": 59.241324999999996,
+      "grid_area_mm2": 91.125,
+      "density_W_mm2": 0.6501105624142661,
+      "python_Tmax_C": 73.30232570861972,
+      "grad_K_per_mm": 4.161340520362501,
+      "hotspot_Tmax_C": 61.59000000000003
+    },
+    {
+      "cpu": "Penryn",
+      "mode": "same_density",
+      "tag": "mode_Penryn_same_density",
+      "power_W": 59.241325,
+      "grid_area_mm2": 91.125,
+      "density_W_mm2": 0.6501105624142661,
+      "python_Tmax_C": 73.30232570861972,
+      "grad_K_per_mm": 4.161340520362501,
+      "hotspot_Tmax_C": 61.59000000000003
+    },
+    {
+      "cpu": "T2",
+      "mode": "native",
+      "tag": "mode_T2_native",
+      "power_W": 68.99682,
+      "grid_area_mm2": 273.375,
+      "density_W_mm2": 0.2523889163237311,
+      "python_Tmax_C": 68.57736336369715,
+      "grad_K_per_mm": 1.8349447981341251,
+      "hotspot_Tmax_C": 58.52000000000004
+    },
+    {
+      "cpu": "T2",
+      "mode": "same_power",
+      "tag": "mode_T2_same_power",
+      "power_W": 59.241324999999996,
+      "grid_area_mm2": 273.375,
+      "density_W_mm2": 0.21670352080475536,
+      "python_Tmax_C": 66.3848556657918,
+      "grad_K_per_mm": 1.6308863239009446,
+      "hotspot_Tmax_C": 57.28000000000003
+    },
+    {
+      "cpu": "T2",
+      "mode": "same_density",
+      "tag": "mode_T2_same_density",
+      "power_W": 177.723975,
+      "grid_area_mm2": 273.375,
+      "density_W_mm2": 0.6501105624142661,
+      "python_Tmax_C": 93.09092856865368,
+      "grad_K_per_mm": 4.6541936957162555,
+      "hotspot_Tmax_C": 72.31
+    },
+    {
+      "cpu": "Xeon",
+      "mode": "native",
+      "tag": "mode_Xeon_native",
+      "power_W": 103.94599000000001,
+      "grid_area_mm2": 425.25,
+      "density_W_mm2": 0.24443501469723694,
+      "python_Tmax_C": 73.07867426427941,
+      "grad_K_per_mm": 1.8817541291223279,
+      "hotspot_Tmax_C": 61.32000000000005
+    },
+    {
+      "cpu": "Xeon",
+      "mode": "same_power",
+      "tag": "mode_Xeon_same_power",
+      "power_W": 59.241324999999996,
+      "grid_area_mm2": 425.25,
+      "density_W_mm2": 0.13930940623162844,
+      "python_Tmax_C": 64.59735749329047,
+      "grad_K_per_mm": 1.635281646194724,
+      "hotspot_Tmax_C": 57.31
+    },
+    {
+      "cpu": "Xeon",
+      "mode": "same_density",
+      "tag": "mode_Xeon_same_density",
+      "power_W": 276.4595166666667,
+      "grid_area_mm2": 425.25,
+      "density_W_mm2": 0.6501105624142661,
+      "python_Tmax_C": 106.22296556915433,
+      "grad_K_per_mm": 4.911154816358451,
+      "hotspot_Tmax_C": 79.92000000000002
+    }
+  ],
+  "geometry": [
+    {
+      "cpu": "Penryn",
+      "grid_area_mm2": 91.125,
+      "gap_to_cim_mm": 15.75,
+      "facing_cim_mm": 2.25,
+      "gap_to_gpu_mm": 11.25,
+      "facing_gpu_mm": 9.0,
+      "cim_w_mm": 2.25,
+      "cpu_w_mm": 9.0
+    },
+    {
+      "cpu": "T2",
+      "grid_area_mm2": 273.375,
+      "gap_to_cim_mm": 5.625,
+      "facing_cim_mm": 2.25,
+      "gap_to_gpu_mm": 6.75,
+      "facing_gpu_mm": 13.5,
+      "cim_w_mm": 2.25,
+      "cpu_w_mm": 13.5
+    },
+    {
+      "cpu": "Xeon",
+      "grid_area_mm2": 425.25,
+      "gap_to_cim_mm": 2.25,
+      "facing_cim_mm": 2.25,
+      "gap_to_gpu_mm": 2.25,
+      "facing_gpu_mm": 15.75,
+      "cim_w_mm": 2.25,
+      "cpu_w_mm": 18.0
+    }
+  ],
+  "fill_stress_tags": [
+    "ladder_start",
+    "fill_organic"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "mix": "cpuAtomic_cimWang",
+  "algorithm": "lbfgs",
+  "n_blocks": 2,
+  "layout": {
+    "width_m": 0.002381331063984593,
+    "height_m": 0.001503801155702105,
+    "outline_mm2": 3.581048406129354,
+    "block_area_mm2": 3.02232959822869,
+    "deadspace_ratio": 0.15602101522681344,
+    "overlap_m2": 0.0,
+    "overlap_count": 0.0,
+    "algorithm": "lbfgs",
+    "seed": 13,
+    "max_iter": 40,
+    "cost": 3.910263923297016,
+    "history_tail": [
+      3.910263923297016,
+      3.910263923297016
+    ]
+  },
+  "thermal": {
+    "Tmax_C": 47.73000000000002,
+    "Tmin_C": 45.110000000000014,
+    "block_T_C": {
+      "CPU": 47.73000000000002,
+      "CIM_wang": 47.120000000000005,
+      "iface_CPU": 47.32000000000005,
+      "iface_CIM_wang": 46.81,
+      "hsink_CPU": 45.200000000000045,
+      "hsink_CIM_wang": 45.19,
+      "inode_0": 45.150000000000034,
+      "inode_1": 45.160000000000025,
+      "inode_2": 45.150000000000034,
+      "inode_3": 45.150000000000034,
+      "inode_4": 45.150000000000034,
+      "inode_5": 45.160000000000025,
+      "inode_6": 45.150000000000034,
+      "inode_7": 45.150000000000034,
+      "inode_8": 45.110000000000014,
+      "inode_9": 45.120000000000005,
+      "inode_10": 45.110000000000014,
+      "inode_11": 45.110000000000014
+    },
+    "returncode": 0
+  },
+  "power_total_W": 1.1695469833621388,
+  "area_total_mm2": 3.02232959822869,
+  "blocks": [
+    {
+      "name": "CPU",
+      "kind": "CPU",
+      "area_mm2": 2.90029,
+      "power_W": 1.1435469999999999,
+      "notes": "gem5 AtomicSimpleCPU，hello；P=RuntimeDynamic(0.523847)+Leakage(0.6197)"
+    },
+    {
+      "name": "CIM_wang",
+      "kind": "CIM",
+      "area_mm2": 0.12203959822869019,
+      "power_W": 0.025999983362139024,
+      "notes": "AccelForge wang_vlsi_2022+builtin；P=energy/latency=0.026 W"
+    }
+  ]
+}

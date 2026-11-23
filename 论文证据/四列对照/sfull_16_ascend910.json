@@ -1,0 +1,14 @@
+{
+  "label": "ascend910",
+  "steps": 1050,
+  "step_mm": 1,
+  "rows_search": 16,
+  "full_secs": 1646.8,
+  "full_final_64_C": 115.97,
+  "field_secs": 485.3,
+  "field_solves": 392,
+  "field_final_64_C": 115.91,
+  "speedup": 3.39,
+  "delta_C": -0.06,
+  "wall_s": 2234.1
+}

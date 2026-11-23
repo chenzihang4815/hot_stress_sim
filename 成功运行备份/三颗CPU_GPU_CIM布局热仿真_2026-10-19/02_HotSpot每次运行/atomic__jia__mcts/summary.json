@@ -1,0 +1,71 @@
+{
+  "mix": "atomic__jia",
+  "algorithm": "mcts",
+  "n_blocks": 3,
+  "layout": {
+    "width_m": 0.02860392275238965,
+    "height_m": 0.030309513908239268,
+    "outline_mm2": 866.9709944937558,
+    "block_area_mm2": 822.1815162579421,
+    "deadspace_ratio": 0.051662026204195355,
+    "overlap_m2": 0.0,
+    "overlap_count": 0.0,
+    "algorithm": "mcts",
+    "seed": 11,
+    "n_sims": 80,
+    "cost": 874.5029505737328
+  },
+  "thermal": {
+    "Tmax_C": 55.07000000000005,
+    "Tmin_C": 52.26000000000005,
+    "block_T_C": {
+      "CPU": 55.07000000000005,
+      "GPU": 54.700000000000045,
+      "CIM": 53.77000000000004,
+      "iface_CPU": 54.80000000000001,
+      "iface_GPU": 54.60000000000002,
+      "iface_CIM": 53.700000000000045,
+      "hsink_CPU": 53.32000000000005,
+      "hsink_GPU": 53.960000000000036,
+      "hsink_CIM": 53.25,
+      "inode_0": 53.24000000000001,
+      "inode_1": 53.22000000000003,
+      "inode_2": 53.200000000000045,
+      "inode_3": 53.420000000000016,
+      "inode_4": 53.160000000000025,
+      "inode_5": 53.150000000000034,
+      "inode_6": 53.110000000000014,
+      "inode_7": 53.30000000000001,
+      "inode_8": 52.28000000000003,
+      "inode_9": 52.26000000000005,
+      "inode_10": 52.28000000000003,
+      "inode_11": 52.450000000000045
+    },
+    "returncode": 0
+  },
+  "power_total_W": 74.10132013514944,
+  "area_total_mm2": 822.1815162579421,
+  "blocks": [
+    {
+      "name": "CPU",
+      "kind": "CPU",
+      "area_mm2": 2.90029,
+      "power_W": 1.1435469999999999,
+      "notes": "gem5 AtomicSimpleCPU，hello；P=RuntimeDynamic(0.523847)+Leakage(0.6197)"
+    },
+    {
+      "name": "GPU",
+      "kind": "GPU",
+      "area_mm2": 815.0,
+      "power_W": 72.955,
+      "notes": "backprop kernel=_Z22bpnn_layerforward_CUDAPfS_S_S_ii；功率来自 AccelWattch kernel_avg_power；面积不是仿真器输出，采用 GV100 裸片 815.0 mm²"
+    },
+    {
+      "name": "CIM",
+      "kind": "CIM",
+      "area_mm2": 4.281226257942074,
+      "power_W": 0.0027731351494352146,
+      "notes": "AccelForge jia_jssc_2020 自带任务；AccelForge jia_jssc_2020+builtin；P=energy/latency=0.00277314 W"
+    }
+  ]
+}

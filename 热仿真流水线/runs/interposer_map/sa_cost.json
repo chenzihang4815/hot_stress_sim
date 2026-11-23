@@ -1,0 +1,154 @@
+{
+  "note": "11 颗：2 Xeon + 3 GPU + 5 CIM + HBM3。种子 22，200 步，T0=0.15，alpha=0.97。每步 8 次迭代，填充环氧 0.8，开局分解一次。25% 的动作是从仓库换一颗 CPU 或 GPU，其余是原来的挪、跳、对调、旋转。CIM 和 HBM 不换。代价 J = 0.40*(T-45)/40 + 0.20*梯度/起点梯度 + 0.25*应力/200 - 0.15*(P-P0)/功耗跨度。应力不进退火，只在起点和两个终点用 ATSim 算。ATSim 的填充只在这次的 json 里写成环氧，模量 12 GPa、泊松比 0.35、线胀 2.5e-5，是模塑料这一档的假定，不是测量。对照权重只有温度 0.70 和梯度 0.30。python 场不是 HotSpot，ATSim 的温度也不是 python 场。CPU 功耗是各模板自己的 McPAT 380 K 总功耗，不是把 matmul 重跑。GPU 是 AccelWattch backprop 平均。应力是最差一颗正常芯片内部的 von Mises，不是封装最大值。",
+  "weights": {
+    "cost": {
+      "T": 0.4,
+      "G": 0.2,
+      "S": 0.25,
+      "P": 0.15
+    },
+    "heat": {
+      "T": 0.7,
+      "G": 0.3,
+      "S": 0.0,
+      "P": 0.0
+    }
+  },
+  "p_span_W": 102.09933000000004,
+  "start": {
+    "Tmax_C": 80.15785473855004,
+    "grad_K_per_mm": 27.54335182435049,
+    "power_W": 481.3853728,
+    "stress": {
+      "Tmax_C": 112.75405271920283,
+      "vm_normal_chip_max_MPa": 399.69325477684265,
+      "vm_normal_chip_name": "GPU_2060S",
+      "vm_center_mean_MPa": 218.06300867130693,
+      "w_pv_um": 10.252352123104465,
+      "elapsed_s": 144.89292764663696,
+      "heat_s": 24.567402362823486,
+      "elast_s": 119.05254220962524,
+      "fill_die": true,
+      "wall_s": 147.85680405600579
+    },
+    "J": {
+      "cost": 1.0511951158565538,
+      "heat": 0.9152624579246258
+    },
+    "hardware": [
+      "CPU_matmul 103.9W",
+      "CPU_threads 103.9W",
+      "GPU_3070 66.9W",
+      "GPU_2060S 71.1W",
+      "GPU_TITANX 67.4W",
+      "CIM_jia 0.0W",
+      "CIM_colonnade 0.0W",
+      "CIM_wang 0.0W",
+      "CIM_basic 0.0W",
+      "CIM_sinangil 0.0W",
+      "HBM3 68.0W"
+    ]
+  },
+  "arms": {
+    "cost": {
+      "wall_s": 45.44505811898853,
+      "accept": 154,
+      "hw_accept": 30,
+      "best_rec": {
+        "Tmax_C": 72.76464094203595,
+        "grad_K_per_mm": 16.974676293219748,
+        "power_W": 444.6207078,
+        "J": 0.45491737783176667
+      },
+      "final_rec": {
+        "Tmax_C": 72.7646168325017,
+        "grad_K_per_mm": 16.97472693923929,
+        "power_W": 444.6207078,
+        "J": 0.4549175044913718
+      },
+      "exact": {
+        "Tmax_C": 73.1301359377627,
+        "grad_K_per_mm": 16.618774907722987,
+        "power_W": 444.6207078
+      },
+      "err_peak_K": -0.36549499572674904,
+      "err_grad": 0.355901385496761,
+      "hardware": [
+        "CPU_matmul 103.9W",
+        "CPU_threads 59.2W",
+        "GPU_3070 71.1W",
+        "GPU_2060S 71.1W",
+        "GPU_TITANX 71.1W",
+        "CIM_jia 0.0W",
+        "CIM_colonnade 0.0W",
+        "CIM_wang 0.0W",
+        "CIM_basic 0.0W",
+        "CIM_sinangil 0.0W",
+        "HBM3 68.0W"
+      ],
+      "stress": {
+        "Tmax_C": 102.4988824548991,
+        "vm_normal_chip_max_MPa": 333.9653619554017,
+        "vm_normal_chip_name": "CPU_threads",
+        "vm_center_mean_MPa": 270.51683289577403,
+        "w_pv_um": 9.038484824379239,
+        "elapsed_s": 102.59366774559021,
+        "heat_s": 17.11633539199829,
+        "elast_s": 84.59716081619263,
+        "fill_die": true,
+        "wall_s": 103.3248456660076
+      },
+      "J_exact": 0.8734447304881687
+    },
+    "heat": {
+      "wall_s": 47.44850094700814,
+      "accept": 151,
+      "hw_accept": 34,
+      "best_rec": {
+        "Tmax_C": 72.5687344594391,
+        "grad_K_per_mm": 21.004813835755563,
+        "power_W": 398.0215378,
+        "J": 0.7112356166962653
+      },
+      "final_rec": {
+        "Tmax_C": 74.27839440315881,
+        "grad_K_per_mm": 21.75044865757046,
+        "power_W": 398.54153779999996,
+        "J": 0.7113450287630692
+      },
+      "exact": {
+        "Tmax_C": 74.3013107070866,
+        "grad_K_per_mm": 23.835523981791894,
+        "power_W": 398.0215378
+      },
+      "err_peak_K": -1.7325762476475006,
+      "err_grad": -2.8307101460363313,
+      "hardware": [
+        "CPU_matmul 59.2W",
+        "CPU_threads 69.0W",
+        "GPU_3070 67.4W",
+        "GPU_2060S 67.4W",
+        "GPU_TITANX 66.9W",
+        "CIM_jia 0.0W",
+        "CIM_colonnade 0.0W",
+        "CIM_wang 0.0W",
+        "CIM_basic 0.0W",
+        "CIM_sinangil 0.0W",
+        "HBM3 68.0W"
+      ],
+      "stress": {
+        "Tmax_C": 98.30263041532282,
+        "vm_normal_chip_max_MPa": 529.6749613329376,
+        "vm_normal_chip_name": "CPU_matmul",
+        "vm_center_mean_MPa": 259.8913287594571,
+        "w_pv_um": 8.88467812889528,
+        "elapsed_s": 82.16148042678833,
+        "heat_s": 14.837158203125,
+        "elast_s": 66.53043937683105,
+        "fill_die": true,
+        "wall_s": 82.89169765199767
+      },
+      "J_exact": 0.7723875710663399
+    }
+  }
+}

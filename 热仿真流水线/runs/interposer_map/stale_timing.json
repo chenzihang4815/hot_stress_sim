@@ -1,0 +1,103 @@
+{
+  "note": "三种做法对着同一次换面积。direct 是新材料图上四颗功耗一次求解，当作真解，误差为 0。stale 只重解被换的那颗，其余三颗是上一次材料图上的场，时间不含准备旧场。frozen 是新材料图上四颗分开求解再相加。factor 是装配加分解，三种做法各付一次，因为材料图相同矩阵就相同。total 是 factor 加求解。墙钟是单次，不是平均。冷边 45 C，底面绝热，缝环氧 0.8，中介层 100 um。python，不是 HotSpot，也不是 ATSim。",
+  "old_factor_s": 0.7887441320053767,
+  "rows": [
+    {
+      "scheme": "cpu_T2",
+      "changed": "Penryn -> T2",
+      "old_grid_mm2": 91.125,
+      "new_grid_mm2": 273.375,
+      "factor_s": 0.567140636005206,
+      "stale_solve_s": 0.007331815984798595,
+      "stale_total_s": 0.5744724519900046,
+      "stale_max_K": 0.3676855472664329,
+      "frozen_solve_s": 0.02799812497687526,
+      "frozen_total_s": 0.5951387609820813,
+      "frozen_max_K": 2.6381030693301e-10,
+      "direct_solve_s": 0.00683601398486644,
+      "direct_total_s": 0.5739766499900725
+    },
+    {
+      "scheme": "cpu_Xeon",
+      "changed": "Penryn -> Xeon",
+      "old_grid_mm2": 91.125,
+      "new_grid_mm2": 425.25,
+      "factor_s": 0.5764744140033145,
+      "stale_solve_s": 0.007522509025875479,
+      "stale_total_s": 0.5839969230291899,
+      "stale_max_K": 0.3934175200144523,
+      "frozen_solve_s": 0.02816633100155741,
+      "frozen_total_s": 0.6046407450048719,
+      "frozen_max_K": 2.3868551579653285e-10,
+      "direct_solve_s": 0.006642094987910241,
+      "direct_total_s": 0.5831165089912247
+    },
+    {
+      "scheme": "gpu_2060S",
+      "changed": "GPU_3070 -> GPU_2060S",
+      "old_grid_mm2": 389.8125,
+      "new_grid_mm2": 445.5,
+      "factor_s": 0.5723620220087469,
+      "stale_solve_s": 0.008139217999996617,
+      "stale_total_s": 0.5805012400087435,
+      "stale_max_K": 0.23030366851969575,
+      "frozen_solve_s": 0.02819830601220019,
+      "frozen_total_s": 0.600560328020947,
+      "frozen_max_K": 2.431761458865367e-10,
+      "direct_solve_s": 0.007123453979147598,
+      "direct_total_s": 0.5794854759878945
+    },
+    {
+      "scheme": "gpu_TITANX",
+      "changed": "GPU_3070 -> GPU_TITANX",
+      "old_grid_mm2": 389.8125,
+      "new_grid_mm2": 473.34375,
+      "factor_s": 0.6319181620201562,
+      "stale_solve_s": 0.008374344994081184,
+      "stale_total_s": 0.6402925070142373,
+      "stale_max_K": 0.24650981728598254,
+      "frozen_solve_s": 0.028897073003463447,
+      "frozen_total_s": 0.6608152350236196,
+      "frozen_max_K": 2.5289637051173486e-10,
+      "direct_solve_s": 0.007190409989561886,
+      "direct_total_s": 0.639108572009718
+    },
+    {
+      "scheme": "cpu_half",
+      "changed": "Penryn -> Penryn_half",
+      "old_grid_mm2": 91.125,
+      "new_grid_mm2": 45.5625,
+      "factor_s": 0.5815880860027391,
+      "stale_solve_s": 0.0068916690070182085,
+      "stale_total_s": 0.5884797550097574,
+      "stale_max_K": 0.308056881518894,
+      "frozen_solve_s": 0.026764943002490327,
+      "frozen_total_s": 0.6083530290052295,
+      "frozen_max_K": 2.5693225325085223e-10,
+      "direct_solve_s": 0.008180581004125997,
+      "direct_total_s": 0.5897686670068651
+    },
+    {
+      "scheme": "cpu_quarter",
+      "changed": "Penryn -> Penryn_quarter",
+      "old_grid_mm2": 91.125,
+      "new_grid_mm2": 20.25,
+      "factor_s": 0.5505003530124668,
+      "stale_solve_s": 0.007414129009703174,
+      "stale_total_s": 0.55791448202217,
+      "stale_max_K": 0.3452890138981388,
+      "frozen_solve_s": 0.02754276999621652,
+      "frozen_total_s": 0.5780431230086833,
+      "frozen_max_K": 2.4158453015843406e-10,
+      "direct_solve_s": 0.006796439003665,
+      "direct_total_s": 0.5572967920161318
+    }
+  ],
+  "reuse": {
+    "factor_once_s": 0.6397822949802503,
+    "one_solve_s": 0.006690259999595582,
+    "four_solves_s": 0.028081842395476998,
+    "four_vs_direct_K": 2.644924279593397e-10,
+    "note": "材料图不变时矩阵不用重分解。只换一颗是 1 次回代，四颗分开是 4 次，一次求解是 1 次。四颗分开再相加和一次求解差在舍入。回代时间是 5 次平均。分解是这一张材料图付一次。"
+  }
+}

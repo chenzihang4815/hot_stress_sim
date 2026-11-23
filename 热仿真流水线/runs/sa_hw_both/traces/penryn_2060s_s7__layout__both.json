@@ -1,0 +1,519 @@
+[
+  {
+    "step": 0,
+    "op": "init",
+    "move": "init",
+    "accept": true,
+    "J": 2.0,
+    "grad_max": 4.162091476016737,
+    "grad_rms": 0.3318349489495605,
+    "Tmax_C": 73.50011003713877,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ]
+  },
+  {
+    "step": 1,
+    "op": "nudge Penryn (1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.9844728362754147,
+    "grad_max": 4.1474907315124865,
+    "grad_rms": 0.3314001438303478,
+    "Tmax_C": 73.1575634222242,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.2,
+    "new_best": true
+  },
+  {
+    "step": 2,
+    "op": "nudge Penryn (1,0) cells",
+    "move": "nudge",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 3,
+    "op": "rotate Penryn",
+    "move": "rotate",
+    "accept": true,
+    "ap": 0.9916393557971056,
+    "J": 1.9858329543238478,
+    "grad_max": 4.145285619337654,
+    "grad_rms": 0.331708229807649,
+    "Tmax_C": 73.21142654183632,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.16200000000000003
+  },
+  {
+    "step": 4,
+    "op": "nudge GPU_2060S (1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.9780926053352703,
+    "grad_max": 4.143892051356842,
+    "grad_rms": 0.3308036304375924,
+    "Tmax_C": 73.00036826385087,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.14580000000000004,
+    "new_best": true
+  },
+  {
+    "step": 5,
+    "op": "nudge GPU_2060S (1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.9706975972605556,
+    "grad_max": 4.142482554209639,
+    "grad_rms": 0.3299490172488866,
+    "Tmax_C": 72.79926131559972,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.13122000000000003,
+    "new_best": true
+  },
+  {
+    "step": 6,
+    "op": "rotate Penryn",
+    "move": "rotate",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.969170584643488,
+    "grad_max": 4.143993035922954,
+    "grad_rms": 0.3296700129014151,
+    "Tmax_C": 72.74539819598766,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.11809800000000004,
+    "new_best": true
+  },
+  {
+    "step": 7,
+    "op": "nudge GPU_2060S (-1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.9321089866946439,
+    "J": 1.976643233155683,
+    "grad_max": 4.1457256796731805,
+    "grad_rms": 0.3305102317354554,
+    "Tmax_C": 72.94650514423887,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.10628820000000004
+  },
+  {
+    "step": 8,
+    "op": "nudge Penryn (0,-1) cells",
+    "move": "nudge",
+    "accept": false,
+    "ap": 0.8077931546896713,
+    "J": 1.9970616560630585,
+    "grad_max": 4.1596406543913975,
+    "grad_rms": 0.3314361486021278,
+    "Tmax_C": 73.43314902377688,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.09565938000000004
+  },
+  {
+    "step": 9,
+    "op": "nudge Penryn (0,2) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.9439304094555645,
+    "grad_max": 4.123883133319042,
+    "grad_rms": 0.32898756079844865,
+    "Tmax_C": 72.163753895377,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.08609344200000005,
+    "new_best": true
+  },
+  {
+    "step": 10,
+    "op": "nudge Penryn (-1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.8382948224695963,
+    "J": 1.9575974748670086,
+    "grad_max": 4.136639363363378,
+    "grad_rms": 0.3293683662342607,
+    "Tmax_C": 72.46591790005772,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.07748409780000004
+  },
+  {
+    "step": 11,
+    "op": "nudge Penryn (2,0) cells",
+    "move": "nudge",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 12,
+    "op": "nudge GPU_2060S (0,-2) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.8776430255984925,
+    "J": 1.9657888944964252,
+    "grad_max": 4.14763302147402,
+    "grad_rms": 0.33039090637503515,
+    "Tmax_C": 72.62409468863433,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.06276211921800003
+  },
+  {
+    "step": 13,
+    "op": "rotate GPU_2060S",
+    "move": "rotate",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.9579571307550228,
+    "grad_max": 4.155587602431954,
+    "grad_rms": 0.32955297713718046,
+    "Tmax_C": 72.34641920655275,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.056485907296200025
+  },
+  {
+    "step": 14,
+    "op": "nudge GPU_2060S (0,1) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.95492000468416,
+    "grad_max": 4.1511796873424425,
+    "grad_rms": 0.32893444934223903,
+    "Tmax_C": 72.29004417770949,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.050837316566580026
+  },
+  {
+    "step": 15,
+    "op": "nudge Penryn (-2,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.42813904022014887,
+    "J": 1.9937331036584875,
+    "grad_max": 4.1875563427445535,
+    "grad_rms": 0.33016043842068343,
+    "Tmax_C": 73.14713097264962,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.04575358490992203
+  },
+  {
+    "step": 16,
+    "op": "nudge GPU_2060S (0,-2) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.8765840562653495,
+    "J": 1.9991572099718504,
+    "grad_max": 4.195141420389366,
+    "grad_rms": 0.3313067807300745,
+    "Tmax_C": 73.24977943645195,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.04117822641892983
+  },
+  {
+    "step": 17,
+    "op": "rotate GPU_2060S",
+    "move": "rotate",
+    "accept": true,
+    "ap": 0.7848575767324955,
+    "J": 2.008135204285817,
+    "grad_max": 4.189578545116648,
+    "grad_rms": 0.33200190175297795,
+    "Tmax_C": 73.54374530289118,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.03706040377703684
+  },
+  {
+    "step": 18,
+    "op": "nudge Penryn (0,-1) cells",
+    "move": "nudge",
+    "accept": false,
+    "ap": 0.5616571416104527,
+    "J": 2.02737612521931,
+    "grad_max": 4.202273000473269,
+    "grad_rms": 0.33288256377882025,
+    "Tmax_C": 74.00518780825558,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.03335436339933316
+  },
+  {
+    "step": 19,
+    "op": "nudge GPU_2060S (0,-1) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.8944903620803263,
+    "J": 2.011482349196803,
+    "grad_max": 4.194131786224919,
+    "grad_rms": 0.3307597152375167,
+    "Tmax_C": 73.6079607762909,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.030018927059399847
+  },
+  {
+    "step": 20,
+    "op": "nudge Penryn (0,2) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.979826186289584,
+    "grad_max": 4.17359730922231,
+    "grad_rms": 0.32923725175928753,
+    "Tmax_C": 72.84636741212313,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.027017034353459864
+  },
+  {
+    "step": 21,
+    "op": "nudge GPU_2060S (0,-2) cells",
+    "move": "nudge",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 22,
+    "op": "nudge GPU_2060S (1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.9717647615184504,
+    "grad_max": 4.169306219771443,
+    "grad_rms": 0.3284337279533431,
+    "Tmax_C": 72.64599934860672,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.02188379782630249
+  },
+  {
+    "step": 23,
+    "op": "rotate GPU_2060S",
+    "move": "rotate",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.9615221852664102,
+    "grad_max": 4.172240364493821,
+    "grad_rms": 0.32724234298240346,
+    "Tmax_C": 72.33399310937733,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.019695418043672242
+  },
+  {
+    "step": 24,
+    "op": "nudge Penryn (0,1) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.9478100735366173,
+    "grad_max": 4.163177613241108,
+    "grad_rms": 0.3265879039777614,
+    "Tmax_C": 72.00525401622696,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.01772587623930502
+  },
+  {
+    "step": 25,
+    "op": "nudge GPU_2060S (0,-1) cells",
+    "move": "nudge",
+    "accept": false,
+    "reason": "illegal"
+  },
+  {
+    "step": 26,
+    "op": "rotate GPU_2060S",
+    "move": "rotate",
+    "accept": false,
+    "ap": 0.4802010341886542,
+    "J": 1.9583423612535857,
+    "grad_max": 4.160775278796842,
+    "grad_rms": 0.32780124039474756,
+    "Tmax_C": 72.32187546910109,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.014357959753837067
+  },
+  {
+    "step": 27,
+    "op": "nudge GPU_2060S (-1,0) cells",
+    "move": "nudge",
+    "accept": true,
+    "ap": 0.5608839311738315,
+    "J": 1.9552822022045644,
+    "grad_max": 4.167963715092305,
+    "grad_rms": 0.32723873480092397,
+    "Tmax_C": 72.18543745610941,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.012922163778453361
+  },
+  {
+    "step": 28,
+    "op": "nudge GPU_2060S (-1,0) cells",
+    "move": "nudge",
+    "accept": false,
+    "ap": 0.5064529010724705,
+    "J": 1.9631943339423334,
+    "grad_max": 4.173152428559003,
+    "grad_rms": 0.3279446934556494,
+    "Tmax_C": 72.37540413061214,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.011629947400608026
+  },
+  {
+    "step": 29,
+    "op": "rotate Penryn",
+    "move": "rotate",
+    "accept": true,
+    "ap": 1.0,
+    "J": 1.9507247989383485,
+    "grad_max": 4.158662358100021,
+    "grad_rms": 0.32732100813275833,
+    "Tmax_C": 72.1192424251459,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.010466952660547223
+  },
+  {
+    "step": 30,
+    "op": "rotate GPU_2060S",
+    "move": "rotate",
+    "accept": false,
+    "ap": 0.32002186466545307,
+    "J": 1.9614579195334043,
+    "grad_max": 4.15529761788826,
+    "grad_rms": 0.328678470294536,
+    "Tmax_C": 72.44817775426048,
+    "hardware": [
+      "Penryn",
+      "GPU_2060S",
+      "HBM3",
+      "CIM_jia"
+    ],
+    "T": 0.0094202573944925
+  }
+]

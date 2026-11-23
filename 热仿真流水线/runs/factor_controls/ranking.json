@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "from": "start",
+      "to": "nudge_1",
+      "d_python_K": -0.34465795532537413,
+      "d_hotspot_K": 0.12999999999999545,
+      "d_atsim_K": -0.05384110238981066
+    },
+    {
+      "from": "nudge_1",
+      "to": "nudge_3",
+      "d_python_K": -0.5199725629719296,
+      "d_hotspot_K": 0.2799999999999727,
+      "d_atsim_K": 0.2945178031924911
+    },
+    {
+      "from": "nudge_3",
+      "to": "nudge_4",
+      "d_python_K": -0.18343694326728155,
+      "d_hotspot_K": 0.1500000000000341,
+      "d_atsim_K": 0.09830942432728307
+    },
+    {
+      "from": "nudge_4",
+      "to": "T2",
+      "d_python_K": -3.6768948833579884,
+      "d_hotspot_K": -3.6299999999999955,
+      "d_atsim_K": -4.308248641035675
+    },
+    {
+      "from": "T2",
+      "to": "Xeon",
+      "d_python_K": 4.5013109005822685,
+      "d_hotspot_K": 2.8000000000000114,
+      "d_atsim_K": 5.3833357845146
+    }
+  ],
+  "sign_flips": {
+    "python_vs_hotspot": 3,
+    "python_vs_atsim": 2,
+    "pairs": 5
+  }
+}

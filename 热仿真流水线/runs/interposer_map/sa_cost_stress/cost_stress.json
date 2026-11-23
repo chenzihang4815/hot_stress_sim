@@ -1,0 +1,11 @@
+{
+  "Tmax_C": 102.4988824548991,
+  "vm_normal_chip_max_MPa": 333.9653619554017,
+  "vm_normal_chip_name": "CPU_threads",
+  "vm_center_mean_MPa": 270.51683289577403,
+  "w_pv_um": 9.038484824379239,
+  "elapsed_s": 102.59366774559021,
+  "heat_s": 17.11633539199829,
+  "elast_s": 84.59716081619263,
+  "fill_die": true
+}

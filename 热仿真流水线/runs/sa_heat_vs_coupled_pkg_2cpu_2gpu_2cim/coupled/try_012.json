@@ -1,0 +1,80 @@
+{
+  "name": "try_012",
+  "description": "SA proxy try_012",
+  "chips": [
+    {
+      "name": "CPU_matmul",
+      "x_mm": 0.0,
+      "y_mm": 1.5,
+      "w_mm": 3.3564377469530764,
+      "h_mm": 4.062193619523315,
+      "t_um": 150.0,
+      "power_W": 1.001867
+    },
+    {
+      "name": "CPU_starter",
+      "x_mm": 22.5,
+      "y_mm": 25.0,
+      "w_mm": 1.39578595810766,
+      "h_mm": 2.0778902260430208,
+      "t_um": 150.0,
+      "power_W": 1.65068
+    },
+    {
+      "name": "GPU_3070",
+      "x_mm": 4.500000000000001,
+      "y_mm": 2.5,
+      "w_mm": 16.718413269146737,
+      "h_mm": 23.447201219952053,
+      "t_um": 150.0,
+      "power_W": 66.8878
+    },
+    {
+      "name": "GPU_2060S",
+      "x_mm": 9.0,
+      "y_mm": 32.5,
+      "w_mm": 20.156371959150547,
+      "h_mm": 22.077385796503908,
+      "t_um": 150.0,
+      "power_W": 71.1194
+    },
+    {
+      "name": "CIM_jia",
+      "x_mm": 25.0,
+      "y_mm": 23.5,
+      "w_mm": 2.4382549766385746,
+      "h_mm": 1.755856667559951,
+      "t_um": 150.0,
+      "power_W": 0.0027731351494352146
+    },
+    {
+      "name": "CIM_wang",
+      "x_mm": 20.5,
+      "y_mm": 0.0,
+      "w_mm": 0.29220748387944007,
+      "h_mm": 0.4176470657371722,
+      "t_um": 150.0,
+      "power_W": 0.025999983362139024
+    }
+  ],
+  "package": {
+    "tim_um": 20,
+    "t_spreader_mm": 1.0,
+    "t_sink_mm": 6.9,
+    "t_substrate_mm": 1.0,
+    "t_interposer_um": 100.0,
+    "r_convec_K_per_W": 0.1,
+    "ambient_C": 45,
+    "pitch_die_mm": 2.0,
+    "pitch_coarse_mm": 8.0,
+    "nz_die": 3,
+    "nz_spreader": 3,
+    "nz_sink": 4,
+    "nz_tim": 1,
+    "nz_substrate": 3,
+    "nz_interposer": 2,
+    "fill_die": true,
+    "fill_xy": "chips",
+    "fill_material": "silicon"
+  }
+}

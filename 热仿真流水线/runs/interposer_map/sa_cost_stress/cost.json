@@ -1,0 +1,133 @@
+{
+  "name": "cost",
+  "description": "sa cost cost",
+  "chips": [
+    {
+      "name": "CPU_matmul",
+      "x_mm": 6.500000000000001,
+      "y_mm": 45.0,
+      "w_mm": 23.624999999999996,
+      "h_mm": 18.0,
+      "t_um": 150.0,
+      "power_W": 103.94599000000001
+    },
+    {
+      "name": "CPU_threads",
+      "x_mm": 0.0,
+      "y_mm": 2.0,
+      "w_mm": 9.0,
+      "h_mm": 10.124999999999998,
+      "t_um": 150.0,
+      "power_W": 59.241324999999996
+    },
+    {
+      "name": "GPU_3070",
+      "x_mm": 6.999999999999999,
+      "y_mm": 18.0,
+      "w_mm": 24.749999999999996,
+      "h_mm": 18.0,
+      "t_um": 150.0,
+      "power_W": 71.12
+    },
+    {
+      "name": "GPU_2060S",
+      "x_mm": 45.00000000000001,
+      "y_mm": 15.0,
+      "w_mm": 18.0,
+      "h_mm": 24.749999999999996,
+      "t_um": 150.0,
+      "power_W": 71.12
+    },
+    {
+      "name": "GPU_TITANX",
+      "x_mm": 35.0,
+      "y_mm": 43.0,
+      "w_mm": 24.749999999999996,
+      "h_mm": 18.0,
+      "t_um": 150.0,
+      "power_W": 71.12
+    },
+    {
+      "name": "CIM_jia",
+      "x_mm": 12.5,
+      "y_mm": 12.5,
+      "w_mm": 1.7023728398957632,
+      "h_mm": 2.5147252703245235,
+      "t_um": 150.0,
+      "power_W": 0.002773
+    },
+    {
+      "name": "CIM_colonnade",
+      "x_mm": 60.0,
+      "y_mm": 51.50000000000001,
+      "w_mm": 0.4918085963621054,
+      "h_mm": 0.4705082459144867,
+      "t_um": 150.0,
+      "power_W": 0.0412
+    },
+    {
+      "name": "CIM_wang",
+      "x_mm": 5.5,
+      "y_mm": 21.0,
+      "w_mm": 0.41792945689252337,
+      "h_mm": 0.29191529332993166,
+      "t_um": 150.0,
+      "power_W": 0.026
+    },
+    {
+      "name": "CIM_basic",
+      "x_mm": 17.0,
+      "y_mm": 17.0,
+      "w_mm": 0.2181172206476669,
+      "h_mm": 0.21419675100054847,
+      "t_um": 150.0,
+      "power_W": 0.002625
+    },
+    {
+      "name": "CIM_sinangil",
+      "x_mm": 1.0,
+      "y_mm": 13.999999999999998,
+      "w_mm": 0.04862825763627926,
+      "h_mm": 0.05299387897619061,
+      "t_um": 150.0,
+      "power_W": 0.0007948
+    },
+    {
+      "name": "HBM3",
+      "x_mm": 61.0,
+      "y_mm": 3.0,
+      "w_mm": 11.0,
+      "h_mm": 11.0,
+      "t_um": 150.0,
+      "power_W": 68.0
+    }
+  ],
+  "package": {
+    "tim_um": 20,
+    "t_spreader_mm": 1.0,
+    "t_sink_mm": 6.9,
+    "t_substrate_mm": 1.0,
+    "t_interposer_um": 100.0,
+    "r_convec_K_per_W": 0.1,
+    "ambient_C": 45,
+    "pitch_die_mm": 2.0,
+    "pitch_coarse_mm": 8.0,
+    "nz_die": 3,
+    "nz_spreader": 3,
+    "nz_sink": 4,
+    "nz_tim": 1,
+    "nz_substrate": 3,
+    "nz_interposer": 2,
+    "fill_die": true,
+    "fill_xy": "chips",
+    "fill_material": "epoxy"
+  },
+  "materials": {
+    "epoxy": {
+      "kappa0_W_mK": 0.8,
+      "E_Pa": 12000000000.0,
+      "nu": 0.35,
+      "alpha_cte_1_K": 2.5e-05
+    }
+  }
+}

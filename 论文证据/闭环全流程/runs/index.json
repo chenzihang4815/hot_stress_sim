@@ -1,0 +1,132 @@
+[
+  {
+    "case": "n11_silicon_已有",
+    "fill": "silicon",
+    "atsim_init_C": 77.99792626357213,
+    "atsim_best_C": 75.99189746198185,
+    "stress_init_MPa": 150.12302119624874,
+    "stress_best_MPa": 154.95707368340834,
+    "python_grad_init": 3.8377599968275717,
+    "python_grad_best": 3.793676689855349
+  },
+  {
+    "case": "n11_epoxy",
+    "fill": "epoxy",
+    "atsim_init_C": 74.20980045617996,
+    "atsim_best_C": 73.5112715044251,
+    "stress_init_MPa": 105.7024729891161,
+    "stress_best_MPa": 102.50513324991485,
+    "python_grad_init": 4.193093179385465,
+    "python_grad_best": 3.899982995627801
+  },
+  {
+    "case": "n11_silicon",
+    "fill": "silicon",
+    "atsim_init_C": 73.98376814941054,
+    "atsim_best_C": 73.20728768149078,
+    "stress_init_MPa": 111.95382088147812,
+    "stress_best_MPa": 108.50796408848966,
+    "python_grad_init": 3.660824332706751,
+    "python_grad_best": 3.68450677644023
+  },
+  {
+    "case": "n5_epoxy",
+    "fill": "epoxy",
+    "atsim_init_C": 60.96569830721026,
+    "atsim_best_C": 59.27573711894842,
+    "stress_init_MPa": 47.12982181064859,
+    "stress_best_MPa": 55.60660771374742,
+    "python_grad_init": 2.013915011823327,
+    "python_grad_best": 1.7951149341033164
+  },
+  {
+    "case": "n5_silicon",
+    "fill": "silicon",
+    "atsim_init_C": 60.87961151999964,
+    "atsim_best_C": 59.95347348990141,
+    "stress_init_MPa": 47.22674527042978,
+    "stress_best_MPa": 45.05186091710612,
+    "python_grad_init": 1.7766550956649654,
+    "python_grad_best": 1.8242738726059744
+  },
+  {
+    "case": "n6_epoxy",
+    "fill": "epoxy",
+    "atsim_init_C": 67.28738073751373,
+    "atsim_best_C": 65.08896794165989,
+    "stress_init_MPa": 84.98497797486559,
+    "stress_best_MPa": 74.98001993299783,
+    "python_grad_init": 2.595100969762219,
+    "python_grad_best": 2.570311698321196
+  },
+  {
+    "case": "n6_silicon",
+    "fill": "silicon",
+    "atsim_init_C": 64.77598474207964,
+    "atsim_best_C": 64.15664543492335,
+    "stress_init_MPa": 85.81883101359664,
+    "stress_best_MPa": 78.32029554161078,
+    "python_grad_init": 2.236627429075017,
+    "python_grad_best": 2.2646728948470303
+  },
+  {
+    "case": "n7_epoxy",
+    "fill": "epoxy",
+    "atsim_init_C": 65.7077701824083,
+    "atsim_best_C": 64.99964005385618,
+    "stress_init_MPa": 79.10527599199126,
+    "stress_best_MPa": 60.12414322309653,
+    "python_grad_init": 2.6147213211032874,
+    "python_grad_best": 2.3813662567896348
+  },
+  {
+    "case": "n7_silicon",
+    "fill": "silicon",
+    "atsim_init_C": 65.68750560076083,
+    "atsim_best_C": 63.034019838619884,
+    "stress_init_MPa": 65.8864085951752,
+    "stress_best_MPa": 61.17256657860038,
+    "python_grad_init": 2.457244490831575,
+    "python_grad_best": 2.402924410959056
+  },
+  {
+    "case": "n8_epoxy",
+    "fill": "epoxy",
+    "atsim_init_C": 72.4169510005012,
+    "atsim_best_C": 72.30506210550564,
+    "stress_init_MPa": 96.62854879962066,
+    "stress_best_MPa": 94.86630535648031,
+    "python_grad_init": 3.3563412517267657,
+    "python_grad_best": 3.357846687134093
+  },
+  {
+    "case": "n8_silicon",
+    "fill": "silicon",
+    "atsim_init_C": 72.16642371245183,
+    "atsim_best_C": 72.05414858484879,
+    "stress_init_MPa": 88.55008354327599,
+    "stress_best_MPa": 88.14417457615382,
+    "python_grad_init": 2.9416165204022238,
+    "python_grad_best": 2.943121955809551
+  },
+  {
+    "case": "n9_epoxy",
+    "fill": "epoxy",
+    "atsim_init_C": 70.11024443385385,
+    "atsim_best_C": 70.28432899407817,
+    "stress_init_MPa": 104.82313865785801,
+    "stress_best_MPa": 106.23823377084109,
+    "python_grad_init": 3.6501420488692324,
+    "python_grad_best": 3.650826612298412
+  },
+  {
+    "case": "n9_silicon",
+    "fill": "silicon",
+    "atsim_init_C": 69.99977097450828,
+    "atsim_best_C": 70.17379236693752,
+    "stress_init_MPa": 112.3234913102695,
+    "stress_best_MPa": 106.93053788034244,
+    "python_grad_init": 3.214050269243722,
+    "python_grad_best": 3.2147348326729013
+  }
+]

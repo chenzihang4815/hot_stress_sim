@@ -1,0 +1,633 @@
+{
+  "summary": {
+    "steps": 60,
+    "seed": 22,
+    "tol_K": 0.1,
+    "n_iter": 8,
+    "legal_steps": 52,
+    "within_tol": 0,
+    "err_max_K": 1.691132283711056,
+    "err_median_K": 0.7436475584157733,
+    "full_total_s": 24.392788790981285,
+    "iter_total_s": 3.7338106159004383,
+    "full_mean_ms": 469.0920921342555,
+    "iter_mean_ms": 71.80405030577766,
+    "refreshes": 0,
+    "refresh_total_s": 0.0
+  },
+  "log": [
+    {
+      "step": 1,
+      "op": "rotate GPU_3070",
+      "legal": true,
+      "full_ms": 501.1480720131658,
+      "iter_ms": 73.32965699606575,
+      "iters": 8,
+      "chip_max_K": 0.47420848829443685,
+      "Tmax_C": 69.70512101303802,
+      "refreshed": false
+    },
+    {
+      "step": 2,
+      "op": "nudge CIM_jia (0.5,0.0)mm",
+      "legal": true,
+      "full_ms": 458.3443329902366,
+      "iter_ms": 70.91364500229247,
+      "iters": 8,
+      "chip_max_K": 0.47420848829443685,
+      "Tmax_C": 69.70512101303802,
+      "refreshed": false
+    },
+    {
+      "step": 3,
+      "op": "swap HBM3<->Penryn",
+      "legal": true,
+      "full_ms": 441.6996430081781,
+      "iter_ms": 70.43006402091123,
+      "iters": 8,
+      "chip_max_K": 1.691132283711056,
+      "Tmax_C": 64.52986209133485,
+      "refreshed": false
+    },
+    {
+      "step": 4,
+      "op": "nudge HBM3 (-1.5,0.0)mm",
+      "legal": true,
+      "full_ms": 447.32758501777425,
+      "iter_ms": 70.23144600680098,
+      "iters": 8,
+      "chip_max_K": 1.6899355676476944,
+      "Tmax_C": 64.51441097908537,
+      "refreshed": false
+    },
+    {
+      "step": 5,
+      "op": "rotate CIM_jia",
+      "legal": true,
+      "full_ms": 453.73754101456143,
+      "iter_ms": 68.96554699051194,
+      "iters": 8,
+      "chip_max_K": 1.6899355676476944,
+      "Tmax_C": 64.51441097908537,
+      "refreshed": false
+    },
+    {
+      "step": 6,
+      "op": "swap Penryn<->HBM3",
+      "legal": true,
+      "full_ms": 457.7403820003383,
+      "iter_ms": 69.46286602760665,
+      "iters": 8,
+      "chip_max_K": 1.5972951006578455,
+      "Tmax_C": 69.98859423730994,
+      "refreshed": false
+    },
+    {
+      "step": 7,
+      "op": "rotate HBM3",
+      "legal": true,
+      "full_ms": 470.7560319802724,
+      "iter_ms": 70.01824001781642,
+      "iters": 8,
+      "chip_max_K": 1.5828801102354078,
+      "Tmax_C": 69.99880379779654,
+      "refreshed": false
+    },
+    {
+      "step": 8,
+      "op": "nudge GPU_3070 (1.5,0.0)mm",
+      "legal": true,
+      "full_ms": 449.21554502798244,
+      "iter_ms": 69.95189699227922,
+      "iters": 8,
+      "chip_max_K": 1.5789291653474038,
+      "Tmax_C": 69.82574970880484,
+      "refreshed": false
+    },
+    {
+      "step": 9,
+      "op": "swap HBM3<->GPU_3070",
+      "legal": true,
+      "full_ms": 484.47835198021494,
+      "iter_ms": 72.8993380034808,
+      "iters": 8,
+      "chip_max_K": 1.5723732348721455,
+      "Tmax_C": 69.12991841077854,
+      "refreshed": false
+    },
+    {
+      "step": 10,
+      "op": "nudge GPU_3070 (0.0,1.0)mm",
+      "legal": true,
+      "full_ms": 471.8839109991677,
+      "iter_ms": 70.30314498115331,
+      "iters": 8,
+      "chip_max_K": 1.5695268497876214,
+      "Tmax_C": 69.06424682019974,
+      "refreshed": false
+    },
+    {
+      "step": 11,
+      "op": "swap GPU_3070<->CIM_jia",
+      "legal": false
+    },
+    {
+      "step": 12,
+      "op": "nudge GPU_3070 (0.0,1.0)mm",
+      "legal": true,
+      "full_ms": 442.06191299599595,
+      "iter_ms": 68.46516201039776,
+      "iters": 8,
+      "chip_max_K": 1.5678023674009296,
+      "Tmax_C": 69.00048022991939,
+      "refreshed": false
+    },
+    {
+      "step": 13,
+      "op": "jump GPU_3070",
+      "legal": true,
+      "full_ms": 471.9183839915786,
+      "iter_ms": 73.8072749809362,
+      "iters": 8,
+      "chip_max_K": 1.5648224359228493,
+      "Tmax_C": 68.61083523865636,
+      "refreshed": false
+    },
+    {
+      "step": 14,
+      "op": "nudge CIM_jia (1.5,0.0)mm",
+      "legal": true,
+      "full_ms": 476.70286198263057,
+      "iter_ms": 71.8408890243154,
+      "iters": 8,
+      "chip_max_K": 1.5649927055846433,
+      "Tmax_C": 68.61100689278783,
+      "refreshed": false
+    },
+    {
+      "step": 15,
+      "op": "nudge CIM_jia (0.0,-2.0)mm",
+      "legal": true,
+      "full_ms": 476.78553700097837,
+      "iter_ms": 74.00533100008033,
+      "iters": 8,
+      "chip_max_K": 1.5649893587274732,
+      "Tmax_C": 68.611019722528,
+      "refreshed": false
+    },
+    {
+      "step": 16,
+      "op": "nudge HBM3 (0.0,-0.5)mm",
+      "legal": true,
+      "full_ms": 456.5922470064834,
+      "iter_ms": 70.50222798716277,
+      "iters": 8,
+      "chip_max_K": 1.5649893587274732,
+      "Tmax_C": 68.611019722528,
+      "refreshed": false
+    },
+    {
+      "step": 17,
+      "op": "swap Penryn<->CIM_jia",
+      "legal": true,
+      "full_ms": 458.39111899840645,
+      "iter_ms": 68.07523898896761,
+      "iters": 8,
+      "chip_max_K": 1.6034770908923974,
+      "Tmax_C": 65.42268034355561,
+      "refreshed": false
+    },
+    {
+      "step": 18,
+      "op": "jump+rot GPU_3070",
+      "legal": false
+    },
+    {
+      "step": 19,
+      "op": "jump+rot GPU_3070",
+      "legal": true,
+      "full_ms": 496.2758789770305,
+      "iter_ms": 74.53966699540615,
+      "iters": 8,
+      "chip_max_K": 1.5965096126149092,
+      "Tmax_C": 65.84668232271525,
+      "refreshed": false
+    },
+    {
+      "step": 20,
+      "op": "nudge GPU_3070 (2.0,0.0)mm",
+      "legal": true,
+      "full_ms": 482.69622601219453,
+      "iter_ms": 73.79048501024954,
+      "iters": 8,
+      "chip_max_K": 1.5998291513434992,
+      "Tmax_C": 65.6384158538869,
+      "refreshed": false
+    },
+    {
+      "step": 21,
+      "op": "nudge GPU_3070 (0.0,-1.5)mm",
+      "legal": true,
+      "full_ms": 469.5293979893904,
+      "iter_ms": 68.81907198112458,
+      "iters": 8,
+      "chip_max_K": 1.5981760724002925,
+      "Tmax_C": 65.74533499921387,
+      "refreshed": false
+    },
+    {
+      "step": 22,
+      "op": "nudge GPU_3070 (0.0,1.5)mm",
+      "legal": true,
+      "full_ms": 464.76540199364536,
+      "iter_ms": 71.79086699034087,
+      "iters": 8,
+      "chip_max_K": 1.5998291513434992,
+      "Tmax_C": 65.6384158538869,
+      "refreshed": false
+    },
+    {
+      "step": 23,
+      "op": "rotate CIM_jia",
+      "legal": true,
+      "full_ms": 464.51920800609514,
+      "iter_ms": 76.62370600155555,
+      "iters": 8,
+      "chip_max_K": 1.5998291513434992,
+      "Tmax_C": 65.6384158538869,
+      "refreshed": false
+    },
+    {
+      "step": 24,
+      "op": "jump GPU_3070",
+      "legal": true,
+      "full_ms": 489.883013011422,
+      "iter_ms": 72.84068301669322,
+      "iters": 8,
+      "chip_max_K": 1.618539937552157,
+      "Tmax_C": 64.26399370394893,
+      "refreshed": false
+    },
+    {
+      "step": 25,
+      "op": "jump+rot Penryn",
+      "legal": true,
+      "full_ms": 479.82244699960575,
+      "iter_ms": 68.20522897760384,
+      "iters": 8,
+      "chip_max_K": 0.6303678891173377,
+      "Tmax_C": 63.68221054928057,
+      "refreshed": false
+    },
+    {
+      "step": 26,
+      "op": "nudge GPU_3070 (0.0,2.0)mm",
+      "legal": true,
+      "full_ms": 454.15363999200054,
+      "iter_ms": 71.85397899593227,
+      "iters": 8,
+      "chip_max_K": 0.629581948858231,
+      "Tmax_C": 63.702335779735165,
+      "refreshed": false
+    },
+    {
+      "step": 27,
+      "op": "nudge GPU_3070 (1.0,0.0)mm",
+      "legal": true,
+      "full_ms": 450.51697600865737,
+      "iter_ms": 72.46960201882757,
+      "iters": 8,
+      "chip_max_K": 0.6296259252243885,
+      "Tmax_C": 63.65827208522353,
+      "refreshed": false
+    },
+    {
+      "step": 28,
+      "op": "rotate HBM3",
+      "legal": true,
+      "full_ms": 485.50721298670396,
+      "iter_ms": 73.05613797507249,
+      "iters": 8,
+      "chip_max_K": 0.6240680483024335,
+      "Tmax_C": 63.77706612547547,
+      "refreshed": false
+    },
+    {
+      "step": 29,
+      "op": "jump GPU_3070",
+      "legal": false
+    },
+    {
+      "step": 30,
+      "op": "jump GPU_3070",
+      "legal": true,
+      "full_ms": 478.9774259843398,
+      "iter_ms": 70.47498700558208,
+      "iters": 8,
+      "chip_max_K": 0.6273376671780397,
+      "Tmax_C": 63.937166730902334,
+      "refreshed": false
+    },
+    {
+      "step": 31,
+      "op": "nudge GPU_3070 (-0.5,0.0)mm",
+      "legal": true,
+      "full_ms": 446.4453049877193,
+      "iter_ms": 69.1744849900715,
+      "iters": 8,
+      "chip_max_K": 0.6273607949290749,
+      "Tmax_C": 63.99253891512706,
+      "refreshed": false
+    },
+    {
+      "step": 32,
+      "op": "swap CIM_jia<->Penryn",
+      "legal": true,
+      "full_ms": 473.8616129907314,
+      "iter_ms": 71.4957420132123,
+      "iters": 8,
+      "chip_max_K": 1.5650462426235094,
+      "Tmax_C": 68.3399633865854,
+      "refreshed": false
+    },
+    {
+      "step": 33,
+      "op": "swap CIM_jia<->GPU_3070",
+      "legal": true,
+      "full_ms": 476.78928601089865,
+      "iter_ms": 71.63231098093092,
+      "iters": 8,
+      "chip_max_K": 1.5555001511986006,
+      "Tmax_C": 69.8949055656417,
+      "refreshed": false
+    },
+    {
+      "step": 34,
+      "op": "nudge Penryn (1.0,0.0)mm",
+      "legal": true,
+      "full_ms": 480.3229490062222,
+      "iter_ms": 74.54987097298726,
+      "iters": 8,
+      "chip_max_K": 1.56301398313974,
+      "Tmax_C": 69.57172857126113,
+      "refreshed": false
+    },
+    {
+      "step": 35,
+      "op": "rotate GPU_3070",
+      "legal": true,
+      "full_ms": 449.45557799655944,
+      "iter_ms": 70.01667597796768,
+      "iters": 8,
+      "chip_max_K": 1.5686612694127007,
+      "Tmax_C": 69.72223653439602,
+      "refreshed": false
+    },
+    {
+      "step": 36,
+      "op": "nudge HBM3 (0.5,0.0)mm",
+      "legal": true,
+      "full_ms": 439.89820798742585,
+      "iter_ms": 74.5923490030691,
+      "iters": 8,
+      "chip_max_K": 1.5683210643103962,
+      "Tmax_C": 69.61885614348262,
+      "refreshed": false
+    },
+    {
+      "step": 37,
+      "op": "jump Penryn",
+      "legal": true,
+      "full_ms": 492.54186399048194,
+      "iter_ms": 73.38270399486646,
+      "iters": 8,
+      "chip_max_K": 0.7382659200678177,
+      "Tmax_C": 64.32864904315676,
+      "refreshed": false
+    },
+    {
+      "step": 38,
+      "op": "nudge GPU_3070 (0.0,-2.0)mm",
+      "legal": true,
+      "full_ms": 508.1217490078416,
+      "iter_ms": 75.44819300528616,
+      "iters": 8,
+      "chip_max_K": 0.749029196763729,
+      "Tmax_C": 64.33509125138761,
+      "refreshed": false
+    },
+    {
+      "step": 39,
+      "op": "swap GPU_3070<->CIM_jia",
+      "legal": false
+    },
+    {
+      "step": 40,
+      "op": "jump GPU_3070",
+      "legal": true,
+      "full_ms": 460.4438339883927,
+      "iter_ms": 68.76850899425335,
+      "iters": 8,
+      "chip_max_K": 0.6219220048919283,
+      "Tmax_C": 64.20375278960341,
+      "refreshed": false
+    },
+    {
+      "step": 41,
+      "op": "swap CIM_jia<->HBM3",
+      "legal": false
+    },
+    {
+      "step": 42,
+      "op": "jump GPU_3070",
+      "legal": true,
+      "full_ms": 453.9182120061014,
+      "iter_ms": 72.25566398119554,
+      "iters": 8,
+      "chip_max_K": 0.622791529355311,
+      "Tmax_C": 64.3566573874221,
+      "refreshed": false
+    },
+    {
+      "step": 43,
+      "op": "nudge GPU_3070 (0.0,-1.0)mm",
+      "legal": true,
+      "full_ms": 495.59741001576185,
+      "iter_ms": 72.42403001873754,
+      "iters": 8,
+      "chip_max_K": 0.6229482431380688,
+      "Tmax_C": 64.39775171476072,
+      "refreshed": false
+    },
+    {
+      "step": 44,
+      "op": "swap GPU_3070<->HBM3",
+      "legal": true,
+      "full_ms": 507.49860500218347,
+      "iter_ms": 73.90493800630793,
+      "iters": 8,
+      "chip_max_K": 0.6728394898379975,
+      "Tmax_C": 64.86510500774267,
+      "refreshed": false
+    },
+    {
+      "step": 45,
+      "op": "nudge GPU_3070 (-1.0,0.0)mm",
+      "legal": true,
+      "full_ms": 454.02032299898565,
+      "iter_ms": 69.54506499459967,
+      "iters": 8,
+      "chip_max_K": 0.6880034979488414,
+      "Tmax_C": 64.78040685643009,
+      "refreshed": false
+    },
+    {
+      "step": 46,
+      "op": "swap Penryn<->CIM_jia",
+      "legal": false
+    },
+    {
+      "step": 47,
+      "op": "rotate HBM3",
+      "legal": true,
+      "full_ms": 451.81917800800875,
+      "iter_ms": 69.41639800788835,
+      "iters": 8,
+      "chip_max_K": 0.6892500777578903,
+      "Tmax_C": 64.84811565299583,
+      "refreshed": false
+    },
+    {
+      "step": 48,
+      "op": "nudge GPU_3070 (0.0,0.5)mm",
+      "legal": true,
+      "full_ms": 475.30416600056924,
+      "iter_ms": 72.23690699902363,
+      "iters": 8,
+      "chip_max_K": 0.6892500777578903,
+      "Tmax_C": 64.84811565299583,
+      "refreshed": false
+    },
+    {
+      "step": 49,
+      "op": "rotate Penryn",
+      "legal": true,
+      "full_ms": 491.11337700742297,
+      "iter_ms": 75.96426698728465,
+      "iters": 8,
+      "chip_max_K": 0.6893423483936658,
+      "Tmax_C": 64.73964501793051,
+      "refreshed": false
+    },
+    {
+      "step": 50,
+      "op": "jump Penryn",
+      "legal": true,
+      "full_ms": 461.742312007118,
+      "iter_ms": 70.71162801003084,
+      "iters": 8,
+      "chip_max_K": 0.703839528964977,
+      "Tmax_C": 68.85014829150231,
+      "refreshed": false
+    },
+    {
+      "step": 51,
+      "op": "nudge Penryn (0.5,0.0)mm",
+      "legal": true,
+      "full_ms": 443.7030850094743,
+      "iter_ms": 70.90977602638304,
+      "iters": 8,
+      "chip_max_K": 0.7033370642863019,
+      "Tmax_C": 68.61764251449756,
+      "refreshed": false
+    },
+    {
+      "step": 52,
+      "op": "rotate HBM3",
+      "legal": true,
+      "full_ms": 455.4532149923034,
+      "iter_ms": 77.81448197783902,
+      "iters": 8,
+      "chip_max_K": 0.7021265252232638,
+      "Tmax_C": 69.08162416276059,
+      "refreshed": false
+    },
+    {
+      "step": 53,
+      "op": "jump+rot CIM_jia",
+      "legal": true,
+      "full_ms": 473.25599199393764,
+      "iter_ms": 73.49192499532364,
+      "iters": 8,
+      "chip_max_K": 0.7020832088255133,
+      "Tmax_C": 69.08100755993081,
+      "refreshed": false
+    },
+    {
+      "step": 54,
+      "op": "swap Penryn<->CIM_jia",
+      "legal": false
+    },
+    {
+      "step": 55,
+      "op": "swap HBM3<->CIM_jia",
+      "legal": false
+    },
+    {
+      "step": 56,
+      "op": "nudge GPU_3070 (0.0,0.5)mm",
+      "legal": true,
+      "full_ms": 463.4349870029837,
+      "iter_ms": 70.47224001144059,
+      "iters": 8,
+      "chip_max_K": 0.7020832088255133,
+      "Tmax_C": 69.08100755993081,
+      "refreshed": false
+    },
+    {
+      "step": 57,
+      "op": "nudge GPU_3070 (0.5,0.0)mm",
+      "legal": true,
+      "full_ms": 453.90611700713634,
+      "iter_ms": 68.84979398455471,
+      "iters": 8,
+      "chip_max_K": 0.7020832088255133,
+      "Tmax_C": 69.08100755993081,
+      "refreshed": false
+    },
+    {
+      "step": 58,
+      "op": "rotate HBM3",
+      "legal": true,
+      "full_ms": 475.5025889899116,
+      "iter_ms": 75.32740599708632,
+      "iters": 8,
+      "chip_max_K": 0.7032934726044004,
+      "Tmax_C": 68.6170188989409,
+      "refreshed": false
+    },
+    {
+      "step": 59,
+      "op": "rotate GPU_3070",
+      "legal": true,
+      "full_ms": 484.37290199217387,
+      "iter_ms": 73.92939599230886,
+      "iters": 8,
+      "chip_max_K": 0.7308447291660514,
+      "Tmax_C": 68.88583262996087,
+      "refreshed": false
+    },
+    {
+      "step": 60,
+      "op": "jump+rot GPU_3070",
+      "legal": true,
+      "full_ms": 488.8356490118895,
+      "iter_ms": 69.82947597862221,
+      "iters": 8,
+      "chip_max_K": 0.6963455840644883,
+      "Tmax_C": 70.41124429143798,
+      "refreshed": false
+    }
+  ],
+  "note": "每步固定 8 次迭代，旧分解只在误差低于 0.1 K 时更新。误差是对这一步全部分解的芯片层最大偏差。python，冷边 45 C，底面绝热。"
+}

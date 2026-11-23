@@ -1,0 +1,56 @@
+[
+  {
+    "step": 0,
+    "die_cell_max_C": 67.01692675595581,
+    "vm_MPa": 79.10527599199126,
+    "vm_name": "CIM_colonnade_m256"
+  },
+  {
+    "step": 3,
+    "die_cell_max_C": 66.66958194137459,
+    "vm_MPa": 74.50464833541378,
+    "vm_name": "GPU_3070_Ga"
+  },
+  {
+    "step": 8,
+    "die_cell_max_C": 66.7408916166143,
+    "vm_MPa": 75.38298421525207,
+    "vm_name": "GPU_2060S_Ga"
+  },
+  {
+    "step": 11,
+    "die_cell_max_C": 66.94154389653818,
+    "vm_MPa": 75.51122983266352,
+    "vm_name": "GPU_2060S_Ga"
+  },
+  {
+    "step": 12,
+    "die_cell_max_C": 65.44438518217697,
+    "vm_MPa": 69.58407971691734,
+    "vm_name": "GPU_2060S_Ga"
+  },
+  {
+    "step": 21,
+    "die_cell_max_C": 65.81250846645031,
+    "vm_MPa": 72.67055067970956,
+    "vm_name": "T2_Ca"
+  },
+  {
+    "step": 25,
+    "die_cell_max_C": 65.81392294895147,
+    "vm_MPa": 72.80847056117763,
+    "vm_name": "T2_Ca"
+  },
+  {
+    "step": 34,
+    "die_cell_max_C": 65.81471001022658,
+    "vm_MPa": 72.11729728422952,
+    "vm_name": "T2_Ca"
+  },
+  {
+    "step": 35,
+    "die_cell_max_C": 66.01208526693176,
+    "vm_MPa": 60.12414322309653,
+    "vm_name": "T2_Ca"
+  }
+]

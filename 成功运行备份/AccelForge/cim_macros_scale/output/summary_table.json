@@ -1,0 +1,92 @@
+[
+  {
+    "arch": "basic_analog",
+    "n_macros": 1,
+    "n_computes": 1024.0,
+    "energy_J": 2.6253290587174625e-10,
+    "latency_s": 1.0000000116860974e-07,
+    "avg_power_W": 0.0026253290280376118,
+    "avg_power_mW": 2.6253290280376116,
+    "area_total_mm2": 0.04671951155777578
+  },
+  {
+    "arch": "basic_analog",
+    "n_macros": 64,
+    "n_computes": 1024.0,
+    "energy_J": 2.2161425517398812e-10,
+    "latency_s": 1.0000000116860974e-07,
+    "avg_power_W": 0.0022161425258418236,
+    "avg_power_mW": 2.2161425258418235,
+    "area_total_mm2": 2.99004873969765
+  },
+  {
+    "arch": "basic_analog",
+    "n_macros": 256,
+    "n_computes": 1024.0,
+    "energy_J": 2.2112712837996718e-10,
+    "latency_s": 1.0000000116860974e-07,
+    "avg_power_W": 0.0022112712579585407,
+    "avg_power_mW": 2.2112712579585407,
+    "area_total_mm2": 11.9601949587906
+  },
+  {
+    "arch": "colonnade_jssc_2021",
+    "n_macros": 1,
+    "n_computes": 16384.0,
+    "energy_J": 2.3730160180812567e-09,
+    "latency_s": 5.760000121313169e-08,
+    "avg_power_W": 0.04119819389066705,
+    "avg_power_mW": 41.19819389066705,
+    "area_total_mm2": 0.231359891352
+  },
+  {
+    "arch": "colonnade_jssc_2021",
+    "n_macros": 64,
+    "n_computes": 16384.0,
+    "energy_J": 2.1395611491003836e-09,
+    "latency_s": 7.200000151641461e-09,
+    "avg_power_W": 0.29716126444977986,
+    "avg_power_mW": 297.1612644497799,
+    "area_total_mm2": 14.807033046528
+  },
+  {
+    "arch": "jia_jssc_2020",
+    "n_macros": 1,
+    "n_computes": 589824.0,
+    "energy_J": 2.3959888538601973e-07,
+    "latency_s": 8.64000030560419e-05,
+    "avg_power_W": 0.0027731351494352146,
+    "avg_power_mW": 2.7731351494352148,
+    "area_total_mm2": 4.281226257942074
+  },
+  {
+    "arch": "jia_jssc_2020",
+    "n_macros": 64,
+    "n_computes": 589824.0,
+    "energy_J": 2.2157491482484855e-07,
+    "latency_s": 1.0800000382005237e-05,
+    "avg_power_W": 0.02051619509144024,
+    "avg_power_mW": 20.51619509144024,
+    "area_total_mm2": 273.99848050829274
+  },
+  {
+    "arch": "colonnade_jssc_2021",
+    "n_macros": 256,
+    "n_computes": 16384.0,
+    "energy_J": 2.136781924469659e-09,
+    "latency_s": 7.200000151641461e-09,
+    "avg_power_W": 0.29677526103697566,
+    "avg_power_mW": 296.7752610369757,
+    "area_total_mm2": 59.228132186112
+  },
+  {
+    "arch": "colonnade_jssc_2021",
+    "n_macros": 512,
+    "n_computes": 16384.0,
+    "energy_J": 2.136318720364538e-09,
+    "latency_s": 7.200000151641461e-09,
+    "avg_power_W": 0.2967109271348416,
+    "avg_power_mW": 296.7109271348416,
+    "area_total_mm2": 118.456264372224
+  }
+]

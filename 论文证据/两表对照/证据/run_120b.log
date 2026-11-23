@@ -1,0 +1,34 @@
+micro150 开始，50 mm 中介层
+  全解 120 步 196s 搜索峰值 167.74
+  场叠加 124s 求解 93 次 搜索峰值 167.91
+{
+  "label": "micro150",
+  "steps": 120,
+  "step_mm": 1,
+  "rows_search": 16,
+  "full_secs": 195.9,
+  "full_final_64_C": 170.03,
+  "field_secs": 124.1,
+  "field_solves": 93,
+  "field_final_64_C": 170.08,
+  "speedup": 1.58,
+  "delta_C": 0.05,
+  "wall_s": 418.5
+}
+multigpu 开始，50 mm 中介层
+  全解 120 步 227s 搜索峰值 169.97
+  场叠加 115s 求解 80 次 搜索峰值 168.99
+{
+  "label": "multigpu",
+  "steps": 120,
+  "step_mm": 1,
+  "rows_search": 16,
+  "full_secs": 227.0,
+  "full_final_64_C": 170.22,
+  "field_secs": 115.0,
+  "field_solves": 80,
+  "field_final_64_C": 169.5,
+  "speedup": 1.97,
+  "delta_C": -0.72,
+  "wall_s": 444.7
+}

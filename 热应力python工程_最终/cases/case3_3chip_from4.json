@@ -1,0 +1,21 @@
+{
+  "name": "case3_3chip_from4",
+  "description": "Same package as case3_4chip; chip D removed (air). A/B/C each 15 W.",
+  "chips": [
+    {"name": "A", "x_mm": 0,  "y_mm": 0,  "w_mm": 8, "h_mm": 8, "t_um": 150, "power_W": 15},
+    {"name": "B", "x_mm": 10, "y_mm": 0,  "w_mm": 8, "h_mm": 8, "t_um": 150, "power_W": 15},
+    {"name": "C", "x_mm": 0,  "y_mm": 10, "w_mm": 8, "h_mm": 8, "t_um": 150, "power_W": 15}
+  ],
+  "package": {
+    "tim_um": 20,
+    "t_spreader_mm": 1.0,
+    "t_sink_mm": 6.9,
+    "t_substrate_mm": 1.0,
+    "t_interposer_um": 100.0,
+    "r_convec_K_per_W": 0.1,
+    "ambient_C": 45,
+    "pitch_die_mm": 0.5,
+    "pitch_coarse_mm": 3.0,
+    "fill_die": false
+  }
+}

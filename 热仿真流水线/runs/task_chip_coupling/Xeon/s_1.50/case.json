@@ -1,0 +1,35 @@
+{
+  "name": "case",
+  "description": "Xeon s=1.5",
+  "chips": [
+    {
+      "name": "Xeon",
+      "x_mm": 25.73262448334532,
+      "y_mm": 25.73262448334532,
+      "w_mm": 20.534751033309362,
+      "h_mm": 20.534751033309362,
+      "t_um": 150.0,
+      "power_W": 121.66694145985402
+    }
+  ],
+  "package": {
+    "tim_um": 20,
+    "t_spreader_mm": 1.0,
+    "t_sink_mm": 6.9,
+    "t_substrate_mm": 1.0,
+    "t_interposer_um": 100.0,
+    "r_convec_K_per_W": 0.1,
+    "ambient_C": 45,
+    "pitch_die_mm": 2.0,
+    "pitch_coarse_mm": 8.0,
+    "nz_die": 3,
+    "nz_spreader": 3,
+    "nz_sink": 4,
+    "nz_tim": 1,
+    "nz_substrate": 3,
+    "nz_interposer": 2,
+    "fill_die": true,
+    "fill_xy": "chips",
+    "fill_material": "silicon"
+  }
+}

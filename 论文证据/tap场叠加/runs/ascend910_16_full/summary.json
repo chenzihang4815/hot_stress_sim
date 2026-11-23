@@ -1,0 +1,11 @@
+{
+  "case": "ascend910",
+  "rows_search": 16,
+  "mode": "full",
+  "steps": 120,
+  "search_peak_C": 73.82,
+  "final_64_C": 73.98,
+  "solve_secs": 49.6,
+  "solves": 120,
+  "wall_s": 49.9
+}

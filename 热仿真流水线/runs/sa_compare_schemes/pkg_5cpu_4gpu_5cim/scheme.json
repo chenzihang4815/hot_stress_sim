@@ -1,0 +1,18 @@
+{
+  "id": "pkg_5cpu_4gpu_5cim",
+  "title": "5 CPU + 4 GPU + 5 CIM（14 颗）",
+  "why": "多一颗同规格 3070，看同类 GPU 间距是否被应力拉开",
+  "layout": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/sa_compare_schemes/pkg_5cpu_4gpu_5cim/layout.json",
+  "source": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/large_package/pkg_5cpu_4gpu_5cim/layout.json",
+  "n_chiplets": 14,
+  "atsim_pitch_die_mm": 2.5,
+  "atsim_pitch_coarse_mm": 10.0,
+  "atsim_nz": {
+    "nz_die": 2,
+    "nz_spreader": 2,
+    "nz_sink": 3,
+    "nz_tim": 1,
+    "nz_substrate": 2,
+    "nz_interposer": 2
+  }
+}

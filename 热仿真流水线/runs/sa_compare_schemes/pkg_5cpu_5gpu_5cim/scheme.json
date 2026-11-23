@@ -1,0 +1,133 @@
+{
+  "id": "pkg_5cpu_5gpu_5cim",
+  "title": "5 CPU + 5 GPU + 5 CIM（15 颗）",
+  "why": "14 芯再加第三颗 3070",
+  "layout": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/sa_compare_schemes/pkg_5cpu_5gpu_5cim/layout.json",
+  "source": "lbfgs",
+  "n_chiplets": 15,
+  "kinds": {
+    "CPU": 5,
+    "GPU": 5,
+    "CIM": 5
+  },
+  "power_total_W": 344.8826558096719,
+  "area_total_mm2": 2143.388002123592,
+  "outline_mm2": 3148.3693657962785,
+  "atsim_pitch_die_mm": 2.5,
+  "atsim_pitch_coarse_mm": 10.0,
+  "atsim_nz": {
+    "nz_die": 2,
+    "nz_spreader": 2,
+    "nz_sink": 3,
+    "nz_tim": 1,
+    "nz_substrate": 2,
+    "nz_interposer": 2
+  },
+  "chips": [
+    {
+      "name": "CPU_matmul",
+      "kind": "CPU",
+      "area_mm2": 13.6345,
+      "power_W": 1.001867,
+      "notes": "x86 Timing+L1/L2 矩阵乘；P=RuntimeDynamic(0.217977)+Leakage(0.78389)"
+    },
+    {
+      "name": "CPU_threads",
+      "kind": "CPU",
+      "area_mm2": 13.6345,
+      "power_W": 0.9561569999999999,
+      "notes": "x86 Timing+L1/L2 threads；P=RuntimeDynamic(0.172267)+Leakage(0.78389)"
+    },
+    {
+      "name": "CPU_armL2",
+      "kind": "CPU",
+      "area_mm2": 13.6345,
+      "power_W": 0.8679134,
+      "notes": "ARM Timing+L1/L2 hello；P=RuntimeDynamic(0.0840234)+Leakage(0.78389)"
+    },
+    {
+      "name": "CPU_atomic",
+      "kind": "CPU",
+      "area_mm2": 2.90029,
+      "power_W": 1.1435469999999999,
+      "notes": "ARM Atomic hello；P=RuntimeDynamic(0.523847)+Leakage(0.6197)"
+    },
+    {
+      "name": "CPU_starter",
+      "kind": "CPU",
+      "area_mm2": 2.90029,
+      "power_W": 1.65068,
+      "notes": "ARM starter atomic hello；P=RuntimeDynamic(1.03098)+Leakage(0.6197)"
+    },
+    {
+      "name": "GPU_3070",
+      "kind": "GPU",
+      "area_mm2": 392.0,
+      "power_W": 66.8878,
+      "notes": "RTX3070 backprop；P=66.89W 文献面积 392.0 mm²"
+    },
+    {
+      "name": "GPU_2060S",
+      "kind": "GPU",
+      "area_mm2": 445.0,
+      "power_W": 71.1194,
+      "notes": "RTX2060S backprop；P=71.12W 文献面积 445.0 mm²"
+    },
+    {
+      "name": "GPU_TITANX",
+      "kind": "GPU",
+      "area_mm2": 471.0,
+      "power_W": 67.4063,
+      "notes": "TitanX backprop；P=67.41W 文献面积 471.0 mm²"
+    },
+    {
+      "name": "GPU_3070b",
+      "kind": "GPU",
+      "area_mm2": 392.0,
+      "power_W": 66.8878,
+      "notes": "RTX3070 backprop；P=66.89W 文献面积 392.0 mm²；第二颗 3070"
+    },
+    {
+      "name": "GPU_3070c",
+      "kind": "GPU",
+      "area_mm2": 392.0,
+      "power_W": 66.8878,
+      "notes": "RTX3070 backprop；P=66.89W 文献面积 392.0 mm²；第三颗 3070"
+    },
+    {
+      "name": "CIM_jia",
+      "kind": "CIM",
+      "area_mm2": 4.281226257942074,
+      "power_W": 0.0027731351494352146,
+      "notes": "AccelForge jia_jssc_2020+builtin；P=energy/latency=0.00277314 W"
+    },
+    {
+      "name": "CIM_colonnade",
+      "kind": "CIM",
+      "area_mm2": 0.231359891352,
+      "power_W": 0.04119819389066705,
+      "notes": "AccelForge colonnade_jssc_2021+builtin；P=energy/latency=0.0411982 W"
+    },
+    {
+      "name": "CIM_wang",
+      "kind": "CIM",
+      "area_mm2": 0.12203959822869019,
+      "power_W": 0.025999983362139024,
+      "notes": "AccelForge wang_vlsi_2022+builtin；P=energy/latency=0.026 W"
+    },
+    {
+      "name": "CIM_basic",
+      "kind": "CIM",
+      "area_mm2": 0.04671951155777578,
+      "power_W": 0.0026253290280376118,
+      "notes": "功率=energy_J/latency_s；面积=各组件 area_m2 之和（MainMemory=0 不占面积）"
+    },
+    {
+      "name": "CIM_sinangil",
+      "kind": "CIM",
+      "area_mm2": 0.0025768645113990983,
+      "power_W": 0.0007947682416197758,
+      "notes": "AccelForge sinangil_jssc_2021+builtin；P=energy/latency=0.000794768 W"
+    }
+  ]
+}

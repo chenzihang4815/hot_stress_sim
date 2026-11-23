@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/home/czh/任务仿真产生功耗文件工具/HotSpot-master/hotspot",
+    "-f",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/sa_paper_cases/grid_error/C1_1T2_1GPU/g32/floorplan.flp",
+    "-p",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/sa_paper_cases/grid_error/C1_1T2_1GPU/g32/power.ptrace",
+    "-c",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/sa_paper_cases/grid_error/C1_1T2_1GPU/g32/hotspot.config",
+    "-model_type",
+    "grid",
+    "-steady_file",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/sa_paper_cases/grid_error/C1_1T2_1GPU/g32/block.steady",
+    "-grid_steady_file",
+    "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/sa_paper_cases/grid_error/C1_1T2_1GPU/g32/grid.steady"
+  ],
+  "returncode": 0,
+  "block_steady": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/sa_paper_cases/grid_error/C1_1T2_1GPU/g32/block.steady",
+  "grid_steady": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/sa_paper_cases/grid_error/C1_1T2_1GPU/g32/grid.steady"
+}

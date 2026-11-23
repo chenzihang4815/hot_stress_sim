@@ -1,0 +1,2 @@
+/home/czh/任务仿真产生功耗文件工具/热应力python工程/atsim/hotspot_io.py:139: SyntaxWarning: invalid escape sequence '\H'
+  "set ROOT=%~dp0..\HotSpot-master\\HotSpot-master\n"

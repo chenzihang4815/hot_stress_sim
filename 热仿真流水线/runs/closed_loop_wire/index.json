@@ -1,0 +1,72 @@
+[
+  {
+    "case": "n11_silicon_已有",
+    "fill": "silicon",
+    "atsim_init_C": 77.99792626357213,
+    "atsim_best_C": 75.99189746198185,
+    "stress_init_MPa": 150.12302119624874,
+    "stress_best_MPa": 154.95707368340834,
+    "python_grad_init": 3.8377599968275717,
+    "python_grad_best": 3.793676689855349
+  },
+  {
+    "case": "n11_epoxy",
+    "fill": "epoxy",
+    "atsim_init_C": null,
+    "atsim_best_C": null,
+    "stress_init_MPa": null,
+    "stress_best_MPa": null,
+    "python_grad_init": 4.387260218251009,
+    "python_grad_best": 4.2955228085696335
+  },
+  {
+    "case": "n11_silicon",
+    "fill": "silicon",
+    "atsim_init_C": null,
+    "atsim_best_C": null,
+    "stress_init_MPa": null,
+    "stress_best_MPa": null,
+    "python_grad_init": 3.8377599968312603,
+    "python_grad_best": 3.7936766898589362
+  },
+  {
+    "case": "n5_epoxy",
+    "fill": "epoxy",
+    "atsim_init_C": null,
+    "atsim_best_C": null,
+    "stress_init_MPa": null,
+    "stress_best_MPa": null,
+    "python_grad_init": 2.347503416147194,
+    "python_grad_best": 2.217462424233165
+  },
+  {
+    "case": "n5_silicon",
+    "fill": "silicon",
+    "atsim_init_C": null,
+    "atsim_best_C": null,
+    "stress_init_MPa": null,
+    "stress_best_MPa": null,
+    "python_grad_init": 2.083588106958208,
+    "python_grad_best": 1.952146118678027
+  },
+  {
+    "case": "n8_epoxy",
+    "fill": "epoxy",
+    "atsim_init_C": null,
+    "atsim_best_C": null,
+    "stress_init_MPa": null,
+    "stress_best_MPa": null,
+    "python_grad_init": 3.6985844485894734,
+    "python_grad_best": 3.6058177794910886
+  },
+  {
+    "case": "n8_silicon",
+    "fill": "silicon",
+    "atsim_init_C": null,
+    "atsim_best_C": null,
+    "stress_init_MPa": null,
+    "stress_best_MPa": null,
+    "python_grad_init": 3.237719619216932,
+    "python_grad_best": 3.173802715944526
+  }
+]

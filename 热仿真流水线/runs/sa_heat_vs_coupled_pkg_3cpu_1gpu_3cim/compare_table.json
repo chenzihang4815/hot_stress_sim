@@ -1,0 +1,41 @@
+{
+  "scheme": "pkg_3cpu_1gpu_3cim",
+  "title": "3 CPU + 1 GPU + 3 CIM（7 颗）",
+  "n_chiplets": 7,
+  "n_steps": 16,
+  "seed": 22,
+  "package_overrides": {
+    "pitch_die_mm": 2.0,
+    "pitch_coarse_mm": 8.0
+  },
+  "vm_metric": "worst interior von Mises among CPU/GPU and CIM≥1mm2",
+  "heat_only": {
+    "Tmax_init_C": 55.30000000000001,
+    "Tmax_best_C": 55.30000000000001,
+    "vm_chip_max_init_MPa": 36.681795836846184,
+    "vm_chip_max_best_MPa": 36.681795836846184,
+    "vm_chip_name_best": "CIM_jia",
+    "w_pv_init_um": 1.086320581457019,
+    "w_pv_best_um": 1.086320581457019,
+    "J_full_best": 0.9146080310505897,
+    "accepted": 9
+  },
+  "coupled": {
+    "Tmax_init_C": 55.30000000000001,
+    "Tmax_best_C": 55.30000000000001,
+    "vm_chip_max_init_MPa": 36.681795836846184,
+    "vm_chip_max_best_MPa": 36.20445071727879,
+    "vm_chip_name_best": "CIM_jia",
+    "w_pv_init_um": 1.086320581457019,
+    "w_pv_best_um": 1.0412976383424397,
+    "J_full_best": 0.9042067119655933,
+    "accepted": 9
+  },
+  "delta_coupled_minus_heat": {
+    "dTmax_C": 0.0,
+    "d_vm_chip_max_MPa": -0.47734511956739567,
+    "d_w_pv_um": -0.04502294311457922
+  },
+  "wall_s": 434.74502778053284,
+  "finished_utc": "2026-10-23T08:26:03.250249+00:00"
+}

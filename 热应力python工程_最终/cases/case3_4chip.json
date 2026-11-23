@@ -1,0 +1,22 @@
+{
+  "name": "case3_4chip",
+  "description": "2x2 symmetric 8 mm dies, 2 mm streets. Equal power so warpage should be closer to a bowl than the L-shaped 3-chip.",
+  "chips": [
+    {"name": "A", "x_mm": 0,  "y_mm": 0,  "w_mm": 8, "h_mm": 8, "t_um": 150, "power_W": 15},
+    {"name": "B", "x_mm": 10, "y_mm": 0,  "w_mm": 8, "h_mm": 8, "t_um": 150, "power_W": 15},
+    {"name": "C", "x_mm": 0,  "y_mm": 10, "w_mm": 8, "h_mm": 8, "t_um": 150, "power_W": 15},
+    {"name": "D", "x_mm": 10, "y_mm": 10, "w_mm": 8, "h_mm": 8, "t_um": 150, "power_W": 15}
+  ],
+  "package": {
+    "tim_um": 20,
+    "t_spreader_mm": 1.0,
+    "t_sink_mm": 6.9,
+    "t_substrate_mm": 1.0,
+    "t_interposer_um": 100.0,
+    "r_convec_K_per_W": 0.1,
+    "ambient_C": 45,
+    "pitch_die_mm": 0.5,
+    "pitch_coarse_mm": 3.0,
+    "fill_die": false
+  }
+}

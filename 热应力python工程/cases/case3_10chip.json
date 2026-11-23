@@ -1,0 +1,16 @@
+{
+  "name": "case3_10chip",
+  "description": "10 芯粒布局。只填 chips[]；封装/居中/网格由 layout.py 自动生成。坐标是相对布局，单位 mm / um / W。",
+  "chips": [
+    {"name": "HBM0", "x_mm": 0,  "y_mm": 0,  "w_mm": 6,  "h_mm": 6,  "t_um": 150, "power_W": 6},
+    {"name": "HBM1", "x_mm": 7,  "y_mm": 0,  "w_mm": 6,  "h_mm": 6,  "t_um": 150, "power_W": 6},
+    {"name": "CPU0", "x_mm": 14, "y_mm": 0,  "w_mm": 8,  "h_mm": 8,  "t_um": 150, "power_W": 18},
+    {"name": "CTRL", "x_mm": 23, "y_mm": 0,  "w_mm": 5,  "h_mm": 5,  "t_um": 150, "power_W": 5},
+    {"name": "GPU",  "x_mm": 0,  "y_mm": 7,  "w_mm": 14, "h_mm": 10, "t_um": 150, "power_W": 40},
+    {"name": "CPU1", "x_mm": 15, "y_mm": 9,  "w_mm": 8,  "h_mm": 8,  "t_um": 150, "power_W": 18},
+    {"name": "NPU",  "x_mm": 24, "y_mm": 9,  "w_mm": 6,  "h_mm": 6,  "t_um": 150, "power_W": 12},
+    {"name": "HBM2", "x_mm": 0,  "y_mm": 18, "w_mm": 6,  "h_mm": 6,  "t_um": 150, "power_W": 6},
+    {"name": "HBM3", "x_mm": 7,  "y_mm": 18, "w_mm": 6,  "h_mm": 6,  "t_um": 150, "power_W": 6},
+    {"name": "IO",   "x_mm": 14, "y_mm": 18, "w_mm": 10, "h_mm": 6,  "t_um": 150, "power_W": 8}
+  ]
+}

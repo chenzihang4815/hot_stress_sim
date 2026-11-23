@@ -1,0 +1,7 @@
+accel-sim.out \
+  -trace  .../backprop-.../traces/kernelslist.g \
+  -config .../SM7_QV100/gpgpusim.config \
+  -config .../SM7_QV100/trace.config \
+  -power_simulation_enabled 1 \
+  -power_simulation_mode 0 \
+  -accelwattch_xml_file accelwattch_sass_sim.xml

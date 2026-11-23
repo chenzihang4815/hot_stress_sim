@@ -1,0 +1,43 @@
+================================================================
+Case: cpu_gpu_cim_starter__colonnade
+JSON: /home/czh/任务仿真产生功耗文件工具/热应力python工程/cases/cpu_gpu_cim_lbfgs/starter__colonnade.json
+Domain: 84.9 x 79.1 x 9.17 mm
+Chips: 3   P=74.65 W   h=1487.86 W/m2K   Tamb=45.00 C
+BBox 32.9 x 27.1 mm   Spreader 54.9 x 49.1 mm   Sink 84.9 x 79.1 mm
+Centered, layout shift (26.00, 26.00) mm
+Substrate 1.0 mm  Interposer 100 um  32.9 x 27.1 mm  fill_die=False  tim_cover=chips
+
+Chips (edit cases/case3_chips.json):
+  name           x_mm     y_mm     w_mm     h_mm        W
+  CPU           26.00    51.26     1.55     1.87     1.65
+  GPU           26.60    26.00    32.33    25.21    72.95
+  CIM           26.00    26.00     0.55     0.42     0.04
+
+-- FVM 3D package --
+  Picard 1  dTmax=12.9625 K  Tmin=51.31 C  Tmax=57.96 C
+[fvm3d] cpu_gpu_cim_starter__colonnade  cells=52x44x23  solid=34060  Tmax=57.962 C  Tmin=51.311 C  10.91s
+[fvm3d] timing  grid=0.01s  assemble=0.50s  solve=10.39s (spsolve)  ndof=52624  nnz=248396
+
+Probes:
+  CPU_center            57.809 C
+  GPU_center            56.651 C
+  CIM_center            54.681 C
+  Sink_top_center       55.157 C
+  Spreader_center       56.019 C
+  Interposer_center     56.648 C
+  Substrate_center      56.637 C
+  TIM_mid               56.486 C
+
+Timing (heat only):
+  grid     0.01 s
+  assemble 0.50 s
+  solve    10.39 s  (spsolve)
+  total    10.91 s   ndof=52624  solid=34060
+
+HotSpot files:
+  flp: /home/czh/任务仿真产生功耗文件工具/热应力python工程/hotspot_starter__colonnade/cpu_gpu_cim_starter__colonnade.flp
+  ptrace: /home/czh/任务仿真产生功耗文件工具/热应力python工程/hotspot_starter__colonnade/cpu_gpu_cim_starter__colonnade.ptrace
+  config: /home/czh/任务仿真产生功耗文件工具/热应力python工程/hotspot_starter__colonnade/cpu_gpu_cim_starter__colonnade.config
+  materials: /home/czh/任务仿真产生功耗文件工具/热应力python工程/hotspot_starter__colonnade/cpu_gpu_cim_starter__colonnade.materials
+Outputs: /home/czh/任务仿真产生功耗文件工具/热应力python工程/results/python_starter__colonnade
+================================================================

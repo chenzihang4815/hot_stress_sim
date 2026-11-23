@@ -1,0 +1,110 @@
+[
+  {
+    "step": 0,
+    "die_cell_max_C": 66.48583967078196,
+    "vm_MPa": 76.38294403290536,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 4,
+    "die_cell_max_C": 66.48670215707438,
+    "vm_MPa": 76.39175370625175,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 8,
+    "die_cell_max_C": 66.13283124312278,
+    "vm_MPa": 75.43563008752629,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 10,
+    "die_cell_max_C": 66.48670215707438,
+    "vm_MPa": 76.39175370625175,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 11,
+    "die_cell_max_C": 66.45131578927663,
+    "vm_MPa": 77.30636208242741,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 12,
+    "die_cell_max_C": 66.26013360807116,
+    "vm_MPa": 73.12666966957185,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 13,
+    "die_cell_max_C": 66.26356243615152,
+    "vm_MPa": 73.55653101200356,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 15,
+    "die_cell_max_C": 66.26013360807116,
+    "vm_MPa": 73.12666966957185,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 18,
+    "die_cell_max_C": 66.45131578927663,
+    "vm_MPa": 77.30636208242741,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 20,
+    "die_cell_max_C": 66.31431707661989,
+    "vm_MPa": 77.5478715878245,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 23,
+    "die_cell_max_C": 66.30797418577941,
+    "vm_MPa": 79.11150260716873,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 27,
+    "die_cell_max_C": 66.23279623056027,
+    "vm_MPa": 77.33706406918239,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 28,
+    "die_cell_max_C": 66.35223063022357,
+    "vm_MPa": 78.30983862923654,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 30,
+    "die_cell_max_C": 66.42799644600746,
+    "vm_MPa": 80.1657595503554,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 33,
+    "die_cell_max_C": 66.35223063022357,
+    "vm_MPa": 78.30983862923654,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 35,
+    "die_cell_max_C": 62.860941496897624,
+    "vm_MPa": 63.931564927878725,
+    "vm_name": "T2_Ca"
+  },
+  {
+    "step": 38,
+    "die_cell_max_C": 62.86260324965065,
+    "vm_MPa": 63.72883070731869,
+    "vm_name": "T2_Ca"
+  },
+  {
+    "step": 40,
+    "die_cell_max_C": 62.73450632740838,
+    "vm_MPa": 61.38786072919656,
+    "vm_name": "T2_Ca"
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "case": "C1_1T2_1GPU",
+    "chips": 4,
+    "grid64_C": 65.48,
+    "grid32_C": 65.29,
+    "grid16_C": 65.01,
+    "err32_K": -0.19,
+    "err16_K": -0.47
+  },
+  {
+    "case": "C2_2T2_2GPU",
+    "chips": 7,
+    "grid64_C": 85.95,
+    "grid32_C": 85.53,
+    "grid16_C": 85.61,
+    "err32_K": -0.42,
+    "err16_K": -0.34
+  },
+  {
+    "case": "C3_XEON_T2_2GPU",
+    "chips": 7,
+    "grid64_C": 89.48,
+    "grid32_C": 89.49,
+    "grid16_C": 89.38,
+    "err32_K": 0.01,
+    "err16_K": -0.1
+  },
+  {
+    "case": "C4_2XEON_2GPU",
+    "chips": 7,
+    "grid64_C": 93.63,
+    "grid32_C": 92.96,
+    "grid16_C": 92.85,
+    "err32_K": -0.67,
+    "err16_K": -0.78
+  },
+  {
+    "case": "C5_2XEON_3GPU",
+    "chips": 9,
+    "grid64_C": 106.11,
+    "grid32_C": 105.88,
+    "grid16_C": 105.11,
+    "err32_K": -0.23,
+    "err16_K": -1.0
+  },
+  {
+    "case": "C6_3XEON_3GPU",
+    "chips": 10,
+    "grid64_C": 120.73,
+    "grid32_C": 120.36,
+    "grid16_C": 119.97,
+    "err32_K": -0.37,
+    "err16_K": -0.76
+  }
+]

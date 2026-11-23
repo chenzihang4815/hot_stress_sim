@@ -1,0 +1,68 @@
+[
+  {
+    "step": 0,
+    "die_cell_max_C": 79.72620634304008,
+    "vm_MPa": 150.12302119624874,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 11,
+    "die_cell_max_C": 79.74842519995264,
+    "vm_MPa": 150.12743529917879,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 13,
+    "die_cell_max_C": 79.74625228492505,
+    "vm_MPa": 150.41039885028079,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 14,
+    "die_cell_max_C": 79.74588921458587,
+    "vm_MPa": 157.21733789914742,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 19,
+    "die_cell_max_C": 78.29414168737219,
+    "vm_MPa": 147.1741468786587,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 20,
+    "die_cell_max_C": 78.293756864295,
+    "vm_MPa": 147.16418014674733,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 21,
+    "die_cell_max_C": 78.35487363703055,
+    "vm_MPa": 156.00728408690145,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 27,
+    "die_cell_max_C": 78.35551371185676,
+    "vm_MPa": 156.02520060232476,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 32,
+    "die_cell_max_C": 78.35605777026507,
+    "vm_MPa": 156.0269174659682,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 34,
+    "die_cell_max_C": 78.35613893215236,
+    "vm_MPa": 156.12371843138797,
+    "vm_name": "Xeon_Ca"
+  },
+  {
+    "step": 38,
+    "die_cell_max_C": 78.03168938502802,
+    "vm_MPa": 154.95707368340834,
+    "vm_name": "Xeon_Ca"
+  }
+]

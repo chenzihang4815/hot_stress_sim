@@ -1,0 +1,142 @@
+[
+  {
+    "name": "adiabatic",
+    "k_fill": 0.8,
+    "g_bottom_W_per_K": 0.0,
+    "edge_to_ambient": false,
+    "python_Tmax_C": 73.29676362904883,
+    "dies_C": {
+      "Penryn": 73.29676362904883,
+      "GPU_3070": 64.50044574208181,
+      "HBM3": 61.22601119193291,
+      "CIM_jia": 58.68497852262158
+    },
+    "Q_top_W": 154.79009799913615,
+    "Q_bottom_W": 0.0,
+    "Q_edge_W": 0.0,
+    "Q_sum_W": 154.79009799913615,
+    "Q_down_under_dies_W": 2.5007504171497046,
+    "Q_down_under_gaps_W": -2.5007504170831147,
+    "Q_lateral_die_to_gap_W": 0.046363712789917
+  },
+  {
+    "name": "edge_to_ambient",
+    "k_fill": 0.8,
+    "g_bottom_W_per_K": 0.0,
+    "edge_to_ambient": true,
+    "python_Tmax_C": 70.01507269904238,
+    "dies_C": {
+      "Penryn": 70.01507269904238,
+      "GPU_3070": 61.87649837711314,
+      "HBM3": 59.33354501562411,
+      "CIM_jia": 56.19712371949953
+    },
+    "Q_top_W": 126.46574120995382,
+    "Q_bottom_W": 0.0,
+    "Q_edge_W": 28.324356777034154,
+    "Q_sum_W": 154.79009798698797,
+    "Q_down_under_dies_W": 3.2310713989138367,
+    "Q_down_under_gaps_W": 25.09328539029346,
+    "Q_lateral_die_to_gap_W": 0.05983456128973187
+  },
+  {
+    "name": "bottom_same_h",
+    "k_fill": 0.8,
+    "g_bottom_W_per_K": 0.0035156249999999997,
+    "edge_to_ambient": false,
+    "python_Tmax_C": 65.64622532624696,
+    "dies_C": {
+      "Penryn": 65.64622532624696,
+      "GPU_3070": 57.59274435941745,
+      "HBM3": 55.33546911614803,
+      "CIM_jia": 52.47130689952735
+    },
+    "Q_top_W": 85.47163918641809,
+    "Q_bottom_W": 69.31845881279972,
+    "Q_edge_W": 0.0,
+    "Q_sum_W": 154.7900979992178,
+    "Q_down_under_dies_W": 26.401875329587625,
+    "Q_down_under_gaps_W": 42.91658348315899,
+    "Q_lateral_die_to_gap_W": 0.11523196359798815
+  },
+  {
+    "name": "bottom_organic_1mm",
+    "k_fill": 0.8,
+    "g_bottom_W_per_K": 0.0005362817796610168,
+    "edge_to_ambient": false,
+    "python_Tmax_C": 71.23124770091079,
+    "dies_C": {
+      "Penryn": 71.23124770091079,
+      "GPU_3070": 62.5632713522366,
+      "HBM3": 59.51850330648875,
+      "CIM_jia": 56.86963686024495
+    },
+    "Q_top_W": 133.92401039871183,
+    "Q_bottom_W": 20.866087600580116,
+    "Q_edge_W": 0.0,
+    "Q_sum_W": 154.79009799929196,
+    "Q_down_under_dies_W": 7.804339626963031,
+    "Q_down_under_gaps_W": 13.06174797366738,
+    "Q_lateral_die_to_gap_W": 0.0656486110925955
+  },
+  {
+    "name": "bottom_same_h_air",
+    "k_fill": 0.028,
+    "g_bottom_W_per_K": 0.0035156249999999997,
+    "edge_to_ambient": false,
+    "python_Tmax_C": 67.87575024599249,
+    "dies_C": {
+      "Penryn": 67.87575024599249,
+      "GPU_3070": 59.60227120548507,
+      "HBM3": 57.28659879460105,
+      "CIM_jia": 54.356741165271046
+    },
+    "Q_top_W": 114.95469982530602,
+    "Q_bottom_W": 39.8353981739429,
+    "Q_edge_W": 0.0,
+    "Q_sum_W": 154.79009799924893,
+    "Q_down_under_dies_W": 34.229012668546375,
+    "Q_down_under_gaps_W": 5.606385505364162,
+    "Q_lateral_die_to_gap_W": 0.007032187526606449
+  },
+  {
+    "name": "bottom_organic_air",
+    "k_fill": 0.028,
+    "g_bottom_W_per_K": 0.0005362817796610168,
+    "edge_to_ambient": false,
+    "python_Tmax_C": 71.67599632388254,
+    "dies_C": {
+      "Penryn": 71.67599632388254,
+      "GPU_3070": 62.992918222891376,
+      "HBM3": 59.99048776315237,
+      "CIM_jia": 57.02971595152087
+    },
+    "Q_top_W": 141.0219029185479,
+    "Q_bottom_W": 13.7681950807738,
+    "Q_edge_W": 0.0,
+    "Q_sum_W": 154.79009799932172,
+    "Q_down_under_dies_W": 9.672616563176785,
+    "Q_down_under_gaps_W": 4.095578517659485,
+    "Q_lateral_die_to_gap_W": 0.0034559660189143553
+  },
+  {
+    "name": "edge_plus_organic",
+    "k_fill": 0.8,
+    "g_bottom_W_per_K": 0.0005362817796610168,
+    "edge_to_ambient": true,
+    "python_Tmax_C": 68.76276982741473,
+    "dies_C": {
+      "Penryn": 68.76276982741473,
+      "GPU_3070": 60.67195218675516,
+      "HBM3": 58.20475742744452,
+      "CIM_jia": 55.076566039460886
+    },
+    "Q_top_W": 113.86461301816254,
+    "Q_bottom_W": 15.999732947357051,
+    "Q_edge_W": 24.92575201699765,
+    "Q_sum_W": 154.79009798251724,
+    "Q_down_under_dies_W": 7.848472693121459,
+    "Q_down_under_gaps_W": 33.077012288056345,
+    "Q_lateral_die_to_gap_W": 0.0742318199268238
+  }
+]

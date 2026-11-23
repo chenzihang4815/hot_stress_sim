@@ -1,0 +1,31 @@
+{
+  "case": "cim_basic_analog",
+  "source_tree": "/home/czh/\u4efb\u52a1\u4eff\u771f\u4ea7\u751f\u529f\u8017\u6587\u4ef6\u5de5\u5177/accelforge-main/accelforge-main",
+  "inputs": {
+    "arch_yaml": "examples/arches/compute_in_memory/basic_analog.yaml",
+    "includes": [
+      "_include.yaml",
+      "_include_functions.py",
+      "memory_cells/"
+    ]
+  },
+  "energy_J": 2.6253290587174625e-10,
+  "latency_s": 1.0000000116860974e-07,
+  "n_computes": 1024.0,
+  "energy_per_MAC_J": 2.563797908903772e-13,
+  "energy_per_component_J": {
+    "RowDrivers": 5.141431198644013e-11,
+    "ColumnDrivers": 1.742357995688647e-15,
+    "ADC": 2.0782334126282736e-10,
+    "CimUnit": 3.2935102644830822e-12
+  },
+  "area_m2": {
+    "MainMemory": 0.0,
+    "ADC": 4.5571664457775785e-08,
+    "ColumnDrivers": 4.5490249999999997e-10,
+    "RowDrivers": 5.198886e-10,
+    "DummyRowDriverMemory": 0.0,
+    "CimUnit": 1.73056e-10,
+    "FreeCompute": 0.0
+  }
+}

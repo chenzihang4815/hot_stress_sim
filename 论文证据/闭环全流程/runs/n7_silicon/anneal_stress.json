@@ -1,0 +1,56 @@
+[
+  {
+    "step": 0,
+    "die_cell_max_C": 67.43750537575795,
+    "vm_MPa": 65.8864085951752,
+    "vm_name": "CIM_jia_m64"
+  },
+  {
+    "step": 6,
+    "die_cell_max_C": 68.22298006490718,
+    "vm_MPa": 79.57712351712728,
+    "vm_name": "Xeon_Cb"
+  },
+  {
+    "step": 9,
+    "die_cell_max_C": 69.74013382794749,
+    "vm_MPa": 71.59386789453842,
+    "vm_name": "Xeon_Cb"
+  },
+  {
+    "step": 12,
+    "die_cell_max_C": 68.22298006490718,
+    "vm_MPa": 79.57712351712728,
+    "vm_name": "Xeon_Cb"
+  },
+  {
+    "step": 14,
+    "die_cell_max_C": 68.12120521317576,
+    "vm_MPa": 79.80064636229521,
+    "vm_name": "Xeon_Cb"
+  },
+  {
+    "step": 21,
+    "die_cell_max_C": 68.26275882383396,
+    "vm_MPa": 78.89627135337076,
+    "vm_name": "Xeon_Cb"
+  },
+  {
+    "step": 24,
+    "die_cell_max_C": 68.26020484276887,
+    "vm_MPa": 78.90091663645558,
+    "vm_name": "Xeon_Cb"
+  },
+  {
+    "step": 29,
+    "die_cell_max_C": 67.48354751440883,
+    "vm_MPa": 67.22550710932603,
+    "vm_name": "CIM_jia_m64"
+  },
+  {
+    "step": 40,
+    "die_cell_max_C": 64.26169799709527,
+    "vm_MPa": 61.17256657860038,
+    "vm_name": "CIM_jia_m64"
+  }
+]

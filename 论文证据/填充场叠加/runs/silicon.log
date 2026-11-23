@@ -1,0 +1,7 @@
+  silicon 第 20 步 峰值 51.87 最优 51.59
+  silicon 第 40 步 峰值 51.67 最优 51.59
+  silicon 第 60 步 峰值 51.60 最优 51.59
+  silicon 第 80 步 峰值 51.69 最优 51.59
+  silicon 第 100 步 峰值 51.68 最优 51.59
+  silicon 第 120 步 峰值 51.69 最优 51.59
+{"fill": "silicon", "start_factor_s": 0.6204811509815045, "exact_solve_s": 62.281107144022826, "frozen_solve_s": 2.174361928133294, "start_Tmax_C": 51.65444889880587, "best_Tmax_C": 51.592104638855346, "err_max_over_steps_K": 6.212985681486316e-11}

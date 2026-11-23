@@ -1,0 +1,364 @@
+{
+  "package_side_mm": 72.0,
+  "grid": 64,
+  "reference": {
+    "side_mm": 18.0,
+    "power_W": 80.0,
+    "Tmax_C": 57.11322258695924
+  },
+  "laws": {
+    "fixed_W": "总功率固定 80 W，密度随面积下降",
+    "prop_area": "功耗密度不变，总功率与面积成正比"
+  },
+  "timing_s": {
+    "factor": 0.8628990300003352,
+    "one_apply": 0.006576065999979619
+  },
+  "cases": [
+    {
+      "power_W": 80.0,
+      "Tmax_C": 65.62688618302258,
+      "rise_K": 20.626886183022577,
+      "flux_sum_W": 79.99999999992443,
+      "flux_inside_die_W": 75.95229741701355,
+      "frac_into_spreader_under_die": 0.9494037177135662,
+      "peak_flux_W_per_mm2": 0.9805742947033463,
+      "law": "fixed_W",
+      "side_cells": 8,
+      "side_mm": 9.0,
+      "reuse": {
+        "dTmax_K": -8.513663596063338,
+        "max_abs_K": 8.513663596063452,
+        "rmse_K": 0.9717127164060717
+      },
+      "scale_power": {
+        "dTmax_K": -8.513663596063338,
+        "max_abs_K": 8.513663596063452,
+        "rmse_K": 0.9717127164060717
+      },
+      "delta_p": {
+        "dTmax_K": 0.0,
+        "max_abs_K": 9.094947017729282e-13,
+        "rmse_K": 1.9302510047787465e-13
+      }
+    },
+    {
+      "power_W": 80.0,
+      "Tmax_C": 59.73496965086912,
+      "rise_K": 14.734969650869118,
+      "flux_sum_W": 79.99999999991513,
+      "flux_inside_die_W": 77.13553049935857,
+      "frac_into_spreader_under_die": 0.9641941312430049,
+      "peak_flux_W_per_mm2": 0.4363869880243443,
+      "law": "fixed_W",
+      "side_cells": 12,
+      "side_mm": 13.499999999999998,
+      "reuse": {
+        "dTmax_K": -2.621747063909879,
+        "max_abs_K": 2.621747063909993,
+        "rmse_K": 0.4655942512730651
+      },
+      "scale_power": {
+        "dTmax_K": -2.621747063909879,
+        "max_abs_K": 2.621747063909993,
+        "rmse_K": 0.4655942512730651
+      },
+      "delta_p": {
+        "dTmax_K": 0.0,
+        "max_abs_K": 9.094947017729282e-13,
+        "rmse_K": 1.923680458494021e-13
+      }
+    },
+    {
+      "power_W": 80.0,
+      "Tmax_C": 57.11322258695924,
+      "rise_K": 12.113222586959239,
+      "flux_sum_W": 79.99999999992218,
+      "flux_inside_die_W": 77.74621993659417,
+      "frac_into_spreader_under_die": 0.9718277492083724,
+      "peak_flux_W_per_mm2": 0.2455582094555401,
+      "law": "fixed_W",
+      "side_cells": 16,
+      "side_mm": 18.0,
+      "reuse": {
+        "dTmax_K": 0.0,
+        "max_abs_K": 0.0,
+        "rmse_K": 0.0
+      },
+      "scale_power": {
+        "dTmax_K": 0.0,
+        "max_abs_K": 0.0,
+        "rmse_K": 0.0
+      },
+      "delta_p": {
+        "dTmax_K": 0.0,
+        "max_abs_K": 0.0,
+        "rmse_K": 0.0
+      }
+    },
+    {
+      "power_W": 80.0,
+      "Tmax_C": 55.57820077924282,
+      "rise_K": 10.57820077924282,
+      "flux_sum_W": 79.99999999992511,
+      "flux_inside_die_W": 78.1253413723604,
+      "frac_into_spreader_under_die": 0.9765667671554191,
+      "peak_flux_W_per_mm2": 0.15720514033200747,
+      "law": "fixed_W",
+      "side_cells": 20,
+      "side_mm": 22.5,
+      "reuse": {
+        "dTmax_K": 1.5350218077164186,
+        "max_abs_K": 1.5350218077164186,
+        "rmse_K": 0.34720089273980714
+      },
+      "scale_power": {
+        "dTmax_K": 1.5350218077164186,
+        "max_abs_K": 1.5350218077164186,
+        "rmse_K": 0.34720089273980714
+      },
+      "delta_p": {
+        "dTmax_K": 0.0,
+        "max_abs_K": 9.663381206337363e-13,
+        "rmse_K": 1.7426866364667663e-13
+      }
+    },
+    {
+      "power_W": 80.0,
+      "Tmax_C": 54.53848182617884,
+      "rise_K": 9.538481826178838,
+      "flux_sum_W": 79.99999999992198,
+      "flux_inside_die_W": 78.38871024525736,
+      "frac_into_spreader_under_die": 0.9798588780666725,
+      "peak_flux_W_per_mm2": 0.10920602122815053,
+      "law": "fixed_W",
+      "side_cells": 24,
+      "side_mm": 26.999999999999996,
+      "reuse": {
+        "dTmax_K": 2.5747407607804007,
+        "max_abs_K": 2.5747407607804575,
+        "rmse_K": 0.5468423507401682
+      },
+      "scale_power": {
+        "dTmax_K": 2.5747407607804007,
+        "max_abs_K": 2.5747407607804575,
+        "rmse_K": 0.5468423507401682
+      },
+      "delta_p": {
+        "dTmax_K": -5.684341886080802e-14,
+        "max_abs_K": 8.526512829121202e-13,
+        "rmse_K": 1.7329496761550435e-13
+      }
+    },
+    {
+      "power_W": 80.0,
+      "Tmax_C": 53.17694808912921,
+      "rise_K": 8.176948089129212,
+      "flux_sum_W": 79.99999999992329,
+      "flux_inside_die_W": 78.74409455038308,
+      "frac_into_spreader_under_die": 0.9843011818807323,
+      "peak_flux_W_per_mm2": 0.06147409827325419,
+      "law": "fixed_W",
+      "side_cells": 32,
+      "side_mm": 36.0,
+      "reuse": {
+        "dTmax_K": 3.936274497830027,
+        "max_abs_K": 3.9362744978301407,
+        "rmse_K": 0.8396321495481583
+      },
+      "scale_power": {
+        "dTmax_K": 3.936274497830027,
+        "max_abs_K": 3.9362744978301407,
+        "rmse_K": 0.8396321495481583
+      },
+      "delta_p": {
+        "dTmax_K": 0.0,
+        "max_abs_K": 9.663381206337363e-13,
+        "rmse_K": 1.7825853730805596e-13
+      }
+    },
+    {
+      "power_W": 20.0,
+      "Tmax_C": 50.15672154569319,
+      "rise_K": 5.156721545693188,
+      "flux_sum_W": 19.99999999992351,
+      "flux_inside_die_W": 18.988074354252348,
+      "frac_into_spreader_under_die": 0.9494037177162483,
+      "peak_flux_W_per_mm2": 0.24514357367589817,
+      "law": "prop_area",
+      "side_cells": 8,
+      "side_mm": 9.0,
+      "reuse": {
+        "dTmax_K": 6.956501041266051,
+        "max_abs_K": 8.841668090205303,
+        "rmse_K": 4.609744777325918
+      },
+      "scale_power": {
+        "dTmax_K": -2.128415898953392,
+        "max_abs_K": 2.128415898953392,
+        "rmse_K": 0.24292817910150435
+      },
+      "delta_p": {
+        "dTmax_K": 0.0,
+        "max_abs_K": 9.094947017729282e-13,
+        "rmse_K": 2.228726197159522e-13
+      }
+    },
+    {
+      "power_W": 45.0,
+      "Tmax_C": 53.28842042857741,
+      "rise_K": 8.28842042857741,
+      "flux_sum_W": 44.999999999923965,
+      "flux_inside_die_W": 43.388735905888126,
+      "frac_into_spreader_under_die": 0.9641941312435875,
+      "peak_flux_W_per_mm2": 0.24546768076379524,
+      "law": "prop_area",
+      "side_cells": 12,
+      "side_mm": 13.499999999999998,
+      "reuse": {
+        "dTmax_K": 3.8248021583818286,
+        "max_abs_K": 5.554981696874165,
+        "rmse_K": 2.6870693199047904
+      },
+      "scale_power": {
+        "dTmax_K": -1.474732723412842,
+        "max_abs_K": 1.474732723412842,
+        "rmse_K": 0.26189676634107795
+      },
+      "delta_p": {
+        "dTmax_K": 0.0,
+        "max_abs_K": 9.663381206337363e-13,
+        "rmse_K": 1.7353151683484382e-13
+      }
+    },
+    {
+      "power_W": 80.0,
+      "Tmax_C": 57.11322258695924,
+      "rise_K": 12.113222586959239,
+      "flux_sum_W": 79.99999999992218,
+      "flux_inside_die_W": 77.74621993659417,
+      "frac_into_spreader_under_die": 0.9718277492083724,
+      "peak_flux_W_per_mm2": 0.2455582094555401,
+      "law": "prop_area",
+      "side_cells": 16,
+      "side_mm": 18.0,
+      "reuse": {
+        "dTmax_K": 0.0,
+        "max_abs_K": 0.0,
+        "rmse_K": 0.0
+      },
+      "scale_power": {
+        "dTmax_K": 0.0,
+        "max_abs_K": 0.0,
+        "rmse_K": 0.0
+      },
+      "delta_p": {
+        "dTmax_K": 0.0,
+        "max_abs_K": 0.0,
+        "rmse_K": 0.0
+      }
+    },
+    {
+      "power_W": 125.0,
+      "Tmax_C": 61.5284387176136,
+      "rise_K": 16.528438717613597,
+      "flux_sum_W": 124.99999999992278,
+      "flux_inside_die_W": 122.07084589432185,
+      "frac_into_spreader_under_die": 0.9765667671551781,
+      "peak_flux_W_per_mm2": 0.2456330317688602,
+      "law": "prop_area",
+      "side_cells": 20,
+      "side_mm": 22.5,
+      "reuse": {
+        "dTmax_K": -4.415216130654358,
+        "max_abs_K": 6.19702186997938,
+        "rmse_K": 3.428199282505029
+      },
+      "scale_power": {
+        "dTmax_K": 2.3984715745102108,
+        "max_abs_K": 2.3984715745102108,
+        "rmse_K": 0.5425013949058857
+      },
+      "delta_p": {
+        "dTmax_K": 1.7053025658242404e-13,
+        "max_abs_K": 1.0231815394945443e-12,
+        "rmse_K": 2.0844205927992956e-13
+      }
+    },
+    {
+      "power_W": 180.0,
+      "Tmax_C": 66.46158410900654,
+      "rise_K": 21.461584109006537,
+      "flux_sum_W": 179.99999999992,
+      "flux_inside_die_W": 176.3745980518441,
+      "frac_into_spreader_under_die": 0.9798588780662361,
+      "peak_flux_W_per_mm2": 0.2457135477632771,
+      "law": "prop_area",
+      "side_cells": 24,
+      "side_mm": 26.999999999999996,
+      "reuse": {
+        "dTmax_K": -9.348361522047298,
+        "max_abs_K": 11.452301887436533,
+        "rmse_K": 7.5760584981492745
+      },
+      "scale_power": {
+        "dTmax_K": 5.793166711651736,
+        "max_abs_K": 5.793166711651736,
+        "rmse_K": 1.230395289165232
+      },
+      "delta_p": {
+        "dTmax_K": -1.1368683772161603e-13,
+        "max_abs_K": 1.1937117960769683e-12,
+        "rmse_K": 2.1457184780935063e-13
+      }
+    },
+    {
+      "power_W": 320.0,
+      "Tmax_C": 77.70779235676667,
+      "rise_K": 32.707792356766674,
+      "flux_sum_W": 319.99999999990916,
+      "flux_inside_die_W": 314.9763782015922,
+      "frac_into_spreader_under_die": 0.984301181880255,
+      "peak_flux_W_per_mm2": 0.24589639309301675,
+      "law": "prop_area",
+      "side_cells": 32,
+      "side_mm": 36.0,
+      "reuse": {
+        "dTmax_K": -20.594569769807435,
+        "max_abs_K": 23.026539282657268,
+        "rmse_K": 18.049568029607677
+      },
+      "scale_power": {
+        "dTmax_K": 15.745097991070281,
+        "max_abs_K": 15.745097991070281,
+        "rmse_K": 3.358528598191987
+      },
+      "delta_p": {
+        "dTmax_K": 1.7053025658242404e-13,
+        "max_abs_K": 9.663381206337363e-13,
+        "rmse_K": 1.8496302262242807e-13
+      }
+    }
+  ],
+  "ring_material": [
+    {
+      "side_mm": 18.0,
+      "silicon_vs_epoxy_ring_max_abs_K": 0.330002562039283,
+      "silicon_vs_epoxy_ring_dTmax_K": -0.025939923198222914,
+      "power_map_unchanged_vs_reference_max_abs_K": 0.0
+    },
+    {
+      "side_mm": 26.999999999999996,
+      "silicon_vs_epoxy_ring_max_abs_K": 0.035531652661006774,
+      "silicon_vs_epoxy_ring_dTmax_K": -0.008269149149327859,
+      "power_map_unchanged_vs_reference_max_abs_K": 0.0
+    },
+    {
+      "side_mm": 36.0,
+      "silicon_vs_epoxy_ring_max_abs_K": 0.02246520372369787,
+      "silicon_vs_epoxy_ring_dTmax_K": -0.0040633908671452446,
+      "power_map_unchanged_vs_reference_max_abs_K": 0.0
+    }
+  ],
+  "note": "绝对温度不含 HotSpot 的 spreader 外伸环。delta_p 修正用的是同一个已分解的整层硅算子。"
+}

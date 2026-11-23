@@ -1,0 +1,62 @@
+[
+  {
+    "case": "n11_silicon_已有",
+    "fill": "silicon",
+    "atsim_init_C": 77.99792626357213,
+    "atsim_best_C": 75.99189746198185,
+    "stress_init_MPa": 150.12302119624874,
+    "stress_best_MPa": 154.95707368340834,
+    "python_grad_init": 3.8377599968275717,
+    "python_grad_best": 3.793676689855349
+  },
+  {
+    "case": "n11_epoxy",
+    "fill": "epoxy",
+    "atsim_init_C": 78.04049672201592,
+    "atsim_best_C": 76.03544760174192,
+    "stress_init_MPa": 150.0612033382096,
+    "stress_best_MPa": 154.97878674235542,
+    "python_grad_init": 4.387260218251009,
+    "python_grad_best": 4.338031975941703
+  },
+  {
+    "case": "n5_epoxy",
+    "fill": "epoxy",
+    "atsim_init_C": 64.91178610607352,
+    "atsim_best_C": 61.25346713400875,
+    "stress_init_MPa": 76.38294403290536,
+    "stress_best_MPa": 60.64027586554088,
+    "python_grad_init": 2.347503416147194,
+    "python_grad_best": 2.21594317149801
+  },
+  {
+    "case": "n5_silicon",
+    "fill": "silicon",
+    "atsim_init_C": 64.86118497288976,
+    "atsim_best_C": 61.088081606761996,
+    "stress_init_MPa": 76.34623923016802,
+    "stress_best_MPa": 50.623061162340235,
+    "python_grad_init": 2.083588106958208,
+    "python_grad_best": 1.9441671573673982
+  },
+  {
+    "case": "n8_epoxy",
+    "fill": "epoxy",
+    "atsim_init_C": 75.11050334558556,
+    "atsim_best_C": 70.5424687343599,
+    "stress_init_MPa": 131.4315540578338,
+    "stress_best_MPa": 117.0853633327576,
+    "python_grad_init": 3.6985844485894734,
+    "python_grad_best": 3.6027750907051592
+  },
+  {
+    "case": "n8_silicon",
+    "fill": "silicon",
+    "atsim_init_C": 75.0662803352889,
+    "atsim_best_C": 70.34345439706401,
+    "stress_init_MPa": 131.52755619199974,
+    "stress_best_MPa": 116.58094742840173,
+    "python_grad_init": 3.237719619216932,
+    "python_grad_best": 3.1709884707845757
+  }
+]

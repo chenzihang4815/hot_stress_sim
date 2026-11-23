@@ -1,0 +1,7 @@
+{
+  "min_C": 57.74000000000001,
+  "max_C": 85.66000000000003,
+  "note": "三张 SVG 共用这一档。数值是 HotSpot 第 0 层从 K 换成 C。",
+  "hotspot_fill": "HotSpot 芯片层导热仍是硅，这三张图不包含填充。填充在 Python 图和 ATSim 里。",
+  "fill_this_case": "silicon"
+}

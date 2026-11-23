@@ -1,0 +1,197 @@
+{
+  "ambient_K": 318.15,
+  "note": "Layer 0 of HotSpot grid.steady. scale_power = ambient + (T_ref-ambient)*(P/P_ref). Same silicon operator, so a power-difference backsolve would be exact; these two shortcuts are not, once the footprint changes.",
+  "reference": "Penryn s=1 bin 330",
+  "field_error": [
+    {
+      "case": "Penryn s=2.0",
+      "power_W": 103.15385650684931,
+      "vs": "Penryn s=1",
+      "P_ratio": 1.8968669325217327,
+      "same_footprint": true,
+      "reuse": {
+        "max_abs_K": 10.860000000000014,
+        "dTmax_K": 10.860000000000014
+      },
+      "scale_power": {
+        "max_abs_K": 0.01413858222252884,
+        "dTmax_K": -0.0010585528381739095
+      },
+      "truth_Tmax_C": 67.97000000000003
+    },
+    {
+      "case": "T2 s=1.0",
+      "power_W": 62.31511817518248,
+      "vs": "Penryn s=1",
+      "P_ratio": 1.1458949870171753,
+      "same_footprint": false,
+      "reuse": {
+        "max_abs_K": 3.480000000000018,
+        "dTmax_K": -3.480000000000018
+      },
+      "scale_power": {
+        "max_abs_K": 5.246788292778035,
+        "dTmax_K": -5.246788292778035
+      },
+      "truth_Tmax_C": 53.629999999999995
+    },
+    {
+      "case": "T2 s=2.0",
+      "power_W": 112.73611817518248,
+      "vs": "Penryn s=1",
+      "P_ratio": 2.073072417347449,
+      "same_footprint": false,
+      "reuse": {
+        "max_abs_K": 8.509999999999991,
+        "dTmax_K": 3.5
+      },
+      "scale_power": {
+        "max_abs_K": 9.494906974077594,
+        "dTmax_K": -9.494906974077594
+      },
+      "truth_Tmax_C": 60.610000000000014
+    },
+    {
+      "case": "Xeon s=1.0",
+      "power_W": 88.24269145985402,
+      "vs": "Penryn s=1",
+      "P_ratio": 1.6226697588936076,
+      "same_footprint": false,
+      "reuse": {
+        "max_abs_K": 4.479999999999961,
+        "dTmax_K": -1.6899999999999977
+      },
+      "scale_power": {
+        "max_abs_K": 9.230530780201605,
+        "dTmax_K": -9.230530780201605
+      },
+      "truth_Tmax_C": 55.420000000000016
+    },
+    {
+      "case": "Xeon s=2.0",
+      "power_W": 155.09119145985403,
+      "vs": "Penryn s=1",
+      "P_ratio": 2.851927815089107,
+      "same_footprint": false,
+      "reuse": {
+        "max_abs_K": 11.54000000000002,
+        "dTmax_K": 6.210000000000036
+      },
+      "scale_power": {
+        "max_abs_K": 16.216845840729093,
+        "dTmax_K": -16.216845840729093
+      },
+      "truth_Tmax_C": 63.32000000000005
+    }
+  ],
+  "energy_rel": [
+    {
+      "model": "Penryn",
+      "s": 0.5,
+      "E_serial_rel": 59.28201575342466,
+      "E_parallel_rel": 29.64100787671233,
+      "Tmax_C": 50.34000000000003,
+      "sigma_MPa": 12.76331258152238,
+      "feasible": true
+    },
+    {
+      "model": "Penryn",
+      "s": 1.0,
+      "E_serial_rel": 54.38117705479452,
+      "E_parallel_rel": 27.19058852739726,
+      "Tmax_C": 54.81,
+      "sigma_MPa": 23.416340864462335,
+      "feasible": true
+    },
+    {
+      "model": "Penryn",
+      "s": 1.5,
+      "E_serial_rel": 52.231284703196344,
+      "E_parallel_rel": 26.115642351598172,
+      "Tmax_C": 59.129999999999995,
+      "sigma_MPa": 33.735908069967735,
+      "feasible": true
+    },
+    {
+      "model": "Penryn",
+      "s": 2.0,
+      "E_serial_rel": 51.576928253424654,
+      "E_parallel_rel": 25.788464126712327,
+      "Tmax_C": 63.60000000000002,
+      "sigma_MPa": 44.41768361527577,
+      "feasible": true
+    },
+    {
+      "model": "T2",
+      "s": 0.5,
+      "E_serial_rel": 190.45615889468198,
+      "E_parallel_rel": 23.807019861835247,
+      "Tmax_C": 49.31,
+      "sigma_MPa": 12.78732870168294,
+      "feasible": true
+    },
+    {
+      "model": "T2",
+      "s": 1.0,
+      "E_serial_rel": 164.68995517726796,
+      "E_parallel_rel": 20.586244397158495,
+      "Tmax_C": 52.460000000000036,
+      "sigma_MPa": 22.114743604429762,
+      "feasible": true
+    },
+    {
+      "model": "T2",
+      "s": 1.5,
+      "E_serial_rel": 154.211803451512,
+      "E_parallel_rel": 19.276475431439,
+      "Tmax_C": 55.47000000000003,
+      "sigma_MPa": 31.061588529805398,
+      "feasible": true
+    },
+    {
+      "model": "T2",
+      "s": 2.0,
+      "E_serial_rel": 148.972727588634,
+      "E_parallel_rel": 18.62159094857925,
+      "Tmax_C": 58.49000000000001,
+      "sigma_MPa": 40.00843478326929,
+      "feasible": true
+    },
+    {
+      "model": "Xeon",
+      "s": 0.5,
+      "E_serial_rel": 113.825404834693,
+      "E_parallel_rel": 56.9127024173465,
+      "Tmax_C": 50.30000000000001,
+      "sigma_MPa": 19.514483940773616,
+      "feasible": true
+    },
+    {
+      "model": "Xeon",
+      "s": 1.0,
+      "E_serial_rel": 96.02881129454701,
+      "E_parallel_rel": 48.014405647273506,
+      "Tmax_C": 53.93000000000001,
+      "sigma_MPa": 32.92679592442886,
+      "feasible": true
+    },
+    {
+      "model": "Xeon",
+      "s": 1.5,
+      "E_serial_rel": 88.26817321597252,
+      "E_parallel_rel": 44.13408660798626,
+      "Tmax_C": 57.32000000000005,
+      "sigma_MPa": 45.398684777490054,
+      "feasible": true
+    },
+    {
+      "model": "Xeon",
+      "s": 2.0,
+      "E_serial_rel": 84.38785417668528,
+      "E_parallel_rel": 42.19392708834264,
+      "Tmax_C": 60.700000000000045,
+      "sigma_MPa": 57.870577919587504,
+      "feasible": true
+    }
+  ]
+}

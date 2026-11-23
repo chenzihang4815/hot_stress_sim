@@ -1,0 +1,212 @@
+[
+ {
+  "case": "5 芯粒 200 W",
+  "wire_count": 4608,
+  "mm_per_wire": 18.94,
+  "total_m": 87.27552,
+  "T_C": 67.5
+ },
+ {
+  "case": "5 芯粒 200 W",
+  "wire_count": 4608,
+  "mm_per_wire": 19.625,
+  "total_m": 90.432,
+  "T_C": 67.287
+ },
+ {
+  "case": "5 芯粒 200 W",
+  "wire_count": 4608,
+  "mm_per_wire": 22.625,
+  "total_m": 104.256,
+  "T_C": 67.036
+ },
+ {
+  "case": "5 芯粒 200 W",
+  "wire_count": 4608,
+  "mm_per_wire": 24.25,
+  "total_m": 111.744,
+  "T_C": 65.87
+ },
+ {
+  "case": "5 芯粒 200 W",
+  "wire_count": 4608,
+  "mm_per_wire": 24.5,
+  "total_m": 112.896,
+  "T_C": 65.552
+ },
+ {
+  "case": "5 芯粒 200 W",
+  "wire_count": 4608,
+  "mm_per_wire": 28.5,
+  "total_m": 131.328,
+  "T_C": 65.48
+ },
+ {
+  "case": "5 芯粒 200 W",
+  "wire_count": 4608,
+  "mm_per_wire": 32.4375,
+  "total_m": 149.472,
+  "T_C": 65.266
+ },
+ {
+  "case": "5 芯粒 200 W",
+  "wire_count": 4608,
+  "mm_per_wire": 39.5,
+  "total_m": 182.016,
+  "T_C": 65.09
+ },
+ {
+  "case": "5 芯粒 200 W",
+  "wire_count": 4608,
+  "mm_per_wire": 55.19,
+  "total_m": 254.31552,
+  "T_C": 65.05
+ },
+ {
+  "case": "7 芯粒 284 W",
+  "wire_count": 6912,
+  "mm_per_wire": 24.73,
+  "total_m": 170.93376,
+  "T_C": 78.11
+ },
+ {
+  "case": "7 芯粒 284 W",
+  "wire_count": 6912,
+  "mm_per_wire": 28.81,
+  "total_m": 199.13472,
+  "T_C": 76.02
+ },
+ {
+  "case": "7 芯粒 284 W",
+  "wire_count": 6912,
+  "mm_per_wire": 29.06,
+  "total_m": 200.86272,
+  "T_C": 74.89
+ },
+ {
+  "case": "7 芯粒 284 W",
+  "wire_count": 6912,
+  "mm_per_wire": 29.56,
+  "total_m": 204.31872,
+  "T_C": 73.13
+ },
+ {
+  "case": "7 芯粒 284 W",
+  "wire_count": 6912,
+  "mm_per_wire": 32.23,
+  "total_m": 222.77375999999998,
+  "T_C": 72.66
+ },
+ {
+  "case": "7 芯粒 284 W",
+  "wire_count": 6912,
+  "mm_per_wire": 32.65,
+  "total_m": 225.6768,
+  "T_C": 72.17
+ },
+ {
+  "case": "7 芯粒 284 W",
+  "wire_count": 6912,
+  "mm_per_wire": 33.06,
+  "total_m": 228.51072000000002,
+  "T_C": 71.97
+ },
+ {
+  "case": "7 芯粒 284 W",
+  "wire_count": 6912,
+  "mm_per_wire": 37.44,
+  "total_m": 258.78527999999994,
+  "T_C": 71.68
+ },
+ {
+  "case": "7 芯粒 284 W",
+  "wire_count": 6912,
+  "mm_per_wire": 40.69,
+  "total_m": 281.24927999999994,
+  "T_C": 71.1
+ },
+ {
+  "case": "7 芯粒 284 W",
+  "wire_count": 6912,
+  "mm_per_wire": 46.44,
+  "total_m": 320.99327999999997,
+  "T_C": 70.69
+ },
+ {
+  "case": "9 芯粒 402 W",
+  "wire_count": 9216,
+  "mm_per_wire": 22.81,
+  "total_m": 210.21696,
+  "T_C": 86.09
+ },
+ {
+  "case": "9 芯粒 402 W",
+  "wire_count": 9216,
+  "mm_per_wire": 33.16,
+  "total_m": 305.6025599999999,
+  "T_C": 85.36
+ },
+ {
+  "case": "9 芯粒 402 W",
+  "wire_count": 9216,
+  "mm_per_wire": 35.22,
+  "total_m": 324.58752000000004,
+  "T_C": 81.97
+ },
+ {
+  "case": "9 芯粒 402 W",
+  "wire_count": 9216,
+  "mm_per_wire": 36.66,
+  "total_m": 337.85855999999995,
+  "T_C": 80.7
+ },
+ {
+  "case": "11 芯粒 482 W",
+  "wire_count": 11520,
+  "mm_per_wire": 27.98,
+  "total_m": 322.32959999999997,
+  "T_C": 90.28
+ },
+ {
+  "case": "11 芯粒 482 W",
+  "wire_count": 11520,
+  "mm_per_wire": 29.57,
+  "total_m": 340.6464,
+  "T_C": 89.43
+ },
+ {
+  "case": "11 芯粒 482 W",
+  "wire_count": 11520,
+  "mm_per_wire": 33.98,
+  "total_m": 391.4496,
+  "T_C": 88.8
+ },
+ {
+  "case": "11 芯粒 482 W",
+  "wire_count": 11520,
+  "mm_per_wire": 41.58,
+  "total_m": 479.0016,
+  "T_C": 88.75
+ },
+ {
+  "case": "11 芯粒 482 W",
+  "wire_count": 11520,
+  "mm_per_wire": 42.42,
+  "total_m": 488.6784,
+  "T_C": 87.84
+ },
+ {
+  "case": "11 芯粒 482 W",
+  "wire_count": 11520,
+  "mm_per_wire": 48.58,
+  "total_m": 559.6415999999999,
+  "T_C": 87.4
+ },
+ {
+  "case": "11 芯粒 482 W",
+  "wire_count": 11520,
+  "mm_per_wire": 54.05,
+  "total_m": 622.656,
+  "T_C": 86.85
+ }
+]

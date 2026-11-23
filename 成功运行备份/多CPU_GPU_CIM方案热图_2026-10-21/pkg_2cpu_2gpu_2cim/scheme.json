@@ -1,0 +1,76 @@
+{
+  "id": "pkg_2cpu_2gpu_2cim",
+  "title": "2 CPU (x86 matmul + ARM starter) + 2 GPU (3070 + 2060S) + 2 CIM (jia + wang)",
+  "why": "两颗不同面积/功耗的 GPU，布局回馈可以挪 GPU 相对位置；CPU 一颗带 L2、一颗小核高密度",
+  "n_chiplets": 6,
+  "kinds": {
+    "CPU": 2,
+    "GPU": 2,
+    "CIM": 2
+  },
+  "power_total_W": 140.68852011851155,
+  "area_total_mm2": 857.9380558561706,
+  "outline_mm2": 1135.4917203054938,
+  "deadspace_ratio": 0.2444347761291028,
+  "overlap_m2": 0.0,
+  "HotSpot_Tmax_C": 63.72000000000003,
+  "HotSpot_Tmin_C": 57.19,
+  "chips": [
+    {
+      "name": "CPU_matmul",
+      "kind": "CPU",
+      "area_mm2": 13.6345,
+      "power_W": 1.001867,
+      "W_per_mm2": 0.0734802889728263,
+      "W_per_cm2": 7.34802889728263,
+      "notes": "x86 Timing+L1/L2，64x64 matmul；P=RuntimeDynamic(0.217977)+Leakage(0.78389)"
+    },
+    {
+      "name": "CPU_starter",
+      "kind": "CPU",
+      "area_mm2": 2.90029,
+      "power_W": 1.65068,
+      "W_per_mm2": 0.5691430856914308,
+      "W_per_cm2": 56.91430856914308,
+      "notes": "ARM starter_se atomic，hello（高功率密度对照）；P=RuntimeDynamic(1.03098)+Leakage(0.6197)"
+    },
+    {
+      "name": "GPU_3070",
+      "kind": "GPU",
+      "area_mm2": 392.0,
+      "power_W": 66.8878,
+      "W_per_mm2": 0.17063214285714284,
+      "W_per_cm2": 17.063214285714285,
+      "notes": "RTX3070，backprop 按该配置重跑 AccelWattch；P=66.89 W；文献面积 392.0 mm²"
+    },
+    {
+      "name": "GPU_2060S",
+      "kind": "GPU",
+      "area_mm2": 445.0,
+      "power_W": 71.1194,
+      "W_per_mm2": 0.15981887640449438,
+      "W_per_cm2": 15.981887640449438,
+      "notes": "RTX2060 Super，backprop 按该配置重跑；P=71.12 W；文献面积 445.0 mm²"
+    },
+    {
+      "name": "CIM_jia",
+      "kind": "CIM",
+      "area_mm2": 4.281226257942074,
+      "power_W": 0.0027731351494352146,
+      "W_per_mm2": 0.0006477431890666348,
+      "W_per_cm2": 0.06477431890666349,
+      "notes": "AccelForge jia_jssc_2020+builtin；P=energy/latency=0.00277314 W"
+    },
+    {
+      "name": "CIM_wang",
+      "kind": "CIM",
+      "area_mm2": 0.12203959822869019,
+      "power_W": 0.025999983362139024,
+      "W_per_mm2": 0.21304546835214597,
+      "W_per_cm2": 21.304546835214598,
+      "notes": "AccelForge wang_vlsi_2022+builtin；P=energy/latency=0.026 W"
+    }
+  ],
+  "atsim_json": "/home/czh/任务仿真产生功耗文件工具/热应力python工程/cases/multi_chiplet_schemes/pkg_2cpu_2gpu_2cim.json",
+  "heatmap": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/multi_chiplet_schemes/pkg_2cpu_2gpu_2cim/pkg_2cpu_2gpu_2cim_hotspot.png"
+}

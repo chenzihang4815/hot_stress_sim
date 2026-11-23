@@ -1,0 +1,28 @@
+{
+  "s": 1.0,
+  "Tmax_C": 52.83000000000004,
+  "Tmax_pass1_C": 55.48000000000002,
+  "sigma_chip_max_MPa": 25.879900663447597,
+  "sigma_chip_name": "CIM_jia",
+  "w_pv_um": 0.5538112286577972,
+  "feasible": true,
+  "fail_T": false,
+  "fail_sigma": false,
+  "elapsed_s": 21.762177228927612,
+  "power_W": {
+    "CPU_matmul": 0.36632431562285805,
+    "CPU_threads": 0.385784315622858,
+    "GPU_3070": 50.45475969478825,
+    "CIM_jia": 0.0027731351494352146,
+    "CIM_colonnade": 0.04119819389066705
+  },
+  "Theta_pkg_record_only": 1.0,
+  "P_dyn_W": 12.302973999999999,
+  "P_leak_W": 6.578694326033968,
+  "P_const_W": 32.3691713290401,
+  "P_tot_W": 51.25083965507407,
+  "leak_frac_pkg": 0.1283626643057866,
+  "leak_frac_cpu": 0.5677831811854351,
+  "leak_T_scale": 0.2723817316496678,
+  "T_for_leak_C": 55.48000000000002
+}

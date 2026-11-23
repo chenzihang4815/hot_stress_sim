@@ -1,0 +1,30 @@
+generating initial placement using B*-tree and fastSA
+found a random placement at 7 th trial
+  第 10 步 温度 112.88 累计求解 7s 17 次
+found a random placement at 3 th trial
+found a random placement at 6 th trial
+  第 20 步 温度 104.38 累计求解 10s 25 次
+found a random placement at 0 th trial
+  第 30 步 温度 104.27 累计求解 12s 32 次
+  第 40 步 温度 104.15 累计求解 14s 39 次
+found a random placement at 11 th trial
+  第 50 步 温度 101.05 累计求解 17s 47 次
+found a random placement at 6 th trial
+  第 60 步 温度 101.10 累计求解 20s 56 次
+found a random placement at 8 th trial
+found a random placement at 6 th trial
+found a random placement at 16 th trial
+  第 70 步 温度 101.49 累计求解 23s 63 次
+found a random placement at 0 th trial
+  第 80 步 温度 99.62 累计求解 24s 67 次
+found a random placement at 1 th trial
+found a random placement at 6 th trial
+found a random placement at 1 th trial
+  第 90 步 温度 99.08 累计求解 27s 74 次
+found a random placement at 0 th trial
+  第 100 步 温度 99.13 累计求解 29s 82 次
+  第 110 步 温度 98.59 累计求解 31s 89 次
+found a random placement at 0 th trial
+  第 120 步 温度 98.83 累计求解 33s 95 次
+{"case": "micro150", "rows_search": 16, "mode": "field", "steps": 120, "seed": 23, "init": "/home/czh/任务仿真产生功耗文件工具/论文证据/tap场叠加/runs/micro150_16_field/init.json", "search_peak_C": 98.59, "final_64_C": 99.4, "solve_secs": 33.3, "solves": 95, "wall_s": 34.8}
+EXIT 0

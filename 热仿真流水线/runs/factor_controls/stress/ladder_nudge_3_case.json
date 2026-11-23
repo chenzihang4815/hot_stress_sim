@@ -1,0 +1,62 @@
+{
+  "name": "ladder_nudge_3_case",
+  "description": "ladder_nudge_3",
+  "chips": [
+    {
+      "name": "Penryn",
+      "x_mm": 7.875,
+      "y_mm": 4.5,
+      "w_mm": 9.0,
+      "h_mm": 10.124999999999998,
+      "t_um": 150.0,
+      "power_W": 59.241324999999996
+    },
+    {
+      "name": "GPU_3070",
+      "x_mm": 24.749999999999996,
+      "y_mm": 4.5,
+      "w_mm": 15.75,
+      "h_mm": 24.749999999999996,
+      "t_um": 150.0,
+      "power_W": 66.89
+    },
+    {
+      "name": "HBM3",
+      "x_mm": 24.749999999999996,
+      "y_mm": 31.5,
+      "w_mm": 9.0,
+      "h_mm": 13.499999999999998,
+      "t_um": 150.0,
+      "power_W": 28.656
+    },
+    {
+      "name": "CIM_jia",
+      "x_mm": 4.5,
+      "y_mm": 30.375,
+      "w_mm": 2.25,
+      "h_mm": 2.25,
+      "t_um": 150.0,
+      "power_W": 0.002773
+    }
+  ],
+  "package": {
+    "tim_um": 20,
+    "t_spreader_mm": 1.0,
+    "t_sink_mm": 6.9,
+    "t_substrate_mm": 1.0,
+    "t_interposer_um": 100.0,
+    "r_convec_K_per_W": 0.1,
+    "ambient_C": 45,
+    "pitch_die_mm": 2.0,
+    "pitch_coarse_mm": 8.0,
+    "nz_die": 3,
+    "nz_spreader": 3,
+    "nz_sink": 4,
+    "nz_tim": 1,
+    "nz_substrate": 3,
+    "nz_interposer": 2,
+    "fill_die": true,
+    "fill_xy": "chips",
+    "fill_material": "silicon"
+  }
+}

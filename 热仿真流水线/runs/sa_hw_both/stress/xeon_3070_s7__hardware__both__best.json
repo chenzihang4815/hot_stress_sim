@@ -1,0 +1,44 @@
+{
+  "tag": "xeon_3070_s7__hardware__both__best",
+  "vm_normal_chip_max_MPa": 117.0425901198492,
+  "vm_normal_chip_name": "Xeon",
+  "vm_normal_chip_p95_MPa": 87.4896353826797,
+  "w_pv_um": 3.176951991533927,
+  "atsim_Tmax_C": 76.22234089193728,
+  "elapsed_s": 17.93541693687439,
+  "ndof": 43068,
+  "chips": [
+    {
+      "name": "Xeon",
+      "normal": true,
+      "n_cells": 132,
+      "vm_max_MPa": 117.0425901198492,
+      "vm_mean_MPa": 46.07650149195722,
+      "vm_p95_MPa": 87.4896353826797
+    },
+    {
+      "name": "GPU_TITANX",
+      "normal": true,
+      "n_cells": 154,
+      "vm_max_MPa": 108.08323487823604,
+      "vm_mean_MPa": 41.0080515673099,
+      "vm_p95_MPa": 77.82857656433436
+    },
+    {
+      "name": "HBM3",
+      "normal": true,
+      "n_cells": 45,
+      "vm_max_MPa": 63.86941844422364,
+      "vm_mean_MPa": 35.082591677100794,
+      "vm_p95_MPa": 60.84602493527163
+    },
+    {
+      "name": "CIM_jia",
+      "normal": true,
+      "n_cells": 16,
+      "vm_max_MPa": 80.77685484932641,
+      "vm_mean_MPa": 67.38750845819172,
+      "vm_p95_MPa": 80.75314426529859
+    }
+  ]
+}

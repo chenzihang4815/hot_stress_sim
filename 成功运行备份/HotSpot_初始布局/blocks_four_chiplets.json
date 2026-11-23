@@ -1,0 +1,42 @@
+[
+  {
+    "name": "CPU_McPAT_A9",
+    "kind": "CPU",
+    "source": "/home/czh/任务仿真产生功耗文件工具/成功运行备份/McPAT/output/ARM_A9_2000.txt",
+    "area_mm2": 5.51463,
+    "power_W": 3.089805,
+    "notes": "官方 ARM_A9_2000.xml，2 核 Cortex-A9 风格；P=RuntimeDynamic(2.98062)+Leakage(0.109185)",
+    "side_if_square_mm": 2.3483249349270214,
+    "power_density_W_per_mm2": 0.5602923496227308
+  },
+  {
+    "name": "CPU_gem5_McPAT",
+    "kind": "CPU",
+    "source": "/home/czh/任务仿真产生功耗文件工具/成功运行备份/gem5/output/mcpat_from_gem5.txt",
+    "area_mm2": 13.6345,
+    "power_W": 0.8679134,
+    "notes": "gem5 hello/stats.txt 转 XML 后再跑 McPAT；hello 很短，动态功耗偏低；P=RuntimeDynamic(0.0840234)+Leakage(0.78389)",
+    "side_if_square_mm": 3.692492383201352,
+    "power_density_W_per_mm2": 0.0636556822765778
+  },
+  {
+    "name": "GPU_AccelSim",
+    "kind": "GPU",
+    "source": "/home/czh/任务仿真产生功耗文件工具/成功运行备份/Accel-Sim/官方下载/run_backprop/accelwattch_power_report.log",
+    "area_mm2": 815.0,
+    "power_W": 72.955,
+    "notes": "backprop kernel=_Z22bpnn_layerforward_CUDAPfS_S_S_ii；功率来自 AccelWattch kernel_avg_power；面积不是仿真器输出，采用 GV100 裸片 815.0 mm²",
+    "side_if_square_mm": 28.548204847240395,
+    "power_density_W_per_mm2": 0.08951533742331289
+  },
+  {
+    "name": "CIM_AccelForge",
+    "kind": "CIM",
+    "source": "/home/czh/任务仿真产生功耗文件工具/成功运行备份/AccelForge/cim_basic_analog/output/result.json",
+    "area_mm2": 0.04671951155777578,
+    "power_W": 0.0026253290280376118,
+    "notes": "功率=energy_J/latency_s；面积=各组件 area_m2 之和（MainMemory=0 不占面积）",
+    "side_if_square_mm": 0.21614696749613627,
+    "power_density_W_per_mm2": 0.056193417707096384
+  }
+]

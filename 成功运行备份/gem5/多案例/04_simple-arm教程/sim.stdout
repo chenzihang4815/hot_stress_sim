@@ -1,0 +1,14 @@
+Global frequency set at 1000000000000 ticks per second
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.1.0.1
+gem5 compiled Oct  7 2026 22:24:41
+gem5 started Oct  8 2026 00:38:14
+gem5 executing on czh-VMware-Virtual-Platform, pid 192934
+command line: '/home/czh/任务仿真产生功耗文件工具/gem5-stable/gem5-stable/build/ARM/gem5.opt' -d '/home/czh/任务仿真产生功耗文件工具/成功运行备份/gem5/多案例/04_simple-arm教程' configs/learning_gem5/part1/simple-arm.py
+
+info: Standard input is not a terminal, disabling listeners.
+Beginning simulation!
+Hello world!
+Exiting @ tick 388138000 because exiting with last active thread context

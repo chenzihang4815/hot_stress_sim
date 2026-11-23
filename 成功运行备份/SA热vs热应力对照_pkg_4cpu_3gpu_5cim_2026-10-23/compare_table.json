@@ -1,0 +1,41 @@
+{
+  "scheme": "pkg_4cpu_3gpu_5cim",
+  "title": "4 CPU + 3 GPU + 5 CIM（12 颗）",
+  "n_chiplets": 12,
+  "n_steps": 16,
+  "seed": 22,
+  "package_overrides": {
+    "pitch_die_mm": 2.0,
+    "pitch_coarse_mm": 8.0
+  },
+  "vm_metric": "worst interior von Mises among CPU/GPU and CIM≥1mm2",
+  "heat_only": {
+    "Tmax_init_C": 70.54000000000002,
+    "Tmax_best_C": 70.54000000000002,
+    "vm_chip_max_init_MPa": 150.21696900802894,
+    "vm_chip_max_best_MPa": 150.21696900802894,
+    "vm_chip_name_best": "GPU_TITANX",
+    "w_pv_init_um": 4.241153664688557,
+    "w_pv_best_um": 4.241153664688557,
+    "J_full_best": 3.05391389816636,
+    "accepted": 8
+  },
+  "coupled": {
+    "Tmax_init_C": 70.54000000000002,
+    "Tmax_best_C": 70.67000000000002,
+    "vm_chip_max_init_MPa": 150.21696900802894,
+    "vm_chip_max_best_MPa": 121.93538378010089,
+    "vm_chip_name_best": "GPU_TITANX",
+    "w_pv_init_um": 4.241153664688557,
+    "w_pv_best_um": 3.7974123161997984,
+    "J_full_best": 2.720830377325984,
+    "accepted": 8
+  },
+  "delta_coupled_minus_heat": {
+    "dTmax_C": 0.12999999999999545,
+    "d_vm_chip_max_MPa": -28.281585227928048,
+    "d_w_pv_um": -0.4437413484887589
+  },
+  "wall_s": 1492.2911245822906,
+  "finished_utc": "2026-10-25T13:43:33.639051+00:00"
+}

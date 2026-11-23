@@ -1,0 +1,95 @@
+{
+  "die_cell_max_C": 98.9498165570808,
+  "die_cell_min_C": 53.49367598397447,
+  "grad_max_K_per_mm": 5.1214161263786275,
+  "vm_normal_chip_max_MPa": 145.04226805667668,
+  "vm_normal_chip_name": "GPU_3070_Ga",
+  "vm_package_max_not_the_gate_MPa": 168.57773510788806,
+  "per_chip_T": [
+    {
+      "name": "T2_Ca",
+      "T_column_max_C": 85.8588969589606,
+      "T_column_mean_C": 76.6221765932446
+    },
+    {
+      "name": "GPU_3070_Ga",
+      "T_column_max_C": 98.80379688926763,
+      "T_column_mean_C": 94.16877268286073
+    },
+    {
+      "name": "CIM_jia_m64",
+      "T_column_max_C": 69.34418728794884,
+      "T_column_mean_C": 66.3134824242911
+    },
+    {
+      "name": "HBM3",
+      "T_column_max_C": 83.51123206108804,
+      "T_column_mean_C": 79.62739194747168
+    },
+    {
+      "name": "CIM_colonnade_m512",
+      "T_column_max_C": 77.04058620538473,
+      "T_column_mean_C": 73.20513234482043
+    }
+  ],
+  "chip_interiors": [
+    {
+      "name": "T2_Ca",
+      "area_mm2": 273.375,
+      "normal": true,
+      "n_cells": 117,
+      "vm_max_MPa": 97.87333903690866,
+      "vm_p95_MPa": 68.56943597041072,
+      "vm_mean_MPa": 37.63033217335933,
+      "gate_chip": true
+    },
+    {
+      "name": "GPU_3070_Ga",
+      "area_mm2": 389.8125,
+      "normal": true,
+      "n_cells": 152,
+      "vm_max_MPa": 145.04226805667668,
+      "vm_p95_MPa": 125.32948164685058,
+      "vm_mean_MPa": 52.515843339487176,
+      "gate_chip": true
+    },
+    {
+      "name": "CIM_jia_m64",
+      "area_mm2": 273.375,
+      "normal": true,
+      "n_cells": 105,
+      "vm_max_MPa": 123.86428386168376,
+      "vm_p95_MPa": 95.89014158531737,
+      "vm_mean_MPa": 55.56212838808273,
+      "gate_chip": true
+    },
+    {
+      "name": "HBM3",
+      "area_mm2": 121.50000000000001,
+      "normal": true,
+      "n_cells": 50,
+      "vm_max_MPa": 135.04129745671628,
+      "vm_p95_MPa": 117.9514369174886,
+      "vm_mean_MPa": 69.60340515665395,
+      "gate_chip": false
+    },
+    {
+      "name": "CIM_colonnade_m512",
+      "area_mm2": 121.50000000000001,
+      "normal": true,
+      "n_cells": 50,
+      "vm_max_MPa": 124.8064200673275,
+      "vm_p95_MPa": 117.64698241889457,
+      "vm_mean_MPa": 76.22684394417941,
+      "gate_chip": true
+    }
+  ],
+  "heat_s": 2.2117421627044678,
+  "elast_s": 27.851892948150635,
+  "grid": [
+    38,
+    34,
+    16
+  ],
+  "note": "门槛用 die_cell_max_C 和 vm_normal_chip_max_MPa。vm_package_max 是整包最大，含边缘奇点，不是门槛。HBM 不进正常芯片。网格是代理的 2 mm / 8 mm，不是对齐检查用的 1.125 mm。梯度是芯粒层柱平均温度的相邻差分，单位 K/mm。"
+}

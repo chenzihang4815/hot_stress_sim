@@ -1,0 +1,7 @@
+  underfill 第 20 步 峰值 53.23 最优 53.03
+  underfill 第 40 步 峰值 53.42 最优 53.03
+  underfill 第 60 步 峰值 53.26 最优 53.03
+  underfill 第 80 步 峰值 53.33 最优 53.03
+  underfill 第 100 步 峰值 53.33 最优 53.03
+  underfill 第 120 步 峰值 53.32 最优 53.03
+{"fill": "underfill", "start_factor_s": 0.6241482599871233, "exact_solve_s": 57.78693230205681, "frozen_solve_s": 2.064004725019913, "start_Tmax_C": 53.08969390429786, "best_Tmax_C": 53.02585270843349, "err_max_over_steps_K": 26.389654513804714}

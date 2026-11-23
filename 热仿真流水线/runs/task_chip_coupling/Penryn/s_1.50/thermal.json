@@ -1,0 +1,47 @@
+{
+  "model": "Penryn",
+  "s": 1.5,
+  "cores": 2,
+  "f_MHz": 3700,
+  "area_mm2": 91.1348,
+  "side_mm": 9.546454839363145,
+  "McPAT_T_K": 330,
+  "converged": true,
+  "power_W": 78.34692705479452,
+  "dyn_W": 71.89725,
+  "leak_W": 6.44967705479452,
+  "leak_frac": 0.08232201692203862,
+  "Tmax_C": 59.129999999999995,
+  "fail_T": false,
+  "Theta_serial_rel": 1.5,
+  "Theta_parallel_rel": 3.0,
+  "trace": [
+    {
+      "bin_K": 350,
+      "power_W": 80.08269417808219,
+      "dyn_W": 71.89725,
+      "leak_W": 8.185444178082191,
+      "T_C": 59.44,
+      "next_bin_K": 330
+    },
+    {
+      "bin_K": 330,
+      "power_W": 78.34692705479452,
+      "dyn_W": 71.89725,
+      "leak_W": 6.44967705479452,
+      "T_C": 59.129999999999995,
+      "next_bin_K": 330
+    }
+  ],
+  "stress": {
+    "Tmax_C": 69.54416094461988,
+    "vm_normal_chip_max_MPa": 33.735908069967735,
+    "vm_normal_chip_name": "Penryn",
+    "vm_normal_chip_p95_MPa": 33.73590744863938,
+    "w_pv_um": 0.055340334284949444,
+    "elapsed_s": 1.1355926990509033
+  },
+  "sigma_MPa": 33.735908069967735,
+  "fail_sigma": false,
+  "feasible": true
+}

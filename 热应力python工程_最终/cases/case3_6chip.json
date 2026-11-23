@@ -1,0 +1,24 @@
+{
+  "name": "case3_6chip",
+  "description": "GPU + four HBM + CPU. Layout-relative mm. Same package auto-size as other Case 3 files.",
+  "chips": [
+    {"name": "HBM0", "x_mm": 0,  "y_mm": 2,  "w_mm": 6,  "h_mm": 8, "t_um": 150, "power_W": 6},
+    {"name": "GPU",  "x_mm": 7,  "y_mm": 0,  "w_mm": 12, "h_mm": 12, "t_um": 150, "power_W": 40},
+    {"name": "HBM1", "x_mm": 20, "y_mm": 2,  "w_mm": 6,  "h_mm": 8, "t_um": 150, "power_W": 6},
+    {"name": "HBM2", "x_mm": 0,  "y_mm": 13, "w_mm": 6,  "h_mm": 8, "t_um": 150, "power_W": 6},
+    {"name": "CPU",  "x_mm": 8,  "y_mm": 13, "w_mm": 10, "h_mm": 10, "t_um": 150, "power_W": 25},
+    {"name": "HBM3", "x_mm": 20, "y_mm": 13, "w_mm": 6,  "h_mm": 8, "t_um": 150, "power_W": 6}
+  ],
+  "package": {
+    "tim_um": 20,
+    "t_spreader_mm": 1.0,
+    "t_sink_mm": 6.9,
+    "t_substrate_mm": 1.0,
+    "t_interposer_um": 100.0,
+    "r_convec_K_per_W": 0.1,
+    "ambient_C": 45,
+    "pitch_die_mm": 0.5,
+    "pitch_coarse_mm": 3.0,
+    "fill_die": false
+  }
+}

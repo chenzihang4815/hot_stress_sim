@@ -1,0 +1,17 @@
+{"step": 0, "op": "init", "accept": true, "Tmax_C": 63.650000000000034, "vm_chip_max_MPa": 74.33419570492292, "vm_chip_name": "GPU_2060S", "w_pv_um": 2.4178519010747523, "J": 0.7460000000000013, "T": 2.0}
+{"step": 1, "op": "rotate CPU_starter", "T": 2.0, "arm": "heat_only", "accept": false, "reason": "illegal"}
+{"step": 2, "op": "nudge GPU_2060S (0.5,0.0)mm", "T": 1.9, "arm": "heat_only", "accept": false, "reason": "illegal"}
+{"step": 3, "op": "swap GPU_3070<->CPU_matmul", "T": 1.805, "arm": "heat_only", "accept": false, "reason": "illegal"}
+{"step": 4, "op": "nudge GPU_3070 (-1.5,0.0)mm", "T": 1.7147499999999998, "arm": "heat_only", "accept": false, "reason": "illegal"}
+{"step": 5, "op": "rotate CIM_wang", "T": 1.6290124999999998, "arm": "heat_only", "Tmax_C": 63.650000000000034, "vm_chip_max_MPa": 74.33419570492292, "vm_chip_name": null, "w_pv_um": 2.4178519010747523, "J": 0.7460000000000013, "delta_J": 0.0, "ap": 1.0, "accept": true, "stressed": false}
+{"step": 6, "op": "jump+rot CIM_jia", "T": 1.5475618749999998, "arm": "heat_only", "accept": false, "reason": "illegal"}
+{"step": 7, "op": "jump GPU_3070", "T": 1.4701837812499996, "arm": "heat_only", "accept": false, "reason": "illegal"}
+{"step": 8, "op": "jump+rot GPU_2060S", "T": 1.3966745921874995, "arm": "heat_only", "Tmax_C": 63.75, "vm_chip_max_MPa": 74.33419570492292, "vm_chip_name": null, "w_pv_um": 2.4178519010747523, "J": 0.75, "delta_J": -0.003999999999998671, "ap": 0.9971401516176875, "accept": true, "stressed": false}
+{"step": 9, "op": "swap CPU_starter<->GPU_2060S", "T": 1.3268408625781245, "arm": "heat_only", "accept": false, "reason": "illegal"}
+{"step": 10, "op": "nudge GPU_3070 (0.0,1.0)mm", "T": 1.2604988194492182, "arm": "heat_only", "Tmax_C": 63.76000000000005, "vm_chip_max_MPa": 74.33419570492292, "vm_chip_name": null, "w_pv_um": 2.4178519010747523, "J": 0.750400000000002, "delta_J": -0.00040000000000195435, "ap": 0.9996827156570032, "accept": true, "stressed": false}
+{"step": 11, "op": "jump+rot GPU_3070", "T": 1.1974738784767571, "arm": "heat_only", "accept": false, "reason": "illegal"}
+{"step": 12, "op": "nudge CIM_jia (0.0,-1.5)mm", "T": 1.1376001845529191, "arm": "heat_only", "Tmax_C": 63.76000000000005, "vm_chip_max_MPa": 74.33419570492292, "vm_chip_name": null, "w_pv_um": 2.4178519010747523, "J": 0.750400000000002, "delta_J": 0.0, "ap": 1.0, "accept": true, "stressed": false}
+{"step": 13, "op": "rotate GPU_2060S", "T": 1.080720175325273, "arm": "heat_only", "Tmax_C": 63.57000000000005, "vm_chip_max_MPa": 74.33419570492292, "vm_chip_name": null, "w_pv_um": 2.4178519010747523, "J": 0.742800000000002, "delta_J": 0.00759999999999994, "ap": 1.0, "accept": true, "stressed": false, "new_best": true}
+{"step": 14, "op": "rotate GPU_3070", "T": 1.0266841665590094, "arm": "heat_only", "Tmax_C": 63.910000000000025, "vm_chip_max_MPa": 74.33419570492292, "vm_chip_name": null, "w_pv_um": 2.4178519010747523, "J": 0.756400000000001, "delta_J": -0.013599999999998946, "ap": 0.9868408216734936, "accept": true, "stressed": false}
+{"step": 15, "op": "swap CPU_matmul<->CPU_starter", "T": 0.9753499582310589, "arm": "heat_only", "accept": false, "reason": "illegal"}
+{"step": 16, "op": "jump+rot GPU_3070", "T": 0.9265824603195059, "arm": "heat_only", "accept": false, "reason": "illegal"}

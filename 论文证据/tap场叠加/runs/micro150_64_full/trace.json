@@ -1,0 +1,2025 @@
+[
+ {
+  "step": 2,
+  "moved": 1,
+  "rot": 0,
+  "from": [
+   36.0,
+   13.0
+  ],
+  "to": [
+   37.0,
+   13.0
+  ],
+  "temp": 113.1,
+  "accepted": true,
+  "solve_secs": 22.7,
+  "solves": 2
+ },
+ {
+  "step": 3,
+  "moved": 6,
+  "rot": 0,
+  "from": [
+   26.0,
+   37.0
+  ],
+  "to": [
+   26.0,
+   43.0
+  ],
+  "temp": 112.8,
+  "accepted": true,
+  "solve_secs": 34.0,
+  "solves": 3
+ },
+ {
+  "step": 4,
+  "moved": 3,
+  "rot": 0,
+  "from": [
+   14.0,
+   25.0
+  ],
+  "to": [
+   15.0,
+   25.0
+  ],
+  "temp": 113.45,
+  "accepted": false,
+  "solve_secs": 45.2,
+  "solves": 4
+ },
+ {
+  "step": 5,
+  "moved": 3,
+  "rot": 0,
+  "from": [
+   14.0,
+   25.0
+  ],
+  "to": [
+   15.0,
+   25.0
+  ],
+  "temp": 113.45,
+  "accepted": false,
+  "solve_secs": 56.5,
+  "solves": 5
+ },
+ {
+  "step": 6,
+  "moved": 0,
+  "rot": 0,
+  "from": [
+   26.0,
+   13.0
+  ],
+  "to": [
+   25.0,
+   13.0
+  ],
+  "temp": 112.79,
+  "accepted": true,
+  "solve_secs": 67.7,
+  "solves": 6
+ },
+ {
+  "step": 7,
+  "moved": 2,
+  "rot": 0,
+  "from": [
+   26.0,
+   25.0
+  ],
+  "to": [
+   25.0,
+   25.0
+  ],
+  "temp": 113.02,
+  "accepted": true,
+  "solve_secs": 78.9,
+  "solves": 7
+ },
+ {
+  "step": 8,
+  "moved": 2,
+  "rot": 1,
+  "from": [
+   25.0,
+   25.0
+  ],
+  "to": [
+   40.0,
+   36.0
+  ],
+  "temp": 106.43,
+  "accepted": true,
+  "solve_secs": 89.9,
+  "solves": 8
+ },
+ {
+  "step": 9,
+  "moved": 5,
+  "rot": 0,
+  "from": [
+   36.0,
+   23.0
+  ],
+  "to": [
+   35.0,
+   23.0
+  ],
+  "temp": 106.49,
+  "accepted": true,
+  "solve_secs": 102.8,
+  "solves": 9
+ },
+ {
+  "step": 10,
+  "moved": 2,
+  "rot": 0,
+  "from": [
+   40.0,
+   36.0
+  ],
+  "to": [
+   40.0,
+   35.0
+  ],
+  "temp": 106.67,
+  "accepted": true,
+  "solve_secs": 114.0,
+  "solves": 10
+ },
+ {
+  "step": 11,
+  "moved": 7,
+  "rot": 0,
+  "from": [
+   14.0,
+   35.0
+  ],
+  "to": [
+   15.0,
+   35.0
+  ],
+  "temp": 106.68,
+  "accepted": true,
+  "solve_secs": 125.0,
+  "solves": 11
+ },
+ {
+  "step": 12,
+  "moved": 3,
+  "rot": 0,
+  "from": [
+   14.0,
+   25.0
+  ],
+  "to": [
+   14.0,
+   24.0
+  ],
+  "temp": 106.96,
+  "accepted": true,
+  "solve_secs": 135.9,
+  "solves": 12
+ },
+ {
+  "step": 13,
+  "moved": 4,
+  "rot": 0,
+  "from": [
+   14.0,
+   13.0
+  ],
+  "to": [
+   14.0,
+   12.0
+  ],
+  "temp": 106.96,
+  "accepted": true,
+  "solve_secs": 146.8,
+  "solves": 13
+ },
+ {
+  "step": 14,
+  "moved": 4,
+  "rot": 0,
+  "from": [
+   14.0,
+   12.0
+  ],
+  "to": [
+   13.0,
+   12.0
+  ],
+  "temp": 106.9,
+  "accepted": true,
+  "solve_secs": 158.1,
+  "solves": 14
+ },
+ {
+  "step": 15,
+  "moved": 4,
+  "rot": 0,
+  "from": [
+   13.0,
+   12.0
+  ],
+  "to": [
+   13.0,
+   11.0
+  ],
+  "temp": 106.88,
+  "accepted": true,
+  "solve_secs": 169.2,
+  "solves": 15
+ },
+ {
+  "step": 16,
+  "moved": 2,
+  "rot": 0,
+  "from": [
+   40.0,
+   35.0
+  ],
+  "to": [
+   41.0,
+   35.0
+  ],
+  "temp": 106.75,
+  "accepted": true,
+  "solve_secs": 180.2,
+  "solves": 16
+ },
+ {
+  "step": 17,
+  "moved": 4,
+  "rot": 0,
+  "from": [
+   13.0,
+   11.0
+  ],
+  "to": [
+   14.0,
+   11.0
+  ],
+  "temp": 106.8,
+  "accepted": true,
+  "solve_secs": 191.3,
+  "solves": 17
+ },
+ {
+  "step": 18,
+  "moved": 0,
+  "rot": 0,
+  "from": [
+   25.0,
+   13.0
+  ],
+  "to": [
+   25.0,
+   12.0
+  ],
+  "temp": 106.33,
+  "accepted": true,
+  "solve_secs": 202.3,
+  "solves": 18
+ },
+ {
+  "step": 19,
+  "moved": 5,
+  "rot": 0,
+  "from": [
+   35.0,
+   23.0
+  ],
+  "to": [
+   30.0,
+   24.0
+  ],
+  "temp": 106.49,
+  "accepted": true,
+  "solve_secs": 213.3,
+  "solves": 19
+ },
+ {
+  "step": 20,
+  "moved": 4,
+  "rot": 0,
+  "from": [
+   14.0,
+   11.0
+  ],
+  "to": [
+   15.0,
+   11.0
+  ],
+  "temp": 106.54,
+  "accepted": true,
+  "solve_secs": 224.4,
+  "solves": 20
+ },
+ {
+  "step": 21,
+  "moved": 3,
+  "rot": 0,
+  "from": [
+   14.0,
+   24.0
+  ],
+  "to": [
+   13.0,
+   24.0
+  ],
+  "temp": 106.24,
+  "accepted": true,
+  "solve_secs": 235.5,
+  "solves": 21
+ },
+ {
+  "step": 22,
+  "moved": 7,
+  "rot": 1,
+  "from": [
+   15.0,
+   35.0
+  ],
+  "to": [
+   43.0,
+   25.0
+  ],
+  "temp": 106.35,
+  "accepted": true,
+  "solve_secs": 246.5,
+  "solves": 22
+ },
+ {
+  "step": 23,
+  "moved": 1,
+  "rot": 0,
+  "from": [
+   37.0,
+   13.0
+  ],
+  "to": [
+   37.0,
+   14.0
+  ],
+  "temp": 106.35,
+  "accepted": true,
+  "solve_secs": 257.5,
+  "solves": 23
+ },
+ {
+  "step": 24,
+  "moved": 2,
+  "rot": 0,
+  "from": [
+   41.0,
+   35.0
+  ],
+  "to": [
+   41.0,
+   36.0
+  ],
+  "temp": 106.19,
+  "accepted": true,
+  "solve_secs": 268.4,
+  "solves": 24
+ },
+ {
+  "step": 25,
+  "moved": 3,
+  "rot": 0,
+  "from": [
+   13.0,
+   24.0
+  ],
+  "to": [
+   12.0,
+   24.0
+  ],
+  "temp": 105.89,
+  "accepted": true,
+  "solve_secs": 279.4,
+  "solves": 25
+ },
+ {
+  "step": 26,
+  "moved": 1,
+  "rot": 0,
+  "from": [
+   37.0,
+   14.0
+  ],
+  "to": [
+   36.0,
+   14.0
+  ],
+  "temp": 106.56,
+  "accepted": true,
+  "solve_secs": 290.5,
+  "solves": 26
+ },
+ {
+  "step": 27,
+  "moved": 1,
+  "rot": 0,
+  "from": [
+   36.0,
+   14.0
+  ],
+  "to": [
+   37.0,
+   14.0
+  ],
+  "temp": 105.89,
+  "accepted": true,
+  "solve_secs": 301.5,
+  "solves": 27
+ },
+ {
+  "step": 28,
+  "moved": 2,
+  "rot": 0,
+  "from": [
+   41.0,
+   36.0
+  ],
+  "to": [
+   42.0,
+   36.0
+  ],
+  "temp": 105.78,
+  "accepted": true,
+  "solve_secs": 312.5,
+  "solves": 28
+ },
+ {
+  "step": 29,
+  "moved": 1,
+  "rot": 0,
+  "from": [
+   37.0,
+   14.0
+  ],
+  "to": [
+   37.0,
+   13.0
+  ],
+  "temp": 105.79,
+  "accepted": true,
+  "solve_secs": 323.5,
+  "solves": 29
+ },
+ {
+  "step": 30,
+  "moved": 4,
+  "rot": 0,
+  "from": [
+   15.0,
+   11.0
+  ],
+  "to": [
+   15.0,
+   10.0
+  ],
+  "temp": 105.78,
+  "accepted": true,
+  "solve_secs": 334.5,
+  "solves": 30
+ },
+ {
+  "step": 31,
+  "moved": 5,
+  "rot": 0,
+  "from": [
+   30.0,
+   24.0
+  ],
+  "to": [
+   30.0,
+   23.0
+  ],
+  "temp": 105.85,
+  "accepted": true,
+  "solve_secs": 345.4,
+  "solves": 31
+ },
+ {
+  "step": 32,
+  "moved": 5,
+  "rot": 0,
+  "from": [
+   30.0,
+   23.0
+  ],
+  "to": [
+   30.0,
+   24.0
+  ],
+  "temp": 105.78,
+  "accepted": true,
+  "solve_secs": 356.5,
+  "solves": 32
+ },
+ {
+  "step": 33,
+  "moved": 0,
+  "rot": 0,
+  "from": [
+   25.0,
+   12.0
+  ],
+  "to": [
+   25.0,
+   11.0
+  ],
+  "temp": 105.3,
+  "accepted": true,
+  "solve_secs": 367.5,
+  "solves": 33
+ },
+ {
+  "step": 34,
+  "moved": 6,
+  "rot": 0,
+  "from": [
+   26.0,
+   43.0
+  ],
+  "to": [
+   25.0,
+   43.0
+  ],
+  "temp": 105.3,
+  "accepted": true,
+  "solve_secs": 378.5,
+  "solves": 34
+ },
+ {
+  "step": 35,
+  "moved": 7,
+  "rot": 0,
+  "from": [
+   43.0,
+   25.0
+  ],
+  "to": [
+   42.0,
+   25.0
+  ],
+  "temp": 105.33,
+  "accepted": true,
+  "solve_secs": 389.6,
+  "solves": 35
+ },
+ {
+  "step": 36,
+  "moved": 3,
+  "rot": 0,
+  "from": [
+   12.0,
+   24.0
+  ],
+  "to": [
+   11.0,
+   24.0
+  ],
+  "temp": 105.07,
+  "accepted": true,
+  "solve_secs": 400.5,
+  "solves": 36
+ },
+ {
+  "step": 37,
+  "moved": 4,
+  "rot": 0,
+  "from": [
+   15.0,
+   10.0
+  ],
+  "to": [
+   14.0,
+   10.0
+  ],
+  "temp": 105.01,
+  "accepted": true,
+  "solve_secs": 411.4,
+  "solves": 37
+ },
+ {
+  "step": 38,
+  "moved": 3,
+  "rot": 0,
+  "from": [
+   11.0,
+   24.0
+  ],
+  "to": [
+   13.0,
+   41.0
+  ],
+  "temp": 102.8,
+  "accepted": true,
+  "solve_secs": 422.3,
+  "solves": 38
+ },
+ {
+  "step": 39,
+  "moved": 1,
+  "rot": 0,
+  "from": [
+   37.0,
+   13.0
+  ],
+  "to": [
+   37.0,
+   12.0
+  ],
+  "temp": 102.45,
+  "accepted": true,
+  "solve_secs": 433.2,
+  "solves": 39
+ },
+ {
+  "step": 40,
+  "moved": 4,
+  "rot": 1,
+  "from": [
+   14.0,
+   10.0
+  ],
+  "to": [
+   8.0,
+   8.0
+  ],
+  "temp": 102.28,
+  "accepted": true,
+  "solve_secs": 443.9,
+  "solves": 40
+ },
+ {
+  "step": 41,
+  "moved": 1,
+  "rot": 0,
+  "from": [
+   37.0,
+   12.0
+  ],
+  "to": [
+   37.0,
+   13.0
+  ],
+  "temp": 102.63,
+  "accepted": false,
+  "solve_secs": 454.6,
+  "solves": 41
+ },
+ {
+  "step": 42,
+  "moved": 6,
+  "rot": 1,
+  "from": [
+   25.0,
+   43.0
+  ],
+  "to": [
+   7.0,
+   23.0
+  ],
+  "temp": 102.32,
+  "accepted": true,
+  "solve_secs": 465.5,
+  "solves": 42
+ },
+ {
+  "step": 43,
+  "moved": 0,
+  "rot": 0,
+  "from": [
+   25.0,
+   11.0
+  ],
+  "to": [
+   26.0,
+   11.0
+  ],
+  "temp": 103.01,
+  "accepted": true,
+  "solve_secs": 476.4,
+  "solves": 43
+ },
+ {
+  "step": 44,
+  "moved": 3,
+  "rot": 0,
+  "from": [
+   13.0,
+   41.0
+  ],
+  "to": [
+   13.0,
+   40.0
+  ],
+  "temp": 103.12,
+  "accepted": true,
+  "solve_secs": 487.1,
+  "solves": 44
+ },
+ {
+  "step": 45,
+  "moved": 3,
+  "rot": 0,
+  "from": [
+   13.0,
+   40.0
+  ],
+  "to": [
+   12.0,
+   40.0
+  ],
+  "temp": 103.04,
+  "accepted": true,
+  "solve_secs": 497.9,
+  "solves": 45
+ },
+ {
+  "step": 46,
+  "moved": 0,
+  "rot": 0,
+  "from": [
+   26.0,
+   11.0
+  ],
+  "to": [
+   25.0,
+   11.0
+  ],
+  "temp": 102.35,
+  "accepted": true,
+  "solve_secs": 508.8,
+  "solves": 46
+ },
+ {
+  "step": 47,
+  "moved": 4,
+  "rot": 0,
+  "from": [
+   8.0,
+   8.0
+  ],
+  "to": [
+   8.0,
+   9.0
+  ],
+  "temp": 102.35,
+  "accepted": true,
+  "solve_secs": 519.6,
+  "solves": 47
+ },
+ {
+  "step": 48,
+  "moved": 0,
+  "rot": 0,
+  "from": [
+   25.0,
+   11.0
+  ],
+  "to": [
+   25.0,
+   10.0
+  ],
+  "temp": 102.22,
+  "accepted": true,
+  "solve_secs": 530.4,
+  "solves": 48
+ },
+ {
+  "step": 49,
+  "moved": 6,
+  "rot": 0,
+  "from": [
+   7.0,
+   23.0
+  ],
+  "to": [
+   8.0,
+   23.0
+  ],
+  "temp": 102.24,
+  "accepted": true,
+  "solve_secs": 541.2,
+  "solves": 49
+ },
+ {
+  "step": 50,
+  "moved": 7,
+  "rot": 0,
+  "from": [
+   42.0,
+   25.0
+  ],
+  "to": [
+   42.0,
+   24.0
+  ],
+  "temp": 102.31,
+  "accepted": true,
+  "solve_secs": 551.9,
+  "solves": 50
+ },
+ {
+  "step": 51,
+  "moved": 7,
+  "rot": 0,
+  "from": [
+   42.0,
+   24.0
+  ],
+  "to": [
+   43.0,
+   24.0
+  ],
+  "temp": 102.27,
+  "accepted": true,
+  "solve_secs": 562.7,
+  "solves": 51
+ },
+ {
+  "step": 52,
+  "moved": 2,
+  "rot": 0,
+  "from": [
+   42.0,
+   36.0
+  ],
+  "to": [
+   42.0,
+   35.0
+  ],
+  "temp": 102.49,
+  "accepted": true,
+  "solve_secs": 573.5,
+  "solves": 52
+ },
+ {
+  "step": 53,
+  "moved": 6,
+  "rot": 0,
+  "from": [
+   8.0,
+   23.0
+  ],
+  "to": [
+   8.0,
+   24.0
+  ],
+  "temp": 102.48,
+  "accepted": true,
+  "solve_secs": 584.2,
+  "solves": 53
+ },
+ {
+  "step": 54,
+  "moved": 7,
+  "rot": 0,
+  "from": [
+   43.0,
+   24.0
+  ],
+  "to": [
+   44.0,
+   24.0
+  ],
+  "temp": 102.45,
+  "accepted": true,
+  "solve_secs": 595.0,
+  "solves": 54
+ },
+ {
+  "step": 55,
+  "moved": 7,
+  "rot": 0,
+  "from": [
+   44.0,
+   24.0
+  ],
+  "to": [
+   44.0,
+   23.0
+  ],
+  "temp": 102.5,
+  "accepted": true,
+  "solve_secs": 605.8,
+  "solves": 55
+ },
+ {
+  "step": 56,
+  "moved": 0,
+  "rot": 0,
+  "from": [
+   25.0,
+   10.0
+  ],
+  "to": [
+   25.0,
+   11.0
+  ],
+  "temp": 102.63,
+  "accepted": true,
+  "solve_secs": 616.5,
+  "solves": 56
+ },
+ {
+  "step": 57,
+  "moved": 2,
+  "rot": 1,
+  "from": [
+   42.0,
+   35.0
+  ],
+  "to": [
+   35.0,
+   39.0
+  ],
+  "temp": 102.35,
+  "accepted": true,
+  "solve_secs": 627.4,
+  "solves": 57
+ },
+ {
+  "step": 58,
+  "moved": 7,
+  "rot": 0,
+  "from": [
+   44.0,
+   23.0
+  ],
+  "to": [
+   43.0,
+   23.0
+  ],
+  "temp": 102.38,
+  "accepted": true,
+  "solve_secs": 638.3,
+  "solves": 58
+ },
+ {
+  "step": 59,
+  "moved": 3,
+  "rot": 0,
+  "from": [
+   12.0,
+   40.0
+  ],
+  "to": [
+   12.0,
+   39.0
+  ],
+  "temp": 102.51,
+  "accepted": true,
+  "solve_secs": 649.2,
+  "solves": 59
+ },
+ {
+  "step": 60,
+  "moved": 5,
+  "rot": 0,
+  "from": [
+   30.0,
+   24.0
+  ],
+  "to": [
+   30.0,
+   23.0
+  ],
+  "temp": 102.58,
+  "accepted": true,
+  "solve_secs": 660.0,
+  "solves": 60
+ },
+ {
+  "step": 61,
+  "moved": 4,
+  "rot": 0,
+  "from": [
+   8.0,
+   9.0
+  ],
+  "to": [
+   8.0,
+   10.0
+  ],
+  "temp": 102.58,
+  "accepted": true,
+  "solve_secs": 671.2,
+  "solves": 61
+ },
+ {
+  "step": 62,
+  "moved": 6,
+  "rot": 0,
+  "from": [
+   8.0,
+   24.0
+  ],
+  "to": [
+   9.0,
+   24.0
+  ],
+  "temp": 102.62,
+  "accepted": false,
+  "solve_secs": 682.3,
+  "solves": 62
+ },
+ {
+  "step": 63,
+  "moved": 0,
+  "rot": 0,
+  "from": [
+   25.0,
+   11.0
+  ],
+  "to": [
+   24.0,
+   11.0
+  ],
+  "temp": 102.07,
+  "accepted": true,
+  "solve_secs": 693.4,
+  "solves": 63
+ },
+ {
+  "step": 64,
+  "moved": 0,
+  "rot": 0,
+  "from": [
+   24.0,
+   11.0
+  ],
+  "to": [
+   25.0,
+   11.0
+  ],
+  "temp": 102.58,
+  "accepted": true,
+  "solve_secs": 704.3,
+  "solves": 64
+ },
+ {
+  "step": 65,
+  "moved": 3,
+  "rot": 0,
+  "from": [
+   12.0,
+   39.0
+  ],
+  "to": [
+   12.0,
+   38.0
+  ],
+  "temp": 102.73,
+  "accepted": true,
+  "solve_secs": 715.4,
+  "solves": 65
+ },
+ {
+  "step": 66,
+  "moved": 6,
+  "rot": 0,
+  "from": [
+   8.0,
+   24.0
+  ],
+  "to": [
+   7.0,
+   24.0
+  ],
+  "temp": 102.7,
+  "accepted": true,
+  "solve_secs": 726.3,
+  "solves": 66
+ },
+ {
+  "step": 67,
+  "moved": 0,
+  "rot": 0,
+  "from": [
+   25.0,
+   11.0
+  ],
+  "to": [
+   25.0,
+   12.0
+  ],
+  "temp": 103.11,
+  "accepted": true,
+  "solve_secs": 737.4,
+  "solves": 67
+ },
+ {
+  "step": 68,
+  "moved": 1,
+  "rot": 1,
+  "from": [
+   37.0,
+   12.0
+  ],
+  "to": [
+   37.0,
+   11.0
+  ],
+  "temp": 102.98,
+  "accepted": true,
+  "solve_secs": 748.5,
+  "solves": 68
+ },
+ {
+  "step": 69,
+  "moved": 7,
+  "rot": 0,
+  "from": [
+   43.0,
+   23.0
+  ],
+  "to": [
+   43.0,
+   24.0
+  ],
+  "temp": 102.96,
+  "accepted": true,
+  "solve_secs": 759.7,
+  "solves": 69
+ },
+ {
+  "step": 70,
+  "moved": 4,
+  "rot": 1,
+  "from": [
+   8.0,
+   10.0
+  ],
+  "to": [
+   23.0,
+   40.0
+  ],
+  "temp": 102.66,
+  "accepted": true,
+  "solve_secs": 770.8,
+  "solves": 70
+ },
+ {
+  "step": 71,
+  "moved": 7,
+  "rot": 0,
+  "from": [
+   43.0,
+   24.0
+  ],
+  "to": [
+   44.0,
+   24.0
+  ],
+  "temp": 102.63,
+  "accepted": true,
+  "solve_secs": 782.1,
+  "solves": 71
+ },
+ {
+  "step": 72,
+  "moved": 2,
+  "rot": 0,
+  "from": [
+   35.0,
+   39.0
+  ],
+  "to": [
+   41.0,
+   43.0
+  ],
+  "temp": 101.65,
+  "accepted": true,
+  "solve_secs": 793.2,
+  "solves": 72
+ },
+ {
+  "step": 73,
+  "moved": 6,
+  "rot": 0,
+  "from": [
+   7.0,
+   24.0
+  ],
+  "to": [
+   7.0,
+   25.0
+  ],
+  "temp": 101.63,
+  "accepted": true,
+  "solve_secs": 804.3,
+  "solves": 73
+ },
+ {
+  "step": 74,
+  "moved": 0,
+  "rot": 0,
+  "from": [
+   25.0,
+   12.0
+  ],
+  "to": [
+   25.0,
+   11.0
+  ],
+  "temp": 101.29,
+  "accepted": true,
+  "solve_secs": 815.2,
+  "solves": 74
+ },
+ {
+  "step": 75,
+  "moved": 6,
+  "rot": 0,
+  "from": [
+   7.0,
+   25.0
+  ],
+  "to": [
+   7.0,
+   24.0
+  ],
+  "temp": 101.31,
+  "accepted": true,
+  "solve_secs": 826.3,
+  "solves": 75
+ },
+ {
+  "step": 76,
+  "moved": 6,
+  "rot": 0,
+  "from": [
+   7.0,
+   24.0
+  ],
+  "to": [
+   11.0,
+   21.0
+  ],
+  "temp": 101.51,
+  "accepted": true,
+  "solve_secs": 837.5,
+  "solves": 76
+ },
+ {
+  "step": 77,
+  "moved": 6,
+  "rot": 0,
+  "from": [
+   11.0,
+   21.0
+  ],
+  "to": [
+   11.0,
+   20.0
+  ],
+  "temp": 101.54,
+  "accepted": true,
+  "solve_secs": 848.6,
+  "solves": 77
+ },
+ {
+  "step": 78,
+  "moved": 6,
+  "rot": 0,
+  "from": [
+   11.0,
+   20.0
+  ],
+  "to": [
+   11.0,
+   21.0
+  ],
+  "temp": 101.51,
+  "accepted": true,
+  "solve_secs": 859.6,
+  "solves": 78
+ },
+ {
+  "step": 79,
+  "moved": 6,
+  "rot": 0,
+  "from": [
+   11.0,
+   21.0
+  ],
+  "to": [
+   10.0,
+   21.0
+  ],
+  "temp": 101.47,
+  "accepted": true,
+  "solve_secs": 870.7,
+  "solves": 79
+ },
+ {
+  "step": 80,
+  "moved": 6,
+  "rot": 0,
+  "from": [
+   10.0,
+   21.0
+  ],
+  "to": [
+   10.0,
+   20.0
+  ],
+  "temp": 101.49,
+  "accepted": true,
+  "solve_secs": 881.8,
+  "solves": 80
+ },
+ {
+  "step": 81,
+  "moved": 4,
+  "rot": 0,
+  "from": [
+   23.0,
+   40.0
+  ],
+  "to": [
+   24.0,
+   40.0
+  ],
+  "temp": 101.5,
+  "accepted": true,
+  "solve_secs": 893.1,
+  "solves": 81
+ },
+ {
+  "step": 82,
+  "moved": 2,
+  "rot": 0,
+  "from": [
+   41.0,
+   43.0
+  ],
+  "to": [
+   40.0,
+   43.0
+  ],
+  "temp": 101.56,
+  "accepted": true,
+  "solve_secs": 904.3,
+  "solves": 82
+ },
+ {
+  "step": 83,
+  "moved": 3,
+  "rot": 0,
+  "from": [
+   12.0,
+   38.0
+  ],
+  "to": [
+   13.0,
+   38.0
+  ],
+  "temp": 101.63,
+  "accepted": true,
+  "solve_secs": 915.3,
+  "solves": 83
+ },
+ {
+  "step": 84,
+  "moved": 3,
+  "rot": 0,
+  "from": [
+   13.0,
+   38.0
+  ],
+  "to": [
+   13.0,
+   39.0
+  ],
+  "temp": 101.48,
+  "accepted": true,
+  "solve_secs": 926.3,
+  "solves": 84
+ },
+ {
+  "step": 85,
+  "moved": 1,
+  "rot": 0,
+  "from": [
+   37.0,
+   11.0
+  ],
+  "to": [
+   36.0,
+   11.0
+  ],
+  "temp": 102.12,
+  "accepted": true,
+  "solve_secs": 937.3,
+  "solves": 85
+ },
+ {
+  "step": 86,
+  "moved": 6,
+  "rot": 0,
+  "from": [
+   10.0,
+   20.0
+  ],
+  "to": [
+   10.0,
+   19.0
+  ],
+  "temp": 102.14,
+  "accepted": true,
+  "solve_secs": 948.5,
+  "solves": 86
+ },
+ {
+  "step": 87,
+  "moved": 5,
+  "rot": 0,
+  "from": [
+   30.0,
+   23.0
+  ],
+  "to": [
+   30.0,
+   22.0
+  ],
+  "temp": 102.2,
+  "accepted": true,
+  "solve_secs": 959.7,
+  "solves": 87
+ },
+ {
+  "step": 88,
+  "moved": 0,
+  "rot": 1,
+  "from": [
+   25.0,
+   11.0
+  ],
+  "to": [
+   8.0,
+   29.0
+  ],
+  "temp": 102.16,
+  "accepted": true,
+  "solve_secs": 971.0,
+  "solves": 88
+ },
+ {
+  "step": 89,
+  "moved": 6,
+  "rot": 0,
+  "from": [
+   10.0,
+   19.0
+  ],
+  "to": [
+   11.0,
+   19.0
+  ],
+  "temp": 102.17,
+  "accepted": true,
+  "solve_secs": 982.2,
+  "solves": 89
+ },
+ {
+  "step": 90,
+  "moved": 6,
+  "rot": 0,
+  "from": [
+   11.0,
+   19.0
+  ],
+  "to": [
+   12.0,
+   19.0
+  ],
+  "temp": 102.18,
+  "accepted": true,
+  "solve_secs": 993.4,
+  "solves": 90
+ },
+ {
+  "step": 91,
+  "moved": 3,
+  "rot": 0,
+  "from": [
+   13.0,
+   39.0
+  ],
+  "to": [
+   12.0,
+   39.0
+  ],
+  "temp": 102.17,
+  "accepted": true,
+  "solve_secs": 1004.5,
+  "solves": 91
+ },
+ {
+  "step": 92,
+  "moved": 4,
+  "rot": 1,
+  "from": [
+   24.0,
+   40.0
+  ],
+  "to": [
+   29.0,
+   41.0
+  ],
+  "temp": 101.87,
+  "accepted": true,
+  "solve_secs": 1015.6,
+  "solves": 92
+ },
+ {
+  "step": 93,
+  "moved": 2,
+  "rot": 0,
+  "from": [
+   40.0,
+   43.0
+  ],
+  "to": [
+   41.0,
+   43.0
+  ],
+  "temp": 101.69,
+  "accepted": true,
+  "solve_secs": 1026.6,
+  "solves": 93
+ },
+ {
+  "step": 94,
+  "moved": 5,
+  "rot": 1,
+  "from": [
+   30.0,
+   22.0
+  ],
+  "to": [
+   23.0,
+   16.0
+  ],
+  "temp": 101.74,
+  "accepted": true,
+  "solve_secs": 1037.6,
+  "solves": 94
+ },
+ {
+  "step": 95,
+  "moved": 3,
+  "rot": 0,
+  "from": [
+   12.0,
+   39.0
+  ],
+  "to": [
+   12.0,
+   38.0
+  ],
+  "temp": 102.65,
+  "accepted": false,
+  "solve_secs": 1048.6,
+  "solves": 95
+ },
+ {
+  "step": 96,
+  "moved": 7,
+  "rot": 0,
+  "from": [
+   44.0,
+   24.0
+  ],
+  "to": [
+   43.0,
+   24.0
+  ],
+  "temp": 101.76,
+  "accepted": true,
+  "solve_secs": 1059.8,
+  "solves": 96
+ },
+ {
+  "step": 97,
+  "moved": 6,
+  "rot": 1,
+  "from": [
+   12.0,
+   19.0
+  ],
+  "to": [
+   8.0,
+   10.0
+  ],
+  "temp": 101.4,
+  "accepted": true,
+  "solve_secs": 1071.0,
+  "solves": 97
+ },
+ {
+  "step": 98,
+  "moved": 3,
+  "rot": 0,
+  "from": [
+   12.0,
+   39.0
+  ],
+  "to": [
+   13.0,
+   39.0
+  ],
+  "temp": 101.38,
+  "accepted": true,
+  "solve_secs": 1081.8,
+  "solves": 98
+ },
+ {
+  "step": 99,
+  "moved": 2,
+  "rot": 0,
+  "from": [
+   41.0,
+   43.0
+  ],
+  "to": [
+   42.0,
+   43.0
+  ],
+  "temp": 101.23,
+  "accepted": true,
+  "solve_secs": 1092.5,
+  "solves": 99
+ },
+ {
+  "step": 100,
+  "moved": 0,
+  "rot": 1,
+  "from": [
+   8.0,
+   29.0
+  ],
+  "to": [
+   13.0,
+   27.0
+  ],
+  "temp": 102.0,
+  "accepted": false,
+  "solve_secs": 1103.2,
+  "solves": 100
+ },
+ {
+  "step": 101,
+  "moved": 2,
+  "rot": 0,
+  "from": [
+   42.0,
+   43.0
+  ],
+  "to": [
+   43.0,
+   43.0
+  ],
+  "temp": 101.07,
+  "accepted": true,
+  "solve_secs": 1113.9,
+  "solves": 101
+ },
+ {
+  "step": 102,
+  "moved": 4,
+  "rot": 0,
+  "from": [
+   29.0,
+   41.0
+  ],
+  "to": [
+   28.0,
+   41.0
+  ],
+  "temp": 101.12,
+  "accepted": true,
+  "solve_secs": 1124.6,
+  "solves": 102
+ },
+ {
+  "step": 103,
+  "moved": 5,
+  "rot": 0,
+  "from": [
+   23.0,
+   16.0
+  ],
+  "to": [
+   22.0,
+   16.0
+  ],
+  "temp": 101.13,
+  "accepted": true,
+  "solve_secs": 1135.3,
+  "solves": 103
+ },
+ {
+  "step": 104,
+  "moved": 0,
+  "rot": 0,
+  "from": [
+   8.0,
+   29.0
+  ],
+  "to": [
+   8.0,
+   28.0
+  ],
+  "temp": 100.53,
+  "accepted": true,
+  "solve_secs": 1145.9,
+  "solves": 104
+ },
+ {
+  "step": 105,
+  "moved": 4,
+  "rot": 0,
+  "from": [
+   28.0,
+   41.0
+  ],
+  "to": [
+   32.0,
+   39.0
+  ],
+  "temp": 100.35,
+  "accepted": true,
+  "solve_secs": 1156.5,
+  "solves": 105
+ },
+ {
+  "step": 106,
+  "moved": 2,
+  "rot": 0,
+  "from": [
+   43.0,
+   43.0
+  ],
+  "to": [
+   42.0,
+   43.0
+  ],
+  "temp": 100.51,
+  "accepted": true,
+  "solve_secs": 1167.2,
+  "solves": 106
+ },
+ {
+  "step": 107,
+  "moved": 0,
+  "rot": 0,
+  "from": [
+   8.0,
+   28.0
+  ],
+  "to": [
+   8.0,
+   27.0
+  ],
+  "temp": 99.97,
+  "accepted": true,
+  "solve_secs": 1178.0,
+  "solves": 107
+ },
+ {
+  "step": 108,
+  "moved": 3,
+  "rot": 0,
+  "from": [
+   13.0,
+   39.0
+  ],
+  "to": [
+   13.0,
+   40.0
+  ],
+  "temp": 99.39,
+  "accepted": true,
+  "solve_secs": 1188.8,
+  "solves": 108
+ },
+ {
+  "step": 109,
+  "moved": 0,
+  "rot": 0,
+  "from": [
+   8.0,
+   27.0
+  ],
+  "to": [
+   9.0,
+   27.0
+  ],
+  "temp": 99.74,
+  "accepted": false,
+  "solve_secs": 1199.5,
+  "solves": 109
+ },
+ {
+  "step": 110,
+  "moved": 3,
+  "rot": 0,
+  "from": [
+   13.0,
+   40.0
+  ],
+  "to": [
+   13.0,
+   41.0
+  ],
+  "temp": 98.81,
+  "accepted": true,
+  "solve_secs": 1210.2,
+  "solves": 110
+ },
+ {
+  "step": 111,
+  "moved": 0,
+  "rot": 0,
+  "from": [
+   8.0,
+   27.0
+  ],
+  "to": [
+   8.0,
+   26.0
+  ],
+  "temp": 98.47,
+  "accepted": true,
+  "solve_secs": 1220.8,
+  "solves": 111
+ },
+ {
+  "step": 112,
+  "moved": 2,
+  "rot": 0,
+  "from": [
+   42.0,
+   43.0
+  ],
+  "to": [
+   42.0,
+   44.0
+  ],
+  "temp": 98.43,
+  "accepted": true,
+  "solve_secs": 1231.4,
+  "solves": 112
+ },
+ {
+  "step": 113,
+  "moved": 5,
+  "rot": 0,
+  "from": [
+   22.0,
+   16.0
+  ],
+  "to": [
+   23.0,
+   16.0
+  ],
+  "temp": 98.4,
+  "accepted": true,
+  "solve_secs": 1242.0,
+  "solves": 113
+ },
+ {
+  "step": 114,
+  "moved": 3,
+  "rot": 0,
+  "from": [
+   13.0,
+   41.0
+  ],
+  "to": [
+   12.0,
+   41.0
+  ],
+  "temp": 98.51,
+  "accepted": true,
+  "solve_secs": 1252.6,
+  "solves": 114
+ },
+ {
+  "step": 115,
+  "moved": 7,
+  "rot": 0,
+  "from": [
+   43.0,
+   24.0
+  ],
+  "to": [
+   43.0,
+   25.0
+  ],
+  "temp": 98.51,
+  "accepted": true,
+  "solve_secs": 1263.2,
+  "solves": 115
+ },
+ {
+  "step": 116,
+  "moved": 5,
+  "rot": 0,
+  "from": [
+   23.0,
+   16.0
+  ],
+  "to": [
+   22.0,
+   16.0
+  ],
+  "temp": 98.54,
+  "accepted": true,
+  "solve_secs": 1273.8,
+  "solves": 116
+ },
+ {
+  "step": 117,
+  "moved": 3,
+  "rot": 1,
+  "from": [
+   12.0,
+   41.0
+  ],
+  "to": [
+   16.0,
+   43.0
+  ],
+  "temp": 97.83,
+  "accepted": true,
+  "solve_secs": 1284.4,
+  "solves": 117
+ },
+ {
+  "step": 118,
+  "moved": 7,
+  "rot": 0,
+  "from": [
+   43.0,
+   25.0
+  ],
+  "to": [
+   44.0,
+   25.0
+  ],
+  "temp": 97.81,
+  "accepted": true,
+  "solve_secs": 1294.8,
+  "solves": 118
+ },
+ {
+  "step": 119,
+  "moved": 6,
+  "rot": 0,
+  "from": [
+   8.0,
+   10.0
+  ],
+  "to": [
+   8.0,
+   11.0
+  ],
+  "temp": 97.83,
+  "accepted": true,
+  "solve_secs": 1305.4,
+  "solves": 119
+ },
+ {
+  "step": 120,
+  "moved": 7,
+  "rot": 0,
+  "from": [
+   44.0,
+   25.0
+  ],
+  "to": [
+   44.0,
+   26.0
+  ],
+  "temp": 97.84,
+  "accepted": true,
+  "solve_secs": 1316.0,
+  "solves": 120
+ }
+]

@@ -1,0 +1,67 @@
+{
+  "label": "n5",
+  "n_chips": 5,
+  "source": "热仿真流水线/runs/closed_loop_suite/n5_epoxy/hotspot_init/layout.json",
+  "solver": "四层网格加 8 个外伸节点，均热片 96 mm，热沉 96 mm，无冷边",
+  "chips": [
+    {
+      "name": "Xeon_Ca",
+      "kind": "CPU",
+      "power_W": 103.94599,
+      "area_mm2": 425.25
+    },
+    {
+      "name": "GPU_3070_Ga",
+      "kind": "GPU",
+      "power_W": 66.88781634908364,
+      "area_mm2": 389.8125
+    },
+    {
+      "name": "CIM_jia_m64",
+      "kind": "CIM",
+      "power_W": 0.02051619509144024,
+      "area_mm2": 273.375
+    },
+    {
+      "name": "HBM3",
+      "kind": "HBM",
+      "power_W": 28.656,
+      "area_mm2": 121.5
+    },
+    {
+      "name": "CIM_colonnade_m512",
+      "kind": "CIM",
+      "power_W": 0.2967109271348416,
+      "area_mm2": 121.5
+    }
+  ],
+  "power_W": 199.80703347130992,
+  "start_C": 67.79677656864135,
+  "factor_once_s": 0.37274071801221,
+  "exact_total_s": 80.96175691927783,
+  "exact_best_C": 60.908064571050545,
+  "exact": {
+    "assemble_s": 24.618022586102597,
+    "factor_s": 55.17462241247995,
+    "solve_s": 1.1691119206952862,
+    "accept": 64,
+    "legal": 200
+  },
+  "iter_total_s": 38.379893211124,
+  "iter_priced_C": 60.90828823179635,
+  "iter_exact_C": 60.90829572570425,
+  "iter": {
+    "assemble_s": 26.18817358132219,
+    "solve_s": 11.8189789117896,
+    "accept": 67,
+    "legal": 200
+  },
+  "check_s": 0.3029339730273932,
+  "grid_max_abs_K": 0.02572348210162545,
+  "peak_price_minus_exact_K": -7.493907901334751e-06,
+  "speedup": 2.109483642226809,
+  "steps": 200,
+  "seed": 22,
+  "n_iter": 8,
+  "acceptance": "只接受温度更低的布局"
+}

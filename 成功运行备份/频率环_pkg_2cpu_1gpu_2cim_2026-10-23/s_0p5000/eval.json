@@ -1,0 +1,31 @@
+{
+  "s": 0.5,
+  "Tmax_C": 54.55000000000001,
+  "sigma_chip_max_MPa": 31.619289581391612,
+  "sigma_chip_name": "CIM_jia",
+  "w_pv_um": 0.6772199727312131,
+  "ATSim_Tmax_C": 56.67962049269232,
+  "feasible": true,
+  "fail_T": false,
+  "fail_sigma": false,
+  "elapsed_s": 22.817850589752197,
+  "power_W": {
+    "CPU_matmul": 0.8928785,
+    "CPU_threads": 0.8700235,
+    "GPU_3070": 60.89885,
+    "CIM_jia": 0.0027731351494352146,
+    "CIM_colonnade": 0.04119819389066705
+  },
+  "stress": {
+    "vm_normal_chip_max_MPa": 31.619289581391612,
+    "vm_normal_chip_name": "CIM_jia",
+    "w_pv_um": 0.6772199727312131,
+    "Tmax_C": 56.67962049269232,
+    "elapsed_s": 20.395963191986084
+  },
+  "Theta_CPU_rel": 0.5,
+  "Theta_GPU_rel": 0.5,
+  "Theta_CIM_rel": 1.0,
+  "Theta_pkg": 0.6666666666666666,
+  "note": "CPU/GPU IPC held fixed so relative throughput = s; CIM analog latency_s unchanged"
+}

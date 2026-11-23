@@ -1,0 +1,86 @@
+[
+  {
+    "step": 0,
+    "die_cell_max_C": 62.5298288335573,
+    "vm_MPa": 47.12982181064859,
+    "vm_name": "CIM_jia_m64"
+  },
+  {
+    "step": 1,
+    "die_cell_max_C": 63.120497274577986,
+    "vm_MPa": 54.148090173238565,
+    "vm_name": "CIM_jia_m64"
+  },
+  {
+    "step": 4,
+    "die_cell_max_C": 63.936290971005405,
+    "vm_MPa": 55.87513836883247,
+    "vm_name": "CIM_jia_m64"
+  },
+  {
+    "step": 5,
+    "die_cell_max_C": 62.57607554008638,
+    "vm_MPa": 56.867747155660695,
+    "vm_name": "CIM_colonnade_m512"
+  },
+  {
+    "step": 7,
+    "die_cell_max_C": 65.36288721943214,
+    "vm_MPa": 45.59734357470758,
+    "vm_name": "GPU_3070_Ga"
+  },
+  {
+    "step": 10,
+    "die_cell_max_C": 62.57607554008638,
+    "vm_MPa": 56.867747155660695,
+    "vm_name": "CIM_colonnade_m512"
+  },
+  {
+    "step": 13,
+    "die_cell_max_C": 62.89687932700315,
+    "vm_MPa": 57.57390684487546,
+    "vm_name": "CIM_colonnade_m512"
+  },
+  {
+    "step": 16,
+    "die_cell_max_C": 62.74401786306828,
+    "vm_MPa": 58.67726083835584,
+    "vm_name": "CIM_colonnade_m512"
+  },
+  {
+    "step": 18,
+    "die_cell_max_C": 62.8146565638645,
+    "vm_MPa": 60.836681092258026,
+    "vm_name": "CIM_colonnade_m512"
+  },
+  {
+    "step": 21,
+    "die_cell_max_C": 62.6189197717041,
+    "vm_MPa": 62.61133752048881,
+    "vm_name": "GPU_3070_Ga"
+  },
+  {
+    "step": 25,
+    "die_cell_max_C": 62.617790889278126,
+    "vm_MPa": 62.591271538704085,
+    "vm_name": "GPU_3070_Ga"
+  },
+  {
+    "step": 29,
+    "die_cell_max_C": 62.77928493453226,
+    "vm_MPa": 62.861423675934816,
+    "vm_name": "GPU_3070_Ga"
+  },
+  {
+    "step": 37,
+    "die_cell_max_C": 62.8774708562986,
+    "vm_MPa": 65.32565241368205,
+    "vm_name": "GPU_3070_Ga"
+  },
+  {
+    "step": 38,
+    "die_cell_max_C": 60.127938610946046,
+    "vm_MPa": 55.60660771374742,
+    "vm_name": "GPU_3070_Ga"
+  }
+]

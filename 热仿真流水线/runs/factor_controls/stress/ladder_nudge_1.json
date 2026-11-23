@@ -1,0 +1,12 @@
+{
+  "tag": "ladder_nudge_1",
+  "fill_material": "silicon",
+  "vm_max_MPa": 89.38179126610135,
+  "vm_name": "Penryn",
+  "cpu_mean_MPa": 56.68348030573654,
+  "cpu_max_MPa": 89.38179126610135,
+  "cpu_n": 36,
+  "atsim_Tmax_C": 74.5722821674484,
+  "elapsed_s": 12.522037982940674,
+  "ndof": 34356
+}

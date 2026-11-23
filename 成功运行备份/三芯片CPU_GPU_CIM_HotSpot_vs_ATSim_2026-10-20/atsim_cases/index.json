@@ -1,0 +1,178 @@
+[
+  {
+    "id": "L2__basic",
+    "file": "cases/cpu_gpu_cim_lbfgs/L2__basic.json",
+    "title": "CPU Timing L1+L2 + GPU backprop + CIM basic_analog",
+    "CPU_mm2": 13.6345,
+    "CPU_W": 0.8679134,
+    "GPU_mm2": 815.0,
+    "GPU_W": 72.955,
+    "CIM_mm2": 0.04671951155777578,
+    "CIM_W": 0.0026253290280376118
+  },
+  {
+    "id": "L2__jia",
+    "file": "cases/cpu_gpu_cim_lbfgs/L2__jia.json",
+    "title": "CPU Timing L1+L2 + GPU backprop + CIM jia",
+    "CPU_mm2": 13.6345,
+    "CPU_W": 0.8679134,
+    "GPU_mm2": 815.0,
+    "GPU_W": 72.955,
+    "CIM_mm2": 4.281226257942074,
+    "CIM_W": 0.0027731351494352146
+  },
+  {
+    "id": "L2__colonnade",
+    "file": "cases/cpu_gpu_cim_lbfgs/L2__colonnade.json",
+    "title": "CPU Timing L1+L2 + GPU backprop + CIM colonnade",
+    "CPU_mm2": 13.6345,
+    "CPU_W": 0.8679134,
+    "GPU_mm2": 815.0,
+    "GPU_W": 72.955,
+    "CIM_mm2": 0.231359891352,
+    "CIM_W": 0.04119819389066705
+  },
+  {
+    "id": "L2__wang",
+    "file": "cases/cpu_gpu_cim_lbfgs/L2__wang.json",
+    "title": "CPU Timing L1+L2 + GPU backprop + CIM wang",
+    "CPU_mm2": 13.6345,
+    "CPU_W": 0.8679134,
+    "GPU_mm2": 815.0,
+    "GPU_W": 72.955,
+    "CIM_mm2": 0.12203959822869019,
+    "CIM_W": 0.025999983362139024
+  },
+  {
+    "id": "noCache__basic",
+    "file": "cases/cpu_gpu_cim_lbfgs/noCache__basic.json",
+    "title": "CPU Timing no-cache + GPU backprop + CIM basic_analog",
+    "CPU_mm2": 2.90029,
+    "CPU_W": 0.6763172000000001,
+    "GPU_mm2": 815.0,
+    "GPU_W": 72.955,
+    "CIM_mm2": 0.04671951155777578,
+    "CIM_W": 0.0026253290280376118
+  },
+  {
+    "id": "noCache__jia",
+    "file": "cases/cpu_gpu_cim_lbfgs/noCache__jia.json",
+    "title": "CPU Timing no-cache + GPU backprop + CIM jia",
+    "CPU_mm2": 2.90029,
+    "CPU_W": 0.6763172000000001,
+    "GPU_mm2": 815.0,
+    "GPU_W": 72.955,
+    "CIM_mm2": 4.281226257942074,
+    "CIM_W": 0.0027731351494352146
+  },
+  {
+    "id": "noCache__colonnade",
+    "file": "cases/cpu_gpu_cim_lbfgs/noCache__colonnade.json",
+    "title": "CPU Timing no-cache + GPU backprop + CIM colonnade",
+    "CPU_mm2": 2.90029,
+    "CPU_W": 0.6763172000000001,
+    "GPU_mm2": 815.0,
+    "GPU_W": 72.955,
+    "CIM_mm2": 0.231359891352,
+    "CIM_W": 0.04119819389066705
+  },
+  {
+    "id": "noCache__wang",
+    "file": "cases/cpu_gpu_cim_lbfgs/noCache__wang.json",
+    "title": "CPU Timing no-cache + GPU backprop + CIM wang",
+    "CPU_mm2": 2.90029,
+    "CPU_W": 0.6763172000000001,
+    "GPU_mm2": 815.0,
+    "GPU_W": 72.955,
+    "CIM_mm2": 0.12203959822869019,
+    "CIM_W": 0.025999983362139024
+  },
+  {
+    "id": "atomic__basic",
+    "file": "cases/cpu_gpu_cim_lbfgs/atomic__basic.json",
+    "title": "CPU Atomic + GPU backprop + CIM basic_analog",
+    "CPU_mm2": 2.90029,
+    "CPU_W": 1.1435469999999999,
+    "GPU_mm2": 815.0,
+    "GPU_W": 72.955,
+    "CIM_mm2": 0.04671951155777578,
+    "CIM_W": 0.0026253290280376118
+  },
+  {
+    "id": "atomic__jia",
+    "file": "cases/cpu_gpu_cim_lbfgs/atomic__jia.json",
+    "title": "CPU Atomic + GPU backprop + CIM jia",
+    "CPU_mm2": 2.90029,
+    "CPU_W": 1.1435469999999999,
+    "GPU_mm2": 815.0,
+    "GPU_W": 72.955,
+    "CIM_mm2": 4.281226257942074,
+    "CIM_W": 0.0027731351494352146
+  },
+  {
+    "id": "atomic__colonnade",
+    "file": "cases/cpu_gpu_cim_lbfgs/atomic__colonnade.json",
+    "title": "CPU Atomic + GPU backprop + CIM colonnade",
+    "CPU_mm2": 2.90029,
+    "CPU_W": 1.1435469999999999,
+    "GPU_mm2": 815.0,
+    "GPU_W": 72.955,
+    "CIM_mm2": 0.231359891352,
+    "CIM_W": 0.04119819389066705
+  },
+  {
+    "id": "atomic__wang",
+    "file": "cases/cpu_gpu_cim_lbfgs/atomic__wang.json",
+    "title": "CPU Atomic + GPU backprop + CIM wang",
+    "CPU_mm2": 2.90029,
+    "CPU_W": 1.1435469999999999,
+    "GPU_mm2": 815.0,
+    "GPU_W": 72.955,
+    "CIM_mm2": 0.12203959822869019,
+    "CIM_W": 0.025999983362139024
+  },
+  {
+    "id": "starter__basic",
+    "file": "cases/cpu_gpu_cim_lbfgs/starter__basic.json",
+    "title": "CPU starter + GPU backprop + CIM basic_analog",
+    "CPU_mm2": 2.90029,
+    "CPU_W": 1.65068,
+    "GPU_mm2": 815.0,
+    "GPU_W": 72.955,
+    "CIM_mm2": 0.04671951155777578,
+    "CIM_W": 0.0026253290280376118
+  },
+  {
+    "id": "starter__jia",
+    "file": "cases/cpu_gpu_cim_lbfgs/starter__jia.json",
+    "title": "CPU starter + GPU backprop + CIM jia",
+    "CPU_mm2": 2.90029,
+    "CPU_W": 1.65068,
+    "GPU_mm2": 815.0,
+    "GPU_W": 72.955,
+    "CIM_mm2": 4.281226257942074,
+    "CIM_W": 0.0027731351494352146
+  },
+  {
+    "id": "starter__colonnade",
+    "file": "cases/cpu_gpu_cim_lbfgs/starter__colonnade.json",
+    "title": "CPU starter + GPU backprop + CIM colonnade",
+    "CPU_mm2": 2.90029,
+    "CPU_W": 1.65068,
+    "GPU_mm2": 815.0,
+    "GPU_W": 72.955,
+    "CIM_mm2": 0.231359891352,
+    "CIM_W": 0.04119819389066705
+  },
+  {
+    "id": "starter__wang",
+    "file": "cases/cpu_gpu_cim_lbfgs/starter__wang.json",
+    "title": "CPU starter + GPU backprop + CIM wang",
+    "CPU_mm2": 2.90029,
+    "CPU_W": 1.65068,
+    "GPU_mm2": 815.0,
+    "GPU_W": 72.955,
+    "CIM_mm2": 0.12203959822869019,
+    "CIM_W": 0.025999983362139024
+  }
+]

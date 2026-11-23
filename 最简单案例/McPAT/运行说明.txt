@@ -1,0 +1,62 @@
+McPAT —— 最简单案例（ARM Cortex-A9, 40nm, 2GHz）
+================================================
+
+这是三个工具里唯一「源码已完整拷进来、Linux 上几分钟能跑通」的。
+
+输入：  input/ARM_A9_2000.xml          官方样例（微结构 param + 活动 stat）
+期望：  expected/ARM_A9_2000.txt       官方打印的功耗树
+源码：  src/                           McPAT 1.0（已把 -m32 改成 64 位 g++）
+
+------------------------------------------------
+A. Windows 上现在就能做（只需 Python）
+------------------------------------------------
+
+cd 到本目录后：
+
+  python scripts/read_mcpat_output.py expected/ARM_A9_2000.txt
+
+应看到 Processor 级：
+  Area            ≈ 5.51 mm^2
+  Peak Power      ≈ 1.77 W
+  Runtime Dynamic ≈ 2.98 W
+
+这就是 McPAT 的输出长什么样。热仿真以后要的，就是这里的 Runtime Dynamic（这段任务的动态功耗）。
+
+------------------------------------------------
+B. Linux 上真正跑 McPAT
+------------------------------------------------
+
+依赖：g++、make、pthread（Ubuntu: sudo apt-get install build-essential）
+
+  cd src
+  make -j4
+  ./mcpat -infile ../input/ARM_A9_2000.xml -print_level 5 -opt_for_clk 1 > ../output/ARM_A9_run.txt
+
+对照：
+
+  python ../scripts/read_mcpat_output.py ../output/ARM_A9_run.txt
+  # 应和 expected/ARM_A9_2000.txt 同一量级（浮点可能有微小差别）
+
+常用参数：
+  -infile        必填，XML
+  -print_level   0~5，5 打到 cache / ALU 这一层
+  -opt_for_clk   1=尽量满足目标频率（默认）；0=只优化 ED^2P，更快
+
+------------------------------------------------
+C. 和 gem5 接起来
+------------------------------------------------
+
+不要手改 XML 里几十个 stat。用上一级的：
+
+  python ../gem5/scripts/gem5_stats_to_mcpat.py \
+      --template input/ARM_A9_2000.xml \
+      --stats    ../gem5/sample_m5out/stats.txt \
+      --out      output/from_gem5.xml
+
+然后：
+
+  ./src/mcpat -infile output/from_gem5.xml -print_level 5 > output/from_gem5.txt
+
+XML 里：
+  <param>  芯片长什么样（核数、工艺、cache 容量）——来自模板，别用 gem5 随便改
+  <stat>   这段程序有多忙（周期、指令、cache 访问）——来自 gem5 stats.txt

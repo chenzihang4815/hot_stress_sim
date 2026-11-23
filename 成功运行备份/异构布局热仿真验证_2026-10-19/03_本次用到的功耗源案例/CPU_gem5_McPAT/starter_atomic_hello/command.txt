@@ -1,0 +1,1 @@
+configs/example/arm/starter_se.py --cpu atomic -- tests/test-progs/hello/bin/arm/linux/hello

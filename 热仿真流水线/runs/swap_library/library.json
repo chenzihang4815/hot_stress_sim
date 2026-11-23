@@ -1,0 +1,491 @@
+{
+  "built": "2026-11-15",
+  "rule": "基本案例 practice_1cpu_1gpu：CPU 槽假装可换 Penryn、T2、Xeon；GPU 槽可换 2060S、3070、TITANX，这三张是同一道 backprop 的实测。不改生产 SA。",
+  "groups": [
+    {
+      "task_id": "mcpat_pretend_same_task",
+      "use_for_practice": true,
+      "binary_not_rerun": "任务名用 x86 192×192 matmul。这三颗没有重跑 gem5，也没有把 matmul 送进 McPAT。",
+      "note": "面积、核数、主频、380 K 功耗是官方模板的数，不是改出来的。假装同一道任务只体现在吞吐：serial 正比于主频，parallel 正比于核数乘主频，基准是 Penryn 单线程 3700 MHz = 1。IPC 假定相同。单颗居中的 HotSpot 已经在 runs/task_chip_coupling，那不是这个封装的温度。",
+      "members": [
+        {
+          "id": "Penryn",
+          "kind": "CPU",
+          "pick_ok": true,
+          "constructed": false,
+          "use_for_practice": true,
+          "model": "Penryn",
+          "cores": 2,
+          "f_MHz": 3700,
+          "tech_nm": 45,
+          "device_type": "HP",
+          "area_mm2": 91.1348,
+          "dyn_W": 47.9315,
+          "sub_W": 10.7217,
+          "gate_W": 0.588125,
+          "power_W_380K": 59.241324999999996,
+          "Theta_serial_s1": 1.0,
+          "Theta_parallel_s1": 2.0,
+          "source": "McPAT official template, 380 K total. Not a gem5 run of this die."
+        },
+        {
+          "id": "T2",
+          "kind": "CPU",
+          "pick_ok": true,
+          "constructed": false,
+          "use_for_practice": true,
+          "model": "T2",
+          "cores": 8,
+          "f_MHz": 1400,
+          "tech_nm": 65,
+          "device_type": "HP",
+          "area_mm2": 273.523,
+          "dyn_W": 50.421,
+          "sub_W": 15.0682,
+          "gate_W": 3.50762,
+          "power_W_380K": 68.99682,
+          "Theta_serial_s1": 0.3783783783783784,
+          "Theta_parallel_s1": 3.027027027027027,
+          "source": "McPAT official template, 380 K total. Not a gem5 run of this die."
+        },
+        {
+          "id": "Xeon",
+          "kind": "CPU",
+          "pick_ok": true,
+          "constructed": false,
+          "use_for_practice": true,
+          "model": "Xeon",
+          "cores": 2,
+          "f_MHz": 3400,
+          "tech_nm": 65,
+          "device_type": "HP",
+          "area_mm2": 421.676,
+          "dyn_W": 66.8485,
+          "sub_W": 35.4132,
+          "gate_W": 1.68429,
+          "power_W_380K": 103.94599000000001,
+          "Theta_serial_s1": 0.918918918918919,
+          "Theta_parallel_s1": 1.837837837837838,
+          "source": "McPAT official template, 380 K total. Not a gem5 run of this die."
+        }
+      ]
+    },
+    {
+      "task_id": "x86_matmul192_constructed",
+      "binary": "成功运行备份/gem5/x86_tasks/src/matmul192.c",
+      "note": "同一道 192×192。三颗里只有 x1 是实测。x4 和 x16 只把面积和功耗按倍数放大。不拿来当基本案例：最大 14.99 W，换芯片几乎不动封装温度。",
+      "members": [
+        {
+          "id": "cpu_matmul192_x1",
+          "kind": "CPU",
+          "pick_ok": true,
+          "constructed": false,
+          "scale_area_and_power": 1,
+          "rule": "面积、动态功耗、漏电都乘同一个倍数，功耗密度保持这颗实测核。操作数和时间不乘。",
+          "cpu_model": "TimingSimpleCPU",
+          "caches": "L1+L2",
+          "cores": 1,
+          "f_MHz": 2000,
+          "tech_nm": 40,
+          "device_type": "LOP",
+          "area_mm2": 13.6345,
+          "dyn_W": 0.152807,
+          "leak_W": 0.78389,
+          "power_W": 0.936697,
+          "power_density_W_per_mm2": 0.06870050240199495,
+          "sim_insts": 29427225,
+          "sim_seconds": 0.099608,
+          "inst_per_s": 295430336.9207293,
+          "ipc": 0.147716,
+          "source_measurement": "成功运行备份/gem5/x86_tasks/matmul192_timing_l2",
+          "note": "x1 是这份 stats 和 McPAT。x4、x16 没有重跑 gem5，也没有重跑 McPAT。"
+        },
+        {
+          "id": "cpu_matmul192_x4",
+          "kind": "CPU",
+          "pick_ok": true,
+          "constructed": true,
+          "scale_area_and_power": 4,
+          "rule": "面积、动态功耗、漏电都乘同一个倍数，功耗密度保持这颗实测核。操作数和时间不乘。",
+          "cpu_model": "TimingSimpleCPU",
+          "caches": "L1+L2",
+          "cores": 1,
+          "f_MHz": 2000,
+          "tech_nm": 40,
+          "device_type": "LOP",
+          "area_mm2": 54.538,
+          "dyn_W": 0.611228,
+          "leak_W": 3.13556,
+          "power_W": 3.746788,
+          "power_density_W_per_mm2": 0.06870050240199495,
+          "sim_insts": 29427225,
+          "sim_seconds": 0.099608,
+          "inst_per_s": 295430336.9207293,
+          "ipc": 0.147716,
+          "source_measurement": "成功运行备份/gem5/x86_tasks/matmul192_timing_l2",
+          "note": "x1 是这份 stats 和 McPAT。x4、x16 没有重跑 gem5，也没有重跑 McPAT。"
+        },
+        {
+          "id": "cpu_matmul192_x16",
+          "kind": "CPU",
+          "pick_ok": true,
+          "constructed": true,
+          "scale_area_and_power": 16,
+          "rule": "面积、动态功耗、漏电都乘同一个倍数，功耗密度保持这颗实测核。操作数和时间不乘。",
+          "cpu_model": "TimingSimpleCPU",
+          "caches": "L1+L2",
+          "cores": 1,
+          "f_MHz": 2000,
+          "tech_nm": 40,
+          "device_type": "LOP",
+          "area_mm2": 218.152,
+          "dyn_W": 2.444912,
+          "leak_W": 12.54224,
+          "power_W": 14.987152,
+          "power_density_W_per_mm2": 0.06870050240199495,
+          "sim_insts": 29427225,
+          "sim_seconds": 0.099608,
+          "inst_per_s": 295430336.9207293,
+          "ipc": 0.147716,
+          "source_measurement": "成功运行备份/gem5/x86_tasks/matmul192_timing_l2",
+          "note": "x1 是这份 stats 和 McPAT。x4、x16 没有重跑 gem5，也没有重跑 McPAT。"
+        }
+      ],
+      "use_for_practice": false
+    },
+    {
+      "task_id": "arm_hello",
+      "binary": "gem5 tests/test-progs/hello/bin/arm/linux/hello",
+      "note": "同一份 hello。Timing 三套可以互相换：差别是 cache 和时钟，面积是这次 McPAT 算的。Atomic 两套也是这份程序，但几乎不模拟访存，速度不能和 Timing 比。",
+      "members": [
+        {
+          "id": "arm_hello_timing_l2",
+          "kind": "CPU",
+          "pick_ok": true,
+          "speed_comparable_with": "arm_hello_timing",
+          "cpu_model": "TimingSimpleCPU",
+          "caches": "L1+L2",
+          "cores": 1,
+          "f_MHz": 2000,
+          "f_source": "McPAT Core clock，与 gem5 cpu_clk_domain 500 ps 一致",
+          "tech_nm": 40,
+          "device_type": "LOP",
+          "area_mm2": 13.6345,
+          "area_source": "gem5_to_mcpat.py 后的 McPAT。有 L2，所以比无 cache 的 2.90 mm² 大",
+          "dyn_W": 0.0840234,
+          "leak_W": 0.78389,
+          "power_W": 0.8679134,
+          "sim_insts": 4994,
+          "sim_seconds": 3.5e-05,
+          "inst_per_s": 142685714.2857143,
+          "ipc": 0.072127,
+          "source": "成功运行备份/gem5/output"
+        },
+        {
+          "id": "arm_hello_timing_nocache",
+          "kind": "CPU",
+          "pick_ok": true,
+          "speed_comparable_with": "arm_hello_timing",
+          "cpu_model": "TimingSimpleCPU",
+          "caches": "none",
+          "cores": 1,
+          "f_MHz": 2000,
+          "f_source": "McPAT Core clock，与 gem5 cpu_clk_domain 500 ps 一致",
+          "tech_nm": 40,
+          "device_type": "LOP",
+          "area_mm2": 2.90029,
+          "area_source": "McPAT",
+          "dyn_W": 0.0566172,
+          "leak_W": 0.6197,
+          "power_W": 0.6763172,
+          "sim_insts": 4994,
+          "sim_seconds": 0.000334,
+          "inst_per_s": 14958083.83233533,
+          "ipc": 0.007525,
+          "source": "成功运行备份/gem5/多案例/01_se_timing_无cache"
+        },
+        {
+          "id": "arm_hello_simple",
+          "kind": "CPU",
+          "pick_ok": true,
+          "speed_comparable_with": "arm_hello_timing",
+          "cpu_model": "TimingSimpleCPU",
+          "caches": "none",
+          "cores": 1,
+          "f_MHz": 1000,
+          "f_source": "McPAT Core clock，与 system clk 1000 ps 一致",
+          "tech_nm": 40,
+          "device_type": "LOP",
+          "area_mm2": 2.90029,
+          "area_source": "McPAT",
+          "dyn_W": 0.056212,
+          "leak_W": 0.6197,
+          "power_W": 0.675912,
+          "sim_insts": 5914,
+          "sim_seconds": 0.000388,
+          "inst_per_s": 15242268.041237112,
+          "ipc": 0.015304,
+          "note": "同一个 hello 源程序，但这份 stats 的 simInsts 是 5914，不是 4994",
+          "source": "成功运行备份/gem5/多案例/04_simple-arm教程"
+        },
+        {
+          "id": "arm_hello_atomic_nocache",
+          "kind": "CPU",
+          "pick_ok": false,
+          "speed_comparable_with": "arm_hello_atomic",
+          "why_not_pick": "Atomic 几乎不模拟访存。0.000003 s 不是比 Timing 更快的硬件",
+          "cpu_model": "AtomicSimpleCPU",
+          "caches": "none",
+          "cores": 1,
+          "f_MHz": 2000,
+          "tech_nm": 40,
+          "device_type": "LOP",
+          "area_mm2": 2.90029,
+          "dyn_W": 0.523847,
+          "leak_W": 0.6197,
+          "power_W": 1.143547,
+          "sim_insts": 5020,
+          "sim_seconds": 3e-06,
+          "inst_per_s": 1673333333.3333333,
+          "ipc": 0.859442,
+          "source": "成功运行备份/gem5/多案例/02_se_atomic_无cache"
+        },
+        {
+          "id": "arm_hello_starter_atomic",
+          "kind": "CPU",
+          "pick_ok": false,
+          "speed_comparable_with": "arm_hello_atomic",
+          "why_not_pick": "starter 的 atomic，和 Timing 不是同一种时间",
+          "cpu_model": "AtomicSimpleCPU",
+          "caches": "starter",
+          "cores": 1,
+          "f_MHz": 4000,
+          "f_source": "McPAT Core clock。config 里有 250 ps 域",
+          "tech_nm": 40,
+          "device_type": "LOP",
+          "area_mm2": 2.90029,
+          "dyn_W": 1.03098,
+          "leak_W": 0.6197,
+          "power_W": 1.65068,
+          "sim_insts": 5020,
+          "sim_seconds": 1e-06,
+          "inst_per_s": 5020000000.0,
+          "source": "成功运行备份/gem5/多案例/03_starter_se_atomic"
+        }
+      ]
+    },
+    {
+      "task_id": "gpu_backprop",
+      "binary": "Accel-Sim backprop，两次 kernel：layerforward 与 adjust_weights",
+      "note": "指令数都约 3.707e5。面积不是 Accel-Sim 算的，是流水线里用的裸片面积。功耗是两次 kernel 按 gpu_sim_cycle 加权的平均。配置时钟不是产品标称频率。",
+      "members": [
+        {
+          "id": "GPU_2060S",
+          "kind": "GPU",
+          "pick_ok": true,
+          "area_mm2": 445.0,
+          "area_source": "流水线裸片面积，不是仿真器输出",
+          "f_MHz": 1905.0,
+          "f_source": "gpgpu_clock_domains 核心时钟",
+          "cycles": [
+            9553,
+            14545
+          ],
+          "sim_seconds": 1.26498687664042e-05,
+          "sim_insts": 370711,
+          "inst_per_s": 29305521412.565357,
+          "kernel_avg_power_W": [
+            72.6011,
+            70.1486
+          ],
+          "power_W": 71.12082725952361,
+          "const_W": 32.3252,
+          "static_W_cycle_weighted": 20.38510912938833,
+          "dyn_W": 18.410518130135276,
+          "source": "成功运行备份/Accel-Sim/小面积GPU_backprop/SM75_RTX2060_S",
+          "power_weight": "两次 kernel_avg_power 按 gpu_sim_cycle 加权"
+        },
+        {
+          "id": "GPU_3070",
+          "kind": "GPU",
+          "pick_ok": true,
+          "area_mm2": 392.0,
+          "area_source": "流水线裸片面积，不是仿真器输出",
+          "f_MHz": 1132.0,
+          "f_source": "gpgpu_clock_domains 核心时钟",
+          "cycles": [
+            8681,
+            13308
+          ],
+          "sim_seconds": 1.9424911660777386e-05,
+          "sim_insts": 370653,
+          "inst_per_s": 19081322297.51239,
+          "kernel_avg_power_W": [
+            66.8325,
+            66.9239
+          ],
+          "power_W": 66.88781634908364,
+          "const_W": 32.3252,
+          "static_W_cycle_weighted": 18.50819493837828,
+          "dyn_W": 16.054421410705352,
+          "source": "成功运行备份/Accel-Sim/小面积GPU_backprop/SM86_RTX3070",
+          "power_weight": "两次 kernel_avg_power 按 gpu_sim_cycle 加权"
+        },
+        {
+          "id": "GPU_TITANX",
+          "kind": "GPU",
+          "pick_ok": true,
+          "area_mm2": 471.0,
+          "area_source": "流水线裸片面积，不是仿真器输出",
+          "f_MHz": 1417.0,
+          "f_source": "gpgpu_clock_domains 核心时钟",
+          "cycles": [
+            9545,
+            20626
+          ],
+          "sim_seconds": 2.1292166549047284e-05,
+          "sim_insts": 370707,
+          "inst_per_s": 17410487521.12956,
+          "kernel_avg_power_W": [
+            65.6,
+            68.2434
+          ],
+          "power_W": 67.4071250008286,
+          "const_W": 32.3252,
+          "static_W_cycle_weighted": 24.55010003977329,
+          "dyn_W": 10.531824961055307,
+          "source": "成功运行备份/Accel-Sim/小面积GPU_backprop/SM6_TITANX",
+          "power_weight": "两次 kernel_avg_power 按 gpu_sim_cycle 加权"
+        },
+        {
+          "id": "GPU_official_backprop",
+          "kind": "GPU",
+          "pick_ok": false,
+          "why_not_pick": "同一份 backprop，但面积 815 mm² 是文献里的 GV100，不是这次仿真算的",
+          "area_mm2": 815.0,
+          "area_source": "blocks.py GPU_DIE_MM2，文献尺寸",
+          "f_MHz": 1132.0,
+          "cycles": [
+            7698,
+            7015
+          ],
+          "sim_seconds": 1.2997349823321555e-05,
+          "sim_insts": 370708,
+          "inst_per_s": 28521814449.806293,
+          "kernel_avg_power_W": [
+            72.955,
+            69.8707
+          ],
+          "power_W": 71.48443896554068,
+          "const_W": 32.3252,
+          "source": "成功运行备份/Accel-Sim/官方下载/run_backprop",
+          "static_W_cycle_weighted": 8.873323133963162,
+          "dyn_W": 30.285915831577512,
+          "power_weight": "两次 kernel_avg_power 按 gpu_sim_cycle 加权"
+        }
+      ]
+    }
+  ],
+  "not_selectable": {
+    "x86_same_core_different_program": {
+      "why": "都是 1 核 TimingSimpleCPU + L2，40 nm，13.6345 mm²，2000 MHz。程序不同，不能互相换来代表同一道任务。",
+      "machine": "成功运行备份/gem5/x86_tasks",
+      "programs": [
+        {
+          "id": "matmul64",
+          "sim_insts": 1297322,
+          "sim_seconds": 0.002706,
+          "dyn_W": 0.217977,
+          "leak_W": 0.78389
+        },
+        {
+          "id": "matmul192",
+          "sim_insts": 29427225,
+          "sim_seconds": 0.099608,
+          "dyn_W": 0.152807,
+          "leak_W": 0.78389,
+          "note": "stats 里的数。封装公式里的 11675900 / 0.0243 s 不在这份 stats 中"
+        },
+        {
+          "id": "matmul256",
+          "sim_insts": 68982324,
+          "sim_seconds": 0.233079,
+          "dyn_W": 0.152955,
+          "leak_W": 0.78389
+        },
+        {
+          "id": "threads",
+          "sim_insts": 1808180,
+          "sim_seconds": 0.004124,
+          "dyn_W": 0.172267,
+          "leak_W": 0.78389
+        },
+        {
+          "id": "mixbench",
+          "sim_insts": 6410742,
+          "sim_seconds": 0.010034,
+          "dyn_W": 0.219793,
+          "leak_W": 0.78389
+        }
+      ]
+    },
+    "mcpat_official_no_gem5": {
+      "why": "没有 gem5 stats。不能放进同任务换芯片。",
+      "chips": [
+        "Penryn",
+        "T2",
+        "Xeon"
+      ]
+    },
+    "gem5_stable_configs_not_run": {
+      "why": "开源树里可以换核跑同一份程序，但这棵树没有可用的 stats。m5out/stats.txt 是空的。没有面积、功耗、时间，不能进可选库。",
+      "tree": "gem5-stable/gem5-stable",
+      "se_py_knobs": [
+        "--cpu-type",
+        "--cpu-clock",
+        "--num-cpus",
+        "--caches",
+        "--l2cache"
+      ],
+      "cpu_types": [
+        "AtomicSimpleCPU",
+        "TimingSimpleCPU",
+        "O3CPU",
+        "MinorCPU"
+      ],
+      "arm_core_scripts": [
+        {
+          "name": "ex5_LITTLE",
+          "file": "configs/common/cores/arm/ex5_LITTLE.py"
+        },
+        {
+          "name": "ex5_big",
+          "file": "configs/common/cores/arm/ex5_big.py",
+          "fetchWidth": 3,
+          "numROBEntries": 60
+        },
+        {
+          "name": "O3_ARM_v7a",
+          "file": "configs/common/cores/arm/O3_ARM_v7a.py",
+          "fetchWidth": 3,
+          "numROBEntries": 40
+        },
+        {
+          "name": "neoverse_v2",
+          "file": "configs/common/cores/arm/neoverse_v2.py",
+          "fetchWidth": 6,
+          "numROBEntries": 320
+        },
+        {
+          "name": "HPI",
+          "file": "configs/common/cores/arm/HPI.py",
+          "model": "MinorCPU"
+        }
+      ]
+    },
+    "gpu_no_stats": [
+      "GeForceGTX750Ti",
+      "SM6_GTX1080"
+    ]
+  }
+}

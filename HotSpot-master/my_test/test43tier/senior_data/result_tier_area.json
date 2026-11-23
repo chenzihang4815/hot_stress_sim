@@ -1,0 +1,911 @@
+{
+  "timestamp": "2026-01-23T17:20:10",
+  "model": "BERT",
+  "design_mode": "tier-heterogeneous",
+  "total_tiers": 43,
+  "tiers": [
+    {
+      "tier_id": 0,
+      "area": {
+        "total_mm2": 11.46,
+        "ic_mm2": 1.95835,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.08757,
+        "other_mm2": 3.02556,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00338526,
+        "width_m": 0.00338526
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 1,
+      "area": {
+        "total_mm2": 11.1693,
+        "ic_mm2": 1.66767,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.08757,
+        "other_mm2": 3.02556,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00334205,
+        "width_m": 0.00334205
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 2,
+      "area": {
+        "total_mm2": 16.7803,
+        "ic_mm2": 1.37698,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.11498,
+        "other_mm2": 8.89983,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00409637,
+        "width_m": 0.00409637
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 3,
+      "area": {
+        "total_mm2": 17.3616,
+        "ic_mm2": 1.95835,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.11498,
+        "other_mm2": 8.89983,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00416673,
+        "width_m": 0.00416673
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 4,
+      "area": {
+        "total_mm2": 11.46,
+        "ic_mm2": 1.95835,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.08757,
+        "other_mm2": 3.02556,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00338526,
+        "width_m": 0.00338526
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 5,
+      "area": {
+        "total_mm2": 10.9293,
+        "ic_mm2": 1.37698,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.1383,
+        "other_mm2": 3.02556,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00330595,
+        "width_m": 0.00330595
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 6,
+      "area": {
+        "total_mm2": 16.7803,
+        "ic_mm2": 1.37698,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.11498,
+        "other_mm2": 8.89983,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00409637,
+        "width_m": 0.00409637
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 7,
+      "area": {
+        "total_mm2": 21.4197,
+        "ic_mm2": 1.78819,
+        "adc_mm2": 2.59872,
+        "accum_mm2": 3.27913,
+        "other_mm2": 9.49534,
+        "array_mm2": 3.55258
+      },
+      "tier_dimensions": {
+        "height_m": 0.00462814,
+        "width_m": 0.00462814
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 8,
+      "area": {
+        "total_mm2": 11.46,
+        "ic_mm2": 1.95835,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.08757,
+        "other_mm2": 3.02556,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00338526,
+        "width_m": 0.00338526
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 9,
+      "area": {
+        "total_mm2": 10.9293,
+        "ic_mm2": 1.37698,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.1383,
+        "other_mm2": 3.02556,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00330595,
+        "width_m": 0.00330595
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 10,
+      "area": {
+        "total_mm2": 16.808,
+        "ic_mm2": 1.37698,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.14275,
+        "other_mm2": 8.89983,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00409976,
+        "width_m": 0.00409976
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 11,
+      "area": {
+        "total_mm2": 16.7529,
+        "ic_mm2": 1.37698,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.08757,
+        "other_mm2": 8.89983,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00409303,
+        "width_m": 0.00409303
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 12,
+      "area": {
+        "total_mm2": 16.2766,
+        "ic_mm2": 2.51489,
+        "adc_mm2": 2.59872,
+        "accum_mm2": 3.28358,
+        "other_mm2": 3.62107,
+        "array_mm2": 3.55258
+      },
+      "tier_dimensions": {
+        "height_m": 0.00403442,
+        "width_m": 0.00403442
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 13,
+      "area": {
+        "total_mm2": 21.4474,
+        "ic_mm2": 1.78819,
+        "adc_mm2": 2.59872,
+        "accum_mm2": 3.30689,
+        "other_mm2": 9.49534,
+        "array_mm2": 3.55258
+      },
+      "tier_dimensions": {
+        "height_m": 0.00463114,
+        "width_m": 0.00463114
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 14,
+      "area": {
+        "total_mm2": 16.7529,
+        "ic_mm2": 1.37698,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.08757,
+        "other_mm2": 8.89983,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00409303,
+        "width_m": 0.00409303
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 15,
+      "area": {
+        "total_mm2": 11.46,
+        "ic_mm2": 1.95835,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.08757,
+        "other_mm2": 3.02556,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00338526,
+        "width_m": 0.00338526
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 16,
+      "area": {
+        "total_mm2": 10.9293,
+        "ic_mm2": 1.37698,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.1383,
+        "other_mm2": 3.02556,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00330595,
+        "width_m": 0.00330595
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 17,
+      "area": {
+        "total_mm2": 16.808,
+        "ic_mm2": 1.37698,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.14275,
+        "other_mm2": 8.89983,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00409976,
+        "width_m": 0.00409976
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 18,
+      "area": {
+        "total_mm2": 21.7556,
+        "ic_mm2": 2.15154,
+        "adc_mm2": 2.59872,
+        "accum_mm2": 3.25172,
+        "other_mm2": 9.49534,
+        "array_mm2": 3.55258
+      },
+      "tier_dimensions": {
+        "height_m": 0.00466429,
+        "width_m": 0.00466429
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 19,
+      "area": {
+        "total_mm2": 15.5822,
+        "ic_mm2": 1.78819,
+        "adc_mm2": 2.59872,
+        "accum_mm2": 3.31597,
+        "other_mm2": 3.62107,
+        "array_mm2": 3.55258
+      },
+      "tier_dimensions": {
+        "height_m": 0.00394743,
+        "width_m": 0.00394743
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 20,
+      "area": {
+        "total_mm2": 16.808,
+        "ic_mm2": 1.37698,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.14275,
+        "other_mm2": 8.89983,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00409976,
+        "width_m": 0.00409976
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 21,
+      "area": {
+        "total_mm2": 17.3342,
+        "ic_mm2": 1.95835,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.08757,
+        "other_mm2": 8.89983,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00416344,
+        "width_m": 0.00416344
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 22,
+      "area": {
+        "total_mm2": 10.8786,
+        "ic_mm2": 1.37698,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.08757,
+        "other_mm2": 3.02556,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00329827,
+        "width_m": 0.00329827
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 23,
+      "area": {
+        "total_mm2": 10.9293,
+        "ic_mm2": 1.37698,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.1383,
+        "other_mm2": 3.02556,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00330595,
+        "width_m": 0.00330595
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 24,
+      "area": {
+        "total_mm2": 22.1741,
+        "ic_mm2": 2.51489,
+        "adc_mm2": 2.59872,
+        "accum_mm2": 3.30689,
+        "other_mm2": 9.49534,
+        "array_mm2": 3.55258
+      },
+      "tier_dimensions": {
+        "height_m": 0.00470894,
+        "width_m": 0.00470894
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 25,
+      "area": {
+        "total_mm2": 15.8813,
+        "ic_mm2": 2.15154,
+        "adc_mm2": 2.59872,
+        "accum_mm2": 3.25172,
+        "other_mm2": 3.62107,
+        "array_mm2": 3.55258
+      },
+      "tier_dimensions": {
+        "height_m": 0.00398514,
+        "width_m": 0.00398514
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 26,
+      "area": {
+        "total_mm2": 10.9293,
+        "ic_mm2": 1.37698,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.1383,
+        "other_mm2": 3.02556,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00330595,
+        "width_m": 0.00330595
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 27,
+      "area": {
+        "total_mm2": 16.7803,
+        "ic_mm2": 1.37698,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.11498,
+        "other_mm2": 8.89983,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00409637,
+        "width_m": 0.00409637
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 28,
+      "area": {
+        "total_mm2": 17.3616,
+        "ic_mm2": 1.95835,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.11498,
+        "other_mm2": 8.89983,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00416673,
+        "width_m": 0.00416673
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 29,
+      "area": {
+        "total_mm2": 10.8786,
+        "ic_mm2": 1.37698,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.08757,
+        "other_mm2": 3.02556,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00329827,
+        "width_m": 0.00329827
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 30,
+      "area": {
+        "total_mm2": 21.461,
+        "ic_mm2": 1.78819,
+        "adc_mm2": 2.59872,
+        "accum_mm2": 3.32042,
+        "other_mm2": 9.49534,
+        "array_mm2": 3.55258
+      },
+      "tier_dimensions": {
+        "height_m": 0.0046326,
+        "width_m": 0.0046326
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 31,
+      "area": {
+        "total_mm2": 22.1741,
+        "ic_mm2": 2.51489,
+        "adc_mm2": 2.59872,
+        "accum_mm2": 3.30689,
+        "other_mm2": 9.49534,
+        "array_mm2": 3.55258
+      },
+      "tier_dimensions": {
+        "height_m": 0.00470894,
+        "width_m": 0.00470894
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 32,
+      "area": {
+        "total_mm2": 10.8786,
+        "ic_mm2": 1.37698,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.08757,
+        "other_mm2": 3.02556,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00329827,
+        "width_m": 0.00329827
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 33,
+      "area": {
+        "total_mm2": 10.9293,
+        "ic_mm2": 1.37698,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.1383,
+        "other_mm2": 3.02556,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00330595,
+        "width_m": 0.00330595
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 34,
+      "area": {
+        "total_mm2": 16.7803,
+        "ic_mm2": 1.37698,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.11498,
+        "other_mm2": 8.89983,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00409637,
+        "width_m": 0.00409637
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 35,
+      "area": {
+        "total_mm2": 17.3616,
+        "ic_mm2": 1.95835,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.11498,
+        "other_mm2": 8.89983,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00416673,
+        "width_m": 0.00416673
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 36,
+      "area": {
+        "total_mm2": 15.5319,
+        "ic_mm2": 1.78819,
+        "adc_mm2": 2.59872,
+        "accum_mm2": 3.2656,
+        "other_mm2": 3.62107,
+        "array_mm2": 3.55258
+      },
+      "tier_dimensions": {
+        "height_m": 0.00394105,
+        "width_m": 0.00394105
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 37,
+      "area": {
+        "total_mm2": 21.443,
+        "ic_mm2": 1.78819,
+        "adc_mm2": 2.59872,
+        "accum_mm2": 3.30244,
+        "other_mm2": 9.49534,
+        "array_mm2": 3.55258
+      },
+      "tier_dimensions": {
+        "height_m": 0.00463066,
+        "width_m": 0.00463066
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 38,
+      "area": {
+        "total_mm2": 17.3616,
+        "ic_mm2": 1.95835,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.11498,
+        "other_mm2": 8.89983,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00416673,
+        "width_m": 0.00416673
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 39,
+      "area": {
+        "total_mm2": 11.46,
+        "ic_mm2": 1.95835,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.08757,
+        "other_mm2": 3.02556,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00338526,
+        "width_m": 0.00338526
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 40,
+      "area": {
+        "total_mm2": 10.9105,
+        "ic_mm2": 1.37698,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.11943,
+        "other_mm2": 3.02556,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.0033031,
+        "width_m": 0.0033031
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 41,
+      "area": {
+        "total_mm2": 16.7803,
+        "ic_mm2": 1.37698,
+        "adc_mm2": 1.66318,
+        "accum_mm2": 2.11498,
+        "other_mm2": 8.89983,
+        "array_mm2": 2.27365
+      },
+      "tier_dimensions": {
+        "height_m": 0.00409637,
+        "width_m": 0.00409637
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    },
+    {
+      "tier_id": 42,
+      "area": {
+        "total_mm2": 21.4197,
+        "ic_mm2": 1.78819,
+        "adc_mm2": 2.59872,
+        "accum_mm2": 3.27913,
+        "other_mm2": 9.49534,
+        "array_mm2": 3.55258
+      },
+      "tier_dimensions": {
+        "height_m": 0.00462814,
+        "width_m": 0.00462814
+      },
+      "tile_dimensions": {
+        "cm_tile_height_m": 0.000695118,
+        "cm_tile_width_m": 0.000695118,
+        "nm_tile_height_m": 0,
+        "nm_tile_width_m": 0
+      }
+    }
+  ]
+}

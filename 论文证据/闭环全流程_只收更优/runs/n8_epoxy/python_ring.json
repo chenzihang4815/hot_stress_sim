@@ -1,0 +1,55 @@
+{
+  "operator": "四层网格加 8 个外伸节点，和 ring_solver.py 同一套",
+  "k_fill": 0.8,
+  "note": "没有覆盖 fields/*.npy 和 report.json。HotSpot、ATSim 没重算。",
+  "stages": {
+    "init": {
+      "field_max_C": 74.3655175352863,
+      "grad_K_per_mm": 3.4275527355662234,
+      "hottest_block_mean_name": "HBM3",
+      "hottest_block_mean_C": 73.2647523454674,
+      "per_chip_mean_C": {
+        "Xeon_Ca": 70.49241636699747,
+        "GPU_2060S_Ga": 68.89922585692426,
+        "GPU_3070_Gb": 69.7040346764698,
+        "CIM_jia_m64": 61.323330261258434,
+        "Xeon_Cb": 69.34614327757913,
+        "HBM3": 73.2647523454674,
+        "CIM_colonnade_m512": 62.544033552848134,
+        "CIM_colonnade_m256": 61.521175156531456
+      }
+    },
+    "best": {
+      "field_max_C": 74.72239543327157,
+      "grad_K_per_mm": 3.4376312435660514,
+      "hottest_block_mean_name": "HBM3",
+      "hottest_block_mean_C": 73.67180986033605,
+      "per_chip_mean_C": {
+        "Xeon_Ca": 70.69434971494508,
+        "GPU_3070_Ga": 69.07406849781609,
+        "GPU_3070_Gb": 69.46588216833572,
+        "CIM_jia_m64": 61.08479078833051,
+        "Xeon_Cb": 69.0352506079978,
+        "HBM3": 73.67180986033605,
+        "CIM_colonnade_m512": 61.34514994859654,
+        "CIM_colonnade_m256": 60.40589649028772
+      }
+    },
+    "freq": {
+      "field_max_C": 91.11410287406318,
+      "grad_K_per_mm": 4.306681111488666,
+      "hottest_block_mean_name": "Xeon_Ca",
+      "hottest_block_mean_C": 88.67162206896552,
+      "per_chip_mean_C": {
+        "Xeon_Ca": 88.67162206896552,
+        "GPU_3070_Ga": 81.55720488614475,
+        "GPU_3070_Gb": 83.39164060169469,
+        "CIM_jia_m64": 72.3149858405007,
+        "Xeon_Cb": 86.70092434853558,
+        "HBM3": 85.79274216757022,
+        "CIM_colonnade_m512": 72.11302433368365,
+        "CIM_colonnade_m256": 70.63735567206652
+      }
+    }
+  }
+}

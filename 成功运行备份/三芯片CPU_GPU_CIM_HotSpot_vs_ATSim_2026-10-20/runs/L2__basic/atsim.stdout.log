@@ -1,0 +1,43 @@
+================================================================
+Case: cpu_gpu_cim_L2__basic
+JSON: /home/czh/任务仿真产生功耗文件工具/热应力python工程/cases/cpu_gpu_cim_lbfgs/L2__basic.json
+Domain: 84.6 x 81.3 x 9.17 mm
+Chips: 3   P=73.83 W   h=1453.04 W/m2K   Tamb=45.00 C
+BBox 32.6 x 29.3 mm   Spreader 54.6 x 51.3 mm   Sink 84.6 x 81.3 mm
+Centered, layout shift (26.00, 26.00) mm
+Substrate 1.0 mm  Interposer 100 um  32.6 x 29.3 mm  fill_die=False  tim_cover=chips
+
+Chips (edit cases/case3_chips.json):
+  name           x_mm     y_mm     w_mm     h_mm        W
+  CPU           26.00    51.26     3.36     4.06     0.87
+  GPU           26.30    26.00    32.33    25.21    72.95
+  CIM           26.00    26.00     0.25     0.19     0.00
+
+-- FVM 3D package --
+  Picard 1  dTmax=11.6071 K  Tmin=51.15 C  Tmax=56.61 C
+[fvm3d] cpu_gpu_cim_L2__basic  cells=52x48x23  solid=37628  Tmax=56.607 C  Tmin=51.152 C  15.95s
+[fvm3d] timing  grid=0.02s  assemble=0.62s  solve=15.30s (spsolve)  ndof=57408  nnz=273792
+
+Probes:
+  CPU_center            53.994 C
+  GPU_center            56.601 C
+  CIM_center            54.238 C
+  Sink_top_center       55.068 C
+  Spreader_center       55.924 C
+  Interposer_center     56.552 C
+  Substrate_center      56.542 C
+  TIM_mid               56.391 C
+
+Timing (heat only):
+  grid     0.02 s
+  assemble 0.62 s
+  solve    15.30 s  (spsolve)
+  total    15.95 s   ndof=57408  solid=37628
+
+HotSpot files:
+  flp: /home/czh/任务仿真产生功耗文件工具/热应力python工程/hotspot_L2__basic/cpu_gpu_cim_L2__basic.flp
+  ptrace: /home/czh/任务仿真产生功耗文件工具/热应力python工程/hotspot_L2__basic/cpu_gpu_cim_L2__basic.ptrace
+  config: /home/czh/任务仿真产生功耗文件工具/热应力python工程/hotspot_L2__basic/cpu_gpu_cim_L2__basic.config
+  materials: /home/czh/任务仿真产生功耗文件工具/热应力python工程/hotspot_L2__basic/cpu_gpu_cim_L2__basic.materials
+Outputs: /home/czh/任务仿真产生功耗文件工具/热应力python工程/results/python_L2__basic
+================================================================

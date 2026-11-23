@@ -1,0 +1,53 @@
+{
+  "note": "材料图停在起点，新功耗用旧分解回代一次。old_factor 是起点付的，不进这一步。newmap 是最新材料图装配加分解再回代，单次墙钟，不是平均。冷边 45 C，底面绝热，缝环氧 0.8。python，不是 HotSpot，也不是 ATSim。",
+  "rows": [
+    {
+      "scheme": "cpu_T2",
+      "changed": "Penryn -> T2",
+      "old_factor_ms": 636.6503140015993,
+      "nomap_backsub_ms": 6.852927006548271,
+      "newmap_factor_ms": 660.5577839945909,
+      "newmap_backsub_ms": 7.093016989529133,
+      "newmap_total_ms": 667.65080098412,
+      "grid_max_K": 43.814116597177076,
+      "old_Tmax_C": 108.17058989100605,
+      "new_Tmax_C": 65.44279910162953
+    },
+    {
+      "scheme": "cpu_Xeon",
+      "changed": "Penryn -> Xeon",
+      "old_factor_ms": 636.6503140015993,
+      "nomap_backsub_ms": 7.193526980699971,
+      "newmap_factor_ms": 564.6047549962532,
+      "newmap_backsub_ms": 7.1604699769522995,
+      "newmap_total_ms": 571.7652249732055,
+      "grid_max_K": 44.39248492184328,
+      "old_Tmax_C": 112.7783497758449,
+      "new_Tmax_C": 69.39977127291206
+    },
+    {
+      "scheme": "gpu_2060S",
+      "changed": "GPU_3070 -> GPU_2060S",
+      "old_factor_ms": 636.6503140015993,
+      "nomap_backsub_ms": 7.000545010669157,
+      "newmap_factor_ms": 576.631231000647,
+      "newmap_backsub_ms": 7.117645000107586,
+      "newmap_total_ms": 583.7488760007545,
+      "grid_max_K": 12.783003239841719,
+      "old_Tmax_C": 71.60495740789457,
+      "new_Tmax_C": 70.15827110719243
+    },
+    {
+      "scheme": "gpu_TITANX",
+      "changed": "GPU_3070 -> GPU_TITANX",
+      "old_factor_ms": 636.6503140015993,
+      "nomap_backsub_ms": 7.29911497910507,
+      "newmap_factor_ms": 590.427187999012,
+      "newmap_backsub_ms": 7.579588011140004,
+      "newmap_total_ms": 598.006776010152,
+      "grid_max_K": 15.66599143388521,
+      "old_Tmax_C": 74.11273550728043,
+      "new_Tmax_C": 69.81111062778132
+    }
+  ]
+}

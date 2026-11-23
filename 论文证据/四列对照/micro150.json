@@ -1,0 +1,14 @@
+{
+  "label": "micro150",
+  "steps": 120,
+  "step_mm": 1,
+  "rows_search": 16,
+  "full_secs": 195.9,
+  "full_final_64_C": 170.03,
+  "field_secs": 124.1,
+  "field_solves": 93,
+  "field_final_64_C": 170.08,
+  "speedup": 1.58,
+  "delta_C": 0.05,
+  "wall_s": 418.5
+}

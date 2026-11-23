@@ -1,0 +1,707 @@
+{
+  "case": "n8_silicon",
+  "n_chips": 8,
+  "fill": "silicon",
+  "k_fill": 130.0,
+  "epoxy_mechanics": null,
+  "package": "72 mm 芯粒框，96 mm 热沉，r_convec 0.0390625",
+  "inner_steps": 40,
+  "seed": 11,
+  "kcal_python_block_to_atsim_block": 0.7519375245068559,
+  "kcal_note": "向导按最优点的 ATSim 块平均温升 / Python 块平均温升来缩。HotSpot 不吃填充，不拿来锚定。",
+  "freq_mode_at_best_s1": "inside",
+  "freq_bumps": 60,
+  "freq_held_for_stress": false,
+  "gate_passed_after_freq": true,
+  "stress_in_anneal": false,
+  "stress_after_layout": null,
+  "walkback": [
+    {
+      "attempt": 0,
+      "scales": {
+        "Ca": 2.5,
+        "Ga": 2.5,
+        "Gb": 2.5,
+        "Cb": 2.5
+      },
+      "die_cell_max_C": 88.41933108854579,
+      "vm_normal_chip_max_MPa": 148.4949069433269,
+      "block_mean_C": 85.34232882443492
+    }
+  ],
+  "hardware_init": [
+    "Xeon_Ca",
+    "GPU_2060S_Ga",
+    "GPU_3070_Gb",
+    "CIM_jia_m64",
+    "Xeon_Cb",
+    "HBM3",
+    "CIM_colonnade_m512",
+    "CIM_colonnade_m256"
+  ],
+  "hardware_best": [
+    "Xeon_Ca",
+    "GPU_3070_Ga",
+    "GPU_3070_Gb",
+    "CIM_jia_m64",
+    "Xeon_Cb",
+    "HBM3",
+    "CIM_colonnade_m512",
+    "CIM_colonnade_m256"
+  ],
+  "hbm_W_init": 55.903999999999996,
+  "hbm_W_best": 55.903999999999996,
+  "elapsed_s": 185.5,
+  "compare": {
+    "definition": "温度是每颗芯片盖住的格子先求平均，再取最热那颗。Python 是 1.125 mm 芯粒层。HotSpot 是第 0 层块平均，而且芯片层导热仍是硅，不吃填充。ATSim 是 2 mm 网格上芯粒层柱的平均。应力是正常芯片内部 von Mises 最大，不是整包最大。梯度两列网格不同，不能并成一列。门槛仍看 ATSim 芯粒层最热一格和内部应力。",
+    "init": {
+      "python": {
+        "name": "HBM3",
+        "C": 81.19757892784816
+      },
+      "hotspot": {
+        "name": "HBM3",
+        "C": 71.04000000000002
+      },
+      "atsim": {
+        "name": "HBM3",
+        "C": 72.16642371245183
+      },
+      "python_grad_K_per_mm": 2.9416165204022238,
+      "atsim_grad_K_per_mm": 3.2204685472162127,
+      "stress_MPa": 88.55008354327599,
+      "stress_name": "CIM_colonnade_m256",
+      "gate_die_cell_max_C": 73.69156256759294,
+      "python_per_chip": [
+        {
+          "name": "Xeon_Ca",
+          "mean_C": 80.12673008650955,
+          "max_C": 81.57754372596025
+        },
+        {
+          "name": "GPU_2060S_Ga",
+          "mean_C": 77.27737101967347,
+          "max_C": 78.92509522739488
+        },
+        {
+          "name": "GPU_3070_Gb",
+          "mean_C": 77.52564199486886,
+          "max_C": 79.22932677455037
+        },
+        {
+          "name": "CIM_jia_m64",
+          "mean_C": 70.57530574173006,
+          "max_C": 73.42876137561899
+        },
+        {
+          "name": "Xeon_Cb",
+          "mean_C": 78.30803198589894,
+          "max_C": 79.56387726907684
+        },
+        {
+          "name": "HBM3",
+          "mean_C": 81.19757892784816,
+          "max_C": 82.25065308743302
+        },
+        {
+          "name": "CIM_colonnade_m512",
+          "mean_C": 72.65621824133183,
+          "max_C": 74.38722818589497
+        },
+        {
+          "name": "CIM_colonnade_m256",
+          "mean_C": 72.65780155035674,
+          "max_C": 73.31219901838313
+        }
+      ],
+      "hotspot_per_chip": [
+        {
+          "name": "Xeon_Ca",
+          "mean_C": 67.30000000000001
+        },
+        {
+          "name": "GPU_2060S_Ga",
+          "mean_C": 66.67000000000002
+        },
+        {
+          "name": "GPU_3070_Gb",
+          "mean_C": 67.59000000000003
+        },
+        {
+          "name": "CIM_jia_m64",
+          "mean_C": 59.900000000000034
+        },
+        {
+          "name": "Xeon_Cb",
+          "mean_C": 66.54000000000002
+        },
+        {
+          "name": "HBM3",
+          "mean_C": 71.04000000000002
+        },
+        {
+          "name": "CIM_colonnade_m512",
+          "mean_C": 60.28000000000003
+        },
+        {
+          "name": "CIM_colonnade_m256",
+          "mean_C": 59.82000000000005
+        }
+      ],
+      "atsim_per_chip": [
+        {
+          "name": "Xeon_Ca",
+          "mean_C": 68.5439591752634,
+          "max_C": 70.33482638901597
+        },
+        {
+          "name": "GPU_2060S_Ga",
+          "mean_C": 67.4397839178989,
+          "max_C": 69.68837186284128
+        },
+        {
+          "name": "GPU_3070_Gb",
+          "mean_C": 68.12005442763626,
+          "max_C": 70.06970530829216
+        },
+        {
+          "name": "CIM_jia_m64",
+          "mean_C": 59.286994009225175,
+          "max_C": 62.430172569035676
+        },
+        {
+          "name": "Xeon_Cb",
+          "mean_C": 67.25604795163949,
+          "max_C": 69.18030694611008
+        },
+        {
+          "name": "HBM3",
+          "mean_C": 72.16642371245183,
+          "max_C": 73.61550740945148
+        },
+        {
+          "name": "CIM_colonnade_m512",
+          "mean_C": 60.47879985789001,
+          "max_C": 62.2761138499921
+        },
+        {
+          "name": "CIM_colonnade_m256",
+          "mean_C": 59.52871709970721,
+          "max_C": 60.430987525592
+        }
+      ]
+    },
+    "best": {
+      "python": {
+        "name": "HBM3",
+        "C": 80.97925054025166
+      },
+      "hotspot": {
+        "name": "HBM3",
+        "C": 70.92000000000002
+      },
+      "atsim": {
+        "name": "HBM3",
+        "C": 72.05414858484879
+      },
+      "python_grad_K_per_mm": 2.943121955809551,
+      "atsim_grad_K_per_mm": 3.220993974180497,
+      "stress_MPa": 88.14417457615382,
+      "stress_name": "CIM_colonnade_m256",
+      "gate_die_cell_max_C": 73.57733873529543,
+      "python_per_chip": [
+        {
+          "name": "Xeon_Ca",
+          "mean_C": 79.96981679555984,
+          "max_C": 81.42658372528427
+        },
+        {
+          "name": "GPU_3070_Ga",
+          "mean_C": 77.05732887426166,
+          "max_C": 78.7657905331763
+        },
+        {
+          "name": "GPU_3070_Gb",
+          "mean_C": 77.310391040264,
+          "max_C": 79.01520174688926
+        },
+        {
+          "name": "CIM_jia_m64",
+          "mean_C": 70.3235273309657,
+          "max_C": 73.13482310098902
+        },
+        {
+          "name": "Xeon_Cb",
+          "mean_C": 77.88531244858262,
+          "max_C": 79.12722690179544
+        },
+        {
+          "name": "HBM3",
+          "mean_C": 80.97925054025166,
+          "max_C": 82.03344158184632
+        },
+        {
+          "name": "CIM_colonnade_m512",
+          "mean_C": 72.50964044966753,
+          "max_C": 74.24242665840251
+        },
+        {
+          "name": "CIM_colonnade_m256",
+          "mean_C": 72.51792265420556,
+          "max_C": 73.17219840967067
+        }
+      ],
+      "hotspot_per_chip": [
+        {
+          "name": "Xeon_Ca",
+          "mean_C": 67.20000000000005
+        },
+        {
+          "name": "GPU_3070_Ga",
+          "mean_C": 66.64000000000004
+        },
+        {
+          "name": "GPU_3070_Gb",
+          "mean_C": 67.45000000000005
+        },
+        {
+          "name": "CIM_jia_m64",
+          "mean_C": 59.74000000000001
+        },
+        {
+          "name": "Xeon_Cb",
+          "mean_C": 66.28000000000003
+        },
+        {
+          "name": "HBM3",
+          "mean_C": 70.92000000000002
+        },
+        {
+          "name": "CIM_colonnade_m512",
+          "mean_C": 60.19
+        },
+        {
+          "name": "CIM_colonnade_m256",
+          "mean_C": 59.72000000000003
+        }
+      ],
+      "atsim_per_chip": [
+        {
+          "name": "Xeon_Ca",
+          "mean_C": 68.46930132638255,
+          "max_C": 70.25229212752282
+        },
+        {
+          "name": "GPU_3070_Ga",
+          "mean_C": 67.42902942329495,
+          "max_C": 69.6713282924706
+        },
+        {
+          "name": "GPU_3070_Gb",
+          "mean_C": 67.99764867554045,
+          "max_C": 69.94817364104676
+        },
+        {
+          "name": "CIM_jia_m64",
+          "mean_C": 59.1482747087413,
+          "max_C": 62.26401639820858
+        },
+        {
+          "name": "Xeon_Cb",
+          "mean_C": 66.96152767756736,
+          "max_C": 68.88519980013155
+        },
+        {
+          "name": "HBM3",
+          "mean_C": 72.05414858484879,
+          "max_C": 73.50127925889603
+        },
+        {
+          "name": "CIM_colonnade_m512",
+          "mean_C": 60.412629629765625,
+          "max_C": 62.2053088688416
+        },
+        {
+          "name": "CIM_colonnade_m256",
+          "mean_C": 59.470184300413734,
+          "max_C": 60.36984536488757
+        }
+      ]
+    },
+    "freq": {
+      "python": {
+        "name": "Xeon_Ca",
+        "C": 104.3584717372679
+      },
+      "hotspot": {
+        "name": "Xeon_Ca",
+        "C": 82.82000000000005
+      },
+      "atsim": {
+        "name": "Xeon_Ca",
+        "C": 85.34232882443492
+      },
+      "python_grad_K_per_mm": 3.5414387187668885,
+      "atsim_grad_K_per_mm": 3.965868347641724,
+      "stress_MPa": 148.4949069433269,
+      "stress_name": "Xeon_Cb",
+      "gate_die_cell_max_C": 88.41933108854579,
+      "python_per_chip": [
+        {
+          "name": "Xeon_Ca",
+          "mean_C": 104.3584717372679,
+          "max_C": 107.57995122954776
+        },
+        {
+          "name": "GPU_3070_Ga",
+          "mean_C": 94.35964718692918,
+          "max_C": 96.66115903457512
+        },
+        {
+          "name": "GPU_3070_Gb",
+          "mean_C": 96.39343602393461,
+          "max_C": 98.67772710856377
+        },
+        {
+          "name": "CIM_jia_m64",
+          "mean_C": 87.95201486698363,
+          "max_C": 93.27397475265838
+        },
+        {
+          "name": "Xeon_Cb",
+          "mean_C": 101.46180644733124,
+          "max_C": 104.14276019203993
+        },
+        {
+          "name": "HBM3",
+          "mean_C": 97.49128563216067,
+          "max_C": 99.10197618428867
+        },
+        {
+          "name": "CIM_colonnade_m512",
+          "mean_C": 91.16966270126164,
+          "max_C": 94.42286173524775
+        },
+        {
+          "name": "CIM_colonnade_m256",
+          "mean_C": 91.35594804508997,
+          "max_C": 92.57706233045855
+        }
+      ],
+      "hotspot_per_chip": [
+        {
+          "name": "Xeon_Ca",
+          "mean_C": 82.82000000000005
+        },
+        {
+          "name": "GPU_3070_Ga",
+          "mean_C": 77.80000000000001
+        },
+        {
+          "name": "GPU_3070_Gb",
+          "mean_C": 80.06
+        },
+        {
+          "name": "CIM_jia_m64",
+          "mean_C": 69.83000000000004
+        },
+        {
+          "name": "Xeon_Cb",
+          "mean_C": 81.80000000000001
+        },
+        {
+          "name": "HBM3",
+          "mean_C": 81.48000000000002
+        },
+        {
+          "name": "CIM_colonnade_m512",
+          "mean_C": 70.27000000000004
+        },
+        {
+          "name": "CIM_colonnade_m256",
+          "mean_C": 69.49000000000001
+        }
+      ],
+      "atsim_per_chip": [
+        {
+          "name": "Xeon_Ca",
+          "mean_C": 85.34232882443492,
+          "max_C": 88.33837097962845
+        },
+        {
+          "name": "GPU_3070_Ga",
+          "mean_C": 78.77188084677265,
+          "max_C": 81.70721353796614
+        },
+        {
+          "name": "GPU_3070_Gb",
+          "mean_C": 80.80661999832645,
+          "max_C": 83.09737355878207
+        },
+        {
+          "name": "CIM_jia_m64",
+          "mean_C": 69.17051402960742,
+          "max_C": 74.61924984554247
+        },
+        {
+          "name": "Xeon_Cb",
+          "mean_C": 83.18848979980002,
+          "max_C": 86.70463734058586
+        },
+        {
+          "name": "HBM3",
+          "mean_C": 82.58093604088583,
+          "max_C": 84.41264064166313
+        },
+        {
+          "name": "CIM_colonnade_m512",
+          "mean_C": 70.92768540911845,
+          "max_C": 74.06908704105143
+        },
+        {
+          "name": "CIM_colonnade_m256",
+          "mean_C": 69.45656524751912,
+          "max_C": 71.01077508088395
+        }
+      ]
+    }
+  },
+  "throughput": {
+    "note": "GPU 的操作数是 backprop 那一次 kernel 的指令数，频率是该卡主频乘倍率。操作数/频率的单位是次/MHz。同一条 kernel 指令数几乎不变，主频升高这个比值下降，它不是每秒完成的工作。CPU 的 McPAT 模板没有这次任务的操作数，不编。CIM、CPU、GPU 不加总。",
+    "slots": [
+      {
+        "slot": "Ca",
+        "role": "CPU",
+        "init": {
+          "part": "Xeon",
+          "ops": null,
+          "f_MHz": 3400.0,
+          "ops_per_MHz": null,
+          "cores": 2,
+          "s": 1.0
+        },
+        "best": {
+          "part": "Xeon",
+          "ops": null,
+          "f_MHz": 3400.0,
+          "ops_per_MHz": null,
+          "cores": 2,
+          "s": 1.0
+        },
+        "freq": {
+          "part": "Xeon",
+          "ops": null,
+          "f_MHz": 8500.0,
+          "ops_per_MHz": null,
+          "cores": 2,
+          "s": 2.5
+        }
+      },
+      {
+        "slot": "Ga",
+        "role": "GPU",
+        "init": {
+          "part": "GPU_2060S",
+          "ops": 370711,
+          "f_MHz": 1905.0,
+          "ops_per_MHz": 194.5989501312336,
+          "cores": null,
+          "s": 1.0
+        },
+        "best": {
+          "part": "GPU_3070",
+          "ops": 370653,
+          "f_MHz": 1132.0,
+          "ops_per_MHz": 327.43197879858656,
+          "cores": null,
+          "s": 1.0
+        },
+        "freq": {
+          "part": "GPU_3070",
+          "ops": 370653,
+          "f_MHz": 2830.0,
+          "ops_per_MHz": 130.97279151943462,
+          "cores": null,
+          "s": 2.5
+        }
+      },
+      {
+        "slot": "Gb",
+        "role": "GPU",
+        "init": {
+          "part": "GPU_3070",
+          "ops": 370653,
+          "f_MHz": 1132.0,
+          "ops_per_MHz": 327.43197879858656,
+          "cores": null,
+          "s": 1.0
+        },
+        "best": {
+          "part": "GPU_3070",
+          "ops": 370653,
+          "f_MHz": 1132.0,
+          "ops_per_MHz": 327.43197879858656,
+          "cores": null,
+          "s": 1.0
+        },
+        "freq": {
+          "part": "GPU_3070",
+          "ops": 370653,
+          "f_MHz": 2830.0,
+          "ops_per_MHz": 130.97279151943462,
+          "cores": null,
+          "s": 2.5
+        }
+      },
+      {
+        "slot": "Cb",
+        "role": "CPU",
+        "init": {
+          "part": "Xeon",
+          "ops": null,
+          "f_MHz": 3400.0,
+          "ops_per_MHz": null,
+          "cores": 2,
+          "s": 1.0
+        },
+        "best": {
+          "part": "Xeon",
+          "ops": null,
+          "f_MHz": 3400.0,
+          "ops_per_MHz": null,
+          "cores": 2,
+          "s": 1.0
+        },
+        "freq": {
+          "part": "Xeon",
+          "ops": null,
+          "f_MHz": 8500.0,
+          "ops_per_MHz": null,
+          "cores": 2,
+          "s": 2.5
+        }
+      }
+    ],
+    "cim": [
+      {
+        "name": "CIM_jia_m64",
+        "n_computes": 589824,
+        "f_MHz": null,
+        "note": "有计算次数，没有主频，不算操作数/频率"
+      },
+      {
+        "name": "CIM_colonnade_m512",
+        "n_computes": 16384,
+        "f_MHz": null,
+        "note": "有计算次数，没有主频，不算操作数/频率"
+      },
+      {
+        "name": "CIM_colonnade_m256",
+        "n_computes": 16384,
+        "f_MHz": null,
+        "note": "有计算次数，没有主频，不算操作数/频率"
+      }
+    ]
+  },
+  "superposition_init_K": 0.0,
+  "fill_residual_drift_K": 0.0,
+  "wirelength": {
+    "formula": "TAP-2.5D 的中心曼哈顿，mm/wire。连接矩阵在退火前定死，初始和最优用同一张。",
+    "netlist": "假设的：每颗 CPU、GPU 和 HBM 双向 1024，每颗 CIM 和第一颗 CPU 双向 128。不是仿真给的。",
+    "connection_matrix": [
+      [
+        0,
+        0,
+        0,
+        128,
+        0,
+        1024,
+        128,
+        128
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1024,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1024,
+        0,
+        0
+      ],
+      [
+        128,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1024,
+        0,
+        0
+      ],
+      [
+        1024,
+        1024,
+        1024,
+        0,
+        1024,
+        0,
+        0,
+        0
+      ],
+      [
+        128,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        128,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "order": [
+      "Xeon_Ca",
+      "GPU_2060S_Ga",
+      "GPU_3070_Gb",
+      "CIM_jia_m64",
+      "Xeon_Cb",
+      "HBM3",
+      "CIM_colonnade_m512",
+      "CIM_colonnade_m256"
+    ],
+    "init_mm_per_wire": 35.019642857142856,
+    "best_mm_per_wire": 34.7625,
+    "cost": "温度、梯度、线长各三分之一，都除以起点的值。梯度不并进温度项。"
+  }
+}

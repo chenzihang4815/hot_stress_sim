@@ -1,0 +1,101 @@
+[
+  {
+    "label": "C1_4芯",
+    "chips": 4,
+    "span_mm": 51,
+    "power_W": 165,
+    "pre_s": 9.2,
+    "full_s": 1.76,
+    "solo_s": 1.85,
+    "save_s": -0.09,
+    "breakeven": null
+  },
+  {
+    "label": "big_6芯",
+    "chips": 6,
+    "span_mm": 59,
+    "power_W": 273,
+    "pre_s": 13.7,
+    "full_s": 1.88,
+    "solo_s": 1.97,
+    "save_s": -0.09,
+    "breakeven": null
+  },
+  {
+    "label": "hbm_7芯",
+    "chips": 7,
+    "span_mm": 57,
+    "power_W": 281,
+    "pre_s": 10.6,
+    "full_s": 1.77,
+    "solo_s": 1.26,
+    "save_s": 0.51,
+    "breakeven": 20.9
+  },
+  {
+    "label": "hbm2_7芯",
+    "chips": 7,
+    "span_mm": 55,
+    "power_W": 302,
+    "pre_s": 10.9,
+    "full_s": 2.01,
+    "solo_s": 1.27,
+    "save_s": 0.74,
+    "breakeven": 14.8
+  },
+  {
+    "label": "t2_9芯",
+    "chips": 9,
+    "span_mm": 54,
+    "power_W": 268,
+    "pre_s": 14.4,
+    "full_s": 1.78,
+    "solo_s": 1.4,
+    "save_s": 0.38,
+    "breakeven": 38.0
+  },
+  {
+    "label": "mix_9芯",
+    "chips": 9,
+    "span_mm": 52,
+    "power_W": 293,
+    "pre_s": 17.4,
+    "full_s": 1.92,
+    "solo_s": 1.72,
+    "save_s": 0.21,
+    "breakeven": 83.6
+  },
+  {
+    "label": "xeon2_9芯",
+    "chips": 9,
+    "span_mm": 53,
+    "power_W": 329,
+    "pre_s": 19.4,
+    "full_s": 2.28,
+    "solo_s": 1.9,
+    "save_s": 0.38,
+    "breakeven": 50.5
+  },
+  {
+    "label": "xeon3g_10芯",
+    "chips": 10,
+    "span_mm": 56,
+    "power_W": 407,
+    "pre_s": 27.8,
+    "full_s": 2.83,
+    "solo_s": 2.49,
+    "save_s": 0.34,
+    "breakeven": 81.5
+  },
+  {
+    "label": "xeon3_11芯",
+    "chips": 11,
+    "span_mm": 69,
+    "power_W": 517,
+    "pre_s": 26.9,
+    "full_s": 2.61,
+    "solo_s": 2.21,
+    "save_s": 0.4,
+    "breakeven": 67.3
+  }
+]

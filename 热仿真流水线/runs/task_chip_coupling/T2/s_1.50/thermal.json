@@ -1,0 +1,47 @@
+{
+  "model": "T2",
+  "s": 1.5,
+  "cores": 8,
+  "f_MHz": 1400,
+  "area_mm2": 273.523,
+  "side_mm": 16.53853076908587,
+  "McPAT_T_K": 330,
+  "converged": true,
+  "power_W": 87.52561817518249,
+  "dyn_W": 75.6315,
+  "leak_W": 11.89411817518248,
+  "leak_frac": 0.13589299251079162,
+  "Tmax_C": 55.47000000000003,
+  "fail_T": false,
+  "Theta_serial_rel": 0.5675675675675675,
+  "Theta_parallel_rel": 4.54054054054054,
+  "trace": [
+    {
+      "bin_K": 350,
+      "power_W": 90.00032255474453,
+      "dyn_W": 75.6315,
+      "leak_W": 14.368822554744526,
+      "T_C": 55.77000000000004,
+      "next_bin_K": 330
+    },
+    {
+      "bin_K": 330,
+      "power_W": 87.52561817518249,
+      "dyn_W": 75.6315,
+      "leak_W": 11.89411817518248,
+      "T_C": 55.47000000000003,
+      "next_bin_K": 330
+    }
+  ],
+  "stress": {
+    "Tmax_C": 63.12084898675545,
+    "vm_normal_chip_max_MPa": 31.061588529805398,
+    "vm_normal_chip_name": "T2",
+    "vm_normal_chip_p95_MPa": 29.82047318241104,
+    "w_pv_um": 0.24782267280177683,
+    "elapsed_s": 2.381891965866089
+  },
+  "sigma_MPa": 31.061588529805398,
+  "fail_sigma": false,
+  "feasible": true
+}

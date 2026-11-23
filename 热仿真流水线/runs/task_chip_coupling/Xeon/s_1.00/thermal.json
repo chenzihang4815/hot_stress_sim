@@ -1,0 +1,47 @@
+{
+  "model": "Xeon",
+  "s": 1.0,
+  "cores": 2,
+  "f_MHz": 3400,
+  "area_mm2": 421.676,
+  "side_mm": 20.534751033309362,
+  "McPAT_T_K": 330,
+  "converged": true,
+  "power_W": 88.24269145985402,
+  "dyn_W": 66.8485,
+  "leak_W": 21.394191459854017,
+  "leak_frac": 0.24244717727798792,
+  "Tmax_C": 53.93000000000001,
+  "fail_T": false,
+  "Theta_serial_rel": 0.918918918918919,
+  "Theta_parallel_rel": 1.837837837837838,
+  "trace": [
+    {
+      "bin_K": 350,
+      "power_W": 94.05872795620438,
+      "dyn_W": 66.8485,
+      "leak_W": 27.21022795620438,
+      "T_C": 54.52000000000004,
+      "next_bin_K": 330
+    },
+    {
+      "bin_K": 330,
+      "power_W": 88.24269145985402,
+      "dyn_W": 66.8485,
+      "leak_W": 21.394191459854017,
+      "T_C": 53.93000000000001,
+      "next_bin_K": 330
+    }
+  ],
+  "stress": {
+    "Tmax_C": 61.16688374632298,
+    "vm_normal_chip_max_MPa": 32.92679592442886,
+    "vm_normal_chip_name": "Xeon",
+    "vm_normal_chip_p95_MPa": 32.20428005645124,
+    "w_pv_um": 0.48174651127669016,
+    "elapsed_s": 3.1911513805389404
+  },
+  "sigma_MPa": 32.92679592442886,
+  "fail_sigma": false,
+  "feasible": true
+}

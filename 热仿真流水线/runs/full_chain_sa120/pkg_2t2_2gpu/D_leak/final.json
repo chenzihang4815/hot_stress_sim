@@ -1,0 +1,107 @@
+{
+  "name": "final",
+  "description": "final",
+  "chips": [
+    {
+      "name": "CPU_matmul",
+      "x_mm": 48.5,
+      "y_mm": 45.5,
+      "w_mm": 16.68919786346955,
+      "h_mm": 16.38922387029192,
+      "t_um": 150.0,
+      "power_W": 64.78982255474452
+    },
+    {
+      "name": "CPU_threads",
+      "x_mm": 24.499999999999996,
+      "y_mm": 12.0,
+      "w_mm": 20.100870131395027,
+      "h_mm": 13.60752038155759,
+      "t_um": 150.0,
+      "power_W": 64.78982255474452
+    },
+    {
+      "name": "GPU_2060S",
+      "x_mm": 0.0,
+      "y_mm": 3.5,
+      "w_mm": 20.207449641279176,
+      "h_mm": 22.021581540451656,
+      "t_um": 150.0,
+      "power_W": 71.12
+    },
+    {
+      "name": "GPU_TITANX",
+      "x_mm": 2.0000000000000004,
+      "y_mm": 40.0,
+      "w_mm": 18.855446649269634,
+      "h_mm": 24.979519645494275,
+      "t_um": 150.0,
+      "power_W": 67.41
+    },
+    {
+      "name": "CIM_jia",
+      "x_mm": 47.0,
+      "y_mm": 26.5,
+      "w_mm": 1.932701639498793,
+      "h_mm": 2.215034081054637,
+      "t_um": 150.0,
+      "power_W": 0.002773
+    },
+    {
+      "name": "CIM_colonnade",
+      "x_mm": 43.50000000000001,
+      "y_mm": 41.0,
+      "w_mm": 0.40203013715686514,
+      "h_mm": 0.5755787405303691,
+      "t_um": 150.0,
+      "power_W": 0.0412
+    },
+    {
+      "name": "CIM_wang",
+      "x_mm": 66.0,
+      "y_mm": 17.0,
+      "w_mm": 0.30524161171463016,
+      "h_mm": 0.39968338299188894,
+      "t_um": 150.0,
+      "power_W": 0.026
+    },
+    {
+      "name": "CIM_basic",
+      "x_mm": 61.5,
+      "y_mm": 36.5,
+      "w_mm": 0.25876163007566677,
+      "h_mm": 0.1805522711629935,
+      "t_um": 150.0,
+      "power_W": 0.002625
+    },
+    {
+      "name": "CIM_sinangil",
+      "x_mm": 47.49999999999999,
+      "y_mm": 0.0,
+      "w_mm": 0.04965268875387857,
+      "h_mm": 0.05190051263434752,
+      "t_um": 150.0,
+      "power_W": 0.0007948
+    }
+  ],
+  "package": {
+    "tim_um": 20,
+    "t_spreader_mm": 1.0,
+    "t_sink_mm": 6.9,
+    "t_substrate_mm": 1.0,
+    "t_interposer_um": 100.0,
+    "r_convec_K_per_W": 0.1,
+    "ambient_C": 45,
+    "pitch_die_mm": 2.0,
+    "pitch_coarse_mm": 8.0,
+    "nz_die": 3,
+    "nz_spreader": 3,
+    "nz_sink": 4,
+    "nz_tim": 1,
+    "nz_substrate": 3,
+    "nz_interposer": 2,
+    "fill_die": true,
+    "fill_xy": "chips",
+    "fill_material": "silicon"
+  }
+}

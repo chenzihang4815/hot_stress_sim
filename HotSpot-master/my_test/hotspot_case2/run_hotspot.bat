@@ -1,0 +1,12 @@
+@echo off
+set ROOT=%~dp0..\HotSpot-master\HotSpot-master
+if not exist outputs mkdir outputs
+if exist "%ROOT%\hotspot.exe" (
+  set HS=%ROOT%\hotspot.exe
+) else if exist "%ROOT%\hotspot" (
+  set HS=%ROOT%\hotspot
+) else (
+  echo [error] compile HotSpot first: cd HotSpot-master\HotSpot-master && make
+  exit /b 1
+)
+"%HS%" -c case2_package.config -f case2_package.flp -p case2_package.ptrace -materials_file case2_package.materials -model_type grid -grid_rows 64 -grid_cols 64 -steady_file outputs/case2_package.steady -grid_steady_file outputs/case2_package.grid.steady

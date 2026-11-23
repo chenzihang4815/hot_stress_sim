@@ -1,0 +1,12 @@
+McPAT (version 1.0 of Aug, 2013) is computing the target processor...
+
+[ABORTED] Penryn.xml was started from the official ProcessorDescriptionFiles
+but killed after ~20 min at ~400% CPU. McPAT searches circuit sizing to meet
+the target clock; Penryn (Intel Core-class OOO) takes much longer than ARM A9.
+
+This is NOT a missing-input failure. Re-run if you need it:
+
+  ./bin/mcpat -infile ./input/Penryn.xml -print_level 5 -opt_for_clk 1 \
+      > ./output/Penryn.txt
+
+The successful official example is ARM_A9_2000 (see ARM_A9_2000.txt).

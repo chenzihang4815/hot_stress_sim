@@ -1,0 +1,174 @@
+{
+  "name": "case2_package",
+  "description": "2.5D：有机衬底 + 硅中介层 + 8mm 芯片 + TIM，四者平面同为 8×8；其上均热板 + 散热器。无 TSV / C4。COMSOL / Python 共用。",
+  "comment": "对流只在散热器顶。衬底底面力学固定。衬底/中介层/芯片/TIM 同长宽。原点在衬底底面左下角。",
+  "ambient_K": 318.15,
+  "convection": {
+    "face": "sink_top",
+    "h_W_m2K": 2777.777777777778,
+    "r_convec_K_per_W": 0.1,
+    "comment": "h = 1/(0.1 K/W * 0.06m * 0.06m) = 2777.78 W/m2K，把 HotSpot 的集总对流热阻均匀铺在散热器顶面。"
+  },
+  "domain": {
+    "width_m": 0.06,
+    "height_m": 0.06,
+    "comment": "计算域 = 散热器平面 60 x 60 mm。衬底/中介层/芯片/TIM 都是居中 8×8。"
+  },
+  "chip_origin_m": [0.026, 0.026],
+  "grid": {
+    "x_regions": [
+      {"x0_m": 0.000, "x1_m": 0.015, "n": 8},
+      {"x0_m": 0.015, "x1_m": 0.026, "n": 8},
+      {"x0_m": 0.026, "x1_m": 0.034, "n": 32},
+      {"x0_m": 0.034, "x1_m": 0.045, "n": 8},
+      {"x0_m": 0.045, "x1_m": 0.060, "n": 8}
+    ],
+    "y_regions": [
+      {"y0_m": 0.000, "y1_m": 0.015, "n": 8},
+      {"y0_m": 0.015, "y1_m": 0.026, "n": 8},
+      {"y0_m": 0.026, "y1_m": 0.034, "n": 32},
+      {"y0_m": 0.034, "y1_m": 0.045, "n": 8},
+      {"y0_m": 0.045, "y1_m": 0.060, "n": 8}
+    ],
+    "comment": "芯片 8mm 用 32 格（0.25mm）；均热板/散热器外圈变粗。x 与 y 对称。"
+  },
+  "stack": [
+    {
+      "name": "substrate",
+      "material": "organic",
+      "x0_m": 0.026, "y0_m": 0.026, "w_m": 0.008, "h_m": 0.008,
+      "z0_m": 0.0, "z1_m": 0.001, "nz": 4,
+      "has_power": false
+    },
+    {
+      "name": "interposer",
+      "material": "silicon",
+      "x0_m": 0.026, "y0_m": 0.026, "w_m": 0.008, "h_m": 0.008,
+      "z0_m": 0.001, "z1_m": 0.0011, "nz": 3,
+      "has_power": false
+    },
+    {
+      "name": "die",
+      "material": "silicon",
+      "x0_m": 0.026, "y0_m": 0.026, "w_m": 0.008, "h_m": 0.008,
+      "z0_m": 0.0011, "z1_m": 0.00125, "nz": 4,
+      "has_power": true
+    },
+    {
+      "name": "tim",
+      "material": "tim",
+      "x0_m": 0.026, "y0_m": 0.026, "w_m": 0.008, "h_m": 0.008,
+      "z0_m": 0.00125, "z1_m": 0.00127, "nz": 2,
+      "has_power": false
+    },
+    {
+      "name": "spreader",
+      "material": "copper",
+      "x0_m": 0.015, "y0_m": 0.015, "w_m": 0.030, "h_m": 0.030,
+      "z0_m": 0.00127, "z1_m": 0.00227, "nz": 4,
+      "has_power": false
+    },
+    {
+      "name": "sink",
+      "material": "copper",
+      "x0_m": 0.000, "y0_m": 0.000, "w_m": 0.060, "h_m": 0.060,
+      "z0_m": 0.00227, "z1_m": 0.00917, "nz": 6,
+      "has_power": false
+    }
+  ],
+  "solver": {
+    "type": "fvm3d",
+    "nonlinear": false,
+    "leakage": false,
+    "kirchhoff": false,
+    "tolerance_K": 0.05,
+    "max_iter": 20
+  },
+  "mechanics": {
+    "bc": "substrate_bottom_fixed",
+    "comment": "固定有机衬底底面 ux=uy=uz=0（现为 8×8）。中介层无 TSV，中介层–衬底无 C4，界面按理想粘结。"
+  },
+  "material_default": "silicon",
+  "materials": {
+    "silicon": {
+      "kappa0_W_mK": 130.0,
+      "T_ref_K": 300.0,
+      "alpha": 1.5,
+      "rho_kg_m3": 2330.0,
+      "cp_J_kgK": 700.0,
+      "E_Pa": 1.7e11,
+      "nu": 0.28,
+      "alpha_cte_1_K": 2.6e-6
+    },
+    "tim": {
+      "kappa0_W_mK": 4.0,
+      "T_ref_K": 300.0,
+      "alpha": 0.0,
+      "rho_kg_m3": 2500.0,
+      "cp_J_kgK": 1600.0,
+      "E_Pa": 5.0e9,
+      "nu": 0.40,
+      "alpha_cte_1_K": 4.0e-5,
+      "comment": "HotSpot k_interface=4. 力学用环氧类 TIM：E=5 GPa，α=40 ppm/K。"
+    },
+    "copper": {
+      "kappa0_W_mK": 400.0,
+      "T_ref_K": 300.0,
+      "alpha": 0.0,
+      "rho_kg_m3": 8960.0,
+      "cp_J_kgK": 385.0,
+      "E_Pa": 1.1e11,
+      "nu": 0.35,
+      "alpha_cte_1_K": 1.7e-5,
+      "comment": "HotSpot spreader/sink k=400"
+    },
+    "organic": {
+      "kappa0_W_mK": 0.5,
+      "T_ref_K": 300.0,
+      "alpha": 0.0,
+      "rho_kg_m3": 1800.0,
+      "cp_J_kgK": 1000.0,
+      "E_Pa": 2.5e10,
+      "nu": 0.30,
+      "alpha_cte_1_K": 1.5e-5,
+      "comment": "有机衬底等效：k=0.5，E=25 GPa，α=15 ppm/K。平面与芯片同为 8×8。"
+    }
+  },
+  "blocks": [
+    {"name": "Cache",  "x0_m": 0.0, "y0_m": 0.0, "w_m": 0.004, "h_m": 0.004, "z0_m": 0.0011, "z1_m": 0.00125, "power_W": 2.0, "material": "silicon"},
+    {"name": "Uncore", "x0_m": 0.004, "y0_m": 0.0, "w_m": 0.004, "h_m": 0.004, "z0_m": 0.0011, "z1_m": 0.00125, "power_W": 1.5, "material": "silicon"},
+    {"name": "CoreA",  "x0_m": 0.0, "y0_m": 0.004, "w_m": 0.004, "h_m": 0.004, "z0_m": 0.0011, "z1_m": 0.00125, "power_W": 8.0, "material": "silicon"},
+    {"name": "CoreB",  "x0_m": 0.004, "y0_m": 0.004, "w_m": 0.004, "h_m": 0.004, "z0_m": 0.0011, "z1_m": 0.00125, "power_W": 6.0, "material": "silicon"}
+  ],
+  "probes": [
+    {"name": "Cache_center",      "x_m": 0.028, "y_m": 0.028, "z_m": 0.001175},
+    {"name": "Uncore_center",     "x_m": 0.032, "y_m": 0.028, "z_m": 0.001175},
+    {"name": "CoreA_center",      "x_m": 0.028, "y_m": 0.032, "z_m": 0.001175},
+    {"name": "CoreB_center",      "x_m": 0.032, "y_m": 0.032, "z_m": 0.001175},
+    {"name": "Chip_center",       "x_m": 0.030, "y_m": 0.030, "z_m": 0.001175},
+    {"name": "Chip_bottom_CoreA", "x_m": 0.028, "y_m": 0.032, "z_m": 0.0011},
+    {"name": "Interposer_center", "x_m": 0.030, "y_m": 0.030, "z_m": 0.00105},
+    {"name": "Substrate_center",  "x_m": 0.030, "y_m": 0.030, "z_m": 0.0005},
+    {"name": "TIM_mid",           "x_m": 0.030, "y_m": 0.030, "z_m": 0.00126},
+    {"name": "Spreader_center",   "x_m": 0.030, "y_m": 0.030, "z_m": 0.00177},
+    {"name": "Sink_center",       "x_m": 0.030, "y_m": 0.030, "z_m": 0.00572},
+    {"name": "Sink_top_center",   "x_m": 0.030, "y_m": 0.030, "z_m": 0.00917},
+    {"name": "Sink_top_corner",   "x_m": 0.001, "y_m": 0.001, "z_m": 0.00917}
+  ],
+  "hotspot": {
+    "r_convec_K_per_W": 0.1,
+    "t_chip_m": 0.00015,
+    "k_chip": 130.0,
+    "t_interface_m": 2.0e-5,
+    "k_interface": 4.0,
+    "s_spreader_m": 0.03,
+    "t_spreader_m": 0.001,
+    "k_spreader": 400.0,
+    "s_sink_m": 0.06,
+    "t_sink_m": 0.0069,
+    "k_sink": 400.0,
+    "grid_rows": 64,
+    "grid_cols": 64,
+    "comment": "HotSpot 仍是 die+TIM+spreader+sink，没有衬底/中介层。只作趋势对照。"
+  }
+}

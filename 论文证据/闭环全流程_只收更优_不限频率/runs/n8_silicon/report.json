@@ -1,0 +1,168 @@
+{
+  "case": "n8_silicon",
+  "fill": "silicon",
+  "cap": null,
+  "note": "频率贪心爬升，无上限。布局用只收更优那一轮的退火最优，没有重跑退火。",
+  "kcal_python_block_to_atsim_block": 0.7525362323568786,
+  "freq_mode_at_best_s1": "inside",
+  "freq_bumps": 168,
+  "scales": {
+    "Ca": 0.5,
+    "Ga": 8.3,
+    "Gb": 10.3,
+    "Cb": 0.5
+  },
+  "gate_passed_after_freq": false,
+  "walkback": [
+    {
+      "attempt": 0,
+      "scales": {
+        "Ca": 1.0,
+        "Ga": 8.5,
+        "Gb": 10.3,
+        "Cb": 1.0
+      },
+      "die_cell_max_C": 94.66396317953144,
+      "vm_normal_chip_max_MPa": 151.55732774577822,
+      "block_mean_C": 90.29842792505171
+    },
+    {
+      "attempt": 1,
+      "scales": {
+        "Ca": 0.9,
+        "Ga": 8.5,
+        "Gb": 10.3,
+        "Cb": 1.0
+      },
+      "die_cell_max_C": 94.31115076302677,
+      "vm_normal_chip_max_MPa": 150.54535323578094,
+      "block_mean_C": 89.95430606207097
+    },
+    {
+      "attempt": 2,
+      "scales": {
+        "Ca": 0.8,
+        "Ga": 8.5,
+        "Gb": 10.3,
+        "Cb": 1.0
+      },
+      "die_cell_max_C": 93.95833834652194,
+      "vm_normal_chip_max_MPa": 149.55419764936514,
+      "block_mean_C": 89.61018419908996
+    },
+    {
+      "attempt": 3,
+      "scales": {
+        "Ca": 0.7,
+        "Ga": 8.5,
+        "Gb": 10.3,
+        "Cb": 1.0
+      },
+      "die_cell_max_C": 93.60552593001734,
+      "vm_normal_chip_max_MPa": 148.56353261792324,
+      "block_mean_C": 89.26606233610917
+    },
+    {
+      "attempt": 4,
+      "scales": {
+        "Ca": 0.6,
+        "Ga": 8.5,
+        "Gb": 10.3,
+        "Cb": 1.0
+      },
+      "die_cell_max_C": 93.25401924208654,
+      "vm_normal_chip_max_MPa": 147.5733661433794,
+      "block_mean_C": 88.92194047312854
+    },
+    {
+      "attempt": 5,
+      "scales": {
+        "Ca": 0.5,
+        "Ga": 8.5,
+        "Gb": 10.3,
+        "Cb": 1.0
+      },
+      "die_cell_max_C": 92.92236893261992,
+      "vm_normal_chip_max_MPa": 146.58370971606828,
+      "block_mean_C": 88.57781861014765
+    },
+    {
+      "attempt": 6,
+      "scales": {
+        "Ca": 0.5,
+        "Ga": 8.5,
+        "Gb": 10.3,
+        "Cb": 0.9
+      },
+      "die_cell_max_C": 92.66240031416157,
+      "vm_normal_chip_max_MPa": 145.49388721168424,
+      "block_mean_C": 88.32793281932453
+    },
+    {
+      "attempt": 7,
+      "scales": {
+        "Ca": 0.5,
+        "Ga": 8.5,
+        "Gb": 10.3,
+        "Cb": 0.8
+      },
+      "die_cell_max_C": 92.40607198851649,
+      "vm_normal_chip_max_MPa": 144.40454088756536,
+      "block_mean_C": 88.07804702850123
+    },
+    {
+      "attempt": 8,
+      "scales": {
+        "Ca": 0.5,
+        "Ga": 8.5,
+        "Gb": 10.3,
+        "Cb": 0.7
+      },
+      "die_cell_max_C": 92.15811419928917,
+      "vm_normal_chip_max_MPa": 143.3156821102209,
+      "block_mean_C": 87.82816123767822
+    },
+    {
+      "attempt": 9,
+      "scales": {
+        "Ca": 0.5,
+        "Ga": 8.5,
+        "Gb": 10.3,
+        "Cb": 0.6
+      },
+      "die_cell_max_C": 91.91015641006095,
+      "vm_normal_chip_max_MPa": 142.22876229101527,
+      "block_mean_C": 87.57827544685497
+    },
+    {
+      "attempt": 10,
+      "scales": {
+        "Ca": 0.5,
+        "Ga": 8.5,
+        "Gb": 10.3,
+        "Cb": 0.5
+      },
+      "die_cell_max_C": 91.66219862083415,
+      "vm_normal_chip_max_MPa": 141.16522356334153,
+      "block_mean_C": 87.32838965603206
+    },
+    {
+      "attempt": 11,
+      "scales": {
+        "Ca": 0.5,
+        "Ga": 8.4,
+        "Gb": 10.3,
+        "Cb": 0.5
+      },
+      "die_cell_max_C": 91.57696284288505,
+      "vm_normal_chip_max_MPa": 140.5942340019263,
+      "block_mean_C": 87.26167780920123
+    }
+  ],
+  "elapsed_s": 605.3,
+  "atsim_freq": {
+    "die_cell_max_C": 91.57696284288505,
+    "vm_normal_chip_max_MPa": 140.5942340019263,
+    "vm_normal_chip_name": "GPU_3070_Ga"
+  }
+}

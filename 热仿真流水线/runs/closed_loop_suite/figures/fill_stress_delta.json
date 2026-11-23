@@ -1,0 +1,222 @@
+{
+  "definition": "同一张起点、同一功耗。应力是芯片内部 von Mises 最大，不是整包最大，不是平均。减法是环氧减硅。",
+  "epoxy_mechanics": "导热 0.8。E、nu、CTE 借用 organic 卡，只写在案例 json。",
+  "rows": [
+    {
+      "case": "5 颗",
+      "chip": "Xeon_Ca",
+      "silicon_MPa": 76.34623923016802,
+      "epoxy_MPa": 76.38294403290536,
+      "epoxy_minus_silicon_MPa": 0.0367048027373329,
+      "gate_chip_silicon": "Xeon_Ca",
+      "gate_chip_epoxy": "Xeon_Ca"
+    },
+    {
+      "case": "5 颗",
+      "chip": "GPU_3070_Ga",
+      "silicon_MPa": 44.81234307621715,
+      "epoxy_MPa": 57.259719524795095,
+      "epoxy_minus_silicon_MPa": 12.447376448577948,
+      "gate_chip_silicon": "Xeon_Ca",
+      "gate_chip_epoxy": "Xeon_Ca"
+    },
+    {
+      "case": "5 颗",
+      "chip": "CIM_jia_m64",
+      "silicon_MPa": 38.97708588344351,
+      "epoxy_MPa": 49.5651683282106,
+      "epoxy_minus_silicon_MPa": 10.588082444767096,
+      "gate_chip_silicon": "Xeon_Ca",
+      "gate_chip_epoxy": "Xeon_Ca"
+    },
+    {
+      "case": "5 颗",
+      "chip": "HBM3",
+      "silicon_MPa": 58.59192785620134,
+      "epoxy_MPa": 54.90570314097737,
+      "epoxy_minus_silicon_MPa": -3.6862247152239647,
+      "gate_chip_silicon": "Xeon_Ca",
+      "gate_chip_epoxy": "Xeon_Ca"
+    },
+    {
+      "case": "5 颗",
+      "chip": "CIM_colonnade_m512",
+      "silicon_MPa": 56.97290020446411,
+      "epoxy_MPa": 57.04371102194483,
+      "epoxy_minus_silicon_MPa": 0.07081081748071938,
+      "gate_chip_silicon": "Xeon_Ca",
+      "gate_chip_epoxy": "Xeon_Ca"
+    },
+    {
+      "case": "8 颗",
+      "chip": "Xeon_Ca",
+      "silicon_MPa": 131.52755619199974,
+      "epoxy_MPa": 131.4315540578338,
+      "epoxy_minus_silicon_MPa": -0.09600213416592851,
+      "gate_chip_silicon": "Xeon_Ca",
+      "gate_chip_epoxy": "Xeon_Ca"
+    },
+    {
+      "case": "8 颗",
+      "chip": "GPU_2060S_Ga",
+      "silicon_MPa": 76.18019117090411,
+      "epoxy_MPa": 99.23740010481099,
+      "epoxy_minus_silicon_MPa": 23.057208933906878,
+      "gate_chip_silicon": "Xeon_Ca",
+      "gate_chip_epoxy": "Xeon_Ca"
+    },
+    {
+      "case": "8 颗",
+      "chip": "GPU_3070_Gb",
+      "silicon_MPa": 67.63937354782665,
+      "epoxy_MPa": 83.65605339824157,
+      "epoxy_minus_silicon_MPa": 16.016679850414917,
+      "gate_chip_silicon": "Xeon_Ca",
+      "gate_chip_epoxy": "Xeon_Ca"
+    },
+    {
+      "case": "8 颗",
+      "chip": "CIM_jia_m64",
+      "silicon_MPa": 84.55429816349884,
+      "epoxy_MPa": 83.94890687037048,
+      "epoxy_minus_silicon_MPa": -0.6053912931283634,
+      "gate_chip_silicon": "Xeon_Ca",
+      "gate_chip_epoxy": "Xeon_Ca"
+    },
+    {
+      "case": "8 颗",
+      "chip": "Xeon_Cb",
+      "silicon_MPa": 122.22689214499627,
+      "epoxy_MPa": 117.82842515946362,
+      "epoxy_minus_silicon_MPa": -4.39846698553265,
+      "gate_chip_silicon": "Xeon_Ca",
+      "gate_chip_epoxy": "Xeon_Ca"
+    },
+    {
+      "case": "8 颗",
+      "chip": "HBM3",
+      "silicon_MPa": 26.282423521491076,
+      "epoxy_MPa": 52.21423317943299,
+      "epoxy_minus_silicon_MPa": 25.931809657941912,
+      "gate_chip_silicon": "Xeon_Ca",
+      "gate_chip_epoxy": "Xeon_Ca"
+    },
+    {
+      "case": "8 颗",
+      "chip": "CIM_colonnade_m512",
+      "silicon_MPa": 24.919634953948908,
+      "epoxy_MPa": 44.95278531699987,
+      "epoxy_minus_silicon_MPa": 20.033150363050964,
+      "gate_chip_silicon": "Xeon_Ca",
+      "gate_chip_epoxy": "Xeon_Ca"
+    },
+    {
+      "case": "8 颗",
+      "chip": "CIM_colonnade_m256",
+      "silicon_MPa": 18.788662728286834,
+      "epoxy_MPa": 30.036748182005372,
+      "epoxy_minus_silicon_MPa": 11.248085453718538,
+      "gate_chip_silicon": "Xeon_Ca",
+      "gate_chip_epoxy": "Xeon_Ca"
+    },
+    {
+      "case": "11 颗",
+      "chip": "Xeon_Ca",
+      "silicon_MPa": 150.12302119624874,
+      "epoxy_MPa": 150.0612033382096,
+      "epoxy_minus_silicon_MPa": -0.06181785803914863,
+      "gate_chip_silicon": "Xeon_Ca",
+      "gate_chip_epoxy": "Xeon_Ca"
+    },
+    {
+      "case": "11 颗",
+      "chip": "GPU_2060S_Ga",
+      "silicon_MPa": 88.62044977101712,
+      "epoxy_MPa": 101.99263901949402,
+      "epoxy_minus_silicon_MPa": 13.3721892484769,
+      "gate_chip_silicon": "Xeon_Ca",
+      "gate_chip_epoxy": "Xeon_Ca"
+    },
+    {
+      "case": "11 颗",
+      "chip": "GPU_TITANX_Gb",
+      "silicon_MPa": 80.15329112007777,
+      "epoxy_MPa": 94.76566097061779,
+      "epoxy_minus_silicon_MPa": 14.61236985054002,
+      "gate_chip_silicon": "Xeon_Ca",
+      "gate_chip_epoxy": "Xeon_Ca"
+    },
+    {
+      "case": "11 颗",
+      "chip": "CIM_jia_m64",
+      "silicon_MPa": 101.67146923817764,
+      "epoxy_MPa": 101.70358704049274,
+      "epoxy_minus_silicon_MPa": 0.0321178023150992,
+      "gate_chip_silicon": "Xeon_Ca",
+      "gate_chip_epoxy": "Xeon_Ca"
+    },
+    {
+      "case": "11 颗",
+      "chip": "Xeon_Cb",
+      "silicon_MPa": 88.20560823980112,
+      "epoxy_MPa": 97.70596280354056,
+      "epoxy_minus_silicon_MPa": 9.500354563739435,
+      "gate_chip_silicon": "Xeon_Ca",
+      "gate_chip_epoxy": "Xeon_Ca"
+    },
+    {
+      "case": "11 颗",
+      "chip": "GPU_3070_Gc",
+      "silicon_MPa": 33.21402636926197,
+      "epoxy_MPa": 55.34060255108025,
+      "epoxy_minus_silicon_MPa": 22.12657618181828,
+      "gate_chip_silicon": "Xeon_Ca",
+      "gate_chip_epoxy": "Xeon_Ca"
+    },
+    {
+      "case": "11 颗",
+      "chip": "HBM3",
+      "silicon_MPa": 18.274830215135776,
+      "epoxy_MPa": 31.107559784331894,
+      "epoxy_minus_silicon_MPa": 12.832729569196118,
+      "gate_chip_silicon": "Xeon_Ca",
+      "gate_chip_epoxy": "Xeon_Ca"
+    },
+    {
+      "case": "11 颗",
+      "chip": "CIM_colonnade_m512",
+      "silicon_MPa": 21.7373387940995,
+      "epoxy_MPa": 34.6716901587718,
+      "epoxy_minus_silicon_MPa": 12.934351364672303,
+      "gate_chip_silicon": "Xeon_Ca",
+      "gate_chip_epoxy": "Xeon_Ca"
+    },
+    {
+      "case": "11 颗",
+      "chip": "CIM_colonnade_m256",
+      "silicon_MPa": 121.30618316146156,
+      "epoxy_MPa": 121.73750677300961,
+      "epoxy_minus_silicon_MPa": 0.4313236115480521,
+      "gate_chip_silicon": "Xeon_Ca",
+      "gate_chip_epoxy": "Xeon_Ca"
+    },
+    {
+      "case": "11 颗",
+      "chip": "CIM_basic_m256",
+      "silicon_MPa": 47.62691893777784,
+      "epoxy_MPa": 56.62296321351139,
+      "epoxy_minus_silicon_MPa": 8.996044275733553,
+      "gate_chip_silicon": "Xeon_Ca",
+      "gate_chip_epoxy": "Xeon_Ca"
+    },
+    {
+      "case": "11 颗",
+      "chip": "CIM_colonnade_m64",
+      "silicon_MPa": 47.68507399430282,
+      "epoxy_MPa": 71.04548974413012,
+      "epoxy_minus_silicon_MPa": 23.360415749827304,
+      "gate_chip_silicon": "Xeon_Ca",
+      "gate_chip_epoxy": "Xeon_Ca"
+    }
+  ]
+}

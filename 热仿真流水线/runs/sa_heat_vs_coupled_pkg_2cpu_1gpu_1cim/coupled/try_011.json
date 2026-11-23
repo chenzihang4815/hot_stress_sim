@@ -1,0 +1,62 @@
+{
+  "name": "try_011",
+  "description": "SA proxy try_011",
+  "chips": [
+    {
+      "name": "CPU_matmul",
+      "x_mm": 4.0,
+      "y_mm": 22.5,
+      "w_mm": 3.0885921137658436,
+      "h_mm": 4.414470897348692,
+      "t_um": 150.0,
+      "power_W": 1.001867
+    },
+    {
+      "name": "CPU_threads",
+      "x_mm": 0.0,
+      "y_mm": 22.0,
+      "w_mm": 3.1179678382999496,
+      "h_mm": 4.372880256338409,
+      "t_um": 150.0,
+      "power_W": 0.9561569999999999
+    },
+    {
+      "name": "GPU_3070",
+      "x_mm": 4.500000000000001,
+      "y_mm": 0.5,
+      "w_mm": 21.781312454945375,
+      "h_mm": 17.997078955221436,
+      "t_um": 150.0,
+      "power_W": 66.8878
+    },
+    {
+      "name": "CIM_jia",
+      "x_mm": 0.5,
+      "y_mm": 0.0,
+      "w_mm": 1.827064132117491,
+      "h_mm": 2.343227138382007,
+      "t_um": 150.0,
+      "power_W": 0.0027731351494352146
+    }
+  ],
+  "package": {
+    "tim_um": 20,
+    "t_spreader_mm": 1.0,
+    "t_sink_mm": 6.9,
+    "t_substrate_mm": 1.0,
+    "t_interposer_um": 100.0,
+    "r_convec_K_per_W": 0.1,
+    "ambient_C": 45,
+    "pitch_die_mm": 2.0,
+    "pitch_coarse_mm": 8.0,
+    "nz_die": 3,
+    "nz_spreader": 3,
+    "nz_sink": 4,
+    "nz_tim": 1,
+    "nz_substrate": 3,
+    "nz_interposer": 2,
+    "fill_die": true,
+    "fill_xy": "chips",
+    "fill_material": "silicon"
+  }
+}

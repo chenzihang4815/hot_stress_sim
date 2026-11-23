@@ -1,0 +1,12 @@
+{
+  "tag": "ladder_start",
+  "fill_material": "silicon",
+  "vm_max_MPa": 91.33758545027429,
+  "vm_name": "Penryn",
+  "cpu_mean_MPa": 58.082961636239105,
+  "cpu_max_MPa": 91.33758545027429,
+  "cpu_n": 36,
+  "atsim_Tmax_C": 74.62612326983822,
+  "elapsed_s": 14.80214262008667,
+  "ndof": 31452
+}

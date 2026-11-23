@@ -1,0 +1,2 @@
+CPU_matmul	GPU_2060S	HBM3_stack	anchor_sw	anchor_ne
+68.99682	71.1208272595	28.656	0	0

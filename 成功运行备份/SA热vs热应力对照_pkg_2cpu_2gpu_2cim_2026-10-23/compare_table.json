@@ -1,0 +1,41 @@
+{
+  "scheme": "pkg_2cpu_2gpu_2cim",
+  "title": "2 CPU + 2 GPU + 2 CIM（6 颗）",
+  "n_chiplets": 6,
+  "n_steps": 16,
+  "seed": 22,
+  "package_overrides": {
+    "pitch_die_mm": 2.0,
+    "pitch_coarse_mm": 8.0
+  },
+  "vm_metric": "worst interior von Mises among CPU/GPU and CIM≥1mm2",
+  "heat_only": {
+    "Tmax_init_C": 63.650000000000034,
+    "Tmax_best_C": 63.57000000000005,
+    "vm_chip_max_init_MPa": 74.33419570492292,
+    "vm_chip_max_best_MPa": 76.75035773007582,
+    "vm_chip_name_best": "GPU_2060S",
+    "w_pv_init_um": 2.4178519010747523,
+    "w_pv_best_um": 2.333737452841228,
+    "J_full_best": 1.8020207589059138,
+    "accepted": 6
+  },
+  "coupled": {
+    "Tmax_init_C": 63.650000000000034,
+    "Tmax_best_C": 63.650000000000034,
+    "vm_chip_max_init_MPa": 74.33419570492292,
+    "vm_chip_max_best_MPa": 74.33321352519337,
+    "vm_chip_name_best": "GPU_2060S",
+    "w_pv_init_um": 2.4178519010747523,
+    "w_pv_best_um": 2.401754523461039,
+    "J_full_best": 1.789551450684565,
+    "accepted": 6
+  },
+  "delta_coupled_minus_heat": {
+    "dTmax_C": 0.07999999999998408,
+    "d_vm_chip_max_MPa": -2.4171442048824474,
+    "d_w_pv_um": 0.0680170706198111
+  },
+  "wall_s": 333.17832946777344,
+  "finished_utc": "2026-10-23T08:18:46.944454+00:00"
+}

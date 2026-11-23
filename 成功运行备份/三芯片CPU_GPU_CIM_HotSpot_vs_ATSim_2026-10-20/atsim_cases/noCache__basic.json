@@ -1,0 +1,52 @@
+{
+  "name": "cpu_gpu_cim_noCache__basic",
+  "description": "3 chiplets CPU+GPU+CIM. CPU Timing no-cache + GPU backprop + CIM basic_analog. Initial layout=lbfgs.",
+  "chips": [
+    {
+      "name": "CPU",
+      "x_mm": 0.0,
+      "y_mm": 25.258587168002904,
+      "w_mm": 1.548031169905943,
+      "h_mm": 1.873534626680817,
+      "t_um": 150.0,
+      "power_W": 0.6763172000000001
+    },
+    {
+      "name": "GPU",
+      "x_mm": 0.2991560949397331,
+      "y_mm": 0.0,
+      "w_mm": 32.33025296373904,
+      "h_mm": 25.208587168002904,
+      "t_um": 150.0,
+      "power_W": 72.955
+    },
+    {
+      "name": "CIM",
+      "x_mm": 0.0,
+      "y_mm": 0.0,
+      "w_mm": 0.2491560949397331,
+      "h_mm": 0.18751101219930616,
+      "t_um": 150.0,
+      "power_W": 0.0026253290280376118
+    }
+  ],
+  "package": {
+    "tim_um": 20,
+    "t_spreader_mm": 1.0,
+    "t_sink_mm": 6.9,
+    "t_substrate_mm": 1.0,
+    "t_interposer_um": 100.0,
+    "r_convec_K_per_W": 0.1,
+    "ambient_C": 45,
+    "pitch_die_mm": 1.0,
+    "pitch_coarse_mm": 4.0,
+    "fill_die": false
+  },
+  "mix": "noCache__basic",
+  "title": "CPU Timing no-cache + GPU backprop + CIM basic_analog",
+  "layout_algorithm": "lbfgs",
+  "layout_seed": 13,
+  "outline_mm2": 885.3051006686289,
+  "deadspace_ratio": 0.07608460756206958,
+  "overlap_m2": 0.0
+}

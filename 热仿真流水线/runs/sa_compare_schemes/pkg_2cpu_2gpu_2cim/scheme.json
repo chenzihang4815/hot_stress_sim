@@ -1,0 +1,17 @@
+{
+  "id": "pkg_2cpu_2gpu_2cim",
+  "title": "2 CPU + 2 GPU + 2 CIM（6 颗）",
+  "why": "两颗不同 GPU，看间距是否被应力拉开",
+  "layout": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/sa_compare_schemes/pkg_2cpu_2gpu_2cim/layout.json",
+  "source": "/home/czh/任务仿真产生功耗文件工具/热仿真流水线/runs/multi_chiplet_schemes/pkg_2cpu_2gpu_2cim/layout.json",
+  "n_chiplets": 6,
+  "kinds": {
+    "CPU": 2,
+    "GPU": 2,
+    "CIM": 2
+  },
+  "power_total_W": 140.68852011851155,
+  "atsim_pitch_die_mm": 2.0,
+  "atsim_pitch_coarse_mm": 8.0,
+  "atsim_nz": null
+}

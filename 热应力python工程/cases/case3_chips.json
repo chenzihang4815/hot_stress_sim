@@ -1,0 +1,22 @@
+{
+  "name": "case3_3chip",
+  "description": "多芯片布局入口。只填 chips[]：名字、左下角坐标、长宽、厚度、功耗。封装/网格/探针由 atsim/layout.py 自动生成。",
+  "chips": [
+    {"name": "CPU", "x_mm": 8,  "y_mm": 8,  "w_mm": 10, "h_mm": 10, "t_um": 150, "power_W": 25},
+    {"name": "GPU", "x_mm": 22, "y_mm": 8,  "w_mm": 12, "h_mm": 10, "t_um": 150, "power_W": 40},
+    {"name": "HBM", "x_mm": 8,  "y_mm": 22, "w_mm": 8,  "h_mm": 8,  "t_um": 150, "power_W": 8}
+  ],
+  "package": {
+    "comment": "衬底/中介层/TIM 平面自动等于芯片包围盒。均热板和散热器仍外扩。无 TSV / C4。",
+    "tim_um": 20,
+    "t_spreader_mm": 1.0,
+    "t_sink_mm": 6.9,
+    "t_substrate_mm": 1.0,
+    "t_interposer_um": 100.0,
+    "r_convec_K_per_W": 0.1,
+    "ambient_C": 45,
+    "pitch_die_mm": 0.5,
+    "pitch_coarse_mm": 3.0,
+    "fill_die": false
+  }
+}

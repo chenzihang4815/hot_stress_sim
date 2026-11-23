@@ -1,0 +1,17 @@
+micro150 开始，50 mm 中介层
+  全解 1050 步 1668s 搜索峰值 157.50
+  场叠加 449s 求解 355 次 搜索峰值 157.71
+{
+  "label": "micro150",
+  "steps": 1050,
+  "step_mm": 1,
+  "rows_search": 16,
+  "full_secs": 1667.6,
+  "full_final_64_C": 162.03,
+  "field_secs": 448.7,
+  "field_solves": 355,
+  "field_final_64_C": 162.12,
+  "speedup": 3.72,
+  "delta_C": 0.09,
+  "wall_s": 2220.6
+}

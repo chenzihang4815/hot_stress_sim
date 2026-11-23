@@ -1,0 +1,75 @@
+{
+  "name": "step_00",
+  "description": "closed_loop_suite",
+  "chips": [
+    {
+      "name": "Xeon_Ca",
+      "x_mm": 14.625,
+      "y_mm": 21.375,
+      "w_mm": 18.0,
+      "h_mm": 23.625,
+      "t_um": 150.0,
+      "power_W": 103.94599
+    },
+    {
+      "name": "GPU_3070_Ga",
+      "x_mm": 33.75,
+      "y_mm": 0.0,
+      "w_mm": 15.75,
+      "h_mm": 24.75,
+      "t_um": 150.0,
+      "power_W": 66.88781634908364
+    },
+    {
+      "name": "CIM_jia_m64",
+      "x_mm": 0.0,
+      "y_mm": 0.0,
+      "w_mm": 13.5,
+      "h_mm": 20.25,
+      "t_um": 150.0,
+      "power_W": 0.02051619509144024
+    },
+    {
+      "name": "HBM3",
+      "x_mm": 50.625,
+      "y_mm": 0.0,
+      "w_mm": 9.0,
+      "h_mm": 13.5,
+      "t_um": 150.0,
+      "power_W": 28.656
+    },
+    {
+      "name": "CIM_colonnade_m512",
+      "x_mm": 14.625,
+      "y_mm": 0.0,
+      "w_mm": 9.0,
+      "h_mm": 13.5,
+      "t_um": 150.0,
+      "power_W": 0.2967109271348416
+    }
+  ],
+  "package": {
+    "tim_um": 20,
+    "t_spreader_mm": 1.0,
+    "t_sink_mm": 6.9,
+    "s_spreader_mm": 96.0,
+    "s_sink_mm": 96.0,
+    "frame_mm": 72.0,
+    "tim_cover": "frame",
+    "t_substrate_mm": 1.0,
+    "t_interposer_um": 100.0,
+    "r_convec_K_per_W": 0.0390625,
+    "ambient_C": 45,
+    "pitch_die_mm": 2.0,
+    "pitch_coarse_mm": 8.0,
+    "nz_die": 3,
+    "nz_spreader": 3,
+    "nz_sink": 4,
+    "nz_tim": 1,
+    "nz_substrate": 3,
+    "nz_interposer": 2,
+    "fill_die": true,
+    "fill_xy": "chips",
+    "fill_material": "silicon"
+  }
+}

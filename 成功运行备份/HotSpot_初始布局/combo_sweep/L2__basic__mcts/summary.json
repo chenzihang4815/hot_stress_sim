@@ -1,0 +1,71 @@
+{
+  "mix": "L2__basic",
+  "algorithm": "mcts",
+  "n_blocks": 3,
+  "layout": {
+    "width_m": 0.030715234528606285,
+    "height_m": 0.029257506240633755,
+    "outline_mm2": 898.6511659032278,
+    "block_area_mm2": 828.6812195115577,
+    "deadspace_ratio": 0.07786107562809841,
+    "overlap_m2": 0.0,
+    "overlap_count": 0.0,
+    "algorithm": "mcts",
+    "seed": 11,
+    "n_sims": 80,
+    "cost": 905.2053801196497
+  },
+  "thermal": {
+    "Tmax_C": 54.660000000000025,
+    "Tmin_C": 52.160000000000025,
+    "block_T_C": {
+      "CPU": 53.68000000000001,
+      "GPU": 54.660000000000025,
+      "CIM": 53.39000000000004,
+      "iface_CPU": 53.610000000000014,
+      "iface_GPU": 54.56,
+      "iface_CIM": 53.35000000000002,
+      "hsink_CPU": 53.170000000000016,
+      "hsink_GPU": 53.920000000000016,
+      "hsink_CIM": 53.07000000000005,
+      "inode_0": 53.01000000000005,
+      "inode_1": 53.400000000000034,
+      "inode_2": 53.18000000000001,
+      "inode_3": 53.200000000000045,
+      "inode_4": 52.94,
+      "inode_5": 53.28000000000003,
+      "inode_6": 53.10000000000002,
+      "inode_7": 53.120000000000005,
+      "inode_8": 52.160000000000025,
+      "inode_9": 52.460000000000036,
+      "inode_10": 52.26000000000005,
+      "inode_11": 52.28000000000003
+    },
+    "returncode": 0
+  },
+  "power_total_W": 73.82553872902804,
+  "area_total_mm2": 828.6812195115577,
+  "blocks": [
+    {
+      "name": "CPU",
+      "kind": "CPU",
+      "area_mm2": 13.6345,
+      "power_W": 0.8679134,
+      "notes": "gem5 TimingSimpleCPU + L1/L2，hello；P=RuntimeDynamic(0.0840234)+Leakage(0.78389)"
+    },
+    {
+      "name": "GPU",
+      "kind": "GPU",
+      "area_mm2": 815.0,
+      "power_W": 72.955,
+      "notes": "backprop kernel=_Z22bpnn_layerforward_CUDAPfS_S_S_ii；功率来自 AccelWattch kernel_avg_power；面积不是仿真器输出，采用 GV100 裸片 815.0 mm²"
+    },
+    {
+      "name": "CIM",
+      "kind": "CIM",
+      "area_mm2": 0.04671951155777578,
+      "power_W": 0.0026253290280376118,
+      "notes": "功率=energy_J/latency_s；面积=各组件 area_m2 之和（MainMemory=0 不占面积）"
+    }
+  ]
+}
